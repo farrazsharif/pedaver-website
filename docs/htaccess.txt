@@ -1,0 +1,29 @@
+# Copy this file into the top of the `out/` folder as `.htaccess` before zipping
+# and uploading to cPanel. It sets a custom 404 page and asset caching.
+
+# Custom 404 page
+ErrorDocument 404 /404.html
+
+# Cache static assets aggressively (they are content-hashed by Next)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/png "access plus 6 months"
+  ExpiresByType image/jpeg "access plus 6 months"
+  ExpiresByType image/svg+xml "access plus 6 months"
+  ExpiresByType image/x-icon "access plus 6 months"
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+# Gzip/text compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+# --- Optional: force HTTPS. Uncomment AFTER enabling AutoSSL in cPanel ---
+# <IfModule mod_rewrite.c>
+#   RewriteEngine On
+#   RewriteCond %{HTTPS} off
+#   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# </IfModule>
