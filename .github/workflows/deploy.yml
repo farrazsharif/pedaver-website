@@ -37,8 +37,11 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           # The built site lives in out/ ; upload its CONTENTS.
           local-dir: ./out/
-          # Target web root. Primary domain = public_html/ .
-          # Addon domain would be e.g. public_html/pedaver.com/ .
-          server-dir: public_html/
+          # pedaver.com is an ADDON domain whose document root is /pedaver.com
+          # (a folder in the account home, beside public_html). This path is
+          # relative to the FTP account's home, so the FTP user MUST be the
+          # main cPanel account (home = /home/<user>/), not one locked to
+          # public_html — otherwise it can't reach this folder.
+          server-dir: pedaver.com/
           # If the host requires encrypted FTP, change to: ftps
           protocol: ftp
