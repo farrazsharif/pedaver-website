@@ -25,7 +25,7 @@ export default function Footer({ dict }: { dict: Dictionary }) {
         <div>
           <div className="inline-flex rounded-lg bg-cream px-4 py-3">
             <img
-              src="/images/pedaver-logo.png"
+              src="/images/pedaver-logo-glow.png"
               alt={dict.meta.siteName}
               className="h-9 w-auto"
             />

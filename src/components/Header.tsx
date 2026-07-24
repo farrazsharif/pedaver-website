@@ -66,7 +66,7 @@ export default function Header({ dict }: { dict: Dictionary }) {
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
           <Link href="/" className="flex items-center" aria-label={`${dict.meta.siteName} home`}>
             <img
-              src="/images/pedaver-logo-transparent.png"
+              src="/images/pedaver-logo-glow.png"
               alt={`${dict.meta.siteName} — The Transformative Producer`}
               className="h-12 w-auto sm:h-16"
             />
