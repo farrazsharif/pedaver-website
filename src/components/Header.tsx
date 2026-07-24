@@ -64,13 +64,21 @@ export default function Header({ dict }: { dict: Dictionary }) {
       {/* Tier 1 — utility bar */}
       <div className="border-b border-border">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
-          <Link href="/" className="flex items-center" aria-label={`${dict.meta.siteName} home`}>
+          <div className="flex items-center gap-3 sm:gap-4">
+            <Link href="/" className="flex items-center" aria-label={`${dict.meta.siteName} home`}>
+              <img
+                src="/images/pedaver-logo-glow.png"
+                alt={`${dict.meta.siteName} — The Transformative Producer`}
+                className="h-16 w-auto sm:h-20"
+              />
+            </Link>
+            <span className="h-10 w-px bg-border sm:h-12" aria-hidden="true" />
             <img
-              src="/images/pedaver-logo-glow.png"
-              alt={`${dict.meta.siteName} — The Transformative Producer`}
-              className="h-12 w-auto sm:h-16"
+              src="/images/pqnk-logo.png"
+              alt="PQNK — The Science of Natural Farming"
+              className="h-16 w-auto sm:h-20"
             />
-          </Link>
+          </div>
 
           <div className="flex items-center gap-2 sm:gap-3">
             <button
@@ -99,13 +107,6 @@ export default function Header({ dict }: { dict: Dictionary }) {
             >
               {dict.nav.getCertified}
             </Link>
-
-            {/* PQNK co-brand logo (top bar, right; hidden on small screens) */}
-            <img
-              src="/images/pqnk-logo.png"
-              alt="PQNK — The Science of Natural Farming"
-              className="hidden h-12 w-auto md:block lg:h-14"
-            />
 
             <button
               type="button"
