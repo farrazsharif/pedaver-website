@@ -40,6 +40,59 @@ export default function HomePage() {
         </div>
       </Section>
 
+      {/* The PQNK System — signature centerpiece */}
+      <section className="bg-primary-dark text-cream">
+        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-24">
+          <div className="text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-accent-light">
+              {dict.home.pqnk.eyebrow}
+            </p>
+            <h2 className="mt-5 text-6xl font-extrabold leading-none tracking-tight sm:text-8xl">
+              {dict.home.pqnk.title}
+            </h2>
+            <p className="mt-5 text-xs font-semibold uppercase tracking-[0.2em] text-cream/60">
+              {dict.home.pqnk.fullName}
+            </p>
+            <p className="mt-2 italic text-accent-light">{dict.home.pqnk.pronunciation}</p>
+            <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-cream/85">
+              {dict.home.pqnk.statement}
+            </p>
+          </div>
+
+          {/* The five principles */}
+          <div className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+            {dict.home.pqnk.principles.map((principle, i) => (
+              <div key={principle.name} className="rounded-2xl border border-cream/15 bg-cream/[0.06] p-6">
+                <div className="flex h-9 w-9 items-center justify-center rounded-full bg-accent/25 text-sm font-bold text-accent-light">
+                  {i + 1}
+                </div>
+                <h3 className="mt-4 text-base font-bold text-cream">{principle.name}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-cream/70">{principle.body}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Proof stats */}
+          <div className="mt-16 grid grid-cols-2 gap-8 border-t border-cream/15 pt-12 md:grid-cols-4">
+            {dict.home.pqnk.stats.map((stat) => (
+              <div key={stat.label} className="text-center">
+                <div className="text-4xl font-extrabold text-accent-light sm:text-5xl">{stat.value}</div>
+                <div className="mt-2 text-sm text-cream/70">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-14 text-center">
+            <Link
+              href="/about"
+              className="inline-block rounded-full bg-accent px-8 py-3.5 text-sm font-semibold text-ink shadow-sm transition hover:bg-accent-light"
+            >
+              {dict.home.pqnk.cta}
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* What We Do — image cards (Products & Services pattern) */}
       <Section muted>
         <div className="mb-10 text-center">
