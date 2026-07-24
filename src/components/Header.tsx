@@ -100,6 +100,13 @@ export default function Header({ dict }: { dict: Dictionary }) {
               {dict.nav.getCertified}
             </Link>
 
+            {/* PQNK co-brand logo (top bar, right; hidden on small screens) */}
+            <img
+              src="/images/pqnk-logo.png"
+              alt="PQNK — The Science of Natural Farming"
+              className="hidden h-12 w-auto md:block lg:h-14"
+            />
+
             <button
               type="button"
               onClick={() => setMobileOpen((v) => !v)}
