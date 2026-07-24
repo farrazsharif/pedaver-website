@@ -9,7 +9,7 @@ export interface Highlight {
 export const highlights: Highlight[] = [
   {
     slug: "discover-pqnk",
-    image: "/images/hero-1.png",
+    image: "/images/hero-15.jpg",
     href: "/about",
     title: "Farming the way nature already knows how",
     cta: "Discover PQNK",
