@@ -82,13 +82,25 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div className="mt-14 text-center">
+          <div className="mt-14 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
               href="/about"
               className="inline-block rounded-full bg-accent px-8 py-3.5 text-sm font-semibold text-ink shadow-sm transition hover:bg-accent-light"
             >
               {dict.home.pqnk.cta}
             </Link>
+            <a
+              href="/docs/PQNK-Pristine-Farming.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-cream/30 px-8 py-3.5 text-sm font-semibold text-cream transition hover:border-cream/60 hover:bg-cream/5"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                <path d="M12 3v12m0 0 4-4m-4 4-4-4" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              Download the PQNK Introduction (PDF)
+            </a>
           </div>
         </div>
       </section>
