@@ -1,6 +1,14 @@
 import Link from "next/link";
 import dict from "@/lib/dictionaries";
 import Section from "@/components/Section";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "PQNK Certification — Verify Genuine PQNK Practice",
+  description:
+    "PQNK Certification confirms a farm is genuinely following PQNK practice. Learn how the validation process works and how to get certified.",
+  path: "/certification",
+});
 
 export default function CertificationPage() {
   return (

@@ -2,6 +2,14 @@ import dict from "@/lib/dictionaries";
 import { videos, officialChannel, founderChannel } from "@/lib/content/videos";
 import Section from "@/components/Section";
 import VideoEmbed from "@/components/VideoEmbed";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Videos — PQNK Documented on the Ground",
+  description:
+    "Watch PQNK in action across Pedaver's official YouTube channel and founder Asif Sharif's channel — real farms, real results, 1,400+ videos combined.",
+  path: "/videos",
+});
 
 export default function VideosPage() {
   const officialVideos = videos.filter((v) => v.channel === "official");

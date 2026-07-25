@@ -1,13 +1,37 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import dict from "@/lib/dictionaries";
 import { crops, getCropBySlug } from "@/lib/content/crops";
 import { getCropImage } from "@/lib/content/cropImages";
+import { cropSeo } from "@/lib/content/cropSeo";
 import { notFound } from "next/navigation";
 import Section from "@/components/Section";
 import VideoEmbed from "@/components/VideoEmbed";
+import { buildMetadata, SITE_URL } from "@/lib/seo";
 
 export async function generateStaticParams() {
   return crops.map((crop) => ({ slug: crop.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const crop = getCropBySlug(slug);
+  if (!crop) return {};
+
+  const seo = cropSeo[slug];
+  const image = getCropImage(slug);
+
+  return buildMetadata({
+    title: seo?.title ?? `${crop.name} Under PQNK | Pedaver`,
+    description: seo?.description ?? crop.blurb,
+    path: `/crops/${slug}`,
+    image: image ? `${SITE_URL}${image}` : undefined,
+    type: "article",
+  });
 }
 
 export default async function CropDetailPage({

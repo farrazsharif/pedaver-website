@@ -2,6 +2,14 @@ import Link from "next/link";
 import dict from "@/lib/dictionaries";
 import { farmerStories } from "@/lib/content/farmers";
 import Section from "@/components/Section";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Farmer Stories — PQNK Results, Acre by Acre",
+  description:
+    "PQNK is proven acre by acre. Read real growers documenting their own results across wheat, cotton, citrus and more.",
+  path: "/farmer-stories",
+});
 
 export default function FarmerStoriesPage() {
   return (

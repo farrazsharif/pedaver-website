@@ -8,6 +8,14 @@ import VideoEmbed from "@/components/VideoEmbed";
 import HeroCarousel from "@/components/HeroCarousel";
 import NewsletterForm from "@/components/NewsletterForm";
 import SoilProfile from "@/components/SoilProfile";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Pedaver — PQNK Natural Ecosystem Science for Production Agriculture",
+  description:
+    "Field-tested regenerative farming across 20+ crops in Pakistan. Lower input cost, restored soil, higher-quality yields — the PQNK system from Pedaver.",
+  path: "",
+});
 
 // "What We Do" image cards — Frontier "Products & Services" pattern
 const pillarCards = [

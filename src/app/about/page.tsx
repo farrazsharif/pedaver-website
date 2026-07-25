@@ -1,5 +1,13 @@
 import dict from "@/lib/dictionaries";
 import Section from "@/components/Section";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "About Pedaver — The Science Behind PQNK",
+  description:
+    "Pedaver is rebuilding production agriculture around PQNK: a natural ecosystem science that cuts input cost and restores soil health across Food, Feed, Fiber and Bio-Fuel crops.",
+  path: "/about",
+});
 
 export default function AboutPage() {
   return (

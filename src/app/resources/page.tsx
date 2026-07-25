@@ -1,6 +1,14 @@
 import dict from "@/lib/dictionaries";
 import { resources } from "@/lib/content/resources";
 import Section from "@/components/Section";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "PQNK Core Techniques — Hardpan, Raised Beds, Jantar & Mulch",
+  description:
+    "The six core PQNK techniques explained once: breaking the hardpan, correcting soil chemistry, raised beds, Jantar cover cropping, mulch planting, and moisture management.",
+  path: "/resources",
+});
 
 export default function ResourcesPage() {
   return (

@@ -10,6 +10,7 @@ export default function Footer({ dict }: { dict: Dictionary }) {
     { label: dict.nav.founder, href: "/founder" },
     { label: dict.nav.crops, href: "/crops" },
     { label: dict.nav.resources, href: "/resources" },
+    { label: dict.nav.papers, href: "/papers" },
   ];
 
   const workLinks = [

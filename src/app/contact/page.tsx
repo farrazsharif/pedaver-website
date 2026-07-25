@@ -1,6 +1,14 @@
 import dict from "@/lib/dictionaries";
 import Section from "@/components/Section";
 import ContactForm from "@/components/ContactForm";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Contact Pedaver — Get in Touch About PQNK",
+  description:
+    "Have a question about PQNK for your crop, region or farm size? Reach Pedaver by email or WhatsApp.",
+  path: "/contact",
+});
 
 export default function ContactPage() {
   return (

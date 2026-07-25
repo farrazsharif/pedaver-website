@@ -4,6 +4,7 @@ import "./globals.css";
 import dict from "@/lib/dictionaries";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { SITE_URL, SITE_NAME } from "@/lib/seo";
 
 // Display: a grounded slab serif for headings. Body: a warm humanist sans.
 const bitter = Bitter({
@@ -22,10 +23,32 @@ export const metadata: Metadata = {
   description: dict.meta.tagline,
 };
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: SITE_NAME,
+  url: SITE_URL,
+  logo: `${SITE_URL}/images/pedaver-logo-glow.png`,
+  description: dict.meta.tagline,
+  founder: {
+    "@type": "Person",
+    name: "Asif Sharif",
+  },
+  sameAs: [
+    "https://www.facebook.com/Pedaver",
+    "https://www.youtube.com/@pedaverpqnk3167/videos",
+    "https://www.youtube.com/@aasifsharif",
+  ],
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" dir="ltr" className={`${bitter.variable} ${hanken.variable}`}>
       <body className="flex min-h-screen flex-col bg-cream text-ink antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
         <Header dict={dict} />
         <main className="flex-1">{children}</main>
         <Footer dict={dict} />

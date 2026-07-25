@@ -11,6 +11,7 @@ const en = {
     crops: "Crops & Solutions",
     allCrops: "All Crops",
     resources: "Resources",
+    papers: "Knowledge Papers",
     videos: "Videos",
     farmerStories: "Farmer Stories",
     certification: "Certification",
@@ -176,6 +177,16 @@ const en = {
     pageTitle: "Resources",
     pageSubtitle:
       "The core PQNK techniques that recur across every crop guide, explained once, in depth, so you don't have to piece them together crop by crop.",
+  },
+  papers: {
+    pageTitle: "Knowledge Papers",
+    pageSubtitle:
+      "In-depth research papers behind PQNK: the science, the engineering, and the field evidence, published regularly as our work develops.",
+    readAbstract: "Read the Abstract",
+    downloadPdf: "Download the Full Paper (PDF)",
+    keyTakeawaysTitle: "Key Takeaways",
+    publishedLabel: "Published",
+    backToAll: "Back to all papers",
   },
   cropDetail: {
     overviewTitle: "Overview",

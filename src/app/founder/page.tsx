@@ -1,5 +1,14 @@
 import dict from "@/lib/dictionaries";
 import Section from "@/components/Section";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Asif Sharif — Founder Chairman of Pedaver and Architect of PQNK",
+  description:
+    "Meet Asif Sharif, the engineer behind PQNK — designer of the VIPP and SIPP no-till planters and the raised-bed system driving Pedaver's regenerative farms.",
+  path: "/founder",
+  image: "https://pedaver.com/images/asif-sharif.png",
+});
 
 export default function FounderPage() {
   return (
