@@ -29,10 +29,10 @@ export const highlights: Highlight[] = [
     cta: "Read the guide",
   },
   {
-    slug: "certification-open",
+    slug: "validation-open",
     image: "/images/beds-prepared.jpg",
-    href: "/certification",
-    title: "PQNK Certification is open for verified growers",
+    href: "/validation",
+    title: "PQNK Validation is open for verified growers",
     cta: "Learn more",
   },
   {

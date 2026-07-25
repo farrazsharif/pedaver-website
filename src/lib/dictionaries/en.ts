@@ -14,11 +14,10 @@ const en = {
     papers: "Knowledge Papers",
     videos: "Videos",
     farmerStories: "Farmer Stories",
-    certification: "Certification",
+    validation: "Validation",
     contact: "Contact",
     searchLabel: "Search",
     searchPlaceholder: "Search crops…",
-    getCertified: "Get Certified",
     menuLabel: "Menu",
   },
   home: {
@@ -95,7 +94,7 @@ const en = {
       cta: "Explore the science",
     },
     portalTitle: "One system, verified",
-    portalBody: "PQNK Certification confirms that a plot is genuinely following PQNK practice, not just borrowing the name.",
+    portalBody: "PQNK Validation confirms that a plot is genuinely following PQNK practice, not just borrowing the name.",
     portalCta: "Learn more",
     updatesTitle: "Latest From PQNK",
     updatesSubtitle: "Real results, documented crop by crop",
@@ -209,21 +208,21 @@ const en = {
     pageSubtitle: "PQNK is proven acre by acre. Here are a few of the growers documenting it themselves.",
     viewCrop: "View this crop",
   },
-  certification: {
-    pageTitle: "PQNK Certification",
-    pageSubtitle: "A validated process for confirming genuine PQNK practice.",
+  validation: {
+    pageTitle: "PQNK Validation",
+    pageSubtitle: "A validation process for confirming genuine PQNK practice.",
     sections: [
       {
-        title: "Why Certification Matters",
-        body: "As PQNK spreads across more farms and crops, certification protects the integrity of the system. It gives buyers, partners and farmers themselves a way to confirm that a plot is genuinely following PQNK practice, not just borrowing the name.",
+        title: "Why Validation Matters",
+        body: "As PQNK spreads across more farms and crops, validation protects the integrity of the system. It gives buyers, partners and farmers themselves a way to confirm that a plot is genuinely following PQNK practice, not just borrowing the name.",
       },
       {
         title: "The Validation Process",
-        body: "Pedaver maintains a documented PQNK Validation Process, developed to assess whether a farm's practices meet the standard before it can be recognized as PQNK-certified.",
+        body: "Pedaver maintains a documented PQNK Validation Process, developed to assess whether a farm's practices meet the standard before it can be recognized as PQNK-validated.",
       },
       {
-        title: "Getting Certified",
-        body: "If you are running PQNK on your land and want to pursue certification, reach out to our team and we'll walk you through what the validation process involves for your crop and farm size.",
+        title: "Getting Validated",
+        body: "If you are running PQNK on your land and want to pursue validation, reach out to our team and we'll walk you through what the validation process involves for your crop and farm size.",
       },
     ],
     cta: "Start the Conversation",

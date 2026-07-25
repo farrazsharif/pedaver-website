@@ -21,7 +21,7 @@ export const metadata = buildMetadata({
 const pillarCards = [
   { image: "/images/wheat-heads.jpg", href: "/crops" },
   { image: "/images/beds-prepared.jpg", href: "/resources" },
-  { image: "/images/peaches.jpg", href: "/certification" },
+  { image: "/images/peaches.jpg", href: "/validation" },
 ];
 
 const updateSlugs = ["sugarcane", "onion-garlic", "wheat"];
@@ -220,14 +220,14 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* Certification highlight band (MyFarm-style) */}
+      {/* Validation highlight band (MyFarm-style) */}
       <Section>
         <div className="grid items-stretch overflow-hidden rounded-3xl border border-border bg-primary-dark text-cream md:grid-cols-2">
           <div className="flex flex-col justify-center p-8 sm:p-12">
             <h2 className="text-2xl font-bold sm:text-3xl">{dict.home.portalTitle}</h2>
             <p className="mt-4 max-w-md text-cream/80">{dict.home.portalBody}</p>
             <Link
-              href="/certification"
+              href="/validation"
               className="mt-7 inline-block w-fit rounded-full bg-accent px-7 py-3 text-sm font-semibold text-ink shadow-sm transition hover:bg-accent-light"
             >
               {dict.home.portalCta}

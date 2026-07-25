@@ -7,7 +7,7 @@ export interface NavItem {
     | "resources"
     | "videos"
     | "farmerStories"
-    | "certification"
+    | "validation"
     | "contact";
   path: string;
 }
@@ -20,6 +20,6 @@ export const navItems: NavItem[] = [
   { key: "resources", path: "/resources" },
   { key: "videos", path: "/videos" },
   { key: "farmerStories", path: "/farmer-stories" },
-  { key: "certification", path: "/certification" },
+  { key: "validation", path: "/validation" },
   { key: "contact", path: "/contact" },
 ];
