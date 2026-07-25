@@ -32,18 +32,6 @@
   --font-heading: var(--font-heading);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #10160f;
-    --foreground: #ece7d9;
-    --color-card: #1a2318;
-    --color-border: #2a3327;
-    --color-ink: #ece7d9;
-    --color-ink-soft: #b9bfae;
-    --color-cream: #10160f;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
