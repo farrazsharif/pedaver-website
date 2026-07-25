@@ -129,7 +129,7 @@ export default function HomePage() {
               <div className="h-48 w-full overflow-hidden">
                 <img
                   src={pillarCards[i].image}
-                  alt=""
+                  alt={pillar.title}
                   className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
                 />
               </div>
@@ -201,7 +201,7 @@ export default function HomePage() {
               <div className="h-44 w-full overflow-hidden">
                 <img
                   src={cropImages[crop.slug]}
-                  alt=""
+                  alt={crop.name}
                   className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
                 />
               </div>
@@ -264,7 +264,7 @@ export default function HomePage() {
               <div className="relative h-44 w-full overflow-hidden">
                 <img
                   src={cropImages[crop.slug]}
-                  alt=""
+                  alt={crop.name}
                   className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
                 />
                 <span className="absolute left-3 top-3 rounded-full bg-accent px-3 py-1 text-xs font-bold uppercase tracking-wide text-ink">

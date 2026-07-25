@@ -16,7 +16,7 @@ export const highlights: Highlight[] = [
   },
   {
     slug: "sugarcane-tillers",
-    image: "/images/wheat-field.jpg",
+    image: "/images/young-crop-beds.jpg",
     href: "/crops/sugarcane",
     title: "47 tillers from a single bud, filmed in the field",
     cta: "See the results",
@@ -30,7 +30,7 @@ export const highlights: Highlight[] = [
   },
   {
     slug: "certification-open",
-    image: "/images/young-crop-beds.jpg",
+    image: "/images/beds-prepared.jpg",
     href: "/certification",
     title: "PQNK Certification is open for verified growers",
     cta: "Learn more",

@@ -33,7 +33,7 @@ export default function PapersPage() {
                 <div className="h-44 w-full overflow-hidden">
                   <img
                     src={paper.heroImage}
-                    alt=""
+                    alt={paper.title}
                     className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
                   />
                 </div>

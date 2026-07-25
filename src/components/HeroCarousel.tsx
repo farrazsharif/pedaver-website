@@ -23,7 +23,7 @@ export default function HeroCarousel() {
         <img
           key={slide.slug}
           src={slide.image}
-          alt=""
+          alt={slide.title}
           className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
             i === active ? "opacity-100" : "opacity-0"
           }`}
