@@ -3,6 +3,8 @@ import { crops } from "@/lib/content/crops";
 import { papers } from "@/lib/content/papers";
 import { SITE_URL } from "@/lib/seo";
 
+export const dynamic = "force-static";
+
 const staticPages = [
   "",
   "/about",
