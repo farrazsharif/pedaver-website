@@ -102,13 +102,6 @@ export default function Header({ dict }: { dict: Dictionary }) {
               {dict.nav.contact}
             </Link>
 
-            <Link
-              href="/certification"
-              className="hidden rounded-full bg-accent px-5 py-2 text-sm font-semibold text-ink shadow-sm transition hover:bg-accent-light sm:inline-block"
-            >
-              {dict.nav.getCertified}
-            </Link>
-
             <button
               type="button"
               onClick={() => setMobileOpen((v) => !v)}
@@ -226,13 +219,6 @@ export default function Header({ dict }: { dict: Dictionary }) {
                 )}
               </div>
             ))}
-            <Link
-              href="/certification"
-              onClick={() => setMobileOpen(false)}
-              className="mt-4 block rounded-full bg-accent px-5 py-3 text-center text-sm font-semibold text-ink"
-            >
-              {dict.nav.getCertified}
-            </Link>
           </nav>
         </div>
       )}
