@@ -4,6 +4,19 @@ export interface VideoEntry {
   channel: "official" | "founder";
 }
 
+/**
+ * A video hosted on someone else's YouTube channel (e.g. a farmer's own
+ * testimonial video). Because the player is a plain YouTube iframe embed,
+ * any public video ID can be played directly on-page regardless of who
+ * uploaded it — this just needs the source channel name/URL for credit.
+ */
+export interface ExternalVideoEntry {
+  videoId: string;
+  title: string;
+  sourceName: string;
+  sourceUrl: string;
+}
+
 export const officialChannel = {
   name: "PedaVer PQNK",
   handle: "@pedaverpqnk3167",

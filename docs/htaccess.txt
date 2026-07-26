@@ -4,6 +4,9 @@
 # Custom 404 page
 ErrorDocument 404 /404.html
 
+# Farmer Stories was merged into the Knowledge & Testimonials page
+RedirectMatch 301 ^/farmer-stories/?$ /videos/
+
 # Cache static assets aggressively (they are content-hashed by Next)
 <IfModule mod_expires.c>
   ExpiresActive On

@@ -22,7 +22,7 @@ export default function ServicesPage() {
       </section>
 
       <Section>
-        <div className="mx-auto max-w-3xl rounded-2xl border border-primary-light/40 bg-primary-light/10 p-8">
+        <div id="free-knowledge" className="mx-auto max-w-3xl rounded-2xl border border-primary-light/40 bg-primary-light/10 p-8 scroll-mt-24">
           <h2 className="text-2xl font-bold text-primary-dark">{dict.services.freeTitle}</h2>
           <div className="mt-4 flex flex-col gap-3">
             {dict.services.freeBody.map((paragraph, idx) => (

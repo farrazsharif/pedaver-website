@@ -4,6 +4,10 @@ export interface FarmerStory {
   role: string;
   quote: string;
   cropSlug?: string;
+  /** Optional: a YouTube video ID of this farmer telling their own story, from any channel. */
+  videoId?: string;
+  videoSourceName?: string;
+  videoSourceUrl?: string;
 }
 
 export const farmerStories: FarmerStory[] = [
