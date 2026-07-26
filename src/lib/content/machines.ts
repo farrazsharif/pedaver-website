@@ -8,6 +8,7 @@ export interface Machine {
 export const machinePhilosophy: string[] = [
   "A century of agricultural engineering optimized machines for how much soil they could move, plough, or pulverize. PQNK asks a different question of every machine: does it strengthen ecological function, or weaken it? Misapplied machinery, not mechanization itself, is what degrades a field.",
   "PQNK machinery therefore splits into two families. Transition machinery corrects damage inherited from conventional farming, hardpan compaction, unstructured fields, and is designed to be used once, or as rarely as possible. Maintenance machinery supports an ecosystem that is already functioning, planting, mulching, and light upkeep, and its footprint shrinks year after year as the field increasingly does its own work.",
+  "This maps directly onto PQNK's transition sequence. Transition machinery is what physically drives a field out of ACI (Ancient Conventional Industrial) degradation and into the regenerative phase, breaking the hardpan, shaping the permanent beds. Maintenance machinery is what a field needs once it reaches the closed-loop, self-sustaining state, and even that need keeps shrinking as the ecosystem takes over its own upkeep.",
 ];
 
 export const machines: Machine[] = [

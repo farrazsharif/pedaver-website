@@ -163,6 +163,34 @@ export default function HomePage() {
         </div>
       </Section>
 
+      {/* The PQNK Transition — ACI → Regenerative → Closed-Loop */}
+      <Section muted>
+        <div className="mx-auto max-w-2xl text-center">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">{dict.home.journeyEyebrow}</p>
+          <h2 className="mt-3 text-3xl font-bold text-primary-dark">{dict.home.journeyTitle}</h2>
+          <p className="mt-4 text-ink-soft">{dict.home.journeySubtitle}</p>
+        </div>
+        <div className="relative mt-12 grid gap-6 md:grid-cols-3">
+          <div
+            aria-hidden="true"
+            className="absolute left-0 right-0 top-14 hidden h-0.5 bg-border md:block"
+            style={{ marginLeft: "16.67%", marginRight: "16.67%" }}
+          />
+          {dict.home.journeyStages.map((stage, i) => (
+            <div key={stage.title} className="relative rounded-2xl border border-border bg-card p-6">
+              <div className="flex items-center gap-3">
+                <div className="flex h-9 w-9 flex-none items-center justify-center rounded-full bg-primary text-sm font-bold text-cream">
+                  {i + 1}
+                </div>
+                <p className="text-xs font-semibold uppercase tracking-wide text-accent">{stage.label}</p>
+              </div>
+              <h3 className="mt-4 text-lg font-bold text-primary-dark">{stage.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-ink-soft">{stage.body}</p>
+            </div>
+          ))}
+        </div>
+      </Section>
+
       {/* Editorial pull-quote — the PQNK field principle */}
       <Section muted className="!py-12">
         <figure className="mx-auto max-w-3xl text-center">

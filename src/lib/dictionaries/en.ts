@@ -42,6 +42,27 @@ const en = {
       "Instead of treating soil as a growing medium to be dosed with synthetic inputs, PQNK works with the rhizosphere, soil microbiology and plant energy cycles to rebuild productive soil, cut input costs and improve fruit and grain quality.",
       "The result, documented across hundreds of farmer videos: lower cost of production, stronger plants, and produce that keeps longer, all without abandoning commercial-scale output.",
     ],
+    journeyEyebrow: "The PQNK Transition",
+    journeyTitle: "From a Degraded Field to a Self-Sustaining System",
+    journeySubtitle:
+      "Every PQNK conversion follows the same fixed sequence, regardless of crop: a degraded starting point, an active regenerative phase, and a permanent closed-loop end state.",
+    journeyStages: [
+      {
+        label: "Stage 1",
+        title: "ACI — Ancient Conventional Industrial",
+        body: "The starting condition on nearly every field Pedaver takes on: decades of repeated tillage and synthetic fertilizer that have compacted the subsoil into a hardpan and stripped the soil of biological life. Yield holds only as long as the inputs keep coming, and the cost of holding it there keeps climbing.",
+      },
+      {
+        label: "Stage 2",
+        title: "Regenerative Phase",
+        body: "PQNK's active transition: the hardpan is fractured once, permanent raised beds are formed, Jantar cover cropping and organic mulch rebuild soil biology, and no-till planting through the mulch, via the SIPP and VIPP planters, lets the field recover, season by season, without repeating the disturbance.",
+      },
+      {
+        label: "Stage 3",
+        title: "Closed-Loop, Self-Sustaining State",
+        body: "The ultimate sustained state PQNK is built to reach: no external fertilizer, pesticide, or amendment enters the field again after the transition. Fertility, pest management, and water regulation are handled internally, by the restored ecosystem itself, indefinitely.",
+      },
+    ],
     flagshipTitle: "PQNK in the Field",
     flagshipSubtitle: "A system proven across staple, cash and orchard crops",
     videoSectionTitle: "See PQNK in Action",
@@ -129,6 +150,7 @@ const en = {
     philosophyTitle: "Conventional Agriculture is Bankrupt: Ecologically, Economically, Nutritionally",
     philosophyBody: [
       "That is Pedaver's starting premise, and PQNK is offered as the way out: a mulched bed, a set of long-held farming myths retested, and outcomes measured in the field rather than in theory.",
+      "PQNK moves every field through the same fixed sequence: out of ACI (Ancient Conventional Industrial) degradation, through an active regenerative phase of hardpan-breaking, raised beds and mulch-built soil biology, and into a closed-loop, self-sustaining state where no external input is needed again.",
       "Our knowledge papers go further, examining the looming convergence of oil and food crises, the neglected potential of Pakistan's agricultural economy, and how ecosystem health changes the value of what a farm produces, from milk to fabric.",
     ],
   },
@@ -182,6 +204,8 @@ const en = {
     pageTitle: "Services",
     pageSubtitle:
       "From barren land to a profitable production unit: Pedaver's paid advisory services for turning PQNK's regenerative system into a working farm, built on the lowest cost of production and the highest quality output.",
+    paidIntroNote:
+      "These services carry a field through PQNK's full transition, out of ACI (Ancient Conventional Industrial) degradation, through the regenerative phase, to a closed-loop, self-sustaining state.",
     freeTitle: "PQNK Knowledge Is Free & Open Source",
     freeBody: [
       "PQNK itself is not for sale. The knowledge, the science, and the field-tested method are free and open source, published for any farmer, anywhere, to read, learn, and apply without cost or commercial obligation.",

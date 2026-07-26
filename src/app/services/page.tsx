@@ -55,6 +55,7 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-2xl font-bold text-primary-dark">{dict.services.paidTitle}</h2>
           <p className="mx-auto mt-2 max-w-xl text-ink-soft">{dict.services.paidBody}</p>
+          <p className="mx-auto mt-2 max-w-xl text-sm text-ink-soft">{dict.services.paidIntroNote}</p>
         </div>
       </Section>
 
