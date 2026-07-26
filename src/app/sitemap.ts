@@ -13,6 +13,7 @@ const staticPages = [
   "/resources",
   "/papers",
   "/services",
+  "/machines",
   "/validation",
   "/videos",
   "/farmer-stories",

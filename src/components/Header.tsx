@@ -44,6 +44,7 @@ export default function Header({ dict }: { dict: Dictionary }) {
     },
     { label: dict.nav.papers, href: "/papers" },
     { label: dict.nav.services, href: "/services" },
+    { label: dict.nav.machines, href: "/machines" },
     { label: dict.nav.videos, href: "/videos" },
     { label: dict.nav.farmerStories, href: "/farmer-stories" },
     { label: dict.nav.validation, href: "/validation" },

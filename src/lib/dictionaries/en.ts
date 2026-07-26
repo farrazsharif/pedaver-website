@@ -13,6 +13,7 @@ const en = {
     resources: "Resources",
     papers: "Knowledge Papers",
     services: "Services",
+    machines: "PQNK Machines",
     videos: "Videos",
     farmerStories: "Farmer Stories",
     validation: "Validation",
@@ -185,6 +186,17 @@ const en = {
     ctaTitle: "Ready to talk about your land?",
     ctaBody: "Tell us about your acreage, crop, and goals, and we'll walk you through how these services apply to your farm.",
     ctaButton: "Contact Pedaver",
+  },
+  machines: {
+    pageTitle: "PQNK Machines",
+    pageSubtitle:
+      "The engineering side of PQNK: why breaking the hardpan matters, how permanent raised beds are built to last, and how the SIPP and VIPP planters plant directly through thick organic mulch.",
+    philosophyTitle: "Machinery Built to Serve the Ecosystem",
+    paperTitle: "Read the Full Engineering Paper",
+    paperBody:
+      "The Evolution of Seed Placement traces why planter engineering perfected the seed meter but never solved the seed opener, and lays out the field-documented case for SIPP and VIPP in full.",
+    paperButton: "Read the Knowledge Paper",
+    ctaButton: "Talk to Pedaver",
   },
   papers: {
     pageTitle: "Knowledge Papers",
