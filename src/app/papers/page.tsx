@@ -12,6 +12,8 @@ export const metadata = buildMetadata({
 });
 
 export default function PapersPage() {
+  const sortedPapers = [...papers].sort((a, b) => a.title.localeCompare(b.title));
+
   return (
     <div>
       <section className="border-b border-border bg-primary-light/10">
@@ -22,6 +24,22 @@ export default function PapersPage() {
       </section>
 
       <Section>
+        <div className="mx-auto max-w-4xl rounded-2xl border border-border bg-card p-8 shadow-sm">
+          <h2 className="text-xl font-bold text-primary-dark">{dict.papers.tocTitle}</h2>
+          <p className="mt-1 text-sm text-ink-soft">{dict.papers.tocSubtitle}</p>
+          <ol className="mt-5 columns-1 gap-x-8 sm:columns-2 lg:columns-3">
+            {sortedPapers.map((paper, idx) => (
+              <li key={paper.slug} className="mb-2 break-inside-avoid text-sm leading-snug">
+                <Link href={`/papers/${paper.slug}`} className="text-ink-soft hover:text-accent">
+                  <span className="text-ink-soft/60">{idx + 1}.</span> {paper.title}
+                </Link>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </Section>
+
+      <Section muted>
         <div className="grid gap-6 md:grid-cols-2">
           {papers.map((paper) => (
             <Link

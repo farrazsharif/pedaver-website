@@ -5,9 +5,9 @@ import Section from "@/components/Section";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Services — Broad-Acre Design, Staff Training, Production Management & Validation",
+  title: "Services — Free PQNK Knowledge & Paid Advisory Services",
   description:
-    "Pedaver's paid services: broad-acre PQNK project design & development, staff selection & training, production management, and produce validation & placement — turning barren land into a profitable PQNK production unit.",
+    "PQNK knowledge is free and open source, with free workshops, YouTube, Facebook, and WhatsApp learning groups. Pedaver also offers paid advisory services: broad-acre PQNK project design & development, staff selection & training, production management, and produce validation & placement.",
   path: "/services",
 });
 
@@ -20,6 +20,43 @@ export default function ServicesPage() {
           <p className="mx-auto mt-5 max-w-2xl text-lg text-ink-soft">{dict.services.pageSubtitle}</p>
         </div>
       </section>
+
+      <Section>
+        <div className="mx-auto max-w-3xl rounded-2xl border border-primary-light/40 bg-primary-light/10 p-8">
+          <h2 className="text-2xl font-bold text-primary-dark">{dict.services.freeTitle}</h2>
+          <div className="mt-4 flex flex-col gap-3">
+            {dict.services.freeBody.map((paragraph, idx) => (
+              <p key={idx} className="leading-relaxed text-ink-soft">
+                {paragraph}
+              </p>
+            ))}
+          </div>
+          <h3 className="mt-6 text-sm font-semibold uppercase tracking-wide text-primary-dark">
+            {dict.services.freeChannelsTitle}
+          </h3>
+          <ul className="mt-3 flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-x-6 sm:gap-y-2">
+            {dict.services.freeChannels.map((channel) => (
+              <li key={channel.href}>
+                <a
+                  href={channel.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-semibold text-accent hover:text-accent-light"
+                >
+                  {channel.label} →
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </Section>
+
+      <Section muted>
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="text-2xl font-bold text-primary-dark">{dict.services.paidTitle}</h2>
+          <p className="mx-auto mt-2 max-w-xl text-ink-soft">{dict.services.paidBody}</p>
+        </div>
+      </Section>
 
       <Section>
         <div className="mx-auto flex max-w-3xl flex-col gap-10">

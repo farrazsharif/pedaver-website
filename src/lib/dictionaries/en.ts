@@ -182,7 +182,21 @@ const en = {
   services: {
     pageTitle: "Services",
     pageSubtitle:
-      "From barren land to a profitable production unit: Pedaver's paid services for turning PQNK's regenerative system into a working farm, built on the lowest cost of production and the highest quality output.",
+      "From barren land to a profitable production unit: Pedaver's paid advisory services for turning PQNK's regenerative system into a working farm, built on the lowest cost of production and the highest quality output.",
+    freeTitle: "PQNK Knowledge Is Free & Open Source",
+    freeBody: [
+      "PQNK itself is not for sale. The knowledge, the science, and the field-tested method are free and open source, published for any farmer, anywhere, to read, learn, and apply without cost or commercial obligation.",
+      "Pedaver's farmer education runs entirely free of charge. Beyond our YouTube and Facebook channels, we run free training workshops in the field and host several active WhatsApp PQNK learning groups, where farmers bring real questions from their own land and get direct answers.",
+    ],
+    freeChannelsTitle: "Free Learning Channels",
+    freeChannels: [
+      { label: "YouTube — PedaVer PQNK (official)", href: "https://www.youtube.com/@pedaverpqnk3167/videos" },
+      { label: "YouTube — Asif Sharif (founder)", href: "https://www.youtube.com/@aasifsharif" },
+      { label: "Facebook — Pedaver", href: "https://www.facebook.com/Pedaver" },
+      { label: "WhatsApp PQNK learning groups", href: "https://wa.me/923206776666" },
+    ],
+    paidTitle: "Paid Advisory Services",
+    paidBody: "For growers and investors who want Pedaver directly involved in building and running a PQNK operation, we also offer the following paid services.",
     ctaTitle: "Ready to talk about your land?",
     ctaBody: "Tell us about your acreage, crop, and goals, and we'll walk you through how these services apply to your farm.",
     ctaButton: "Contact Pedaver",
@@ -202,6 +216,8 @@ const en = {
     pageTitle: "Knowledge Papers",
     pageSubtitle:
       "In-depth research papers behind PQNK: the science, the engineering, and the field evidence, published regularly as our work develops.",
+    tocTitle: "Table of Contents",
+    tocSubtitle: "Jump directly to any paper, listed alphabetically.",
     readAbstract: "Read the Abstract",
     downloadPdf: "Download the Full Paper (PDF)",
     keyTakeawaysTitle: "Key Takeaways",
