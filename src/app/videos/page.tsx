@@ -104,7 +104,7 @@ export default function VideosPage() {
       </Section>
 
       {workshopVideos.length > 0 && (
-        <Section muted>
+        <Section muted className="scroll-mt-24" id="workshops">
           <h2 className="text-2xl font-bold text-primary-dark">{dict.videos.workshopsTitle}</h2>
           <p className="mt-1 text-ink-soft">{dict.videos.workshopsSubtitle}</p>
           <div className="mt-8 grid gap-6 md:grid-cols-3">
