@@ -25,6 +25,7 @@ export default function Header({ dict }: { dict: Dictionary }) {
   const [query, setQuery] = useState("");
 
   const groups: NavGroup[] = [
+    { label: dict.nav.home, href: "/" },
     {
       label: dict.nav.aboutGroup,
       href: "/about",
