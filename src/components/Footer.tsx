@@ -15,6 +15,7 @@ export default function Footer({ dict }: { dict: Dictionary }) {
   ];
 
   const workLinks = [
+    { label: dict.nav.services, href: "/services" },
     { label: dict.nav.videos, href: "/videos" },
     { label: dict.nav.validation, href: "/validation" },
     { label: dict.nav.contact, href: "/contact" },

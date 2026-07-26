@@ -12,6 +12,7 @@ const en = {
     allCrops: "All Crops",
     resources: "Resources",
     papers: "Knowledge Papers",
+    services: "Services",
     videos: "Videos",
     farmerStories: "Farmer Stories",
     validation: "Validation",
@@ -176,6 +177,14 @@ const en = {
     pageTitle: "Resources",
     pageSubtitle:
       "The core PQNK techniques that recur across every crop guide, explained once, in depth, so you don't have to piece them together crop by crop.",
+  },
+  services: {
+    pageTitle: "Services",
+    pageSubtitle:
+      "From barren land to a profitable production unit: Pedaver's paid services for turning PQNK's regenerative system into a working farm, built on the lowest cost of production and the highest quality output.",
+    ctaTitle: "Ready to talk about your land?",
+    ctaBody: "Tell us about your acreage, crop, and goals, and we'll walk you through how these services apply to your farm.",
+    ctaButton: "Contact Pedaver",
   },
   papers: {
     pageTitle: "Knowledge Papers",
