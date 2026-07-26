@@ -58,12 +58,18 @@ export default function HomePage() {
             <h2 className="mt-5 text-6xl font-extrabold leading-none tracking-tight sm:text-8xl">
               {dict.home.pqnk.title}
             </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg font-semibold text-cream sm:text-xl">
+              {dict.home.pqnk.tagline}
+            </p>
             <p className="mt-5 text-xs font-semibold uppercase tracking-[0.2em] text-cream/60">
               {dict.home.pqnk.fullName}
             </p>
             <p className="mt-2 italic text-accent-light">{dict.home.pqnk.pronunciation}</p>
-            <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-cream/85">
+            <p className="mx-auto mt-8 max-w-2xl text-lg font-semibold leading-relaxed text-accent-light">
               {dict.home.pqnk.statement}
+            </p>
+            <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-cream/85">
+              {dict.home.pqnk.statementBody}
             </p>
           </div>
 

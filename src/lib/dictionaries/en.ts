@@ -95,9 +95,11 @@ const en = {
     pqnk: {
       eyebrow: "The Science of Natural Farming",
       title: "PQNK",
+      tagline: "The Natural Ecosystem Science of Production Agriculture",
       fullName: "Paedar Qudratti Nizam Kashatqari",
       pronunciation: "Pronounced “picnic” — the Sustainable Natural System of Cultivation",
-      statement:
+      statement: "Nature's Wisdom for Abundant and Nutrient-Dense Food Production by Rebuilding Living Soil",
+      statementBody:
         "PQNK is not a product you buy. It is a living system you build: soil so alive it feeds your crops season after season, with no synthetic inputs, and produce that is more nutritious for it.",
       principlesTitle: "Five moves, every bed",
       principles: [
