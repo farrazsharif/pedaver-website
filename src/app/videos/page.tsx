@@ -54,30 +54,42 @@ export default function VideosPage() {
         <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6">
           <h1 className="text-4xl font-extrabold text-primary-dark">{dict.videos.pageTitle}</h1>
           <p className="mx-auto mt-5 max-w-2xl text-lg text-ink-soft">{dict.videos.pageSubtitle}</p>
-          <div className="mx-auto mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm font-semibold">
+          <p className="mx-auto mt-6 text-xs font-semibold uppercase tracking-wide text-ink-soft">
+            {dict.videos.followTitle}
+          </p>
+          <div className="mx-auto mt-3 flex flex-wrap items-center justify-center gap-3">
+            <a
+              href="https://www.facebook.com/Pedaver"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm font-semibold text-primary-dark shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-accent">
+                <path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.3V13h2.6v8h3.6z" />
+              </svg>
+              {dict.videos.facebookLabel}
+            </a>
             <a
               href={officialChannel.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-accent hover:text-accent-light"
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm font-semibold text-primary-dark shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
             >
-              YouTube — {officialChannel.name} →
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-accent">
+                <path d="M23 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.7-1.7C19.4 5.2 12 5.2 12 5.2s-7.4 0-8.9.4A2.5 2.5 0 0 0 1.4 7.3C1 8.8 1 12 1 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.7 1.7c1.5.4 8.9.4 8.9.4s7.4 0 8.9-.4a2.5 2.5 0 0 0 1.7-1.7C23 15.2 23 12 23 12zM9.8 15.3V8.7l5.7 3.3-5.7 3.3z" />
+              </svg>
+              YouTube — {officialChannel.name}
             </a>
             <a
               href={founderChannel.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-accent hover:text-accent-light"
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm font-semibold text-primary-dark shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
             >
-              YouTube — {founderChannel.name} →
-            </a>
-            <a
-              href="https://www.facebook.com/Pedaver"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-accent hover:text-accent-light"
-            >
-              {dict.videos.facebookLabel} →
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-accent">
+                <path d="M23 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.7-1.7C19.4 5.2 12 5.2 12 5.2s-7.4 0-8.9.4A2.5 2.5 0 0 0 1.4 7.3C1 8.8 1 12 1 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.7 1.7c1.5.4 8.9.4 8.9.4s7.4 0 8.9-.4a2.5 2.5 0 0 0 1.7-1.7C23 15.2 23 12 23 12zM9.8 15.3V8.7l5.7 3.3-5.7 3.3z" />
+              </svg>
+              YouTube — {founderChannel.name}
             </a>
           </div>
         </div>
