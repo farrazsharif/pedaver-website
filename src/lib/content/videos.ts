@@ -33,6 +33,16 @@ export const founderChannel = {
   videoCount: "621",
 };
 
+/** Workshop / event videos not tied to a specific tracked channel. */
+export const workshopVideos: ExternalVideoEntry[] = [
+  {
+    videoId: "95R-Ah83lI0",
+    title: "Sahiwal Farmers Workshop — PQNK Old & New Farmers",
+    sourceName: "YouTube",
+    sourceUrl: "https://www.youtube.com/watch?v=95R-Ah83lI0",
+  },
+];
+
 export const videos: VideoEntry[] = [
   {
     videoId: "T03n8FqZ-eg",

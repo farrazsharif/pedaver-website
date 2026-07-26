@@ -1,6 +1,6 @@
 import Link from "next/link";
 import dict from "@/lib/dictionaries";
-import { videos, officialChannel, founderChannel } from "@/lib/content/videos";
+import { videos, officialChannel, founderChannel, workshopVideos } from "@/lib/content/videos";
 import { farmerStories } from "@/lib/content/farmers";
 import Section from "@/components/Section";
 import VideoEmbed from "@/components/VideoEmbed";
@@ -103,7 +103,30 @@ export default function VideosPage() {
         </div>
       </Section>
 
-      <Section muted>
+      {workshopVideos.length > 0 && (
+        <Section muted>
+          <h2 className="text-2xl font-bold text-primary-dark">{dict.videos.workshopsTitle}</h2>
+          <p className="mt-1 text-ink-soft">{dict.videos.workshopsSubtitle}</p>
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
+            {workshopVideos.map((video) => (
+              <div key={video.videoId}>
+                <VideoEmbed videoId={video.videoId} title={video.title} />
+                <p className="mt-3 text-sm font-medium text-ink">{video.title}</p>
+                <a
+                  href={video.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-1 inline-block text-xs font-semibold text-accent hover:text-accent-light"
+                >
+                  {dict.videos.watchOn} {video.sourceName} →
+                </a>
+              </div>
+            ))}
+          </div>
+        </Section>
+      )}
+
+      <Section>
         <h2 className="text-2xl font-bold text-primary-dark">{dict.videos.testimonialsTitle}</h2>
         <p className="mt-1 text-ink-soft">{dict.videos.testimonialsSubtitle}</p>
         <div className="mt-8 grid gap-6 md:grid-cols-2">
