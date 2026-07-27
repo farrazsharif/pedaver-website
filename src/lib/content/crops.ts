@@ -260,9 +260,9 @@ export const crops: Crop[] = [
     slug: "castor",
     flagship: false,
     name: "Castor",
-    blurb: "High-density bio-fuel crop, delivering 6–12 harvests from a single 3–5 year planting.",
+    blurb: "High-density medicinal crop, delivering 6–12 harvests from a single 3–5 year planting.",
     overview:
-      "High-Density (HD) Castor is grown under PQNK as both a cash crop and a soil regenerator — its deep taproot and continuous biomass production stimulate microbial activity while producing the seed used in Pedaver's bio-fuel work.",
+      "High-Density (HD) Castor is grown under PQNK as both a cash crop and a soil regenerator — its deep taproot and continuous biomass production stimulate microbial activity while producing the seed pressed for castor oil, a traditional healthcare remedy used for generations.",
     practices: [
       "Standard PQNK land conversion: hardpan broken, soil chemistry corrected where pH exceeds 8, permanent raised beds built, Jantar grown and mulched, no-till planting",
       "9,000–12,000 plants per acre — a density that sustains deep, healthy root systems and lower pest pressure rather than forcing growth",

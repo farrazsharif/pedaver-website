@@ -74,8 +74,8 @@ export const cropSeo: Record<string, { title: string; description: string }> = {
     description: "Bamboo under PQNK: 60 to 100 years of productive life from one planting, at 6 to 15 tons of biomass per acre per year.",
   },
   castor: {
-    title: "Castor Under PQNK — High-Density Bio-Fuel Crop | Pedaver",
-    description: "High-density castor under PQNK, delivering 6 to 12 harvests from a single 3 to 5 year planting.",
+    title: "Castor Under PQNK — High-Density Medicinal Crop | Pedaver",
+    description: "High-density castor under PQNK, delivering 6 to 12 harvests from a single 3 to 5 year planting, grown for castor oil, a traditional healthcare remedy.",
   },
   watermelon: {
     title: "Watermelon Under PQNK — Higher Sugar, Longer Shelf Life | Pedaver",
