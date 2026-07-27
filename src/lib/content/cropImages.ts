@@ -17,6 +17,7 @@ export const cropImages: Record<string, string> = {
   rose: "/images/crops/rose-mulched-beds.jpg",
   "black-carrot": "/images/crops/black-carrot-four-foot-root.jpg",
   "motha-grass": "/images/crops/motha-grass-cyperus-rotundus.jpg",
+  castor: "/images/crops/castor-hd-field-rows.jpg",
 };
 
 export const getCropImage = (slug: string): string | undefined => cropImages[slug];
