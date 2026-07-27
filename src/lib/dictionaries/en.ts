@@ -73,7 +73,7 @@ const en = {
     ctaBannerButton: "Get in Touch",
     introTitle: "Pedaver is regenerating agriculture, farm by farm",
     introBody:
-      "By working directly with growers across Punjab and beyond, we're field-testing a way of farming that lowers cost, restores soil, and holds up at commercial scale. Our position across Food, Feed, Fiber and Bio-Fuel production lets us take PQNK from one working plot to the next, crop by crop.",
+      "By working directly with growers across Pakistan and beyond, we bring a way of farming field-tested over two decades: built on the natural algorithms of soil fertility and plant protection, and already adopted by hundreds of thousands of farmers. Our position across Food, Feed, Fiber and Bio-Fuel production lets us take PQNK from one working plot to the next, crop by crop.",
     introCta: "Discover how",
     pillarsTitle: "What We Do",
     pillarsSubtitle: "One regenerative system, working across every stage from soil to market.",
