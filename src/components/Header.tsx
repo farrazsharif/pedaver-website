@@ -5,7 +5,6 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import type { Dictionary } from "@/lib/dictionaries";
 import { crops } from "@/lib/content/crops";
-import PqnkBadge from "./PqnkBadge";
 
 interface NavChild {
   label: string;
@@ -67,19 +66,23 @@ export default function Header({ dict }: { dict: Dictionary }) {
   return (
     <header className="sticky top-0 z-50 bg-cream/95 shadow-sm backdrop-blur">
       {/* Tier 1 — utility bar */}
-      <div className="border-b border-black/40 bg-[#1c1c1e]">
+      <div className="border-b-4 border-[#7cbf3f] bg-[#1c1c1e]">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
           <div className="flex items-center gap-3 sm:gap-4">
             <Link href="/" className="flex items-center" aria-label={`${dict.meta.siteName} home`}>
               <img
                 src="/images/pedaver-logo-white.png"
                 alt={`${dict.meta.siteName} — The Transformative Producer`}
-                className="h-16 w-auto sm:h-20"
+                className="h-14 w-auto sm:h-16"
               />
             </Link>
             <span className="h-10 w-px bg-white/15 sm:h-12" aria-hidden="true" />
-            <Link href="/" aria-label="PQNK — The Science of Natural Farming">
-              <PqnkBadge className="h-16 w-16 sm:h-20 sm:w-20" />
+            <Link href="/" className="flex items-center" aria-label="PQNK — The Science of Natural Farming">
+              <img
+                src="/images/pqnk-logo.png"
+                alt="PQNK — The Science of Natural Farming"
+                className="h-14 w-auto sm:h-16"
+              />
             </Link>
           </div>
 
