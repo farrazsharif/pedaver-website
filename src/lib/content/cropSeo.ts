@@ -3,9 +3,9 @@
 // title/description from the crop's own name/blurb for any slug not listed here.
 export const cropSeo: Record<string, { title: string; description: string }> = {
   wheat: {
-    title: "Wheat Under PQNK — Lower Cost, Higher Grain Quality | Pedaver",
+    title: "Wheat Under PQNK — Tillering Up to 20x Per Seed | Pedaver",
     description:
-      "Punjab's staple crop grown under PQNK: lower cost of production and higher grain quality, documented on working wheat farms.",
+      "Punjab's staple crop grown under PQNK: lower cost of production, higher grain quality, and wheat tillering up to 20 times per seed versus roughly 1.5 under conventional (ACI) management.",
   },
   cotton: {
     title: "Cotton Under PQNK — Fiber Production Field Results | Pedaver",

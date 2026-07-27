@@ -15,10 +15,10 @@ export const highlights: Highlight[] = [
     cta: "Discover PQNK",
   },
   {
-    slug: "sugarcane-tillers",
+    slug: "wheat-tillers",
     image: "/images/young-crop-beds.jpg",
-    href: "/crops/sugarcane",
-    title: "From a single bud like this, sugarcane under PQNK reaches 47 tillers",
+    href: "/crops/wheat",
+    title: "Wheat tillering up to 20 times per seed under PQNK, versus 1.5 under ACI",
     cta: "See the results",
   },
   {

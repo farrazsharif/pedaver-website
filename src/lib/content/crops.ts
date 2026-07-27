@@ -16,13 +16,14 @@ export const crops: Crop[] = [
     slug: "wheat",
     flagship: true,
     name: "Wheat",
-    blurb: "Punjab's staple crop, grown under PQNK for lower cost and higher grain quality.",
+    blurb: "Punjab's staple crop, grown under PQNK for lower cost, higher grain quality, and tillering up to 20 times per seed.",
     overview:
       "Wheat is one of the most widely adopted PQNK crops across Punjab. Farmers running PQNK wheat report the lowest cost of production alongside the highest grain quality they have achieved on their own land.",
     practices: [
       "Raised bed and contour line layouts to manage water and root-zone conditions",
       "Breaking hardpan without machinery to open compacted soil to roots",
       "Ongoing monitoring of soil life through the season",
+      "Well-managed PQNK fields report wheat tillering up to 20 times per seed, against roughly 1.5 tillers per seed under conventional (ACI) management",
     ],
     results:
       "“Wheat on PQNK — lowest cost of production, highest quality.” — Mian Arfan Khalid, PQNK wheat grower",
