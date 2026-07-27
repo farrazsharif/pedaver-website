@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import type { Dictionary } from "@/lib/dictionaries";
 import { crops } from "@/lib/content/crops";
+import TranslateWidget from "./TranslateWidget";
 
 interface NavChild {
   label: string;
@@ -87,6 +88,8 @@ export default function Header({ dict }: { dict: Dictionary }) {
           </div>
 
           <div className="flex items-center gap-2 sm:gap-3">
+            <TranslateWidget />
+
             <button
               type="button"
               onClick={() => setSearchOpen((v) => !v)}
