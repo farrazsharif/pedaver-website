@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import type { Dictionary } from "@/lib/dictionaries";
 import { crops } from "@/lib/content/crops";
+import PqnkBadge from "./PqnkBadge";
 
 interface NavChild {
   label: string;
@@ -66,22 +67,20 @@ export default function Header({ dict }: { dict: Dictionary }) {
   return (
     <header className="sticky top-0 z-50 bg-cream/95 shadow-sm backdrop-blur">
       {/* Tier 1 — utility bar */}
-      <div className="border-b border-border">
+      <div className="border-b border-black/40 bg-[#1c1c1e]">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
           <div className="flex items-center gap-3 sm:gap-4">
             <Link href="/" className="flex items-center" aria-label={`${dict.meta.siteName} home`}>
               <img
-                src="/images/pedaver-logo-glow.png"
+                src="/images/pedaver-logo-white.png"
                 alt={`${dict.meta.siteName} — The Transformative Producer`}
                 className="h-16 w-auto sm:h-20"
               />
             </Link>
-            <span className="h-10 w-px bg-border sm:h-12" aria-hidden="true" />
-            <img
-              src="/images/pqnk-logo.png"
-              alt="PQNK — The Science of Natural Farming"
-              className="h-16 w-auto sm:h-20"
-            />
+            <span className="h-10 w-px bg-white/15 sm:h-12" aria-hidden="true" />
+            <Link href="/" aria-label="PQNK — The Science of Natural Farming">
+              <PqnkBadge className="h-16 w-16 sm:h-20 sm:w-20" />
+            </Link>
           </div>
 
           <div className="flex items-center gap-2 sm:gap-3">
@@ -90,7 +89,7 @@ export default function Header({ dict }: { dict: Dictionary }) {
               onClick={() => setSearchOpen((v) => !v)}
               aria-label={dict.nav.searchLabel}
               aria-expanded={searchOpen}
-              className="flex h-10 w-10 items-center justify-center rounded-full text-ink-soft transition hover:bg-primary/10 hover:text-primary"
+              className="flex h-10 w-10 items-center justify-center rounded-full text-cream/80 transition hover:bg-white/10 hover:text-cream"
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <circle cx="11" cy="11" r="7" />
@@ -100,7 +99,7 @@ export default function Header({ dict }: { dict: Dictionary }) {
 
             <Link
               href="/contact"
-              className="hidden text-sm font-medium text-ink-soft transition hover:text-primary sm:block"
+              className="hidden text-sm font-medium text-cream/80 transition hover:text-cream sm:block"
             >
               {dict.nav.contact}
             </Link>
@@ -110,7 +109,7 @@ export default function Header({ dict }: { dict: Dictionary }) {
               onClick={() => setMobileOpen((v) => !v)}
               aria-label={dict.nav.menuLabel}
               aria-expanded={mobileOpen}
-              className="flex h-10 w-10 items-center justify-center rounded-md border border-border text-ink lg:hidden"
+              className="flex h-10 w-10 items-center justify-center rounded-md border border-white/20 text-cream lg:hidden"
             >
               {mobileOpen ? (
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
