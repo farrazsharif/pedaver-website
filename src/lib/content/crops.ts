@@ -176,7 +176,7 @@ export const crops: Crop[] = [
       "Two rows per 42-inch permanent bed, no-till planted through the mulch — roughly 8,712 plants per acre",
     ],
     results:
-      "The same closed-loop structure used across PQNK's field and orchard crops — hardpan, pH, Jantar, mulch, no-till — applies directly to a high-value ornamental crop like rose, without any external inputs.",
+      "Projected cut-flower yield on this 8,712-plants-per-acre design rises from 15,000–25,000 stems per acre in years 1–2 while the planting establishes, to 60,000–85,000 in year 3's first meaningful harvest, reaching 130,000–170,000+ stems per acre by years 4–5 once the system is fully sustained.",
   },
   {
     slug: "chilli",
