@@ -3,6 +3,7 @@ import dict from "@/lib/dictionaries";
 import { papers } from "@/lib/content/papers";
 import Section from "@/components/Section";
 import { buildMetadata } from "@/lib/seo";
+import PapersBrowser from "./PapersBrowser";
 
 export const metadata = buildMetadata({
   title: "Knowledge Papers — The Research Behind PQNK",
@@ -40,32 +41,12 @@ export default function PapersPage() {
       </Section>
 
       <Section muted>
-        <div className="grid gap-6 md:grid-cols-2">
-          {papers.map((paper) => (
-            <Link
-              key={paper.slug}
-              href={`/papers/${paper.slug}`}
-              className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition hover:-translate-y-1 hover:shadow-md"
-            >
-              {paper.heroImage && (
-                <div className="h-44 w-full overflow-hidden">
-                  <img
-                    src={paper.heroImage}
-                    alt={paper.title}
-                    className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
-                  />
-                </div>
-              )}
-              <div className="flex flex-1 flex-col p-6">
-                <p className="text-xs font-semibold uppercase tracking-wide text-accent">
-                  {dict.papers.publishedLabel} {new Date(paper.publishedDate).toLocaleDateString("en-US", { year: "numeric", month: "long" })}
-                </p>
-                <h2 className="mt-2 text-xl font-bold text-primary-dark group-hover:text-primary">{paper.title}</h2>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-soft">{paper.summary}</p>
-                <span className="mt-4 inline-block text-sm font-semibold text-accent">{dict.papers.readAbstract} →</span>
-              </div>
-            </Link>
-          ))}
+        <h2 className="text-center text-xl font-bold text-primary-dark">Browse by topic</h2>
+        <p className="mx-auto mt-1 max-w-2xl text-center text-sm text-ink-soft">
+          Filter the full library down to the science that matters to you right now.
+        </p>
+        <div className="mt-6">
+          <PapersBrowser papers={papers} />
         </div>
       </Section>
     </div>
