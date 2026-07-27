@@ -110,10 +110,10 @@ const en = {
         { name: "Living Soil", body: "Microbial life converts the soil's own minerals into nutrition." },
       ],
       stats: [
-        { value: "70%", label: "less irrigation water" },
+        { value: "70%", label: "less water from day one, falling toward zero as beds mature" },
         { value: "0", label: "synthetic inputs" },
         { value: "12 ft", label: "root depth reached" },
-        { value: "20+", label: "crops proven" },
+        { value: "400M+", label: "years — one universal system, every crop" },
       ],
       cta: "Explore the science",
     },
