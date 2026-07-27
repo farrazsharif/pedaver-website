@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import dict from "@/lib/dictionaries";
 import { papers, getPaperBySlug } from "@/lib/content/papers";
+import { getRelatedCrops } from "@/lib/content/crossLinks";
 import { notFound } from "next/navigation";
 import Section from "@/components/Section";
 import { buildMetadata, SITE_URL, SITE_NAME } from "@/lib/seo";
@@ -37,6 +38,8 @@ export default async function PaperDetailPage({
   const { slug } = await params;
   const paper = getPaperBySlug(slug);
   if (!paper) notFound();
+
+  const relatedCrops = getRelatedCrops(paper);
 
   const scholarlyArticleJsonLd = {
     "@context": "https://schema.org",
@@ -115,6 +118,24 @@ export default async function PaperDetailPage({
                     <li key={i} className="flex gap-2 text-sm text-ink-soft">
                       <span className="mt-1 h-2 w-2 flex-shrink-0 rounded-full bg-accent" />
                       <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {relatedCrops.length > 0 && (
+              <div className="rounded-xl border border-border bg-card p-5">
+                <h2 className="text-sm font-bold uppercase tracking-wide text-accent">Related Crops</h2>
+                <ul className="mt-3 flex flex-col gap-2">
+                  {relatedCrops.map((crop) => (
+                    <li key={crop.slug}>
+                      <Link
+                        href={`/crops/${crop.slug}`}
+                        className="text-sm font-semibold text-primary-dark hover:text-primary"
+                      >
+                        {crop.name} →
+                      </Link>
                     </li>
                   ))}
                 </ul>

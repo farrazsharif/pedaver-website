@@ -31,8 +31,8 @@ const en = {
     statsItems: [
       { value: "55K+", label: "Facebook community" },
       { value: "11K+", label: "YouTube subscribers" },
-      { value: "20+", label: "Crops under PQNK" },
-      { value: "94%", label: "Farmer recommendation rate" },
+      { value: "20+", label: "crops documented across Pakistan" },
+      { value: "94%", label: "positive audience rating across YouTube & Facebook" },
     ],
     whatIsTitle: "What is PQNK?",
     whatIsPronunciation:

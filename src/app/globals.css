@@ -6,7 +6,11 @@
   --color-primary: #2f5233;
   --color-primary-dark: #1e3722;
   --color-primary-light: #4a7856;
-  --color-accent: #c97c3d;
+  /* Darkened from #c97c3d — the lighter shade only hit ~3:1 contrast against
+     the cream background, failing WCAG AA (4.5:1) for the small link/CTA
+     text ("View Guide", "Learn more") that uses text-accent site-wide.
+     This shade holds the same terracotta hue at ~4.6:1. */
+  --color-accent: #a1612d;
   --color-accent-light: #e0a868;
   --color-cream: #faf7f0;
   --color-card: #ffffff;

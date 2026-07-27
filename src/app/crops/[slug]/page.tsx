@@ -4,6 +4,7 @@ import dict from "@/lib/dictionaries";
 import { crops, getCropBySlug } from "@/lib/content/crops";
 import { getCropImage } from "@/lib/content/cropImages";
 import { cropSeo } from "@/lib/content/cropSeo";
+import { getRelatedPapers } from "@/lib/content/crossLinks";
 import { notFound } from "next/navigation";
 import Section from "@/components/Section";
 import VideoEmbed from "@/components/VideoEmbed";
@@ -44,6 +45,7 @@ export default async function CropDetailPage({
   if (!crop) notFound();
 
   const bannerImage = getCropImage(slug);
+  const relatedPapers = getRelatedPapers(crop);
 
   return (
     <div>
@@ -124,6 +126,29 @@ export default async function CropDetailPage({
                 {dict.contact.pageTitle}
               </Link>
             </div>
+          </div>
+        </Section>
+      )}
+
+      {relatedPapers.length > 0 && (
+        <Section muted>
+          <div className="mx-auto max-w-5xl">
+            <h2 className="text-xl font-bold text-primary-dark">Related Knowledge Papers</h2>
+            <p className="mt-1 text-sm text-ink-soft">
+              The full science and field data behind {crop.name.toLowerCase()} under PQNK.
+            </p>
+            <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+              {relatedPapers.map((paper) => (
+                <li key={paper.slug}>
+                  <Link
+                    href={`/papers/${paper.slug}`}
+                    className="block rounded-xl border border-border bg-card p-4 text-sm font-semibold text-primary-dark shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                  >
+                    {paper.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </Section>
       )}

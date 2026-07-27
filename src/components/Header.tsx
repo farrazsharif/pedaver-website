@@ -5,7 +5,34 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import type { Dictionary } from "@/lib/dictionaries";
 import { crops } from "@/lib/content/crops";
+import { papers } from "@/lib/content/papers";
+import { machines } from "@/lib/content/machines";
 import TranslateWidget from "./TranslateWidget";
+
+interface SearchResult {
+  label: string;
+  sublabel: string;
+  href: string;
+}
+
+const searchIndex: SearchResult[] = [
+  ...crops.map((c) => ({ label: c.name, sublabel: "Crop", href: `/crops/${c.slug}` })),
+  ...papers.map((p) => ({ label: p.title, sublabel: "Knowledge Paper", href: `/papers/${p.slug}` })),
+  ...machines.map((m) => ({ label: m.title, sublabel: "Machine", href: `/machines#${m.slug}` })),
+];
+
+function searchSite(query: string): SearchResult[] {
+  const q = query.trim().toLowerCase();
+  if (!q) return [];
+  const starts: SearchResult[] = [];
+  const contains: SearchResult[] = [];
+  for (const item of searchIndex) {
+    const label = item.label.toLowerCase();
+    if (label.startsWith(q)) starts.push(item);
+    else if (label.includes(q)) contains.push(item);
+  }
+  return [...starts, ...contains].slice(0, 8);
+}
 
 interface NavChild {
   label: string;
@@ -54,14 +81,19 @@ export default function Header({ dict }: { dict: Dictionary }) {
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(href + "/");
 
-  function handleSearch(e: React.FormEvent) {
-    e.preventDefault();
-    const q = query.trim().toLowerCase();
-    if (!q) return;
-    const match = crops.find((c) => c.name.toLowerCase().includes(q));
+  const searchResults = searchSite(query);
+
+  function goToResult(href: string) {
     setSearchOpen(false);
     setQuery("");
-    router.push(match ? `/crops/${match.slug}` : "/crops");
+    router.push(href);
+  }
+
+  function handleSearch(e: React.FormEvent) {
+    e.preventDefault();
+    if (!query.trim()) return;
+    const [top] = searchResults;
+    goToResult(top ? top.href : "/papers");
   }
 
   return (
@@ -151,6 +183,31 @@ export default function Header({ dict }: { dict: Dictionary }) {
               {dict.nav.searchLabel}
             </button>
           </form>
+
+          {query.trim() && (
+            <div className="mx-auto max-w-6xl px-4 pb-4 sm:px-6">
+              {searchResults.length > 0 ? (
+                <ul className="overflow-hidden rounded-xl border border-border">
+                  {searchResults.map((result) => (
+                    <li key={result.href}>
+                      <button
+                        type="button"
+                        onClick={() => goToResult(result.href)}
+                        className="flex w-full items-center justify-between gap-3 border-b border-border bg-card px-4 py-2.5 text-left text-sm last:border-b-0 hover:bg-primary/10"
+                      >
+                        <span className="font-medium text-ink">{result.label}</span>
+                        <span className="flex-none text-xs font-semibold uppercase tracking-wide text-ink-soft">
+                          {result.sublabel}
+                        </span>
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="px-1 text-sm text-ink-soft">No crops, papers, or machines match &ldquo;{query}&rdquo;.</p>
+              )}
+            </div>
+          )}
         </div>
       )}
 
