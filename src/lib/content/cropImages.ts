@@ -13,6 +13,7 @@ export const cropImages: Record<string, string> = {
   olive: "/images/crops/olive-orchard.jpg",
   chilli: "/images/crops/chilli-closeup.jpg",
   agroforestry: "/images/intercrop-palms.jpg",
+  banana: "/images/crops/banana-mulched-field.jpg",
 };
 
 export const getCropImage = (slug: string): string | undefined => cropImages[slug];
