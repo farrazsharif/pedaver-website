@@ -2993,6 +2993,33 @@ export const papers: Paper[] = [
       "Closes by claiming implementation by 'hundreds of thousands of practicing farmers' across Pakistan, India, and beyond over the past decade as evidence the approach is proven at scale, not merely theoretical.",
     ],
   },
+  {
+    slug: "olive-under-pqnk",
+    category: "Crop-Specific Guides",
+    title: "Knowledge Paper: Olive Under PQNK — Pakistan's Underdeveloped Potential",
+    summary:
+      "Pakistan imports all of its olive oil, roughly 15,000–20,000 tonnes a year, despite holding climate-suitable land in the Potohar plateau, the KP hills, and the Balochistan highlands. This paper sets out PQNK's curved furrow and borehole system for rainfed olive establishment, and the biological management that growers report cuts establishment cost by 40–50% versus conventional orchards.",
+    publishedDate: "2026-07-27",
+    pdfPath: "/papers/olive-under-pqnk.pdf",
+    heroImage: "/images/crops/olive-orchard.jpg",
+    abstract: [
+      "Pakistan imports the entirety of its olive oil, approximately 15,000 to 20,000 tonnes annually, despite holding significant areas of climate-suitable land across the Potohar plateau, the Khyber Pakhtunkhwa hills, and the Balochistan highlands, where olive cultivation has already been demonstrated to be agronomically feasible. The barrier to commercial olive development in Pakistan has never been climate or soil suitability. It has been the capital cost of establishment and the long, unproductive wait before a conventionally managed olive orchard reaches economic production. This paper sets out how PQNK removes that barrier: a rainfed water-harvesting technique purpose-built for sloping, non-irrigated terrain, and PQNK's standard biological management principles, applied to a tree crop whose Mediterranean origin already predisposes it to thrive once soil biology is restored.",
+      "For olive grown on rainfed, sloping land, where installing irrigation infrastructure is either impractical or economically unjustifiable, PQNK applies the curved furrow and borehole system. A curved furrow is cut on the downhill side of each tree, positioned to intercept rainfall runoff before it escapes the root zone, and channels that water into a dedicated borehole, one foot in diameter and four feet deep, that acts as a high-capacity infiltration reservoir beside the tree. Rather than allowing rain to run off bare or compacted conventional orchard soil, the borehole holds intercepted water and lets it percolate slowly into the surrounding profile, charging the deeper root zone that a mature olive tree can access. Combined with a thick surface mulch layer that captures dew and atmospheric humidity as well as shielding the soil from evaporation, this system is reported to make an established olive tree self-sufficient from rainfall alone in regions receiving as little as four hundred millimetres of rain annually.",
+      "Olive's Mediterranean habitat of origin already makes it an inherently drought-tolerant species; what conventional cultivation in Pakistan has not supplied is the biologically functioning subsoil that lets that tolerance actually express itself in the field. PQNK's restored subsoil capillary function, the product of permanent raised beds, mulch management, and undisturbed soil biology rather than any olive-specific technique, is reported to provide adequate root-zone moisture in all but the driest periods, without the fertiliser or irrigation inputs conventional olive establishment depends on. The same biological nitrogen supply and mineral delivery system PQNK applies across every crop in the system is reported to eliminate the fertiliser cost of establishment, and the under-canopy diversity a PQNK orchard maintains is reported to provide the year-round predator habitat that manages olive fruit fly (Bactrocera oleae) without an insecticide programme.",
+      "PQNK olive farmers in the Potohar plateau who have established orchards under the protocol report establishment costs 40 to 50 percent lower than conventional olive establishment, with comparable time-to-production and measurably higher fruit oil content, attributed to the potassium-rich nutritional profile that PQNK's mycorrhizal delivery system provides, the same delivery mechanism reported to drive sucrose accumulation in PQNK sugarcane and Brix levels in PQNK fruit crops.",
+      "Pakistan's domestic olive oil production is still in its infancy, with current imports drawn from origins including Spain, Italy, and Turkey. Every tonne of that import that domestic cultivation could displace, and eventually export, represents a trade balance correction achieved through biological restoration rather than new capital-intensive infrastructure. PQNK's contribution is not a new olive variety or chemical input, but an establishment and management pathway that makes the crop's underlying viability in Pakistan's soils accessible to ordinary growers at a cost and timeline conventional cultivation cannot yet match.",
+    ],
+    keyTakeaways: [
+      "Pakistan imports all of its olive oil, roughly 15,000–20,000 tonnes a year, despite having climate-suitable land in the Potohar plateau, KP hills, and Balochistan highlands.",
+      "The barrier to commercial olive in Pakistan has been establishment cost and time-to-production, not climate or soil suitability.",
+      "The curved furrow and borehole system (a 1 ft x 4 ft infiltration borehole per tree) is PQNK's rainfed water-harvesting technique for sloping, non-irrigated olive land.",
+      "Combined with mulch, this system is reported to make an established olive tree self-sufficient from rainfall alone at as little as 400mm of annual rainfall.",
+      "PQNK's restored subsoil capillary function, biological nitrogen supply, and under-canopy predator habitat are reported to remove the irrigation, fertiliser, and insecticide costs of conventional olive establishment.",
+      "Growers in the Potohar plateau report 40–50% lower establishment costs, comparable time-to-production, and higher fruit oil content versus conventional olive orchards.",
+      "Olive fruit fly (Bactrocera oleae) is reported to be managed biologically, without insecticide, by the second season.",
+      "Domestic olive oil production under PQNK is positioned as an import-substitution and future export opportunity for Pakistan.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {
