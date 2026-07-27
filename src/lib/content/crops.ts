@@ -217,13 +217,14 @@ export const crops: Crop[] = [
     overview:
       "Black carrot is grown under PQNK for its anthocyanin content — a plant pigment prized for nutraceutical extraction, with some buyers offering contract prices tied directly to pigment concentration. PQNK's stable, mulch-buffered soil temperature (13–26°C year-round) gives farmers precise control over the conditions that drive pigment production.",
     practices: [
+      "Hardpan broken before planting — with the restriction gone, roots have been documented reaching close to 4 feet in length",
       "No external NPK — nutrition comes entirely from the soil's own gradient, accessed by the plant as needed",
       "Full root-size growth allowed for the first 60–70 days, before introducing mild water stress",
       "Deliberately extended irrigation intervals in the final 25–30 days to signal mild drought and trigger pigment synthesis",
       "Cool nights and full sun exposure, which together drive the strongest anthocyanin response",
     ],
     results:
-      "Winter-grown roots are smaller but far more pigment-dense than summer roots — a direct, controllable trade-off between size and nutraceutical value that PQNK's stable soil system lets farmers manage deliberately.",
+      "Breaking the hardpan alone is reported to roughly quadruple yield versus conventional carrot production, with no fertilizer or pesticide applied and a lower cost of production at the same time. Winter-grown roots are smaller but far more pigment-dense than summer roots — a direct, controllable trade-off between size and nutraceutical value that PQNK's stable soil system lets farmers manage deliberately.",
   },
   {
     slug: "amla",
