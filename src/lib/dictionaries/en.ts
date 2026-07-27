@@ -22,7 +22,7 @@ const en = {
     menuLabel: "Menu",
   },
   home: {
-    heroEyebrow: "Pedaver · Food, Feed, Fiber & Bio-Fuel Solutions",
+    heroEyebrow: "Pedaver · Food, Feed, Fiber & Timber Solutions",
     heroTitle: "Farming the Way Nature Already Knows How",
     heroSubtitle:
       "Pedaver brings PQNK, the Natural Ecosystem Science of Production Agriculture, to farmers across Pakistan, replacing input-heavy conventional farming with regenerative systems that lower cost and raise quality.",
@@ -73,7 +73,7 @@ const en = {
     ctaBannerButton: "Get in Touch",
     introTitle: "Pedaver is regenerating agriculture, farm by farm",
     introBody:
-      "By working directly with growers across Pakistan and beyond, we bring a way of farming field-tested over two decades: built on the natural algorithms of soil fertility and plant protection, and already adopted by hundreds of thousands of farmers. Our position across Food, Feed, Fiber and Bio-Fuel production lets us take PQNK from one working plot to the next, crop by crop.",
+      "By working directly with growers across Pakistan and beyond, we bring a way of farming field-tested over two decades: built on the natural algorithms of soil fertility and plant protection, and already adopted by hundreds of thousands of farmers. Our position across Food, Feed, Fiber and Timber production lets us take PQNK from one working plot to the next, crop by crop.",
     introCta: "Discover how",
     pillarsTitle: "What We Do",
     pillarsSubtitle: "One regenerative system, working across every stage from soil to market.",
@@ -134,7 +134,7 @@ const en = {
   about: {
     pageTitle: "About Pedaver",
     intro:
-      "Pedaver is a Pakistan-based agricultural solutions provider working across Food, Feed, Fiber and Bio-Fuel production, built around one core conviction: conventional agriculture's input-heavy model is ecologically, economically and nutritionally unsustainable, and there is a better way.",
+      "Pedaver is a Pakistan-based agricultural solutions provider working across Food, Feed, Fiber and Timber production, built around one core conviction: conventional agriculture's input-heavy model is ecologically, economically and nutritionally unsustainable, and there is a better way.",
     missionTitle: "What We Do",
     missionPoints: [
       { title: "Productivity Enhancement", body: "Raising yield and quality without raising input cost." },
@@ -313,7 +313,7 @@ const en = {
     exploreTitle: "Explore",
     workTitle: "Our Work",
     followTitle: "Follow Us",
-    tagline: "Food, Feed, Fiber & Bio-Fuel solutions through the Natural Ecosystem Science of PQNK.",
+    tagline: "Food, Feed, Fiber & Timber solutions through the Natural Ecosystem Science of PQNK.",
   },
 };
 
