@@ -3,6 +3,7 @@ export interface Machine {
   title: string;
   summary: string;
   body: string[];
+  image?: string;
 }
 
 export const machinePhilosophy: string[] = [
@@ -16,6 +17,7 @@ export const machines: Machine[] = [
     slug: "hardpan-breaker",
     title: "The Hardpan Breaker",
     summary: "The most important machine in the transition is the one used the least.",
+    image: "/images/machines/hardpan-breaker-subsoiler.jpg",
     body: [
       "Decades of tillage, traffic, and flood irrigation compress a dense layer beneath the topsoil that roots, water, and air can no longer cross. Because the damage sits below the depth of normal cultivation, it stays hidden, farmers see declining yields and respond with more fertilizer or more irrigation, never touching the actual restriction.",
       "The hardpan breaker's job is narrow and specific: reopen the compacted layer once, restoring vertical connectivity between the surface and the deeper soil profile. It is not a tillage tool and does not invert or pulverize the soil, it simply removes the barrier so roots, water, air, and biology can reach the full profile again.",
@@ -26,6 +28,7 @@ export const machines: Machine[] = [
     slug: "raised-bed-shaper",
     title: "The Raised Bed Shaper",
     summary: "One pass of engineering that establishes decades of permanent farm architecture.",
+    image: "/images/machines/raised-bed-shaper.jpg",
     body: [
       "Where the hardpan breaker restores vertical connectivity, the raised bed shaper builds horizontal organization: permanent 42-inch beds with fixed furrows and traffic corridors. Unlike conventional ridging, which is rebuilt every season, the PQNK bed is not made for a single crop, it is made for an ecosystem.",
       "The machine's job is completed in a matter of hours; its consequences last for decades. Once shaped, the bed fixes where water moves, where roots explore, and where machinery travels, so that season after season, operations happen within that architecture instead of reconstructing it.",
@@ -36,6 +39,7 @@ export const machines: Machine[] = [
     slug: "sipp-planter",
     title: "SIPP — Slit Insertion Precision Planter",
     summary: "Plants through thick organic mulch by opening a pocket no larger than the seed itself.",
+    image: "/images/machines/sipp-planter-labeled.jpg",
     body: [
       "A PQNK field at planting time is not bare soil. It carries a thick organic mulch cover, intact root channels from the previous crop, and living fungal networks, exactly the conditions PQNK exists to protect. Conventional planters, built for cleared and cultivated ground, either fail in this environment or force growers to disturb it before planting.",
       "SIPP was engineered to plant into the field as it actually exists. Rather than a continuous furrow, it opens a discrete, roughly 2\"×2\" pocket per seed, cutting cleanly through the mulch layer without dragging residue into the seed zone. The disturbance is sized to the seed, not to the machine.",

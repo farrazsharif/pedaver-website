@@ -38,6 +38,14 @@ export default function MachinesPage() {
             <article key={machine.slug} id={machine.slug} className="scroll-mt-24">
               <h2 className="text-2xl font-bold text-primary-dark">{machine.title}</h2>
               <p className="mt-2 text-sm font-medium italic text-ink-soft">{machine.summary}</p>
+              {machine.image && (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={machine.image}
+                  alt={machine.title}
+                  className="mt-4 w-full max-w-md rounded-xl border border-border object-cover shadow-sm"
+                />
+              )}
               <div className="mt-4 flex flex-col gap-3">
                 {machine.body.map((paragraph, idx) => (
                   <p key={idx} className="leading-relaxed text-ink-soft">
