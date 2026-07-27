@@ -196,7 +196,7 @@ export const crops: Crop[] = [
     slug: "onion-garlic",
     flagship: false,
     name: "Onion & Garlic",
-    blurb: "Raised beds enabling 4x planting density, with real farmers reporting garlic yields near Rs. 1 million per acre.",
+    blurb: "Raised beds enabling 4x planting density, with real farmers reporting yields several times higher than flat-field cultivation.",
     overview:
       "Garlic and onion have long depended on imports due to labour-intensive flat-field cultivation and heavy agrochemical reliance. Pedaver's knowledge paper documents PQNK's raised-bed, mulch-based system as a transformative alternative — one already contributing to Pakistan's garlic import substitution.",
     practices: [
@@ -206,7 +206,7 @@ export const crops: Crop[] = [
       "No synthetic fertilisers, weedicides, fungicides or pesticides, and no further hoeing after establishment",
     ],
     results:
-      "Documented yields of 250–300 mounds (10,000–12,000 kg) of Dessi garlic per acre, with gross revenue around Rs. 1,000,000 per acre and minimal input costs — produce with lower water content also stores far longer with less spoilage.",
+      "Documented yields of 250–300 mounds (10,000–12,000 kg) of Dessi garlic per acre, with minimal input costs and revenue reported several times higher than conventional flat-field cultivation — market price fluctuates, but yield, quality, and cost stay firmly in the grower's favour. Produce with lower water content also stores far longer with less spoilage.",
   },
   {
     slug: "black-carrot",

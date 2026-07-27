@@ -18,14 +18,14 @@ export const highlights: Highlight[] = [
     slug: "sugarcane-tillers",
     image: "/images/young-crop-beds.jpg",
     href: "/crops/sugarcane",
-    title: "47 tillers from a single bud, filmed in the field",
+    title: "From a single bud like this, sugarcane under PQNK reaches 47 tillers",
     cta: "See the results",
   },
   {
     slug: "garlic-economics",
     image: "/images/garlic-beds.jpg",
     href: "/crops/onion-garlic",
-    title: "Garlic yields reported near Rs. 1,000,000 per acre",
+    title: "Raised beds let farmers plant up to 4x more garlic per acre",
     cta: "Read the guide",
   },
   {
