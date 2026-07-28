@@ -49,29 +49,14 @@ h1, h2, h3, h4 {
   font-family: var(--font-heading), Georgia, "Times New Roman", serif;
 }
 
-/* Google Website Translator widget — keep it compact and on-brand, and
-   stop it from pushing the whole page down with its own banner frame. */
+/* Google Website Translator: the engine runs invisibly (see
+   TranslateWidget.tsx, which drives its hidden goog-te-combo select from
+   our own on-brand control) — these rules just neutralize the bits of
+   Google's own UI that would otherwise leak into the page: a top banner
+   frame it injects on translate, and a body offset it applies alongside it. */
 .goog-te-banner-frame {
   display: none !important;
 }
 body {
   top: 0 !important;
-}
-.translate-widget .goog-te-gadget {
-  font-family: inherit !important;
-  font-size: 0 !important;
-  color: transparent !important;
-}
-.translate-widget .goog-te-gadget-simple {
-  background: transparent !important;
-  border: none !important;
-  padding: 0 !important;
-}
-.translate-widget .goog-te-gadget-simple span {
-  color: inherit !important;
-}
-.translate-widget select.goog-te-combo,
-.translate-widget .goog-te-menu-value {
-  font-size: 0.75rem !important;
-  color: inherit !important;
 }
