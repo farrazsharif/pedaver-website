@@ -1,6 +1,7 @@
 import Link from "next/link";
 import dict from "@/lib/dictionaries";
 import { services } from "@/lib/content/services";
+import { partnershipTitle, partnershipSubtitle, partnershipSections } from "@/lib/content/partnership";
 import Section from "@/components/Section";
 import { buildMetadata } from "@/lib/seo";
 
@@ -51,16 +52,61 @@ export default function ServicesPage() {
         </div>
       </Section>
 
-      <Section muted>
+      <Section muted id="partner-with-pedaver" className="scroll-mt-24">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-2xl font-bold text-primary-dark">{dict.services.paidTitle}</h2>
-          <p className="mx-auto mt-2 max-w-xl text-ink-soft">{dict.services.paidBody}</p>
-          <p className="mx-auto mt-2 max-w-xl text-sm text-ink-soft">{dict.services.paidIntroNote}</p>
+          <h2 className="text-3xl font-extrabold text-primary-dark">{partnershipTitle}</h2>
+          <p className="mx-auto mt-3 max-w-2xl text-lg font-medium text-ink-soft">{partnershipSubtitle}</p>
+        </div>
+        <div className="mx-auto mt-10 flex max-w-3xl flex-col gap-10">
+          {partnershipSections.map((section, sIdx) => (
+            <div key={sIdx}>
+              {section.heading && (
+                <h3 className="text-xl font-bold text-primary-dark">{section.heading}</h3>
+              )}
+              <div className={`flex flex-col gap-4 ${section.heading ? "mt-3" : ""}`}>
+                {section.blocks.map((block, bIdx) => {
+                  if (block.type === "paragraph") {
+                    return (
+                      <p key={bIdx} className="leading-relaxed text-ink-soft">
+                        {block.text}
+                      </p>
+                    );
+                  }
+                  if (block.type === "bullets") {
+                    return (
+                      <ul key={bIdx} className="flex flex-col gap-2">
+                        {block.items.map((item, iIdx) => (
+                          <li key={iIdx} className="flex gap-2 text-ink-soft">
+                            <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent" />
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    );
+                  }
+                  return (
+                    <dl key={bIdx} className="flex flex-col gap-3">
+                      {block.items.map((item, iIdx) => (
+                        <div key={iIdx}>
+                          <dt className="font-semibold text-primary-dark">{item.label}</dt>
+                          <dd className="mt-0.5 leading-relaxed text-ink-soft">{item.text}</dd>
+                        </div>
+                      ))}
+                    </dl>
+                  );
+                })}
+              </div>
+            </div>
+          ))}
         </div>
       </Section>
 
       <Section>
-        <div className="mx-auto flex max-w-3xl flex-col gap-10">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="text-2xl font-bold text-primary-dark">{dict.services.paidTitle}</h2>
+          <p className="mx-auto mt-2 max-w-xl text-ink-soft">{dict.services.paidBody}</p>
+        </div>
+        <div className="mx-auto mt-10 flex max-w-3xl flex-col gap-10">
           {services.map((service) => (
             <article key={service.slug} id={service.slug} className="scroll-mt-24">
               <h2 className="text-2xl font-bold text-primary-dark">{service.title}</h2>

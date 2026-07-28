@@ -206,8 +206,6 @@ const en = {
     pageTitle: "Services",
     pageSubtitle:
       "From barren land to a profitable production unit: Pedaver's paid advisory services for turning PQNK's regenerative system into a working farm, built on the lowest cost of production and the highest quality output.",
-    paidIntroNote:
-      "These services carry a field through PQNK's full transition, out of ACI (Ancient Conventional Industrial) degradation, through the regenerative phase, to a closed-loop, self-sustaining state.",
     freeTitle: "PQNK Knowledge Is Free & Open Source",
     freeBody: [
       "PQNK itself is not for sale. The knowledge, the science, and the field-tested method are free and open source, published for any farmer, anywhere, to read, learn, and apply without cost or commercial obligation.",
@@ -220,8 +218,8 @@ const en = {
       { label: "Facebook — Pedaver", href: "https://www.facebook.com/Pedaver" },
       { label: "WhatsApp PQNK learning groups", href: "https://wa.me/923206776666" },
     ],
-    paidTitle: "Paid Advisory Services",
-    paidBody: "For growers and investors who want Pedaver directly involved in building and running a PQNK operation, we also offer the following paid services.",
+    paidTitle: "Direct Engagement Services",
+    paidBody: "For individual growers and investors who want Pedaver directly involved in building and running a PQNK operation, we also offer the following services.",
     ctaTitle: "Ready to talk about your land?",
     ctaBody: "Tell us about your acreage, crop, and goals, and we'll walk you through how these services apply to your farm.",
     ctaButton: "Contact Pedaver",
