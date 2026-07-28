@@ -429,7 +429,7 @@ export const papers: Paper[] = [
       "This design paper lays out a one-acre PQNK layout that interplants date palm, citrus, guava, mango, grapes, ginger, and fig in permanent raised-bed fruit alleys alongside dedicated vegetable beds, modeling roughly PKR 165,000 in establishment cost against over PKR 1.3 million in projected annual income.",
     publishedDate: "2026-07-25",
     pdfPath: "/papers/fruit-tree-alleys-and-filler-crops-on-pqnk.pdf",
-    heroImage: "/images/intercrop-palms.jpg",
+    heroImage: "/images/guava-hd-mulched-rows.jpg",
     abstract: [
       "The paper applies PQNK's closed-loop philosophy, no fertilizer, no pesticide, up to 80% less water, and low seed and labor input, to a mixed-species one-acre design that alternates permanent raised beds of fruit trees with dedicated vegetable crop beds. It frames the layout as a complete farm ecosystem rather than a single-crop orchard, designed to generate income from fast-cycling vegetables while the longer-lived fruit trees mature into full production.",
       "Zone A carries the fruit planting: 1,854 total plants across seven species, date palm, citrus, guava, mango, grapes, ginger, and fig, each assigned a canopy width and height, and a defined sowing, pruning, and fruit-picking calendar. Zone B is reserved for rotating filler crops grown in the open beds between the fruit rows while canopies are still young, including cucumber, tomato, green chilli, turmeric, capsicum, bitter gourd, sweet potato, garlic, potato, melon, onion, broccoli, cabbage, lemongrass, and bottle gourd and other creeper crops, with the exact mix left to adjust by farmer, location, and season.",

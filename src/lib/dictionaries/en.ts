@@ -274,28 +274,12 @@ const en = {
     viewCrop: "View this crop",
   },
   validation: {
-    pageTitle: "PQNK Validation",
-    pageSubtitle: "A validation process for confirming genuine PQNK practice.",
-    sections: [
-      {
-        title: "Why Validation Matters",
-        body: "As PQNK spreads across more farms and crops, validation protects the integrity of the system. It gives buyers, partners and farmers themselves a way to confirm that a plot is genuinely following PQNK practice, not just borrowing the name.",
-      },
-      {
-        title: "The Validation Process",
-        body: "Pedaver maintains a documented PQNK Validation Process, developed to assess whether a farm's practices meet the standard before it can be recognized as PQNK-validated.",
-      },
-      {
-        title: "Getting Validated",
-        body: "If you are running PQNK on your land and want to pursue validation, reach out to our team and we'll walk you through what the validation process involves for your crop and farm size.",
-      },
-    ],
+    pageTitle: "PQNK™ Validation",
+    pageSubtitle: "Validating Biological Excellence from Production System to Consumer",
+    ctaTitle: "Getting Validated",
+    ctaBody:
+      "If you are running PQNK on your land and want to pursue validation, or you represent a university, laboratory, or institution interested in collaborating on the framework, reach out to our team.",
     cta: "Start the Conversation",
-    nutritionHeading: "Nutrition Density & Food Value Validation",
-    nutritionCtaTitle: "Partner With Us on Food Value Validation",
-    nutritionCtaBody:
-      "We welcome collaboration from universities, laboratories, food scientists, and institutions interested in developing and applying this framework.",
-    nutritionCta: "Contact Pedaver",
   },
   contact: {
     pageTitle: "Get in Touch",
