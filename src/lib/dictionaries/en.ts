@@ -16,6 +16,7 @@ const en = {
     machines: "PQNK Machines",
     videos: "Knowledge & Testimonials",
     validation: "Validation",
+    nutritionValidation: "Nutrition Density & Food Value Validation",
     contact: "Contact",
     searchLabel: "Search",
     searchPlaceholder: "Search crops…",
@@ -291,6 +292,14 @@ const en = {
       },
     ],
     cta: "Start the Conversation",
+  },
+  nutritionValidation: {
+    pageTitle: "Nutrition Density & Food Value Validation",
+    pageSubtitle: "Independent verification of the nutritional density and food value of PQNK-grown produce.",
+    comingSoonTitle: "Content Coming Soon",
+    comingSoonBody:
+      "We're preparing the full detail on how Pedaver validates the nutritional density and food quality of PQNK produce. Check back soon, or reach out to our team with any questions in the meantime.",
+    cta: "Contact Pedaver",
   },
   contact: {
     pageTitle: "Get in Touch",

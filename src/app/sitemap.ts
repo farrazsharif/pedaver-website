@@ -15,6 +15,7 @@ const staticPages = [
   "/services",
   "/machines",
   "/validation",
+  "/nutrition-validation",
   "/videos",
   "/contact",
 ];
