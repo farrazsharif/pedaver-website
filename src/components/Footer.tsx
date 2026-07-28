@@ -18,7 +18,6 @@ export default function Footer({ dict }: { dict: Dictionary }) {
     { label: dict.nav.machines, href: "/machines" },
     { label: dict.nav.videos, href: "/videos" },
     { label: dict.nav.validation, href: "/validation" },
-    { label: dict.nav.nutritionValidation, href: "/nutrition-validation" },
     { label: dict.nav.contact, href: "/contact" },
   ];
 

@@ -15,8 +15,7 @@ const en = {
     services: "Services",
     machines: "PQNK Machines",
     videos: "Knowledge & Testimonials",
-    validation: "Validation",
-    nutritionValidation: "Nutrition Density & Food Value Validation",
+    validation: "PQNK™ Validation",
     contact: "Contact",
     searchLabel: "Search",
     searchPlaceholder: "Search crops…",
@@ -292,13 +291,11 @@ const en = {
       },
     ],
     cta: "Start the Conversation",
-  },
-  nutritionValidation: {
-    pageTitle: "Nutrition Density & Food Value Validation",
-    ctaTitle: "Partner With Us on Food Value Validation",
-    ctaBody:
+    nutritionHeading: "Nutrition Density & Food Value Validation",
+    nutritionCtaTitle: "Partner With Us on Food Value Validation",
+    nutritionCtaBody:
       "We welcome collaboration from universities, laboratories, food scientists, and institutions interested in developing and applying this framework.",
-    cta: "Contact Pedaver",
+    nutritionCta: "Contact Pedaver",
   },
   contact: {
     pageTitle: "Get in Touch",
