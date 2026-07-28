@@ -295,10 +295,9 @@ const en = {
   },
   nutritionValidation: {
     pageTitle: "Nutrition Density & Food Value Validation",
-    pageSubtitle: "Independent verification of the nutritional density and food value of PQNK-grown produce.",
-    comingSoonTitle: "Content Coming Soon",
-    comingSoonBody:
-      "We're preparing the full detail on how Pedaver validates the nutritional density and food quality of PQNK produce. Check back soon, or reach out to our team with any questions in the meantime.",
+    ctaTitle: "Partner With Us on Food Value Validation",
+    ctaBody:
+      "We welcome collaboration from universities, laboratories, food scientists, and institutions interested in developing and applying this framework.",
     cta: "Contact Pedaver",
   },
   contact: {
