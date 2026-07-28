@@ -101,14 +101,32 @@ export default async function PaperDetailPage({
           </div>
 
           <div className="flex flex-col gap-6">
-            <a
-              href={paper.pdfPath}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block rounded-full bg-primary px-6 py-3 text-center text-sm font-semibold text-cream shadow-sm transition hover:bg-primary-dark"
-            >
-              {dict.papers.downloadPdf}
-            </a>
+            {paper.pdfPath ? (
+              <a
+                href={paper.pdfPath}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-full bg-primary px-6 py-3 text-center text-sm font-semibold text-cream shadow-sm transition hover:bg-primary-dark"
+              >
+                {dict.papers.downloadPdf}
+              </a>
+            ) : paper.externalUrl ? (
+              <div className="flex flex-col gap-2">
+                <a
+                  href={paper.externalUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block rounded-full bg-primary px-6 py-3 text-center text-sm font-semibold text-cream shadow-sm transition hover:bg-primary-dark"
+                >
+                  {dict.papers.viewOnPublisher}
+                </a>
+                {paper.externalPublisher && (
+                  <p className="text-center text-xs text-ink-soft">
+                    Published in {paper.externalPublisher}. Hosted by the publisher; not reproduced on this site.
+                  </p>
+                )}
+              </div>
+            ) : null}
 
             {paper.keyTakeaways.length > 0 && (
               <div className="rounded-xl border border-border bg-card p-5">

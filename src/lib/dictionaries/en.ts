@@ -245,6 +245,7 @@ const en = {
     tocSubtitle: "Jump directly to any paper, listed alphabetically.",
     readAbstract: "Read the Abstract",
     downloadPdf: "Download the Full Paper (PDF)",
+    viewOnPublisher: "View the Published Paper (Publisher Site)",
     keyTakeawaysTitle: "Key Takeaways",
     publishedLabel: "Published",
     backToAll: "Back to all papers",

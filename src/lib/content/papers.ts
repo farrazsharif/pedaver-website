@@ -16,7 +16,9 @@ export interface Paper {
   title: string;
   summary: string;
   publishedDate: string; // ISO date, e.g. "2026-07-25"
-  pdfPath: string; // path under /public, e.g. "/papers/the-evolution-of-seed-placement.pdf"
+  pdfPath?: string; // path under /public, e.g. "/papers/the-evolution-of-seed-placement.pdf"
+  externalUrl?: string; // use instead of pdfPath when the paper is hosted elsewhere (e.g. a journal DOI) and the PDF itself isn't hosted on this site
+  externalPublisher?: string; // e.g. "Paddy and Water Environment (Springer, 2011)" — shown next to the external link
   heroImage?: string;
   abstract: string[];
   keyTakeaways: string[];
@@ -2714,6 +2716,30 @@ export const papers: Paper[] = [
       "A fuller-filled kernel behind an unchanged hull raises the mill's recovered whole-rice percentage; PQNK farmers report 10-40% higher processing recovery across grain crops, oilseeds, sugarcane, and cotton.",
       "2-acetyl-1-pyrroline, rice's aroma compound, rises with nitrogen and organic matter delivered through Jantar (Sesbania) green manure, tying PQNK's own cover-crop practice directly to grain fragrance.",
       "Pakistan generated 66 EU food-safety notifications on rice against 25 from all other origins combined despite supplying under 10% of EU rice imports; PQNK removes the pesticide-residue cause outright and suppresses aflatoxin risk through four independently documented biological mechanisms.",
+    ],
+  },
+  {
+    slug: "technical-adaptations-for-mechanized-sri-production",
+    category: "Crop-Specific Guides",
+    title:
+      "Technical Adaptations for Mechanized SRI Production to Achieve Water Saving and Increased Profitability in Punjab, Pakistan",
+    summary:
+      "The founding 2009-2010 field trial behind PQNK's rice work, peer-reviewed and published in Paddy and Water Environment (Springer, 2011). Asif Sharif's original technical report on mechanizing the System of Rice Intensification (SRI) for large-scale Punjab farms, years before the fuller PQNK protocol described elsewhere on this site was developed.",
+    publishedDate: "2011-01-09",
+    externalUrl: "https://doi.org/10.1007/s10333-010-0223-5",
+    externalPublisher: "Paddy and Water Environment 9(1):111–119 (Springer, 2011)",
+    abstract: [
+      "This is the original peer-reviewed technical report that laid the groundwork for PQNK's rice system, published in Paddy and Water Environment in 2011 and authored by Asif Sharif. It addresses a specific labor problem in Punjab: the System of Rice Intensification (SRI), developed in Madagascar for smallholders, produces higher yields with less water, but its manual practices are too labor-intensive for the large leased landholdings increasingly common in Punjab, where able-bodied labor is scarce. The paper reports on a set of mechanized adaptations built to make SRI's principles workable at that scale.",
+      "The core innovations combined laser-levelled fields with permanent raised beds, watered by furrow irrigation rather than flooding, so plant roots stayed in moist but never inundated soil. Young 10-day-old seedlings were transplanted shallowly into preformed pockets to minimize transplant shock, spaced 22.5 cm apart in both directions to reduce competition, with fertilizer and compost precision-placed in a band at each hill rather than broadcast across the field, and mechanical weeding used to aerate the soil alongside weed control.",
+      "Field results from the 2009 trial showed an average paddy yield of 12.84 tonnes per hectare, roughly three times the approximately 4 tonnes per hectare that conventional flood-irrigated Basmati farming was achieving in the same region at the time, achieved alongside a 70% reduction in irrigation water use. The paper reports this as a first-season result, with the same raised-bed, precision-placement approach already being extended experimentally to other crops beyond rice.",
+      "The paper closes by naming the broader approach this pointed toward: combining SRI's biological principles with organic fertilization and Conservation Agriculture on permanent raised beds, a combination the paper calls “paradoxical agriculture” because it lets farmers raise output while reducing inputs, the same underlying logic PQNK later developed into a complete farming system.",
+    ],
+    keyTakeaways: [
+      "This is the actual peer-reviewed 2011 journal paper (Paddy and Water Environment, Springer) that other Knowledge Papers on this site cite as PQNK's founding field trial.",
+      "The 2009 trial measured an average paddy yield of 12.84 t/ha against roughly 4 t/ha for conventional flood-irrigated Basmati in the same region, with a 70% reduction in irrigation water.",
+      "Mechanized SRI adaptations: laser-levelled permanent raised beds with furrow (not flood) irrigation, shallow transplanting of 10-day-old seedlings into preformed pockets, 22.5 cm spacing, precision-placed fertilizer/compost per hill, and mechanical weeding with soil aeration.",
+      "The paper names the combination of SRI, organic fertilization, and Conservation Agriculture on permanent raised beds “paradoxical agriculture”, the direct conceptual predecessor of the PQNK system.",
+      "Hosted by the publisher rather than reproduced on this site: the PDF is a Springer-typeset offprint, and Springer's self-archiving policy reserves republication rights to the pre-typeset accepted manuscript, which is not available for this article.",
     ],
   },
   {
