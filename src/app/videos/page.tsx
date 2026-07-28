@@ -132,7 +132,7 @@ export default function VideosPage() {
         <div className="mt-8 grid gap-6 md:grid-cols-2">
           {farmerStories.map((farmer) => (
             <div key={farmer.name} className="rounded-2xl border border-border bg-card p-6">
-              {farmer.videoId && (
+              {farmer.videoId ? (
                 <div className="mb-4">
                   <VideoEmbed videoId={farmer.videoId} title={`${farmer.name} — PQNK testimonial`} />
                   {farmer.videoSourceName && farmer.videoSourceUrl && (
@@ -146,6 +146,17 @@ export default function VideosPage() {
                     </a>
                   )}
                 </div>
+              ) : (
+                farmer.videoSourceUrl && (
+                  <a
+                    href={farmer.videoSourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mb-4 inline-block text-sm font-semibold text-accent underline underline-offset-4 hover:text-accent-light"
+                  >
+                    Watch on {farmer.videoSourceName ?? "YouTube"} →
+                  </a>
+                )
               )}
               <p className="text-lg italic leading-relaxed text-ink">&ldquo;{farmer.quote}&rdquo;</p>
               <div className="mt-5 border-t border-border pt-4">
