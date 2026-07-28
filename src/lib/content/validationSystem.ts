@@ -11,7 +11,7 @@ export interface VSection {
   blocks: VBlock[];
 }
 
-export const validationInfographic = "/images/pqnk-validation-infographic.png";
+export const validationInfographic = "/images/pqnk-validation-infographic.webp";
 
 export const validationPageTitle = "PQNK™ Validation";
 export const validationPageSubtitle = "Validating Biological Excellence from Production System to Consumer";
