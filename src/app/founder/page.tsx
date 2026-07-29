@@ -1,6 +1,7 @@
 import Link from "next/link";
 import dict from "@/lib/dictionaries";
 import Section from "@/components/Section";
+import FounderGallery from "@/components/FounderGallery";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
@@ -57,18 +58,16 @@ export default function FounderPage() {
           ))}
         </div>
 
-        <figure className="mx-auto mt-12 max-w-3xl">
-          <div className="overflow-hidden rounded-2xl border border-border shadow-sm">
-            <img
-              src="/images/asif-sharif-meeting.jpg"
-              alt="Asif Sharif in a meeting with government officials on agricultural policy"
-              className="h-full w-full object-cover"
-            />
-          </div>
-          <figcaption className="mt-3 text-center text-sm text-ink-soft">
-            Asif Sharif has taken PQNK and One Acre Prosperity to national policy forums.
-          </figcaption>
-        </figure>
+        <div className="mx-auto mt-14 max-w-3xl text-center">
+          <h2 className="text-2xl font-bold text-primary-dark">Five Decades in Photos</h2>
+          <p className="mx-auto mt-2 max-w-2xl text-ink-soft">
+            From the first sugarcane harvester in 1977 to PQNK reaching national policy forums and international
+            research institutions.
+          </p>
+        </div>
+        <div className="mt-8">
+          <FounderGallery />
+        </div>
       </Section>
 
       <Section muted>
