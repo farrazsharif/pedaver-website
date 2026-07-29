@@ -20,8 +20,12 @@ export interface Paper {
   externalUrl?: string; // use instead of pdfPath when the paper is hosted elsewhere (e.g. a journal DOI) and the PDF itself isn't hosted on this site
   externalPublisher?: string; // e.g. "Paddy and Water Environment (Springer, 2011)" — shown next to the external link
   heroImage?: string;
+  /** Optional: a short attribution/caption line shown under the hero image. */
+  heroImageCaption?: string;
   /** Optional: YouTube video IDs of a narrated/video edition of this paper, shown in sequence on the paper's page. */
   videoIds?: string[];
+  /** Optional: a self-hosted video file path, used when no YouTube link exists for a supporting video. */
+  videoFile?: string;
   abstract: string[];
   keyTakeaways: string[];
 }
@@ -2704,8 +2708,13 @@ export const papers: Paper[] = [
       "Answering a farmer's direct question about what actually changes inside a rice grain under PQNK, this paper traces the mechanism from root-zone moisture through grain-filling stress to milling yield, aroma, and grain safety, then applies it directly to the specific EU border rejections costing Pakistan's basmati export trade.",
     publishedDate: "2026-07-25",
     pdfPath: "/papers/why-conventional-rice-keeps-failing.pdf",
+    heroImage: "/images/papers/sri-organic-rice-poster.jpg",
+    heroImageCaption:
+      "SRI Organic Rice — a Process for Commercial Production. Innovations developed by Asif Sharif, CEO, FarmAll Technology Pvt Ltd, Lahore, Pakistan.",
+    videoFile: "/videos/pqnk-raised-bed-mechanism-explainer.mp4",
     abstract: [
       "The paper is framed as a direct answer to a farmer's question: what actually changes when rice is grown under PQNK instead of conventional flooded paddy? It traces every visible difference a farmer notices at harvest and at the mill back to root-zone conditions no flooded field can offer, and grounds the whole argument in the system's founding trial, published in the peer-reviewed journal Paddy and Water Environment in 2011, which measured 12.84 tonnes per hectare against a regional conventional average of 4.2, using seventy percent less irrigation water, before the fuller hardpan-fracture and permanent-mulch protocol described in this paper was even added.",
+      "PQNK's rice work began in 2008 with an inaugural 44-acre moist-soil trial, the first attempt to grow rice in moist rather than inundated soil and the foundation on which PQNK itself was later established. Conventional flood-irrigated rice uses roughly 5,000 liters of water per kilogram produced; that original trial cut water use to 321 liters per kilogram, a 93% reduction. Water savings scale with bed maturity: newly formed PQNK beds save at least 70% against conventional flooding, and mature, fully-established PQNK beds save upward of 90%, in some cases approaching 100% as the field's own structure and biology take over most of the water-holding work. The technology was presented at the International Rice Congress held in Vietnam on October 30, 2010, and has since been adopted, in similar form, by growers in Israel, China, and Korea.",
       "Section 2 establishes the foundational mechanism: PQNK rice is grown moist, at roughly 30-40% water-filled pore space, never flooded, which lets roots run deep past the hardpan that confines flooded paddy roots to a shallow, oxygen-poor zone. A grain-safety consequence follows directly: under the strongly reducing, anaerobic conditions continuous flooding produces, arsenic becomes markedly more soluble, and controlled comparisons have measured grain arsenic concentrations ten to fifteen times higher in flooded rice, with aerobic management cutting total grain arsenic by roughly sixty percent.",
       "The paper's grain-quality core traces chalkiness and fissuring, the two structural flaws that break rice apart in the mill, to the same underlying cause: stress during grain-filling, specifically heat-and-humidity extremes and rapid rewetting or overdrying. A PQNK bed's steady, mulch-buffered moisture supply removes both stress patterns, and because the rice hull reaches close to its final size well before the kernel finishes filling, a fuller-filled kernel behind an unchanged hull directly raises milling recovery; PQNK farmers report a ten-to-forty-percent processing recovery gain across grain crops, oilseeds, sugarcane, and cotton, offered explicitly as a field-observed range pending formal laboratory authentication.",
       "Aroma is traced through a specific biochemical path: 2-acetyl-1-pyrroline, rice's fragrance compound, is synthesised from proline and rises with nitrogen management and soil organic matter, a pathway the paper ties directly to Jantar (Sesbania) green manure, PQNK's own nitrogen-fixing cover crop, closing the loop between the system's biological-reconstruction practice and grain fragrance.",
@@ -2713,6 +2722,7 @@ export const papers: Paper[] = [
     ],
     keyTakeaways: [
       "The founding 2011 field trial, published in Paddy and Water Environment, measured 12.84 tonnes/hectare against a 4.2 t/ha regional average using 70% less water, before the fuller PQNK rice protocol described in this paper was added.",
+      "PQNK's original 2008 trial, a 44-acre moist-soil planting, cut water use to 321 liters per kilogram of rice against a conventional ~5,000 L/kg, a 93% reduction; water savings then scale with bed maturity, from at least 70% on newly formed beds to over 90% (in some cases approaching 100%) on mature ones. Presented at the International Rice Congress in Vietnam on October 30, 2010, and since adopted in similar form by growers in Israel, China, and Korea.",
       "Flooded rice's anaerobic soil raises grain arsenic 10-15x versus aerobic PQNK beds, which cut total grain arsenic by roughly 60% in controlled comparisons.",
       "Chalkiness and fissuring, the two conditions that break rice apart in the mill, both trace to grain-filling stress (heat/humidity extremes, rapid rewetting) that PQNK's steady, mulch-buffered moisture removes.",
       "A fuller-filled kernel behind an unchanged hull raises the mill's recovered whole-rice percentage; PQNK farmers report 10-40% higher processing recovery across grain crops, oilseeds, sugarcane, and cotton.",

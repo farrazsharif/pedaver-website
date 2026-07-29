@@ -77,9 +77,36 @@ export default async function PaperDetailPage({
       </section>
 
       {paper.heroImage && (
-        <div className="h-56 w-full overflow-hidden sm:h-72 lg:h-80">
-          <img src={paper.heroImage} alt={paper.title} className="h-full w-full object-cover" />
+        <div>
+          <div className="h-56 w-full overflow-hidden sm:h-72 lg:h-80">
+            <img
+              src={paper.heroImage}
+              alt={paper.title}
+              className="h-full w-full object-cover object-top"
+            />
+          </div>
+          {paper.heroImageCaption && (
+            <p className="mx-auto max-w-4xl px-4 pt-2 text-center text-xs text-ink-soft sm:px-6">
+              {paper.heroImageCaption}
+            </p>
+          )}
         </div>
+      )}
+
+      {paper.videoFile && (
+        <Section>
+          <div className="mx-auto max-w-3xl">
+            <h2 className="text-xl font-bold text-primary-dark">Watch the Mechanism</h2>
+            <div className="mt-5 overflow-hidden rounded-xl border border-border bg-card shadow-sm">
+              <video
+                src={paper.videoFile}
+                controls
+                className="aspect-video w-full"
+                aria-label={`${paper.title} — video`}
+              />
+            </div>
+          </div>
+        </Section>
       )}
 
       {paper.videoIds && paper.videoIds.length > 0 && (() => {
