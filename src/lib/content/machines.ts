@@ -17,7 +17,7 @@ export const machines: Machine[] = [
     slug: "hardpan-breaker",
     title: "The Hardpan Breaker",
     summary: "The most important machine in the transition is the one used the least.",
-    image: "/images/machines/hardpan-breaker-subsoiler.jpg",
+    image: "/images/machines/hardpan-breaker-subsoiler-v2.jpg",
     body: [
       "Decades of tillage, traffic, and flood irrigation compress a dense layer beneath the topsoil that roots, water, and air can no longer cross. Because the damage sits below the depth of normal cultivation, it stays hidden, farmers see declining yields and respond with more fertilizer or more irrigation, never touching the actual restriction.",
       "The hardpan breaker's job is narrow and specific: reopen the compacted layer once, restoring vertical connectivity between the surface and the deeper soil profile. It is not a tillage tool and does not invert or pulverize the soil, it simply removes the barrier so roots, water, air, and biology can reach the full profile again.",
@@ -28,7 +28,7 @@ export const machines: Machine[] = [
     slug: "raised-bed-shaper",
     title: "The Raised Bed Shaper",
     summary: "One pass of engineering that establishes decades of permanent farm architecture.",
-    image: "/images/machines/raised-bed-shaper.jpg",
+    image: "/images/machines/raised-bed-shaper-v2.jpg",
     body: [
       "Where the hardpan breaker restores vertical connectivity, the raised bed shaper builds horizontal organization: permanent 42-inch beds with fixed furrows and traffic corridors. Unlike conventional ridging, which is rebuilt every season, the PQNK bed is not made for a single crop, it is made for an ecosystem.",
       "The machine's job is completed in a matter of hours; its consequences last for decades. Once shaped, the bed fixes where water moves, where roots explore, and where machinery travels, so that season after season, operations happen within that architecture instead of reconstructing it.",
@@ -79,6 +79,7 @@ export const machines: Machine[] = [
     slug: "bed-renovator",
     title: "The Bed Renovator",
     summary: "Maintains the permanent architecture over years, without ever rebuilding the field.",
+    image: "/images/machines/bed-renovator.jpg",
     body: [
       "Even a permanent bed system experiences minor wear: rainfall reshapes furrow edges, machinery traffic gradually affects corridors. The bed renovator corrects only the specific portions that need it, restoring the original architecture's precision without reconstructing the field.",
       "It is a maintenance machine, not a construction or cultivation one, closer to a conservation engineer than a builder. As a PQNK system matures and its accumulated root channels, carbon reserves, and biological structure become more valuable, this precision matters more, not less.",
