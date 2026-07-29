@@ -26,7 +26,6 @@ export async function generateMetadata({
     path: `/papers/${slug}`,
     image: paper.heroImage ? `${SITE_URL}${paper.heroImage}` : undefined,
     type: "article",
-    publishedTime: paper.publishedDate,
   });
 }
 
@@ -46,7 +45,6 @@ export default async function PaperDetailPage({
     "@type": "ScholarlyArticle",
     headline: paper.title,
     description: paper.summary,
-    datePublished: paper.publishedDate,
     author: {
       "@type": "Person",
       name: "Asif Sharif",
@@ -72,10 +70,7 @@ export default async function PaperDetailPage({
           <Link href="/papers" className="text-sm font-semibold text-primary underline underline-offset-4">
             ← {dict.papers.backToAll}
           </Link>
-          <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-accent">
-            {dict.papers.publishedLabel}{" "}
-            {new Date(paper.publishedDate).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
-          </p>
+          <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-accent">{paper.category}</p>
           <h1 className="mt-2 text-4xl font-extrabold text-primary-dark">{paper.title}</h1>
           <p className="mt-4 max-w-2xl text-lg text-ink-soft">{paper.summary}</p>
         </div>
@@ -86,6 +81,36 @@ export default async function PaperDetailPage({
           <img src={paper.heroImage} alt={paper.title} className="h-full w-full object-cover" />
         </div>
       )}
+
+      {paper.videoIds && paper.videoIds.length > 0 && (() => {
+        const videoIds = paper.videoIds!;
+        return (
+          <Section>
+            <div className="mx-auto max-w-5xl">
+              <h2 className="text-xl font-bold text-primary-dark">Watch the Full Story</h2>
+              <p className="mt-2 text-sm text-ink-soft">
+                The same record, narrated in {videoIds.length} parts.
+              </p>
+              <div className="mt-5 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                {videoIds.map((videoId, i) => (
+                  <div key={videoId} className="overflow-hidden rounded-xl border border-border bg-card shadow-sm">
+                    <div className="aspect-video w-full">
+                      <iframe
+                        src={`https://www.youtube.com/embed/${videoId}`}
+                        title={`${paper.title} — Part ${i + 1}`}
+                        className="h-full w-full"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                      />
+                    </div>
+                    <p className="p-3 text-center text-xs font-semibold text-ink-soft">Part {i + 1} of {videoIds.length}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </Section>
+        );
+      })()}
 
       <Section>
         <div className="mx-auto grid max-w-5xl gap-10 lg:grid-cols-[1.6fr_1fr]">

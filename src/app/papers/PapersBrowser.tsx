@@ -66,10 +66,6 @@ export default function PapersBrowser({ papers }: { papers: Paper[] }) {
             )}
             <div className="flex flex-1 flex-col p-6">
               <p className="text-xs font-semibold uppercase tracking-wide text-accent">{paper.category}</p>
-              <p className="mt-1 text-xs text-ink-soft/70">
-                {dict.papers.publishedLabel}{" "}
-                {new Date(paper.publishedDate).toLocaleDateString("en-US", { year: "numeric", month: "long" })}
-              </p>
               <h2 className="mt-2 text-xl font-bold text-primary-dark group-hover:text-primary">{paper.title}</h2>
               <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-soft">{paper.summary}</p>
               <span className="mt-4 inline-block text-sm font-semibold text-accent">{dict.papers.readAbstract} →</span>

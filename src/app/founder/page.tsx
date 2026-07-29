@@ -1,3 +1,4 @@
+import Link from "next/link";
 import dict from "@/lib/dictionaries";
 import Section from "@/components/Section";
 import { buildMetadata } from "@/lib/seo";
@@ -40,6 +41,19 @@ export default function FounderPage() {
               <p className="mt-3 leading-relaxed text-ink-soft">{section.body}</p>
             </div>
           ))}
+        </div>
+
+        <div className="mx-auto mt-10 flex max-w-3xl flex-col items-start gap-3 rounded-2xl border border-border bg-card p-6 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h2 className="text-lg font-bold text-primary-dark">{dict.founder.recordTitle}</h2>
+            <p className="mt-1 text-sm text-ink-soft">{dict.founder.recordBody}</p>
+          </div>
+          <Link
+            href="/papers/five-decades-of-agricultural-innovation"
+            className="inline-block flex-shrink-0 rounded-full bg-primary px-5 py-2.5 text-center text-sm font-semibold text-cream shadow-sm transition hover:bg-primary-dark"
+          >
+            {dict.founder.recordButton}
+          </Link>
         </div>
 
         <figure className="mx-auto mt-12 max-w-3xl">

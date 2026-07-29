@@ -155,6 +155,9 @@ const en = {
       "PQNK moves every field through the same fixed sequence: out of ACI (Ancient Conventional Industrial) degradation, through an active regenerative phase of hardpan-breaking, raised beds and mulch-built soil biology, and into a closed-loop, self-sustaining state where no external input is needed again.",
       "Our knowledge papers go further, examining the looming convergence of oil and food crises, the neglected potential of Pakistan's agricultural economy, and how ecosystem health changes the value of what a farm produces, from milk to fabric.",
     ],
+    founderCtaBody: "Read Asif Sharif's full founder profile, or his own year-by-year record of five decades in the field.",
+    founderCtaFounderLink: "Meet the Founder",
+    founderCtaRecordLink: "Read the Full Record",
   },
   founder: {
     pageTitle: "Asif Sharif",
@@ -162,6 +165,10 @@ const en = {
     intro:
       "Asif Sharif founded Pedaver on a simple observation: conventional agriculture's chemical-intensive model was trading long-term soil health for short-term yield, and that trade could not hold. Rather than refine that model, he set out to design a different one, grounded in how natural ecosystems have built fertility for hundreds of millions of years, long before industrial agriculture existed.",
     sections: [
+      {
+        title: "Five Decades in the Field",
+        body: "Sharif's engineering career began in 1973, importing farm implements and building out much of Pakistan's early mechanized agriculture infrastructure. Years of institutional resistance interrupted that work in the 2000s, a period he has described as ultimately shaping PQNK's core conceptual break rather than derailing it. A 2007 new beginning led directly to a 2008 field study of the Amazon rainforest, which identified the specific practices, soil inundation, tillage, bare soil, and monocropping, that disconnect conventional agriculture from how natural ecosystems sustain fertility. PQNK was developed and first field-tested that same year.",
+      },
       {
         title: "An Engineer Building the Tools PQNK Needed",
         body: "Before PQNK could work at field scale, the machinery to apply it didn't exist, so Sharif designed it himself. His engineering work includes soil scrapers, fine laser levelers, ridgers and ditchers for land preparation without damage; raised bed shapers, compost banders and precision seeders that form a regenerative farm's physical infrastructure; and the VIPP (Vertical Insertion Precision Planter) and SIPP (Slit Insertion Precision Planter), which plant seed directly through thick mulch without disturbing the soil beneath it.",
@@ -185,6 +192,10 @@ const en = {
     ],
     closingQuote:
       "As one colleague put it: Sharif didn't just build new machines. He built a new way of farming, one already written into nature itself.",
+    recordTitle: "Read the Full Record",
+    recordBody:
+      "Five Decades of Agricultural Innovation is Sharif's own year-by-year account of the interventions above, from 1973 to today, documented in his own words, photographs, and field data.",
+    recordButton: "Read the Knowledge Paper",
   },
   crops: {
     pageTitle: "Crops & Solutions",

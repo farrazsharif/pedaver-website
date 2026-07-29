@@ -1,3 +1,4 @@
+import Link from "next/link";
 import dict from "@/lib/dictionaries";
 import Section from "@/components/Section";
 import { buildMetadata } from "@/lib/seo";
@@ -41,6 +42,20 @@ export default function AboutPage() {
                 {paragraph}
               </p>
             ))}
+          </div>
+          <div className="mt-6 flex flex-wrap items-center gap-4 border-t border-border pt-6">
+            <p className="text-sm text-ink-soft">{dict.about.founderCtaBody}</p>
+            <div className="flex flex-shrink-0 gap-3">
+              <Link href="/founder" className="text-sm font-semibold text-primary underline underline-offset-4 hover:text-primary-dark">
+                {dict.about.founderCtaFounderLink} →
+              </Link>
+              <Link
+                href="/papers/five-decades-of-agricultural-innovation"
+                className="text-sm font-semibold text-primary underline underline-offset-4 hover:text-primary-dark"
+              >
+                {dict.about.founderCtaRecordLink} →
+              </Link>
+            </div>
           </div>
         </div>
       </Section>
