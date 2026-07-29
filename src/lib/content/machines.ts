@@ -30,7 +30,7 @@ export const machines: Machine[] = [
     slug: "raised-bed-shaper",
     title: "The Raised Bed Shaper",
     summary: "One pass of engineering that establishes decades of permanent farm architecture.",
-    image: "/images/machines/raised-bed-shaper-v2.jpg",
+    image: "/images/machines/raised-bed-shaper-with-profile.jpg",
     body: [
       "Where the hardpan breaker restores vertical connectivity, the raised bed shaper builds horizontal organization: permanent 42-inch beds with fixed furrows and traffic corridors. Unlike conventional ridging, which is rebuilt every season, the PQNK bed is not made for a single crop, it is made for an ecosystem.",
       "The machine's job is completed in a matter of hours; its consequences last for decades. Once shaped, the bed fixes where water moves, where roots explore, and where machinery travels, so that season after season, operations happen within that architecture instead of reconstructing it.",
