@@ -4,6 +4,8 @@ export interface Machine {
   summary: string;
   body: string[];
   image?: string;
+  /** Optional: a YouTube video ID demonstrating this machine. */
+  videoId?: string;
 }
 
 export const machinePhilosophy: string[] = [
@@ -40,6 +42,7 @@ export const machines: Machine[] = [
     title: "SIPP — Slit Insertion Precision Planter",
     summary: "Plants through thick organic mulch by opening a pocket no larger than the seed itself.",
     image: "/images/machines/sipp-planter-labeled.jpg",
+    videoId: "OyWdBXKH-qQ",
     body: [
       "A PQNK field at planting time is not bare soil. It carries a thick organic mulch cover, intact root channels from the previous crop, and living fungal networks, exactly the conditions PQNK exists to protect. Conventional planters, built for cleared and cultivated ground, either fail in this environment or force growers to disturb it before planting.",
       "SIPP was engineered to plant into the field as it actually exists. Rather than a continuous furrow, it opens a discrete, roughly 2\"×2\" pocket per seed, cutting cleanly through the mulch layer without dragging residue into the seed zone. The disturbance is sized to the seed, not to the machine.",
@@ -50,6 +53,7 @@ export const machines: Machine[] = [
     slug: "vipp-planter",
     title: "VIPP — Vertical Insertion Precision Planter",
     summary: "A vertical beak that touches the bed only at the exact point a seed needs to go.",
+    videoId: "dQBg5luBgEQ",
     body: [
       "VIPP solves the same problem from a different angle: instead of cutting a slit, a narrow beak moves straight down through the mulch and soil, opens a single placement point, deposits the seed at the set depth, and withdraws. The field isn't sliced open along a line, it's touched only where a seed is actually needed.",
       "Because it enters vertically rather than dragging horizontally, VIPP handles thick residue without the hairpinning and blockage that trips up conventional openers, so the mulch layer keeps doing its job of buffering temperature, holding moisture, and feeding soil biology.",

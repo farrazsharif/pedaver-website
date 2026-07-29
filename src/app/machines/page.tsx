@@ -53,6 +53,19 @@ export default function MachinesPage() {
                   </p>
                 ))}
               </div>
+              {machine.videoId && (
+                <div className="mt-5 max-w-md overflow-hidden rounded-xl border border-border shadow-sm">
+                  <div className="aspect-video w-full">
+                    <iframe
+                      src={`https://www.youtube.com/embed/${machine.videoId}`}
+                      title={`${machine.title} — video`}
+                      className="h-full w-full"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                    />
+                  </div>
+                </div>
+              )}
             </article>
           ))}
         </div>
