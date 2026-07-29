@@ -14,7 +14,7 @@ export interface FounderGalleryEra {
 export const founderGallery: FounderGalleryEra[] = [
   {
     era: "Origins",
-    note: "The engineering career before PQNK existed.",
+    note: "The founding decades — from imported machinery to the first PQNK field year.",
     photos: [
       {
         slug: "sugarcane-1977",
@@ -33,6 +33,12 @@ export const founderGallery: FounderGalleryEra[] = [
         image: "/images/founder/pm_nawaz_award.jpg",
         date: "1990s",
         caption: "Prime Minister Nawaz Sharif presents an award for establishing the pioneer seed plant in Sahiwal.",
+      },
+      {
+        slug: "solar-irrigation-cm-punjab",
+        image: "/images/founder/solar_irrigation_cm_punjab.jpg",
+        date: "2008",
+        caption: "Introducing a solar-powered irrigation and power generation system to the Chief Minister of Punjab, on a visit to the operation.",
       },
     ],
   },
@@ -87,6 +93,18 @@ export const founderGallery: FounderGalleryEra[] = [
         image: "/images/founder/oic_fao_green_growth.jpg",
         date: "Dec 2019",
         caption: "OIC & FAO international conference on Green Growth.",
+      },
+      {
+        slug: "uvas-session",
+        image: "/images/founder/uvas_session.jpg",
+        date: "Jan 2020",
+        caption: "Interactive session at the University of Veterinary and Animal Sciences (UVAS).",
+      },
+      {
+        slug: "uaf-session",
+        image: "/images/founder/uaf_session.jpg",
+        date: "Jan 2020",
+        caption: "Interactive session at the University of Agriculture, Faisalabad (UAF).",
       },
       {
         slug: "lums-mit-field-day",
