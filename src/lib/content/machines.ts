@@ -64,24 +64,15 @@ export const machines: Machine[] = [
     ],
   },
   {
-    slug: "mulcher",
-    title: "The Mulcher",
-    summary: "Turns crop residue back into the soil's own future fertility, instead of waste to be cleared.",
+    slug: "mulcher-bed-renovator",
+    title: "The Mulcher & Bed Renovator",
+    summary: "One dual-purpose implement: turns crop residue into future fertility, then keeps the permanent bed architecture precise for years.",
+    image: "/images/machines/bed-renovator.jpg",
     videoFile: "/videos/mulcher-flail-mowing.mp4",
     body: [
-      "Conventional agriculture treats post-harvest residue as an obstacle: burned, removed, or buried out of the way. PQNK treats it as future soil. A forest doesn't export its fallen leaves; the mulcher applies that same logic to farmland.",
-      "It reduces and evenly distributes residue so it stays in contact with the soil surface, where microbes, fungi, and earthworms can break it down, without removing that organic matter from the field. The machine performs a brief operation; biology carries on the transformation for months afterward.",
-      "The payoff compounds: reduced surface temperature swings, lower evaporation, better infiltration, and a steady feed of carbon and nutrients back into the system the crop that produced the residue came from.",
-    ],
-  },
-  {
-    slug: "bed-renovator",
-    title: "The Bed Renovator",
-    summary: "Maintains the permanent architecture over years, without ever rebuilding the field.",
-    image: "/images/machines/bed-renovator.jpg",
-    body: [
-      "Even a permanent bed system experiences minor wear: rainfall reshapes furrow edges, machinery traffic gradually affects corridors. The bed renovator corrects only the specific portions that need it, restoring the original architecture's precision without reconstructing the field.",
-      "It is a maintenance machine, not a construction or cultivation one, closer to a conservation engineer than a builder. As a PQNK system matures and its accumulated root channels, carbon reserves, and biological structure become more valuable, this precision matters more, not less.",
+      "This is a single machine built to do two maintenance jobs. Conventional agriculture treats post-harvest residue as an obstacle: burned, removed, or buried out of the way. PQNK treats it as future soil. A forest doesn't export its fallen leaves; in mulching mode, this implement applies that same logic to farmland, reducing and evenly distributing residue so it stays in contact with the soil surface, where microbes, fungi, and earthworms can break it down without removing that organic matter from the field. The machine performs a brief operation; biology carries on the transformation for months afterward, compounding into reduced surface temperature swings, lower evaporation, better infiltration, and a steady feed of carbon and nutrients back into the system the crop that produced the residue came from.",
+      "In its other role, the same implement maintains the permanent bed architecture the raised bed shaper first established. Even a permanent bed system experiences minor wear: rainfall reshapes furrow edges, machinery traffic gradually affects corridors. Switched to bed-renovation mode, it corrects only the specific portions that need it, restoring the original architecture's precision without reconstructing the field.",
+      "Whichever job it is doing, it is a maintenance machine, not a construction or cultivation one, closer to a conservation engineer than a builder. As a PQNK system matures and its accumulated root channels, carbon reserves, and biological structure become more valuable, this precision matters more, not less.",
     ],
   },
 ];

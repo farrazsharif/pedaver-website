@@ -31,6 +31,8 @@ export const crops: Crop[] = [
   {
     slug: "cotton",
     flagship: true,
+    videoId: "r1iN4iRsTmE",
+    videoTitle: "PQNK Cotton: Resilience Through Drought and Biological Balance",
     name: "Cotton",
     blurb: "PQNK fiber production, documented in short field clips from active cotton plots.",
     overview:
