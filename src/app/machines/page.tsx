@@ -66,6 +66,16 @@ export default function MachinesPage() {
                   </div>
                 </div>
               )}
+              {machine.videoFile && (
+                <div className="mt-5 max-w-md overflow-hidden rounded-xl border border-border shadow-sm">
+                  <video
+                    src={machine.videoFile}
+                    controls
+                    className="h-full w-full"
+                    aria-label={`${machine.title} — video`}
+                  />
+                </div>
+              )}
             </article>
           ))}
         </div>

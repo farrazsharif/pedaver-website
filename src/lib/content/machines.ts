@@ -6,6 +6,8 @@ export interface Machine {
   image?: string;
   /** Optional: a YouTube video ID demonstrating this machine. */
   videoId?: string;
+  /** Optional: a self-hosted video file path (used when no YouTube link exists). */
+  videoFile?: string;
 }
 
 export const machinePhilosophy: string[] = [
@@ -53,6 +55,7 @@ export const machines: Machine[] = [
     slug: "vipp-planter",
     title: "VIPP — Vertical Insertion Precision Planter",
     summary: "A vertical beak that touches the bed only at the exact point a seed needs to go.",
+    image: "/images/machines/vipp-hand-pushed.jpg",
     videoId: "dQBg5luBgEQ",
     body: [
       "VIPP solves the same problem from a different angle: instead of cutting a slit, a narrow beak moves straight down through the mulch and soil, opens a single placement point, deposits the seed at the set depth, and withdraws. The field isn't sliced open along a line, it's touched only where a seed is actually needed.",
@@ -64,19 +67,11 @@ export const machines: Machine[] = [
     slug: "mulcher",
     title: "The Mulcher",
     summary: "Turns crop residue back into the soil's own future fertility, instead of waste to be cleared.",
+    videoFile: "/videos/mulcher-flail-mowing.mp4",
     body: [
       "Conventional agriculture treats post-harvest residue as an obstacle: burned, removed, or buried out of the way. PQNK treats it as future soil. A forest doesn't export its fallen leaves; the mulcher applies that same logic to farmland.",
       "It reduces and evenly distributes residue so it stays in contact with the soil surface, where microbes, fungi, and earthworms can break it down, without removing that organic matter from the field. The machine performs a brief operation; biology carries on the transformation for months afterward.",
       "The payoff compounds: reduced surface temperature swings, lower evaporation, better infiltration, and a steady feed of carbon and nutrients back into the system the crop that produced the residue came from.",
-    ],
-  },
-  {
-    slug: "precision-weeding-and-aeration",
-    title: "Precision Weeding & Aeration",
-    summary: "Targeted, occasional assistance to the field, not routine cultivation of it.",
-    body: [
-      "Conventional weed control assumes the soil must be worked. PQNK starts from the opposite premise: disturbance has to earn its place, and repeated cultivation destroys biological channels and fungal networks in exchange for temporary weed suppression.",
-      "Precision weeding and aeration intervene only at specific points, leaving permanent beds, protected biological zones, and surface mulch intact. It's assistance during a transition, not a routine, and its use is expected to decline as the field's own roots and biology take over structuring and self-regulation.",
     ],
   },
   {
