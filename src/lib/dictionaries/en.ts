@@ -194,8 +194,8 @@ const en = {
       "As one colleague put it: Sharif didn't just build new machines. He built a new way of farming, one already written into nature itself.",
     recordTitle: "Read the Full Record",
     recordBody:
-      "Five Decades of Agricultural Innovation is Sharif's own year-by-year account of the interventions above, from 1973 to today, documented in his own words, photographs, and field data.",
-    recordButton: "Read the Knowledge Paper",
+      "Five Decades of Agricultural Innovation is Sharif's own year-by-year account of the interventions above, from 1973 to today, documented in his own words, photographs and field data, available as a downloadable PDF and as a six-part narrated video series.",
+    recordButton: "Read the Paper & Watch the Videos",
   },
   crops: {
     pageTitle: "Crops & Solutions",

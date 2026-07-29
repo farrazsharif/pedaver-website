@@ -35,25 +35,26 @@ export default function FounderPage() {
 
       <Section>
         <div className="mx-auto flex max-w-3xl flex-col gap-10">
-          {dict.founder.sections.map((section) => (
+          {dict.founder.sections.map((section, i) => (
             <div key={section.title}>
               <h2 className="text-2xl font-bold text-primary-dark">{section.title}</h2>
               <p className="mt-3 leading-relaxed text-ink-soft">{section.body}</p>
+              {i === 0 && (
+                <div className="mt-6 flex flex-col items-start gap-3 rounded-2xl border border-border bg-card p-6 sm:flex-row sm:items-center sm:justify-between">
+                  <div>
+                    <h3 className="text-lg font-bold text-primary-dark">{dict.founder.recordTitle}</h3>
+                    <p className="mt-1 text-sm text-ink-soft">{dict.founder.recordBody}</p>
+                  </div>
+                  <Link
+                    href="/papers/five-decades-of-agricultural-innovation"
+                    className="inline-block flex-shrink-0 rounded-full bg-primary px-5 py-2.5 text-center text-sm font-semibold text-cream shadow-sm transition hover:bg-primary-dark"
+                  >
+                    {dict.founder.recordButton}
+                  </Link>
+                </div>
+              )}
             </div>
           ))}
-        </div>
-
-        <div className="mx-auto mt-10 flex max-w-3xl flex-col items-start gap-3 rounded-2xl border border-border bg-card p-6 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <h2 className="text-lg font-bold text-primary-dark">{dict.founder.recordTitle}</h2>
-            <p className="mt-1 text-sm text-ink-soft">{dict.founder.recordBody}</p>
-          </div>
-          <Link
-            href="/papers/five-decades-of-agricultural-innovation"
-            className="inline-block flex-shrink-0 rounded-full bg-primary px-5 py-2.5 text-center text-sm font-semibold text-cream shadow-sm transition hover:bg-primary-dark"
-          >
-            {dict.founder.recordButton}
-          </Link>
         </div>
 
         <figure className="mx-auto mt-12 max-w-3xl">
