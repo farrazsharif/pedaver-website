@@ -1465,6 +1465,30 @@ export const papers: Paper[] = [
     ],
   },
   {
+    slug: "can-high-tds-water-be-used-to-rehabilitate-saline-soils",
+    category: "Water & Climate",
+    title: "Can High-TDS Water Be Used to Rehabilitate Saline Soils?",
+    summary:
+      "Conventional guidelines flag groundwater above 1,000-1,500 ppm TDS as unsuitable for irrigation, pushing farmers to abandon productive land. This paper argues the real determinant isn't the water's salt concentration but the soil's physical and biological capacity to keep those salts moving instead of accumulating in the root zone, backed by a crop-by-crop salt-load data table.",
+    publishedDate: "2026-07-30",
+    pdfPath: "/papers/can-high-tds-water-be-used-to-rehabilitate-saline-soils.pdf",
+    abstract: [
+      "For generations, farmers have been taught that irrigation water above 1,000-2,000 ppm TDS is unsuitable for sustainable agriculture, and laboratory reports at these levels routinely lead to abandoned land. PQNK argues the widespread belief conflates two different things: dissolved salts are not harmful simply by being present in irrigation water, they become harmful only when they accumulate in the root zone faster than biological and hydraulic processes can redistribute them. Conventional flood irrigation over hardpan-compacted soil creates exactly the conditions for that accumulation, water pools near the surface, evaporates, and leaves salts behind, with each irrigation cycle depositing another layer.",
+      "PQNK's response is not to alter the water's chemistry but the soil receiving it. A tine breaks the hardpan roughly twenty-two inches deep to restore vertical drainage; where pH exceeds 8, sulphuric acid is applied during the deep-wash phase to disperse compacted salt-rich zones and release calcium; and permanent raised beds, cover crops such as Jantar, and continuous mulch cover then let soil biology take over as the long-term regulator.",
+      "Once biologically active, soil doesn't just drain differently, it actively buffers the root environment: measurements near actively growing roots in alkaline soils (bulk pH 8 or higher) commonly show near-neutral pH right at the root surface, even though the surrounding soil hasn't changed. The paper attributes this to the plant continuously feeding root exudates to microbes, which in turn moderate pH, stabilize soil aggregates, and buffer excess salts specifically within the active root zone.",
+      "Because PQNK's Soil Moisture Management applies only the water a crop actually needs, typically cutting irrigation volume by 70-90%, the total mass of dissolved solids entering a field falls proportionally, even when the water's concentration is unchanged. The paper includes a crop-by-crop data table (wheat, cotton, corn, potato, sugarcane, rice) quantifying dissolved-solids accumulation at TDS levels from 500 to 6,000 ppm under conventional versus PQNK irrigation volumes.",
+      "Its practical conclusion: water at 1,500 ppm TDS can be used productively, but only within a fully established PQNK system, not as a standalone claim about the water itself. This doesn't eliminate the value of water testing, the paper argues, it just places that testing within the broader context of whether the soil receiving the water can actually manage the resulting salt load.",
+    ],
+    keyTakeaways: [
+      "Core reframe: dissolved salts become harmful only when they accumulate in the root zone faster than they can be redistributed, not simply because they're present in irrigation water.",
+      "Hardpan is broken to roughly 22 inches deep; where soil pH exceeds 8, sulphuric acid is applied during the deep-wash phase to disperse salt-rich zones and release calcium.",
+      "Active soil biology measurably buffers the root zone: near-neutral pH is commonly observed right at actively growing roots even when the bulk soil remains at pH 8 or higher.",
+      "Because PQNK cuts irrigation volume by roughly 70-90%, the total mass of dissolved solids entering a field falls proportionally, independent of the water's concentration.",
+      "Includes a crop-by-crop data table (wheat, cotton, corn, potato, sugarcane, rice) quantifying dissolved-solids accumulation from 500-6,000 ppm TDS, conventional versus PQNK irrigation volumes.",
+      "Conclusion: 1,500 ppm TDS water can be used productively, but only within a fully established PQNK system, not as a standalone property of the water itself.",
+    ],
+  },
+  {
     slug: "channeling-plant-energy-managing-vegetative-growth",
     category: "Plant Physiology & Production Systems",
     title:
