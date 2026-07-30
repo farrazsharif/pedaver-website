@@ -7,6 +7,11 @@ ErrorDocument 404 /404.html
 # Farmer Stories was merged into the Knowledge & Testimonials page
 RedirectMatch 301 ^/farmer-stories/?$ /videos/
 
+# Certification was renamed to Validation (PQNK validates practice, it doesn't
+# certify organic status) — redirect at the server level so search engines and
+# old links get a real 301, not just the page's client-side JS redirect
+RedirectMatch 301 ^/certification/?$ /validation/
+
 # Cache static assets aggressively (they are content-hashed by Next)
 <IfModule mod_expires.c>
   ExpiresActive On
