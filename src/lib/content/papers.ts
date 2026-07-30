@@ -805,6 +805,30 @@ export const papers: Paper[] = [
     ],
   },
   {
+    slug: "managing-the-biological-transition",
+    category: "Soil Science & PQNK System",
+    title: "Managing the Biological Transition: Protecting Crop Performance During the First Years of PQNK Conversion",
+    summary:
+      "The engineering side of PQNK conversion, hardpan breaking, bed formation, cover cropping, can be finished in weeks, but the soil biology that actually runs the system takes longer to rebuild. This paper explains why the first few crops need closer monitoring, and lays out the minimal, symptom-triggered temporary support (never a return to routine chemical use) that carries a farmer through that gap without abandoning PQNK.",
+    publishedDate: "2026-07-30",
+    pdfPath: "/papers/managing-the-biological-transition.pdf",
+    abstract: [
+      "Most attempts to introduce natural farming fail, the paper argues, because they attempt an immediate substitution of conventional inputs without first rebuilding the biological engine that performs those functions naturally. Conventional agriculture runs on soil system substitution: chemical fertilizer substitutes for biological nutrient cycling, pesticides substitute for natural predator populations, herbicides substitute for ecological weed regulation, and repeated tillage substitutes for biological soil structuring. PQNK's objective is not to substitute a different external input, but to restore the natural processes those inputs replaced, and that restoration takes time.",
+      "The transition is therefore framed as a gradual movement from substitution toward supplementation, and finally toward a fully self-regulating biological ecosystem. Hardpan can be broken in a single operation, permanent raised beds built immediately, and cover crops established within weeks, but millions of microorganisms, fungi, predators, and beneficial insects still need time to recolonize the restored habitat, which is why the first few crops demand closer observation than any later stage.",
+      "Because most transition problems trace back to incomplete implementation rather than a flaw in PQNK itself, the paper walks through the common omissions, incomplete hardpan breaking, a weak Jantar cover crop, insufficient residue retention, premature soil disturbance, excessive irrigation, or lax Soil Moisture Management, and treats each as the actual thing to fix, rather than a reason to fall back on conventional inputs.",
+      "Where a genuine, visible deficiency does appear, the recommended supplement is deliberately small: roughly 4 kg of NP fertilizer dissolved into furrow irrigation water, justified specifically by PQNK's own hydraulics, since irrigation volume is a fraction of conventional flood irrigation, the same small dose reaches the root zone far more concentrated than it would in a flooded field. In most cases one application is enough; occasionally two or three are needed across the first few crops. The same logic applies to pest and weed pressure: temporary pesticide use is justified only once monitored infestation crosses roughly a 10% economic-damage threshold, and herbicide only when weed competition genuinely threatens crop establishment, in both cases as an emergency measure expected to shrink with every successive crop as biological control and mulch-driven weed suppression strengthen.",
+      "The paper is explicit that none of this contradicts PQNK: a damaged ecosystem needs rehabilitation before it can become self-regulating, and every intervention it describes is triggered by field observation, not a calendar, and is expected to shrink toward zero as the soil takes over. Its closing argument is that the biological transition period is not a weakness in PQNK but evidence that living systems recover through progressive ecological succession rather than instantaneous change, and that a farmer who receives careful, minimal support during that recovery is far more likely to stay with the system than one who suffers an avoidable yield loss and abandons it.",
+    ],
+    keyTakeaways: [
+      "Core distinction: PQNK moves a field from soil system substitution (conventional inputs replacing lost biological functions) toward supplementation, and finally to a self-regulating biological ecosystem — engineering steps take days, biological recovery takes seasons.",
+      "Most transition-period problems come from incomplete implementation, not from a failure of PQNK principles: incomplete hardpan breaking, a weak Jantar cover crop, insufficient residue retention, premature disturbance, or poor Soil Moisture Management are the usual causes.",
+      "Where a genuine deficiency is visible, roughly 4 kg of NP fertilizer dissolved into furrow irrigation is the recommended temporary correction — small because PQNK's low irrigation volume concentrates it directly at the root zone; often just one application is enough.",
+      "Temporary pesticide use is reserved for monitored pest pressure crossing roughly a 10% economic-damage threshold; temporary herbicide use only when weeds threaten crop establishment — both are emergency measures, not routine management, and should shrink with each successive crop.",
+      "Every intervention described is triggered by field observation of actual symptoms, never by a fixed calendar — inputs are applied because deficiency, pest, or weed pressure is confirmed, not because a schedule says to.",
+      "Frames the transition period itself as evidence PQNK works as intended (living systems recover through ecological succession, not overnight), and argues that giving a struggling farmer minimal, well-targeted support prevents the yield loss that would otherwise cause them to abandon the system entirely.",
+    ],
+  },
+  {
     slug: "the-breathing-soil-humidity-and-soil-structure",
     category: "Soil Science & PQNK System",
     title: "The Breathing Soil: A PQNK Dialogue on Humidity and Soil Structure",
