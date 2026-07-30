@@ -1,6 +1,7 @@
 import Link from "next/link";
 import dict from "@/lib/dictionaries";
 import { flagshipCrops, otherCrops } from "@/lib/content/crops";
+import { cropImages } from "@/lib/content/cropImages";
 import Section from "@/components/Section";
 import { buildMetadata } from "@/lib/seo";
 
@@ -28,11 +29,20 @@ export default function CropsPage() {
             <Link
               key={crop.slug}
               href={`/crops/${crop.slug}`}
-              className="group rounded-2xl border border-border bg-card p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+              className="group overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition hover:-translate-y-1 hover:shadow-md"
             >
-              <h3 className="text-xl font-bold text-primary-dark group-hover:text-primary">{crop.name}</h3>
-              <p className="mt-2 text-sm text-ink-soft">{crop.blurb}</p>
-              <span className="mt-4 inline-block text-sm font-semibold text-accent">{dict.crops.viewGuide} →</span>
+              <div className="h-44 w-full overflow-hidden">
+                <img
+                  src={cropImages[crop.slug]}
+                  alt={crop.name}
+                  className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-primary-dark group-hover:text-primary">{crop.name}</h3>
+                <p className="mt-2 text-sm text-ink-soft">{crop.blurb}</p>
+                <span className="mt-4 inline-block text-sm font-semibold text-accent">{dict.crops.viewGuide} →</span>
+              </div>
             </Link>
           ))}
         </div>
