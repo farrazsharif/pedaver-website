@@ -15,6 +15,14 @@ export interface ExternalVideoEntry {
   title: string;
   sourceName: string;
   sourceUrl: string;
+  /**
+   * A short written English summary of the video's spoken content. Most of
+   * these are farmer workshops recorded in Urdu/Punjabi with no usable
+   * YouTube captions, so this is the only text on the page that actually
+   * describes what's said — and, unlike the video itself, it's real page
+   * text that the site's translate-to-other-languages feature can pick up.
+   */
+  description?: string;
 }
 
 export const officialChannel = {
@@ -40,6 +48,8 @@ export const workshopVideos: ExternalVideoEntry[] = [
     title: "Sahiwal Farmers Workshop — PQNK Old & New Farmers",
     sourceName: "YouTube",
     sourceUrl: "https://www.youtube.com/watch?v=95R-Ah83lI0",
+    description:
+      "Asif Sharif explains the devastation caused by ACI (Ancient Conventional Industrial) farming to a room of Sahiwal farmers, walking through why that damage happens and how PQNK reverses it.",
   },
 ];
 

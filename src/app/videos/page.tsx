@@ -112,6 +112,7 @@ export default function VideosPage() {
               <div key={video.videoId}>
                 <VideoEmbed videoId={video.videoId} title={video.title} />
                 <p className="mt-3 text-sm font-medium text-ink">{video.title}</p>
+                {video.description && <p className="mt-1 text-sm text-ink-soft">{video.description}</p>}
                 <a
                   href={video.sourceUrl}
                   target="_blank"
