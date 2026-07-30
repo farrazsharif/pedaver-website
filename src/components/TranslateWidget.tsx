@@ -1,27 +1,7 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-
-declare global {
-  interface Window {
-    googleTranslateElementInit?: () => void;
-    google?: {
-      translate: {
-        TranslateElement: {
-          new (
-            options: {
-              pageLanguage: string;
-              layout?: number;
-              autoDisplay?: boolean;
-            },
-            containerId: string
-          ): unknown;
-          InlineLayout: { SIMPLE: number };
-        };
-      };
-    };
-  }
-}
+import { useRef } from "react";
+import { SITE_URL } from "@/lib/seo";
 
 // A curated set of Google Translate's supported languages. Urdu, Punjabi,
 // Pashto, and Sindhi are pulled into a "Suggested" group up top since most
@@ -152,62 +132,31 @@ const REST = ALL_LANGUAGES.filter(([code]) => !SUGGESTED_CODES.has(code));
 /**
  * A compact "translate this page" control.
  *
- * Google's own Website Translator widget (the small "Select Language" box
- * with a search field) opens a giant, unstyled overlay listing every
- * language in a wide grid — that overlay lives in a cross-origin iframe we
- * cannot restyle or make responsive, and it was overflowing the page and
- * effectively burying languages like Urdu below the fold.
+ * Google's embeddable Website Translator widget (the in-page "select a
+ * language and watch the DOM swap" gadget) depends on third-party
+ * cookies/storage from Google's translate domains, which modern browsers
+ * now block by default — the widget silently no-ops instead of erroring.
+ * Google's separate translate.google.com proxy page has no such
+ * dependency, so instead of driving the broken in-page widget, this
+ * control opens that proxy page in a new tab, pointed at the current
+ * article.
  *
- * Instead, we keep Google's translation *engine* (loaded invisibly, off
- * in the corner) but drive it entirely through our own native <select>,
- * with Urdu, Punjabi, Pashto, and Sindhi surfaced at the top. A native
- * select can never overflow the page — the browser handles the long list
- * itself — and we get to keep the site's own visual language for the
- * trigger control.
+ * The Urdu, Punjabi, Pashto, and Sindhi are pulled into a "Suggested"
+ * group up top since most PQNK visitors reading in a non-English language
+ * will want one of those — the full alphabetical list still contains
+ * everything below it. A native <select> can never overflow the page —
+ * the browser handles the long list itself.
  */
 export default function TranslateWidget() {
   const selectRef = useRef<HTMLSelectElement>(null);
 
-  useEffect(() => {
-    if (document.getElementById("google-translate-script")) return;
-
-    window.googleTranslateElementInit = () => {
-      if (!window.google) return;
-      new window.google.translate.TranslateElement(
-        {
-          pageLanguage: "en",
-          layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
-          autoDisplay: false,
-        },
-        "google_translate_element"
-      );
-    };
-
-    const script = document.createElement("script");
-    script.id = "google-translate-script";
-    script.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-    script.async = true;
-    document.body.appendChild(script);
-  }, []);
-
-  const applyTranslation = (code: string, attempt = 0) => {
-    const combo = document.querySelector<HTMLSelectElement>("select.goog-te-combo");
-    if (combo) {
-      combo.value = code;
-      combo.dispatchEvent(new Event("change"));
-      return;
-    }
-    // Google's script loads async and may not have injected its own
-    // <select> yet on a fast click right after page load — retry briefly.
-    if (attempt < 10) {
-      setTimeout(() => applyTranslation(code, attempt + 1), 300);
-    }
-  };
-
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const code = e.target.value;
     if (!code) return;
-    applyTranslation(code);
+    const currentPath = window.location.pathname + window.location.search;
+    const targetUrl = `${SITE_URL}${currentPath}`;
+    const translateUrl = `https://translate.google.com/translate?sl=en&tl=${encodeURIComponent(code)}&u=${encodeURIComponent(targetUrl)}`;
+    window.open(translateUrl, "_blank", "noopener,noreferrer");
     // Reset so the same language can be re-selected later and the control
     // always shows the neutral "Translate" state rather than a raw code.
     if (selectRef.current) selectRef.current.value = "";
@@ -215,15 +164,6 @@ export default function TranslateWidget() {
 
   return (
     <div className="relative">
-      {/* Google's actual widget: kept mounted so the engine works, but
-          visually hidden — this is what powers the native goog-te-combo
-          select we drive above. */}
-      <div
-        id="google_translate_element"
-        className="pointer-events-none absolute h-0 w-0 overflow-hidden opacity-0"
-        aria-hidden="true"
-      />
-
       <div
         className="flex h-10 w-10 items-center justify-center rounded-full text-cream/80 transition hover:bg-white/10 hover:text-cream"
         aria-hidden="true"
@@ -238,12 +178,12 @@ export default function TranslateWidget() {
         ref={selectRef}
         defaultValue=""
         onChange={handleChange}
-        aria-label="Translate this page — click here and select a language"
-        title="Translate this page — select a language"
+        aria-label="Translate this page — opens in a new tab"
+        title="Translate this page — opens in a new tab"
         className="absolute inset-0 h-10 w-10 cursor-pointer appearance-none opacity-0"
       >
         <option value="" disabled>
-          Translate this page — select a language
+          Translate this page (opens in a new tab)
         </option>
         <optgroup label="Suggested">
           {SUGGESTED.map(([code, name]) => (
