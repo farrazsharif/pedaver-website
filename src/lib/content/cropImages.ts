@@ -3,7 +3,7 @@
 export const cropImages: Record<string, string> = {
   wheat: "/images/wheat-field.jpg",
   cotton: "/images/crops/cotton-mulched-raised-beds.jpg",
-  rice: "/images/cereal-green.jpg",
+  rice: "/images/crops/rice-paddy-field.jpg",
   "citrus-kinnow": "/images/crops/kinnow-orchard-rows.jpg",
   sugarcane: "/images/young-crop-beds.jpg",
   pomegranate: "/images/pomegranate.jpg",
