@@ -36,7 +36,7 @@ export const crops: Crop[] = [
     name: "Cotton",
     blurb: "PQNK fiber production, documented in short field clips from active cotton plots.",
     overview:
-      "Cotton is grown under PQNK as part of Pedaver's fiber production work. Field clips from active cotton plots show the crop's development under PQNK's ecosystem-based approach rather than conventional input-heavy management.",
+      "Cotton is grown under PQNK as part of Pedaver's fiber production work. In one documented season, cotton planted on permanent PQNK raised beds survived a prolonged drought caused by electricity load-shedding, with no pesticide sprays and only about 10 kg of fertilizer applied all season, staying green and free of pink bollworm while neighboring conventional fields turned yellow and heavily infested, for roughly double the crop performance.",
     practices: [
       "Ecosystem-based soil and root-zone management instead of routine synthetic inputs",
       "Field documentation shared directly from working cotton plots",
@@ -93,7 +93,7 @@ export const crops: Crop[] = [
     name: "Pomegranate",
     blurb: "Watch pomegranate development under PQNK, filmed directly on a working orchard.",
     overview:
-      "Pomegranate under PQNK is documented on video, showing orchard conditions and fruit development under the system's soil-first approach.",
+      "Pomegranate under PQNK is established at high density, roughly 1,089 trees per acre. Conventional pomegranate commonly suffers from fruit cracking and pest pressure driven mainly by irregular, excessive irrigation. PQNK's soil moisture management instead delivers water infrequently and deeply through the fractured hardpan profile, avoiding the pressure spikes that split fruit and producing deeper-coloured, higher-juice pomegranates that hold their quality through the supply chain.",
     practices: [
       "Orchard soil rehabilitation and root-zone care under PQNK",
       "Direct video documentation of fruiting and orchard health",
