@@ -154,11 +154,29 @@ export default function TranslateWidget() {
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const code = e.target.value;
     if (!code) return;
+
+    // Open the tab as the very first thing this handler does. Safari (and
+    // sometimes Chrome) only honors window.open() as a direct result of a
+    // user gesture if there's no other work first — building the URL or
+    // firing analytics before calling it is enough for some browsers to
+    // silently block the popup. Opening blank first, then pointing it at
+    // the real URL once it's built, guarantees the open() call itself is
+    // the immediate reaction to the change event.
+    const translateTab = window.open("", "_blank", "noopener,noreferrer");
+
     trackLanguageChange(code, window.location.pathname);
     const currentPath = window.location.pathname + window.location.search;
     const targetUrl = `${SITE_URL}${currentPath}`;
     const translateUrl = `https://translate.google.com/translate?sl=en&tl=${encodeURIComponent(code)}&u=${encodeURIComponent(targetUrl)}`;
-    window.open(translateUrl, "_blank", "noopener,noreferrer");
+
+    if (translateTab) {
+      translateTab.location.href = translateUrl;
+    } else {
+      // Popup blocked anyway — fall back to same-tab navigation rather
+      // than silently doing nothing.
+      window.location.href = translateUrl;
+    }
+
     // Reset so the same language can be re-selected later and the control
     // always shows the neutral "Translate" state rather than a raw code.
     if (selectRef.current) selectRef.current.value = "";
