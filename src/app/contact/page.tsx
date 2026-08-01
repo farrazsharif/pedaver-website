@@ -1,6 +1,7 @@
 import dict from "@/lib/dictionaries";
 import Section from "@/components/Section";
 import ContactForm from "@/components/ContactForm";
+import TrackedExternalChannelLink from "@/components/analytics/TrackedExternalChannelLink";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
@@ -29,46 +30,42 @@ export default function ContactPage() {
             </a>
 
             <h2 className="mt-6 text-lg font-bold text-primary-dark">{dict.contact.whatsappLabel}</h2>
-            <a
+            <TrackedExternalChannelLink
               href="https://wa.me/923206776666"
-              target="_blank"
-              rel="noopener noreferrer"
+              label="WhatsApp"
               className="mt-1 block text-lg text-accent"
             >
               +92 320 677 6666
-            </a>
+            </TrackedExternalChannelLink>
 
             <h2 className="mt-8 text-lg font-bold text-primary-dark">{dict.contact.socialsTitle}</h2>
             <ul className="mt-2 flex flex-col gap-2 text-ink-soft">
               <li>
-                <a
+                <TrackedExternalChannelLink
                   href="https://www.facebook.com/Pedaver"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  label="Facebook"
                   className="hover:text-primary"
                 >
                   Facebook — facebook.com/Pedaver
-                </a>
+                </TrackedExternalChannelLink>
               </li>
               <li>
-                <a
+                <TrackedExternalChannelLink
                   href="https://www.youtube.com/@pedaverpqnk3167/videos"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  label="YouTube — PedaVer PQNK"
                   className="hover:text-primary"
                 >
                   YouTube — PedaVer PQNK
-                </a>
+                </TrackedExternalChannelLink>
               </li>
               <li>
-                <a
+                <TrackedExternalChannelLink
                   href="https://www.youtube.com/@aasifsharif"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  label="YouTube — Asif Sharif"
                   className="hover:text-primary"
                 >
                   YouTube — Asif Sharif
-                </a>
+                </TrackedExternalChannelLink>
               </li>
             </ul>
           </div>

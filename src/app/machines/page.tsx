@@ -2,6 +2,9 @@ import Link from "next/link";
 import dict from "@/lib/dictionaries";
 import { machines, machinePhilosophy } from "@/lib/content/machines";
 import Section from "@/components/Section";
+import VideoEmbed from "@/components/VideoEmbed";
+import TrackedVideo from "@/components/analytics/TrackedVideo";
+import SectionViewTracker from "@/components/analytics/SectionViewTracker";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
@@ -36,6 +39,12 @@ export default function MachinesPage() {
         <div className="mx-auto flex max-w-3xl flex-col gap-10">
           {machines.map((machine) => (
             <article key={machine.slug} id={machine.slug} className="scroll-mt-24">
+              <SectionViewTracker
+                targetId={machine.slug}
+                contentType="machine"
+                contentId={machine.slug}
+                contentTitle={machine.title}
+              />
               <h2 className="text-2xl font-bold text-primary-dark">{machine.title}</h2>
               <p className="mt-2 text-sm font-medium italic text-ink-soft">{machine.summary}</p>
               {machine.image && (
@@ -55,24 +64,23 @@ export default function MachinesPage() {
               </div>
               {machine.videoId && (
                 <div className="mt-5 max-w-md overflow-hidden rounded-xl border border-border shadow-sm">
-                  <div className="aspect-video w-full">
-                    <iframe
-                      src={`https://www.youtube.com/embed/${machine.videoId}`}
-                      title={`${machine.title} — video`}
-                      className="h-full w-full"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowFullScreen
-                    />
-                  </div>
+                  <VideoEmbed
+                    videoId={machine.videoId}
+                    title={`${machine.title} — video`}
+                    context="machine"
+                    contextId={machine.slug}
+                    className="aspect-video w-full"
+                  />
                 </div>
               )}
               {machine.videoFile && (
                 <div className="mt-5 max-w-md overflow-hidden rounded-xl border border-border shadow-sm">
-                  <video
+                  <TrackedVideo
                     src={machine.videoFile}
-                    controls
+                    contextType="machine"
+                    contextId={machine.slug}
                     className="h-full w-full"
-                    aria-label={`${machine.title} — video`}
+                    ariaLabel={`${machine.title} — video`}
                   />
                 </div>
               )}

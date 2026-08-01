@@ -8,6 +8,8 @@ import { getRelatedPapers } from "@/lib/content/crossLinks";
 import { notFound } from "next/navigation";
 import Section from "@/components/Section";
 import VideoEmbed from "@/components/VideoEmbed";
+import ContentViewTracker from "@/components/analytics/ContentViewTracker";
+import TrackedRelatedLink from "@/components/analytics/TrackedRelatedLink";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
 
 export async function generateStaticParams() {
@@ -49,6 +51,7 @@ export default async function CropDetailPage({
 
   return (
     <div>
+      <ContentViewTracker contentType="crop" contentId={slug} contentTitle={crop.name} />
       <section className="border-b border-border bg-primary-light/10">
         <div className="mx-auto max-w-4xl px-4 py-14 sm:px-6">
           <Link
@@ -103,7 +106,12 @@ export default async function CropDetailPage({
             {crop.videoId && (
               <div>
                 <h2 className="mb-3 text-xl font-bold text-primary-dark">{dict.cropDetail.videoTitle}</h2>
-                <VideoEmbed videoId={crop.videoId} title={crop.videoTitle ?? crop.name} />
+                <VideoEmbed
+                  videoId={crop.videoId}
+                  title={crop.videoTitle ?? crop.name}
+                  context="crop"
+                  contextId={crop.slug}
+                />
               </div>
             )}
           </div>
@@ -140,12 +148,16 @@ export default async function CropDetailPage({
             <ul className="mt-5 grid gap-3 sm:grid-cols-2">
               {relatedPapers.map((paper) => (
                 <li key={paper.slug}>
-                  <Link
+                  <TrackedRelatedLink
                     href={`/papers/${paper.slug}`}
+                    fromType="crop"
+                    fromId={slug}
+                    toType="paper"
+                    toId={paper.slug}
                     className="block rounded-xl border border-border bg-card p-4 text-sm font-semibold text-primary-dark shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
                   >
                     {paper.title}
-                  </Link>
+                  </TrackedRelatedLink>
                 </li>
               ))}
             </ul>

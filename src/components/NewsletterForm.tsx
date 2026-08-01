@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { trackNewsletterSignupIntent } from "@/lib/analytics";
 
 export default function NewsletterForm({
   namePlaceholder,
@@ -18,6 +19,7 @@ export default function NewsletterForm({
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    trackNewsletterSignupIntent();
     const subject = encodeURIComponent("Add me to PQNK updates");
     const body = encodeURIComponent(`Please add me to PQNK updates.\n\nName: ${name}\nEmail: ${email}`);
     window.location.href = `mailto:pedaver@gmail.com?subject=${subject}&body=${body}`;
@@ -32,6 +34,7 @@ export default function NewsletterForm({
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder={namePlaceholder}
+          data-clarity-mask="true"
           className="w-full rounded-full border border-cream/30 bg-cream/10 px-5 py-3 text-sm text-cream placeholder:text-cream/60 outline-none focus:border-cream/70"
         />
         <input
@@ -40,6 +43,7 @@ export default function NewsletterForm({
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder={placeholder}
+          data-clarity-mask="true"
           className="w-full rounded-full border border-cream/30 bg-cream/10 px-5 py-3 text-sm text-cream placeholder:text-cream/60 outline-none focus:border-cream/70"
         />
       </div>

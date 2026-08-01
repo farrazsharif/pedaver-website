@@ -48,7 +48,25 @@ public — this is a private preview on your machine only. Stop it with `Ctrl+C`
 The simplest safe change is **swapping a photo**: put a new image in
 `public/images/` using the *exact same filename* as the one it replaces.
 
-## 5. Build for publishing
+## 5. Analytics — create `.env.local` before building
+
+The site sends privacy-conscious analytics (Google Analytics 4 + Microsoft
+Clarity) plus Search Console verification, all configured through build-time
+environment variables. Before your **first** build, create a `.env.local`
+file at the project root (gitignored, never committed) with:
+
+```
+NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+NEXT_PUBLIC_CLARITY_PROJECT_ID=xxxxxxxxxx
+NEXT_PUBLIC_GSC_VERIFICATION=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+These get inlined into the site at `npm run build` time, so any time a
+value changes the site needs a rebuild + redeploy. See
+`docs/analytics-setup.md` for where each value comes from, the full event
+catalog, and pre-deployment testing steps.
+
+## 6. Build for publishing
 
 ```bash
 npm run build
@@ -58,7 +76,7 @@ This regenerates the **`out/`** folder — the complete static site. A copy of
 the `.htaccess` file (custom 404 + caching) should sit at the top of `out/`
 before you zip it; see `docs/htaccess.txt` for its contents.
 
-## 6. Publish to the live site (cPanel)
+## 7. Publish to the live site (cPanel)
 
 1. Zip the **contents** of `out/` (so `index.html` is at the top of the zip,
    not inside an `out/` folder). Use forward-slash paths (right-click → Send to
@@ -71,7 +89,7 @@ before you zip it; see `docs/htaccess.txt` for its contents.
 The site is 100% static, so there is nothing to configure on the server —
 cPanel just serves the files.
 
-## 7. Team workflow (two people)
+## 8. Team workflow (two people)
 
 ```bash
 git pull            # get the latest before you start
@@ -82,6 +100,11 @@ git push            # share your changes
 ```
 
 Always `git pull` before editing so you both stay in sync.
+
+Both of you need your own local copy of the `.env.local` values from
+step 5 — share them out-of-band (a password manager entry or a private
+note), never in a commit, issue, or chat message that could get pasted
+into a tracked file.
 
 ---
 

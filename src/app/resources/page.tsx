@@ -1,6 +1,7 @@
 import dict from "@/lib/dictionaries";
 import { resources } from "@/lib/content/resources";
 import Section from "@/components/Section";
+import SectionViewTracker from "@/components/analytics/SectionViewTracker";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
@@ -24,6 +25,12 @@ export default function ResourcesPage() {
         <div className="mx-auto flex max-w-3xl flex-col gap-10">
           {resources.map((resource) => (
             <article key={resource.slug} id={resource.slug} className="scroll-mt-24">
+              <SectionViewTracker
+                targetId={resource.slug}
+                contentType="resource"
+                contentId={resource.slug}
+                contentTitle={resource.title}
+              />
               <h2 className="text-2xl font-bold text-primary-dark">{resource.title}</h2>
               <p className="mt-2 text-sm font-medium italic text-ink-soft">{resource.summary}</p>
               <div className="mt-4 flex flex-col gap-3">

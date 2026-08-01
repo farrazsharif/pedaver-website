@@ -3,6 +3,7 @@ import dict from "@/lib/dictionaries";
 import { services } from "@/lib/content/services";
 import { partnershipTitle, partnershipSubtitle, partnershipSections } from "@/lib/content/partnership";
 import Section from "@/components/Section";
+import TrackedExternalChannelLink from "@/components/analytics/TrackedExternalChannelLink";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
@@ -38,14 +39,13 @@ export default function ServicesPage() {
           <ul className="mt-3 flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-x-6 sm:gap-y-2">
             {dict.services.freeChannels.map((channel) => (
               <li key={channel.href}>
-                <a
+                <TrackedExternalChannelLink
                   href={channel.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  label={channel.label}
                   className="text-sm font-semibold text-accent hover:text-accent-light"
                 >
                   {channel.label} →
-                </a>
+                </TrackedExternalChannelLink>
               </li>
             ))}
           </ul>

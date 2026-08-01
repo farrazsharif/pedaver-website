@@ -1,7 +1,47 @@
-export default function VideoEmbed({ videoId, title }: { videoId: string; title: string }) {
+"use client";
+
+import { useEffect, useRef } from "react";
+import { trackVideoEngage } from "@/lib/analytics";
+import type { VideoContextType } from "@/lib/analytics/types";
+
+/**
+ * Cross-origin YouTube iframes can't bubble real play/pause events into
+ * the parent document. video_engage is a focus-detection proxy instead —
+ * it fires once, the first time the visitor's focus moves into this
+ * specific player — not a substitute for real watch-time data.
+ */
+export default function VideoEmbed({
+  videoId,
+  title,
+  context,
+  contextId,
+  className = "aspect-video w-full overflow-hidden rounded-xl border border-border bg-black shadow-sm",
+}: {
+  videoId: string;
+  title: string;
+  context?: VideoContextType;
+  contextId?: string;
+  className?: string;
+}) {
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+  const engaged = useRef(false);
+
+  useEffect(() => {
+    if (!context || !contextId) return;
+    function onWindowBlur() {
+      if (engaged.current) return;
+      if (document.activeElement !== iframeRef.current) return;
+      engaged.current = true;
+      trackVideoEngage(videoId, context!, contextId!);
+    }
+    window.addEventListener("blur", onWindowBlur);
+    return () => window.removeEventListener("blur", onWindowBlur);
+  }, [context, contextId, videoId]);
+
   return (
-    <div className="aspect-video w-full overflow-hidden rounded-xl border border-border bg-black shadow-sm">
+    <div className={className}>
       <iframe
+        ref={iframeRef}
         className="h-full w-full"
         src={`https://www.youtube.com/embed/${videoId}`}
         title={title}

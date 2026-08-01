@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { Dictionary } from "@/lib/dictionaries";
+import { trackEnquirySubmitIntent } from "@/lib/analytics";
 
 export default function ContactForm({ dict }: { dict: Dictionary["contact"] }) {
   const [name, setName] = useState("");
@@ -10,6 +11,7 @@ export default function ContactForm({ dict }: { dict: Dictionary["contact"] }) {
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    trackEnquirySubmitIntent("contact_form");
     const subject = encodeURIComponent(`Website inquiry from ${name || "a visitor"}`);
     const body = encodeURIComponent(`${message}\n\n— ${name}\n${email}`);
     window.location.href = `mailto:pedaver@gmail.com?subject=${subject}&body=${body}`;
@@ -26,6 +28,7 @@ export default function ContactForm({ dict }: { dict: Dictionary["contact"] }) {
           required
           value={name}
           onChange={(e) => setName(e.target.value)}
+          data-clarity-mask="true"
           className="w-full rounded-lg border border-border bg-cream px-3 py-2 text-ink outline-none focus:border-primary"
         />
       </div>
@@ -36,6 +39,7 @@ export default function ContactForm({ dict }: { dict: Dictionary["contact"] }) {
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          data-clarity-mask="true"
           className="w-full rounded-lg border border-border bg-cream px-3 py-2 text-ink outline-none focus:border-primary"
         />
       </div>
@@ -46,6 +50,7 @@ export default function ContactForm({ dict }: { dict: Dictionary["contact"] }) {
           rows={5}
           value={message}
           onChange={(e) => setMessage(e.target.value)}
+          data-clarity-mask="true"
           className="w-full rounded-lg border border-border bg-cream px-3 py-2 text-ink outline-none focus:border-primary"
         />
       </div>

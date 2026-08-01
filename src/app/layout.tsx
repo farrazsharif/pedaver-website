@@ -4,6 +4,9 @@ import "./globals.css";
 import dict from "@/lib/dictionaries";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import GoogleAnalyticsScripts from "@/components/analytics/GoogleAnalyticsScripts";
+import ClarityScript from "@/components/analytics/ClarityScript";
+import AnalyticsClientRoot from "@/components/analytics/AnalyticsClientRoot";
 import { SITE_URL, SITE_NAME } from "@/lib/seo";
 
 // Display: a grounded slab serif for headings. Body: a warm humanist sans.
@@ -21,6 +24,9 @@ const hanken = Hanken_Grotesk({
 export const metadata: Metadata = {
   title: `${dict.meta.siteName} — PQNK`,
   description: dict.meta.tagline,
+  verification: process.env.NEXT_PUBLIC_GSC_VERIFICATION
+    ? { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION }
+    : undefined,
 };
 
 const organizationJsonLd = {
@@ -52,6 +58,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header dict={dict} />
         <main className="flex-1">{children}</main>
         <Footer dict={dict} />
+        <GoogleAnalyticsScripts gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
+        <ClarityScript projectId={process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID} />
+        <AnalyticsClientRoot />
       </body>
     </html>
   );

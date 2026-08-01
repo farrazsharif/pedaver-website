@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import { SITE_URL } from "@/lib/seo";
+import { trackLanguageChange } from "@/lib/analytics";
 
 // A curated set of Google Translate's supported languages. Urdu, Punjabi,
 // Pashto, and Sindhi are pulled into a "Suggested" group up top since most
@@ -153,6 +154,7 @@ export default function TranslateWidget() {
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const code = e.target.value;
     if (!code) return;
+    trackLanguageChange(code, window.location.pathname);
     const currentPath = window.location.pathname + window.location.search;
     const targetUrl = `${SITE_URL}${currentPath}`;
     const translateUrl = `https://translate.google.com/translate?sl=en&tl=${encodeURIComponent(code)}&u=${encodeURIComponent(targetUrl)}`;

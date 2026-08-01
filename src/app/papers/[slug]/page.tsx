@@ -5,6 +5,12 @@ import { papers, getPaperBySlug } from "@/lib/content/papers";
 import { getRelatedCrops } from "@/lib/content/crossLinks";
 import { notFound } from "next/navigation";
 import Section from "@/components/Section";
+import VideoEmbed from "@/components/VideoEmbed";
+import TrackedVideo from "@/components/analytics/TrackedVideo";
+import ContentViewTracker from "@/components/analytics/ContentViewTracker";
+import TrackedPdfLink from "@/components/analytics/TrackedPdfLink";
+import TrackedExternalLink from "@/components/analytics/TrackedExternalLink";
+import TrackedRelatedLink from "@/components/analytics/TrackedRelatedLink";
 import { buildMetadata, SITE_URL, SITE_NAME } from "@/lib/seo";
 
 export async function generateStaticParams() {
@@ -60,6 +66,7 @@ export default async function PaperDetailPage({
 
   return (
     <div>
+      <ContentViewTracker contentType="paper" contentId={slug} contentTitle={paper.title} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(scholarlyArticleJsonLd) }}
@@ -98,11 +105,12 @@ export default async function PaperDetailPage({
           <div className="mx-auto max-w-3xl">
             <h2 className="text-xl font-bold text-primary-dark">Watch the Mechanism</h2>
             <div className="mt-5 overflow-hidden rounded-xl border border-border bg-card shadow-sm">
-              <video
+              <TrackedVideo
                 src={paper.videoFile}
-                controls
+                contextType="paper"
+                contextId={slug}
                 className="aspect-video w-full"
-                aria-label={`${paper.title} — video`}
+                ariaLabel={`${paper.title} — video`}
               />
             </div>
           </div>
@@ -121,15 +129,13 @@ export default async function PaperDetailPage({
               <div className="mt-5 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {videoIds.map((videoId, i) => (
                   <div key={videoId} className="overflow-hidden rounded-xl border border-border bg-card shadow-sm">
-                    <div className="aspect-video w-full">
-                      <iframe
-                        src={`https://www.youtube.com/embed/${videoId}`}
-                        title={`${paper.title} — Part ${i + 1}`}
-                        className="h-full w-full"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen
-                      />
-                    </div>
+                    <VideoEmbed
+                      videoId={videoId}
+                      title={`${paper.title} — Part ${i + 1}`}
+                      context="paper"
+                      contextId={slug}
+                      className="aspect-video w-full"
+                    />
                     <p className="p-3 text-center text-xs font-semibold text-ink-soft">Part {i + 1} of {videoIds.length}</p>
                   </div>
                 ))}
@@ -154,24 +160,24 @@ export default async function PaperDetailPage({
 
           <div className="flex flex-col gap-6">
             {paper.pdfPath ? (
-              <a
+              <TrackedPdfLink
                 href={paper.pdfPath}
-                target="_blank"
-                rel="noopener noreferrer"
+                contentId={slug}
+                contentTitle={paper.title}
                 className="inline-block rounded-full bg-primary px-6 py-3 text-center text-sm font-semibold text-cream shadow-sm transition hover:bg-primary-dark"
               >
                 {dict.papers.downloadPdf}
-              </a>
+              </TrackedPdfLink>
             ) : paper.externalUrl ? (
               <div className="flex flex-col gap-2">
-                <a
+                <TrackedExternalLink
                   href={paper.externalUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  contentId={slug}
+                  publisher={paper.externalPublisher}
                   className="inline-block rounded-full bg-primary px-6 py-3 text-center text-sm font-semibold text-cream shadow-sm transition hover:bg-primary-dark"
                 >
                   {dict.papers.viewOnPublisher}
-                </a>
+                </TrackedExternalLink>
                 {paper.externalPublisher && (
                   <p className="text-center text-xs text-ink-soft">
                     Published in {paper.externalPublisher}. Hosted by the publisher; not reproduced on this site.
@@ -200,12 +206,16 @@ export default async function PaperDetailPage({
                 <ul className="mt-3 flex flex-col gap-2">
                   {relatedCrops.map((crop) => (
                     <li key={crop.slug}>
-                      <Link
+                      <TrackedRelatedLink
                         href={`/crops/${crop.slug}`}
+                        fromType="paper"
+                        fromId={slug}
+                        toType="crop"
+                        toId={crop.slug}
                         className="text-sm font-semibold text-primary-dark hover:text-primary"
                       >
                         {crop.name} →
-                      </Link>
+                      </TrackedRelatedLink>
                     </li>
                   ))}
                 </ul>

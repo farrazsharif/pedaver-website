@@ -40,7 +40,7 @@ export default function VideosPage() {
       <div className="mt-6 grid gap-6 md:grid-cols-3">
         {channelVideos.map((video) => (
           <div key={video.videoId}>
-            <VideoEmbed videoId={video.videoId} title={video.title} />
+            <VideoEmbed videoId={video.videoId} title={video.title} context="video-library" contextId={video.videoId} />
             <p className="mt-3 text-sm font-medium text-ink">{video.title}</p>
             {video.description && <p className="mt-1 text-sm text-ink-soft">{video.description}</p>}
           </div>
@@ -111,7 +111,7 @@ export default function VideosPage() {
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             {workshopVideos.map((video) => (
               <div key={video.videoId}>
-                <VideoEmbed videoId={video.videoId} title={video.title} />
+                <VideoEmbed videoId={video.videoId} title={video.title} context="video-library" contextId={video.videoId} />
                 <p className="mt-3 text-sm font-medium text-ink">{video.title}</p>
                 {video.description && <p className="mt-1 text-sm text-ink-soft">{video.description}</p>}
                 <a
@@ -136,7 +136,12 @@ export default function VideosPage() {
             <div key={farmer.name} className="rounded-2xl border border-border bg-card p-6">
               {farmer.videoId ? (
                 <div className="mb-4">
-                  <VideoEmbed videoId={farmer.videoId} title={`${farmer.name} — PQNK testimonial`} />
+                  <VideoEmbed
+                    videoId={farmer.videoId}
+                    title={`${farmer.name} — PQNK testimonial`}
+                    context="video-library"
+                    contextId={farmer.videoId}
+                  />
                   {farmer.videoSourceName && farmer.videoSourceUrl && (
                     <a
                       href={farmer.videoSourceUrl}

@@ -8,6 +8,7 @@ import { crops } from "@/lib/content/crops";
 import { papers } from "@/lib/content/papers";
 import { machines } from "@/lib/content/machines";
 import TranslateWidget from "./TranslateWidget";
+import { trackInternalSearch } from "@/lib/analytics";
 
 interface SearchResult {
   label: string;
@@ -92,6 +93,7 @@ export default function Header({ dict }: { dict: Dictionary }) {
   function handleSearch(e: React.FormEvent) {
     e.preventDefault();
     if (!query.trim()) return;
+    trackInternalSearch(query.trim().length, searchResults.length);
     const [top] = searchResults;
     goToResult(top ? top.href : "/papers");
   }
