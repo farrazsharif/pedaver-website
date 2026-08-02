@@ -11,7 +11,7 @@ import SoilProfile from "@/components/SoilProfile";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Pedaver — PQNK Natural Ecosystem Science for Production Agriculture",
+  title: "Pedaver — PQNK The Natural Ecosystem Science of Production Agriculture",
   description:
     "Field-tested regenerative farming across 20+ crops in Pakistan. Lower input cost, restored soil, higher-quality yields — the PQNK system from Pedaver.",
   path: "",
