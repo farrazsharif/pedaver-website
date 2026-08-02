@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 const SITE_URL = "https://pedaver.com";
 const SITE_NAME = "Pedaver";
-const DEFAULT_IMAGE = `${SITE_URL}/images/hero-1.png`;
+const DEFAULT_IMAGE = `${SITE_URL}/images/og-image.jpg`;
 
 /**
  * Builds a consistent Metadata object (title, description, Open Graph, Twitter Card)
