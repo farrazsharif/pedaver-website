@@ -55,6 +55,7 @@ export default function Header({ dict }: { dict: Dictionary }) {
 
   const groups: NavGroup[] = [
     { label: dict.nav.home, href: "/" },
+    { label: dict.nav.advisory, href: "/advisory" },
     {
       label: dict.nav.aboutGroup,
       href: "/about",

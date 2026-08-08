@@ -12,6 +12,7 @@ const staticPages = [
   "/crops",
   "/resources",
   "/papers",
+  "/advisory",
   "/services",
   "/machines",
   "/validation",

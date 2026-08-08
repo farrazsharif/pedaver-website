@@ -12,6 +12,7 @@ const en = {
     allCrops: "All Crops",
     resources: "Resources",
     papers: "Knowledge Papers",
+    advisory: "Farmer Advisory",
     services: "Services",
     machines: "PQNK Machines",
     videos: "Knowledge & Testimonials",
@@ -212,6 +213,40 @@ const en = {
     pageTitle: "Resources",
     pageSubtitle:
       "The core PQNK techniques that recur across every crop guide, explained once, in depth, so you don't have to piece them together crop by crop.",
+  },
+  advisory: {
+    pageTitle: "Farmer Advisory",
+    pageSubtitle:
+      "Real questions from Pedaver's PQNK WhatsApp learning groups, and Asif's answers, organized so you can find your situation directly.",
+    emptyBody:
+      "This library is being built from real questions and voice notes shared across Pedaver's PQNK WhatsApp groups. Check back as new notes are added.",
+    categories: [
+      {
+        slug: "adoption",
+        title: "Adoption Difficulties",
+        body: "Getting started with PQNK, transitioning a field, early-season doubts.",
+      },
+      {
+        slug: "planting",
+        title: "Planting",
+        body: "Bed prep, mulch, no-till planting, seed placement.",
+      },
+      {
+        slug: "water-management",
+        title: "Water Management",
+        body: "Irrigation timing, Soil Moisture Management, dry or waterlogged fields.",
+      },
+      {
+        slug: "symptoms-diagnosis",
+        title: "Symptoms & Diagnosis",
+        body: "What a farmer is seeing in the field — leaf, root, or soil symptoms.",
+      },
+      {
+        slug: "general",
+        title: "General Questions",
+        body: "Everything else farmers ask across the PQNK WhatsApp groups.",
+      },
+    ],
   },
   services: {
     pageTitle: "Services",
