@@ -18,11 +18,11 @@ export interface VideoLibraryCategory {
  * `videos.ts`. Sourced from a curated link list Asif compiled from his own
  * and partner farmers' YouTube channels.
  *
- * Category order follows the PQNK learning path Asif specified: the
- * foundational "how it works" content (Steps of PQNK, Hardpan Breaking,
- * SIPP, Syphon Tube irrigation) leads, then land-type/crop-specific
- * guidance, then the OAP whole-farm model, ending with the Kinnow
- * orchard case study — not alphabetical or upload order.
+ * Category order follows the PQNK learning path Asif specified: "Steps of
+ * PQNK" leads (hardpan breaking is folded into it, per Asif — it's a step
+ * within the sequence, not a separate topic), then SIPP planting, then
+ * Syphon Tube irrigation, then land-type/crop-specific guidance, then the
+ * OAP whole-farm model, ending with the Kinnow orchard case study.
  */
 export const videoLibrary: VideoLibraryCategory[] = [
   {
@@ -41,12 +41,6 @@ export const videoLibrary: VideoLibraryCategory[] = [
         sourceName: "Asif Sharif",
         sourceUrl: "https://www.youtube.com/@aasifsharif",
       },
-    ],
-  },
-  {
-    slug: "hardpan-breaking",
-    title: "Hardpan Breaking",
-    videos: [
       {
         videoId: "iLfdE52aNws",
         title: "Breaking the hard pan correctly is an important step for PQNK",
