@@ -17,8 +17,50 @@ export interface VideoLibraryCategory {
  * guidance videos, distinct from the channel-organized videos in
  * `videos.ts`. Sourced from a curated link list Asif compiled from his own
  * and partner farmers' YouTube channels.
+ *
+ * Category order follows the PQNK learning path Asif specified: the
+ * foundational "how it works" content (Steps of PQNK, Hardpan Breaking,
+ * SIPP, Syphon Tube irrigation) leads, then land-type/crop-specific
+ * guidance, then the OAP whole-farm model, ending with the Kinnow
+ * orchard case study — not alphabetical or upload order.
  */
 export const videoLibrary: VideoLibraryCategory[] = [
+  {
+    slug: "steps-of-pqnk",
+    title: "Steps of PQNK",
+    videos: [
+      {
+        videoId: "naklRXVA7cE",
+        title: "Steps to PA:PQNK",
+        sourceName: "PedaVer PQNK",
+        sourceUrl: "https://www.youtube.com/@pedaverpqnk3167",
+      },
+      {
+        videoId: "KAUsZ8IN4H0",
+        title: "The Ongoing Evolution of the Conventional Bana Kiarri System: A Legacy of Late 19th Century Land Dem",
+        sourceName: "Asif Sharif",
+        sourceUrl: "https://www.youtube.com/@aasifsharif",
+      },
+    ],
+  },
+  {
+    slug: "hardpan-breaking",
+    title: "Hardpan Breaking",
+    videos: [
+      {
+        videoId: "iLfdE52aNws",
+        title: "Breaking the hard pan correctly is an important step for PQNK",
+        sourceName: "Asif Sharif",
+        sourceUrl: "https://www.youtube.com/@aasifsharif",
+      },
+      {
+        videoId: "lLIYS9BN94U",
+        title: "PQNK ka dosra asool zamen ki sakht tah torna cheezal plow say",
+        sourceName: "PQNK Farming",
+        sourceUrl: "https://www.youtube.com/@PQNKFarming",
+      },
+    ],
+  },
   {
     slug: "sipp",
     title: "SIPP — Slit Insertion Precision Planter",
@@ -40,6 +82,42 @@ export const videoLibrary: VideoLibraryCategory[] = [
         title: "Detaching mulcher and PQNK SIPP planter",
         sourceName: "Asif Sharif",
         sourceUrl: "https://www.youtube.com/@aasifsharif",
+      },
+    ],
+  },
+  {
+    slug: "syphon-tube-irrigation",
+    title: "Syphon Tube Water Management",
+    videos: [
+      {
+        videoId: "qm8_HARR8nY",
+        title: "Irrigation under PA/PQNK process",
+        sourceName: "PedaVer PQNK",
+        sourceUrl: "https://www.youtube.com/@pedaverpqnk3167",
+      },
+      {
+        videoId: "cMVFCeoysXc",
+        title: "Irrigating with siphons",
+        sourceName: "CottonInfo: Connecting growers with research",
+        sourceUrl: "https://www.youtube.com/@CottonInfoAust",
+      },
+      {
+        videoId: "F-gSoqrdRU8",
+        title: "Syphon tubes irrigation to Maize crop on Raised beds under PQNK.",
+        sourceName: "NHS FARMS",
+        sourceUrl: "https://www.youtube.com/@NHSFARMS",
+      },
+      {
+        videoId: "j8JSu_iYbGs",
+        title: "A best and cheap way to control flow of water during irrigation to raised beds under PQNK",
+        sourceName: "NHS FARMS",
+        sourceUrl: "https://www.youtube.com/@NHSFARMS",
+      },
+      {
+        videoId: "isTcH3S_bRk",
+        title: "The Impact of Water Flow Speed in a Furrow on Water Absorption",
+        sourceName: "PedaVer PQNK",
+        sourceUrl: "https://www.youtube.com/@pedaverpqnk3167",
       },
     ],
   },
@@ -242,38 +320,14 @@ export const videoLibrary: VideoLibraryCategory[] = [
     ],
   },
   {
-    slug: "steps-of-pqnk",
-    title: "Steps of PQNK",
+    slug: "ginger",
+    title: "Ginger",
     videos: [
       {
-        videoId: "naklRXVA7cE",
-        title: "Steps to PA:PQNK",
-        sourceName: "PedaVer PQNK",
-        sourceUrl: "https://www.youtube.com/@pedaverpqnk3167",
-      },
-      {
-        videoId: "KAUsZ8IN4H0",
-        title: "The Ongoing Evolution of the Conventional Bana Kiarri System: A Legacy of Late 19th Century Land Dem",
+        videoId: "JD5QYn1xQXQ",
+        title: "Ginger production on PQNK",
         sourceName: "Asif Sharif",
         sourceUrl: "https://www.youtube.com/@aasifsharif",
-      },
-    ],
-  },
-  {
-    slug: "hardpan-breaking",
-    title: "Hardpan Breaking",
-    videos: [
-      {
-        videoId: "iLfdE52aNws",
-        title: "Breaking the hard pan correctly is an important step for PQNK",
-        sourceName: "Asif Sharif",
-        sourceUrl: "https://www.youtube.com/@aasifsharif",
-      },
-      {
-        videoId: "lLIYS9BN94U",
-        title: "PQNK ka dosra asool zamen ki sakht tah torna cheezal plow say",
-        sourceName: "PQNK Farming",
-        sourceUrl: "https://www.youtube.com/@PQNKFarming",
       },
     ],
   },
@@ -296,54 +350,6 @@ export const videoLibrary: VideoLibraryCategory[] = [
       {
         videoId: "RBFBxG8OkDE",
         title: "One Acre Prosperity OAP, a PQNK model for smallholders' libration - Motivator Mr Yogesh Bombay India",
-        sourceName: "Asif Sharif",
-        sourceUrl: "https://www.youtube.com/@aasifsharif",
-      },
-    ],
-  },
-  {
-    slug: "syphon-tube-irrigation",
-    title: "Syphon Tube Water Management",
-    videos: [
-      {
-        videoId: "qm8_HARR8nY",
-        title: "Irrigation under PA/PQNK process",
-        sourceName: "PedaVer PQNK",
-        sourceUrl: "https://www.youtube.com/@pedaverpqnk3167",
-      },
-      {
-        videoId: "cMVFCeoysXc",
-        title: "Irrigating with siphons",
-        sourceName: "CottonInfo: Connecting growers with research",
-        sourceUrl: "https://www.youtube.com/@CottonInfoAust",
-      },
-      {
-        videoId: "F-gSoqrdRU8",
-        title: "Syphon tubes irrigation to Maize crop on Raised beds under PQNK.",
-        sourceName: "NHS FARMS",
-        sourceUrl: "https://www.youtube.com/@NHSFARMS",
-      },
-      {
-        videoId: "j8JSu_iYbGs",
-        title: "A best and cheap way to control flow of water during irrigation to raised beds under PQNK",
-        sourceName: "NHS FARMS",
-        sourceUrl: "https://www.youtube.com/@NHSFARMS",
-      },
-      {
-        videoId: "isTcH3S_bRk",
-        title: "The Impact of Water Flow Speed in a Furrow on Water Absorption",
-        sourceName: "PedaVer PQNK",
-        sourceUrl: "https://www.youtube.com/@pedaverpqnk3167",
-      },
-    ],
-  },
-  {
-    slug: "ginger",
-    title: "Ginger",
-    videos: [
-      {
-        videoId: "JD5QYn1xQXQ",
-        title: "Ginger production on PQNK",
         sourceName: "Asif Sharif",
         sourceUrl: "https://www.youtube.com/@aasifsharif",
       },
