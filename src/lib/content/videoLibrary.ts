@@ -31,7 +31,7 @@ export const videoLibrary: VideoLibraryCategory[] = [
     videos: [
       {
         videoId: "naklRXVA7cE",
-        title: "Steps to PA:PQNK",
+        title: "Steps to PQNK",
         sourceName: "PedaVer PQNK",
         sourceUrl: "https://www.youtube.com/@pedaverpqnk3167",
       },
@@ -85,7 +85,7 @@ export const videoLibrary: VideoLibraryCategory[] = [
     videos: [
       {
         videoId: "qm8_HARR8nY",
-        title: "Irrigation under PA/PQNK process",
+        title: "Irrigation under PQNK process",
         sourceName: "PedaVer PQNK",
         sourceUrl: "https://www.youtube.com/@pedaverpqnk3167",
       },
@@ -289,7 +289,7 @@ export const videoLibrary: VideoLibraryCategory[] = [
       },
       {
         videoId: "kej2mw6NHhk",
-        title: "PA/PQNK Pruning of wheat on Raised beds.",
+        title: "PQNK Pruning of wheat on Raised beds.",
         sourceName: "NHS FARMS",
         sourceUrl: "https://www.youtube.com/@NHSFARMS",
       },
@@ -337,7 +337,7 @@ export const videoLibrary: VideoLibraryCategory[] = [
       },
       {
         videoId: "Co5VXT31NDg",
-        title: "PA/PQNK natural farm. One Acre Prosperity (OAP) model created by Mahkdeep Sing (Indian Punjab).",
+        title: "PQNK natural farm. One Acre Prosperity (OAP) model created by Mahkdeep Sing (Indian Punjab).",
         sourceName: "PedaVer PQNK",
         sourceUrl: "https://www.youtube.com/@pedaverpqnk3167",
       },
@@ -379,7 +379,7 @@ export const videoLibrary: VideoLibraryCategory[] = [
       },
       {
         videoId: "J7xLiuhBRMo",
-        title: "Shifting on PQNK/PA#Shifting kinnow on PQNK/PA#",
+        title: "Shifting on PQNK#Shifting kinnow on PQNK#",
         sourceName: "Munjal's PQNK Citrus Farm, Abohar",
         sourceUrl: "https://www.youtube.com/@munjalspqnkcitrusfarmaboha1807",
       },
