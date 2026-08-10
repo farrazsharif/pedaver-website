@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Bitter, Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
 import dict from "@/lib/dictionaries";
@@ -27,6 +27,14 @@ export const metadata: Metadata = {
   verification: process.env.NEXT_PUBLIC_GSC_VERIFICATION
     ? { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION }
     : undefined,
+  appleWebApp: {
+    title: "Pedaver — PQNK",
+    statusBarStyle: "black-translucent",
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#2f5233",
 };
 
 const organizationJsonLd = {
