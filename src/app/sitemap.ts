@@ -17,6 +17,7 @@ const staticPages = [
   "/machines",
   "/validation",
   "/videos",
+  "/video-library",
   "/contact",
 ];
 

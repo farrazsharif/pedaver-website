@@ -16,6 +16,7 @@ const en = {
     services: "Services",
     machines: "PQNK Machines",
     videos: "Knowledge & Testimonials",
+    videoLibrary: "Video Library",
     validation: "PQNK™ Validation",
     contact: "Contact",
     searchLabel: "Search",
@@ -318,6 +319,12 @@ const en = {
     testimonialsTitle: "Farmer Testimonials",
     testimonialsSubtitle: "PQNK is proven acre by acre. Here are a few of the growers documenting it themselves.",
     viewCrop: "View this crop",
+  },
+  videoLibrary: {
+    pageTitle: "Video Library",
+    pageSubtitle:
+      "Urdu-language PQNK lectures and field guidance videos, organized by topic — land types, crops, machinery, and irrigation.",
+    watchOn: "Watch on",
   },
   validation: {
     pageTitle: "PQNK™ Validation",
