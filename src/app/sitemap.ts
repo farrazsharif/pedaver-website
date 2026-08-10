@@ -18,6 +18,7 @@ const staticPages = [
   "/validation",
   "/videos",
   "/video-library",
+  "/farmer-voices",
   "/install",
   "/contact",
 ];

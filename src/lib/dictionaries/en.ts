@@ -17,6 +17,7 @@ const en = {
     machines: "PQNK Machines",
     videos: "Knowledge & Testimonials",
     videoLibrary: "Video Library",
+    farmerVoices: "Farmer Voices",
     validation: "PQNK™ Validation",
     contact: "Contact",
     searchLabel: "Search",
@@ -347,6 +348,11 @@ const en = {
     emailFieldLabel: "Your Email",
     messageLabel: "Message",
     submitButton: "Compose Email",
+  },
+  farmerVoices: {
+    pageTitle: "Farmer Voices",
+    pageSubtitle:
+      "Real messages from farmers practicing PQNK in Pedaver's WhatsApp learning groups — shared here as they were sent.",
   },
   install: {
     navLabel: "Install the App",

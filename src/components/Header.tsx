@@ -81,6 +81,7 @@ export default function Header({ dict }: { dict: Dictionary }) {
       children: [
         { label: dict.nav.videos, href: "/videos" },
         { label: dict.nav.videoLibrary, href: "/video-library" },
+        { label: dict.nav.farmerVoices, href: "/farmer-voices" },
       ],
     },
     { label: dict.nav.validation, href: "/validation" },
