@@ -73,7 +73,6 @@ export default function Header({ dict }: { dict: Dictionary }) {
       ],
     },
     { label: dict.nav.papers, href: "/papers" },
-    { label: dict.nav.services, href: "/services" },
     { label: dict.nav.machines, href: "/machines" },
     {
       label: dict.nav.videos,
@@ -84,6 +83,7 @@ export default function Header({ dict }: { dict: Dictionary }) {
       ],
     },
     { label: dict.nav.farmerVoices, href: "/farmer-voices" },
+    { label: dict.nav.services, href: "/services" },
     { label: dict.nav.validation, href: "/validation" },
     { label: dict.nav.contact, href: "/contact" },
   ];
