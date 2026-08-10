@@ -348,6 +348,31 @@ const en = {
     messageLabel: "Message",
     submitButton: "Compose Email",
   },
+  install: {
+    navLabel: "Install the App",
+    bannerText: "Get Pedaver PQNK as an app on your phone — free, no store needed.",
+    bannerCta: "Show me how",
+    bannerDismiss: "Dismiss",
+    pageTitle: "Get Pedaver PQNK on Your Phone",
+    pageSubtitle:
+      "No App Store. No Play Store. No cost. Add this site to your home screen and it opens full-screen, just like any other app.",
+    androidTitle: "On Android (Chrome)",
+    androidSteps: [
+      "Tap the ⋮ (three dots) at the top right of Chrome — or wait for the \"Add to Home screen\" banner to appear on its own.",
+      "Tap \"Add to Home screen\" (it may also say \"Install app\").",
+      "Confirm by tapping \"Add\" or \"Install.\"",
+    ],
+    iphoneTitle: "On iPhone (Safari)",
+    iphoneSteps: [
+      "Tap the \"•••\" (more) button in Safari's toolbar.",
+      "Tap \"Share,\" then \"Add to Home Screen.\"",
+      "Tap \"Add\" in the top right.",
+    ],
+    resultTitle: "That's it",
+    resultBody:
+      "The Pedaver PQNK icon appears on your home screen. Tap it anytime to open knowledge papers, crop guides, videos, and farmer advisory — full-screen, no browser bar.",
+    translateNote: "Prefer to read this in Urdu, Hindi, or another language? Use the 🌐 translate icon at the top of this page.",
+  },
   footer: {
     rightsText: "Pedaver. All rights reserved.",
     quickLinksTitle: "Quick Links",

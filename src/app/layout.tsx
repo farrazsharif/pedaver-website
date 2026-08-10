@@ -4,6 +4,7 @@ import "./globals.css";
 import dict from "@/lib/dictionaries";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import InstallBanner from "@/components/InstallBanner";
 import GoogleAnalyticsScripts from "@/components/analytics/GoogleAnalyticsScripts";
 import ClarityScript from "@/components/analytics/ClarityScript";
 import AnalyticsClientRoot from "@/components/analytics/AnalyticsClientRoot";
@@ -64,6 +65,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
         <Header dict={dict} />
+        <InstallBanner dict={dict} />
         <main className="flex-1">{children}</main>
         <Footer dict={dict} />
         <GoogleAnalyticsScripts gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />

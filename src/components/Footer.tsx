@@ -6,6 +6,7 @@ export default function Footer({ dict }: { dict: Dictionary }) {
   const year = new Date().getFullYear();
 
   const exploreLinks = [
+    { label: dict.install.navLabel, href: "/install" },
     { label: dict.nav.about, href: "/about" },
     { label: dict.nav.founder, href: "/founder" },
     { label: dict.nav.crops, href: "/crops" },
