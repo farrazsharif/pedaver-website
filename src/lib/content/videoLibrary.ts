@@ -401,6 +401,12 @@ export const videoLibrary: VideoLibraryCategory[] = [
         sourceName: "Mubashir Riaz Farming",
         sourceUrl: "https://www.youtube.com/@mubashirriazfarming6975",
       },
+      {
+        videoId: "UNgHhmcbeHo",
+        title: "Cotton in Citrus on PQNK  -  Haji Ramzan",
+        sourceName: "Asif Sharif",
+        sourceUrl: "https://www.youtube.com/@aasifsharif",
+      },
     ],
   },
 ];
