@@ -229,7 +229,7 @@ const en = {
   about: {
     pageTitle: "About Pedaver",
     intro:
-      "Pedaver is a Pakistan-based agricultural solutions provider working across Food, Feed, Fiber and Timber production, built around one core conviction: conventional agriculture's input-heavy model is ecologically, economically and nutritionally unsustainable, and there is a better way.",
+      "Pedaver is the independent knowledge, research and validation institution behind PQNK, the natural ecosystem science of production agriculture, built around one core conviction: conventional agriculture's input-heavy model is ecologically, economically and nutritionally unsustainable, and there is a better way. Field-tested across Pakistan's diverse growing regions in Food, Feed, Fiber and Timber production, the system is built to apply just as widely: across different soils, climates, crops and production scales.",
     missionTitle: "What We Do",
     missionPoints: [
       { title: "Productivity Enhancement", body: "Raising yield and quality without raising input cost." },
@@ -238,6 +238,8 @@ const en = {
       { title: "Business Development", body: "Building sustainable farm enterprises, not one-season wins." },
       { title: "Sustainability & Stewardship", body: "Restoring soil health for the next generation of growers." },
     ],
+    institutionalNote:
+      "Pedaver develops the knowledge, engineering concepts, training and validation behind PQNK. It does not operate commercial crop production or trading directly: that implementation belongs to independent operators such as CPMC-type organisations, with Pedaver remaining the science, training and validation authority behind the system. Institutions and businesses seeking direct engagement can review Pedaver's services.",
     founderTitle: "The Science Behind PQNK",
     founderName: "Asif Sharif",
     founderBody: [
@@ -246,13 +248,24 @@ const en = {
     ],
     philosophyTitle: "Conventional Agriculture is Bankrupt: Ecologically, Economically, Nutritionally",
     philosophyBody: [
-      "That is Pedaver's starting premise, and PQNK is offered as the way out: a mulched bed, a set of long-held farming myths retested, and outcomes measured in the field rather than in theory.",
+      "That is Pedaver's starting premise, and PQNK is offered as the way out: a mulched bed watered by soil moisture management rather than the calendar, a set of long-held farming myths retested, and outcomes measured in the field rather than in theory.",
       "PQNK moves every field through the same fixed sequence: out of ACI (Ancient Conventional Industrial) degradation, through an active regenerative phase of hardpan-breaking, raised beds and mulch-built soil biology, and into a closed-loop, self-sustaining state where no external input is needed again.",
+      "That sequence is carried out by purpose-built machinery: the SIPP and VIPP no-till planters chief among them, engineered to plant directly through thick mulch without disturbing the soil beneath it.",
       "Our knowledge papers go further, examining the looming convergence of oil and food crises, the neglected potential of Pakistan's agricultural economy, and how ecosystem health changes the value of what a farm produces, from milk to fabric.",
     ],
     founderCtaBody: "Read Asif Sharif's full founder profile, or his own year-by-year record of five decades in the field.",
     founderCtaFounderLink: "Meet the Founder",
     founderCtaRecordLink: "Read the Full Record",
+    closingTitle: "Explore the PQNK Knowledge System",
+    closingBody:
+      "Pedaver's work is documented across field evidence, production systems, machinery, validation, crops and scientific papers, open for any grower, researcher or institution to examine.",
+    closingLinks: [
+      { label: "Explore the Core PQNK Techniques", href: "/resources" },
+      { label: "Read Knowledge Papers", href: "/papers" },
+      { label: "Explore Crops & Field Results", href: "/crops" },
+      { label: "See PQNK Machinery", href: "/machines" },
+      { label: "Learn About Validation", href: "/validation" },
+    ],
   },
   founder: {
     pageTitle: "Asif Sharif",
