@@ -26,10 +26,12 @@ function loadFarmerVoicePreview(count: number): string[] {
 }
 
 const evidenceVideoIds = ["r1iN4iRsTmE", "xzORUOK79v4"];
+const featuredVideoId = "X2HHUcARW_g";
 
 export default function HomePage() {
   const h = dict.home;
   const evidenceVideos = videos.filter((v) => evidenceVideoIds.includes(v.videoId));
+  const featuredVideo = videos.find((v) => v.videoId === featuredVideoId);
   const voicePreview = loadFarmerVoicePreview(3);
 
   return (
@@ -41,24 +43,26 @@ export default function HomePage() {
           alt="A PQNK field under preparation"
           className="absolute inset-0 h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/55 to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/65 to-black/40" />
         <div className="relative mx-auto w-full max-w-6xl px-4 py-20 text-center sm:px-6">
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-accent-light">{h.hero.eyebrow}</p>
-          <h1 className="mx-auto mt-4 max-w-4xl text-4xl font-extrabold leading-tight sm:text-6xl">
-            {h.hero.title}
+          <h1 className="mx-auto max-w-4xl leading-none">
+            <span className="block text-7xl font-extrabold tracking-tight text-accent-light sm:text-9xl">
+              {h.hero.eyebrow}
+            </span>
+            <span className="mt-5 block text-2xl font-bold leading-snug sm:text-3xl">{h.hero.title}</span>
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg font-medium text-cream/90">{h.hero.institutional}</p>
-          <p className="mt-3 text-base italic text-cream/70">{h.hero.supporting}</p>
+          <p className="mx-auto mt-6 max-w-2xl text-lg font-medium text-cream/95">{h.hero.institutional}</p>
+          <p className="mt-3 text-lg italic text-cream/90">{h.hero.supporting}</p>
           <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
               href="/about"
-              className="inline-block rounded-full bg-accent px-8 py-3.5 text-sm font-semibold text-ink shadow-sm transition hover:bg-accent-light"
+              className="inline-block rounded-full bg-accent px-8 py-3.5 text-base font-semibold text-cream shadow-sm transition hover:bg-accent-light hover:text-ink"
             >
               {h.hero.ctaPrimary}
             </Link>
             <a
               href="#field-evidence"
-              className="inline-block rounded-full border border-cream/30 px-8 py-3.5 text-sm font-semibold text-cream transition hover:border-cream/60 hover:bg-cream/5"
+              className="inline-block rounded-full border border-cream/40 px-8 py-3.5 text-base font-semibold text-cream transition hover:border-cream/70 hover:bg-cream/10"
             >
               {h.hero.ctaSecondary}
             </a>
@@ -69,14 +73,14 @@ export default function HomePage() {
       {/* 2. WHY PQNK WAS NECESSARY */}
       <Section id="why-necessary">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">{h.whyNecessary.eyebrow}</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">{h.whyNecessary.eyebrow}</p>
           <h2 className="mt-3 text-3xl font-bold text-primary-dark sm:text-4xl">{h.whyNecessary.title}</h2>
-          <p className="mt-4 text-ink-soft">{h.whyNecessary.intro}</p>
+          <p className="mt-4 text-lg text-ink-soft">{h.whyNecessary.intro}</p>
         </div>
         <div className="mx-auto mt-10 flex max-w-3xl flex-wrap items-center justify-center gap-x-2 gap-y-3">
           {h.whyNecessary.chain.map((step, i) => (
             <span key={step} className="flex items-center gap-2">
-              <span className="rounded-full border border-border bg-card px-4 py-2 text-sm font-medium text-ink">
+              <span className="rounded-full border border-border bg-card px-4 py-2 text-base font-medium text-ink">
                 {step}
               </span>
               {i < h.whyNecessary.chain.length - 1 && (
@@ -87,7 +91,7 @@ export default function HomePage() {
             </span>
           ))}
         </div>
-        <p className="mx-auto mt-8 max-w-2xl text-center text-sm font-medium text-ink-soft">
+        <p className="mx-auto mt-8 max-w-2xl text-center text-base font-medium text-ink-soft">
           {h.whyNecessary.closing}
         </p>
       </Section>
@@ -96,7 +100,7 @@ export default function HomePage() {
       <section id="four-principles" className="bg-primary-dark text-cream">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
           <div className="text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-accent-light">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-accent-light">
               {h.principles.eyebrow}
             </p>
             <h2 className="mt-3 text-3xl font-bold sm:text-4xl">{h.principles.title}</h2>
@@ -108,7 +112,7 @@ export default function HomePage() {
                   {i + 1}
                 </div>
                 <h3 className="mt-4 text-lg font-bold text-cream">{principle.name}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-cream/70">{principle.body}</p>
+                <p className="mt-2 text-base leading-relaxed text-cream/90">{principle.body}</p>
               </div>
             ))}
           </div>
@@ -118,7 +122,7 @@ export default function HomePage() {
       {/* 4. THE PQNK JOURNEY */}
       <Section id="pqnk-journey" muted>
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">{h.journey.eyebrow}</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">{h.journey.eyebrow}</p>
           <h2 className="mt-3 text-3xl font-bold text-primary-dark">{h.journey.title}</h2>
         </div>
         <div className="mt-12 grid gap-6 lg:grid-cols-4">
@@ -128,14 +132,14 @@ export default function HomePage() {
                 <div className="flex h-9 w-9 flex-none items-center justify-center rounded-full bg-primary text-sm font-bold text-cream">
                   {i + 1}
                 </div>
-                <p className="text-xs font-semibold uppercase tracking-wide text-accent">{stage.label}</p>
+                <p className="text-sm font-semibold uppercase tracking-wide text-accent">{stage.label}</p>
               </div>
               <h3 className="mt-4 text-lg font-bold text-primary-dark">{stage.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-ink-soft">{stage.body}</p>
+              <p className="mt-2 text-base leading-relaxed text-ink-soft">{stage.body}</p>
               {"steps" in stage && stage.steps && (
                 <ul className="mt-3 space-y-1.5">
                   {stage.steps.map((step) => (
-                    <li key={step} className="flex gap-2 text-xs leading-relaxed text-ink-soft">
+                    <li key={step} className="flex gap-2 text-sm leading-relaxed text-ink-soft">
                       <span aria-hidden="true" className="mt-0.5 text-accent">•</span>
                       <span>{step}</span>
                     </li>
@@ -150,25 +154,25 @@ export default function HomePage() {
       {/* 5. WHAT PQNK CHANGES */}
       <Section id="what-changes">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">{h.changes.eyebrow}</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">{h.changes.eyebrow}</p>
           <h2 className="mt-3 text-3xl font-bold text-primary-dark">{h.changes.title}</h2>
         </div>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
           {h.changes.areas.map((area) => (
             <div key={area.name} className="rounded-2xl border border-border bg-card p-6">
-              <h3 className="text-base font-bold text-primary-dark">{area.name}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-ink-soft">{area.body}</p>
+              <h3 className="text-lg font-bold text-primary-dark">{area.name}</h3>
+              <p className="mt-2 text-base leading-relaxed text-ink-soft">{area.body}</p>
               {"stat" in area && area.stat && (
                 <p className="mt-4 border-t border-border pt-4">
                   <span className="block text-2xl font-extrabold text-primary">{area.stat}</span>
-                  <span className="text-xs text-ink-soft">{area.statLabel}</span>
+                  <span className="text-sm text-ink-soft">{area.statLabel}</span>
                 </p>
               )}
             </div>
           ))}
         </div>
         <div className="mt-8 text-center">
-          <Link href="/machines" className="text-sm font-semibold text-primary underline underline-offset-4">
+          <Link href="/machines" className="text-base font-semibold text-primary underline underline-offset-4">
             {h.changes.machinesNote} →
           </Link>
         </div>
@@ -177,42 +181,56 @@ export default function HomePage() {
       {/* 6. FIELD EVIDENCE */}
       <Section id="field-evidence" muted>
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">{h.evidence.eyebrow}</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">{h.evidence.eyebrow}</p>
           <h2 className="mt-3 text-3xl font-bold text-primary-dark">{h.evidence.title}</h2>
-          <p className="mt-4 text-ink-soft">{h.evidence.subtitle}</p>
+          <p className="mt-4 text-lg text-ink-soft">{h.evidence.subtitle}</p>
         </div>
 
         {/* Quantified example + testimony */}
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           <div className="rounded-2xl border border-border bg-card p-8">
-            <span className="inline-block rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">
+            <span className="inline-block rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold uppercase tracking-wide text-primary">
               {h.evidence.quantifiedType}
             </span>
             <div className="mt-4 text-4xl font-extrabold text-primary">{h.evidence.quantifiedValue}</div>
-            <p className="mt-2 text-sm leading-relaxed text-ink-soft">{h.evidence.quantifiedLabel}</p>
+            <p className="mt-2 text-base leading-relaxed text-ink-soft">{h.evidence.quantifiedLabel}</p>
           </div>
           <div className="rounded-2xl border border-border bg-card p-8">
-            <span className="inline-block rounded-full bg-accent/15 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-accent">
+            <span className="inline-block rounded-full bg-accent/15 px-3 py-1 text-sm font-semibold uppercase tracking-wide text-accent">
               {h.evidence.testimonyType}
             </span>
             <blockquote className="mt-4 text-lg font-medium leading-snug text-primary-dark">
               {h.evidence.testimonyQuote}
             </blockquote>
-            <p className="mt-3 text-sm text-ink-soft">{h.evidence.testimonyAttribution}</p>
+            <p className="mt-3 text-base text-ink-soft">{h.evidence.testimonyAttribution}</p>
           </div>
         </div>
+
+        {/* Featured engineering video — silent, looping */}
+        {featuredVideo && (
+          <div className="mt-10">
+            <h3 className="mb-4 flex items-center gap-3 text-base font-semibold uppercase tracking-wide text-ink-soft">
+              {h.evidence.featuredVideoTitle}
+              <span className="rounded-full bg-primary/10 px-2.5 py-0.5 text-sm font-semibold text-primary">
+                {h.evidence.videosType}
+              </span>
+            </h3>
+            <VideoEmbed videoId={featuredVideo.videoId} title={featuredVideo.title} autoplay />
+            <p className="mt-3 text-base font-medium text-ink">{featuredVideo.title}</p>
+          </div>
+        )}
 
         {/* Field documentation videos */}
         {evidenceVideos.length > 0 && (
           <div className="mt-8">
             <div className="mb-4 flex items-center justify-between">
-              <h3 className="flex items-center gap-3 text-sm font-semibold uppercase tracking-wide text-ink-soft">
+              <h3 className="flex items-center gap-3 text-base font-semibold uppercase tracking-wide text-ink-soft">
                 {h.evidence.videosTitle}
-                <span className="rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-semibold text-primary">
+                <span className="rounded-full bg-primary/10 px-2.5 py-0.5 text-sm font-semibold text-primary">
                   {h.evidence.videosType}
                 </span>
               </h3>
-              <Link href="/videos" className="text-sm font-semibold text-primary underline underline-offset-4">
+              <Link href="/videos" className="text-base font-semibold text-primary underline underline-offset-4">
                 {h.evidence.videosCta} →
               </Link>
             </div>
@@ -220,7 +238,7 @@ export default function HomePage() {
               {evidenceVideos.map((video) => (
                 <div key={video.videoId}>
                   <VideoEmbed videoId={video.videoId} title={video.title} />
-                  <p className="mt-3 text-sm font-medium text-ink">{video.title}</p>
+                  <p className="mt-3 text-base font-medium text-ink">{video.title}</p>
                 </div>
               ))}
             </div>
@@ -231,13 +249,13 @@ export default function HomePage() {
         {voicePreview.length > 0 && (
           <div className="mt-10">
             <div className="mb-4 flex items-center justify-between">
-              <h3 className="flex items-center gap-3 text-sm font-semibold uppercase tracking-wide text-ink-soft">
+              <h3 className="flex items-center gap-3 text-base font-semibold uppercase tracking-wide text-ink-soft">
                 {h.evidence.farmerVoicesTitle}
-                <span className="rounded-full bg-accent/15 px-2.5 py-0.5 text-xs font-semibold text-accent">
+                <span className="rounded-full bg-accent/15 px-2.5 py-0.5 text-sm font-semibold text-accent">
                   {h.evidence.farmerVoicesType}
                 </span>
               </h3>
-              <Link href="/farmer-voices" className="text-sm font-semibold text-primary underline underline-offset-4">
+              <Link href="/farmer-voices" className="text-base font-semibold text-primary underline underline-offset-4">
                 {h.evidence.farmerVoicesCta} →
               </Link>
             </div>
@@ -259,9 +277,9 @@ export default function HomePage() {
       {/* 7. ONE PQNK SYSTEM, EVERY CROP */}
       <Section id="every-crop">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">{h.everyCrop.eyebrow}</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">{h.everyCrop.eyebrow}</p>
           <h2 className="mt-3 text-3xl font-bold text-primary-dark">{h.everyCrop.title}</h2>
-          <p className="mt-4 text-ink-soft">{h.everyCrop.body}</p>
+          <p className="mt-4 text-lg text-ink-soft">{h.everyCrop.body}</p>
         </div>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {flagshipCrops.map((crop) => (
@@ -279,14 +297,14 @@ export default function HomePage() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-primary-dark group-hover:text-primary">{crop.name}</h3>
-                <p className="mt-2 text-sm text-ink-soft">{crop.blurb}</p>
-                <span className="mt-4 inline-block text-sm font-semibold text-accent">{dict.crops.viewGuide} →</span>
+                <p className="mt-2 text-base text-ink-soft">{crop.blurb}</p>
+                <span className="mt-4 inline-block text-base font-semibold text-accent">{dict.crops.viewGuide} →</span>
               </div>
             </Link>
           ))}
         </div>
         <div className="mt-8 text-center">
-          <Link href="/crops" className="text-sm font-semibold text-primary underline underline-offset-4">
+          <Link href="/crops" className="text-base font-semibold text-primary underline underline-offset-4">
             {h.everyCrop.viewAll} →
           </Link>
         </div>
@@ -295,7 +313,7 @@ export default function HomePage() {
       {/* 8. KNOWLEDGE PATHWAYS */}
       <Section id="knowledge-pathways" muted>
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">{h.pathways.eyebrow}</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">{h.pathways.eyebrow}</p>
           <h2 className="mt-3 text-3xl font-bold text-primary-dark">{h.pathways.title}</h2>
         </div>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -305,17 +323,17 @@ export default function HomePage() {
               href={card.href}
               className="group flex flex-col rounded-2xl border border-border bg-card p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
             >
-              <span className="text-xs font-semibold uppercase tracking-wide text-accent">{card.audience}</span>
+              <span className="text-sm font-semibold uppercase tracking-wide text-accent">{card.audience}</span>
               <h3 className="mt-2 text-lg font-bold text-primary-dark group-hover:text-primary">{card.label}</h3>
-              <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-soft">{card.body}</p>
-              <span className="mt-4 inline-block text-sm font-semibold text-accent">{card.cta} →</span>
+              <p className="mt-2 flex-1 text-base leading-relaxed text-ink-soft">{card.body}</p>
+              <span className="mt-4 inline-block text-base font-semibold text-accent">{card.cta} →</span>
             </Link>
           ))}
         </div>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-center">
-          <span className="text-sm font-semibold text-ink-soft">{h.pathways.secondaryTitle}</span>
+          <span className="text-base font-semibold text-ink-soft">{h.pathways.secondaryTitle}</span>
           {h.pathways.secondaryLinks.map((link) => (
-            <Link key={link.href} href={link.href} className="text-sm font-semibold text-primary underline underline-offset-4">
+            <Link key={link.href} href={link.href} className="text-base font-semibold text-primary underline underline-offset-4">
               {link.label}
             </Link>
           ))}
@@ -326,19 +344,19 @@ export default function HomePage() {
       <Section id="stay-connected" className="!py-0">
         <div className="relative overflow-hidden rounded-3xl px-6 py-14 text-cream sm:px-12">
           <img src="/images/seedlings-beds.jpg" alt="" className="absolute inset-0 h-full w-full object-cover" />
-          <div className="absolute inset-0 bg-primary-dark/85" />
+          <div className="absolute inset-0 bg-primary-dark/90" />
           <div className="relative flex flex-col items-center text-center">
             <div className="grid grid-cols-2 gap-6 border-b border-cream/15 pb-10 md:grid-cols-4">
               {h.stayConnected.communityStats.map((stat) => (
                 <div key={stat.label} className="text-center">
                   <div className="text-2xl font-extrabold text-accent-light sm:text-3xl">{stat.value}</div>
-                  <div className="mt-1 text-xs text-cream/70">{stat.label}</div>
+                  <div className="mt-1 text-sm text-cream/90">{stat.label}</div>
                 </div>
               ))}
             </div>
 
             <h2 className="mt-10 text-3xl font-bold">{h.stayConnected.title}</h2>
-            <p className="mx-auto mt-3 max-w-xl text-cream/85">{h.stayConnected.body}</p>
+            <p className="mx-auto mt-3 max-w-xl text-lg text-cream/95">{h.stayConnected.body}</p>
             <NewsletterForm
               namePlaceholder={h.stayConnected.newsletterNamePlaceholder}
               placeholder={h.stayConnected.newsletterPlaceholder}
@@ -347,9 +365,9 @@ export default function HomePage() {
             />
 
             <div className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 border-t border-cream/15 pt-8">
-              <span className="text-sm font-semibold text-cream/70">{h.stayConnected.linksTitle}</span>
+              <span className="text-base font-semibold text-cream/90">{h.stayConnected.linksTitle}</span>
               {h.stayConnected.links.map((link) => (
-                <Link key={link.href} href={link.href} className="text-sm font-semibold text-accent-light underline underline-offset-4">
+                <Link key={link.href} href={link.href} className="text-base font-semibold text-accent-light underline underline-offset-4">
                   {link.label}
                 </Link>
               ))}

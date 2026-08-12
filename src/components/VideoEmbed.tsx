@@ -15,12 +15,15 @@ export default function VideoEmbed({
   title,
   context,
   contextId,
+  autoplay = false,
   className = "aspect-video w-full overflow-hidden rounded-xl border border-border bg-black shadow-sm",
 }: {
   videoId: string;
   title: string;
   context?: VideoContextType;
   contextId?: string;
+  /** Muted, looping autoplay — for video used as a silent, always-playing visual rather than a clip the visitor presses play on. */
+  autoplay?: boolean;
   className?: string;
 }) {
   const iframeRef = useRef<HTMLIFrameElement>(null);
@@ -43,7 +46,11 @@ export default function VideoEmbed({
       <iframe
         ref={iframeRef}
         className="h-full w-full"
-        src={`https://www.youtube.com/embed/${videoId}`}
+        src={
+          autoplay
+            ? `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=1`
+            : `https://www.youtube.com/embed/${videoId}`
+        }
         title={title}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen

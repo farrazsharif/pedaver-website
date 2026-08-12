@@ -85,4 +85,9 @@ export const videos: VideoEntry[] = [
     title: "Channeling Plant Energy: A PQNK Guide to Managing Vegetative Growth",
     channel: "founder",
   },
+  {
+    videoId: "X2HHUcARW_g",
+    title: "Slit Insertion Precision Planter SIPP",
+    channel: "founder",
+  },
 ];
