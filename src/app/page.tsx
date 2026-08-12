@@ -39,8 +39,8 @@ export default function HomePage() {
       {/* 1. HERO — establishes what PQNK is, not a crop-promotion carousel */}
       <section className="relative flex min-h-[520px] items-center overflow-hidden text-cream sm:min-h-[600px]">
         <img
-          src="/images/beds-wet-skyline.jpg"
-          alt="A PQNK field under preparation"
+          src="/images/wheat-field-sunrise.jpg"
+          alt="A lush green PQNK wheat field at sunrise"
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/65 to-black/40" />
@@ -343,7 +343,7 @@ export default function HomePage() {
       {/* 9. STAY CONNECTED */}
       <Section id="stay-connected" className="!py-0">
         <div className="relative overflow-hidden rounded-3xl px-6 py-14 text-cream sm:px-12">
-          <img src="/images/seedlings-beds.jpg" alt="" className="absolute inset-0 h-full w-full object-cover" />
+          <img src="/images/cereal-green.jpg" alt="" className="absolute inset-0 h-full w-full object-cover" />
           <div className="absolute inset-0 bg-primary-dark/90" />
           <div className="relative flex flex-col items-center text-center">
             <div className="grid grid-cols-2 gap-6 border-b border-cream/15 pb-10 md:grid-cols-4">
