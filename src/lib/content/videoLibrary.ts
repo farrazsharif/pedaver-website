@@ -221,6 +221,12 @@ export const videoLibrary: VideoLibraryCategory[] = [
         sourceName: "PedaVer PQNK",
         sourceUrl: "https://www.youtube.com/@pedaverpqnk3167",
       },
+      {
+        videoId: "Z5y1bdUWQAY",
+        title: "Sugarcane on PQNK without irrigation",
+        sourceName: "Asif Sharif",
+        sourceUrl: "https://www.youtube.com/@aasifsharif",
+      },
     ],
   },
   {
