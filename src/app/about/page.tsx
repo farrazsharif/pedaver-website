@@ -49,6 +49,11 @@ const INTRO_LINKS: InlineLinkTerm[] = [{ match: "Food, Feed, Fiber and Timber pr
 
 const INSTITUTIONAL_NOTE_LINKS: InlineLinkTerm[] = [{ match: "Pedaver's services", href: "/services" }];
 
+const FOUNDER_LINKS: InlineLinkTerm[] = [
+  { match: "soil moisture management", href: "/resources#moisture-based-irrigation" },
+  { match: "the machinery", href: "/machines" },
+];
+
 const PHILOSOPHY_LINKS: InlineLinkTerm[] = [
   { match: "soil moisture management", href: "/resources#moisture-based-irrigation" },
   { match: "hardpan-breaking", href: "/resources#breaking-the-hardpan" },
@@ -95,7 +100,7 @@ export default function AboutPage() {
           <div className="mt-6 flex flex-col gap-4 text-ink-soft">
             {dict.about.founderBody.map((paragraph, i) => (
               <p key={i} className="leading-relaxed">
-                {paragraph}
+                {withInlineLinks(paragraph, FOUNDER_LINKS)}
               </p>
             ))}
           </div>

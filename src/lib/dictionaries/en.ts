@@ -232,21 +232,36 @@ const en = {
       "Pedaver is the independent knowledge, research and validation institution behind PQNK, the natural ecosystem science of production agriculture, built around one core conviction: conventional agriculture's input-heavy model is ecologically, economically and nutritionally unsustainable, and there is a better way. Field-tested across Pakistan's diverse growing regions in Food, Feed, Fiber and Timber production, the system is built to apply just as widely: across different soils, climates, crops and production scales.",
     missionTitle: "What We Do",
     missionPoints: [
-      { title: "Productivity Enhancement", body: "Raising yield and quality without raising input cost." },
-      { title: "Value Chain Linkages", body: "Connecting farmers to markets that reward better produce." },
-      { title: "Technology Partnership", body: "Deploying PQNK's field-tested methods, crop by crop." },
-      { title: "Business Development", body: "Building sustainable farm enterprises, not one-season wins." },
-      { title: "Sustainability & Stewardship", body: "Restoring soil health for the next generation of growers." },
+      {
+        title: "Knowledge & Research",
+        body: "Developing and documenting PQNK's scientific foundations through field observation, experimentation and accumulated production experience.",
+      },
+      {
+        title: "PQNK Training",
+        body: "Transferring PQNK principles, practices and operating knowledge to farmers, operators and institutions.",
+      },
+      {
+        title: "System & Engineering Development",
+        body: "Developing production systems, field engineering and machinery that let agriculture operate within natural ecosystem principles.",
+      },
+      {
+        title: "Implementation Support",
+        body: "Helping independent producers and organisations understand, establish and correctly operate PQNK systems, without Pedaver becoming the commercial producer or trader.",
+      },
+      {
+        title: "PQNK Validation",
+        body: "Independently evaluating PQNK implementation and produce against the system's biological, environmental, production and quality standards.",
+      },
     ],
     institutionalNote:
       "Pedaver develops the knowledge, engineering concepts, training and validation behind PQNK. It does not operate commercial crop production or trading directly: that implementation belongs to independent operators such as CPMC-type organisations, with Pedaver remaining the science, training and validation authority behind the system. Institutions and businesses seeking direct engagement can review Pedaver's services.",
     founderTitle: "The Science Behind PQNK",
     founderName: "Asif Sharif",
     founderBody: [
-      "PQNK's methods are developed and taught by Asif Sharif, whose technical channel documents the underlying science: rhizosphere engineering, canopy management, plant energy diversion and regenerative metabolic health.",
-      "His work reframes agriculture through the lens of ecosystem logic: understanding how roots, fungi and soil life interact so that farmers can produce more by working with these systems rather than overriding them with synthetic inputs.",
+      "PQNK has been developed through more than five decades of agricultural practice, observation, experimentation and engineering led by Asif Sharif.",
+      "His work documents the biological and engineering foundations of PQNK: living soil, root–microbe relationships, soil moisture management, permanent biological cover, biodiversity, crop production and the machinery required to farm without disturbing the biological system.",
     ],
-    philosophyTitle: "Conventional Agriculture is Bankrupt: Ecologically, Economically, Nutritionally",
+    philosophyTitle: "Why Conventional Agriculture Is Failing — Ecologically, Economically and Nutritionally",
     philosophyBody: [
       "That is Pedaver's starting premise, and PQNK is offered as the way out: a mulched bed watered by soil moisture management rather than the calendar, a set of long-held farming myths retested, and outcomes measured in the field rather than in theory.",
       "PQNK moves every field through the same fixed sequence: out of ACI (Ancient Conventional Industrial) degradation, through an active regenerative phase of hardpan-breaking, raised beds and mulch-built soil biology, and into a closed-loop, self-sustaining state where no external input is needed again.",
