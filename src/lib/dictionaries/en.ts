@@ -298,7 +298,7 @@ const en = {
       },
       {
         title: "The Architect of PQNK",
-        body: "PQNK rests on a small set of non-negotiable principles: a strict no-till commitment that leaves roots and fungal networks undisturbed; permanent raised beds for drainage; a thick organic mulch layer that holds soil temperature in the 13–26°C range soil microbial life needs; and the living soil that results, where microbial activity converts the soil's own mineral reserves into nutrition, crop by crop. Documented results include reductions in water use of over 70%, the elimination of agrochemical inputs, and lower production costs alongside higher-quality output.",
+        body: "PQNK rests on a small set of non-negotiable principles: a strict no-till commitment that leaves roots and fungal networks undisturbed; permanent raised beds that stay free of machinery compaction, with furrows carrying water and traffic instead of the bed itself and irrigation managed to avoid the inundation that drowns soil life; a thick organic mulch layer that holds soil temperature in the 13–26°C range soil microbial life needs; and the living soil that results, where microbial activity converts the soil's own mineral reserves into nutrition, crop by crop. Documented results include reductions in water use of over 70%, the elimination of agrochemical inputs, and lower production costs alongside higher-quality output.",
       },
       {
         title: "Self-Funded, By Design",
