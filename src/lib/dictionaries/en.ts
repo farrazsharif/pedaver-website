@@ -333,9 +333,9 @@ const en = {
     pageTitle: "Crops & Solutions",
     pageSubtitle:
       "One natural production system, expressed across more than twenty crops, climates and soils. Explore our flagship guides below, with more added regularly.",
-    introTitle: "One PQNK System. Many Crops.",
+    introTitle: "One PQNK System. Every Crop.",
     introBody:
-      "PQNK reproduces the operating conditions through which natural ecosystems sustain plant production: undisturbed soil, no inundation, permanent biological cover, and maximum biodiversity. Because those principles are biological rather than geographic, PQNK applies across crops, soils, climates and production scales, in food, feed, fiber and timber production alike. The crop changes. The climate changes. The engineering configuration may change. The underlying principles do not. Pakistan is where most of PQNK's field evidence has been documented to date, an important record of results, not a boundary on where the system applies. Each crop guide below explains what is specific to that crop; the shared foundation, including the four governing principles, is explained once.",
+      "PQNK reproduces the operating conditions through which natural ecosystems sustain plant production: undisturbed soil, no inundation, permanent biological cover, and maximum biodiversity. Because those principles are biological rather than geographic, PQNK is a production-agriculture system in general, food, feed, fiber and timber alike, not a method built around a fixed list of crops. The guides below document that versatility across more than twenty crops and conditions so far; they are evidence of how the system performs, not the limit of where it applies. The crop changes. The climate changes. The engineering configuration may change. The underlying principles do not. Pakistan is where most of this evidence has been documented to date, an important record of results, not a boundary on the system's reach. Each crop guide below explains what is specific to that crop; the shared foundation, including the four governing principles, is explained once.",
     introPrinciplesLink: "the four governing principles",
     flagshipLabel: "Flagship Guides",
     moreLabel: "More Crops Under PQNK",
