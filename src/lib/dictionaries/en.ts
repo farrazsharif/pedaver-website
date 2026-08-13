@@ -33,6 +33,11 @@ const en = {
       ctaPrimary: "About PQNK",
       ctaSecondary: "See Field Evidence",
     },
+    story: {
+      eyebrow: "Watch the Story",
+      title: "PQNK, Told in Full",
+      body: "The complete PQNK story — the audio-visual version of the book, in concise form.",
+    },
     whyNecessary: {
       eyebrow: "Why PQNK Was Necessary",
       title: "One Degraded System, Many Familiar Symptoms",

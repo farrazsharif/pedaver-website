@@ -27,11 +27,13 @@ function loadFarmerVoicePreview(count: number): string[] {
 
 const evidenceVideoIds = ["r1iN4iRsTmE", "xzORUOK79v4"];
 const featuredVideoId = "X2HHUcARW_g";
+const storyVideoId = "Nf7-cErzDOU";
 
 export default function HomePage() {
   const h = dict.home;
   const evidenceVideos = videos.filter((v) => evidenceVideoIds.includes(v.videoId));
   const featuredVideo = videos.find((v) => v.videoId === featuredVideoId);
+  const storyVideo = videos.find((v) => v.videoId === storyVideoId);
   const voicePreview = loadFarmerVoicePreview(3);
 
   return (
@@ -72,6 +74,25 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* WATCH THE STORY — the full PQNK narrative, prominently placed right after the hero */}
+      {storyVideo && (
+        <Section id="watch-the-story">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">{h.story.eyebrow}</p>
+            <h2 className="mt-3 text-3xl font-bold text-primary-dark">{h.story.title}</h2>
+            <p className="mt-4 text-lg text-ink-soft">{h.story.body}</p>
+          </div>
+          <div className="mx-auto mt-10 max-w-3xl">
+            <VideoEmbed
+              videoId={storyVideo.videoId}
+              title={storyVideo.title}
+              context="video-library"
+              contextId={storyVideo.videoId}
+            />
+          </div>
+        </Section>
+      )}
 
       {/* 2. WHY PQNK WAS NECESSARY */}
       <Section id="why-necessary">
