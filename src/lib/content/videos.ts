@@ -69,8 +69,8 @@ export const videos: VideoEntry[] = [
       "Pomegranate grown at high density under PQNK, where deep, infrequent irrigation through the fractured hardpan profile prevents the fruit cracking and pest pressure that plague conventionally irrigated orchards.",
   },
   {
-    videoId: "Nf7-cErzDOU",
-    title: "PQNK — The Natural Ecosystem Science of Production Agriculture (Story Book, V2)",
+    videoId: "bpmGRdrccH4",
+    title: "PQNK — The Natural Ecosystem Science of Production Agriculture (Story Book)",
     channel: "founder",
   },
   {

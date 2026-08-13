@@ -27,7 +27,7 @@ function loadFarmerVoicePreview(count: number): string[] {
 
 const evidenceVideoIds = ["r1iN4iRsTmE", "xzORUOK79v4"];
 const featuredVideoId = "X2HHUcARW_g";
-const storyVideoId = "Nf7-cErzDOU";
+const storyVideoId = "bpmGRdrccH4";
 
 export default function HomePage() {
   const h = dict.home;
