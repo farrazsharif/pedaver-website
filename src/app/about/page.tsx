@@ -50,15 +50,15 @@ const INTRO_LINKS: InlineLinkTerm[] = [{ match: "Food, Feed, Fiber and Timber pr
 const INSTITUTIONAL_NOTE_LINKS: InlineLinkTerm[] = [{ match: "Pedaver's services", href: "/services" }];
 
 const FOUNDER_LINKS: InlineLinkTerm[] = [
-  { match: "soil moisture management", href: "/resources#moisture-based-irrigation" },
+  { match: "soil moisture management", href: "/resources/moisture-based-irrigation" },
   { match: "the machinery", href: "/machines" },
 ];
 
 const PHILOSOPHY_LINKS: InlineLinkTerm[] = [
-  { match: "soil moisture management", href: "/resources#moisture-based-irrigation" },
-  { match: "hardpan-breaking", href: "/resources#breaking-the-hardpan" },
-  { match: "raised beds", href: "/resources#permanent-raised-beds" },
-  { match: "mulch-built soil biology", href: "/resources#mulch-and-no-till" },
+  { match: "soil moisture management", href: "/resources/moisture-based-irrigation" },
+  { match: "hardpan-breaking", href: "/resources/breaking-the-hardpan" },
+  { match: "raised beds", href: "/resources/permanent-raised-beds" },
+  { match: "mulch-built soil biology", href: "/resources/mulch-and-no-till" },
   { match: "SIPP", href: "/machines/sipp-planter" },
   { match: "VIPP", href: "/machines/vipp-planter" },
   { match: "Our knowledge papers", href: "/papers" },

@@ -356,7 +356,11 @@ const en = {
   resources: {
     pageTitle: "Resources",
     pageSubtitle:
-      "The core PQNK techniques that recur across every crop guide, explained once, in depth, so you don't have to piece them together crop by crop.",
+      "The core operational techniques through which PQNK's principles are implemented in the field — explained once, in depth, so every crop guide can link back here instead of repeating them.",
+    philosophyTitle: "Principle, Requirement, Technique",
+    philosophyBody:
+      "Nature sets the principle: no soil disturbance, no inundation, permanent biological cover, maximum biodiversity. Each technique below exists to satisfy one of those requirements at practical field scale — it is an implementation of a principle, not a principle in itself. Some are one-time transition corrections, undone as soon as they're complete; others are permanent practices repeated every production cycle. Both are shown clearly on each page, because mistaking a one-time correction for a routine practice is the single most common misunderstanding of how PQNK actually works.",
+    readMore: "Read the full page",
   },
   advisory: {
     pageTitle: "Farmer Advisory",

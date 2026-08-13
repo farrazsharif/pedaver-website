@@ -62,8 +62,8 @@ const SECTION_LINKS: Record<number, InlineLinkTerm[]> = {
     { match: "SIPP", href: "/machines/sipp-planter" },
   ],
   2: [
-    { match: "permanent raised beds", href: "/resources#permanent-raised-beds" },
-    { match: "thick organic mulch layer", href: "/resources#mulch-and-no-till" },
+    { match: "permanent raised beds", href: "/resources/permanent-raised-beds" },
+    { match: "thick organic mulch layer", href: "/resources/mulch-and-no-till" },
     {
       match: "reductions in water use of over 70%",
       href: "/papers/the-wholesale-four-step-system-to-end-water-scarcity",

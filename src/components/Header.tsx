@@ -7,6 +7,7 @@ import type { Dictionary } from "@/lib/dictionaries";
 import { crops } from "@/lib/content/crops";
 import { papers } from "@/lib/content/papers";
 import { machines } from "@/lib/content/machines";
+import { resources } from "@/lib/content/resources";
 import TranslateWidget from "./TranslateWidget";
 import { trackInternalSearch } from "@/lib/analytics";
 
@@ -20,6 +21,7 @@ const searchIndex: SearchResult[] = [
   ...crops.map((c) => ({ label: c.name, sublabel: "Crop", href: `/crops/${c.slug}` })),
   ...papers.map((p) => ({ label: p.title, sublabel: "Knowledge Paper", href: `/papers/${p.slug}` })),
   ...machines.map((m) => ({ label: m.title, sublabel: "Machine", href: `/machines/${m.slug}` })),
+  ...resources.map((r) => ({ label: r.title, sublabel: "PQNK Technique", href: `/resources/${r.slug}` })),
 ];
 
 function searchSite(query: string): SearchResult[] {

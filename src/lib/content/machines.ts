@@ -73,7 +73,7 @@ export const machines: Machine[] = [
       "Carried out once, before the first planting on a given plot, wherever compaction is present — not repeated season after season once the profile is open.",
     ],
     relatedConcepts: [
-      { label: "Breaking the Hardpan (technique)", href: "/resources#breaking-the-hardpan" },
+      { label: "Breaking the Hardpan (technique)", href: "/resources/breaking-the-hardpan" },
       { label: "Raised Bed Shaper", href: "/machines/raised-bed-shaper" },
     ],
     furtherReading: [
@@ -111,7 +111,7 @@ export const machines: Machine[] = [
       "Formed once, after the hardpan has been broken and any soil chemistry correction completed, before the first crop is planted on a given plot.",
     ],
     relatedConcepts: [
-      { label: "The PQNK Raised Bed System (technique)", href: "/resources#permanent-raised-beds" },
+      { label: "The PQNK Raised Bed System (technique)", href: "/resources/permanent-raised-beds" },
       { label: "Hardpan Breaker", href: "/machines/hardpan-breaker" },
       { label: "Mulcher & Bed Renovator", href: "/machines/mulcher-bed-renovator" },
     ],
@@ -146,7 +146,7 @@ export const machines: Machine[] = [
     ],
     relatedConcepts: [
       { label: "VIPP — Vertical Insertion Precision Planter", href: "/machines/vipp-planter" },
-      { label: "Mulch and No-Till Planting (technique)", href: "/resources#mulch-and-no-till" },
+      { label: "Mulch and No-Till Planting (technique)", href: "/resources/mulch-and-no-till" },
       { label: "Raised Bed Shaper", href: "/machines/raised-bed-shaper" },
     ],
     furtherReading: [{ label: "The Evolution of Seed Placement", href: "/papers/the-evolution-of-seed-placement" }],
@@ -181,7 +181,7 @@ export const machines: Machine[] = [
     ],
     relatedConcepts: [
       { label: "SIPP — Slit Insertion Precision Planter", href: "/machines/sipp-planter" },
-      { label: "Mulch and No-Till Planting (technique)", href: "/resources#mulch-and-no-till" },
+      { label: "Mulch and No-Till Planting (technique)", href: "/resources/mulch-and-no-till" },
       { label: "Raised Bed Shaper", href: "/machines/raised-bed-shaper" },
     ],
     furtherReading: [{ label: "The Evolution of Seed Placement", href: "/papers/the-evolution-of-seed-placement" }],
@@ -212,7 +212,7 @@ export const machines: Machine[] = [
       "Mulching mode runs after harvest, processing standing residue into surface cover ahead of the next no-till planting pass. Bed-renovation mode runs periodically, as needed, to correct minor wear in the permanent bed architecture rather than on a fixed schedule.",
     ],
     relatedConcepts: [
-      { label: "Mulch and No-Till Planting (technique)", href: "/resources#mulch-and-no-till" },
+      { label: "Mulch and No-Till Planting (technique)", href: "/resources/mulch-and-no-till" },
       { label: "Raised Bed Shaper", href: "/machines/raised-bed-shaper" },
       { label: "SIPP — Slit Insertion Precision Planter", href: "/machines/sipp-planter" },
     ],

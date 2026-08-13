@@ -46,12 +46,12 @@ export async function generateMetadata({
 const COMMON_FOUNDATION_TERMS: { pattern: RegExp; href: string }[] = [
   { pattern: /\bSIPP\b/, href: "/machines/sipp-planter" },
   { pattern: /\bVIPP\b/, href: "/machines/vipp-planter" },
-  { pattern: /\bhardpan\b/i, href: "/resources#breaking-the-hardpan" },
-  { pattern: /\braised beds?\b/i, href: "/resources#permanent-raised-beds" },
-  { pattern: /\bno-till\b/i, href: "/resources#mulch-and-no-till" },
-  { pattern: /\bmulch(ed|ing)?\b/i, href: "/resources#mulch-and-no-till" },
-  { pattern: /\bJantar\b/i, href: "/resources#jantar-cover-cropping" },
-  { pattern: /\bsoil moisture management\b/i, href: "/resources#moisture-based-irrigation" },
+  { pattern: /\bhardpan\b/i, href: "/resources/breaking-the-hardpan" },
+  { pattern: /\braised beds?\b/i, href: "/resources/permanent-raised-beds" },
+  { pattern: /\bno-till\b/i, href: "/resources/mulch-and-no-till" },
+  { pattern: /\bmulch(ed|ing)?\b/i, href: "/resources/mulch-and-no-till" },
+  { pattern: /\bJantar\b/i, href: "/resources/jantar-cover-cropping" },
+  { pattern: /\bsoil moisture management\b/i, href: "/resources/moisture-based-irrigation" },
 ];
 
 function withCommonFoundationLinks(text: string, keyPrefix: string) {
