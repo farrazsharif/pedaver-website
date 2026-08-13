@@ -41,9 +41,9 @@ export default function HomePage() {
         <img
           src="/images/wheat-field-sunrise.jpg"
           alt="A lush green PQNK wheat field at sunrise"
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover brightness-110 saturate-125"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/65 to-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/45 to-black/20" />
         <div className="relative mx-auto w-full max-w-6xl px-4 py-20 text-center sm:px-6">
           <h1 className="mx-auto max-w-4xl leading-none">
             <span className="block text-7xl font-extrabold tracking-tight text-accent-light sm:text-9xl">
