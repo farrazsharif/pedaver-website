@@ -13,9 +13,9 @@ export const cropSeo: Record<string, { title: string; description: string }> = {
       "PQNK cotton fiber production documented in short field clips from active cotton plots across Punjab.",
   },
   rice: {
-    title: "Rice & Direct Seeded Rice (DSR) Under PQNK | Pedaver",
+    title: "Rice Under PQNK — Moist, Aerated Beds Instead of Flooding | Pedaver",
     description:
-      "Rice, including Direct Seeded Rice (DSR), grown under PQNK — among the most-viewed crops on Pedaver's channel.",
+      "PQNK grows rice on moist, aerated permanent beds instead of continuous flooding — Direct Seeded Rice (DSR) documented to cut water use by over 90% versus flooded conventional rice.",
   },
   "citrus-kinnow": {
     title: "Citrus (Kinnow) Under PQNK — Sargodha Orchard Results | Pedaver",

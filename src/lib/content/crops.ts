@@ -9,12 +9,25 @@ export interface Crop {
   overview?: string;
   practices?: string[];
   results?: string;
+  /** Loose grouping for landing-page navigation only — not a scientific classification. */
+  category:
+    | "Grains & Cereals"
+    | "Fibre Crops"
+    | "Sugar Crops"
+    | "Fruits & Orchards"
+    | "Vegetables & Tubers"
+    | "Cash & Specialty Crops"
+    | "Timber & Perennial Systems"
+    | "Soil & Land Management";
+  /** Where the `results` field's claim was actually documented, when the source material names a specific place. Omit rather than guess. */
+  resultsLocation?: string;
 }
 
 export const crops: Crop[] = [
   {
     slug: "wheat",
     flagship: true,
+    category: "Grains & Cereals",
     name: "Wheat",
     blurb: "Punjab's staple crop, grown under PQNK for lower cost, higher grain quality, and tillering up to 20 times per seed.",
     overview:
@@ -27,10 +40,12 @@ export const crops: Crop[] = [
     ],
     results:
       "“Wheat on PQNK — lowest cost of production, highest quality.” — Mian Arfan Khalid, PQNK wheat grower",
+    resultsLocation: "Punjab, Pakistan",
   },
   {
     slug: "cotton",
     flagship: true,
+    category: "Fibre Crops",
     videoId: "r1iN4iRsTmE",
     videoTitle: "PQNK Cotton: Resilience Through Drought and Biological Balance",
     name: "Cotton",
@@ -47,20 +62,25 @@ export const crops: Crop[] = [
   {
     slug: "rice",
     flagship: true,
+    category: "Grains & Cereals",
     name: "Rice",
-    blurb: "Including Direct Seeded Rice (DSR) under PQNK, among the most-viewed crops on our channel.",
+    blurb: "Grown moist and aerated on permanent beds, not flooded — Direct Seeded Rice (DSR) under PQNK, among the most-viewed crops on our channel.",
     overview:
-      "Rice under PQNK includes Direct Seeded Rice (DSR), a technique highlighted specifically for its water and labor efficiency compared to traditional puddled transplanting.",
+      "Rice under PQNK moves away from continuous flooding entirely. Conventional paddy cultivation keeps fields under standing water for most of the season; PQNK instead grows Direct Seeded Rice (DSR) on permanent mulched raised beds, with soil kept moist and aerated rather than inundated — closer to how rice actually experiences water in nature, through monsoon, dew and groundwater moving through open, root-bound soil, not a permanent flood.",
     practices: [
-      "Direct Seeded Rice (DSR) to reduce water use and transplanting labor",
-      "Soil-life-first field management through the growing season",
+      "Direct Seeded Rice (DSR) on permanent raised beds, five rows spaced 8 inches apart on 42-inch beds, at roughly 65,000 plants per acre",
+      "Soil kept moist and aerated rather than continuously flooded — water treated as a precise input, not a default weed-suppression tool",
+      "Organic mulch carried over from the prior crop's residue, in place of standing water, to suppress weeds and hold moisture",
+      "Soil managed as a living system through aeration and organic matter, rather than through mechanical weeding or intensive tillage",
     ],
     results:
-      "Rice and DSR Rice videos are among the most-watched content on Pedaver's official channel, with thousands of views each.",
+      "PQNK's direct-seeded, mulched-bed rice is credited with cutting water use by over 90% against continuously flooded conventional rice (from roughly 5,000 to about 321 liters per kilogram of rice produced), while eliminating the agrochemical residues that cause export rejections. The same beyond-flooding logic is reported to already be in use in rice production in Israel, Korea and China.",
+    resultsLocation: "Pakistan",
   },
   {
     slug: "citrus-kinnow",
     flagship: true,
+    category: "Fruits & Orchards",
     name: "Citrus (Kinnow)",
     blurb: "Documented on a working Kinnow orchard in Sargodha, Pakistan's citrus belt.",
     overview:
@@ -70,10 +90,12 @@ export const crops: Crop[] = [
       "On-the-ground testimony from an established Kinnow grower",
     ],
     results: "“Citrus on PQNK.” — Nasir Goraya, Kinnow grower, Sargodha",
+    resultsLocation: "Sargodha, Pakistan",
   },
   {
     slug: "sugarcane",
     flagship: true,
+    category: "Sugar Crops",
     name: "Sugarcane",
     blurb: "Featuring a documented result of 47 tillers from a single bud under PQNK.",
     overview:
@@ -88,6 +110,7 @@ export const crops: Crop[] = [
   {
     slug: "pomegranate",
     flagship: true,
+    category: "Fruits & Orchards",
     videoId: "xzORUOK79v4",
     videoTitle: "Pomegranate on PQNK",
     name: "Pomegranate",
@@ -103,6 +126,7 @@ export const crops: Crop[] = [
   {
     slug: "potato",
     flagship: false,
+    category: "Vegetables & Tubers",
     name: "Potato",
     blurb: "A production and economics comparison: mulch-based no-till planting versus conventional deep-burial ridging.",
     overview:
@@ -115,10 +139,12 @@ export const crops: Crop[] = [
     ],
     results:
       "Even where yield is marginally lower than deep-burial ridging, mulch-based PQNK planting delivers superior economic returns, produce quality, and system resilience — while also enabling earlier planting and higher plant populations through optimized bed design.",
+    resultsLocation: "Punjab, Pakistan",
   },
   {
     slug: "mango",
     flagship: false,
+    category: "Fruits & Orchards",
     name: "Mango",
     blurb: "Post-harvest handling advisory and pruning guidance, drawn from real farmer questions on our WhatsApp learning group.",
     overview:
@@ -135,6 +161,7 @@ export const crops: Crop[] = [
   {
     slug: "banana",
     flagship: false,
+    category: "Fruits & Orchards",
     name: "Banana",
     blurb: "Grown successfully through extreme cold and heat in the Nainital foothills: proof that banana is soil-limited, not climate-limited.",
     overview:
@@ -147,10 +174,12 @@ export const crops: Crop[] = [
     ],
     results:
       "\"PQNK does not grow crops. PQNK grows soil that grows crops.\" Under this system, banana in a climatically hostile region remained healthy, upright and productive — demonstrating that banana's usual climate sensitivity is a soil problem, not a species limitation.",
+    resultsLocation: "Nainital foothills",
   },
   {
     slug: "olive",
     flagship: false,
+    category: "Fruits & Orchards",
     name: "Olive",
     blurb: "Two orchard paths under PQNK: high-density irrigated planting, or a clever rainwater-harvesting system for dry, sloping land.",
     overview:
@@ -167,6 +196,7 @@ export const crops: Crop[] = [
   {
     slug: "rose",
     flagship: false,
+    category: "Cash & Specialty Crops",
     name: "Rose",
     blurb: "A perennial cash flower crop grown through PQNK's closed-loop, no-external-input system.",
     overview:
@@ -183,6 +213,7 @@ export const crops: Crop[] = [
   {
     slug: "chilli",
     flagship: false,
+    category: "Cash & Specialty Crops",
     name: "Chilli",
     blurb: "A rediscovered perennial: chilli can keep fruiting for a decade or more once soil biology, not chemistry, is restored.",
     overview:
@@ -198,6 +229,7 @@ export const crops: Crop[] = [
   {
     slug: "onion-garlic",
     flagship: false,
+    category: "Vegetables & Tubers",
     name: "Onion & Garlic",
     blurb: "Raised beds enabling 4x planting density, with real farmers reporting yields several times higher than flat-field cultivation.",
     overview:
@@ -210,10 +242,12 @@ export const crops: Crop[] = [
     ],
     results:
       "Documented yields of 250–300 mounds (10,000–12,000 kg) of Dessi garlic per acre, with minimal input costs and revenue reported several times higher than conventional flat-field cultivation — market price fluctuates, but yield, quality, and cost stay firmly in the grower's favour. Produce with lower water content also stores far longer with less spoilage.",
+    resultsLocation: "Pakistan",
   },
   {
     slug: "black-carrot",
     flagship: false,
+    category: "Cash & Specialty Crops",
     name: "Black Carrot",
     blurb: "Grown under contract farming for nutraceutical anthocyanin extraction, with quality tuned through cold and mild water stress.",
     overview:
@@ -231,6 +265,7 @@ export const crops: Crop[] = [
   {
     slug: "amla",
     flagship: false,
+    category: "Fruits & Orchards",
     name: "Amla",
     blurb: "High-density amla orchards using a closed-loop, zero-external-input system, including a one-time acid correction step.",
     overview:
@@ -247,6 +282,7 @@ export const crops: Crop[] = [
   {
     slug: "bamboo",
     flagship: false,
+    category: "Timber & Perennial Systems",
     name: "Bamboo",
     blurb: "A commercial factsheet crop: 60–100 years of productive life from one planting, at 6–15 tons of biomass per acre per year.",
     overview:
@@ -263,6 +299,7 @@ export const crops: Crop[] = [
   {
     slug: "castor",
     flagship: false,
+    category: "Cash & Specialty Crops",
     name: "Castor",
     blurb: "High-density medicinal crop, delivering 6–12 harvests from a single 3–5 year planting.",
     overview:
@@ -278,6 +315,7 @@ export const crops: Crop[] = [
   {
     slug: "watermelon",
     flagship: false,
+    category: "Fruits & Orchards",
     name: "Watermelon",
     blurb: "A deliberate trade: PQNK watermelon takes longer to mature, in exchange for higher natural sugar content and longer shelf life.",
     overview:
@@ -294,6 +332,7 @@ export const crops: Crop[] = [
   {
     slug: "motha-grass",
     flagship: false,
+    category: "Soil & Land Management",
     name: "Motha Grass",
     blurb: "Reframing a \"cancer weed\": motha grass is a soil-emergency indicator, not an enemy to be sprayed.",
     overview:
@@ -310,6 +349,7 @@ export const crops: Crop[] = [
   {
     slug: "agroforestry",
     flagship: false,
+    category: "Timber & Perennial Systems",
     name: "Agroforestry",
     blurb: "Reframing Eucalyptus: soil biology, not species choice, decides whether a tree helps or harms the land.",
     overview:
@@ -326,6 +366,7 @@ export const crops: Crop[] = [
   {
     slug: "vegetables-oap",
     flagship: false,
+    category: "Vegetables & Tubers",
     name: "Vegetables — One Acre Prosperity",
     blurb: "A PQNK guide for smallholders growing vegetables on small plots, including circular production cropping plans.",
     overview:

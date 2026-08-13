@@ -332,13 +332,21 @@ const en = {
   crops: {
     pageTitle: "Crops & Solutions",
     pageSubtitle:
-      "PQNK has been field-tested across more than twenty crops. Explore our flagship guides below, with more added regularly.",
+      "One natural production system, expressed across more than twenty crops, climates and soils. Explore our flagship guides below, with more added regularly.",
+    introTitle: "One PQNK System. Many Crops.",
+    introBody:
+      "PQNK reproduces the operating conditions through which natural ecosystems sustain plant production: undisturbed soil, no inundation, permanent biological cover, and maximum biodiversity. Because those principles are biological rather than geographic, PQNK applies across crops, soils, climates and production scales, in food, feed, fiber and timber production alike. The crop changes. The climate changes. The engineering configuration may change. The underlying principles do not. Pakistan is where most of PQNK's field evidence has been documented to date, an important record of results, not a boundary on where the system applies. Each crop guide below explains what is specific to that crop; the shared foundation, including the four governing principles, is explained once.",
+    introPrinciplesLink: "the four governing principles",
     flagshipLabel: "Flagship Guides",
     moreLabel: "More Crops Under PQNK",
     comingSoonNote:
       "Detailed guide coming soon. In the meantime, see our video library or contact us for advisory notes on this crop.",
     viewGuide: "View Guide",
     backToAll: "Back to all crops",
+    principleNote:
+      "Like every PQNK crop, {crop} is governed by the same four principles: no soil disturbance, no inundation, permanent biological cover and maximum biodiversity. What follows is specific to {crop} — the engineering and management, not the underlying biology.",
+    principleNoteLink: "the same four principles",
+    documentedResultLabel: "Documented Field Result",
   },
   resources: {
     pageTitle: "Resources",

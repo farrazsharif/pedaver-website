@@ -23,6 +23,19 @@ export default function CropsPage() {
       </section>
 
       <Section>
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-2xl font-bold text-primary-dark">{dict.crops.introTitle}</h2>
+          <p className="mt-3 leading-relaxed text-ink-soft">
+            {dict.crops.introBody.split(dict.crops.introPrinciplesLink)[0]}
+            <Link href="/#four-principles" className="font-semibold text-primary underline underline-offset-4 hover:text-primary-dark">
+              {dict.crops.introPrinciplesLink}
+            </Link>
+            {dict.crops.introBody.split(dict.crops.introPrinciplesLink)[1]}
+          </p>
+        </div>
+      </Section>
+
+      <Section muted>
         <h2 className="text-2xl font-bold text-primary-dark">{dict.crops.flagshipLabel}</h2>
         <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {flagshipCrops.map((crop) => (
@@ -39,7 +52,8 @@ export default function CropsPage() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-primary-dark group-hover:text-primary">{crop.name}</h3>
+                <span className="text-xs font-semibold uppercase tracking-wide text-accent">{crop.category}</span>
+                <h3 className="mt-1 text-xl font-bold text-primary-dark group-hover:text-primary">{crop.name}</h3>
                 <p className="mt-2 text-sm text-ink-soft">{crop.blurb}</p>
                 <span className="mt-4 inline-block text-sm font-semibold text-accent">{dict.crops.viewGuide} →</span>
               </div>
@@ -48,7 +62,7 @@ export default function CropsPage() {
         </div>
       </Section>
 
-      <Section muted>
+      <Section>
         <h2 className="text-2xl font-bold text-primary-dark">{dict.crops.moreLabel}</h2>
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {otherCrops.map((crop) => (
@@ -57,7 +71,8 @@ export default function CropsPage() {
               href={`/crops/${crop.slug}`}
               className="rounded-xl border border-border bg-cream p-5 transition hover:border-primary/40 hover:shadow-sm"
             >
-              <h3 className="font-bold text-primary-dark">{crop.name}</h3>
+              <span className="text-xs font-semibold uppercase tracking-wide text-accent">{crop.category}</span>
+              <h3 className="mt-1 font-bold text-primary-dark">{crop.name}</h3>
               <p className="mt-1 text-sm text-ink-soft">{crop.blurb}</p>
             </Link>
           ))}
