@@ -46,10 +46,7 @@ const organizationJsonLd = {
   url: SITE_URL,
   logo: `${SITE_URL}/images/pedaver-logo-glow.png`,
   description: dict.meta.tagline,
-  founder: {
-    "@type": "Person",
-    name: "Asif Sharif",
-  },
+  founder: { "@id": `${SITE_URL}/founder#person` },
   sameAs: [
     "https://www.facebook.com/Pedaver",
     "https://www.youtube.com/@pedaverpqnk3167/videos",

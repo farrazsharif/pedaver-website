@@ -284,9 +284,9 @@ const en = {
   },
   founder: {
     pageTitle: "Asif Sharif",
-    pageSubtitle: "Founder Chairman of Pedaver, and the engineer behind PQNK",
+    pageSubtitle: "Founder of PQNK and Founder Chairman of Pedaver",
     intro:
-      "Asif Sharif founded Pedaver on a simple observation: conventional agriculture's chemical-intensive model was trading long-term soil health for short-term yield, and that trade could not hold. Rather than refine that model, he set out to design a different one, grounded in how natural ecosystems have built fertility for hundreds of millions of years, long before industrial agriculture existed.",
+      "Asif Sharif is an agricultural researcher, production-system designer and machinery innovator: the founder of PQNK and Founder Chairman of Pedaver. He began his agricultural career within modern industrial agriculture, gaining direct experience in mechanisation, precision planting, irrigation, harvesting, crop production and machinery, and came to understand that system from inside it rather than criticising it from outside. That same field experience exposed agriculture's chemical-intensive model trading long-term soil health for short-term yield, a trade he concluded could not hold. Rather than refine that model, he set out to design a different one, grounded in how natural ecosystems have built fertility for hundreds of millions of years. PQNK has emerged from more than five decades of agricultural practice, observation, experimentation and engineering.",
     sections: [
       {
         title: "Five Decades in the Field",
@@ -319,6 +319,15 @@ const en = {
     recordBody:
       "Five Decades of Agricultural Innovation is Sharif's own year-by-year account of the interventions above, from 1973 to today, documented in his own words, photographs and field data, available as a downloadable PDF and as a six-part narrated video series.",
     recordButton: "Read the Paper & Watch the Videos",
+    closingPathwayTitle: "Explore the Work",
+    closingPathwayBody: "You have read about the person; the work itself is documented in full across the site.",
+    closingPathwayLinks: [
+      { label: "Explore PQNK", href: "/" },
+      { label: "Read Knowledge Papers", href: "/papers" },
+      { label: "Explore PQNK Machinery", href: "/machines" },
+      { label: "See Crops & Field Results", href: "/crops" },
+      { label: "About Pedaver", href: "/about" },
+    ],
   },
   crops: {
     pageTitle: "Crops & Solutions",
