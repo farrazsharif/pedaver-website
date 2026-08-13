@@ -19,7 +19,7 @@ interface SearchResult {
 const searchIndex: SearchResult[] = [
   ...crops.map((c) => ({ label: c.name, sublabel: "Crop", href: `/crops/${c.slug}` })),
   ...papers.map((p) => ({ label: p.title, sublabel: "Knowledge Paper", href: `/papers/${p.slug}` })),
-  ...machines.map((m) => ({ label: m.title, sublabel: "Machine", href: `/machines#${m.slug}` })),
+  ...machines.map((m) => ({ label: m.title, sublabel: "Machine", href: `/machines/${m.slug}` })),
 ];
 
 function searchSite(query: string): SearchResult[] {

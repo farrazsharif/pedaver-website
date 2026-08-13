@@ -59,8 +59,8 @@ const PHILOSOPHY_LINKS: InlineLinkTerm[] = [
   { match: "hardpan-breaking", href: "/resources#breaking-the-hardpan" },
   { match: "raised beds", href: "/resources#permanent-raised-beds" },
   { match: "mulch-built soil biology", href: "/resources#mulch-and-no-till" },
-  { match: "SIPP", href: "/machines#sipp-planter" },
-  { match: "VIPP", href: "/machines#vipp-planter" },
+  { match: "SIPP", href: "/machines/sipp-planter" },
+  { match: "VIPP", href: "/machines/vipp-planter" },
   { match: "Our knowledge papers", href: "/papers" },
 ];
 

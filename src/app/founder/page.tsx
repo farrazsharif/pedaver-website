@@ -57,9 +57,9 @@ const INTRO_LINKS: InlineLinkTerm[] = [
 
 const SECTION_LINKS: Record<number, InlineLinkTerm[]> = {
   1: [
-    { match: "raised bed shapers", href: "/machines#raised-bed-shaper" },
-    { match: "VIPP", href: "/machines#vipp-planter" },
-    { match: "SIPP", href: "/machines#sipp-planter" },
+    { match: "raised bed shapers", href: "/machines/raised-bed-shaper" },
+    { match: "VIPP", href: "/machines/vipp-planter" },
+    { match: "SIPP", href: "/machines/sipp-planter" },
   ],
   2: [
     { match: "permanent raised beds", href: "/resources#permanent-raised-beds" },

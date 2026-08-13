@@ -1,9 +1,7 @@
 import Link from "next/link";
 import dict from "@/lib/dictionaries";
-import { machines, machinePhilosophy } from "@/lib/content/machines";
+import { machines, machinePhilosophy, type Machine } from "@/lib/content/machines";
 import Section from "@/components/Section";
-import VideoEmbed from "@/components/VideoEmbed";
-import TrackedVideo from "@/components/analytics/TrackedVideo";
 import SectionViewTracker from "@/components/analytics/SectionViewTracker";
 import { buildMetadata } from "@/lib/seo";
 
@@ -13,6 +11,41 @@ export const metadata = buildMetadata({
     "The engineering behind PQNK: why breaking the hardpan matters, how permanent raised beds are built to last, and how the SIPP and VIPP planters plant directly through thick organic mulch.",
   path: "/machines",
 });
+
+const CATEGORIES: { key: Machine["category"]; title: string; note: string }[] = [
+  {
+    key: "transition",
+    title: "One-Time / Transition Engineering",
+    note: "Used once, to correct inherited damage and establish permanent farm architecture — not repeated season after season.",
+  },
+  {
+    key: "periodic",
+    title: "Periodic Production Engineering",
+    note: "Used every production cycle, working with the permanent architecture the transition machinery already established.",
+  },
+];
+
+function MachineCard({ machine }: { machine: Machine }) {
+  return (
+    <article id={machine.slug} className="scroll-mt-24 rounded-2xl border border-border bg-card p-6 shadow-sm">
+      <SectionViewTracker
+        targetId={machine.slug}
+        contentType="machine"
+        contentId={machine.slug}
+        contentTitle={machine.title}
+      />
+      <h3 className="text-xl font-bold text-primary-dark">{machine.title}</h3>
+      <p className="mt-1 text-sm font-medium italic text-ink-soft">{machine.summary}</p>
+      <p className="mt-3 leading-relaxed text-ink-soft">{machine.overviewBlurb}</p>
+      <Link
+        href={`/machines/${machine.slug}`}
+        className="mt-4 inline-block text-sm font-semibold text-primary underline underline-offset-4"
+      >
+        Read the full page →
+      </Link>
+    </article>
+  );
+}
 
 export default function MachinesPage() {
   return (
@@ -35,59 +68,23 @@ export default function MachinesPage() {
         </div>
       </Section>
 
-      <Section muted>
-        <div className="mx-auto flex max-w-3xl flex-col gap-10">
-          {machines.map((machine) => (
-            <article key={machine.slug} id={machine.slug} className="scroll-mt-24">
-              <SectionViewTracker
-                targetId={machine.slug}
-                contentType="machine"
-                contentId={machine.slug}
-                contentTitle={machine.title}
-              />
-              <h2 className="text-2xl font-bold text-primary-dark">{machine.title}</h2>
-              <p className="mt-2 text-sm font-medium italic text-ink-soft">{machine.summary}</p>
-              {machine.image && (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  src={machine.image}
-                  alt={machine.title}
-                  className="mt-4 w-full max-w-md rounded-xl border border-border object-cover shadow-sm"
-                />
-              )}
-              <div className="mt-4 flex flex-col gap-3">
-                {machine.body.map((paragraph, idx) => (
-                  <p key={idx} className="leading-relaxed text-ink-soft">
-                    {paragraph}
-                  </p>
+      {CATEGORIES.map((category) => {
+        const items = machines.filter((m) => m.category === category.key);
+        if (items.length === 0) return null;
+        return (
+          <Section key={category.key} muted={category.key === "transition"}>
+            <div className="mx-auto max-w-3xl">
+              <h2 className="text-2xl font-bold text-primary-dark">{category.title}</h2>
+              <p className="mt-2 text-ink-soft">{category.note}</p>
+              <div className="mt-8 flex flex-col gap-6">
+                {items.map((machine) => (
+                  <MachineCard key={machine.slug} machine={machine} />
                 ))}
               </div>
-              {machine.videoId && (
-                <div className="mt-5 max-w-md overflow-hidden rounded-xl border border-border shadow-sm">
-                  <VideoEmbed
-                    videoId={machine.videoId}
-                    title={`${machine.title} — video`}
-                    context="machine"
-                    contextId={machine.slug}
-                    className="aspect-video w-full"
-                  />
-                </div>
-              )}
-              {machine.videoFile && (
-                <div className="mt-5 max-w-md overflow-hidden rounded-xl border border-border shadow-sm">
-                  <TrackedVideo
-                    src={machine.videoFile}
-                    contextType="machine"
-                    contextId={machine.slug}
-                    className="h-full w-full"
-                    ariaLabel={`${machine.title} — video`}
-                  />
-                </div>
-              )}
-            </article>
-          ))}
-        </div>
-      </Section>
+            </div>
+          </Section>
+        );
+      })}
 
       <Section>
         <div className="mx-auto flex max-w-3xl flex-col gap-6 rounded-2xl border border-border bg-card p-8 text-center shadow-sm">

@@ -12,7 +12,7 @@ export const resources: Resource[] = [
     summary: "The one-time foundation step behind every PQNK conversion, from wheat to bamboo.",
     body: [
       "Decades of tillage and machinery traffic compact a layer beneath the surface known as the hardpan. It blocks deep water infiltration, air exchange and root penetration, forcing crops into shallow, stressed root systems no matter what is added on top.",
-      "In PQNK, a subsoiler is used to shatter this compacted layer without inverting the soil, typically to a depth of 18–24 inches. This is done once, before the first planting on a given plot, and not repeated season after season.",
+      "In PQNK, a subsoiler is used to shatter this compacted layer without inverting the soil. Hardpan depth varies by field, tillage history, tractor weight and number of passes, so a pit is dug to check where it actually sits before setting the subsoiler's depth; a working depth of up to 24 inches is commonly used as a safety margin to make sure the hardpan is reached even where its exact depth is uncertain. This is done once, before the first planting on a given plot, and not repeated season after season.",
       "Once the hardpan is broken, roots (and later, the Jantar cover crop's taproots) can reach 4 to 12 feet deep depending on the crop, unlocking subsoil moisture and minerals that shallow-rooted, conventionally managed plants never access.",
     ],
   },
