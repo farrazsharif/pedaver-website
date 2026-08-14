@@ -34,18 +34,18 @@ export const resources: Resource[] = [
       "A one-time transition operation that reopens the compacted layer beneath the topsoil, restoring the vertical connectivity between surface and subsoil that decades of tillage sealed off.",
     overviewBlurb: "The one-time foundation step behind every PQNK conversion, from wheat to bamboo.",
     whyItExists: [
-      "Decades of tillage and machinery traffic compact a layer beneath the surface known as the hardpan. It blocks deep water infiltration, air exchange and root penetration, forcing crops into shallow, stressed root systems no matter what is added on top.",
+      "Repeated tillage collapses soil pores and destroys the soil's natural architecture. That destruction compacts the profile into a dense layer, and where compaction is severe enough, a hardpan forms beneath the surface. Hardpan is a consequence of this process, not the original problem — but once it exists, it blocks deep water infiltration, air exchange and root penetration, forcing crops into shallow, stressed root systems no matter what is added on top.",
     ],
     pqnkTechnique: [
-      "In PQNK, a subsoiler is used to shatter this compacted layer without inverting the soil. Hardpan depth varies by field, tillage history, tractor weight and number of passes, so a pit is dug to check where it actually sits before setting the subsoiler's depth; a working depth of up to 24 inches is commonly used as a safety margin to make sure the hardpan is reached even where its exact depth is uncertain.",
+      "In PQNK, a subsoiler is used to shatter this compacted layer without inverting the soil, after the soil profile is first inspected to identify where the actual compacted layer sits. The established PQNK broad-acre operating specification is approximately 22 inches. Where field inspection shows deeper compaction, or where additional safety margin is required, working depth may extend up to approximately 24 inches — the purpose is to fully break the hardpan, not to impose one universal depth on every field.",
       "Once the hardpan is broken, roots (and later, the Jantar cover crop's taproots) can reach 4 to 12 feet deep depending on the crop, unlocking subsoil moisture and minerals that shallow-rooted, conventionally managed plants never access.",
     ],
     oneTimeOrPermanent:
       "This is done once, before the first planting on a given plot, and not repeated season after season. Once the profile is open and the field is managed to preserve that connectivity, roots and soil biology take over the job of maintaining it — repeating the operation unnecessarily would undo the very structure it was meant to restore.",
     universalPrinciple:
-      "No soil disturbance is the universal principle. Breaking the hardpan is the one-time corrective step that removes inherited physical damage so that principle can hold going forward — it corrects the past, it does not repeat into the future.",
+      "The universal requirement is that the compacted layer must be identified and physically broken during the initial corrective transition, reconnecting the upper biological production zone with the deeper soil profile. Breaking the hardpan is the one-time corrective step that removes inherited physical damage so that no-soil-disturbance can hold going forward — it corrects the past, it does not repeat into the future.",
     localImplementation: [
-      "Whether hardpan-breaking is needed at all, and to what depth, depends on the field's own tillage history, tractor weight and number of previous passes — not a fixed depth applied everywhere.",
+      "Actual soil-profile inspection — digging a pit on each field — identifies the location, thickness and severity of compaction, and determines where within the established operating range the working depth should be set. Engineering responds to the field's own condition rather than assuming the compacted layer sits at the same depth everywhere.",
     ],
     relatedMachinery: [{ label: "The Hardpan Breaker", href: "/machines/hardpan-breaker" }],
     furtherReading: [
@@ -66,11 +66,11 @@ export const resources: Resource[] = [
       "Many fields farmed conventionally for decades carry soil pH above 8, locking up essential minerals like iron, zinc and phosphorus, and creating conditions that favor parasitic weeds and disease. This applies specifically to fields carrying that chemical legacy, not to soil in general.",
     ],
     pqnkTechnique: [
-      "PQNK does not permit imported gypsum or synthetic amendments. Instead, a deep leaching irrigation is applied first, to dissolve and push down salts accumulated from previous farming cycles.",
-      "Where pH remains above 8 after leaching, a one-time application of roughly 8 kg of sulfuric acid per acre is added with the irrigation water. It is a permitted, one-time correction tool that rapidly lowers pH, liberates locked nutrients, and creates conditions hostile to parasitic weeds but favorable to the crop.",
+      "PQNK does not permit imported gypsum or synthetic amendments. Instead, the field is water-washed to leach accumulated salts and residues left by previous management. Where soil pH exceeds 8, approximately 8 kg of sulfuric acid per acre may be added with that same water wash — not as a separate step afterward.",
+      "This is a conditional correction tool, applied only where the high-pH condition actually exists, not a routine input added to every field. Where it applies, it rapidly lowers pH, liberates locked nutrients, and creates conditions hostile to parasitic weeds but favorable to the crop.",
     ],
     oneTimeOrPermanent:
-      "This applies only where soil chemistry is actually degraded — fields that don't carry high pH or salt legacy don't require it at all. Where it is required, it is applied once; the field is not treated again afterward.",
+      "This applies only where soil chemistry is actually degraded — fields that don't carry high pH or salt legacy don't require it at all, and most fields do not receive the acid step. Where it is required, it is applied once, with the water wash; the field is not treated again afterward.",
     universalPrinciple:
       "The universal requirement is a biologically functional root zone free of chemical lockout. Where that condition already exists, no correction is needed; where it doesn't, this one-time protocol is how PQNK restores it without importing conventional amendments.",
     localImplementation: [
@@ -88,15 +88,15 @@ export const resources: Resource[] = [
       "Conventional ridging is rebuilt every season: the same ground is repeatedly reshaped and run over by machinery. A growing zone that never stabilizes can't build the permanent soil structure a living ecosystem depends on.",
     ],
     pqnkTechnique: [
-      "After the hardpan is broken and soil chemistry corrected where needed, PQNK farms build permanent raised beds, with furrows matched to standard tractor wheel spacing so that wheels always run in the furrows and never on the growing bed.",
+      "After the hardpan is broken and soil chemistry corrected where needed, PQNK farms build permanent raised beds, with the furrow top matched to standard tractor wheel spacing so tractor tyres always run in the permanent traffic and hydraulic corridors, never on the growing bed.",
       "Because the beds are permanent, the growing zone is never compacted again by machinery traffic. Crop after crop is planted on the same beds, season after season, without reshaping the soil.",
     ],
     oneTimeOrPermanent:
       "Shaping the bed is a one-time operation, typically completed in hours; the architecture it establishes then serves the field permanently, corrected only occasionally through routine maintenance, never rebuilt from scratch each season.",
     universalPrinciple:
-      "No soil disturbance and controlled traffic separation are the universal requirements: a fixed, uncompacted growing zone kept apart from a dedicated traffic lane.",
+      "Permanent production architecture and controlled traffic are the governing requirements: a fixed, protected biological growing zone kept structurally apart from a dedicated traffic and irrigation corridor.",
     localImplementation: [
-      "Typical PQNK beds run 42 inches wide with 18-inch furrows, but bed and furrow dimensions are engineered around the specific tractor's wheel-track geometry, crop spacing needs and farm scale — one dimension set is not biologically mandatory everywhere.",
+      "For the established PQNK configuration, the standard geometry is a 42-inch bed top with an 18-inch furrow top — but these are engineering dimensions, adapted to the specific tractor's wheel-track geometry and local operating requirements, not a fixed spec mandatory on every tractor system worldwide.",
     ],
     relatedMachinery: [
       { label: "The Raised Bed Shaper", href: "/machines/raised-bed-shaper" },
@@ -119,11 +119,11 @@ export const resources: Resource[] = [
       "This is a closed-loop fertility-building step: no external manure or fertilizer is brought onto the field. Once Jantar reaches maturity, it is terminated at ground level, its roots left to decompose and feed soil microbes, its above-ground biomass chopped and laid as mulch on the very same bed.",
     ],
     oneTimeOrPermanent:
-      "Jantar is grown once, during the establishment of a new field, ahead of the first cash crop. It is not regrown between every subsequent crop cycle — from there, the permanent mulch-and-no-till loop takes over.",
+      "Jantar is grown once, during the establishment of a new field, ahead of the first cash crop. It is not regrown between every subsequent crop cycle — but biological cover itself does not end when Jantar's transition role is complete. Its roots remain in the soil, its biomass is retained as mulch, and successive crops continue that same biological occupation and cover through the permanent mulch-and-no-till loop from there.",
     universalPrinciple:
-      "The universal requirement is permanent biological cover, biodiversity and root activity building the soil from within — not any one specific plant. Jantar is the cover crop PQNK has documented and established for this transition step in the growing environments where it has been used.",
+      "Jantar itself is not the universal PQNK principle — the governing requirements are Permanent Biological Cover and Maximum Biodiversity, alongside PQNK's other principles. Jantar is the established transition tool PQNK uses to rapidly establish living roots, biomass, biological activity and soil cover during that transition, in the growing environments where it has been used.",
     localImplementation: [
-      "In ecological regions where Jantar itself is not suitable, a locally appropriate deep-rooting, biomass-producing cover species fulfilling the same biological function would take its place. This project's material does not document specific alternative species for other climates, so none are proposed here without that evidence.",
+      "Local species selection, where Jantar itself is not appropriate, requires locally suitable agronomic selection while preserving the same underlying requirement — permanent biological cover and biodiversity. This project's material does not document specific alternative species for other climates, so none are proposed here without that evidence.",
     ],
   },
   {
@@ -143,7 +143,7 @@ export const resources: Resource[] = [
     oneTimeOrPermanent:
       "This is the permanent production loop, not a transition step: grow, harvest or terminate at the surface, retain roots in the soil, return above-ground biomass as mulch, and plant the next crop directly through that cover without disturbing the bed beneath it. It repeats every cycle, indefinitely, once the transition is complete.",
     universalPrinciple:
-      "Permanent biological cover and no soil disturbance are the universal requirements. Surface mulch is retained, never incorporated by tillage, and residue is never routinely removed or burned.",
+      "This page brings two distinct PQNK principles together in one field practice. No Soil Disturbance protects the soil architecture already built — pores, roots and fungal networks stay intact because the bed is never re-tilled. Permanent Biological Cover protects the surface itself — mulch shields it from solar radiation and evaporation, moderates temperature, retains moisture and dew, and feeds biological processes as it decomposes. The two reinforce each other in the field, but they remain conceptually distinct requirements, not one combined rule.",
     localImplementation: [
       "Mulch thickness and the specific biomass source vary by what the field's own cover crop and crop residue actually produce; the function, continuous surface protection, stays constant.",
     ],
@@ -156,24 +156,26 @@ export const resources: Resource[] = [
   },
   {
     slug: "moisture-based-irrigation",
-    title: "Soil Moisture Management: Replacing the Calendar",
+    title: "Soil Moisture Management (SMM)",
     category: "permanent",
     oneSentenceDefinition:
-      "PQNK irrigates according to the actual moisture condition of the root zone, governed by a direct soil test, not a fixed calendar.",
-    overviewBlurb: "Why PQNK farms water by feel and observation, not by a fixed schedule.",
+      "PQNK manages the root zone's moisture, air and biological condition as a whole — irrigation is only an occasional supplemental intervention within that system, not the subject itself.",
+    overviewBlurb: "Why PQNK manages soil moisture directly, by observation, rather than defaulting to a fixed irrigation calendar.",
     whyItExists: [
-      "Conventional irrigation follows a calendar: water on day X, regardless of what the plant or soil actually needs.",
+      "Conventional irrigation follows a calendar: water on day X, regardless of what the plant, the soil, or recent weather actually indicate.",
     ],
     pqnkTechnique: [
-      "PQNK replaces the calendar with direct observation of the root zone itself. The governing method is the soil ball test: take a handful of soil from the root zone — if it forms a cohesive ball, moisture is sufficient; if it crumbles, it's time to water.",
-      "Visible afternoon wilting can be a secondary signal worth noticing in the field, but it is the soil condition at the root zone, not the plant's visible stress, that governs the irrigation decision.",
+      "PQNK replaces the calendar with direct observation of the root zone itself. The governing method is the soil ball test: take a handful of soil from the root zone — if it forms a cohesive ball, moisture is sufficient; if it crumbles, external water may be needed.",
+      "Before deciding whether externally supplied water is required, the ball test result is weighed alongside recent rainfall, the rainfall forecast, the crop's visible condition, and the functioning condition of the biological production system as a whole. There is no predetermined irrigation calendar and no routine assumption that irrigation must occur — the question is simply whether the crop's natural water supply is currently sufficient. Visible afternoon wilting can be a secondary plant signal worth noticing in the field, but it is this combined soil-and-system assessment, not the plant's visible stress alone, that governs the decision.",
+      "When natural supply is insufficient under extreme conditions, water may be applied through the permanent furrows as a supplement — not to uniformly saturate the raised bed. As water seeps laterally and vertically through the bed profile, it establishes a gradient: conditions near the wetted edge immediately after irrigation may approach roughly 90% water to 10% air, while toward the centre of the bed, water decreases and air increases as nutrient concentration in the soil solution rises, approaching roughly 10% water to 90% air. Roots remain free to explore the undisturbed bed profile and draw water, air and nutrients according to what the plant actually needs.",
+      "This temporary gradient is distinct from the broadly balanced condition — roughly 30% water to 70% air — that soil life maintains once the system reaches its Sustained Closed Loop State and plant water needs are being met naturally. That 30:70 condition is not an irrigation target; it describes the ongoing state of a functioning system, not the spatial pattern that follows a supplemental furrow irrigation.",
     ],
     oneTimeOrPermanent:
       "This is a permanent production practice, applied every season for the life of the field — not a transition step.",
     universalPrinciple:
-      "No inundation is the universal principle: the root zone stays moist and aerated, never drowned. Excess irrigation dilutes the soil's mineral solution, drowns soil microbes, pushes plants into excess vegetative growth at the expense of fruiting, and wastes a resource that is often scarce.",
+      "No inundation is the universal principle: the root zone stays moist and aerated, never drowned. Excess irrigation dilutes the soil's mineral solution, drowns soil microbes, pushes plants into excess vegetative growth at the expense of fruiting, and wastes a resource that is often scarce. PQNK has demonstrated approximately 70–90% reduction in externally supplied irrigation water, depending upon crop and conditions. Plants continue using water for biological processes, mineral transport, transpiration and cooling — PQNK reduces the amount that must be supplied externally by restoring a functioning production ecosystem, not the plant's own water use.",
     localImplementation: [
-      "Furrow irrigation timing, frequency and infrastructure vary by crop, soil, climate and equipment — the soil ball test is what determines when to water in any of those configurations, not a fixed interval.",
+      "Furrow irrigation timing, frequency and infrastructure vary by crop, soil, climate and equipment — the soil ball test, weighed against rainfall and system condition, is what determines when to water in any of those configurations, not a fixed interval.",
     ],
     furtherReading: [
       {

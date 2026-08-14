@@ -17,7 +17,7 @@ const CATEGORY_LABEL = {
 } as const;
 
 /** Resources with a genuinely sequential procedure get HowTo; the rest, which primarily explain a PQNK concept, get TechArticle. */
-const HOWTO_SLUGS = new Set(["soil-chemistry-correction", "mulch-and-no-till"]);
+const HOWTO_SLUGS = new Set(["mulch-and-no-till"]);
 
 export async function generateMetadata({
   params,
