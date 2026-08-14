@@ -211,12 +211,9 @@ const en = {
       ],
     },
     stayConnected: {
-      title: "Get PQNK Updates",
-      body: "Leave your details and we'll reach out with new crop guides, videos and advisory notes as they're published.",
-      newsletterNamePlaceholder: "Your name",
-      newsletterPlaceholder: "Your email",
-      newsletterConsent: "I agree to receive PQNK updates by email.",
-      newsletterButton: "Subscribe",
+      title: "Join PQNK Learning Groups on WhatsApp",
+      body: "Anyone interested in joining our PQNK learning groups on WhatsApp should send a message to the admin at +92 325 0064442.",
+      whatsappButton: "Message the Admin on WhatsApp",
       communityStats: [
         { value: "55K+", label: "Facebook community" },
         { value: "11K+", label: "YouTube subscribers" },

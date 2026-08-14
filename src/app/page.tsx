@@ -7,7 +7,7 @@ import { cropImages } from "@/lib/content/cropImages";
 import { videos } from "@/lib/content/videos";
 import Section from "@/components/Section";
 import VideoEmbed from "@/components/VideoEmbed";
-import NewsletterForm from "@/components/NewsletterForm";
+import TrackedExternalChannelLink from "@/components/analytics/TrackedExternalChannelLink";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
@@ -381,12 +381,13 @@ export default function HomePage() {
 
             <h2 className="mt-10 text-3xl font-bold">{h.stayConnected.title}</h2>
             <p className="mx-auto mt-3 max-w-xl text-lg text-cream/95">{h.stayConnected.body}</p>
-            <NewsletterForm
-              namePlaceholder={h.stayConnected.newsletterNamePlaceholder}
-              placeholder={h.stayConnected.newsletterPlaceholder}
-              consentLabel={h.stayConnected.newsletterConsent}
-              buttonLabel={h.stayConnected.newsletterButton}
-            />
+            <TrackedExternalChannelLink
+              href="https://wa.me/923250064442"
+              label="WhatsApp — PQNK Learning Groups"
+              className="mt-6 inline-flex items-center gap-2 rounded-full bg-accent px-8 py-3 text-sm font-semibold text-ink transition hover:bg-accent-light"
+            >
+              {h.stayConnected.whatsappButton}
+            </TrackedExternalChannelLink>
 
             <div className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 border-t border-cream/15 pt-8">
               <span className="text-base font-semibold text-cream/90">{h.stayConnected.linksTitle}</span>

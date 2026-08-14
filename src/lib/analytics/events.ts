@@ -76,19 +76,15 @@ export function trackVideoComplete(contextType: VideoContextType, contextId: str
 }
 
 /**
- * ContactForm/NewsletterForm build a mailto: link and hand off to the
- * visitor's own email client — there is no real network submission on
- * this static site. This measures "visitor clicked submit and their email
- * client opened," never "message received." The function intentionally
- * has no parameter for name/email/message: it structurally cannot leak
- * form contents because it never receives them.
+ * ContactForm builds a mailto: link and hands off to the visitor's own
+ * email client — there is no real network submission on this static site.
+ * This measures "visitor clicked submit and their email client opened,"
+ * never "message received." The function intentionally has no parameter
+ * for name/email/message: it structurally cannot leak form contents
+ * because it never receives them.
  */
 export function trackEnquirySubmitIntent(source: "contact_form") {
   track("enquiry_submit_intent", { source });
-}
-
-export function trackNewsletterSignupIntent() {
-  track("newsletter_signup_intent", { source: "newsletter_form" });
 }
 
 export function trackLanguageChange(targetLang: string, currentPath: string) {
