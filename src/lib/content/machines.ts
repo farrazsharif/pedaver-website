@@ -41,7 +41,7 @@ export const machinePhilosophy: string[] = [
   "Nature establishes the biological principles: no soil disturbance, no inundation, permanent biological cover, maximum biodiversity. PQNK identifies what a production system must do to protect those principles at field scale. Engineering exists to carry that out, each machine on this page is the means of applying a principle, not an end in itself. PQNK is not machinery-led agriculture: the machinery exists because conventional equipment generally assumes tillage, exposed soil and repeated seedbed preparation, practices incompatible with a permanent biological system.",
   "A century of agricultural engineering optimized machines for how much soil they could move, plough, or pulverize. PQNK asks a different question of every machine: does it strengthen ecological function, or weaken it? Misapplied machinery, not mechanization itself, is what degrades a field.",
   "PQNK machinery therefore splits into two families. Transition machinery corrects damage inherited from conventional farming, hardpan compaction, unstructured fields, and is designed to be used once, or as rarely as possible. Maintenance machinery supports an ecosystem that is already functioning, planting, mulching, and light upkeep, and its footprint shrinks year after year as the field increasingly does its own work.",
-  "This maps directly onto PQNK's transition sequence. Transition machinery is what physically drives a field out of ACI (Ancient Conventional Industrial) degradation and into the regenerative phase, breaking the hardpan, shaping the permanent beds. Maintenance machinery is what a field needs once it reaches the closed-loop, self-sustaining state, and even that need keeps shrinking as the ecosystem takes over its own upkeep.",
+  "This maps directly onto PQNK's transition sequence. Transition machinery carries out the Corrective Intervention that physically drives a field out of ACI (Ancient Conventional Industrial) degradation, breaking the hardpan, shaping the permanent beds, before the field enters its Regenerative Phase. Maintenance machinery is what a field needs once it reaches the Sustained Closed Loop State, and even that need keeps shrinking as the ecosystem takes over its own upkeep.",
 ];
 
 export const machines: Machine[] = [
@@ -67,7 +67,7 @@ export const machines: Machine[] = [
     engineeringCharacteristics: [
       "A subsoiler tool, used to shatter the compacted layer without inverting the soil.",
       "Because hardpan depth varies by field, tillage history, tractor weight and number of passes, PQNK recommends digging a pit on each field to check where the hardpan actually sits before setting the subsoiler's working depth.",
-      "A working depth of up to 24 inches is commonly used as a safety margin, to make sure the subsoiler reaches below the hardpan even where its exact depth is uncertain, not as a fixed depth required on every field.",
+      "The established PQNK broad-acre operating specification is approximately 22 inches. Working depth may extend toward approximately 24 inches where field diagnosis indicates that additional depth is required as a safety allowance — not as a fixed depth required on every field.",
     ],
     fieldOperation: [
       "Carried out once, before the first planting on a given plot, wherever compaction is present — not repeated season after season once the profile is open.",
@@ -104,7 +104,7 @@ export const machines: Machine[] = [
     ],
     engineeringCharacteristics: [
       "Typical bed width: 42 inches, with 18-inch furrows.",
-      "Furrow spacing is matched to standard tractor wheel track, so wheels always run in the furrow, never on the growing bed.",
+      "Furrow spacing is matched to both the tractor's wheel track and its tyre width, so wheels always run entirely within the furrow without compacting the sides of the growing bed.",
       "Bed and furrow dimensions can be adjusted to match different tractor tracks or crop spacing needs — the fixed, uncompacted growing zone principle stays constant across configurations, so no single dimension set is universally mandatory.",
     ],
     fieldOperation: [

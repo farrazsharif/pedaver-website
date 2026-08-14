@@ -88,7 +88,7 @@ export const resources: Resource[] = [
       "Conventional ridging is rebuilt every season: the same ground is repeatedly reshaped and run over by machinery. A growing zone that never stabilizes can't build the permanent soil structure a living ecosystem depends on.",
     ],
     pqnkTechnique: [
-      "After the hardpan is broken and soil chemistry corrected where needed, PQNK farms build permanent raised beds, with the furrow top matched to standard tractor wheel spacing so tractor tyres always run in the permanent traffic and hydraulic corridors, never on the growing bed.",
+      "After the hardpan is broken and soil chemistry corrected where needed, PQNK farms build permanent raised beds, with the furrow matched to both the tractor's wheel-track and its tyre width, so tractor tyres always run entirely within the permanent traffic and hydraulic corridors, never compacting the sides of the growing bed.",
       "Because the beds are permanent, the growing zone is never compacted again by machinery traffic. Crop after crop is planted on the same beds, season after season, without reshaping the soil.",
     ],
     oneTimeOrPermanent:
@@ -96,7 +96,7 @@ export const resources: Resource[] = [
     universalPrinciple:
       "Permanent production architecture and controlled traffic are the governing requirements: a fixed, protected biological growing zone kept structurally apart from a dedicated traffic and irrigation corridor.",
     localImplementation: [
-      "For the established PQNK configuration, the standard geometry is a 42-inch bed top with an 18-inch furrow top — but these are engineering dimensions, adapted to the specific tractor's wheel-track geometry and local operating requirements, not a fixed spec mandatory on every tractor system worldwide.",
+      "For the established PQNK configuration, the standard geometry is approximately a 42-inch bed top, an 18-inch furrow top, an 8-inch furrow bottom and roughly 8 inches of furrow depth — but these are engineering dimensions, adapted to the specific tractor's wheel-track profile and tyre width and local operating requirements, not a fixed spec mandatory on every tractor system worldwide. The engineering objective is that tractor tyres remain entirely within the traffic corridor without compacting the sides of the protected bed, since sidewall compaction restricts water seepage and infiltration into the bed.",
     ],
     relatedMachinery: [
       { label: "The Raised Bed Shaper", href: "/machines/raised-bed-shaper" },
@@ -124,7 +124,7 @@ export const resources: Resource[] = [
     universalPrinciple:
       "Jantar itself is not the universal PQNK principle — the governing requirements are Permanent Biological Cover and Maximum Biodiversity, alongside PQNK's other principles. Jantar is the established transition tool PQNK uses to rapidly establish living roots, biomass, biological activity and soil cover during that transition, in the growing environments where it has been used.",
     localImplementation: [
-      "Local species selection, where Jantar itself is not appropriate, requires locally suitable agronomic selection while preserving the same underlying requirement — permanent biological cover and biodiversity. This project's material does not document specific alternative species for other climates, so none are proposed here without that evidence.",
+      "Jantar is especially suited to warm-season establishment, when it can rapidly build roots and biomass — under suitable conditions, preparing a field in as little as 60 days. Where transition begins in cooler autumn conditions and Jantar cannot establish adequately, alfalfa is a documented functional alternative: it develops a strong root system and tolerates mild cold well, though it produces less above-ground biomass than Jantar under warm-season conditions. The species may change; the biological function it fulfils — roots, biomass, biological cover — does not.",
     ],
   },
   {
@@ -167,7 +167,7 @@ export const resources: Resource[] = [
     ],
     pqnkTechnique: [
       "PQNK replaces the calendar with direct observation of the root zone itself. The governing method is the soil ball test: take a handful of soil from the root zone — if it forms a cohesive ball, moisture is sufficient; if it crumbles, external water may be needed.",
-      "Before deciding whether externally supplied water is required, the ball test result is weighed alongside recent rainfall, the rainfall forecast, the crop's visible condition, and the functioning condition of the biological production system as a whole. There is no predetermined irrigation calendar and no routine assumption that irrigation must occur — the question is simply whether the crop's natural water supply is currently sufficient. Visible afternoon wilting can be a secondary plant signal worth noticing in the field, but it is this combined soil-and-system assessment, not the plant's visible stress alone, that governs the decision.",
+      "Before deciding whether externally supplied water is required, the ball test result is weighed alongside recent rainfall, the rainfall forecast, the crop's visible condition, and the functioning condition of the biological production system as a whole. There is no predetermined irrigation calendar and no routine assumption that irrigation must occur — the question is simply whether the crop's natural water supply is currently sufficient. Visible wilting may be the first field observation that prompts the Production Manager to investigate root-zone soil moisture. The soil ball test then confirms whether the crop is actually short of water before any irrigation decision is made. A plant may wilt even when adequate soil moisture is present because high temperature, low humidity, wind, high transient transpiration demand or natural maturity can temporarily cause water loss from the canopy to exceed the rate at which roots can supply it.",
       "When natural supply is insufficient under extreme conditions, water may be applied through the permanent furrows as a supplement — not to uniformly saturate the raised bed. As water seeps laterally and vertically through the bed profile, it establishes a gradient: conditions near the wetted edge immediately after irrigation may approach roughly 90% water to 10% air, while toward the centre of the bed, water decreases and air increases as nutrient concentration in the soil solution rises, approaching roughly 10% water to 90% air. Roots remain free to explore the undisturbed bed profile and draw water, air and nutrients according to what the plant actually needs.",
       "This temporary gradient is distinct from the broadly balanced condition — roughly 30% water to 70% air — that soil life maintains once the system reaches its Sustained Closed Loop State and plant water needs are being met naturally. That 30:70 condition is not an irrigation target; it describes the ongoing state of a functioning system, not the spatial pattern that follows a supplemental furrow irrigation.",
     ],

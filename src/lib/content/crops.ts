@@ -204,7 +204,7 @@ export const crops: Crop[] = [
     practices: [
       "One-time hardpan breaking to 18–24 inches for rose's strong, branching root system",
       "Soil pH corrected to 6.0–7.0 — the range roses prefer for vibrant blooms and healthy foliage",
-      "Jantar (Sesbania) grown and mulched in place before planting, as the system's only fertility input",
+      "Jantar (Sesbania) grown and mulched in place before planting to establish roots, biomass and biological cover ahead of the living soil system that builds the crop's fertility",
       "Two rows per 42-inch permanent bed, no-till planted through the mulch — roughly 8,712 plants per acre",
     ],
     results:
@@ -273,8 +273,8 @@ export const crops: Crop[] = [
     practices: [
       "Hardpan broken to 18–24 inches, letting amla's deep taproot — which can reach 10–12 feet in healthy soil — establish properly",
       "Where soil pH exceeds 8, a one-time correction using deep leaching irrigation plus 8 kg of sulfuric acid per acre, unlocking locked minerals",
-      "Permanent 42-inch raised beds with 18-inch furrows, sized to standard tractor wheel spacing",
-      "Jantar (Sesbania) grown, then slashed and left as mulch — the sole source of fertility, with no manure or fertiliser brought in from outside",
+      "Permanent 42-inch raised beds with 18-inch furrows, sized to the tractor's wheel-track and tyre width",
+      "Jantar (Sesbania) grown, then slashed and left as mulch to build roots, biomass and biological cover, with no manure or fertiliser brought in from outside",
     ],
     results:
       "Amla grown in corrected, biologically active soil produces larger, juicier fruit with higher Vitamin C content than the same variety grown in alkaline, salt-stressed conventional soil.",

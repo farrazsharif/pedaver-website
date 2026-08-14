@@ -266,7 +266,7 @@ const en = {
     philosophyTitle: "Why Conventional Agriculture Is Failing — Ecologically, Economically and Nutritionally",
     philosophyBody: [
       "That is Pedaver's starting premise, and PQNK is offered as the way out: a mulched bed watered by soil moisture management rather than the calendar, a set of long-held farming myths retested, and outcomes measured in the field rather than in theory.",
-      "PQNK moves every field through the same fixed sequence: out of ACI (Ancient Conventional Industrial) degradation, through an active regenerative phase of hardpan-breaking, raised beds and mulch-built soil biology, and into a closed-loop, self-sustaining state where no external input is needed again.",
+      "PQNK moves every field through the same fixed sequence: out of ACI (Ancient Conventional Industrial) degradation, through a Corrective Intervention of hardpan-breaking and raised-bed formation, into a Regenerative Phase where mulch and cover crops build soil biology, and finally into a Sustained Closed Loop State where no external input is needed again.",
       "That sequence is carried out by purpose-built machinery: the SIPP and VIPP no-till planters chief among them, engineered to plant directly through thick mulch without disturbing the soil beneath it.",
       "Our knowledge papers go further, examining the looming convergence of oil and food crises, the neglected potential of Pakistan's agricultural economy, and how ecosystem health changes the value of what a farm produces, from milk to fabric.",
     ],
@@ -300,7 +300,7 @@ const en = {
       },
       {
         title: "The Architect of PQNK",
-        body: "PQNK rests on a small set of non-negotiable principles: a strict no-till commitment that leaves roots and fungal networks undisturbed; permanent raised beds that stay free of machinery compaction, with furrows carrying water and traffic instead of the bed itself and irrigation managed to avoid the inundation that drowns soil life; a thick organic mulch layer that holds soil temperature in the 13–26°C range soil microbial life needs; and the living soil that results, where microbial activity converts the soil's own mineral reserves into nutrition, crop by crop. Documented results include reductions in water use of over 70%, the elimination of agrochemical inputs, and lower production costs alongside higher-quality output.",
+        body: "PQNK rests on a small set of non-negotiable principles: a strict no-till commitment that leaves roots and fungal networks undisturbed; permanent raised beds that stay free of machinery compaction, with furrows carrying water and traffic instead of the bed itself and irrigation managed to avoid the inundation that drowns soil life; a thick organic mulch layer that holds soil temperature in the 13–26°C range soil microbial life needs; and the living soil that results, where microbial activity converts the soil's own mineral reserves into nutrition, crop by crop. Documented results include an approximately 70–90% reduction in externally supplied irrigation water, the elimination of agrochemical inputs, and lower production costs alongside higher-quality output.",
       },
       {
         title: "Self-Funded, By Design",
