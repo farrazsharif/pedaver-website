@@ -21,7 +21,7 @@ const CATEGORIES: { key: Resource["category"]; title: string; note: string }[] =
   {
     key: "permanent",
     title: "Permanent Production Practices",
-    note: "Repeated every production cycle, for the life of the field, once the transition is complete.",
+    note: "Maintained continuously as part of the permanent PQNK production system once transition is complete.",
   },
 ];
 

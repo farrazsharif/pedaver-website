@@ -82,8 +82,8 @@ export const resources: Resource[] = [
     title: "The PQNK Raised Bed System",
     category: "one-time",
     oneSentenceDefinition:
-      "A fixed bed-and-furrow geometry, shaped once, that ends repeated soil compaction for the life of the field.",
-    overviewBlurb: "A fixed bed-and-furrow geometry that ends repeated soil compaction for good.",
+      "A permanent bed-and-furrow production architecture that separates the protected biological growing zone from permanent traffic and hydraulic corridors.",
+    overviewBlurb: "A permanent bed-and-furrow production architecture, shaped once, that ends repeated soil compaction for the life of the field.",
     whyItExists: [
       "Conventional ridging is rebuilt every season: the same ground is repeatedly reshaped and run over by machinery. A growing zone that never stabilizes can't build the permanent soil structure a living ecosystem depends on.",
     ],
@@ -108,8 +108,9 @@ export const resources: Resource[] = [
     title: "Jantar (Sesbania) Cover Cropping",
     category: "one-time",
     oneSentenceDefinition:
-      "The living, closed-loop fertility step, grown once during establishment, that replaces every bag of imported fertilizer.",
-    overviewBlurb: "The living, closed-loop fertility step that replaces every bag of imported fertilizer.",
+      "The biological transition crop that establishes living roots, biomass, soil cover and nutrient cycling, preparing the field to move away from routine fertilizer dependence.",
+    overviewBlurb:
+      "The biological transition crop, grown once during establishment, that builds living roots, biomass, soil cover and nutrient cycling.",
     whyItExists: [
       "A newly corrected field has broken physical structure but not yet living biology. Hardpan and soil chemistry can be corrected mechanically, but fertility and soil life have to be built, not imported.",
     ],
