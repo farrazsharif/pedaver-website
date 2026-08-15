@@ -30,7 +30,7 @@ const en = {
       title: "The Natural Ecosystem Science of Production Agriculture",
       institutional: "Pedaver is the Global Knowledge, Research and Validation Authority for PQNK.",
       supporting: "Farming the way nature already knows how.",
-      ctaPrimary: "About PQNK",
+      ctaPrimary: "Explore PQNK Science",
       ctaSecondary: "See Field Evidence",
     },
     story: {
@@ -175,6 +175,13 @@ const en = {
       eyebrow: "Knowledge Pathways",
       title: "Where Should You Go Next?",
       cards: [
+        {
+          audience: "Understand the Science",
+          label: "PQNK Science",
+          body: "The natural mechanisms and relationships that make the production system work.",
+          href: "/science",
+          cta: "Explore PQNK Science",
+        },
         {
           audience: "Farmers",
           label: "Farmer Advisory",

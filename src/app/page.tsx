@@ -60,7 +60,7 @@ export default function HomePage() {
           <p className="mt-3 text-lg italic text-cream/90">{h.hero.supporting}</p>
           <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
-              href="/about"
+              href="/science"
               className="inline-block rounded-full bg-accent px-8 py-3.5 text-base font-semibold text-cream shadow-sm transition hover:bg-accent-light hover:text-ink"
             >
               {h.hero.ctaPrimary}
@@ -140,6 +140,11 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+          <div className="mt-10 text-center">
+            <Link href="/science" className="text-sm font-semibold text-accent-light underline underline-offset-4">
+              Explore the Science Behind PQNK →
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -173,6 +178,11 @@ export default function HomePage() {
             </div>
           ))}
         </div>
+        <div className="mt-10 text-center">
+          <Link href="/science/transition" className="text-sm font-semibold text-primary underline underline-offset-4">
+            Understand the PQNK Transition →
+          </Link>
+        </div>
       </Section>
 
       {/* 5. WHAT PQNK CHANGES */}
@@ -195,7 +205,10 @@ export default function HomePage() {
             </div>
           ))}
         </div>
-        <div className="mt-8 text-center">
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-center">
+          <Link href="/science" className="text-base font-semibold text-primary underline underline-offset-4">
+            Explore PQNK Science →
+          </Link>
           <Link href="/machines" className="text-base font-semibold text-primary underline underline-offset-4">
             {h.changes.machinesNote} →
           </Link>
@@ -340,7 +353,7 @@ export default function HomePage() {
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">{h.pathways.eyebrow}</p>
           <h2 className="mt-3 text-3xl font-bold text-primary-dark">{h.pathways.title}</h2>
         </div>
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
           {h.pathways.cards.map((card) => (
             <Link
               key={card.href}
