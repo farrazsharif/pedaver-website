@@ -151,9 +151,23 @@ export default function SciencePage() {
         <div className="mx-auto max-w-4xl">
           <h2 className="text-2xl font-bold text-primary-dark sm:text-3xl">Explore the Living System</h2>
           <div className="mt-8 grid gap-6 sm:grid-cols-2">
-            {coreComponents.map((c) => (
-              <FutureTopicCard key={c.slug} name={c.name} tagline={c.exploreTitle} summary={c.exploreSummary} />
-            ))}
+            {coreComponents.map((c) =>
+              c.slug === "soil" ? (
+                <Link
+                  key={c.slug}
+                  href={c.futureRoute}
+                  className="group flex flex-col rounded-2xl border border-border bg-card p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+                >
+                  <span className="text-xs font-semibold uppercase tracking-wide text-accent">Read now</span>
+                  <h3 className="mt-2 text-lg font-bold text-primary-dark group-hover:text-primary">{c.name}</h3>
+                  <p className="mt-1 text-sm font-medium italic text-ink-soft">{c.exploreTitle}</p>
+                  <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-soft">{c.exploreSummary}</p>
+                  <span className="mt-4 inline-block text-sm font-semibold text-accent">Explore Soil Science →</span>
+                </Link>
+              ) : (
+                <FutureTopicCard key={c.slug} name={c.name} tagline={c.exploreTitle} summary={c.exploreSummary} />
+              )
+            )}
           </div>
         </div>
       </Section>
