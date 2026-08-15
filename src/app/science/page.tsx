@@ -151,8 +151,13 @@ export default function SciencePage() {
         <div className="mx-auto max-w-4xl">
           <h2 className="text-2xl font-bold text-primary-dark sm:text-3xl">Explore the Living System</h2>
           <div className="mt-8 grid gap-6 sm:grid-cols-2">
-            {coreComponents.map((c) =>
-              c.slug === "soil" ? (
+            {coreComponents.map((c) => {
+              const ctaBySlug: Record<string, string> = {
+                soil: "Explore Soil Science →",
+                plants: "Explore Plant Science →",
+              };
+              const cta = ctaBySlug[c.slug];
+              return cta ? (
                 <Link
                   key={c.slug}
                   href={c.futureRoute}
@@ -162,12 +167,12 @@ export default function SciencePage() {
                   <h3 className="mt-2 text-lg font-bold text-primary-dark group-hover:text-primary">{c.name}</h3>
                   <p className="mt-1 text-sm font-medium italic text-ink-soft">{c.exploreTitle}</p>
                   <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-soft">{c.exploreSummary}</p>
-                  <span className="mt-4 inline-block text-sm font-semibold text-accent">Explore Soil Science →</span>
+                  <span className="mt-4 inline-block text-sm font-semibold text-accent">{cta}</span>
                 </Link>
               ) : (
                 <FutureTopicCard key={c.slug} name={c.name} tagline={c.exploreTitle} summary={c.exploreSummary} />
-              )
-            )}
+              );
+            })}
           </div>
         </div>
       </Section>
