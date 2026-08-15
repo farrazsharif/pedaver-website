@@ -155,6 +155,7 @@ export default function SciencePage() {
               const ctaBySlug: Record<string, string> = {
                 soil: "Explore Soil Science →",
                 plants: "Explore Plant Science →",
+                water: "Explore Water Science →",
               };
               const cta = ctaBySlug[c.slug];
               return cta ? (
