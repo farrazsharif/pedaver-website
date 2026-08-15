@@ -200,9 +200,11 @@ export default function SciencePage() {
             {transition.closing}
           </p>
 
-          <p className="mt-4 text-center text-sm font-semibold uppercase tracking-wide text-ink-soft/70">
-            Science page coming soon
-          </p>
+          <div className="mt-4 text-center">
+            <Link href="/science/transition" className="text-sm font-semibold text-primary underline underline-offset-4">
+              Read the Science of PQNK Transition →
+            </Link>
+          </div>
         </div>
       </Section>
 
