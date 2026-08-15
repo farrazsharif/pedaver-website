@@ -11,6 +11,7 @@ const staticPages = [
   "",
   "/about",
   "/founder",
+  "/science",
   "/crops",
   "/resources",
   "/papers",
