@@ -190,6 +190,7 @@ export default function SciencePage() {
             {productionFunctions.map((t) => {
               const functionCtaBySlug: Record<string, string> = {
                 nutrition: "Explore Nutrition Science →",
+                "crop-protection": "Explore Crop Protection Science →",
               };
               const cta = functionCtaBySlug[t.slug];
               return cta ? (
