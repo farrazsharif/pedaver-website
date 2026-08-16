@@ -187,9 +187,27 @@ export default function SciencePage() {
             These are functions emerging from the living system, not additional foundational components.
           </p>
           <div className="mt-8 grid gap-6 sm:grid-cols-2">
-            {productionFunctions.map((t) => (
-              <FutureTopicCard key={t.slug} name={t.name} tagline={t.tagline} summary={t.summary} />
-            ))}
+            {productionFunctions.map((t) => {
+              const functionCtaBySlug: Record<string, string> = {
+                nutrition: "Explore Nutrition Science →",
+              };
+              const cta = functionCtaBySlug[t.slug];
+              return cta ? (
+                <Link
+                  key={t.slug}
+                  href={t.futureRoute}
+                  className="group flex flex-col rounded-2xl border border-border bg-card p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+                >
+                  <span className="text-xs font-semibold uppercase tracking-wide text-accent">Read now</span>
+                  <h3 className="mt-2 text-lg font-bold text-primary-dark group-hover:text-primary">{t.name}</h3>
+                  <p className="mt-1 text-sm font-medium italic text-ink-soft">{t.tagline}</p>
+                  <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-soft">{t.summary}</p>
+                  <span className="mt-4 inline-block text-sm font-semibold text-accent">{cta}</span>
+                </Link>
+              ) : (
+                <FutureTopicCard key={t.slug} name={t.name} tagline={t.tagline} summary={t.summary} />
+              );
+            })}
           </div>
         </div>
       </Section>

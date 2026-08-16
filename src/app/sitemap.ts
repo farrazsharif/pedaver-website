@@ -16,6 +16,7 @@ const staticPages = [
   "/science/plants",
   "/science/water",
   "/science/biodiversity",
+  "/science/nutrition",
   "/science/transition",
   "/crops",
   "/resources",
