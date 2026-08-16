@@ -156,6 +156,7 @@ export default function SciencePage() {
                 soil: "Explore Soil Science →",
                 plants: "Explore Plant Science →",
                 water: "Explore Water Science →",
+                biodiversity: "Explore Biodiversity Science →",
               };
               const cta = ctaBySlug[c.slug];
               return cta ? (
