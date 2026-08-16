@@ -49,6 +49,30 @@ export const suckingInsects = {
   question: "Is the insect merely present, is the plant compensating, or is economically meaningful damage actually occurring?",
 };
 
+export const nitrogenPestPressure = {
+  title: "Nitrogen Fertilization Can Change Pest Pressure",
+  intro: "PQNK recognizes another important connection between crop nutrition and crop protection.",
+  body: "In conventional production, heavy application of nitrogen — particularly readily available nitrogen supplied through urea and other soluble nitrogen fertilizers — can stimulate rapid, succulent vegetative growth and alter the nutritional composition of plant tissues. These changes can create more favorable feeding conditions for some herbivorous insects, particularly sap-sucking insects.",
+  chain: [
+    "High Readily Available Nitrogen Supply",
+    "Rapid Succulent Vegetative Growth",
+    "Changes in Plant Tissue Chemistry and Soluble Nitrogen Availability",
+    "Greater Suitability for Certain Sucking Insects",
+    "Potential Increase in Pest Population and Damage",
+    "Greater Demand for Chemical Crop Protection",
+  ],
+  fertilizerDecisionStatement: "A fertilizer decision can therefore become a crop-protection decision.",
+  pqnkPosition: "PQNK does not separate plant nutrition from pest management. Its objective is not to force vegetative growth through repeated applications of readily available nitrogen, but to restore biologically mediated nutrient acquisition through the functioning soil–plant system.",
+  qualification: "This does not mean that every application of urea causes a pest outbreak, nor that nitrogen itself is harmful to plants. Nitrogen is essential to plant life. The relevant variables include the form, quantity and timing of nitrogen supply, crop and pest species, plant growth stage, environmental conditions and the resulting physiological condition of the crop.",
+  distinctionIntro: "The mere presence of a small population of sucking insects is not equivalent to the heavy sucking-insect pressure that can develop in a rapidly growing, nitrogen-rich crop.",
+  distinctionBody: "The Production Manager must interpret the insect together with the physiological condition of the plant and the management history of the field.",
+  systemFlow: ["Nutrition", "Plant Physiology", "Pest Relationship", "Crop Protection"],
+  nutritionLinkLabel: "Continue with Nutrition Science",
+  nutritionLinkHref: "/science/nutrition",
+  plantsLinkLabel: "Continue with Plant Science",
+  plantsLinkHref: "/science/plants",
+};
+
 export const lundgrenCorrection = {
   title: "One Pest Species, Many Others — Correcting a Common Simplification",
   wrongVersion: "\"Against every pest there are 1,700 predators.\"",

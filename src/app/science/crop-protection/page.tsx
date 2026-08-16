@@ -11,6 +11,7 @@ import {
   pestsPartOfEcosystem,
   recyclingAndCondition,
   suckingInsects,
+  nitrogenPestPressure,
   lundgrenCorrection,
   biologicalRegulation,
   btSection,
@@ -57,6 +58,25 @@ function FlowSequence({ steps }: { steps: string[] }) {
           <span className="rounded-full border border-border bg-card px-3 py-1.5">{step}</span>
           {i < steps.length - 1 && <span aria-hidden="true">→</span>}
         </span>
+      ))}
+    </div>
+  );
+}
+
+function VerticalChain({ steps }: { steps: string[] }) {
+  return (
+    <div className="flex flex-col items-stretch gap-2">
+      {steps.map((step, i) => (
+        <div key={step} className="flex flex-col items-center">
+          <div className="w-full max-w-md rounded-lg border border-border bg-card px-5 py-3 text-center text-sm font-semibold text-primary-dark">
+            {step}
+          </div>
+          {i < steps.length - 1 && (
+            <svg width="16" height="20" viewBox="0 0 16 20" className="my-1 text-ink-soft/50" aria-hidden="true">
+              <path d="M8 0 L8 14 M2 9 L8 15 L14 9" fill="none" stroke="currentColor" strokeWidth="1.5" />
+            </svg>
+          )}
+        </div>
       ))}
     </div>
   );
@@ -154,6 +174,48 @@ export default function ScienceCropProtectionPage() {
           <p className="mt-6 rounded-xl border border-accent/30 bg-accent/5 p-5 text-center font-medium text-primary-dark">
             "{suckingInsects.question}"
           </p>
+        </div>
+      </Section>
+
+      {/* NITROGEN AND PEST PRESSURE */}
+      <Section>
+        <div className="mx-auto max-w-2xl">
+          <h2 className="text-2xl font-bold text-primary-dark sm:text-3xl">{nitrogenPestPressure.title}</h2>
+          <p className="mt-4 text-ink-soft">{nitrogenPestPressure.intro}</p>
+          <p className="mt-4 leading-relaxed text-ink-soft">{nitrogenPestPressure.body}</p>
+
+          <div className="mt-8">
+            <VerticalChain steps={nitrogenPestPressure.chain} />
+          </div>
+
+          <p className="mt-8 text-center text-lg font-bold text-primary-dark">{nitrogenPestPressure.fertilizerDecisionStatement}</p>
+          <p className="mt-4 leading-relaxed text-ink-soft">{nitrogenPestPressure.pqnkPosition}</p>
+
+          <p className="mt-6 rounded-xl border border-border bg-card p-5 text-sm leading-relaxed text-ink-soft">
+            {nitrogenPestPressure.qualification}
+          </p>
+
+          <p className="mt-6 leading-relaxed text-ink-soft">{nitrogenPestPressure.distinctionIntro}</p>
+          <p className="mt-2 leading-relaxed text-ink-soft">{nitrogenPestPressure.distinctionBody}</p>
+
+          <div className="mt-8">
+            <FlowSequence steps={nitrogenPestPressure.systemFlow} />
+          </div>
+
+          <div className="mt-6 flex flex-wrap gap-x-6 gap-y-1">
+            <Link
+              href={nitrogenPestPressure.nutritionLinkHref}
+              className="text-sm font-semibold text-primary underline underline-offset-4"
+            >
+              {nitrogenPestPressure.nutritionLinkLabel} →
+            </Link>
+            <Link
+              href={nitrogenPestPressure.plantsLinkHref}
+              className="text-sm font-semibold text-primary underline underline-offset-4"
+            >
+              {nitrogenPestPressure.plantsLinkLabel} →
+            </Link>
+          </div>
         </div>
       </Section>
 
