@@ -143,12 +143,12 @@ export const systemOutcomes: ScienceTopic[] = [
     futureRoute: "/science/climate",
   },
   {
-    slug: "nutrition-quality",
+    slug: "food-quality",
     name: "Food Quality & Human Nutrition",
     tagline: "Quality Begins Before Harvest",
     summary:
       "Food quality begins before harvest. The environment in which a plant grows influences mineral acquisition, plant metabolism, grain or fruit development, moisture relationships, storage behaviour, aroma, taste and other quality characteristics. PQNK treats food quality as an outcome of the production ecosystem, while PQNK Validation separately measures and authenticates those outcomes.",
-    futureRoute: "/science/nutrition-quality",
+    futureRoute: "/science/food-quality",
   },
 ];
 

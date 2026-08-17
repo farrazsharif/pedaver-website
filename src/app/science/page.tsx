@@ -277,6 +277,7 @@ export default function SciencePage() {
             {systemOutcomes.map((t) => {
               const outcomeCtaBySlug: Record<string, string> = {
                 climate: "Explore Climate Science →",
+                "food-quality": "Explore Food Quality Science →",
               };
               const cta = outcomeCtaBySlug[t.slug];
               return cta ? (
