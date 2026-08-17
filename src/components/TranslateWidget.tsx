@@ -183,7 +183,7 @@ export default function TranslateWidget() {
   };
 
   return (
-    <div className="relative">
+    <div className="relative flex flex-col items-center justify-center">
       <div
         className="flex h-10 w-10 items-center justify-center rounded-full text-cream/80 transition hover:bg-white/10 hover:text-cream"
         aria-hidden="true"
@@ -193,6 +193,9 @@ export default function TranslateWidget() {
           <path d="M3 12h18M12 3c2.5 2.5 3.8 5.5 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.5-3.8-9s1.3-6.5 3.8-9Z" />
         </svg>
       </div>
+      <span aria-hidden="true" className="pointer-events-none -mt-1 text-[10px] font-medium text-cream/70">
+        Translate
+      </span>
 
       <select
         ref={selectRef}
@@ -200,7 +203,7 @@ export default function TranslateWidget() {
         onChange={handleChange}
         aria-label="Translate this page — opens in a new tab"
         title="Translate this page — opens in a new tab"
-        className="absolute inset-0 h-10 w-10 cursor-pointer appearance-none opacity-0"
+        className="absolute inset-0 h-full w-full cursor-pointer appearance-none opacity-0"
       >
         <option value="" disabled>
           Translate this page (opens in a new tab)
