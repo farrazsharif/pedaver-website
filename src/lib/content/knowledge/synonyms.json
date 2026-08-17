@@ -1,0 +1,5821 @@
+{
+"vocabularySynonyms":[
+{
+"canonicalTerm":"Wheat",
+"dimension":"crop",
+"terms":[
+"Gehun (Wheat)",
+"Wheat (Khapli)",
+"Gehun"
+]
+},
+{
+"canonicalTerm":"Rice",
+"dimension":"crop",
+"terms":[
+"Basmati"
+]
+},
+{
+"canonicalTerm":"Maize (Corn)",
+"dimension":"crop",
+"terms":[
+"Corn",
+"Maize"
+]
+},
+{
+"canonicalTerm":"Citrus (Kinnow)",
+"dimension":"crop",
+"terms":[
+"Citrus",
+"Kinnow"
+]
+},
+{
+"canonicalTerm":"Onion",
+"dimension":"crop",
+"terms":[
+"Green Onion"
+]
+},
+{
+"canonicalTerm":"Tomato",
+"dimension":"crop",
+"terms":[
+"Tomatoes"
+]
+},
+{
+"canonicalTerm":"Carrot",
+"dimension":"crop",
+"terms":[
+"Carrots"
+]
+},
+{
+"canonicalTerm":"Radish",
+"dimension":"crop",
+"terms":[
+"Daikon Radish"
+]
+},
+{
+"canonicalTerm":"Grapes",
+"dimension":"crop",
+"terms":[
+"Grape"
+]
+},
+{
+"canonicalTerm":"Jantar (Sesbania)",
+"dimension":"crop",
+"terms":[
+"Jantar",
+"Sesbania (Jantar)"
+]
+},
+{
+"canonicalTerm":"Chilli",
+"dimension":"crop",
+"terms":[
+"Chili",
+"Chillies"
+]
+},
+{
+"canonicalTerm":"Brinjal (Eggplant)",
+"dimension":"crop",
+"terms":[
+"Brinjal"
+]
+},
+{
+"canonicalTerm":"Berseem (Clover)",
+"dimension":"crop",
+"terms":[
+"Clover",
+"Berseem"
+]
+},
+{
+"canonicalTerm":"Senji (Sweet Clover)",
+"dimension":"crop",
+"terms":[
+"Senji"
+]
+},
+{
+"canonicalTerm":"Bajra (Pearl Millet)",
+"dimension":"crop",
+"terms":[
+"Bajra"
+]
+},
+{
+"canonicalTerm":"Sorghum",
+"dimension":"crop",
+"terms":[
+"Sweet Sorghum"
+]
+},
+{
+"canonicalTerm":"Ragi (Finger Millet)",
+"dimension":"crop",
+"terms":[
+"Ragi"
+]
+},
+{
+"canonicalTerm":"Oats",
+"dimension":"crop",
+"terms":[
+"Javi (Oats)",
+"Javi"
+]
+},
+{
+"canonicalTerm":"Mustard",
+"dimension":"crop",
+"terms":[
+"Raya (Mustard)",
+"Raya"
+]
+},
+{
+"canonicalTerm":"Castor",
+"dimension":"crop",
+"terms":[
+"Castor (HD Castor)"
+]
+},
+{
+"canonicalTerm":"Mung Bean",
+"dimension":"crop",
+"terms":[
+"Moong",
+"Moong (Mung Bean)"
+]
+},
+{
+"canonicalTerm":"Black Gram",
+"dimension":"crop",
+"terms":[
+"Mash (Black Gram)",
+"Mash"
+]
+},
+{
+"canonicalTerm":"Common Bean",
+"dimension":"crop",
+"terms":[
+"Bean",
+"Beans",
+"Green Beans"
+]
+},
+{
+"canonicalTerm":"Pea",
+"dimension":"crop",
+"terms":[
+"Peas",
+"Green peas"
+]
+},
+{
+"canonicalTerm":"Peanut",
+"dimension":"crop",
+"terms":[
+"Peanuts"
+]
+},
+{
+"canonicalTerm":"Sweet Potato",
+"dimension":"crop",
+"terms":[
+"Sweet potato"
+]
+},
+{
+"canonicalTerm":"Peach",
+"dimension":"crop",
+"terms":[
+"Peaches"
+]
+},
+{
+"canonicalTerm":"Balangu",
+"dimension":"crop",
+"terms":[
+"Balangu (Lallemantia royleana)",
+"Balangu"
+]
+},
+{
+"canonicalTerm":"Alsi (Flaxseed)",
+"dimension":"crop",
+"terms":[
+"Alsi (Flax)",
+"Alsi"
+]
+},
+{
+"canonicalTerm":"Dosan",
+"dimension":"crop",
+"terms":[
+"Dosan"
+]
+},
+{
+"canonicalTerm":"Amla",
+"dimension":"crop",
+"terms":[
+"Amla"
+]
+},
+{
+"canonicalTerm":"Pepper (Bell/Capsicum)",
+"dimension":"crop",
+"terms":[
+"Pepper"
+]
+},
+{
+"canonicalTerm":"Pulses (crop group)",
+"dimension":"crop",
+"terms":[
+"Pulses",
+"Legumes"
+]
+},
+{
+"canonicalTerm":"Grains (crop group)",
+"dimension":"crop",
+"terms":[
+"Grains"
+]
+},
+{
+"canonicalTerm":"Oilseeds (crop group)",
+"dimension":"crop",
+"terms":[
+"Oilseeds"
+]
+},
+{
+"canonicalTerm":"Gourds (crop group)",
+"dimension":"crop",
+"terms":[
+"Gourds"
+]
+},
+{
+"canonicalTerm":"Leafy Vegetables (crop group)",
+"dimension":"crop",
+"terms":[
+"Leafy vegetables"
+]
+},
+{
+"canonicalTerm":"Root Vegetables (crop group)",
+"dimension":"crop",
+"terms":[
+"Root vegetables"
+]
+},
+{
+"canonicalTerm":"Fruit Vegetables (crop group)",
+"dimension":"crop",
+"terms":[
+"Fruit vegetables"
+]
+},
+{
+"canonicalTerm":"Vegetables (crop group)",
+"dimension":"crop",
+"terms":[
+"Vegetables"
+]
+},
+{
+"canonicalTerm":"Fruit Trees (crop group)",
+"dimension":"crop",
+"terms":[
+"Fruit trees"
+]
+},
+{
+"canonicalTerm":"Grasses (crop group)",
+"dimension":"crop",
+"terms":[
+"Grasses"
+]
+},
+{
+"canonicalTerm":"Pasture Grass (crop group)",
+"dimension":"crop",
+"terms":[
+"Pasture Grass"
+]
+},
+{
+"canonicalTerm":"Hardpan",
+"dimension":"fieldProblem",
+"terms":[
+"Hardpan compaction",
+"Hardpan re-compaction",
+"Hardpan/compaction",
+"Subsoil hardpan",
+"Incomplete Hardpan Breaking",
+"No Access to Subsoiling Equipment"
+]
+},
+{
+"canonicalTerm":"Soil Compaction (General)",
+"dimension":"fieldProblem",
+"terms":[
+"Compacted soil",
+"Compacted, lifeless soil",
+"Compaction",
+"Compaction from machinery on beds",
+"Compaction from wheel traffic",
+"Soil Compaction",
+"Soil compaction",
+"Soil compaction from land-clearing method",
+"Soil compaction from tillage",
+"Soil compaction returning after tillage",
+"Bare/compacted soil",
+"Naturally compacted/saline soil",
+"Deep compaction",
+"Subsoil compaction",
+"Furrow sidewall compaction",
+"High Bulk Density"
+]
+},
+{
+"canonicalTerm":"Poor Soil Structure / Aggregation",
+"dimension":"fieldProblem",
+"terms":[
+"Poor Aggregation",
+"Poor Structure",
+"Weak Soil Structure",
+"Tillage-destroyed soil structure",
+"Weak bed structure",
+"Soil Crusting",
+"Lack of biological soil structure"
+]
+},
+{
+"canonicalTerm":"Bare / Exposed Soil",
+"dimension":"fieldProblem",
+"terms":[
+"Bare orchard floor / bare sand",
+"Bare soil after weed removal",
+"Bare soil exposure",
+"Bare soil heat damage",
+"Bare/disturbed soil",
+"Bare/vulnerable soil after bed formation",
+"Excess soil heat from bare soil",
+"Heat islands from bare soil"
+]
+},
+{
+"canonicalTerm":"Soil Temperature Extremes",
+"dimension":"fieldProblem",
+"terms":[
+"High soil temperature",
+"High soil temperature at planting",
+"Soil temperature extremes",
+"Sandy soil heat stress",
+"Field heat"
+]
+},
+{
+"canonicalTerm":"Saline / Alkaline / High-pH Soil",
+"dimension":"fieldProblem",
+"terms":[
+"Alkaline soil",
+"Alkaline/high-pH soil",
+"Degraded/alkaline soil",
+"High soil pH",
+"High-pH/alkaline soil",
+"Salt Accumulation",
+"Salt accumulation",
+"Salt accumulation risk from drip point-source",
+"Salt-affected soil",
+"Soil Salinity",
+"Soil salinity/alkalinity",
+"Soil salinity/chemical residue",
+"Soil salinity/high pH",
+"Waterlogging and salinization",
+"High SAR/residual sodium carbonate",
+"Perceived High EC/Salinity"
+]
+},
+{
+"canonicalTerm":"Saline / High-TDS Irrigation Water",
+"dimension":"fieldProblem",
+"terms":[
+"Saline irrigation water",
+"Saline/sodic irrigation water",
+"High-TDS irrigation water"
+]
+},
+{
+"canonicalTerm":"Sandy / Low-Fertility Soil Texture",
+"dimension":"fieldProblem",
+"terms":[
+"Sandy soil",
+"Loose, low-fertility sandy soil",
+"Poor Sandy Soil Retention",
+"Hard Clay Soil",
+"Shallow Topsoil",
+"Buried gravel/stones",
+"Low Cation Exchange Capacity",
+"Poor establishment on sand dunes"
+]
+},
+{
+"canonicalTerm":"Soil Biology / Microbiome Decline",
+"dimension":"fieldProblem",
+"terms":[
+"Dead soil syndrome",
+"Inactive/standby soil biology",
+"Microbial die-off after application",
+"Microbiome destruction",
+"Reduced microbial diversity",
+"Weed- and pathogen-dominant soil microbiome",
+"Poor Soil Biology",
+"Soil treated as inert substrate",
+"Container soil biological isolation",
+"Biologically inert dead-mulch-only plan"
+]
+},
+{
+"canonicalTerm":"Soil Organic Matter / Carbon Loss",
+"dimension":"fieldProblem",
+"terms":[
+"Declining soil carbon",
+"Loss of soil carbon",
+"Loss of soil carbon/organic matter",
+"Soil carbon loss",
+"Soil carbon loss from plowing",
+"Soil organic matter collapse",
+"Soil organic matter loss",
+"Low Organic Matter",
+"Low organic matter",
+"Broken nutrient cycling"
+]
+},
+{
+"canonicalTerm":"General Soil Fertility / Land Degradation",
+"dimension":"fieldProblem",
+"terms":[
+"Soil fertility loss",
+"Soil loss",
+"Low soil fertility",
+"Low soil productivity despite mineral wealth",
+"Nutrient-poor soil",
+"Stalled regeneration",
+"Land degradation",
+"Ongoing land degradation",
+"Soil degradation blamed on species choice",
+"Soil degradation from unexamined habits",
+"Soil degradation under chemical fertilizer",
+"Declining soil responsiveness despite manure use",
+"Land subsidence"
+]
+},
+{
+"canonicalTerm":"Soil Erosion",
+"dimension":"fieldProblem",
+"terms":[
+"Erosion",
+"Soil erosion",
+"Topsoil erosion",
+"Topsoil loss"
+]
+},
+{
+"canonicalTerm":"Locked / Unavailable Soil Minerals",
+"dimension":"fieldProblem",
+"terms":[
+"Locked/unavailable soil minerals",
+"Nutrient Lock-Up",
+"Nutrient lock-up",
+"Nutrient/pH lock-up",
+"Potassium Fixation",
+"Poor Mineral Availability",
+"Poor pH Buffering",
+"Nutrient testing blind spots"
+]
+},
+{
+"canonicalTerm":"Low Root-Zone Oxygen / Poor Aeration",
+"dimension":"fieldProblem",
+"terms":[
+"Low Root-Zone Oxygen",
+"Poor aeration",
+"Poor Gas Exchange",
+"Poor oxygenation"
+]
+},
+{
+"canonicalTerm":"Low Soil Water-Holding Capacity (Field Capacity)",
+"dimension":"fieldProblem",
+"terms":[
+"Low field capacity"
+]
+},
+{
+"canonicalTerm":"Plastic Mulch Soil Sealing",
+"dimension":"fieldProblem",
+"terms":[
+"Plastic mulch soil sealing"
+]
+},
+{
+"canonicalTerm":"Regional Rainfall / Microclimate Variability",
+"dimension":"fieldProblem",
+"terms":[
+"Regional Rainfall/Microclimate"
+]
+},
+{
+"canonicalTerm":"Unpredictable Rainfed Nutrient Gradients",
+"dimension":"fieldProblem",
+"terms":[
+"Unpredictable rainfed nutrient gradients"
+]
+},
+{
+"canonicalTerm":"Waterlogging",
+"dimension":"fieldProblem",
+"terms":[
+"Anaerobic/waterlogged soil",
+"Fungal disease in waterlogged soil",
+"Poor drainage/waterlogging",
+"Root function loss under waterlogging",
+"Standing water",
+"Waterlogging Concerns",
+"Waterlogging effects on roots",
+"Waterlogging intolerance",
+"Waterlogging Risk",
+"Waterlogging risk from monsoon rain",
+"Waterlogging vs. Drought Stress Trade-off"
+]
+},
+{
+"canonicalTerm":"Flooding",
+"dimension":"fieldProblem",
+"terms":[
+"Flood irrigation on compacted soil",
+"Flooded rice cultivation water use"
+]
+},
+{
+"canonicalTerm":"Poor Water Infiltration",
+"dimension":"fieldProblem",
+"terms":[
+"Poor infiltration",
+"Poor infiltration/runoff",
+"Poor water infiltration",
+"Poor water infiltration from over-wide tyres",
+"Rainwater not infiltrating",
+"Slow Water Infiltration",
+"Disrupted water retention"
+]
+},
+{
+"canonicalTerm":"Runoff",
+"dimension":"fieldProblem",
+"terms":[
+"Runoff instead of infiltration",
+"Nutrient runoff/loss"
+]
+},
+{
+"canonicalTerm":"Over-Irrigation",
+"dimension":"fieldProblem",
+"terms":[
+"Excessive irrigation",
+"Over-irrigation",
+"Over-irrigation risk",
+"Over-irrigation/root-zone saturation",
+"Over-watering",
+"Over-watering damage",
+"Uniform/low-stimulus flood irrigation",
+"Temptation to add urea/over-irrigate unnecessarily",
+"Pest vulnerability from over-watering",
+"Wilting and yellowing under drip irrigation"
+]
+},
+{
+"canonicalTerm":"Drought / Water Scarcity",
+"dimension":"fieldProblem",
+"terms":[
+"Drought",
+"Drought vulnerability",
+"Drought-cycle stress from drip irrigation",
+"Drought/flood resilience",
+"Poor drought tolerance",
+"Low Drought Resilience",
+"Rainfed/sloping land water scarcity",
+"Water scarcity",
+"No irrigation source on sloping land"
+]
+},
+{
+"canonicalTerm":"Groundwater / Aquifer Depletion",
+"dimension":"fieldProblem",
+"terms":[
+"Aquifer depletion",
+"Declining groundwater",
+"Groundwater depletion"
+]
+},
+{
+"canonicalTerm":"High Irrigation Cost / Dependency",
+"dimension":"fieldProblem",
+"terms":[
+"High irrigation costs",
+"High irrigation demand",
+"High drip irrigation dependence",
+"Irrigation dependency",
+"Diesel/electric irrigation pumping cost"
+]
+},
+{
+"canonicalTerm":"Fast / Uneven Water Drainage",
+"dimension":"fieldProblem",
+"terms":[
+"Water draining too fast",
+"Rapid water drainage"
+]
+},
+{
+"canonicalTerm":"Loss of Soil Water-Holding Capacity",
+"dimension":"fieldProblem",
+"terms":[
+"Loss of soil water-holding capacity",
+"Poor water-holding capacity"
+]
+},
+{
+"canonicalTerm":"Poor Germination / Emergence",
+"dimension":"fieldProblem",
+"terms":[
+"Poor Germination",
+"Poor seedling emergence",
+"Uneven germination",
+"Germination difficulty (myth correction)",
+"Weak/pale/slow-growing first-crop seedlings",
+"Transplant shock",
+"Legume root damage from wrong technique"
+]
+},
+{
+"canonicalTerm":"Weak / Shallow Root Establishment",
+"dimension":"fieldProblem",
+"terms":[
+"Weak early root architecture",
+"Weak/shallow root systems",
+"Root penetration difficulty in undisturbed soil",
+"Poor root penetration in subsequent crops",
+"Restricted Root Growth",
+"Uneven Root Zone Environment",
+"Uneven Plant Vigor Across the Bed",
+"Poor Root Water Uptake"
+]
+},
+{
+"canonicalTerm":"Excess Vegetative Growth (at expense of yield/flowering)",
+"dimension":"fieldProblem",
+"terms":[
+"Excess vegetative flush over flowering",
+"Excess vegetative growth",
+"Excess vegetative growth at the expense of fruit/grain",
+"Excess vegetative growth at the expense of yield",
+"Excessive vegetative growth",
+"Canopy size control",
+"Overcrowded/shaded canopy",
+"Poor canopy light penetration",
+"Low Canopy Humidity",
+"Overcrowding misdiagnosis",
+"Poor understory growth"
+]
+},
+{
+"canonicalTerm":"Lodging / Weak Stem Structure",
+"dimension":"fieldProblem",
+"terms":[
+"Excess early height/lodging risk",
+"Lodging",
+"Lodging (falling over) crops",
+"Lodging/wind damage",
+"Staking requirement due to weak stems",
+"Weak lateral branching",
+"Weak root anchorage"
+]
+},
+{
+"canonicalTerm":"Poor Flowering / Fruit Set",
+"dimension":"fieldProblem",
+"terms":[
+"Flower drop",
+"Flower/fruitlet drop",
+"Cold-snap flower drop",
+"Poor fruit set",
+"Zero fruit set",
+"Non-viable/stunted flowers (Batoor)",
+"Pollen sterility",
+"Poor flowering timing",
+"Premature bud break",
+"Biennial bearing (on-off fruiting)"
+]
+},
+{
+"canonicalTerm":"Nutrient Deficiency Symptoms (Plant-Visible)",
+"dimension":"fieldProblem",
+"terms":[
+"Nutrient Deficiency",
+"Misdiagnosed nutrient deficiency",
+"Perceived nutrient deficiency",
+"Perceived Mineral Deficiency",
+"Perceived micronutrient deficiency",
+"Start-Up Nutrient Deficiency",
+"Nutrient deficiency despite fertile soil",
+"Nutrient availability limits despite adequate soil minerals",
+"Confusion over whether to buy micronutrient inputs"
+]
+},
+{
+"canonicalTerm":"Leaf Discoloration (Yellowing/Purpling)",
+"dimension":"fieldProblem",
+"terms":[
+"Leaf purpling/reddening",
+"Leaf yellowing",
+"Yellowing seedlings"
+]
+},
+{
+"canonicalTerm":"Heat Stress on Crop",
+"dimension":"fieldProblem",
+"terms":[
+"Heat stress",
+"Heat stress above 35\u00b0C",
+"Heat stress crop collapse",
+"Heat stress during grain-filling",
+"Extreme spring heat stress on wheat",
+"Sun/heat stress on vines",
+"Fruit shrinkage/heat stress",
+"Compressed growing season"
+]
+},
+{
+"canonicalTerm":"Cold / Frost Damage",
+"dimension":"fieldProblem",
+"terms":[
+"Cold stress",
+"Cold stress below 10\u00b0C",
+"Frost damage",
+"Frost damage appearing days after the cold event",
+"Frost/cold damage",
+"Frost/winter damage",
+"Temperature stress on roots",
+"Transitional-season temperature swings"
+]
+},
+{
+"canonicalTerm":"Poor Tillering",
+"dimension":"fieldProblem",
+"terms":[
+"Low tiller count",
+"Low tillering",
+"Barren tillers not forming heads",
+"Inconsistent tiller counts across a field"
+]
+},
+{
+"canonicalTerm":"Wilting (Misread as Water Stress)",
+"dimension":"fieldProblem",
+"terms":[
+"Wilting Misdiagnosis"
+]
+},
+{
+"canonicalTerm":"General Pest Pressure",
+"dimension":"fieldProblem",
+"terms":[
+"Pest and disease pressure",
+"Pest and viral disease pressure",
+"Pest Pressure",
+"Pest pressure",
+"Pest/disease pressure",
+"Pest/disease pressure diagnosis",
+"Pest attraction",
+"Pest attraction from lush growth",
+"Insect Presence",
+"Misdiagnosing insect presence as infestation",
+"Escalating pest pressure despite spraying",
+"Pest outbreaks as feedback-loop breakdown",
+"Pest/aphid attraction to over-fertilized plants",
+"Pest vulnerability from over-watering",
+"Pest/weed pressure"
+]
+},
+{
+"canonicalTerm":"Sucking Insect Pressure (Aphid/Whitefly/Jassid)",
+"dimension":"fieldProblem",
+"terms":[
+"Aphid outbreaks after urea top-dressing",
+"Aphid outbreaks before flowering",
+"Aphid/whitefly/jassid outbreaks",
+"Aphids/black spot/powdery mildew",
+"Mealybugs",
+"Worm damage after irrigation plus nitrogen"
+]
+},
+{
+"canonicalTerm":"Named Pest Infestation (Bollworm, Fruit Fly, Nematode, etc.)",
+"dimension":"fieldProblem",
+"terms":[
+"Bollworm infestation (historical)",
+"Pink bollworm resistance to Bt cotton",
+"Gall maker pest",
+"Fruit fly damage",
+"Olive fruit fly pest pressure",
+"Nematode damage"
+]
+},
+{
+"canonicalTerm":"Pesticide Resistance",
+"dimension":"fieldProblem",
+"terms":[
+"Pesticide resistance",
+"Pesticide resistance building up in pest populations",
+"Pesticide resistance in pests",
+"Reliance on single-gene Bt traits",
+"Repeated spraying not controlling pests"
+]
+},
+{
+"canonicalTerm":"Fungal / Bacterial Disease",
+"dimension":"fieldProblem",
+"terms":[
+"Rust after humid nights",
+"Red rot",
+"Root Rot",
+"Soil-borne disease",
+"Phytophthora Foot Rot risk",
+"Tuber rot/disease risk",
+"Disease carryover in planting material",
+"Fungal entry from plucking"
+]
+},
+{
+"canonicalTerm":"Weed Pressure",
+"dimension":"fieldProblem",
+"terms":[
+"Weed Competition",
+"Weed competition",
+"Weed competition under drought stress",
+"Weed pressure",
+"Repeating weed outbreaks",
+"Herbicide/tillage failure to control weed",
+"Farmer instinct to clear grass around stems",
+"Motha grass (nutgrass) infestation"
+]
+},
+{
+"canonicalTerm":"Beneficial Insect / Predator Decline",
+"dimension":"fieldProblem",
+"terms":[
+"Pollinator decline",
+"Predator die-off from spraying",
+"Predator population collapse",
+"Over-spraying killing pollinators/predators"
+]
+},
+{
+"canonicalTerm":"Monoculture Vulnerability",
+"dimension":"fieldProblem",
+"terms":[
+"Monoculture microbial vulnerability",
+"Monoculture risk"
+]
+},
+{
+"canonicalTerm":"Biodiversity Loss",
+"dimension":"fieldProblem",
+"terms":[
+"Biodiversity loss",
+"Lack of natural regeneration/reforestation on farm land"
+]
+},
+{
+"canonicalTerm":"Declining Nutrient Density in Food",
+"dimension":"fieldProblem",
+"terms":[
+"Declining nutrient density in staple crops",
+"Declining nutrition density",
+"Nutrient decline",
+"Nutrient decline alongside caloric abundance",
+"Nutrient decline in staple crops",
+"Nutrient decline in staples",
+"Nutrient density decline",
+"Lower food nutrient quality",
+"Low forage nutrient quality",
+"Nutrient-poor food",
+"Nutrient-poor produce",
+"Mineral imbalance in grain"
+]
+},
+{
+"canonicalTerm":"Weak Flavor / Aroma / Quality Sensory Markers",
+"dimension":"fieldProblem",
+"terms":[
+"Bland or weak-flavored produce",
+"Diluted/tasteless fruit ('Phokki')",
+"Low flavor/aroma intensity",
+"Weak aroma",
+"Biologically diluted, large-but-bland produce",
+"Low anthocyanin/pigment concentration",
+"Weak plant secondary metabolite production",
+"Low fruit quality in alkaline conditions"
+]
+},
+{
+"canonicalTerm":"Grain Quality Defects (Chalkiness, Breakage, Shriveling)",
+"dimension":"fieldProblem",
+"terms":[
+"Broken/fissured rice kernels",
+"Chalky/fissured grain",
+"Drying-induced cracking",
+"Uneven grain development",
+"Shriveled grain",
+"Shrivelled grain",
+"Low milling recovery",
+"Low sugar recovery"
+]
+},
+{
+"canonicalTerm":"Contamination / Residue / Food Safety Risk",
+"dimension":"fieldProblem",
+"terms":[
+"Aflatoxins",
+"Agrochemical residues",
+"Disease/chemical residue",
+"Grain arsenic contamination",
+"Human health decline from chronic residue exposure",
+"Toxic input exposure",
+"Farmer/family health concerns from pesticide residues",
+"EU border rejections (pesticide residue, aflatoxin)",
+"Illegal/toxic ripening agents",
+"Export rejections"
+]
+},
+{
+"canonicalTerm":"Diet-Related Health / Food Security Concern",
+"dimension":"fieldProblem",
+"terms":[
+"Chronic disease linked to diet",
+"Perceived gluten/health concerns",
+"Household food insecurity",
+"Loss of dietary diversity"
+]
+},
+{
+"canonicalTerm":"Yield Stagnation / Decline",
+"dimension":"fieldProblem",
+"terms":[
+"Yield stagnation",
+"Yield ceiling",
+"Yield decline/collapse over cycles",
+"Yield Loss During Transition",
+"Yield volatility under drought or deluge",
+"Season-to-season yield variability",
+"Low national yield benchmark",
+"Low yield/high water use of flood-irrigated Basmati",
+"Declining fruit production over season",
+"Declining ratoon yields",
+"Declining ratoon quality",
+"Poor sugarcane multiplication or longevity",
+"Poor tuber yield despite healthy-looking plants",
+"Low extraction efficiency",
+"Poor storage",
+"Orchard abandonment"
+]
+},
+{
+"canonicalTerm":"Inconsistent / Uneven Crop Uniformity",
+"dimension":"fieldProblem",
+"terms":[
+"Inconsistent crop uniformity",
+"Uneven fields/elevation variation"
+]
+},
+{
+"canonicalTerm":"Post-Harvest Loss / Spoilage",
+"dimension":"fieldProblem",
+"terms":[
+"Post-harvest fruit rot/loss",
+"Post-harvest grain loss",
+"Post-harvest loss",
+"Post-harvest milling loss",
+"Post-harvest shrinkage/weight loss",
+"Post-harvest spoilage",
+"Post-harvest storage/refrigeration damage",
+"Storage weight loss/spoilage",
+"Long-distance transport losses",
+"Improper ripening technique",
+"Seed waste"
+]
+},
+{
+"canonicalTerm":"Short Shelf Life",
+"dimension":"fieldProblem",
+"terms":[
+"Short shelf life"
+]
+},
+{
+"canonicalTerm":"High Input / Production Cost",
+"dimension":"fieldProblem",
+"terms":[
+"Boom-bust input cost",
+"High cost of production",
+"High cultivation cost",
+"High cost of importing topsoil",
+"High production cost",
+"High establishment cost",
+"High establishment cost of alternatives",
+"High Fertilizer Cost",
+"High Input Cost",
+"High input cost",
+"High seed cost",
+"High replanting/seed cost",
+"High tunnel construction cost",
+"Input cost of fertilizer/pesticide",
+"High tillage, pesticide, fertilizer, and irrigation costs",
+"High feed cost relative to output value"
+]
+},
+{
+"canonicalTerm":"External Input Dependency",
+"dimension":"fieldProblem",
+"terms":[
+"Chemical dependency",
+"Chemical dependency suppressing soil biology",
+"Dependency on annual hybrid seed purchase",
+"Dependence on hybrid seed purchase",
+"F1 hybrid seed dependency",
+"Farm input dependency",
+"Fertilizer import dependency",
+"Herbicide dependency",
+"Import dependence",
+"Input Dependency",
+"Input dependency",
+"High input dependency",
+"Ongoing input dependency",
+"Reliance on bagged fertilizer",
+"Reliance on chemical pesticides",
+"Reliance on external fertilizer inputs",
+"Reliance on imported fertilizer inputs",
+"Rising input dependency",
+"Synthetic input dependence",
+"Purchased feed cost dependency",
+"Credit dependency",
+"Diesel-dependent logistics",
+"Diesel-dependent mechanization",
+"Diesel/fuel dependency",
+"Continued reliance on purchased inputs (EM products, compost, minerals) in mainstream regenerative agriculture",
+"Over-reliance on external inputs/labs",
+"Dependency on synthetic fertilizer"
+]
+},
+{
+"canonicalTerm":"Farmer Income Instability / Debt",
+"dimension":"fieldProblem",
+"terms":[
+"Low farmer income",
+"Farmer profit loss",
+"Farm debt",
+"Farmer debt cycle",
+"Farmer exploitation/delayed payment",
+"Smallholder margin collapse",
+"Rural economic instability",
+"Small landholding profitability",
+"Marginal sloped land productivity"
+]
+},
+{
+"canonicalTerm":"Price Volatility / Market Glut",
+"dimension":"fieldProblem",
+"terms":[
+"Fertilizer price volatility",
+"Rising input costs",
+"Input price shock exposure",
+"Market glut and price collapse",
+"Market glut/seasonal price collapse",
+"Seasonal price glut at harvest",
+"Fixed-season harvest price glut",
+"Volatile supply",
+"Compulsory/forced selling at harvest",
+"Distress selling at single harvest peak",
+"Mass-based pricing rewarding bulk over nutrition",
+"Buyer contract pricing tied to quality",
+"Lack of a price signal for ecosystem services",
+"Low margin from single-crop marketing",
+"Income gaps between harvests",
+"Post-harvest price bargaining"
+]
+},
+{
+"canonicalTerm":"Organic Certification Cost / Trust Gap",
+"dimension":"fieldProblem",
+"terms":[
+"Certification cost/dependency",
+"Cost of certification",
+"Certification label without biological-quality guarantee",
+"Consumer distrust of organic premium",
+"Perceived quality-cost tradeoff"
+]
+},
+{
+"canonicalTerm":"Macro / Policy-Level Externalities",
+"dimension":"fieldProblem",
+"terms":[
+"GHG emissions from agriculture",
+"Methane emissions",
+"Subsidies favoring imported fiber",
+"Subsidy misallocation",
+"Undervalued farm-level production in policy",
+"Policy/institutional lock-in",
+"Externalized environmental and health costs",
+"Resource degradation from inefficient input use",
+"Yield-focused metrics ignoring quality",
+"Water pollution from aquaculture feed waste",
+"GMO contamination risk",
+"Loss of crop genetic diversity",
+"Corporate-funded science bias",
+"Institutional resistance to new methods",
+"Failed technology adoption",
+"Lack of market access",
+"Lack of agricultural training infrastructure",
+"Weak export competitiveness",
+"Fragmented watercourses/plots"
+]
+},
+{
+"canonicalTerm":"Terminology / Framework Confusion",
+"dimension":"fieldProblem",
+"terms":[
+"Confusing 'regenerative' with 'sustainable'",
+"Confusion about GMO vs hybrid vs seedless seed",
+"Confusion over conflicting organic-farming advice",
+"Fragmented, non-actionable regenerative science",
+"Greenwashed regenerative claims",
+"Greenwashing/dilution of 'regenerative' branding"
+]
+},
+{
+"canonicalTerm":"Farmer Uncertainty / Diagnostic Skill Gap",
+"dimension":"fieldProblem",
+"terms":[
+"Belief in cow-gut-derived fertility",
+"Misreading biological activation as disease",
+"Farmer concern over unusual soil-surface growth",
+"Uncertainty about pest risk without lab tools",
+"Uncertainty about when to stop fertilizing",
+"Uncertainty about whether soil biology is working",
+"Judging Soil Health",
+"Farmer anxiety about crop health",
+"Fear-based farm management",
+"Slow perceived transition",
+"Speculative/unplanned production"
+]
+},
+{
+"canonicalTerm":"Machinery / Field-Operation Decision Difficulty",
+"dimension":"fieldProblem",
+"terms":[
+"Mismatched bed/tractor geometry",
+"Choosing between two tractors",
+"Poor bed-orientation choices",
+"Determining correct planting density",
+"Choosing optimal mother-bulb size for seed stalks"
+]
+},
+{
+"canonicalTerm":"Idle / Underused Field Time",
+"dimension":"fieldProblem",
+"terms":[
+"Idle bed time between seasons",
+"Idle land before canopy closure/fruit maturity"
+]
+},
+{
+"canonicalTerm":"Space / Infrastructure Constraint",
+"dimension":"fieldProblem",
+"terms":[
+"Space constraints for trellising",
+"Limited household growing space"
+]
+},
+{
+"canonicalTerm":"Labor Scarcity / Cost",
+"dimension":"fieldProblem",
+"terms":[
+"Labor scarcity for manual SRI",
+"Labour shortage/cost",
+"Fertilizing/tilling/weeding workload"
+]
+},
+{
+"canonicalTerm":"Untrained Labor / Management",
+"dimension":"fieldProblem",
+"terms":[
+"Untrained farm management",
+"Untrained labor",
+"Lack of a field-ready protocol"
+]
+},
+{
+"canonicalTerm":"Long Time-to-Production / Multi-Year Maintenance",
+"dimension":"fieldProblem",
+"terms":[
+"Long time-to-production",
+"Maintaining productivity over multiple years",
+"Short annual production cycle"
+]
+},
+{
+"canonicalTerm":"Animal Health / Welfare / Product Quality",
+"dimension":"fieldProblem",
+"terms":[
+"Animal welfare/stress",
+"Fodder quality/veterinary cost",
+"Poor animal health and immunity",
+"Milk quality/inflammatory milk",
+"Low stocking density economics",
+"Low Omega-3 content in milk/meat"
+]
+},
+{
+"canonicalTerm":"Tillage Damage to Soil Biology / Structure",
+"dimension":"fieldProblem",
+"terms":[
+"Tillage damage to fungal networks",
+"Tillage damage to root systems",
+"Tillage destroying plant-microbe signaling",
+"Tillage-destroyed soil structure",
+"Nitrogen immobilization from tillage"
+]
+},
+{
+"canonicalTerm":"Residue Mismanagement",
+"dimension":"fieldProblem",
+"terms":[
+"Residue burning",
+"Residue dragging into seed zone"
+]
+},
+{
+"canonicalTerm":"Weak Below-Ground Symbiosis (Mycorrhizae/Nitrogen-Fixers)",
+"dimension":"fieldProblem",
+"terms":[
+"Loss of nitrogen-fixing partnerships",
+"Weak Fungal Networks",
+"Weak mycorrhizal networks",
+"Poor Nodulation",
+"Low Nitrogen Fixation"
+]
+},
+{
+"canonicalTerm":"Erratic / Unpredictable Weather Patterns",
+"dimension":"fieldProblem",
+"terms":[
+"Delayed/erratic monsoon and winter timing",
+"Erratic rainfall",
+"Erratic temperature swings",
+"Erratic weather/drought/flood"
+]
+},
+{
+"canonicalTerm":"Low Light / Smog",
+"dimension":"fieldProblem",
+"terms":[
+"Low light/smog"
+]
+},
+{
+"canonicalTerm":"Seed Sourcing / Genetic Vulnerability",
+"dimension":"fieldProblem",
+"terms":[
+"Difficulty saving/isolating open-pollinated seed",
+"Weak seed lineage",
+"Weak seed vigor",
+"Reliance on manual seed collection/replanting",
+"Crops lacking natural stress tolerance (e.g. potato)",
+"Weak rootstock vigor"
+]
+},
+{
+"canonicalTerm":"High Crop Water Demand",
+"dimension":"fieldProblem",
+"terms":[
+"Excessive water use by fast-growing trees",
+"High water use"
+]
+},
+{
+"canonicalTerm":"Evaporation / Moisture Loss",
+"dimension":"fieldProblem",
+"terms":[
+"Evaporation/moisture loss"
+]
+},
+{
+"canonicalTerm":"Hormonal Growth Imbalance (Vegetative/Reproductive)",
+"dimension":"fieldProblem",
+"terms":[
+"Hormonal imbalance"
+]
+},
+{
+"canonicalTerm":"Partial / Inconsistent Practice Adoption",
+"dimension":"fieldProblem",
+"terms":[
+"Low farmer adoption of full package"
+]
+},
+{
+"canonicalTerm":"Suboptimal Planting Density",
+"dimension":"fieldProblem",
+"terms":[
+"Low planting density"
+]
+},
+{
+"canonicalTerm":"Preventive/Prophylactic Over-Application of Inputs (Fertilizer/Nitrogen)",
+"dimension":"fieldProblem",
+"terms":[
+"Nitrogen excess",
+"Nitrogen lock-up",
+"Over-application of fertilizer relative to actual crop uptake",
+"Over-fertilization risk",
+"Preventive/prophylactic input overuse",
+"Sugar-based liquid input misuse"
+]
+},
+{
+"canonicalTerm":"Nutrient Retention / Delivery Efficiency Concerns",
+"dimension":"fieldProblem",
+"terms":[
+"Nutrient dilution concern with fertigation",
+"Poor nutrient retention"
+]
+},
+{
+"canonicalTerm":"Phosphorus Deficiency",
+"dimension":"fieldProblem",
+"terms":[
+"Phosphorus deficiency"
+]
+},
+{
+"canonicalTerm":"Poor Plant Vigor (General)",
+"dimension":"fieldProblem",
+"terms":[
+"Poor Plant Vigor"
+]
+},
+{
+"canonicalTerm":"Harvest Timing Problems (Premature or Delayed)",
+"dimension":"fieldProblem",
+"terms":[
+"Premature bolting",
+"Premature or late harvest",
+"Premature ripening",
+"Premature/delayed harvest timing"
+]
+},
+{
+"canonicalTerm":"Seasonal / Batch Quality Variability",
+"dimension":"fieldProblem",
+"terms":[
+"Seasonal quality variability"
+]
+},
+{
+"canonicalTerm":"Waste Accumulation / Disposal",
+"dimension":"fieldProblem",
+"terms":[
+"Waste accumulation/management"
+]
+},
+{
+"canonicalTerm":"Soil Pit / Hardpan Diagnosis",
+"dimension":"fieldPractice",
+"terms":[
+"Hardpan Diagnosis",
+"Hardpan Diagnosis/Breaking",
+"Field Diagnostic Testing",
+"Field-capacity testing",
+"Root Inspection",
+"Root Trace Observation",
+"Soil Testing/Retesting",
+"Topography survey",
+"No-tools root/soil field test",
+"Slake Test"
+]
+},
+{
+"canonicalTerm":"Soil Moisture Ball/Field Test",
+"dimension":"fieldPractice",
+"terms":[
+"Root-zone ball moisture test",
+"Soil ball moisture test",
+"Soil Moisture Cohesive-Ball Test",
+"Moisture testing without a meter"
+]
+},
+{
+"canonicalTerm":"Furrow/Water Infiltration Testing",
+"dimension":"fieldPractice",
+"terms":[
+"Furrow Infiltration Test",
+"Water Infiltration Test"
+]
+},
+{
+"canonicalTerm":"Soil Sensory Assessment (Smell/Scent/Texture)",
+"dimension":"fieldPractice",
+"terms":[
+"Soil Smell Test",
+"Field Scent Observation",
+"Sensory field assessment",
+"Plant-based field diagnosis"
+]
+},
+{
+"canonicalTerm":"Weed-Signal Reading",
+"dimension":"fieldPractice",
+"terms":[
+"Weed community reading",
+"Weed reading/diagnosis"
+]
+},
+{
+"canonicalTerm":"Germination / Seed Viability Testing",
+"dimension":"fieldPractice",
+"terms":[
+"Germination Test"
+]
+},
+{
+"canonicalTerm":"Tissue/Sap Nutrient Testing",
+"dimension":"fieldPractice",
+"terms":[
+"Refractometer/sap nitrate testing (transitional)",
+"Tissue mineral analysis (audit level)",
+"Foliar Diagnostic Spray",
+"Sap-based pest risk assessment"
+]
+},
+{
+"canonicalTerm":"Threshold-Based Pest/Predator Monitoring",
+"dimension":"fieldPractice",
+"terms":[
+"Threshold-Based Pest Monitoring",
+"Observational pest assessment",
+"Predator-Response Timing Observation",
+"Earthworm Census",
+"Earthworm/Fungal Habitat Building"
+]
+},
+{
+"canonicalTerm":"Mechanical Hardpan Breaking (Subsoiling)",
+"dimension":"fieldPractice",
+"terms":[
+"Hardpan break",
+"Hardpan breaking",
+"Hardpan Breaking",
+"Hardpan breaking/subsoiling",
+"Hardpan correction",
+"Hardpan elimination",
+"Hardpan removal",
+"Hardpan shattering",
+"Hardpan Shattering",
+"Hardpan-free bed management",
+"Deep Subsoiling",
+"Subsoiling",
+"Subsoiling hardpan",
+"Deep Leaching Chemistry Correction",
+"Deep Leaching/Chemistry Correction"
+]
+},
+{
+"canonicalTerm":"Biological Hardpan Breaking (Jantar/Root Drilling)",
+"dimension":"fieldPractice",
+"terms":[
+"Biological Drilling (Pioneer Plants)",
+"Deep Root Penetration Past Hardpan",
+"Jantar (Sesbania) Bio-tillage",
+"Jantar as biological drill",
+"Jantar bio-drilled channels",
+"Jantar Biological Subsoiling",
+"Jantar Root Penetration",
+"Avoiding hardpan-forming tillage"
+]
+},
+{
+"canonicalTerm":"Sulfuric Acid Water-Wash (pH Correction)",
+"dimension":"fieldPractice",
+"terms":[
+"Acid Water-Wash",
+"pH correction",
+"pH correction/sulfuric acid wash",
+"Soil Chemistry Correction",
+"Soil chemistry correction",
+"Strategic acid leaching",
+"Sulfuric acid pH correction",
+"Sulfuric Acid pH Correction",
+"Sulfuric acid salt flush",
+"Water-Wash Irrigation",
+"Water-Wash Soil Correction",
+"Water-washing soil",
+"Chemistry Correction",
+"Alkaline soil correction",
+"Clay Slurry Treatment"
+]
+},
+{
+"canonicalTerm":"Rock Mineral Amendment",
+"dimension":"fieldPractice",
+"terms":[
+"Rock Phosphate Amendment (Optional)"
+]
+},
+{
+"canonicalTerm":"Jantar (Sesbania) Cover Cropping",
+"dimension":"fieldPractice",
+"terms":[
+"Cover cropping (sunn hemp, Jantar)",
+"Cover cropping with Jantar",
+"Cover cropping with Jantar/Sesbania",
+"Jantar (Sesbania) Green Manure",
+"Jantar cover crop",
+"Jantar Cover Crop",
+"Jantar cover crop mulch",
+"Jantar cover cropping",
+"Jantar Cover Cropping",
+"Jantar cover-crop mulching",
+"Live cover cropping (Jantar)",
+"Jantar/Tillage Radish Cover Cropping",
+"Green manure cover crop"
+]
+},
+{
+"canonicalTerm":"General Cover Cropping",
+"dimension":"fieldPractice",
+"terms":[
+"Cover crop mulch",
+"Cover Cropping",
+"Cover cropping",
+"Cover cropping with root retention",
+"Deep-Rooted Cover Cropping",
+"Diverse cover cropping",
+"Diverse cover cropping for root exudation",
+"Continuous living cover",
+"Continuous Living Roots",
+"Live mulch (cover crop)",
+"Live mulch/cover crops",
+"Live mulching",
+"Living ground cover",
+"Living mulch (alfalfa)",
+"Living Root Retention",
+"Maintaining Living Roots",
+"No-Till Living Roots",
+"Self-mulching plants"
+]
+},
+{
+"canonicalTerm":"Surface Mulching (General)",
+"dimension":"fieldPractice",
+"terms":[
+"Continuous mulch",
+"Continuous mulch maintenance",
+"Dead mulch application",
+"Dead/organic mulching",
+"Dry mulch",
+"Mulch cover",
+"Mulch coverage",
+"Mulching",
+"Mulching (precondition)",
+"Organic mulch",
+"Organic mulching",
+"Permanent Cover",
+"Permanent cover/mulch",
+"Permanent Mulch",
+"Surface Mulching",
+"Surface mulching",
+"Thermal Mulching",
+"Orchard floor mulching"
+]
+},
+{
+"canonicalTerm":"Plastic Mulching",
+"dimension":"fieldPractice",
+"terms":[
+"Plastic mulching"
+]
+},
+{
+"canonicalTerm":"Chop-and-Drop Mulching",
+"dimension":"fieldPractice",
+"terms":[
+"Chop-and-Drop",
+"Chop-and-drop mulching",
+"Forestry mulching"
+]
+},
+{
+"canonicalTerm":"Mulch-Assisted Irrigation",
+"dimension":"fieldPractice",
+"terms":[
+"Drip irrigation with mulch",
+"Direct seeding through mulch",
+"No-till mulch planting",
+"No-till planting into mulch"
+]
+},
+{
+"canonicalTerm":"Crop Residue Retention",
+"dimension":"fieldPractice",
+"terms":[
+"Mulch/Residue Retention",
+"Mulch/Trash Retention (No Burning)",
+"Residue mulch",
+"Residue Retention",
+"Residue retention",
+"Residue retention/chipping",
+"Residue Retention/Mulching",
+"Residue return as mulch",
+"Residue/Grass Retention as Mulch",
+"No-till mulch retention",
+"No-till residue retention",
+"Stubble retention",
+"In-Situ Residue Composting",
+"In-situ Manure Scattering"
+]
+},
+{
+"canonicalTerm":"Root Retention (Standing Roots After Harvest)",
+"dimension":"fieldPractice",
+"terms":[
+"Residue/Root Retention",
+"Root Retention",
+"Root retention",
+"Root Retention After Harvest",
+"No-till/root retention"
+]
+},
+{
+"canonicalTerm":"Permanent Raised Bed Formation",
+"dimension":"fieldPractice",
+"terms":[
+"Bed formation sequence",
+"Level bed construction",
+"Permanent beds",
+"Permanent raised bed shaping",
+"Permanent raised beds",
+"Permanent Raised Beds",
+"Permanent raised beds (precondition)",
+"Permanent raised beds and furrows",
+"Permanent raised beds twin-row",
+"Raised Bed Formation",
+"Raised bed orientation",
+"Raised Beds",
+"Raised beds",
+"Raised-bed geometry"
+]
+},
+{
+"canonicalTerm":"Controlled Traffic (Furrow-Confined)",
+"dimension":"fieldPractice",
+"terms":[
+"Controlled Traffic",
+"Controlled traffic",
+"Permanent beds and traffic discipline",
+"Wheel-track adjustment",
+"Tyre ballasting"
+]
+},
+{
+"canonicalTerm":"Contour Alignment / Land Leveling",
+"dimension":"fieldPractice",
+"terms":[
+"Contour Alignment",
+"Contour Furrows",
+"Contour furrows",
+"Field Leveling",
+"Land Leveling",
+"Laser land leveling",
+"Laser Leveling",
+"Laser leveling",
+"Laser Levelling",
+"Scientific land leveling",
+"Field redesign/consolidation",
+"Curved Furrow and Borehole Water Harvesting"
+]
+},
+{
+"canonicalTerm":"No-Till / Minimal-Disturbance Planting",
+"dimension":"fieldPractice",
+"terms":[
+"Minimal intervention",
+"Minimal soil disturbance",
+"No-Till",
+"No-till",
+"No-till permanent beds",
+"No-till planting",
+"No-Till Planting",
+"Precision No-Till Planting",
+"No-Till Precision Planting",
+"Reduced Tillage",
+"Reduced Tillage/No-Till",
+"Zero-tillage direct seeding",
+"No Soil Disturbance",
+"Permanent mulch/no-till"
+]
+},
+{
+"canonicalTerm":"Furrow Irrigation",
+"dimension":"fieldPractice",
+"terms":[
+"Furrow Fertigation",
+"Furrow irrigation",
+"Furrow irrigation (lateral infiltration)",
+"Furrow Irrigation (rare emergency use)",
+"Siphon-tube furrow irrigation",
+"Syphon Tube Irrigation"
+]
+},
+{
+"canonicalTerm":"Soil Moisture Management (SMM)",
+"dimension":"fieldPractice",
+"terms":[
+"Soil Moisture Management",
+"Soil Moisture Management/furrow irrigation",
+"Soil moisture monitoring",
+"Soil-Moisture-Based Irrigation",
+"Demand-based irrigation",
+"Appropriate irrigation",
+"Stable Hydration Management",
+"Controlled Water Stress",
+"Natural Irrigation Protocol"
+]
+},
+{
+"canonicalTerm":"Irrigation Reduction / Timing Restraint",
+"dimension":"fieldPractice",
+"terms":[
+"Avoiding cold-weather irrigation",
+"Avoiding unnecessary urea/irrigation intervention",
+"Avoiding water inundation",
+"Avoiding waterlogging",
+"No flood irrigation",
+"No irrigation post-pruning",
+"No intervention during flowering",
+"Reduced Irrigation",
+"Reduced irrigation",
+"Restrained/No Irrigation at Flowering",
+"Pre-Harvest Irrigation Cutoff",
+"One deep detox irrigation"
+]
+},
+{
+"canonicalTerm":"Drip/Sprinkler Irrigation",
+"dimension":"fieldPractice",
+"terms":[
+"Drip irrigation (context)",
+"Drip Irrigation Adjustment",
+"Drip/sprinkler irrigation",
+"Lateral pivot irrigation"
+]
+},
+{
+"canonicalTerm":"Precision Seed Placement (SIPP/VIPP-style)",
+"dimension":"fieldPractice",
+"terms":[
+"Discrete-pocket seed placement",
+"Precision Band Placement of Fertilizer/Compost",
+"Precision plant geometry",
+"Precision Planting",
+"Precision planting",
+"Precision seed rate",
+"SIPP/VIPP precision planting",
+"Uniform seed placement",
+"Vertical seed insertion",
+"VIPP/SIPP Planting",
+"Reduced seed rate"
+]
+},
+{
+"canonicalTerm":"Direct Seeding",
+"dimension":"fieldPractice",
+"terms":[
+"Direct Seeded Rice",
+"Direct seeding (one seed per hill)"
+]
+},
+{
+"canonicalTerm":"Transplanting",
+"dimension":"fieldPractice",
+"terms":[
+"Dry-soil transplanting",
+"Nursery block transplanting",
+"Shallow Transplanting of Young Seedlings"
+]
+},
+{
+"canonicalTerm":"Grafting / Rootstock Selection",
+"dimension":"fieldPractice",
+"terms":[
+"Grafting/rootstock selection"
+]
+},
+{
+"canonicalTerm":"Variety / Seed Selection",
+"dimension":"fieldPractice",
+"terms":[
+"Heirloom Varieties",
+"Mother-Bulb Selection",
+"Native Breed Selection",
+"Selecting naturally cold-tolerant crops",
+"Variety Selection"
+]
+},
+{
+"canonicalTerm":"Seed Saving / Isolation",
+"dimension":"fieldPractice",
+"terms":[
+"Seed multiplication/isolation plots",
+"Seed Saving",
+"Seed saving",
+"Seed saving/isolation plots",
+"Isolation by distance/time/barrier",
+"Offset Propagation",
+"Re-deriving open lines from GMO stock",
+"Plant tissue culture (conceded overlap)"
+]
+},
+{
+"canonicalTerm":"Vegetative Propagation (Sugarcane-specific)",
+"dimension":"fieldPractice",
+"terms":[
+"Cut-and-multiply sugarcane method",
+"Single-Bud Sett Planting",
+"Sustained-yield sugarcane method"
+]
+},
+{
+"canonicalTerm":"Hand-Pollination / Pollination Aid",
+"dimension":"fieldPractice",
+"terms":[
+"Hand-pollination of cucurbits"
+]
+},
+{
+"canonicalTerm":"Pruning (General)",
+"dimension":"fieldPractice",
+"terms":[
+"Annual Maintenance Pruning",
+"Apical Pinching",
+"Bruising",
+"Canopy Pruning",
+"Central-leader pruning",
+"Formative Pruning",
+"Formative pruning",
+"Phenology-timed hard pruning",
+"Post-Harvest Pruning",
+"Pruning",
+"Pruning and pinching",
+"Pruning/tiller management",
+"Rejuvenation Pruning",
+"Reproductive pruning",
+"Seasonal pruning calendar",
+"Structural pruning",
+"Sucker Pruning",
+"Tip-cutting",
+"Tip-Pinching",
+"Two-handed pea clipping",
+"Water shoot removal",
+"Corn stalk topping"
+]
+},
+{
+"canonicalTerm":"Compensatory-Grazing-Style Pruning",
+"dimension":"fieldPractice",
+"terms":[
+"Compensatory grazing simulation"
+]
+},
+{
+"canonicalTerm":"Canopy / Vine Training (Trellising)",
+"dimension":"fieldPractice",
+"terms":[
+"Staking/Trellising",
+"Trellising",
+"Vertical canopy management",
+"Vertical canopy training/trellising",
+"Vertical trellising",
+"Vine pressing",
+"Vine training"
+]
+},
+{
+"canonicalTerm":"Crop Rotation",
+"dimension":"fieldPractice",
+"terms":[
+"Crop rotation",
+"Diverse rotation",
+"Diverse rotations",
+"Time-based crop replacement"
+]
+},
+{
+"canonicalTerm":"Intercropping / Companion Planting",
+"dimension":"fieldPractice",
+"terms":[
+"Companion cropping",
+"Companion Planting",
+"Companion planting",
+"Intercropping",
+"Intercropping/filler crops",
+"Legume intercropping",
+"Shade intercropping",
+"Three-layer intercropping",
+"Perennial planting combinations",
+"Perennial/circular planting",
+"Staggered/perennial planting"
+]
+},
+{
+"canonicalTerm":"Crop Diversification",
+"dimension":"fieldPractice",
+"terms":[
+"Crop diversification",
+"Crop substitution",
+"Orchard Diversification",
+"Diverse Fodder Cultivation",
+"Diverse Forage Cultivation",
+"Polyculture"
+]
+},
+{
+"canonicalTerm":"Agroforestry / Windbreaks",
+"dimension":"fieldPractice",
+"terms":[
+"Agroforestry",
+"Agroforestry Species Selection",
+"Alley cropping",
+"Boundary Planting",
+"Deep-Rooted Tree Integration",
+"Fruit-hedge buffer strips",
+"Nurse-Tree Shade",
+"Silvopasture",
+"Windbreak crops"
+]
+},
+{
+"canonicalTerm":"Shade Cropping",
+"dimension":"fieldPractice",
+"terms":[
+"Shade cropping"
+]
+},
+{
+"canonicalTerm":"Staggered / Continuous Planting Schedule",
+"dimension":"fieldPractice",
+"terms":[
+"Daily planting/harvesting (OAP model)",
+"Staggered Sowing",
+"Soil-temperature-triggered sowing"
+]
+},
+{
+"canonicalTerm":"Managed / Rotational Grazing",
+"dimension":"fieldPractice",
+"terms":[
+"Biodiverse Pasture Grazing",
+"Grazing",
+"Grazing (biomass removal)",
+"Integrated Grazing",
+"Rotational/Managed Grazing",
+"Seed balls with livestock"
+]
+},
+{
+"canonicalTerm":"Livestock/Aquaculture Integration",
+"dimension":"fieldPractice",
+"terms":[
+"Integration with ducks/livestock/fish",
+"Azolla/Duckweed Feed Substitution"
+]
+},
+{
+"canonicalTerm":"Biodiversity Habitat Fostering",
+"dimension":"fieldPractice",
+"terms":[
+"Biodiversity Fostering",
+"Building soil microbial life and biodiversity",
+"Natural pest predator habitat",
+"Permanent beds and mulch for predator habitat continuity",
+"Under-Canopy Biodiversity for Pest Control",
+"Weedy field margins as habitat"
+]
+},
+{
+"canonicalTerm":"Biological Pest Suppression",
+"dimension":"fieldPractice",
+"terms":[
+"Biodiversity-based predator-prey balance",
+"Biological pest suppression"
+]
+},
+{
+"canonicalTerm":"Reduced/Eliminated Chemical Input",
+"dimension":"fieldPractice",
+"terms":[
+"Elimination of Agrochemicals",
+"Elimination of External Inputs",
+"No pesticide application (3+ seasons)",
+"No purchased inputs",
+"No synthetic fertilizer",
+"Reduced Chemical Input",
+"Reduced synthetic pesticide reliance",
+"Reduced/no synthetic pesticide use",
+"Zero external fertilizer/pesticide"
+]
+},
+{
+"canonicalTerm":"Mechanical / Non-Chemical Weeding",
+"dimension":"fieldPractice",
+"terms":[
+"Active Aeration Weeding",
+"Mechanical Weeding",
+"Mulch-based weed management",
+"Precision weeder-aerator"
+]
+},
+{
+"canonicalTerm":"Biological Nutrient Cycling",
+"dimension":"fieldPractice",
+"terms":[
+"Balanced nutrient cycling",
+"Biological nutrient cycling",
+"Biological nutrient cycling restoration",
+"Biological nutrient management",
+"Closed-Loop Nutrient Recycling",
+"Root Exudate Cycling",
+"Root exudate-mediated nutrient exchange",
+"Microbial mineral liberation",
+"Microbial Nutrient Delivery",
+"Mulch-Fed Microbial Mineralization",
+"Mycorrhizal Partnership Management",
+"Demand-Based Fertilization",
+"Controlled/Consistent Nutrient Delivery"
+]
+},
+{
+"canonicalTerm":"Compost / Vermiwash / Bio-Input Application",
+"dimension":"fieldPractice",
+"terms":[
+"Compost application",
+"Compost Tea/Vermiwash Application",
+"Compost/vermiwash inoculation",
+"Composting",
+"Jeevamrit application",
+"Waste processing/composting",
+"Foliar Feeding",
+"Foliar ethanol spray",
+"Foliar Ethanol Spray",
+"1% ethanol foliar spray (pre-frost/heat)",
+"Jaggery-water microbial culturing"
+]
+},
+{
+"canonicalTerm":"Closed-Loop Input Management",
+"dimension":"fieldPractice",
+"terms":[
+"Concentrated sourcing radius",
+"No biomass export"
+]
+},
+{
+"canonicalTerm":"Soil Biology Restoration (General)",
+"dimension":"fieldPractice",
+"terms":[
+"Aeration Management",
+"Aeration/infiltration correction",
+"Drainage/aeration correction",
+"Soil Biological Restoration Prioritization",
+"Soil Biology Activation",
+"Soil Microbiology Rejuvenation",
+"Soil mineral management",
+"Soil Regeneration",
+"Non-intervention/observation",
+"Field-Heat Removal",
+"Temperature Moderation",
+"Gentle/Gradual Drying",
+"Organic Matter Retention"
+]
+},
+{
+"canonicalTerm":"Mulch Decomposition / Ground-Cover Monitoring",
+"dimension":"fieldPractice",
+"terms":[
+"Mulch Decomposition Monitoring",
+"Mulch-Stabilized Root Zone"
+]
+},
+{
+"canonicalTerm":"Raised-Bed Capillary Water Management",
+"dimension":"fieldPractice",
+"terms":[
+"Raised Bed Capillary Management"
+]
+},
+{
+"canonicalTerm":"PQNK Transition Protocol (Staged)",
+"dimension":"fieldPractice",
+"terms":[
+"Four-Step Transition Protocol",
+"No-till plus manure integration"
+]
+},
+{
+"canonicalTerm":"Harvest Timing / Selective Harvest",
+"dimension":"fieldPractice",
+"terms":[
+"Cut (Not Plucked) Harvesting",
+"Selective harvest",
+"Selective/Continuous Harvesting",
+"Tuber harvest handling"
+]
+},
+{
+"canonicalTerm":"Post-Harvest Handling / Ripening",
+"dimension":"fieldPractice",
+"terms":[
+"Natural Ethylene Ripening (Banana/Mango Ratio)",
+"Post-harvest cold water immersion",
+"Semi-Ventilated Box Ripening",
+"Stamping (treading)"
+]
+},
+{
+"canonicalTerm":"Roller Crimping",
+"dimension":"fieldPractice",
+"terms":[
+"Roller crimping",
+"Rotavator incorporation (compared against)"
+]
+},
+{
+"canonicalTerm":"Direct Marketing",
+"dimension":"fieldPractice",
+"terms":[
+"Direct marketing"
+]
+},
+{
+"canonicalTerm":"Periodic Nursery Refresh",
+"dimension":"fieldPractice",
+"terms":[
+"Periodic Nursery-Plant Refresh"
+]
+},
+{
+"canonicalTerm":"Moist / Aerobic Bed Cultivation (Non-Flooded Rice)",
+"dimension":"fieldPractice",
+"terms":[
+"Moist (Non-Flooded) Bed Cultivation",
+"Moist-soil raised beds (vs flooding)"
+]
+},
+{
+"canonicalTerm":"Input Timing Restraint (Flowering-Sensitive)",
+"dimension":"fieldPractice",
+"terms":[
+"Avoiding Manure Application at Flowering",
+"Avoiding nitrogen forcing"
+]
+},
+{
+"canonicalTerm":"Surface Scarification",
+"dimension":"fieldPractice",
+"terms":[
+"Surface scarification"
+]
+},
+{
+"canonicalTerm":"Raised Bed Shaper (PQNK machine)",
+"dimension":"machinery",
+"terms":[
+"Bed Shaper",
+"Bed shaper",
+"Bed shapers",
+"Raised Bed Shaper",
+"Raised Bed Former"
+]
+},
+{
+"canonicalTerm":"SIPP (PQNK machine)",
+"dimension":"machinery",
+"terms":[
+"SIPP"
+]
+},
+{
+"canonicalTerm":"VIPP (PQNK machine)",
+"dimension":"machinery",
+"terms":[
+"VIPP"
+]
+},
+{
+"canonicalTerm":"Mulcher & Bed Renovator (PQNK machine)",
+"dimension":"machinery",
+"terms":[
+"Mulcher",
+"Forestry Mulcher"
+]
+},
+{
+"canonicalTerm":"Generic No-Till Planter",
+"dimension":"machinery",
+"terms":[
+"No-till planter",
+"No-till Planter",
+"No-Till Planter",
+"Precision planter",
+"Pneumatic Precision Planter",
+"Multi-seed Pneumatic Precision Planter with Mulcher"
+]
+},
+{
+"canonicalTerm":"Dry-Soil Transplanter",
+"dimension":"machinery",
+"terms":[
+"Dry-soil transplanter"
+]
+},
+{
+"canonicalTerm":"Chisel Plough",
+"dimension":"machinery",
+"terms":[
+"Chisel plough"
+]
+},
+{
+"canonicalTerm":"Precision Weeder-Aerator",
+"dimension":"machinery",
+"terms":[
+"Precision weeder-aerator"
+]
+},
+{
+"canonicalTerm":"Dribble Board / Hand Dribbler",
+"dimension":"machinery",
+"terms":[
+"Dribble Board",
+"Hand Dribbler Tool"
+]
+},
+{
+"canonicalTerm":"Bamboo/Rope/Trellis Structures",
+"dimension":"machinery",
+"terms":[
+"Bamboo/rope/trellis structures"
+]
+},
+{
+"canonicalTerm":"Siphon/Syphon Tubes",
+"dimension":"machinery",
+"terms":[
+"Siphon Tubes",
+"Syphon Tubes"
+]
+},
+{
+"canonicalTerm":"Tractor (generic, by HP class)",
+"dimension":"machinery",
+"terms":[
+"Tractor (45-55 HP)",
+"Two-wheel-drive tractor (55-90HP)"
+]
+},
+{
+"canonicalTerm":"Subsoiler / Hardpan Breaker",
+"dimension":"machinery",
+"terms":[
+"Subsoiler",
+"Hardpan-shredding machinery",
+"Hardpan Breaker",
+"hardpan-shattering machine",
+"hardpan breaker",
+"deep soil shatterer",
+"deep ripping implement"
+]
+},
+{
+"canonicalTerm":"Gusra Soil Fraction",
+"dimension":"conceptTerm",
+"terms":[
+"Gusra soil fraction"
+]
+},
+{
+"canonicalTerm":"Water:Air Framework",
+"dimension":"conceptTerm",
+"terms":[
+"Water:Air framework"
+]
+},
+{
+"canonicalTerm":"Soil Life Conduit",
+"dimension":"conceptTerm",
+"terms":[
+"Soil Life Conduit"
+]
+}
+],
+"coreTerminology":[
+{
+"canonicalTerm":"PQNK",
+"terms":[
+"Paedar Qudratti Nizam Kashatqari",
+"Picnic",
+"PICNIC",
+"picnic"
+]
+},
+{
+"canonicalTerm":"ACI (Ancient Conventional Industrial)",
+"terms":[
+"Conventional agriculture",
+"Ancient Conventional Industrial system",
+"the old way of farming",
+"chemical farming",
+"regular farming"
+]
+},
+{
+"canonicalTerm":"Jantar (Sesbania)",
+"terms":[
+"Sesbania",
+"living subsoiler",
+"the green manure plant",
+"Jantar"
+]
+}
+],
+"exampleMappings":[
+{
+"canonicalTerm":"Hardpan",
+"dimension":"fieldProblem",
+"terms":[
+"hard layer",
+"tractor pan",
+"water not going down"
+]
+},
+{
+"canonicalTerm":"Soil Compaction (General)",
+"dimension":"fieldProblem",
+"terms":[
+"soil sealed",
+"soil packed hard"
+]
+},
+{
+"canonicalTerm":"Poor Water Infiltration",
+"dimension":"fieldProblem",
+"terms":[
+"water not going down",
+"water just sits on top"
+]
+},
+{
+"canonicalTerm":"Waterlogging",
+"dimension":"fieldProblem",
+"terms":[
+"standing water",
+"water not draining"
+]
+},
+{
+"canonicalTerm":"Waterlogging",
+"dimension":"fieldProblem",
+"terms":[
+"crop burning after rain",
+"crop turned yellow after rain"
+]
+},
+{
+"canonicalTerm":"Nutrient Deficiency Symptoms (Plant-Visible)",
+"dimension":"fieldProblem",
+"terms":[
+"crop turned yellow after rain"
+]
+},
+{
+"canonicalTerm":"Crop Residue Retention",
+"dimension":"fieldPractice",
+"terms":[
+"old crop remains",
+"leftover stalks",
+"trash left in the field"
+]
+},
+{
+"canonicalTerm":"Surface Mulching (General)",
+"dimension":"fieldPractice",
+"terms":[
+"covering soil",
+"putting straw on top"
+]
+},
+{
+"canonicalTerm":"No-Till / Minimal-Disturbance Planting",
+"dimension":"fieldPractice",
+"terms":[
+"ploughing (as the practice being avoided)",
+"tillage (as the practice being avoided)"
+]
+}
+],
+"farmerLanguagePairs":[
+{
+"scientificTerm":"2-acetyl-1-pyrroline aroma compound synthesis",
+"farmerTerms":[
+"the actual chemical behind basmati's smell, which builds up with good nitrogen and organic matter management"
+]
+},
+{
+"scientificTerm":"30/70 pore-space balance",
+"farmerTerms":[
+"soil that's about a third water and two-thirds air, not soggy and not bone dry"
+]
+},
+{
+"scientificTerm":"A1 versus A2 beta-casein milk debate",
+"farmerTerms":[
+"the argument over which type of cow protein is easier to digest"
+]
+},
+{
+"scientificTerm":"ACI (Ancient-Conventional-Industrial) paradigm",
+"farmerTerms":[
+"plough-based farming, however it's dressed up"
+]
+},
+{
+"scientificTerm":"ATI (amylase trypsin inhibitors)",
+"farmerTerms":[
+"stress compounds in the grain that can irritate some people's gut"
+]
+},
+{
+"scientificTerm":"Accelerated weathering",
+"farmerTerms":[
+"Speeding up how rock breaks down into plant-usable minerals"
+]
+},
+{
+"scientificTerm":"Active absorption",
+"farmerTerms":[
+"The plant spending its own energy to pull nutrients in"
+]
+},
+{
+"scientificTerm":"Acylated anthocyanins",
+"farmerTerms":[
+"a more stable, extraction-friendly form of the pigment"
+]
+},
+{
+"scientificTerm":"Aggregate/crumb structure",
+"farmerTerms":[
+"How the soil clumps together into little crumbs"
+]
+},
+{
+"scientificTerm":"Allelopathic phenolic acids, flavonoids, and terpenoids",
+"farmerTerms":[
+"chemicals the weed releases that slow down other plants' roots nearby"
+]
+},
+{
+"scientificTerm":"Alternate Wetting and Drying (AWD)",
+"farmerTerms":[
+"flooding and draining the field on a cycle instead of keeping it flooded all the time"
+]
+},
+{
+"scientificTerm":"Amylose/amylopectin starch deposition disruption",
+"farmerTerms":[
+"the grain's starch not filling in evenly because of heat or water swings while it was filling out"
+]
+},
+{
+"scientificTerm":"Anaerobic flooding",
+"farmerTerms":[
+"the field staying underwater with no air reaching the soil"
+]
+},
+{
+"scientificTerm":"Anaerobic microbes",
+"farmerTerms":[
+"Air-starved soil bugs that produce toxins when soil is waterlogged"
+]
+},
+{
+"scientificTerm":"Anaerobic soil",
+"farmerTerms":[
+"soil that can't breathe because it's sealed or waterlogged"
+]
+},
+{
+"scientificTerm":"Anaerobic, reducing soil conditions increasing arsenic solubility",
+"farmerTerms":[
+"flooding the field starves the soil of oxygen, which lets more arsenic dissolve into the grain"
+]
+},
+{
+"scientificTerm":"Anthocyanin",
+"farmerTerms":[
+"The reddish-purple pigment the plant makes on purpose under cold or bright stress"
+]
+},
+{
+"scientificTerm":"Anthocyanin biosynthesis via MYB transcription factor",
+"farmerTerms":[
+"the plant's own cold-weather color response 'switch'"
+]
+},
+{
+"scientificTerm":"Anti-Ecosystem Agriculture",
+"farmerTerms":[
+"farming that fights nature instead of working with it"
+]
+},
+{
+"scientificTerm":"Apical dominance / tip-pinch to activate lateral buds",
+"farmerTerms":[
+"pinching off the growing tip so the plant branches out sideways instead of growing straight up"
+]
+},
+{
+"scientificTerm":"Apical dominance removal",
+"farmerTerms":[
+"pinching the growing tip so the plant branches out instead"
+]
+},
+{
+"scientificTerm":"Apical pinching reducing auxin dominance, activating cytokinin-driven lateral growth",
+"farmerTerms":[
+"pinching off the top of the plant so it branches out and roots deeper instead of just growing tall"
+]
+},
+{
+"scientificTerm":"Aquaporins",
+"farmerTerms":[
+"The tiny channels roots use to actually pull water in"
+]
+},
+{
+"scientificTerm":"Aquifer recharge",
+"farmerTerms":[
+"water going back into the ground"
+]
+},
+{
+"scientificTerm":"Autonomous state / closed-loop production ecosystem",
+"farmerTerms":[
+"the farm running itself"
+]
+},
+{
+"scientificTerm":"Auxin-cytokinin hormonal balance",
+"farmerTerms":[
+"the tree's internal chemical signal that decides whether to grow leaves or flowers"
+]
+},
+{
+"scientificTerm":"Bank-to-withdrawal ratio",
+"farmerTerms":[
+"How much nutrient is stored in the soil versus how much the crop actually uses"
+]
+},
+{
+"scientificTerm":"Batoor / non-viable floral sink",
+"farmerTerms":[
+"the stunted mango flower clusters that never turn into fruit"
+]
+},
+{
+"scientificTerm":"Biennial bearing",
+"farmerTerms":[
+"the tree gives a huge crop one year then almost nothing the next"
+]
+},
+{
+"scientificTerm":"Bio-drilled channels",
+"farmerTerms":[
+"root tunnels left behind by Jantar roots"
+]
+},
+{
+"scientificTerm":"Bio-pores",
+"farmerTerms":[
+"Tiny tunnels left behind by old roots and worms"
+]
+},
+{
+"scientificTerm":"Bioavailable minerals",
+"farmerTerms":[
+"minerals in the grain the body can actually absorb and use"
+]
+},
+{
+"scientificTerm":"Biological drilling channels",
+"farmerTerms":[
+"Old root holes and worm tunnels that let water and air through"
+]
+},
+{
+"scientificTerm":"Biological drills",
+"farmerTerms":[
+"Deep-rooted plants that punch permanent channels into the subsoil"
+]
+},
+{
+"scientificTerm":"Biological nutrient cycling",
+"farmerTerms":[
+"soil feeding the crop on its own"
+]
+},
+{
+"scientificTerm":"Biological reclamation",
+"farmerTerms":[
+"Letting a salt-tough cover crop and its roots fix the soil instead of chemical washing"
+]
+},
+{
+"scientificTerm":"Biologically correct system",
+"farmerTerms":[
+"working with how the land actually wants to behave"
+]
+},
+{
+"scientificTerm":"Biologically diluted produce",
+"farmerTerms":[
+"big watery vegetables that don't have much real substance to them"
+]
+},
+{
+"scientificTerm":"Biologically locked-up nutrients in degraded soil",
+"farmerTerms":[
+"the minerals are technically still in the soil, but the plant can't get at them because the soil life that unlocks them is dead"
+]
+},
+{
+"scientificTerm":"Biology follows physics (oxygen, water, carbon)",
+"farmerTerms":[
+"get air and water right first, then the soil life sorts out the rest on its own"
+]
+},
+{
+"scientificTerm":"Border phenomenon",
+"farmerTerms":[
+"Bugs wandering in from a neighboring field, not bred in your own"
+]
+},
+{
+"scientificTerm":"Borehole reservoir",
+"farmerTerms":[
+"a deep hole that catches and stores rainwater underground for the tree to draw on"
+]
+},
+{
+"scientificTerm":"Brittle grain syndrome from latent micro-fissures",
+"farmerTerms":[
+"cracks inside the grain you can't see, that make it snap apart in the mill"
+]
+},
+{
+"scientificTerm":"Brix",
+"farmerTerms":[
+"how sweet the fruit measures on a sugar meter"
+]
+},
+{
+"scientificTerm":"Brix and mineral density",
+"farmerTerms":[
+"how much real nutrition and sugar content is packed into the plant"
+]
+},
+{
+"scientificTerm":"Bulk density",
+"farmerTerms":[
+"How tightly packed the soil is, including the air gaps",
+"how tightly packed the soil is"
+]
+},
+{
+"scientificTerm":"C4 photosynthesis",
+"farmerTerms":[
+"a more efficient way some weeds make food that lets them handle heat and dry spells better"
+]
+},
+{
+"scientificTerm":"Calcium carbonate salt clusters",
+"farmerTerms":[
+"Hard, locked-up lime and salt in the soil"
+]
+},
+{
+"scientificTerm":"Canopy closure",
+"farmerTerms":[
+"once the plants have grown enough to shade the ground between them",
+"once the tree branches fill in and shade the ground"
+]
+},
+{
+"scientificTerm":"Capillary rise",
+"farmerTerms":[
+"Water wicking up from the water table through the soil"
+]
+},
+{
+"scientificTerm":"Carbon pump",
+"farmerTerms":[
+"Plants pulling carbon out of the air and depositing it into the soil"
+]
+},
+{
+"scientificTerm":"Casparian strip",
+"farmerTerms":[
+"A waterproof gatekeeper layer inside the root"
+]
+},
+{
+"scientificTerm":"Cation exchange capacity (CEC)",
+"farmerTerms":[
+"How well the soil holds onto nutrients so they don't wash away",
+"the soil's ability to hold onto nutrients so they don't wash away"
+]
+},
+{
+"scientificTerm":"Ceiling pressure (yield stagnation precursor)",
+"farmerTerms":[
+"yields flattening out no matter what you add"
+]
+},
+{
+"scientificTerm":"Central Leader system",
+"farmerTerms":[
+"treating the plant like a tree with a trunk and branches"
+]
+},
+{
+"scientificTerm":"Central nutrient-aeration zone",
+"farmerTerms":[
+"The drier, airier middle of the bed where roots get concentrated food and oxygen"
+]
+},
+{
+"scientificTerm":"Chlorophyll turnover",
+"farmerTerms":[
+"The green fading to reveal yellow/orange colors that were always underneath"
+]
+},
+{
+"scientificTerm":"Circular, continuous production",
+"farmerTerms":[
+"growing and harvesting happening at the same time, all year, instead of one big cutting season"
+]
+},
+{
+"scientificTerm":"Clay-water slurry pore sealing",
+"farmerTerms":[
+"Painting a thin layer of muddy clay water over the sand to plug the gaps between grains"
+]
+},
+{
+"scientificTerm":"Closed-loop nutrient recycling in livestock economics",
+"farmerTerms":[
+"feeding and fertilizing the farm from its own pasture and manure instead of buying feed"
+]
+},
+{
+"scientificTerm":"Closed-loop organism",
+"farmerTerms":[
+"Treating the whole farm like one living body, not separate parts to manage"
+]
+},
+{
+"scientificTerm":"Closed-loop recycling",
+"farmerTerms":[
+"Nothing leaves or enters the farm from outside"
+]
+},
+{
+"scientificTerm":"Closed-loop, self-sustaining state",
+"farmerTerms":[
+"a field that runs itself"
+]
+},
+{
+"scientificTerm":"Cohesive ball test",
+"farmerTerms":[
+"Squeezing a handful of soil to see if it holds together"
+]
+},
+{
+"scientificTerm":"Colloids",
+"farmerTerms":[
+"The tiniest soil particles (clay and humus) that control fertility"
+]
+},
+{
+"scientificTerm":"Compensatory vegetative regrowth",
+"farmerTerms":[
+"if you injure the plant it just grows more leaves to heal itself, which is the opposite of what you want"
+]
+},
+{
+"scientificTerm":"Compost tea/vermiwash microbial inoculant",
+"farmerTerms":[
+"a liquid brewed from compost or worm castings that feeds the soil's microbes"
+]
+},
+{
+"scientificTerm":"Continuous slit geometry",
+"farmerTerms":[
+"one long unbroken groove the seed falls into"
+]
+},
+{
+"scientificTerm":"Controlled traffic farming",
+"farmerTerms":[
+"Always driving machinery on the same tracks to avoid squashing the rest of the field"
+]
+},
+{
+"scientificTerm":"Convective activity",
+"farmerTerms":[
+"Rising warm, moist air that can trigger rain clouds"
+]
+},
+{
+"scientificTerm":"Corrective Intervention",
+"farmerTerms":[
+"the one-time fix-up phase"
+]
+},
+{
+"scientificTerm":"Cost-push inflation spiral",
+"farmerTerms":[
+"fuel prices dragging up fertilizer and food prices together"
+]
+},
+{
+"scientificTerm":"Crop stand completion",
+"farmerTerms":[
+"once the plants are all up and established evenly across the field"
+]
+},
+{
+"scientificTerm":"Crude protein",
+"farmerTerms":[
+"how nutritious the fodder is for the animals"
+]
+},
+{
+"scientificTerm":"Current-season growth fruiting",
+"farmerTerms":[
+"the tree only fruits on the new branches it grows that same year"
+]
+},
+{
+"scientificTerm":"Curved furrow and borehole infiltration reservoir",
+"farmerTerms":[
+"a curved channel that catches rain and funnels it into a deep hole next to the tree so it soaks in instead of running off"
+]
+},
+{
+"scientificTerm":"Cuticular pathway",
+"farmerTerms":[
+"getting nutrients through the leaf's waxy skin with the help of a wetting agent"
+]
+},
+{
+"scientificTerm":"Deadheading",
+"farmerTerms":[
+"cutting off spent flowers to encourage more blooms"
+]
+},
+{
+"scientificTerm":"Deficiency-inflammation cycle",
+"farmerTerms":[
+"empty food driving chronic health problems"
+]
+},
+{
+"scientificTerm":"Desi seed",
+"farmerTerms":[
+"seed saved from your own crop over several seasons, adapted to your soil"
+]
+},
+{
+"scientificTerm":"Direct Seeded Rice (DSR)",
+"farmerTerms":[
+"planting rice seed straight into dry beds instead of transplanting into flooded mud"
+]
+},
+{
+"scientificTerm":"Displacement of air from soil micropores",
+"farmerTerms":[
+"watering fills up the tiny air gaps in the soil that the good microbes need to breathe"
+]
+},
+{
+"scientificTerm":"Distress selling",
+"farmerTerms":[
+"being forced to sell everything at once at a low price"
+]
+},
+{
+"scientificTerm":"Diurnal temperature swing",
+"farmerTerms":[
+"the gap between how hot the day gets and how cold the night gets"
+]
+},
+{
+"scientificTerm":"Dormancy",
+"farmerTerms":[
+"the tree's winter rest period after it drops its leaves"
+]
+},
+{
+"scientificTerm":"Dry-soil transplanter",
+"farmerTerms":[
+"a machine to plant rice seedlings without flooding the field"
+]
+},
+{
+"scientificTerm":"Dwarfing trait",
+"farmerTerms":[
+"a rootstock that naturally keeps the tree smaller"
+]
+},
+{
+"scientificTerm":"EU RASFF food-safety notifications",
+"farmerTerms":[
+"the official EU alerts that get a shipment of rice rejected or pulled at the border"
+]
+},
+{
+"scientificTerm":"Ecological carrying capacity",
+"farmerTerms":[
+"as productive as the field can naturally get"
+]
+},
+{
+"scientificTerm":"Ecological sovereignty",
+"farmerTerms":[
+"not depending on foreign fuel and fertilizer"
+]
+},
+{
+"scientificTerm":"Ecological stacking",
+"farmerTerms":[
+"growing several crops together on the same bed so nothing goes to waste"
+]
+},
+{
+"scientificTerm":"Ecological succession",
+"farmerTerms":[
+"Soil life rebuilding itself step by step, not overnight"
+]
+},
+{
+"scientificTerm":"Economic-damage threshold",
+"farmerTerms":[
+"The point where pests are actually costing you real money"
+]
+},
+{
+"scientificTerm":"Effective microorganisms (EM) products",
+"farmerTerms":[
+"bottled microbe inoculants you buy and apply"
+]
+},
+{
+"scientificTerm":"Electrical conductivity (EC)",
+"farmerTerms":[
+"A quick measure often used to guess how salty or fertilizer-rich soil water is"
+]
+},
+{
+"scientificTerm":"Emergency-response species colonizing a stressed ecosystem",
+"farmerTerms":[
+"a weed that shows up specifically where the soil has gone bad, like a warning sign"
+]
+},
+{
+"scientificTerm":"Ethanol foliar spray priming heat-shock proteins",
+"farmerTerms":[
+"a mild alcohol spray on the leaves that toughens the plant up"
+]
+},
+{
+"scientificTerm":"Ethylene-based natural ripening via companion fruit",
+"farmerTerms":[
+"putting a ripe banana in with the mangoes so its natural gas helps them ripen"
+]
+},
+{
+"scientificTerm":"Externally supplied irrigation water",
+"farmerTerms":[
+"Water you pump or bring in, not what nature already provides"
+]
+},
+{
+"scientificTerm":"F1 hybrid",
+"farmerTerms":[
+"seed you have to buy fresh every season because saved seed won't come true"
+]
+},
+{
+"scientificTerm":"Failure loop of soil disturbance",
+"farmerTerms":[
+"tilling that creates the very problems it's supposed to fix"
+]
+},
+{
+"scientificTerm":"Failure tolerance",
+"farmerTerms":[
+"being able to survive a bad price or a bad season"
+]
+},
+{
+"scientificTerm":"Fiber security",
+"farmerTerms":[
+"not depending on imported cotton"
+]
+},
+{
+"scientificTerm":"Fibrous and taproot combinations opening bio-pores",
+"farmerTerms":[
+"mixing shallow-rooted and deep-rooted cover plants so their roots open up channels for air and water in the sand"
+]
+},
+{
+"scientificTerm":"Field heat",
+"farmerTerms":[
+"the extra warmth the fruit still carries right after picking from sitting in the sun"
+]
+},
+{
+"scientificTerm":"Field heat removal",
+"farmerTerms":[
+"dunking the fruit in cool water right after picking to cool it down fast",
+"getting the sun's heat out of the fruit quickly after picking, in the shade"
+]
+},
+{
+"scientificTerm":"Filler crops",
+"farmerTerms":[
+"fast-growing vegetables planted in the gaps until the fruit trees mature"
+]
+},
+{
+"scientificTerm":"Foliar application",
+"farmerTerms":[
+"Spraying fertilizer straight onto the leaves instead of the ground"
+]
+},
+{
+"scientificTerm":"Foliar spray",
+"farmerTerms":[
+"spraying nutrients directly on the leaves instead of the soil"
+]
+},
+{
+"scientificTerm":"Forced-air cooling",
+"farmerTerms":[
+"blowing cold air through the crates right after picking to pull the field heat out fast"
+]
+},
+{
+"scientificTerm":"Formative pruning removing the apical tip",
+"farmerTerms":[
+"pinching off the top of the young plant so it branches out low and wide"
+]
+},
+{
+"scientificTerm":"Fracture zone overlap",
+"farmerTerms":[
+"Making sure the cracks from each pass connect underground"
+]
+},
+{
+"scientificTerm":"Fragmentation of tubers by tillage",
+"farmerTerms":[
+"plowing chops the bulbs into pieces and each piece grows into a new plant"
+]
+},
+{
+"scientificTerm":"Free amino acids and sugars in plant sap",
+"farmerTerms":[
+"extra sugary sap that draws pests in, from over-feeding the plant"
+]
+},
+{
+"scientificTerm":"Full Colour harvest stage",
+"farmerTerms":[
+"picking when the tomato gives just slightly to a gentle squeeze"
+]
+},
+{
+"scientificTerm":"Fungal-to-bacterial ratio",
+"farmerTerms":[
+"The mix of fungi versus bacteria living in your soil"
+]
+},
+{
+"scientificTerm":"Genotype x Environment x Management",
+"farmerTerms":[
+"the seed, the weather/soil, and how the farmer manages it, all three together"
+]
+},
+{
+"scientificTerm":"Geosmin",
+"farmerTerms":[
+"The sweet, earthy smell soil gives off after rain"
+]
+},
+{
+"scientificTerm":"Gibberellic acid",
+"farmerTerms":[
+"a plant hormone that can push out weak flowers that don't finish developing"
+]
+},
+{
+"scientificTerm":"Glomalin",
+"farmerTerms":[
+"A sticky glue fungi make that holds soil clumps together"
+]
+},
+{
+"scientificTerm":"Glomalin/microbial glues",
+"farmerTerms":[
+"The natural glue that holds soil clumps together"
+]
+},
+{
+"scientificTerm":"Grain chalkiness and fissuring from grain-filling stress",
+"farmerTerms":[
+"the cloudy, cracked grains you get when the plant is stressed by heat or uneven watering while the grain is filling out"
+]
+},
+{
+"scientificTerm":"Green manure",
+"farmerTerms":[
+"growing a crop just to plough or chop in for soil fertility"
+]
+},
+{
+"scientificTerm":"Guardian's Protocol",
+"farmerTerms":[
+"the farmer's job list once the system is running itself"
+]
+},
+{
+"scientificTerm":"Gusra",
+"farmerTerms":[
+"a fine gritty soil particle common locally that clogs up water absorption"
+]
+},
+{
+"scientificTerm":"Haber-Bosch process",
+"farmerTerms":[
+"how urea fertilizer is made from natural gas"
+]
+},
+{
+"scientificTerm":"Hardpan",
+"farmerTerms":[
+"The concrete-like hard layer beneath the topsoil",
+"The hard, compacted layer under the topsoil",
+"the compacted layer under the soil from repeated ploughing",
+"the hard compacted layer under the soil that roots can't push through",
+"the hard compacted layer under the topsoil that roots can't push through"
+]
+},
+{
+"scientificTerm":"Hardpan compaction (psi)",
+"farmerTerms":[
+"how hard-packed the layer under the topsoil is"
+]
+},
+{
+"scientificTerm":"Hardpan subsoiling",
+"farmerTerms":[
+"breaking up the hard compacted layer under the soil so roots and water can get through"
+]
+},
+{
+"scientificTerm":"Harvest index",
+"farmerTerms":[
+"how much of the plant's growth ends up as usable tubers vs. just leaves and vines"
+]
+},
+{
+"scientificTerm":"Heat-shock protein formation via ethanol priming",
+"farmerTerms":[
+"a mild alcohol spray that toughens the plant against heat and cold swings"
+]
+},
+{
+"scientificTerm":"High transpiration indicator crop",
+"farmerTerms":[
+"banana is thirsty enough that it shows soil problems faster than most crops"
+]
+},
+{
+"scientificTerm":"Hormonal balance shift toward vegetative growth",
+"farmerTerms":[
+"the plant putting all its energy into leaves and vines instead of making tubers"
+]
+},
+{
+"scientificTerm":"Humus",
+"farmerTerms":[
+"Rich, dark, stable organic matter in soil"
+]
+},
+{
+"scientificTerm":"Humus formation",
+"farmerTerms":[
+"Rich dark soil building up over time"
+]
+},
+{
+"scientificTerm":"Hydraulic bridge",
+"farmerTerms":[
+"The soil's ability to wick water up to where roots and air meet"
+]
+},
+{
+"scientificTerm":"Hydrospheric dysregulation",
+"farmerTerms":[
+"The land losing its ability to soak up and slowly release water"
+]
+},
+{
+"scientificTerm":"Hygroscopic buffer",
+"farmerTerms":[
+"Mulch that soaks up overnight dew and humidity like a sponge"
+]
+},
+{
+"scientificTerm":"Illusory abundance",
+"farmerTerms":[
+"big harvest numbers that hide thin, unhealthy food"
+]
+},
+{
+"scientificTerm":"Indeterminate variety",
+"farmerTerms":[
+"a vining tomato that keeps growing and fruiting rather than stopping at a fixed height"
+]
+},
+{
+"scientificTerm":"Indicator species",
+"farmerTerms":[
+"Weeds that tell you what's wrong with the soil"
+]
+},
+{
+"scientificTerm":"Induced Systemic Resistance (ISR)",
+"farmerTerms":[
+"the plant's own immune system getting switched on by good soil bacteria"
+]
+},
+{
+"scientificTerm":"Induced systemic resistance",
+"farmerTerms":[
+"the plant's own built-in defense response kicking in"
+]
+},
+{
+"scientificTerm":"Infiltration failure",
+"farmerTerms":[
+"Rain running off instead of soaking into the ground"
+]
+},
+{
+"scientificTerm":"Inorganic mulch",
+"farmerTerms":[
+"plastic sheeting laid over the soil"
+]
+},
+{
+"scientificTerm":"Input independence",
+"farmerTerms":[
+"not needing to buy fertilizer or spray anymore"
+]
+},
+{
+"scientificTerm":"Input substitution",
+"farmerTerms":[
+"Swapping one bought product (chemical) for another bought product (organic) instead of actually going input-free"
+]
+},
+{
+"scientificTerm":"Input substitution model",
+"farmerTerms":[
+"swapping one bought product for another, natural, one"
+]
+},
+{
+"scientificTerm":"Input-Cost-to-Output-Value Ratio",
+"farmerTerms":[
+"how much you spend on feed versus what you get back in milk, eggs, or meat"
+]
+},
+{
+"scientificTerm":"Input-substitution model",
+"farmerTerms":[
+"organic just swaps one bought product for another"
+]
+},
+{
+"scientificTerm":"Institutional lock-in",
+"farmerTerms":[
+"Everything around you (banks, suppliers, advice) pushing you to keep ploughing"
+]
+},
+{
+"scientificTerm":"Inundation resistance",
+"farmerTerms":[
+"How fast the field drains and dries out after a heavy rain"
+]
+},
+{
+"scientificTerm":"Jantar (Sesbania) biological subsoiler",
+"farmerTerms":[
+"a fast-growing cover crop whose roots punch through the hardpan for you"
+]
+},
+{
+"scientificTerm":"Jeevamrit/Ghanjeevamrit",
+"farmerTerms":[
+"Traditional liquid or solid microbial bio-preparations some farmers brew and apply"
+]
+},
+{
+"scientificTerm":"LEEF Technology",
+"farmerTerms":[
+"the straw-mulch method being trialed at the cotton research institute"
+]
+},
+{
+"scientificTerm":"Land subsidence",
+"farmerTerms":[
+"The ground sinking because too much groundwater has been pumped out"
+]
+},
+{
+"scientificTerm":"Laser-levelled permanent raised beds with furrow irrigation",
+"farmerTerms":[
+"flat, even beds watered from the side channels instead of flooding the whole field"
+]
+},
+{
+"scientificTerm":"Latent heat flux",
+"farmerTerms":[
+"Heat carried away as water evaporates or transpires off plants"
+]
+},
+{
+"scientificTerm":"Lateral hydraulic absorption zone",
+"farmerTerms":[
+"The moist strip near the furrow edge where roots get extra water"
+]
+},
+{
+"scientificTerm":"Leaching",
+"farmerTerms":[
+"Flushing salts down and out of the root zone with water"
+]
+},
+{
+"scientificTerm":"Legacy load",
+"farmerTerms":[
+"Leftover, locked-up minerals from years of chemical farming"
+]
+},
+{
+"scientificTerm":"Leghemoglobin",
+"farmerTerms":[
+"A protein inside root nodules that controls oxygen levels, similar to blood"
+]
+},
+{
+"scientificTerm":"Lenticel damage from latex exposure",
+"farmerTerms":[
+"black spots on the skin from the sap dripping onto the fruit right after cutting"
+]
+},
+{
+"scientificTerm":"Living mulch",
+"farmerTerms":[
+"a low crop like alfalfa grown between rows instead of bare soil or dead mulch"
+]
+},
+{
+"scientificTerm":"Macroporosity",
+"farmerTerms":[
+"The amount of big air/water channels in the soil"
+]
+},
+{
+"scientificTerm":"Matric potential",
+"farmerTerms":[
+"The soil's pull that draws water from wet spots toward dry spots"
+]
+},
+{
+"scientificTerm":"Maunds per acre",
+"farmerTerms":[
+"local yield measure used to compare against national averages"
+]
+},
+{
+"scientificTerm":"Mechanical stress signaling",
+"farmerTerms":[
+"gently pressing the vines to tell the plant to slow down growing leaves and start making tubers"
+]
+},
+{
+"scientificTerm":"Microbial mineralization of Jantar roots and mulch",
+"farmerTerms":[
+"soil life slowly breaking down the cover-crop roots and mulch into plant-available nutrients"
+]
+},
+{
+"scientificTerm":"Microbial mineralization solubilizing native soil minerals",
+"farmerTerms":[
+"soil microbes unlocking the minerals already in the ground so the plant can use them"
+]
+},
+{
+"scientificTerm":"Microbial mining",
+"farmerTerms":[
+"microbes unlocking minerals already in the soil"
+]
+},
+{
+"scientificTerm":"Micronutrients",
+"farmerTerms":[
+"trace minerals like zinc, iron, boron that plants only need a little of"
+]
+},
+{
+"scientificTerm":"Mineral complexity via root reach",
+"farmerTerms":[
+"deeper roots reaching more of the soil's mineral wealth"
+]
+},
+{
+"scientificTerm":"Mineral cycle self-regulation",
+"farmerTerms":[
+"the soil feeding the crop on its own"
+]
+},
+{
+"scientificTerm":"Minimal intervention philosophy",
+"farmerTerms":[
+"leaving the crop mostly alone once it's mulched and bedded"
+]
+},
+{
+"scientificTerm":"Moisture gradient between outer endosperm and hydrated core during drying",
+"farmerTerms":[
+"the outside of the grain drying faster than the inside, so it cracks from the stress"
+]
+},
+{
+"scientificTerm":"Moisture gradient via extended furrow-irrigation intervals",
+"farmerTerms":[
+"letting the field dry out a bit longer between waterings to mildly stress the roots"
+]
+},
+{
+"scientificTerm":"Moisture tension gradient",
+"farmerTerms":[
+"how the soil naturally pulls and holds water where roots need it"
+]
+},
+{
+"scientificTerm":"Montmorillonite/kaolinite/illite/vermiculite",
+"farmerTerms":[
+"Different types of clay in the soil, each behaving differently"
+]
+},
+{
+"scientificTerm":"Mycorrhizal association",
+"farmerTerms":[
+"White, fuzzy threads coating the roots"
+]
+},
+{
+"scientificTerm":"Mycorrhizal fungal bridge",
+"farmerTerms":[
+"The underground fungus network that feeds the roots"
+]
+},
+{
+"scientificTerm":"Mycorrhizal fungi",
+"farmerTerms":[
+"Root-partner fungi that stretch a plant's reach for nutrients",
+"Thread-like fungi that team up with roots",
+"soil fungi that act like an extra set of roots, fetching minerals the plant can't reach on its own"
+]
+},
+{
+"scientificTerm":"Mycorrhizal fungi activity",
+"farmerTerms":[
+"mushrooms popping up after rain, a sign the soil is alive"
+]
+},
+{
+"scientificTerm":"Mycorrhizal fungi as ecosystem engineers",
+"farmerTerms":[
+"the underground fungal network that first breaks rock into soil"
+]
+},
+{
+"scientificTerm":"Mycorrhizal mobilization of mineral reserves",
+"farmerTerms":[
+"the soil fungi digging up minerals already in the ground instead of buying fertilizer"
+]
+},
+{
+"scientificTerm":"Mycorrhizal phosphatase liberation",
+"farmerTerms":[
+"Soil fungi that trade nutrients to the plant for sugar"
+]
+},
+{
+"scientificTerm":"Native breed forage-conversion efficiency",
+"farmerTerms":[
+"local cattle breeds that turn grass into rich milk better than imported high-volume breeds"
+]
+},
+{
+"scientificTerm":"Natural predator populations",
+"farmerTerms":[
+"ants and other bugs that eat the pests for you"
+]
+},
+{
+"scientificTerm":"Net salt balance",
+"farmerTerms":[
+"Whether washing the field actually removes more salt than the water itself adds back"
+]
+},
+{
+"scientificTerm":"Nitrogen draw-down",
+"farmerTerms":[
+"The soil temporarily 'stealing' nitrogen while breaking down dry straw"
+]
+},
+{
+"scientificTerm":"Nitrogen fixation performed by soil microbes, not the plant",
+"farmerTerms":[
+"it's the bugs in the soil doing the nitrogen work, not the tree itself"
+]
+},
+{
+"scientificTerm":"Nitrogenase",
+"farmerTerms":[
+"The enzyme bacteria use to pull nitrogen from the air, but it breaks if oxygen touches it directly"
+]
+},
+{
+"scientificTerm":"Nod factor signaling",
+"farmerTerms":[
+"the chemical 'handshake' between plant and bacteria"
+]
+},
+{
+"scientificTerm":"Node formation / stem elongation",
+"farmerTerms":[
+"the point where the stalk has started to shoot up, past which grazing kills the yield"
+]
+},
+{
+"scientificTerm":"Nodulation",
+"farmerTerms":[
+"Root nodules forming where bacteria fix nitrogen"
+]
+},
+{
+"scientificTerm":"Nurse-tree cover crop",
+"farmerTerms":[
+"Fast-growing shade plants that protect young trees while they establish"
+]
+},
+{
+"scientificTerm":"Nutrient Density Index",
+"farmerTerms":[
+"a lab score comparing how much real nutrition is packed into the produce versus the regional average"
+]
+},
+{
+"scientificTerm":"Nutrient dilution effect",
+"farmerTerms":[
+"bigger harvests but thinner food"
+]
+},
+{
+"scientificTerm":"Open-center/vase pruning",
+"farmerTerms":[
+"pruning the tree into a bowl shape so light and air reach the middle"
+]
+},
+{
+"scientificTerm":"Operationally specific process",
+"farmerTerms":[
+"a step-by-step recipe, not just a theory"
+]
+},
+{
+"scientificTerm":"Outcome-based validation",
+"farmerTerms":[
+"testing what's actually in the food instead of just checking a list of approved inputs"
+]
+},
+{
+"scientificTerm":"Over-transpiration under nutrient-poor conditions",
+"farmerTerms":[
+"the tree has to pull more water just to scavenge enough scattered nutrients"
+]
+},
+{
+"scientificTerm":"Overlapping generations within a clump",
+"farmerTerms":[
+"new shoots already coming up from the base before you've even finished cutting the mature canes"
+]
+},
+{
+"scientificTerm":"Oxygen diffusion rate",
+"farmerTerms":[
+"How fast fresh air can get down into the soil"
+]
+},
+{
+"scientificTerm":"PQNK Transition Bonds",
+"farmerTerms":[
+"a loan-like investment that pays for farms to convert, paid back as farms become profitable"
+]
+},
+{
+"scientificTerm":"Panicle",
+"farmerTerms":[
+"the wheat head"
+]
+},
+{
+"scientificTerm":"Paradoxical agriculture",
+"farmerTerms":[
+"getting more crop while using fewer inputs, which sounds backwards but is what the trial actually measured"
+]
+},
+{
+"scientificTerm":"Parent material",
+"farmerTerms":[
+"The original rock and mineral base your soil formed from"
+]
+},
+{
+"scientificTerm":"Particle density",
+"farmerTerms":[
+"How dense the actual soil grains are, ignoring air gaps"
+]
+},
+{
+"scientificTerm":"Passive absorption",
+"farmerTerms":[
+"Nutrients flowing into roots on their own, like water running downhill"
+]
+},
+{
+"scientificTerm":"Peds/aggregates",
+"farmerTerms":[
+"Soil crumbs"
+]
+},
+{
+"scientificTerm":"Perfect, bisexual flower capable of self-pollination",
+"farmerTerms":[
+"every single bloom can turn into fruit on its own, no separate male flower needed"
+]
+},
+{
+"scientificTerm":"Phokki fruit",
+"farmerTerms":[
+"watery, bland-tasting melon"
+]
+},
+{
+"scientificTerm":"Phosphate/potassium-solubilizing bacteria",
+"farmerTerms":[
+"Soil microbes that unlock nutrients already in the ground"
+]
+},
+{
+"scientificTerm":"Photosynthate",
+"farmerTerms":[
+"Sugar the plant makes from sunlight"
+]
+},
+{
+"scientificTerm":"Physiological maturity",
+"farmerTerms":[
+"golden stalk, still a bit green just under the head, and hard grain -- ready to cut",
+"when the crop is actually ready, not just by the calendar"
+]
+},
+{
+"scientificTerm":"Physiological vs. horticultural maturity",
+"farmerTerms":[
+"the difference between when the fruit is truly ripe inside and when it just looks ready to pick"
+]
+},
+{
+"scientificTerm":"Phytocentric Management",
+"farmerTerms":[
+"managing the farm around keeping diverse plants growing, not just feeding the crop directly"
+]
+},
+{
+"scientificTerm":"Phytochemical density",
+"farmerTerms":[
+"how much real flavor, aroma, and goodness is packed into the crop, not just its size"
+]
+},
+{
+"scientificTerm":"Planter precision",
+"farmerTerms":[
+"how accurately the machine drops seed instead of wasting it"
+]
+},
+{
+"scientificTerm":"Planting geometry",
+"farmerTerms":[
+"how the rows and beds are laid out"
+]
+},
+{
+"scientificTerm":"Post-harvest loss reduction",
+"farmerTerms":[
+"produce that doesn't rot before you can sell it"
+]
+},
+{
+"scientificTerm":"Post-harvest pruning of fruiting branches",
+"farmerTerms":[
+"cutting back the branches that just finished fruiting to push new growth"
+]
+},
+{
+"scientificTerm":"Post-harvest weight-loss shrinkage benchmark",
+"farmerTerms":[
+"how much the onion shrivels and loses weight in storage after harvest"
+]
+},
+{
+"scientificTerm":"Potential ATP Yield (P.A.Y.)",
+"farmerTerms":[
+"a score for how much real usable energy your body actually gets from the food"
+]
+},
+{
+"scientificTerm":"Precision no-till equipment",
+"farmerTerms":[
+"a planter that seeds straight through the mulch"
+]
+},
+{
+"scientificTerm":"Precision seed rate",
+"farmerTerms":[
+"using much less seed, spaced out properly"
+]
+},
+{
+"scientificTerm":"Precision weeder-aerator",
+"farmerTerms":[
+"a tool that weeds and loosens the soil surface instead of spraying herbicide"
+]
+},
+{
+"scientificTerm":"Predator pyramid",
+"farmerTerms":[
+"the natural chain of bugs and animals that keep pests in check"
+]
+},
+{
+"scientificTerm":"Premature senescence",
+"farmerTerms":[
+"the plant dying off and drying out too early"
+]
+},
+{
+"scientificTerm":"Primary wealth generation",
+"farmerTerms":[
+"actually growing something real, not just moving money around"
+]
+},
+{
+"scientificTerm":"Propagules/offsets",
+"farmerTerms":[
+"baby bulbs pulled off the mother plant"
+]
+},
+{
+"scientificTerm":"Provision Principle / microbial nutrient provision",
+"farmerTerms":[
+"letting soil microbes feed the crop instead of buying fertilizer"
+]
+},
+{
+"scientificTerm":"Qudratti Nizam",
+"farmerTerms":[
+"nature's own built-in system"
+]
+},
+{
+"scientificTerm":"Redox potential (Eh)",
+"farmerTerms":[
+"Whether a spot in the soil is more 'breathing air' or 'starved of air'"
+]
+},
+{
+"scientificTerm":"Regenerative Phase",
+"farmerTerms":[
+"the soil rebuilding itself after the fix-up"
+]
+},
+{
+"scientificTerm":"Rejuvenation pruning",
+"farmerTerms":[
+"cutting the plant back hard after a big fruit flush to push out fresh new growth"
+]
+},
+{
+"scientificTerm":"Relative humidity (RH)",
+"farmerTerms":[
+"How muggy or damp the air feels around your plants"
+]
+},
+{
+"scientificTerm":"Relay cropping",
+"farmerTerms":[
+"Planting the next crop before the last one is fully finished"
+]
+},
+{
+"scientificTerm":"Resident Bacillus thuringiensis in healthy soil",
+"farmerTerms":[
+"the natural pest-fighting bacteria already living in good soil"
+]
+},
+{
+"scientificTerm":"Residual sodium carbonate",
+"farmerTerms":[
+"Leftover salt in the water that can build up alkalinity over time"
+]
+},
+{
+"scientificTerm":"Residue mulch",
+"farmerTerms":[
+"leaving old crop stubble on top of the soil"
+]
+},
+{
+"scientificTerm":"Residue retention as surface mulch",
+"farmerTerms":[
+"leaving the grass and old leaves right where they fall instead of clearing them"
+]
+},
+{
+"scientificTerm":"Restored subsoil capillary function",
+"farmerTerms":[
+"the soil's own ability to wick water back up to the roots from deeper down"
+]
+},
+{
+"scientificTerm":"Rhizobium nitrogen-fixing colonies",
+"farmerTerms":[
+"the natural bacteria in roots that pull nitrogen from the air"
+]
+},
+{
+"scientificTerm":"Rhizome divisions",
+"farmerTerms":[
+"pieces of bamboo root used to start new plants"
+]
+},
+{
+"scientificTerm":"Rhizome network density as a soil-health indicator",
+"farmerTerms":[
+"a thicker clump of cane means the soil underneath it is getting healthier, not overcrowded"
+]
+},
+{
+"scientificTerm":"Rhizome-forming perennial grass",
+"farmerTerms":[
+"a clump-forming plant like bamboo that keeps sending up new shoots from the same base"
+]
+},
+{
+"scientificTerm":"Rhizophagy cycle",
+"farmerTerms":[
+"Roots 'farming' bacteria and then digesting them to get their nutrients"
+]
+},
+{
+"scientificTerm":"Rhizosphere",
+"farmerTerms":[
+"The thin zone of soil right around the roots"
+]
+},
+{
+"scientificTerm":"Rhizosphere heterogeneity",
+"farmerTerms":[
+"Different conditions in different parts of the root zone, on purpose"
+]
+},
+{
+"scientificTerm":"Root architecture",
+"farmerTerms":[
+"How the roots look and branch when you pull up a plant"
+]
+},
+{
+"scientificTerm":"Root architecture outcome from restored soil biology",
+"farmerTerms":[
+"deep, strong roots that come from healthy soil, not from a special banana variety"
+]
+},
+{
+"scientificTerm":"Root exudates",
+"farmerTerms":[
+"Sugary sap plants leak from their roots to feed soil microbes",
+"chemicals roots release to 'talk to' soil microbes",
+"the sugars a plant leaks out of its roots to feed soil microbes in exchange for nutrients"
+]
+},
+{
+"scientificTerm":"Root exudates / plant pull",
+"farmerTerms":[
+"the plant's roots calling for nutrients only when it actually needs them"
+]
+},
+{
+"scientificTerm":"Root exudates buffering pH",
+"farmerTerms":[
+"The plant's own root chemistry softening the harsh soil right around it"
+]
+},
+{
+"scientificTerm":"Root-exuded organic acids",
+"farmerTerms":[
+"Chemicals the roots release to unlock nutrients from soil"
+]
+},
+{
+"scientificTerm":"Root-zone ball test",
+"farmerTerms":[
+"squeezing a handful of soil from near the roots to check if it's actually dry before watering"
+]
+},
+{
+"scientificTerm":"Root-zone temperature stability",
+"farmerTerms":[
+"keeping the soil around the roots at a steady, comfortable temperature"
+]
+},
+{
+"scientificTerm":"Rootstock",
+"farmerTerms":[
+"the root part of the tree that the fruiting variety is grafted onto"
+]
+},
+{
+"scientificTerm":"Runners",
+"farmerTerms":[
+"the long shoots the plant sends out to make new baby plants"
+]
+},
+{
+"scientificTerm":"Same-height guild / staggered-height guild",
+"farmerTerms":[
+"planting matched-height crops close together, or taller crops over shorter ones so everyone still gets sun"
+]
+},
+{
+"scientificTerm":"Sanitary pruning",
+"farmerTerms":[
+"cutting out dead or diseased branches"
+]
+},
+{
+"scientificTerm":"Saprophytic colonization",
+"farmerTerms":[
+"Fungi first moving into the mulch to break it down"
+]
+},
+{
+"scientificTerm":"Secondary metabolites",
+"farmerTerms":[
+"the flavor-and-aroma compounds a plant makes when it isn't just focused on growing bigger"
+]
+},
+{
+"scientificTerm":"Seed meter",
+"farmerTerms":[
+"the part that doles out how many seeds and how fast"
+]
+},
+{
+"scientificTerm":"Seed opener",
+"farmerTerms":[
+"the part that actually cuts the slot and drops the seed in"
+]
+},
+{
+"scientificTerm":"Seed stalk / umbel",
+"farmerTerms":[
+"the flower stalk that comes up from the bulb and produces the seed head"
+]
+},
+{
+"scientificTerm":"Selective culm harvesting",
+"farmerTerms":[
+"cutting only some of the mature bamboo stalks each year, not the whole clump"
+]
+},
+{
+"scientificTerm":"Selective harvesting",
+"farmerTerms":[
+"cutting only the fully mature canes and leaving the young shoots standing"
+]
+},
+{
+"scientificTerm":"Semi-ventilated ripening box with controlled hole size",
+"farmerTerms":[
+"a box with small air holes, not sealed airtight and not wide open either"
+]
+},
+{
+"scientificTerm":"Senescing lower leaves",
+"farmerTerms":[
+"the older bottom leaves that have stopped doing useful work for the plant"
+]
+},
+{
+"scientificTerm":"Single-bud sett planting",
+"farmerTerms":[
+"planting single-eye cane pieces instead of big multi-bud stalks, using far less seed cane"
+]
+},
+{
+"scientificTerm":"Single-eye seed pieces",
+"farmerTerms":[
+"cutting one seed potato into four smaller pieces, each with a sprouting eye"
+]
+},
+{
+"scientificTerm":"Sink-strength manipulation",
+"farmerTerms":[
+"cutting off the weak flowers so the tree's energy goes to the strong ones"
+]
+},
+{
+"scientificTerm":"Slake test",
+"farmerTerms":[
+"Dropping a soil clump in water to see if it holds together"
+]
+},
+{
+"scientificTerm":"Slit Insertion Precision Planter (SIPP)",
+"farmerTerms":[
+"the planter that pokes a small seed pocket through the mulch without disturbing the rest of the bed"
+]
+},
+{
+"scientificTerm":"Small water cycle",
+"farmerTerms":[
+"Rain that comes from moisture recycled locally off nearby plants and soil, not just from the sea"
+]
+},
+{
+"scientificTerm":"Soak-and-wrap germination test",
+"farmerTerms":[
+"Testing seeds in a damp cloth before planting to see how many actually sprout"
+]
+},
+{
+"scientificTerm":"Sodium adsorption ratio (SAR)",
+"farmerTerms":[
+"A number showing how much the water will make soil clay swell and seal up"
+]
+},
+{
+"scientificTerm":"Soil Moisture Management",
+"farmerTerms":[
+"watering based on what the crop actually needs, not a fixed schedule"
+]
+},
+{
+"scientificTerm":"Soil Moisture Management (SMM)",
+"farmerTerms":[
+"Watering in smaller, smarter amounts instead of flooding",
+"checking the soil by hand before deciding whether to irrigate"
+]
+},
+{
+"scientificTerm":"Soil aggregate collapse",
+"farmerTerms":[
+"the soil crumbling apart and losing its structure"
+]
+},
+{
+"scientificTerm":"Soil as a chemical warehouse",
+"farmerTerms":[
+"feeding the plant straight salts instead of letting the soil life do the cooking"
+]
+},
+{
+"scientificTerm":"Soil biology solubilizing nutrients",
+"farmerTerms":[
+"letting soil life unlock the food already in the ground instead of buying fertilizer"
+]
+},
+{
+"scientificTerm":"Soil food web activation",
+"farmerTerms":[
+"the point where the soil life takes over feeding the plant on its own"
+]
+},
+{
+"scientificTerm":"Soil organic carbon",
+"farmerTerms":[
+"The dark, rich carbon built up in the soil"
+]
+},
+{
+"scientificTerm":"Soil organic matter",
+"farmerTerms":[
+"the dark, living part of the soil"
+]
+},
+{
+"scientificTerm":"Soil organic matter accumulation",
+"farmerTerms":[
+"the soil getting richer in organic material over the years"
+]
+},
+{
+"scientificTerm":"Soil pore water content",
+"farmerTerms":[
+"how wet the soil feels when you squeeze it"
+]
+},
+{
+"scientificTerm":"Soil respiration",
+"farmerTerms":[
+"Soil life breathing, using up oxygen and giving off CO2"
+]
+},
+{
+"scientificTerm":"Soil solution",
+"farmerTerms":[
+"the water-and-nutrient mix sitting in the soil that the roots actually drink from"
+]
+},
+{
+"scientificTerm":"Soil structure",
+"farmerTerms":[
+"How those particles clump into crumbs, which biology can rebuild"
+]
+},
+{
+"scientificTerm":"Soil system substitution",
+"farmerTerms":[
+"Using chemicals to do the job living soil used to do for free"
+]
+},
+{
+"scientificTerm":"Soil texture",
+"farmerTerms":[
+"The basic sand/silt/clay mix your soil was born with, hard to change"
+]
+},
+{
+"scientificTerm":"Soil-borne disease barrier",
+"farmerTerms":[
+"mulch keeping the lower leaves from touching wet soil and picking up disease"
+]
+},
+{
+"scientificTerm":"Soil-plant covenant",
+"farmerTerms":[
+"the working partnership between the plant and the soil life feeding it"
+]
+},
+{
+"scientificTerm":"Source-sink relationship",
+"farmerTerms":[
+"how much of the plant's energy goes to making tubers versus growing leaves",
+"how much of the plant's food-making goes into filling the grain"
+]
+},
+{
+"scientificTerm":"Sourcing radius",
+"farmerTerms":[
+"how far away the mill's cane fields are"
+]
+},
+{
+"scientificTerm":"Spikelets",
+"farmerTerms":[
+"the little seed-bearing segments on the wheat head"
+]
+},
+{
+"scientificTerm":"Stable Soil Carbon (SSC)",
+"farmerTerms":[
+"the part of soil carbon that sticks around for decades and actually builds the soil"
+]
+},
+{
+"scientificTerm":"Stamping (treading)",
+"farmerTerms":[
+"gently pressing down the soil around tubers to slow leaf growth"
+]
+},
+{
+"scientificTerm":"Stigma receptivity",
+"farmerTerms":[
+"Whether the flower is actually ready to receive pollen"
+]
+},
+{
+"scientificTerm":"Stomatal pathway",
+"farmerTerms":[
+"feeding the leaf through its breathing pores when they're open, morning or evening"
+]
+},
+{
+"scientificTerm":"Stored carbohydrate reserves",
+"farmerTerms":[
+"Energy the plant already banked up from sunnier months"
+]
+},
+{
+"scientificTerm":"Stress rings",
+"farmerTerms":[
+"visible ring marks inside the grain from repeated wetting-and-drying cycles"
+]
+},
+{
+"scientificTerm":"Subsoil compaction",
+"farmerTerms":[
+"A hard, packed layer under the topsoil that roots can't push through"
+]
+},
+{
+"scientificTerm":"Subsoiling",
+"farmerTerms":[
+"Deep-ripping the ground once to shatter the hard layer"
+]
+},
+{
+"scientificTerm":"Sucker (axillary shoot)",
+"farmerTerms":[
+"the little side-shoot that grows in the crotch between the main stem and a branch"
+]
+},
+{
+"scientificTerm":"Sucrose concentration from reduced water dilution",
+"farmerTerms":[
+"sweeter juice because the cane isn't waterlogged and diluted"
+]
+},
+{
+"scientificTerm":"Sugar recovery rate",
+"farmerTerms":[
+"how much actual sugar the mill gets out of the cane"
+]
+},
+{
+"scientificTerm":"Sugar-based liquid inputs (jaggery/sugar brews)",
+"farmerTerms":[
+"sweet homemade teas and brews poured onto the soil"
+]
+},
+{
+"scientificTerm":"Surface scarification",
+"farmerTerms":[
+"lightly breaking up the topsoil with a chisel plough instead of deep ploughing"
+]
+},
+{
+"scientificTerm":"Sustained Closed Loop State",
+"farmerTerms":[
+"soil that's fully healed and runs its own nutrient cycle without help",
+"the farm running itself long-term"
+]
+},
+{
+"scientificTerm":"Sustained state",
+"farmerTerms":[
+"once the orchard's soil is fully self-sufficient and doesn't need outside inputs anymore"
+]
+},
+{
+"scientificTerm":"System of Rice Intensification (SRI)",
+"farmerTerms":[
+"a method of growing rice with young single seedlings and wider spacing instead of flooding and clumping"
+]
+},
+{
+"scientificTerm":"T1/T2/T3 treatments",
+"farmerTerms":[
+"the three different ways the same wheat was planted and compared side by side"
+]
+},
+{
+"scientificTerm":"Taproot depth",
+"farmerTerms":[
+"how far down the main root can grow to reach water"
+]
+},
+{
+"scientificTerm":"Terroir",
+"farmerTerms":[
+"the particular taste a place gives its crops"
+]
+},
+{
+"scientificTerm":"Thermal flywheel",
+"farmerTerms":[
+"Mulch keeping the root zone at a steady temperature even when the air above spikes"
+]
+},
+{
+"scientificTerm":"Thermal shock from irrigation water temperature differential",
+"farmerTerms":[
+"cold canal or tube-well water hitting warm mulch-covered soil and shocking the roots"
+]
+},
+{
+"scientificTerm":"Thermoperiodicity",
+"farmerTerms":[
+"The plant's internal calendar that tracks accumulated warmth and cold"
+]
+},
+{
+"scientificTerm":"Tillering",
+"farmerTerms":[
+"The plant sending up more side shoots instead of growing tall",
+"the plant sending up extra stalks from the base"
+]
+},
+{
+"scientificTerm":"Tip-cutting",
+"farmerTerms":[
+"snipping the growing tip of the runner once the fruit is marble-sized"
+]
+},
+{
+"scientificTerm":"Tissue coherence",
+"farmerTerms":[
+"how well the fruit or vegetable holds together instead of going soft and mushy"
+]
+},
+{
+"scientificTerm":"Total dissolved solids (TDS)",
+"farmerTerms":[
+"How salty the water is"
+]
+},
+{
+"scientificTerm":"Toxin residue screen",
+"farmerTerms":[
+"a lab test confirming there's no chemical residue left in the produce"
+]
+},
+{
+"scientificTerm":"Transpiration-based irrigation demand",
+"farmerTerms":[
+"only watering to replace what the tree actually breathes off"
+]
+},
+{
+"scientificTerm":"True Cost Accounting",
+"farmerTerms":[
+"counting the hidden costs of farming that don't show up on the receipt, like soil and water damage",
+"counting the real cost of farming, including damage to soil and water that's usually ignored"
+]
+},
+{
+"scientificTerm":"True Onion Seed (TOS)",
+"farmerTerms":[
+"actual onion seed for planting, not the bulb itself"
+]
+},
+{
+"scientificTerm":"Tuber bulking",
+"farmerTerms":[
+"the potatoes actually swelling and filling out"
+]
+},
+{
+"scientificTerm":"Tuber-zone thermal protection",
+"farmerTerms":[
+"keeping the soil around the seed piece cool enough for tubers to form"
+]
+},
+{
+"scientificTerm":"Tubers as biological drills into compacted layers",
+"farmerTerms":[
+"the weed's underground bulbs punching through the hardpan the way your crop's roots can't"
+]
+},
+{
+"scientificTerm":"Under-canopy predator habitat for Bactrocera oleae",
+"farmerTerms":[
+"the mix of plants under the olive trees that gives natural predators a home to keep the fruit fly in check"
+]
+},
+{
+"scientificTerm":"Value attribution across the chain",
+"farmerTerms":[
+"who actually gets paid for what, from field to finished shirt"
+]
+},
+{
+"scientificTerm":"Vattar-wafsa air-water balance",
+"farmerTerms":[
+"soil that's moist enough to work but never soggy"
+]
+},
+{
+"scientificTerm":"Vine pressing",
+"farmerTerms":[
+"pressing down the potato vines with a plank so the plant starts making tubers instead of more leaves"
+]
+},
+{
+"scientificTerm":"Water infiltration rate",
+"farmerTerms":[
+"How fast rain or irrigation water soaks into the ground"
+]
+},
+{
+"scientificTerm":"Water shoots/suckers",
+"farmerTerms":[
+"shoots growing from below the graft that need to be cut off"
+]
+},
+{
+"scientificTerm":"Water-filled pore space",
+"farmerTerms":[
+"how much of the soil's tiny gaps are holding water versus air"
+]
+},
+{
+"scientificTerm":"Water-mineral dilution",
+"farmerTerms":[
+"too much water waters down the flavor and sweetness"
+]
+},
+{
+"scientificTerm":"Water-wash irrigation to leach salts",
+"farmerTerms":[
+"one deep flood-and-drain watering to rinse the built-up salt and chemical residue out of the soil"
+]
+},
+{
+"scientificTerm":"Waterlogging and salinization",
+"farmerTerms":[
+"fields staying soggy and turning salty/crusty"
+]
+},
+{
+"scientificTerm":"Weathering engine",
+"farmerTerms":[
+"The soil's natural nutrient-release system"
+]
+},
+{
+"scientificTerm":"Weeds as pioneer species",
+"farmerTerms":[
+"weeds showing up to repair damaged ground, not just to compete with the crop"
+]
+},
+{
+"scientificTerm":"Zero-tillage direct seeding",
+"farmerTerms":[
+"planting straight into the field without ploughing"
+]
+},
+{
+"scientificTerm":"advance rate",
+"farmerTerms":[
+"how fast the irrigation water creeps down the furrow"
+]
+},
+{
+"scientificTerm":"aerobic soil microbes",
+"farmerTerms":[
+"the good soil bugs that need air to breathe, living in the tiny gaps between soil particles"
+]
+},
+{
+"scientificTerm":"aggregated crumb structure",
+"farmerTerms":[
+"soil that clumps into little crumbs instead of falling apart as powder"
+]
+},
+{
+"scientificTerm":"agro-rental network",
+"farmerTerms":[
+"renting PQNK machinery instead of buying it outright"
+]
+},
+{
+"scientificTerm":"air-pruned root system",
+"farmerTerms":[
+"roots that stop growing long and tangled because they hit open air, so the seedling stays healthy and compact"
+]
+},
+{
+"scientificTerm":"allelopathic suppression",
+"farmerTerms":[
+"weeds poisoning the soil around them so other plants can't compete"
+]
+},
+{
+"scientificTerm":"alley cropping",
+"farmerTerms":[
+"growing crops in the strips between rows of fruit trees",
+"growing regular crops in the strips between rows of trees"
+]
+},
+{
+"scientificTerm":"antixenosis",
+"farmerTerms":[
+"the plant's tissue becoming unappetizing or hard to digest for pests"
+]
+},
+{
+"scientificTerm":"apical dominance",
+"farmerTerms":[
+"the main shoot hogging the plant's energy and stopping side shoots from growing",
+"the top growing point bossing the rest of the plant into staying small",
+"the top shoot holding back the side shoots from growing"
+]
+},
+{
+"scientificTerm":"atmospheric rhizosphere exchange",
+"farmerTerms":[
+"the smell of a healthy field changing through the day"
+]
+},
+{
+"scientificTerm":"available nutrient paradigm",
+"farmerTerms":[
+"only testing for the nutrients already dissolved and ready to use, ignoring the much bigger mineral reserve locked in the soil"
+]
+},
+{
+"scientificTerm":"avoided costs pillar",
+"farmerTerms":[
+"money you don't have to spend anymore on tillage, chemicals, and irrigation"
+]
+},
+{
+"scientificTerm":"bio-potentiation",
+"farmerTerms":[
+"each step up the food chain making the food more nourishing, not less"
+]
+},
+{
+"scientificTerm":"bioaccumulation",
+"farmerTerms":[
+"poison building up in the body over time"
+]
+},
+{
+"scientificTerm":"biogas slurry as intermediate material",
+"farmerTerms":[
+"slurry straight from the biogas plant isn't finished compost yet"
+]
+},
+{
+"scientificTerm":"biological activation",
+"farmerTerms":[
+"the soil 'waking up' after water and air both become available"
+]
+},
+{
+"scientificTerm":"biological climate buffering",
+"farmerTerms":[
+"using overlapping crops to naturally shade and protect each other from weather extremes"
+]
+},
+{
+"scientificTerm":"biological drilling",
+"farmerTerms":[
+"using deep-rooted plants to break up hardpan instead of machinery alone"
+]
+},
+{
+"scientificTerm":"biological indicator species",
+"farmerTerms":[
+"weeds telling you what's wrong underground"
+]
+},
+{
+"scientificTerm":"biological momentum",
+"farmerTerms":[
+"once the soil starts healing, it keeps getting better on its own"
+]
+},
+{
+"scientificTerm":"biological porosity",
+"farmerTerms":[
+"the open channels living roots leave behind in the soil"
+]
+},
+{
+"scientificTerm":"biological portal",
+"farmerTerms":[
+"soil as a gateway to a much bigger underground mineral bank"
+]
+},
+{
+"scientificTerm":"biological poverty",
+"farmerTerms":[
+"plenty of food on the table but not much real nourishment in it"
+]
+},
+{
+"scientificTerm":"biological-access deficiency",
+"farmerTerms":[
+"the nutrients are already in your soil, the microbes just aren't unlocking them yet"
+]
+},
+{
+"scientificTerm":"biologically inert dead mulch",
+"farmerTerms":[
+"dead mulch protects the soil physically but doesn't feed the microbes on its own"
+]
+},
+{
+"scientificTerm":"biology dominates chemistry",
+"farmerTerms":[
+"letting soil life feed the plant instead of relying on bagged fertilizer"
+]
+},
+{
+"scientificTerm":"biomagnification of toxins",
+"farmerTerms":[
+"poisons building up stronger the higher up the food chain you go"
+]
+},
+{
+"scientificTerm":"biosynthesis of complex phytonutrient profiles",
+"farmerTerms":[
+"the plant taking its time to build up real nutrition, not just bulk"
+]
+},
+{
+"scientificTerm":"broad-spectrum pesticide",
+"farmerTerms":[
+"a spray that kills both good and bad bugs"
+]
+},
+{
+"scientificTerm":"cavitation",
+"farmerTerms":[
+"the water column inside the plant snapping under too much pull"
+]
+},
+{
+"scientificTerm":"chronic low-dose exposure",
+"farmerTerms":[
+"small amounts of poison eaten or absorbed over years"
+]
+},
+{
+"scientificTerm":"compensatory grazing",
+"farmerTerms":[
+"pruning to mimic what grazing animals used to do"
+]
+},
+{
+"scientificTerm":"compulsory selling",
+"farmerTerms":[
+"having to sell right after harvest whether the price is good or not, because you need the cash"
+]
+},
+{
+"scientificTerm":"conquering logic",
+"farmerTerms":[
+"the mindset that something can be used up because it's seen as 'lesser than'"
+]
+},
+{
+"scientificTerm":"contour-aligned furrows functioning as micro check-dams",
+"farmerTerms":[
+"cutting furrows across the slope so rain stops and soaks in instead of running off"
+]
+},
+{
+"scientificTerm":"controlled traffic",
+"farmerTerms":[
+"always driving the tractor in the same furrow tracks so the growing bed never gets driven on",
+"always driving the tractor wheels in the same furrow tracks"
+]
+},
+{
+"scientificTerm":"cover-cropped no-till system",
+"farmerTerms":[
+"never plowing, and always keeping something green growing in the field"
+]
+},
+{
+"scientificTerm":"cross-stress immunity",
+"farmerTerms":[
+"one protective spray helping the plant handle both cold and heat"
+]
+},
+{
+"scientificTerm":"cryoprotectant",
+"farmerTerms":[
+"a spray that helps the plant's cells resist freezing damage"
+]
+},
+{
+"scientificTerm":"cyanobacteria/algae",
+"farmerTerms":[
+"the greenish tint on damp soil surfaces"
+]
+},
+{
+"scientificTerm":"dead soil syndrome",
+"farmerTerms":[
+"soil that's lost most of its living biology and needs constant outside inputs"
+]
+},
+{
+"scientificTerm":"dead/organic mulch",
+"farmerTerms":[
+"straw, leaves, or crop leftovers spread on top of the soil"
+]
+},
+{
+"scientificTerm":"debt cycle",
+"farmerTerms":[
+"borrowing every season just to buy inputs, never getting ahead"
+]
+},
+{
+"scientificTerm":"deep detoxifying irrigation",
+"farmerTerms":[
+"one thorough watering to flush out built-up salts before converting the field"
+]
+},
+{
+"scientificTerm":"degenerative economic cycle",
+"farmerTerms":[
+"sick soil leading to sick food leading to sick people leading to more hospital bills"
+]
+},
+{
+"scientificTerm":"demand-driven buffer",
+"farmerTerms":[
+"microbes releasing nutrients only when the plant's roots ask for them, not all at once"
+]
+},
+{
+"scientificTerm":"detoxification pathway",
+"farmerTerms":[
+"the insect's (or body's) internal system for breaking down poison"
+]
+},
+{
+"scientificTerm":"dilution effect",
+"farmerTerms":[
+"bigger yields spreading the same amount of nutrients over more bushels, so each bite has less in it"
+]
+},
+{
+"scientificTerm":"direct microbial nitrogen fixation",
+"farmerTerms":[
+"getting nitrogen from soil microbes instead of a legume rotation or bagged urea"
+]
+},
+{
+"scientificTerm":"dirt-based hydroponics",
+"farmerTerms":[
+"farming that only works because of constant chemical feeding, not real living soil"
+]
+},
+{
+"scientificTerm":"drum RPM / sieve settings / fan speed calibration",
+"farmerTerms":[
+"setting up the combine correctly so it doesn't throw grain out the back"
+]
+},
+{
+"scientificTerm":"ecological reset",
+"farmerTerms":[
+"starting the soil life over from zero every time you till"
+]
+},
+{
+"scientificTerm":"economic thresholds / integrated pest and nutrient management",
+"farmerTerms":[
+"knowing when a problem is actually worth spending money to fix"
+]
+},
+{
+"scientificTerm":"elemental phosphorus vs P2O5",
+"farmerTerms":[
+"the actual usable phosphorus in the fertilizer bag versus the inflated bag-weight number"
+]
+},
+{
+"scientificTerm":"embryo energy reserves",
+"farmerTerms":[
+"the seed's own stored food it uses to push up through the mulch before it can photosynthesize"
+]
+},
+{
+"scientificTerm":"endocrine disruption",
+"farmerTerms":[
+"chemicals messing with the body's hormones"
+]
+},
+{
+"scientificTerm":"endosperm dormancy",
+"farmerTerms":[
+"the seed's food store staying 'asleep' so it doesn't get broken down"
+]
+},
+{
+"scientificTerm":"endozoochory",
+"farmerTerms":[
+"seeds spreading by passing through an animal's gut"
+]
+},
+{
+"scientificTerm":"energy bankruptcy",
+"farmerTerms":[
+"the plant running out of energy and dropping weak tillers"
+]
+},
+{
+"scientificTerm":"etiolation",
+"farmerTerms":[
+"a plant stretching thin and pale because it's stressed"
+]
+},
+{
+"scientificTerm":"evaporation engine",
+"farmerTerms":[
+"bare soil pumping water straight up into the air instead of holding it"
+]
+},
+{
+"scientificTerm":"evaporative cooling capacity",
+"farmerTerms":[
+"the ocean and land's natural ability to cool itself by letting water evaporate"
+]
+},
+{
+"scientificTerm":"externalizing true costs",
+"farmerTerms":[
+"pushing the real cost of farming (worn-out soil, dirty water, sick people) onto everyone else instead of paying it upfront"
+]
+},
+{
+"scientificTerm":"facultative anaerobes",
+"farmerTerms":[
+"microbes that can survive with or without much air, like the ones in the jaggery water"
+]
+},
+{
+"scientificTerm":"feeder roots / root hairs",
+"farmerTerms":[
+"the tiny fine roots that actually take up water and food"
+]
+},
+{
+"scientificTerm":"field capacity",
+"farmerTerms":[
+"how much water your soil can actually hold before it runs off or drains away"
+]
+},
+{
+"scientificTerm":"forestry mulcher",
+"farmerTerms":[
+"the machine that grinds up brush and small trees in place instead of burning or bulldozing them"
+]
+},
+{
+"scientificTerm":"formative pruning",
+"farmerTerms":[
+"early pruning to build a stronger plant shape"
+]
+},
+{
+"scientificTerm":"free amino acids",
+"farmerTerms":[
+"loose, unused nitrogen in the sap that pests can easily digest"
+]
+},
+{
+"scientificTerm":"full-spectrum mineral uptake",
+"farmerTerms":[
+"plants pulling up the complete range of minerals they need, not just the basics"
+]
+},
+{
+"scientificTerm":"functional redundancy",
+"farmerTerms":[
+"having backup microbes so if one type struggles, another can still do the job"
+]
+},
+{
+"scientificTerm":"fungal mycelium",
+"farmerTerms":[
+"the white, thread-like fuzzy growth you see on wet soil"
+]
+},
+{
+"scientificTerm":"fungal-dominant microbial diversity",
+"farmerTerms":[
+"soil life built more around fungi than bacteria, which builds longer-lasting fertility"
+]
+},
+{
+"scientificTerm":"furrow sidewall compaction",
+"farmerTerms":[
+"the tyre squashing the sloped side of the bed"
+]
+},
+{
+"scientificTerm":"geotropism",
+"farmerTerms":[
+"roots growing down and shoots growing up, following gravity"
+]
+},
+{
+"scientificTerm":"glomalin",
+"farmerTerms":[
+"the natural fungal 'glue' that clumps soil into crumbs"
+]
+},
+{
+"scientificTerm":"glomalin (soil glue)",
+"farmerTerms":[
+"a sticky substance from fungi that holds soil clumps together"
+]
+},
+{
+"scientificTerm":"grain filling",
+"farmerTerms":[
+"the head still pumping sugar into the grain even while green"
+]
+},
+{
+"scientificTerm":"hardpan",
+"farmerTerms":[
+"the hard, compacted layer under the topsoil that roots and water can't get through"
+]
+},
+{
+"scientificTerm":"hardpan fracturing via subsoiler",
+"farmerTerms":[
+"breaking up the hard layer underground so water and roots can get through"
+]
+},
+{
+"scientificTerm":"herd effect / market glut",
+"farmerTerms":[
+"everyone planting the same crop after a good price year, then the market gets flooded and prices crash"
+]
+},
+{
+"scientificTerm":"hidden hunger",
+"farmerTerms":[
+"being overfed on calories but starved of real nutrients"
+]
+},
+{
+"scientificTerm":"high-affinity nutrient transporter",
+"farmerTerms":[
+"the root's 'pump' that gets stronger at pulling in nutrients"
+]
+},
+{
+"scientificTerm":"household bio-system",
+"farmerTerms":[
+"treating your whole garden as one connected living system instead of separate patches"
+]
+},
+{
+"scientificTerm":"humus",
+"farmerTerms":[
+"decomposed organic matter that darkens and enriches soil"
+]
+},
+{
+"scientificTerm":"hydraulic dysfunction",
+"farmerTerms":[
+"over-watering diluting the plant's sap so it's watery and easier for pests to attack"
+]
+},
+{
+"scientificTerm":"hydrotropism",
+"farmerTerms":[
+"roots growing toward moisture"
+]
+},
+{
+"scientificTerm":"induced systemic resistance",
+"farmerTerms":[
+"the plant's own immune system getting switched on by healthy soil microbes"
+]
+},
+{
+"scientificTerm":"infiltration",
+"farmerTerms":[
+"rain soaking down into the ground instead of running off"
+]
+},
+{
+"scientificTerm":"input-based agriculture",
+"farmerTerms":[
+"feeding the plant directly with bagged fertilizer instead of feeding the soil"
+]
+},
+{
+"scientificTerm":"iron oxide (Fe2O3) and manganese oxide (MnO2) coatings",
+"farmerTerms":[
+"rust-like mineral coatings on soil particles that darken the color"
+]
+},
+{
+"scientificTerm":"land-based water-cycle function",
+"farmerTerms":[
+"the land's natural ability to soak up rain and hold water instead of shedding it"
+]
+},
+{
+"scientificTerm":"landrace",
+"farmerTerms":[
+"a local variety shaped by generations of saving seed on the same land"
+]
+},
+{
+"scientificTerm":"laser leveling",
+"farmerTerms":[
+"using a laser-guided blade to make the whole field dead flat"
+]
+},
+{
+"scientificTerm":"lateral gradient hydrology",
+"farmerTerms":[
+"moisture moves sideways from the furrow into the bed"
+]
+},
+{
+"scientificTerm":"lateral pivot irrigation",
+"farmerTerms":[
+"the big wheeled sprinkler arm that circles the field"
+]
+},
+{
+"scientificTerm":"lateral, horizontal infiltration",
+"farmerTerms":[
+"water spreading sideways into the bed from the furrow instead of straight down"
+]
+},
+{
+"scientificTerm":"life-capital",
+"farmerTerms":[
+"wealth measured in healthy soil, clean water, and healthy people, not just money"
+]
+},
+{
+"scientificTerm":"liquid culture inoculant",
+"farmerTerms":[
+"the jaggery-water microbe brew you spray on the field"
+]
+},
+{
+"scientificTerm":"lithotrophic bacteria and mycorrhizal fungi",
+"farmerTerms":[
+"the tiny soil organisms that mine minerals out of rock and dirt for the plant"
+]
+},
+{
+"scientificTerm":"live mulch",
+"farmerTerms":[
+"a growing cover crop planted alongside your main crop",
+"a living ground-cover crop instead of dead straw or leaves"
+]
+},
+{
+"scientificTerm":"living subsoiler",
+"farmerTerms":[
+"a plant whose roots do the job of the subsoiler machine, for free, every season"
+]
+},
+{
+"scientificTerm":"localized anaerobic micro-environment",
+"farmerTerms":[
+"a small pocket of dead, oxygen-starved soil around a damaged root"
+]
+},
+{
+"scientificTerm":"lodging",
+"farmerTerms":[
+"crops falling over in the field"
+]
+},
+{
+"scientificTerm":"microbial glues and fungal hyphae",
+"farmerTerms":[
+"the natural 'glue' that holds soil crumbs together"
+]
+},
+{
+"scientificTerm":"mineral 'ash' fraction",
+"farmerTerms":[
+"the small amount of actual soil minerals in the plant, the rest is basically air and water"
+]
+},
+{
+"scientificTerm":"mineral wealth already abundant",
+"farmerTerms":[
+"the soil already has plenty of minerals, it just needs more biology to use them"
+]
+},
+{
+"scientificTerm":"mulch as a moisture-harvesting sponge",
+"farmerTerms":[
+"mulch soaking up morning dew and humidity like a sponge"
+]
+},
+{
+"scientificTerm":"multi-layer compaction",
+"farmerTerms":[
+"hard soil at more than one depth"
+]
+},
+{
+"scientificTerm":"myco-electrical networks",
+"farmerTerms":[
+"the web of white fungal threads connecting plant roots underground"
+]
+},
+{
+"scientificTerm":"mycorrhizal fungi",
+"farmerTerms":[
+"the fine fungal threads in healthy soil that help roots pull up minerals"
+]
+},
+{
+"scientificTerm":"nematode-trapping fungi",
+"farmerTerms":[
+"natural fungi that catch and kill nematodes for you"
+]
+},
+{
+"scientificTerm":"nitrogen immobilization",
+"farmerTerms":[
+"nitrogen getting temporarily locked up and unavailable to the crop after tilling in fresh residue"
+]
+},
+{
+"scientificTerm":"non-communicable diseases (NCDs)",
+"farmerTerms":[
+"long-term illnesses like diabetes and heart disease, not caused by infection"
+]
+},
+{
+"scientificTerm":"nutrient concentration gradient",
+"farmerTerms":[
+"a zone where nutrients get stronger the closer roots grow toward the bed center"
+]
+},
+{
+"scientificTerm":"nutrient density",
+"farmerTerms":[
+"how much actual nutrition is packed into the food, not just how it looks"
+]
+},
+{
+"scientificTerm":"nutrient density and phytochemical diversity",
+"farmerTerms":[
+"how much real goodness is packed into the food, not just its size"
+]
+},
+{
+"scientificTerm":"nutrient removal",
+"farmerTerms":[
+"how much of each mineral the crop actually takes out of the field at harvest"
+]
+},
+{
+"scientificTerm":"nutritional refinement unit",
+"farmerTerms":[
+"the animal turning ordinary grass into richer milk, meat, and manure"
+]
+},
+{
+"scientificTerm":"observation-based responsive management",
+"farmerTerms":[
+"watching the crop and soil, and only acting when they actually show a need"
+]
+},
+{
+"scientificTerm":"open-pollinated",
+"farmerTerms":[
+"seed you can save and replant true to type every year"
+]
+},
+{
+"scientificTerm":"open-pollinated variety",
+"farmerTerms":[
+"a plant variety you can save seed from and replant, unlike hybrid seed"
+]
+},
+{
+"scientificTerm":"osmoprotectants",
+"farmerTerms":[
+"natural sugars and amino acids that protect cells from freezing"
+]
+},
+{
+"scientificTerm":"oxygen-deficient root zone",
+"farmerTerms":[
+"soil that's staying too wet and suffocating roots"
+]
+},
+{
+"scientificTerm":"oxygen-deficient soil",
+"farmerTerms":[
+"waterlogged soil that's suffocating the roots"
+]
+},
+{
+"scientificTerm":"parasitoids",
+"farmerTerms":[
+"wasps that lay eggs in pest insects to control them naturally"
+]
+},
+{
+"scientificTerm":"parthenocarpy/stenospermocarpy",
+"farmerTerms":[
+"how seedless fruit like grapes are actually made"
+]
+},
+{
+"scientificTerm":"passive nutrient absorption",
+"farmerTerms":[
+"nutrients just flowing in with water, no work by the plant"
+]
+},
+{
+"scientificTerm":"perennial design",
+"farmerTerms":[
+"soil naturally runs on a constant cycle of growth and decay, never meant to sit bare and empty"
+]
+},
+{
+"scientificTerm":"permanent confinement of machinery to furrow corridors",
+"farmerTerms":[
+"always drive the tractor in the furrow, never on the growing bed"
+]
+},
+{
+"scientificTerm":"permanent underground memory",
+"farmerTerms":[
+"the soil 'remembering' where roots grew before, making it easier next time"
+]
+},
+{
+"scientificTerm":"pesticide-induced imbalance",
+"farmerTerms":[
+"the spray cycle that keeps making the pest problem worse"
+]
+},
+{
+"scientificTerm":"photosynthesis",
+"farmerTerms":[
+"the plant making its own food from sunlight, air and water"
+]
+},
+{
+"scientificTerm":"photosynthesis contributing ~95% of plant mass",
+"farmerTerms":[
+"most of what makes up the plant comes from air and sunlight, not the soil"
+]
+},
+{
+"scientificTerm":"photosynthesis-derived structural bulk",
+"farmerTerms":[
+"the plant builds its body mostly from air and water using sunlight"
+]
+},
+{
+"scientificTerm":"phototropism",
+"farmerTerms":[
+"leaves and stems bending toward the light"
+]
+},
+{
+"scientificTerm":"pioneer species/pioneer plants",
+"farmerTerms":[
+"the first weeds that show up on tired land"
+]
+},
+{
+"scientificTerm":"pore size",
+"farmerTerms":[
+"the size of the tiny gaps in the soil that water and air move through"
+]
+},
+{
+"scientificTerm":"predator recruitment",
+"farmerTerms":[
+"beneficial bugs and birds moving in to eat the pests for you"
+]
+},
+{
+"scientificTerm":"predator web",
+"farmerTerms":[
+"the network of good bugs, spiders and birds that eat pests naturally"
+]
+},
+{
+"scientificTerm":"principle of substitution",
+"farmerTerms":[
+"swap the weed for a crop that does the same job"
+]
+},
+{
+"scientificTerm":"procedural compliance certification",
+"farmerTerms":[
+"a label that just checks you followed the rulebook, not whether the food is actually better"
+]
+},
+{
+"scientificTerm":"process paradox",
+"farmerTerms":[
+"putting in more and more inputs but getting less and less back"
+]
+},
+{
+"scientificTerm":"production planning",
+"farmerTerms":[
+"actually thinking ahead about what to grow, when, and for whom, instead of just repeating last year"
+]
+},
+{
+"scientificTerm":"productivity shock",
+"farmerTerms":[
+"a sudden, real jump in what the land can produce"
+]
+},
+{
+"scientificTerm":"prophylactic input application",
+"farmerTerms":[
+"spraying or fertilizing 'just in case' before there's an actual problem"
+]
+},
+{
+"scientificTerm":"proton extrusion / lowered rhizosphere pH",
+"farmerTerms":[
+"roots releasing acid to unlock phosphorus stuck in the soil"
+]
+},
+{
+"scientificTerm":"provisioning/protecting organisms",
+"farmerTerms":[
+"the good bugs that show up when the crop is healthy"
+]
+},
+{
+"scientificTerm":"psychology of hopelessness",
+"farmerTerms":[
+"farmers giving up hope that things can improve"
+]
+},
+{
+"scientificTerm":"quorum-sensing molecules",
+"farmerTerms":[
+"the chemical chatter bacteria use to talk to each other"
+]
+},
+{
+"scientificTerm":"recycling organisms",
+"farmerTerms":[
+"the cleanup bugs that show up when a plant is already struggling"
+]
+},
+{
+"scientificTerm":"reduction in externally supplied irrigation water",
+"farmerTerms":[
+"less water you have to pump or flood onto the field from outside"
+]
+},
+{
+"scientificTerm":"refractometer / Brix reading",
+"farmerTerms":[
+"a handheld tool that measures how sweet/dense the plant juice is"
+]
+},
+{
+"scientificTerm":"reproductive pruning",
+"farmerTerms":[
+"later pruning to push the plant toward fruiting/grain instead of leaves"
+]
+},
+{
+"scientificTerm":"resident bodyguard bacteria",
+"farmerTerms":[
+"good bacteria living in the mulch that fight off pests from below"
+]
+},
+{
+"scientificTerm":"resilience dividend",
+"farmerTerms":[
+"the extra payoff of a farm that can ride out droughts and price shocks without going under"
+]
+},
+{
+"scientificTerm":"rhizobial colonization",
+"farmerTerms":[
+"bacteria moving into the roots to fix nitrogen"
+]
+},
+{
+"scientificTerm":"rhizobial nitrogen fixation",
+"farmerTerms":[
+"clover-type weeds pulling nitrogen from the air into the soil"
+]
+},
+{
+"scientificTerm":"rhizosphere",
+"farmerTerms":[
+"the living zone right around the roots"
+]
+},
+{
+"scientificTerm":"root exudates",
+"farmerTerms":[
+"sugar payments the roots send out to feed soil microbes",
+"sugars the roots leak out to pay the soil microbes",
+"the sugars and chemicals roots release to 'call' the microbes they need"
+]
+},
+{
+"scientificTerm":"root exudates as a biochemical 'work order'",
+"farmerTerms":[
+"the plant sends out a chemical signal asking the right microbes for help"
+]
+},
+{
+"scientificTerm":"root exudation",
+"farmerTerms":[
+"sugars the plant pumps out through its roots to feed soil microbes"
+]
+},
+{
+"scientificTerm":"root-zone ball test",
+"farmerTerms":[
+"squeezing a handful of soil from around the roots to feel if it's actually dry before watering"
+]
+},
+{
+"scientificTerm":"root-zone saturation",
+"farmerTerms":[
+"roots sitting in waterlogged soil"
+]
+},
+{
+"scientificTerm":"sap Brix",
+"farmerTerms":[
+"the sugar concentration in the plant's juice, testable with a simple meter"
+]
+},
+{
+"scientificTerm":"secondary metabolites",
+"farmerTerms":[
+"the plant's own natural defense chemicals"
+]
+},
+{
+"scientificTerm":"secondary metabolites (polyphenols, flavonoids)",
+"farmerTerms":[
+"the plant's own natural defense compounds"
+]
+},
+{
+"scientificTerm":"seed coat (lignin/cellulose/suberin)",
+"farmerTerms":[
+"the tough outer shell that protects a seed from digestion"
+]
+},
+{
+"scientificTerm":"sell-before-produce hedging model",
+"farmerTerms":[
+"locking in a buyer and price before you even plant"
+]
+},
+{
+"scientificTerm":"silvopasture",
+"farmerTerms":[
+"grazing animals among planted trees"
+]
+},
+{
+"scientificTerm":"soil adhesion",
+"farmerTerms":[
+"how much soil naturally clings to the roots when you pull the plant up"
+]
+},
+{
+"scientificTerm":"soil as an appreciating asset",
+"farmerTerms":[
+"soil that gets better and more valuable every year instead of wearing out"
+]
+},
+{
+"scientificTerm":"soil ball test",
+"farmerTerms":[
+"squeezing a handful of soil to check if it's wet enough before irrigating"
+]
+},
+{
+"scientificTerm":"soil carbon debt",
+"farmerTerms":[
+"how much organic matter and fertility the soil has lost over time"
+]
+},
+{
+"scientificTerm":"soil food web",
+"farmerTerms":[
+"all the bugs, fungi and bacteria living in the soil"
+]
+},
+{
+"scientificTerm":"soil life conduit",
+"farmerTerms":[
+"a buried pipe that lets worms and soil microbes travel up from the ground into your pots"
+]
+},
+{
+"scientificTerm":"soil organic carbon",
+"farmerTerms":[
+"the dark, rich carbon built up in healthy soil"
+]
+},
+{
+"scientificTerm":"soil solution",
+"farmerTerms":[
+"nutrients dissolved in the thin film of water around soil particles, the only form roots can actually take up"
+]
+},
+{
+"scientificTerm":"soil-gut axis",
+"farmerTerms":[
+"healthy soil microbes and a healthy gut work the same way"
+]
+},
+{
+"scientificTerm":"soil-temperature-triggered sowing",
+"farmerTerms":[
+"plant when the ground itself is ready, not by the date on the calendar"
+]
+},
+{
+"scientificTerm":"soluble sugars / antifreeze proteins",
+"farmerTerms":[
+"the plant's own natural antifreeze"
+]
+},
+{
+"scientificTerm":"specimen-based traceability",
+"farmerTerms":[
+"being able to trace a batch of produce back to the exact farm and practices that grew it"
+]
+},
+{
+"scientificTerm":"stable Brix",
+"farmerTerms":[
+"steady sugar content in the plant's sap"
+]
+},
+{
+"scientificTerm":"stomata",
+"farmerTerms":[
+"the tiny pores on leaves that open and close"
+]
+},
+{
+"scientificTerm":"strigolactone exudation",
+"farmerTerms":[
+"a root signal that calls in beneficial fungi"
+]
+},
+{
+"scientificTerm":"sub-lethal dose",
+"farmerTerms":[
+"a spray amount too weak to kill the insect outright",
+"a spray dose that doesn't quite kill the insect"
+]
+},
+{
+"scientificTerm":"subsoiling",
+"farmerTerms":[
+"deep-ripping the ground to break up the hard layer underneath"
+]
+},
+{
+"scientificTerm":"symbiosome",
+"farmerTerms":[
+"the little internal chamber where the plant houses its bacteria partners"
+]
+},
+{
+"scientificTerm":"symbiotic closed-loop system",
+"farmerTerms":[
+"body, food, and land all depending on each other"
+]
+},
+{
+"scientificTerm":"terra nullius",
+"farmerTerms":[
+"treating land (or people) as if nobody's really there, so it's free to take"
+]
+},
+{
+"scientificTerm":"thermal stability",
+"farmerTerms":[
+"keeping the ground from swinging hot in the day and cold at night"
+]
+},
+{
+"scientificTerm":"three-layer canopy strategy",
+"farmerTerms":[
+"stacking vines, bush crops, and ground cover on the same plot"
+]
+},
+{
+"scientificTerm":"tillering",
+"farmerTerms":[
+"the plant sending up multiple stems from its base",
+"the wheat plant throwing out extra side stems"
+]
+},
+{
+"scientificTerm":"time-based crop replacement",
+"farmerTerms":[
+"planting the next crop before the current one finishes, so there's no income gap"
+]
+},
+{
+"scientificTerm":"toxic load discount",
+"farmerTerms":[
+"docking the score of food that leaves pesticide residue behind for your body to deal with"
+]
+},
+{
+"scientificTerm":"transpiration",
+"farmerTerms":[
+"water being pulled up and breathed out through the leaves"
+]
+},
+{
+"scientificTerm":"transpiration-driven water uptake",
+"farmerTerms":[
+"the plant only pulls water up when it's 'breathing' through its leaves; in the cold it stops drinking"
+]
+},
+{
+"scientificTerm":"transplant shock",
+"farmerTerms":[
+"the setback a seedling suffers when it's moved and its roots get damaged"
+]
+},
+{
+"scientificTerm":"trophic cascade timing",
+"farmerTerms":[
+"how fast a helpful predator bug shows up after a pest does"
+]
+},
+{
+"scientificTerm":"tyre ballasting",
+"farmerTerms":[
+"weighting the tyres correctly so they don't slip or dig in"
+]
+},
+{
+"scientificTerm":"unstable interval",
+"farmerTerms":[
+"the risky window right after breaking up the soil, before roots and mulch take hold"
+]
+},
+{
+"scientificTerm":"volatile organic compounds (VOCs)",
+"farmerTerms":[
+"the smells and signals a plant gives off to attract certain insects"
+]
+},
+{
+"scientificTerm":"waste as a disruption during regenerative transition",
+"farmerTerms":[
+"putting manure on healing soil can actually set it back"
+]
+},
+{
+"scientificTerm":"water infiltration",
+"farmerTerms":[
+"how well the bed soaks up water"
+]
+},
+{
+"scientificTerm":"weed succession",
+"farmerTerms":[
+"the type of weeds changing as your soil gets better"
+]
+},
+{
+"scientificTerm":"wheel-track spacing recalculation",
+"farmerTerms":[
+"matching furrow width to your tractor's tire spacing"
+]
+},
+{
+"scientificTerm":"whole-field diagnosis via weed communities",
+"farmerTerms":[
+"reading the mix of weeds together, not just one type"
+]
+},
+{
+"scientificTerm":"xylem / phloem",
+"farmerTerms":[
+"the plant's own water pipes and sugar pipes"
+]
+},
+{
+"scientificTerm":"xylem embolism",
+"farmerTerms":[
+"an air bubble blocking the plant's internal water pipe"
+]
+}
+]
+}

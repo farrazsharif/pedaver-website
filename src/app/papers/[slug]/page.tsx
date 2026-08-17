@@ -12,6 +12,21 @@ import TrackedPdfLink from "@/components/analytics/TrackedPdfLink";
 import TrackedExternalLink from "@/components/analytics/TrackedExternalLink";
 import TrackedRelatedLink from "@/components/analytics/TrackedRelatedLink";
 import { buildMetadata, SITE_URL, SITE_NAME } from "@/lib/seo";
+import { getMetadata, REQUIRES_REVIEW, EXTERNAL_EVIDENCE } from "@/lib/content/knowledge/taxonomy";
+import { getRelatedKnowledge } from "@/lib/content/knowledge/related";
+
+const SCIENCE_PAGE_LABELS: Record<string, string> = {
+  "/science/soil": "Soil Science",
+  "/science/plants": "Plant Science",
+  "/science/water": "Water Science",
+  "/science/biodiversity": "Biodiversity Science",
+  "/science/nutrition": "Nutrition Science",
+  "/science/crop-protection": "Crop Protection Science",
+  "/science/climate": "Climate Science",
+  "/science/food-quality": "Food Quality Science",
+  "/science/production-architecture": "Production Architecture",
+  "/science/transition": "Transition Science",
+};
 
 export async function generateStaticParams() {
   return papers.map((paper) => ({ slug: paper.slug }));
@@ -45,6 +60,8 @@ export default async function PaperDetailPage({
   if (!paper) notFound();
 
   const relatedCrops = getRelatedCrops(paper);
+  const meta = getMetadata(slug);
+  const relatedKnowledge = getRelatedKnowledge(paper, meta, papers, getMetadata, 4);
 
   const scholarlyArticleJsonLd = {
     "@context": "https://schema.org",
@@ -82,6 +99,30 @@ export default async function PaperDetailPage({
           <p className="mt-4 max-w-2xl text-lg text-ink-soft">{paper.summary}</p>
         </div>
       </section>
+
+      {meta?.authorityStatus === REQUIRES_REVIEW && (
+        <div className="border-b border-amber-200 bg-amber-50">
+          <div className="mx-auto max-w-4xl px-4 py-4 sm:px-6">
+            <p className="text-sm text-amber-900">
+              <span className="font-semibold">PQNK Review Status —</span> this paper contains one or
+              more statements currently under Pedaver/PQNK review. It remains available as part of the
+              Knowledge Library, but flagged statements should not be treated as current authoritative
+              PQNK doctrine until review is complete.
+            </p>
+          </div>
+        </div>
+      )}
+      {meta?.authorityStatus === EXTERNAL_EVIDENCE && (
+        <div className="border-b border-slate-200 bg-slate-50">
+          <div className="mx-auto max-w-4xl px-4 py-4 sm:px-6">
+            <p className="text-sm text-slate-700">
+              <span className="font-semibold">External Knowledge —</span> this paper is sourced from
+              outside Pedaver/PQNK. It is presented as supporting evidence, not as PQNK's own approved
+              doctrine.
+            </p>
+          </div>
+        </div>
+      )}
 
       {paper.heroImage && (
         <div>
@@ -186,6 +227,62 @@ export default async function PaperDetailPage({
               </div>
             ) : null}
 
+            {meta && (
+              <div className="rounded-xl border border-border bg-card p-5">
+                <h2 className="text-sm font-bold uppercase tracking-wide text-accent">About This Paper</h2>
+                <dl className="mt-3 flex flex-col gap-3 text-sm">
+                  {meta.crops.length > 0 && (
+                    <div>
+                      <dt className="text-xs font-semibold uppercase tracking-wide text-ink-soft">Crop</dt>
+                      <dd className="mt-1 text-ink-soft">{meta.crops.join(" · ")}</dd>
+                    </div>
+                  )}
+                  {meta.fieldProblems.length > 0 && (
+                    <div>
+                      <dt className="text-xs font-semibold uppercase tracking-wide text-ink-soft">Problem</dt>
+                      <dd className="mt-1 text-ink-soft">{meta.fieldProblems.join(" · ")}</dd>
+                    </div>
+                  )}
+                  {meta.scientificDomains.length > 0 && (
+                    <div>
+                      <dt className="text-xs font-semibold uppercase tracking-wide text-ink-soft">Science</dt>
+                      <dd className="mt-1 text-ink-soft">{meta.scientificDomains.join(" · ")}</dd>
+                    </div>
+                  )}
+                  <div>
+                    <dt className="text-xs font-semibold uppercase tracking-wide text-ink-soft">Evidence</dt>
+                    <dd className="mt-1 text-ink-soft">{meta.evidenceType}</dd>
+                  </div>
+                  <div>
+                    <dt className="text-xs font-semibold uppercase tracking-wide text-ink-soft">Authority</dt>
+                    <dd className="mt-1 text-ink-soft">{meta.authorityStatus}</dd>
+                  </div>
+                </dl>
+              </div>
+            )}
+
+            {meta && meta.scienceLinks.length > 0 && (
+              <div className="rounded-xl border border-border bg-card p-5">
+                <h2 className="text-sm font-bold uppercase tracking-wide text-accent">Related PQNK Science</h2>
+                <ul className="mt-3 flex flex-col gap-2">
+                  {meta.scienceLinks.map((link) => (
+                    <li key={link.page}>
+                      <TrackedRelatedLink
+                        href={link.page}
+                        fromType="paper"
+                        fromId={slug}
+                        toType="science"
+                        toId={link.page}
+                        className="text-sm font-semibold text-primary-dark hover:text-primary"
+                      >
+                        {SCIENCE_PAGE_LABELS[link.page] ?? link.page} →
+                      </TrackedRelatedLink>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
             {paper.keyTakeaways.length > 0 && (
               <div className="rounded-xl border border-border bg-card p-5">
                 <h2 className="text-sm font-bold uppercase tracking-wide text-accent">{dict.papers.keyTakeawaysTitle}</h2>
@@ -224,6 +321,33 @@ export default async function PaperDetailPage({
           </div>
         </div>
       </Section>
+
+      {relatedKnowledge.length > 0 && (
+        <Section muted>
+          <div className="mx-auto max-w-5xl">
+            <h2 className="text-xl font-bold text-primary-dark">Related Knowledge</h2>
+            <div className="mt-5 grid gap-5 sm:grid-cols-2">
+              {relatedKnowledge.map(({ paper: related, reason }) => (
+                <TrackedRelatedLink
+                  key={related.slug}
+                  href={`/papers/${related.slug}`}
+                  fromType="paper"
+                  fromId={slug}
+                  toType="paper"
+                  toId={related.slug}
+                  className="group flex flex-col rounded-xl border border-border bg-card p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                >
+                  <p className="text-[11px] font-semibold uppercase tracking-wide text-accent">{reason}</p>
+                  <h3 className="mt-1.5 text-base font-bold text-primary-dark group-hover:text-primary">
+                    {related.title}
+                  </h3>
+                  <p className="mt-2 line-clamp-2 text-sm text-ink-soft">{related.summary}</p>
+                </TrackedRelatedLink>
+              ))}
+            </div>
+          </div>
+        </Section>
+      )}
     </div>
   );
 }

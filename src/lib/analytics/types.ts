@@ -1,4 +1,4 @@
-export type ContentType = "paper" | "crop" | "machine" | "resource";
+export type ContentType = "paper" | "crop" | "machine" | "resource" | "science";
 
 export type VideoSource = "youtube_embed" | "self_hosted";
 

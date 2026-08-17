@@ -41,9 +41,9 @@ export default function PapersPage() {
       </Section>
 
       <Section muted>
-        <h2 className="text-center text-xl font-bold text-primary-dark">Browse by topic</h2>
+        <h2 className="text-center text-xl font-bold text-primary-dark">What do you need to know?</h2>
         <p className="mx-auto mt-1 max-w-2xl text-center text-sm text-ink-soft">
-          Filter the full library down to the science that matters to you right now.
+          Search in your own words, or browse by crop, problem, PQNK Science, or field practice.
         </p>
         <div className="mt-6">
           <PapersBrowser papers={papers} />

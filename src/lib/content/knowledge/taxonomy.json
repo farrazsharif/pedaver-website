@@ -1,0 +1,1917 @@
+{
+"version":"1.1-final-review-candidate",
+"scientificDomains":[
+"Soil",
+"Plants",
+"Water",
+"Biodiversity",
+"Nutrition",
+"Crop Protection",
+"Climate",
+"Food Quality",
+"Production Architecture",
+"Transition"
+],
+"pqnkPrinciples":[
+"No Soil Disturbance",
+"No Inundation",
+"Permanent Biological Cover",
+"Maximum Biodiversity"
+],
+"audience":[
+"Farmer",
+"Student",
+"Researcher",
+"Policymaker",
+"Investor/Economic"
+],
+"productionStages":[
+"Land Preparation",
+"Transition/Conversion",
+"Establishment",
+"Planting",
+"Vegetative Growth",
+"Reproductive/Flowering",
+"Pruning/Dormancy",
+"Harvest",
+"Post-Harvest"
+],
+"evidenceTypes":[
+"Scientific Mechanism",
+"Field Observation",
+"Farmer Testimony",
+"Demonstration",
+"Measured Field Result",
+"Economic Model/Projection",
+"External Scientific Evidence",
+"Philosophical/Framework Argument"
+],
+"authorityStatuses":[
+"Current / Approved PQNK Knowledge",
+"Historical PQNK Formulation",
+"External Knowledge / Evidence",
+"Requires PQNK Review"
+],
+"problemFamilies":[
+"Soil & Roots",
+"Water & Drainage",
+"Plant Growth & Nutrition",
+"Pests, Diseases & Weeds",
+"Heat, Weather & Climate",
+"Yield & Produce Quality",
+"Harvest & Post-Harvest",
+"Cost, Profit & Markets",
+"Machinery & Field Operations",
+"Transition / Conversion"
+],
+"problemToFamilies":{
+"Bare / Exposed Soil":[
+"Soil & Roots"
+],
+"General Soil Fertility / Land Degradation":[
+"Soil & Roots"
+],
+"Hardpan":[
+"Soil & Roots",
+"Machinery & Field Operations"
+],
+"Locked / Unavailable Soil Minerals":[
+"Soil & Roots",
+"Plant Growth & Nutrition"
+],
+"Low Root-Zone Oxygen / Poor Aeration":[
+"Soil & Roots"
+],
+"Low Soil Water-Holding Capacity (Field Capacity)":[
+"Soil & Roots",
+"Water & Drainage"
+],
+"Nutrient Retention / Delivery Efficiency Concerns":[
+"Soil & Roots",
+"Plant Growth & Nutrition"
+],
+"Plastic Mulch Soil Sealing":[
+"Soil & Roots"
+],
+"Poor Soil Structure / Aggregation":[
+"Soil & Roots"
+],
+"Preventive/Prophylactic Over-Application of Inputs (Fertilizer/Nitrogen)":[
+"Soil & Roots",
+"Cost, Profit & Markets"
+],
+"Residue Mismanagement":[
+"Soil & Roots"
+],
+"Saline / Alkaline / High-pH Soil":[
+"Soil & Roots"
+],
+"Sandy / Low-Fertility Soil Texture":[
+"Soil & Roots"
+],
+"Soil Biology / Microbiome Decline":[
+"Soil & Roots"
+],
+"Soil Compaction (General)":[
+"Soil & Roots",
+"Machinery & Field Operations"
+],
+"Soil Erosion":[
+"Soil & Roots"
+],
+"Soil Organic Matter / Carbon Loss":[
+"Soil & Roots"
+],
+"Soil Temperature Extremes":[
+"Soil & Roots",
+"Heat, Weather & Climate"
+],
+"Tillage Damage to Soil Biology / Structure":[
+"Soil & Roots",
+"Machinery & Field Operations"
+],
+"Unpredictable Rainfed Nutrient Gradients":[
+"Soil & Roots"
+],
+"Weak Below-Ground Symbiosis (Mycorrhizae/Nitrogen-Fixers)":[
+"Soil & Roots"
+],
+"Poor Germination / Emergence":[
+"Plant Growth & Nutrition",
+"Soil & Roots"
+],
+"Suboptimal Planting Density":[
+"Plant Growth & Nutrition",
+"Machinery & Field Operations"
+],
+"Weak / Shallow Root Establishment":[
+"Soil & Roots",
+"Plant Growth & Nutrition"
+],
+"Drought / Water Scarcity":[
+"Water & Drainage",
+"Heat, Weather & Climate"
+],
+"Evaporation / Moisture Loss":[
+"Water & Drainage"
+],
+"Fast / Uneven Water Drainage":[
+"Water & Drainage"
+],
+"Flooding":[
+"Water & Drainage"
+],
+"Groundwater / Aquifer Depletion":[
+"Water & Drainage"
+],
+"High Crop Water Demand":[
+"Water & Drainage"
+],
+"High Irrigation Cost / Dependency":[
+"Water & Drainage",
+"Cost, Profit & Markets"
+],
+"Loss of Soil Water-Holding Capacity":[
+"Water & Drainage",
+"Soil & Roots"
+],
+"Over-Irrigation":[
+"Water & Drainage",
+"Plant Growth & Nutrition"
+],
+"Poor Water Infiltration":[
+"Water & Drainage",
+"Soil & Roots"
+],
+"Runoff":[
+"Water & Drainage"
+],
+"Saline / High-TDS Irrigation Water":[
+"Water & Drainage"
+],
+"Waterlogging":[
+"Water & Drainage",
+"Plant Growth & Nutrition"
+],
+"Excess Vegetative Growth (at expense of yield/flowering)":[
+"Plant Growth & Nutrition"
+],
+"Hormonal Growth Imbalance (Vegetative/Reproductive)":[
+"Plant Growth & Nutrition"
+],
+"Leaf Discoloration (Yellowing/Purpling)":[
+"Plant Growth & Nutrition"
+],
+"Lodging / Weak Stem Structure":[
+"Plant Growth & Nutrition"
+],
+"Nutrient Deficiency Symptoms (Plant-Visible)":[
+"Plant Growth & Nutrition",
+"Soil & Roots"
+],
+"Phosphorus Deficiency":[
+"Plant Growth & Nutrition",
+"Soil & Roots"
+],
+"Poor Flowering / Fruit Set":[
+"Plant Growth & Nutrition",
+"Yield & Produce Quality"
+],
+"Poor Plant Vigor (General)":[
+"Plant Growth & Nutrition"
+],
+"Poor Tillering":[
+"Plant Growth & Nutrition"
+],
+"Seed Sourcing / Genetic Vulnerability":[
+"Plant Growth & Nutrition"
+],
+"Wilting (Misread as Water Stress)":[
+"Plant Growth & Nutrition",
+"Water & Drainage"
+],
+"Fungal / Bacterial Disease":[
+"Pests, Diseases & Weeds"
+],
+"General Pest Pressure":[
+"Pests, Diseases & Weeds"
+],
+"Named Pest Infestation (Bollworm, Fruit Fly, Nematode, etc.)":[
+"Pests, Diseases & Weeds"
+],
+"Pesticide Resistance":[
+"Pests, Diseases & Weeds"
+],
+"Sucking Insect Pressure (Aphid/Whitefly/Jassid)":[
+"Pests, Diseases & Weeds"
+],
+"Weed Pressure":[
+"Pests, Diseases & Weeds"
+],
+"Beneficial Insect / Predator Decline":[
+"Pests, Diseases & Weeds"
+],
+"Biodiversity Loss":[
+"Pests, Diseases & Weeds"
+],
+"Monoculture Vulnerability":[
+"Pests, Diseases & Weeds"
+],
+"Cold / Frost Damage":[
+"Heat, Weather & Climate"
+],
+"Erratic / Unpredictable Weather Patterns":[
+"Heat, Weather & Climate"
+],
+"Heat Stress on Crop":[
+"Heat, Weather & Climate",
+"Plant Growth & Nutrition"
+],
+"Low Light / Smog":[
+"Heat, Weather & Climate"
+],
+"Regional Rainfall / Microclimate Variability":[
+"Heat, Weather & Climate"
+],
+"Contamination / Residue / Food Safety Risk":[
+"Yield & Produce Quality"
+],
+"Declining Nutrient Density in Food":[
+"Yield & Produce Quality"
+],
+"Diet-Related Health / Food Security Concern":[
+"Yield & Produce Quality"
+],
+"Grain Quality Defects (Chalkiness, Breakage, Shriveling)":[
+"Yield & Produce Quality"
+],
+"Seasonal / Batch Quality Variability":[
+"Yield & Produce Quality"
+],
+"Weak Flavor / Aroma / Quality Sensory Markers":[
+"Yield & Produce Quality"
+],
+"Harvest Timing Problems (Premature or Delayed)":[
+"Yield & Produce Quality",
+"Harvest & Post-Harvest"
+],
+"Inconsistent / Uneven Crop Uniformity":[
+"Yield & Produce Quality"
+],
+"Yield Stagnation / Decline":[
+"Yield & Produce Quality"
+],
+"Post-Harvest Loss / Spoilage":[
+"Harvest & Post-Harvest"
+],
+"Short Shelf Life":[
+"Harvest & Post-Harvest",
+"Yield & Produce Quality"
+],
+"External Input Dependency":[
+"Cost, Profit & Markets"
+],
+"Farmer Income Instability / Debt":[
+"Cost, Profit & Markets"
+],
+"High Input / Production Cost":[
+"Cost, Profit & Markets"
+],
+"Macro / Policy-Level Externalities":[
+"Cost, Profit & Markets"
+],
+"Organic Certification Cost / Trust Gap":[
+"Cost, Profit & Markets"
+],
+"Price Volatility / Market Glut":[
+"Cost, Profit & Markets"
+],
+"Waste Accumulation / Disposal":[
+"Cost, Profit & Markets"
+],
+"Idle / Underused Field Time":[
+"Machinery & Field Operations"
+],
+"Machinery / Field-Operation Decision Difficulty":[
+"Machinery & Field Operations"
+],
+"Space / Infrastructure Constraint":[
+"Machinery & Field Operations"
+],
+"Labor Scarcity / Cost":[
+"Cost, Profit & Markets"
+],
+"Long Time-to-Production / Multi-Year Maintenance":[
+"Transition / Conversion",
+"Cost, Profit & Markets"
+],
+"Untrained Labor / Management":[
+"Cost, Profit & Markets",
+"Transition / Conversion"
+],
+"Farmer Uncertainty / Diagnostic Skill Gap":[
+"Transition / Conversion"
+],
+"Partial / Inconsistent Practice Adoption":[
+"Transition / Conversion"
+],
+"Terminology / Framework Confusion":[
+"Transition / Conversion"
+],
+"Animal Health / Welfare / Product Quality":[
+"Yield & Produce Quality"
+]
+},
+"crops":{
+"Wheat":[
+"Gehun (Wheat)",
+"Wheat (Khapli)"
+],
+"Rice":[
+"Basmati"
+],
+"Cotton":[],
+"Maize (Corn)":[
+"Corn",
+"Maize"
+],
+"Sugarcane":[],
+"Potato":[],
+"Citrus (Kinnow)":[
+"Citrus",
+"Kinnow"
+],
+"Mango":[],
+"Banana":[],
+"Garlic":[],
+"Onion":[
+"Green Onion"
+],
+"Tomato":[
+"Tomatoes"
+],
+"Watermelon":[],
+"Guava":[],
+"Okra":[],
+"Pomegranate":[],
+"Rose":[],
+"Black Carrot":[],
+"Carrot":[
+"Carrots"
+],
+"Radish":[
+"Daikon Radish"
+],
+"Barley":[],
+"Cucumber":[],
+"Grapes":[
+"Grape"
+],
+"Ginger":[],
+"Lettuce":[],
+"Melon":[],
+"Rapeseed":[],
+"Jantar (Sesbania)":[
+"Jantar",
+"Sesbania (Jantar)"
+],
+"Chilli":[
+"Chili",
+"Chillies"
+],
+"Brinjal (Eggplant)":[
+"Brinjal"
+],
+"Bitter Gourd":[],
+"Bottle Gourd":[],
+"Squash":[],
+"Turnip":[],
+"Turmeric":[],
+"Coriander":[],
+"Mint":[],
+"Spinach":[],
+"Alfalfa":[],
+"Berseem (Clover)":[
+"Clover"
+],
+"Senji (Sweet Clover)":[],
+"Napier Grass":[],
+"Rhodes Grass":[],
+"Bajra (Pearl Millet)":[],
+"Millet":[],
+"Sorghum":[
+"Sweet Sorghum"
+],
+"Ragi (Finger Millet)":[],
+"Oats":[
+"Javi (Oats)"
+],
+"Mustard":[
+"Raya (Mustard)"
+],
+"Safflower":[],
+"Sunflower":[],
+"Castor":[
+"Castor (HD Castor)"
+],
+"Soybean":[],
+"Cowpea":[],
+"Pigeon Pea":[],
+"Mung Bean":[
+"Moong",
+"Moong (Mung Bean)"
+],
+"Black Gram":[
+"Mash (Black Gram)"
+],
+"Common Bean":[
+"Bean",
+"Beans",
+"Green Beans"
+],
+"Pea":[
+"Peas",
+"Green peas"
+],
+"Peanut":[
+"Peanuts"
+],
+"Sweet Potato":[
+"Sweet potato"
+],
+"Papaya":[],
+"Fig":[],
+"Apple":[],
+"Peach":[
+"Peaches"
+],
+"Olive":[],
+"Date Palm":[],
+"Strawberry":[],
+"Bamboo":[],
+"Moringa":[],
+"Eucalyptus":[],
+"Cocoa":[],
+"Cassava":[],
+"Balangu":[
+"Balangu (Lallemantia royleana)"
+],
+"Basil":[],
+"Alsi (Flaxseed)":[
+"Alsi (Flax)"
+],
+"Dosan":[],
+"Azolla":[],
+"Duckweed":[],
+"Amla":[],
+"Pepper (Bell/Capsicum)":[
+"Pepper"
+],
+"Pulses (crop group)":[
+"Pulses",
+"Legumes"
+],
+"Grains (crop group)":[
+"Grains"
+],
+"Oilseeds (crop group)":[
+"Oilseeds"
+],
+"Gourds (crop group)":[
+"Gourds"
+],
+"Leafy Vegetables (crop group)":[
+"Leafy vegetables"
+],
+"Root Vegetables (crop group)":[
+"Root vegetables"
+],
+"Fruit Vegetables (crop group)":[
+"Fruit vegetables"
+],
+"Vegetables (crop group)":[
+"Vegetables"
+],
+"Fruit Trees (crop group)":[
+"Fruit trees"
+],
+"Grasses (crop group)":[
+"Grasses"
+],
+"Pasture Grass (crop group)":[
+"Pasture Grass"
+]
+},
+"fieldProblems":{
+"Hardpan":[
+"Hardpan compaction",
+"Hardpan re-compaction",
+"Hardpan/compaction",
+"Subsoil hardpan",
+"Incomplete Hardpan Breaking",
+"No Access to Subsoiling Equipment"
+],
+"Soil Compaction (General)":[
+"Compacted soil",
+"Compacted, lifeless soil",
+"Compaction",
+"Compaction from machinery on beds",
+"Compaction from wheel traffic",
+"Soil Compaction",
+"Soil compaction",
+"Soil compaction from land-clearing method",
+"Soil compaction from tillage",
+"Soil compaction returning after tillage",
+"Bare/compacted soil",
+"Naturally compacted/saline soil",
+"Deep compaction",
+"Subsoil compaction",
+"Furrow sidewall compaction",
+"High Bulk Density"
+],
+"Poor Soil Structure / Aggregation":[
+"Poor Aggregation",
+"Poor Structure",
+"Weak Soil Structure",
+"Tillage-destroyed soil structure",
+"Weak bed structure",
+"Soil Crusting",
+"Lack of biological soil structure"
+],
+"Bare / Exposed Soil":[
+"Bare orchard floor / bare sand",
+"Bare soil after weed removal",
+"Bare soil exposure",
+"Bare soil heat damage",
+"Bare/disturbed soil",
+"Bare/vulnerable soil after bed formation",
+"Excess soil heat from bare soil",
+"Heat islands from bare soil"
+],
+"Soil Temperature Extremes":[
+"High soil temperature",
+"High soil temperature at planting",
+"Soil temperature extremes",
+"Sandy soil heat stress",
+"Field heat"
+],
+"Saline / Alkaline / High-pH Soil":[
+"Alkaline soil",
+"Alkaline/high-pH soil",
+"Degraded/alkaline soil",
+"High soil pH",
+"High-pH/alkaline soil",
+"Salt Accumulation",
+"Salt accumulation",
+"Salt accumulation risk from drip point-source",
+"Salt-affected soil",
+"Soil Salinity",
+"Soil salinity/alkalinity",
+"Soil salinity/chemical residue",
+"Soil salinity/high pH",
+"Waterlogging and salinization",
+"High SAR/residual sodium carbonate",
+"Perceived High EC/Salinity"
+],
+"Saline / High-TDS Irrigation Water":[
+"Saline irrigation water",
+"Saline/sodic irrigation water",
+"High-TDS irrigation water"
+],
+"Sandy / Low-Fertility Soil Texture":[
+"Sandy soil",
+"Loose, low-fertility sandy soil",
+"Poor Sandy Soil Retention",
+"Hard Clay Soil",
+"Shallow Topsoil",
+"Buried gravel/stones",
+"Low Cation Exchange Capacity",
+"Poor establishment on sand dunes"
+],
+"Soil Biology / Microbiome Decline":[
+"Dead soil syndrome",
+"Inactive/standby soil biology",
+"Microbial die-off after application",
+"Microbiome destruction",
+"Reduced microbial diversity",
+"Weed- and pathogen-dominant soil microbiome",
+"Poor Soil Biology",
+"Soil treated as inert substrate",
+"Container soil biological isolation",
+"Biologically inert dead-mulch-only plan"
+],
+"Soil Organic Matter / Carbon Loss":[
+"Declining soil carbon",
+"Loss of soil carbon",
+"Loss of soil carbon/organic matter",
+"Soil carbon loss",
+"Soil carbon loss from plowing",
+"Soil organic matter collapse",
+"Soil organic matter loss",
+"Low Organic Matter",
+"Low organic matter",
+"Broken nutrient cycling"
+],
+"General Soil Fertility / Land Degradation":[
+"Soil fertility loss",
+"Soil loss",
+"Low soil fertility",
+"Low soil productivity despite mineral wealth",
+"Nutrient-poor soil",
+"Stalled regeneration",
+"Land degradation",
+"Ongoing land degradation",
+"Soil degradation blamed on species choice",
+"Soil degradation from unexamined habits",
+"Soil degradation under chemical fertilizer",
+"Declining soil responsiveness despite manure use",
+"Land subsidence"
+],
+"Soil Erosion":[
+"Erosion",
+"Soil erosion",
+"Topsoil erosion",
+"Topsoil loss"
+],
+"Locked / Unavailable Soil Minerals":[
+"Locked/unavailable soil minerals",
+"Nutrient Lock-Up",
+"Nutrient lock-up",
+"Nutrient/pH lock-up",
+"Potassium Fixation",
+"Poor Mineral Availability",
+"Poor pH Buffering",
+"Nutrient testing blind spots"
+],
+"Low Root-Zone Oxygen / Poor Aeration":[
+"Low Root-Zone Oxygen",
+"Poor aeration",
+"Poor Gas Exchange",
+"Poor oxygenation"
+],
+"Low Soil Water-Holding Capacity (Field Capacity)":[
+"Low field capacity"
+],
+"Plastic Mulch Soil Sealing":[
+"Plastic mulch soil sealing"
+],
+"Regional Rainfall / Microclimate Variability":[
+"Regional Rainfall/Microclimate"
+],
+"Unpredictable Rainfed Nutrient Gradients":[
+"Unpredictable rainfed nutrient gradients"
+],
+"Waterlogging":[
+"Anaerobic/waterlogged soil",
+"Fungal disease in waterlogged soil",
+"Poor drainage/waterlogging",
+"Root function loss under waterlogging",
+"Standing water",
+"Waterlogging Concerns",
+"Waterlogging effects on roots",
+"Waterlogging intolerance",
+"Waterlogging Risk",
+"Waterlogging risk from monsoon rain",
+"Waterlogging vs. Drought Stress Trade-off"
+],
+"Flooding":[
+"Flood irrigation on compacted soil",
+"Flooded rice cultivation water use"
+],
+"Poor Water Infiltration":[
+"Poor infiltration",
+"Poor infiltration/runoff",
+"Poor water infiltration",
+"Poor water infiltration from over-wide tyres",
+"Rainwater not infiltrating",
+"Slow Water Infiltration",
+"Disrupted water retention"
+],
+"Runoff":[
+"Runoff instead of infiltration",
+"Nutrient runoff/loss"
+],
+"Over-Irrigation":[
+"Excessive irrigation",
+"Over-irrigation",
+"Over-irrigation risk",
+"Over-irrigation/root-zone saturation",
+"Over-watering",
+"Over-watering damage",
+"Uniform/low-stimulus flood irrigation",
+"Temptation to add urea/over-irrigate unnecessarily",
+"Pest vulnerability from over-watering",
+"Wilting and yellowing under drip irrigation"
+],
+"Drought / Water Scarcity":[
+"Drought",
+"Drought vulnerability",
+"Drought-cycle stress from drip irrigation",
+"Drought/flood resilience",
+"Poor drought tolerance",
+"Low Drought Resilience",
+"Rainfed/sloping land water scarcity",
+"Water scarcity",
+"No irrigation source on sloping land"
+],
+"Groundwater / Aquifer Depletion":[
+"Aquifer depletion",
+"Declining groundwater",
+"Groundwater depletion"
+],
+"High Irrigation Cost / Dependency":[
+"High irrigation costs",
+"High irrigation demand",
+"High drip irrigation dependence",
+"Irrigation dependency",
+"Diesel/electric irrigation pumping cost"
+],
+"Fast / Uneven Water Drainage":[
+"Water draining too fast",
+"Rapid water drainage"
+],
+"Loss of Soil Water-Holding Capacity":[
+"Loss of soil water-holding capacity",
+"Poor water-holding capacity"
+],
+"Poor Germination / Emergence":[
+"Poor Germination",
+"Poor seedling emergence",
+"Uneven germination",
+"Germination difficulty (myth correction)",
+"Weak/pale/slow-growing first-crop seedlings",
+"Transplant shock",
+"Legume root damage from wrong technique"
+],
+"Weak / Shallow Root Establishment":[
+"Weak early root architecture",
+"Weak/shallow root systems",
+"Root penetration difficulty in undisturbed soil",
+"Poor root penetration in subsequent crops",
+"Restricted Root Growth",
+"Uneven Root Zone Environment",
+"Uneven Plant Vigor Across the Bed",
+"Poor Root Water Uptake"
+],
+"Excess Vegetative Growth (at expense of yield/flowering)":[
+"Excess vegetative flush over flowering",
+"Excess vegetative growth",
+"Excess vegetative growth at the expense of fruit/grain",
+"Excess vegetative growth at the expense of yield",
+"Excessive vegetative growth",
+"Canopy size control",
+"Overcrowded/shaded canopy",
+"Poor canopy light penetration",
+"Low Canopy Humidity",
+"Overcrowding misdiagnosis",
+"Poor understory growth"
+],
+"Lodging / Weak Stem Structure":[
+"Excess early height/lodging risk",
+"Lodging",
+"Lodging (falling over) crops",
+"Lodging/wind damage",
+"Staking requirement due to weak stems",
+"Weak lateral branching",
+"Weak root anchorage"
+],
+"Poor Flowering / Fruit Set":[
+"Flower drop",
+"Flower/fruitlet drop",
+"Cold-snap flower drop",
+"Poor fruit set",
+"Zero fruit set",
+"Non-viable/stunted flowers (Batoor)",
+"Pollen sterility",
+"Poor flowering timing",
+"Premature bud break",
+"Biennial bearing (on-off fruiting)"
+],
+"Nutrient Deficiency Symptoms (Plant-Visible)":[
+"Nutrient Deficiency",
+"Misdiagnosed nutrient deficiency",
+"Perceived nutrient deficiency",
+"Perceived Mineral Deficiency",
+"Perceived micronutrient deficiency",
+"Start-Up Nutrient Deficiency",
+"Nutrient deficiency despite fertile soil",
+"Nutrient availability limits despite adequate soil minerals",
+"Confusion over whether to buy micronutrient inputs"
+],
+"Leaf Discoloration (Yellowing/Purpling)":[
+"Leaf purpling/reddening",
+"Leaf yellowing",
+"Yellowing seedlings"
+],
+"Heat Stress on Crop":[
+"Heat stress",
+"Heat stress above 35\u00b0C",
+"Heat stress crop collapse",
+"Heat stress during grain-filling",
+"Extreme spring heat stress on wheat",
+"Sun/heat stress on vines",
+"Fruit shrinkage/heat stress",
+"Compressed growing season"
+],
+"Cold / Frost Damage":[
+"Cold stress",
+"Cold stress below 10\u00b0C",
+"Frost damage",
+"Frost damage appearing days after the cold event",
+"Frost/cold damage",
+"Frost/winter damage",
+"Temperature stress on roots",
+"Transitional-season temperature swings"
+],
+"Poor Tillering":[
+"Low tiller count",
+"Low tillering",
+"Barren tillers not forming heads",
+"Inconsistent tiller counts across a field"
+],
+"Wilting (Misread as Water Stress)":[
+"Wilting Misdiagnosis"
+],
+"General Pest Pressure":[
+"Pest and disease pressure",
+"Pest and viral disease pressure",
+"Pest Pressure",
+"Pest pressure",
+"Pest/disease pressure",
+"Pest/disease pressure diagnosis",
+"Pest attraction",
+"Pest attraction from lush growth",
+"Insect Presence",
+"Misdiagnosing insect presence as infestation",
+"Escalating pest pressure despite spraying",
+"Pest outbreaks as feedback-loop breakdown",
+"Pest/aphid attraction to over-fertilized plants",
+"Pest vulnerability from over-watering",
+"Pest/weed pressure"
+],
+"Sucking Insect Pressure (Aphid/Whitefly/Jassid)":[
+"Aphid outbreaks after urea top-dressing",
+"Aphid outbreaks before flowering",
+"Aphid/whitefly/jassid outbreaks",
+"Aphids/black spot/powdery mildew",
+"Mealybugs",
+"Worm damage after irrigation plus nitrogen"
+],
+"Named Pest Infestation (Bollworm, Fruit Fly, Nematode, etc.)":[
+"Bollworm infestation (historical)",
+"Pink bollworm resistance to Bt cotton",
+"Gall maker pest",
+"Fruit fly damage",
+"Olive fruit fly pest pressure",
+"Nematode damage"
+],
+"Pesticide Resistance":[
+"Pesticide resistance",
+"Pesticide resistance building up in pest populations",
+"Pesticide resistance in pests",
+"Reliance on single-gene Bt traits",
+"Repeated spraying not controlling pests"
+],
+"Fungal / Bacterial Disease":[
+"Rust after humid nights",
+"Red rot",
+"Root Rot",
+"Soil-borne disease",
+"Phytophthora Foot Rot risk",
+"Tuber rot/disease risk",
+"Disease carryover in planting material",
+"Fungal entry from plucking"
+],
+"Weed Pressure":[
+"Weed Competition",
+"Weed competition",
+"Weed competition under drought stress",
+"Weed pressure",
+"Repeating weed outbreaks",
+"Herbicide/tillage failure to control weed",
+"Farmer instinct to clear grass around stems",
+"Motha grass (nutgrass) infestation"
+],
+"Beneficial Insect / Predator Decline":[
+"Pollinator decline",
+"Predator die-off from spraying",
+"Predator population collapse",
+"Over-spraying killing pollinators/predators"
+],
+"Monoculture Vulnerability":[
+"Monoculture microbial vulnerability",
+"Monoculture risk"
+],
+"Biodiversity Loss":[
+"Biodiversity loss",
+"Lack of natural regeneration/reforestation on farm land"
+],
+"Declining Nutrient Density in Food":[
+"Declining nutrient density in staple crops",
+"Declining nutrition density",
+"Nutrient decline",
+"Nutrient decline alongside caloric abundance",
+"Nutrient decline in staple crops",
+"Nutrient decline in staples",
+"Nutrient density decline",
+"Lower food nutrient quality",
+"Low forage nutrient quality",
+"Nutrient-poor food",
+"Nutrient-poor produce",
+"Mineral imbalance in grain"
+],
+"Weak Flavor / Aroma / Quality Sensory Markers":[
+"Bland or weak-flavored produce",
+"Diluted/tasteless fruit ('Phokki')",
+"Low flavor/aroma intensity",
+"Weak aroma",
+"Biologically diluted, large-but-bland produce",
+"Low anthocyanin/pigment concentration",
+"Weak plant secondary metabolite production",
+"Low fruit quality in alkaline conditions"
+],
+"Grain Quality Defects (Chalkiness, Breakage, Shriveling)":[
+"Broken/fissured rice kernels",
+"Chalky/fissured grain",
+"Drying-induced cracking",
+"Uneven grain development",
+"Shriveled grain",
+"Shrivelled grain",
+"Low milling recovery",
+"Low sugar recovery"
+],
+"Contamination / Residue / Food Safety Risk":[
+"Aflatoxins",
+"Agrochemical residues",
+"Disease/chemical residue",
+"Grain arsenic contamination",
+"Human health decline from chronic residue exposure",
+"Toxic input exposure",
+"Farmer/family health concerns from pesticide residues",
+"EU border rejections (pesticide residue, aflatoxin)",
+"Illegal/toxic ripening agents",
+"Export rejections"
+],
+"Diet-Related Health / Food Security Concern":[
+"Chronic disease linked to diet",
+"Perceived gluten/health concerns",
+"Household food insecurity",
+"Loss of dietary diversity"
+],
+"Yield Stagnation / Decline":[
+"Yield stagnation",
+"Yield ceiling",
+"Yield decline/collapse over cycles",
+"Yield Loss During Transition",
+"Yield volatility under drought or deluge",
+"Season-to-season yield variability",
+"Low national yield benchmark",
+"Low yield/high water use of flood-irrigated Basmati",
+"Declining fruit production over season",
+"Declining ratoon yields",
+"Declining ratoon quality",
+"Poor sugarcane multiplication or longevity",
+"Poor tuber yield despite healthy-looking plants",
+"Low extraction efficiency",
+"Poor storage",
+"Orchard abandonment"
+],
+"Inconsistent / Uneven Crop Uniformity":[
+"Inconsistent crop uniformity",
+"Uneven fields/elevation variation"
+],
+"Post-Harvest Loss / Spoilage":[
+"Post-harvest fruit rot/loss",
+"Post-harvest grain loss",
+"Post-harvest loss",
+"Post-harvest milling loss",
+"Post-harvest shrinkage/weight loss",
+"Post-harvest spoilage",
+"Post-harvest storage/refrigeration damage",
+"Storage weight loss/spoilage",
+"Long-distance transport losses",
+"Improper ripening technique",
+"Seed waste"
+],
+"Short Shelf Life":[
+"Short shelf life"
+],
+"High Input / Production Cost":[
+"Boom-bust input cost",
+"High cost of production",
+"High cultivation cost",
+"High cost of importing topsoil",
+"High production cost",
+"High establishment cost",
+"High establishment cost of alternatives",
+"High Fertilizer Cost",
+"High Input Cost",
+"High input cost",
+"High seed cost",
+"High replanting/seed cost",
+"High tunnel construction cost",
+"Input cost of fertilizer/pesticide",
+"High tillage, pesticide, fertilizer, and irrigation costs",
+"High feed cost relative to output value"
+],
+"External Input Dependency":[
+"Chemical dependency",
+"Chemical dependency suppressing soil biology",
+"Dependency on annual hybrid seed purchase",
+"Dependence on hybrid seed purchase",
+"F1 hybrid seed dependency",
+"Farm input dependency",
+"Fertilizer import dependency",
+"Herbicide dependency",
+"Import dependence",
+"Input Dependency",
+"Input dependency",
+"High input dependency",
+"Ongoing input dependency",
+"Reliance on bagged fertilizer",
+"Reliance on chemical pesticides",
+"Reliance on external fertilizer inputs",
+"Reliance on imported fertilizer inputs",
+"Rising input dependency",
+"Synthetic input dependence",
+"Purchased feed cost dependency",
+"Credit dependency",
+"Diesel-dependent logistics",
+"Diesel-dependent mechanization",
+"Diesel/fuel dependency",
+"Continued reliance on purchased inputs (EM products, compost, minerals) in mainstream regenerative agriculture",
+"Over-reliance on external inputs/labs",
+"Dependency on synthetic fertilizer"
+],
+"Farmer Income Instability / Debt":[
+"Low farmer income",
+"Farmer profit loss",
+"Farm debt",
+"Farmer debt cycle",
+"Farmer exploitation/delayed payment",
+"Smallholder margin collapse",
+"Rural economic instability",
+"Small landholding profitability",
+"Marginal sloped land productivity"
+],
+"Price Volatility / Market Glut":[
+"Fertilizer price volatility",
+"Rising input costs",
+"Input price shock exposure",
+"Market glut and price collapse",
+"Market glut/seasonal price collapse",
+"Seasonal price glut at harvest",
+"Fixed-season harvest price glut",
+"Volatile supply",
+"Compulsory/forced selling at harvest",
+"Distress selling at single harvest peak",
+"Mass-based pricing rewarding bulk over nutrition",
+"Buyer contract pricing tied to quality",
+"Lack of a price signal for ecosystem services",
+"Low margin from single-crop marketing",
+"Income gaps between harvests",
+"Post-harvest price bargaining"
+],
+"Organic Certification Cost / Trust Gap":[
+"Certification cost/dependency",
+"Cost of certification",
+"Certification label without biological-quality guarantee",
+"Consumer distrust of organic premium",
+"Perceived quality-cost tradeoff"
+],
+"Macro / Policy-Level Externalities":[
+"GHG emissions from agriculture",
+"Methane emissions",
+"Subsidies favoring imported fiber",
+"Subsidy misallocation",
+"Undervalued farm-level production in policy",
+"Policy/institutional lock-in",
+"Externalized environmental and health costs",
+"Resource degradation from inefficient input use",
+"Yield-focused metrics ignoring quality",
+"Water pollution from aquaculture feed waste",
+"GMO contamination risk",
+"Loss of crop genetic diversity",
+"Corporate-funded science bias",
+"Institutional resistance to new methods",
+"Failed technology adoption",
+"Lack of market access",
+"Lack of agricultural training infrastructure",
+"Weak export competitiveness",
+"Fragmented watercourses/plots"
+],
+"Terminology / Framework Confusion":[
+"Confusing 'regenerative' with 'sustainable'",
+"Confusion about GMO vs hybrid vs seedless seed",
+"Confusion over conflicting organic-farming advice",
+"Fragmented, non-actionable regenerative science",
+"Greenwashed regenerative claims",
+"Greenwashing/dilution of 'regenerative' branding"
+],
+"Farmer Uncertainty / Diagnostic Skill Gap":[
+"Belief in cow-gut-derived fertility",
+"Misreading biological activation as disease",
+"Farmer concern over unusual soil-surface growth",
+"Uncertainty about pest risk without lab tools",
+"Uncertainty about when to stop fertilizing",
+"Uncertainty about whether soil biology is working",
+"Judging Soil Health",
+"Farmer anxiety about crop health",
+"Fear-based farm management",
+"Slow perceived transition",
+"Speculative/unplanned production"
+],
+"Machinery / Field-Operation Decision Difficulty":[
+"Mismatched bed/tractor geometry",
+"Choosing between two tractors",
+"Poor bed-orientation choices",
+"Determining correct planting density",
+"Choosing optimal mother-bulb size for seed stalks"
+],
+"Idle / Underused Field Time":[
+"Idle bed time between seasons",
+"Idle land before canopy closure/fruit maturity"
+],
+"Space / Infrastructure Constraint":[
+"Space constraints for trellising",
+"Limited household growing space"
+],
+"Labor Scarcity / Cost":[
+"Labor scarcity for manual SRI",
+"Labour shortage/cost",
+"Fertilizing/tilling/weeding workload"
+],
+"Untrained Labor / Management":[
+"Untrained farm management",
+"Untrained labor",
+"Lack of a field-ready protocol"
+],
+"Long Time-to-Production / Multi-Year Maintenance":[
+"Long time-to-production",
+"Maintaining productivity over multiple years",
+"Short annual production cycle"
+],
+"Animal Health / Welfare / Product Quality":[
+"Animal welfare/stress",
+"Fodder quality/veterinary cost",
+"Poor animal health and immunity",
+"Milk quality/inflammatory milk",
+"Low stocking density economics",
+"Low Omega-3 content in milk/meat"
+],
+"Tillage Damage to Soil Biology / Structure":[
+"Tillage damage to fungal networks",
+"Tillage damage to root systems",
+"Tillage destroying plant-microbe signaling",
+"Tillage-destroyed soil structure",
+"Nitrogen immobilization from tillage"
+],
+"Residue Mismanagement":[
+"Residue burning",
+"Residue dragging into seed zone"
+],
+"Weak Below-Ground Symbiosis (Mycorrhizae/Nitrogen-Fixers)":[
+"Loss of nitrogen-fixing partnerships",
+"Weak Fungal Networks",
+"Weak mycorrhizal networks",
+"Poor Nodulation",
+"Low Nitrogen Fixation"
+],
+"Erratic / Unpredictable Weather Patterns":[
+"Delayed/erratic monsoon and winter timing",
+"Erratic rainfall",
+"Erratic temperature swings",
+"Erratic weather/drought/flood"
+],
+"Low Light / Smog":[
+"Low light/smog"
+],
+"Seed Sourcing / Genetic Vulnerability":[
+"Difficulty saving/isolating open-pollinated seed",
+"Weak seed lineage",
+"Weak seed vigor",
+"Reliance on manual seed collection/replanting",
+"Crops lacking natural stress tolerance (e.g. potato)",
+"Weak rootstock vigor"
+],
+"High Crop Water Demand":[
+"Excessive water use by fast-growing trees",
+"High water use"
+],
+"Evaporation / Moisture Loss":[
+"Evaporation/moisture loss"
+],
+"Hormonal Growth Imbalance (Vegetative/Reproductive)":[
+"Hormonal imbalance"
+],
+"Partial / Inconsistent Practice Adoption":[
+"Low farmer adoption of full package"
+],
+"Suboptimal Planting Density":[
+"Low planting density"
+],
+"Preventive/Prophylactic Over-Application of Inputs (Fertilizer/Nitrogen)":[
+"Nitrogen excess",
+"Nitrogen lock-up",
+"Over-application of fertilizer relative to actual crop uptake",
+"Over-fertilization risk",
+"Preventive/prophylactic input overuse",
+"Sugar-based liquid input misuse"
+],
+"Nutrient Retention / Delivery Efficiency Concerns":[
+"Nutrient dilution concern with fertigation",
+"Poor nutrient retention"
+],
+"Phosphorus Deficiency":[
+"Phosphorus deficiency"
+],
+"Poor Plant Vigor (General)":[
+"Poor Plant Vigor"
+],
+"Harvest Timing Problems (Premature or Delayed)":[
+"Premature bolting",
+"Premature or late harvest",
+"Premature ripening",
+"Premature/delayed harvest timing"
+],
+"Seasonal / Batch Quality Variability":[
+"Seasonal quality variability"
+],
+"Waste Accumulation / Disposal":[
+"Waste accumulation/management"
+]
+},
+"fieldPractices":{
+"Soil Pit / Hardpan Diagnosis":[
+"Hardpan Diagnosis",
+"Hardpan Diagnosis/Breaking",
+"Field Diagnostic Testing",
+"Field-capacity testing",
+"Root Inspection",
+"Root Trace Observation",
+"Soil Testing/Retesting",
+"Topography survey",
+"No-tools root/soil field test",
+"Slake Test"
+],
+"Soil Moisture Ball/Field Test":[
+"Root-zone ball moisture test",
+"Soil ball moisture test",
+"Soil Moisture Cohesive-Ball Test",
+"Moisture testing without a meter"
+],
+"Furrow/Water Infiltration Testing":[
+"Furrow Infiltration Test",
+"Water Infiltration Test"
+],
+"Soil Sensory Assessment (Smell/Scent/Texture)":[
+"Soil Smell Test",
+"Field Scent Observation",
+"Sensory field assessment",
+"Plant-based field diagnosis"
+],
+"Weed-Signal Reading":[
+"Weed community reading",
+"Weed reading/diagnosis"
+],
+"Germination / Seed Viability Testing":[
+"Germination Test"
+],
+"Tissue/Sap Nutrient Testing":[
+"Refractometer/sap nitrate testing (transitional)",
+"Tissue mineral analysis (audit level)",
+"Foliar Diagnostic Spray",
+"Sap-based pest risk assessment"
+],
+"Threshold-Based Pest/Predator Monitoring":[
+"Threshold-Based Pest Monitoring",
+"Observational pest assessment",
+"Predator-Response Timing Observation",
+"Earthworm Census",
+"Earthworm/Fungal Habitat Building"
+],
+"Mechanical Hardpan Breaking (Subsoiling)":[
+"Hardpan break",
+"Hardpan breaking",
+"Hardpan Breaking",
+"Hardpan breaking/subsoiling",
+"Hardpan correction",
+"Hardpan elimination",
+"Hardpan removal",
+"Hardpan shattering",
+"Hardpan Shattering",
+"Hardpan-free bed management",
+"Deep Subsoiling",
+"Subsoiling",
+"Subsoiling hardpan",
+"Deep Leaching Chemistry Correction",
+"Deep Leaching/Chemistry Correction"
+],
+"Biological Hardpan Breaking (Jantar/Root Drilling)":[
+"Biological Drilling (Pioneer Plants)",
+"Deep Root Penetration Past Hardpan",
+"Jantar (Sesbania) Bio-tillage",
+"Jantar as biological drill",
+"Jantar bio-drilled channels",
+"Jantar Biological Subsoiling",
+"Jantar Root Penetration",
+"Avoiding hardpan-forming tillage"
+],
+"Sulfuric Acid Water-Wash (pH Correction)":[
+"Acid Water-Wash",
+"pH correction",
+"pH correction/sulfuric acid wash",
+"Soil Chemistry Correction",
+"Soil chemistry correction",
+"Strategic acid leaching",
+"Sulfuric acid pH correction",
+"Sulfuric Acid pH Correction",
+"Sulfuric acid salt flush",
+"Water-Wash Irrigation",
+"Water-Wash Soil Correction",
+"Water-washing soil",
+"Chemistry Correction",
+"Alkaline soil correction",
+"Clay Slurry Treatment"
+],
+"Rock Mineral Amendment":[
+"Rock Phosphate Amendment (Optional)"
+],
+"Jantar (Sesbania) Cover Cropping":[
+"Cover cropping (sunn hemp, Jantar)",
+"Cover cropping with Jantar",
+"Cover cropping with Jantar/Sesbania",
+"Jantar (Sesbania) Green Manure",
+"Jantar cover crop",
+"Jantar Cover Crop",
+"Jantar cover crop mulch",
+"Jantar cover cropping",
+"Jantar Cover Cropping",
+"Jantar cover-crop mulching",
+"Live cover cropping (Jantar)",
+"Jantar/Tillage Radish Cover Cropping",
+"Green manure cover crop"
+],
+"General Cover Cropping":[
+"Cover crop mulch",
+"Cover Cropping",
+"Cover cropping",
+"Cover cropping with root retention",
+"Deep-Rooted Cover Cropping",
+"Diverse cover cropping",
+"Diverse cover cropping for root exudation",
+"Continuous living cover",
+"Continuous Living Roots",
+"Live mulch (cover crop)",
+"Live mulch/cover crops",
+"Live mulching",
+"Living ground cover",
+"Living mulch (alfalfa)",
+"Living Root Retention",
+"Maintaining Living Roots",
+"No-Till Living Roots",
+"Self-mulching plants"
+],
+"Surface Mulching (General)":[
+"Continuous mulch",
+"Continuous mulch maintenance",
+"Dead mulch application",
+"Dead/organic mulching",
+"Dry mulch",
+"Mulch cover",
+"Mulch coverage",
+"Mulching",
+"Mulching (precondition)",
+"Organic mulch",
+"Organic mulching",
+"Permanent Cover",
+"Permanent cover/mulch",
+"Permanent Mulch",
+"Surface Mulching",
+"Surface mulching",
+"Thermal Mulching",
+"Orchard floor mulching"
+],
+"Plastic Mulching":[
+"Plastic mulching"
+],
+"Chop-and-Drop Mulching":[
+"Chop-and-Drop",
+"Chop-and-drop mulching",
+"Forestry mulching"
+],
+"Mulch-Assisted Irrigation":[
+"Drip irrigation with mulch",
+"Direct seeding through mulch",
+"No-till mulch planting",
+"No-till planting into mulch"
+],
+"Crop Residue Retention":[
+"Mulch/Residue Retention",
+"Mulch/Trash Retention (No Burning)",
+"Residue mulch",
+"Residue Retention",
+"Residue retention",
+"Residue retention/chipping",
+"Residue Retention/Mulching",
+"Residue return as mulch",
+"Residue/Grass Retention as Mulch",
+"No-till mulch retention",
+"No-till residue retention",
+"Stubble retention",
+"In-Situ Residue Composting",
+"In-situ Manure Scattering"
+],
+"Root Retention (Standing Roots After Harvest)":[
+"Residue/Root Retention",
+"Root Retention",
+"Root retention",
+"Root Retention After Harvest",
+"No-till/root retention"
+],
+"Permanent Raised Bed Formation":[
+"Bed formation sequence",
+"Level bed construction",
+"Permanent beds",
+"Permanent raised bed shaping",
+"Permanent raised beds",
+"Permanent Raised Beds",
+"Permanent raised beds (precondition)",
+"Permanent raised beds and furrows",
+"Permanent raised beds twin-row",
+"Raised Bed Formation",
+"Raised bed orientation",
+"Raised Beds",
+"Raised beds",
+"Raised-bed geometry",
+"Permanent raised beds (precondition)"
+],
+"Controlled Traffic (Furrow-Confined)":[
+"Controlled Traffic",
+"Controlled traffic",
+"Permanent beds and traffic discipline",
+"Wheel-track adjustment",
+"Tyre ballasting"
+],
+"Contour Alignment / Land Leveling":[
+"Contour Alignment",
+"Contour Furrows",
+"Contour furrows",
+"Field Leveling",
+"Land Leveling",
+"Laser land leveling",
+"Laser Leveling",
+"Laser leveling",
+"Laser Levelling",
+"Scientific land leveling",
+"Field redesign/consolidation",
+"Curved Furrow and Borehole Water Harvesting"
+],
+"No-Till / Minimal-Disturbance Planting":[
+"Minimal intervention",
+"Minimal soil disturbance",
+"No-Till",
+"No-till",
+"No-till permanent beds",
+"No-till planting",
+"No-Till Planting",
+"Precision No-Till Planting",
+"No-Till Precision Planting",
+"Reduced Tillage",
+"Reduced Tillage/No-Till",
+"Zero-tillage direct seeding",
+"No Soil Disturbance",
+"Permanent mulch/no-till"
+],
+"Furrow Irrigation":[
+"Furrow Fertigation",
+"Furrow irrigation",
+"Furrow irrigation (lateral infiltration)",
+"Furrow Irrigation (rare emergency use)",
+"Siphon-tube furrow irrigation",
+"Syphon Tube Irrigation"
+],
+"Soil Moisture Management (SMM)":[
+"Soil Moisture Management",
+"Soil Moisture Management/furrow irrigation",
+"Soil moisture monitoring",
+"Soil-Moisture-Based Irrigation",
+"Demand-based irrigation",
+"Appropriate irrigation",
+"Stable Hydration Management",
+"Controlled Water Stress",
+"Natural Irrigation Protocol"
+],
+"Irrigation Reduction / Timing Restraint":[
+"Avoiding cold-weather irrigation",
+"Avoiding unnecessary urea/irrigation intervention",
+"Avoiding water inundation",
+"Avoiding waterlogging",
+"No flood irrigation",
+"No irrigation post-pruning",
+"No intervention during flowering",
+"Reduced Irrigation",
+"Reduced irrigation",
+"Restrained/No Irrigation at Flowering",
+"Pre-Harvest Irrigation Cutoff",
+"One deep detox irrigation"
+],
+"Drip/Sprinkler Irrigation":[
+"Drip irrigation (context)",
+"Drip Irrigation Adjustment",
+"Drip/sprinkler irrigation",
+"Lateral pivot irrigation"
+],
+"Precision Seed Placement (SIPP/VIPP-style)":[
+"Discrete-pocket seed placement",
+"Precision Band Placement of Fertilizer/Compost",
+"Precision plant geometry",
+"Precision Planting",
+"Precision planting",
+"Precision seed rate",
+"SIPP/VIPP precision planting",
+"Uniform seed placement",
+"Vertical seed insertion",
+"VIPP/SIPP Planting",
+"Reduced seed rate"
+],
+"Direct Seeding":[
+"Direct Seeded Rice",
+"Direct seeding (one seed per hill)"
+],
+"Transplanting":[
+"Dry-soil transplanting",
+"Nursery block transplanting",
+"Shallow Transplanting of Young Seedlings"
+],
+"Grafting / Rootstock Selection":[
+"Grafting/rootstock selection"
+],
+"Variety / Seed Selection":[
+"Heirloom Varieties",
+"Mother-Bulb Selection",
+"Native Breed Selection",
+"Selecting naturally cold-tolerant crops",
+"Variety Selection"
+],
+"Seed Saving / Isolation":[
+"Seed multiplication/isolation plots",
+"Seed Saving",
+"Seed saving",
+"Seed saving/isolation plots",
+"Isolation by distance/time/barrier",
+"Offset Propagation",
+"Re-deriving open lines from GMO stock",
+"Plant tissue culture (conceded overlap)"
+],
+"Vegetative Propagation (Sugarcane-specific)":[
+"Cut-and-multiply sugarcane method",
+"Single-Bud Sett Planting",
+"Sustained-yield sugarcane method"
+],
+"Hand-Pollination / Pollination Aid":[
+"Hand-pollination of cucurbits"
+],
+"Pruning (General)":[
+"Annual Maintenance Pruning",
+"Apical Pinching",
+"Bruising",
+"Canopy Pruning",
+"Central-leader pruning",
+"Formative Pruning",
+"Formative pruning",
+"Phenology-timed hard pruning",
+"Post-Harvest Pruning",
+"Pruning",
+"Pruning and pinching",
+"Pruning/tiller management",
+"Rejuvenation Pruning",
+"Reproductive pruning",
+"Seasonal pruning calendar",
+"Structural pruning",
+"Sucker Pruning",
+"Tip-cutting",
+"Tip-Pinching",
+"Two-handed pea clipping",
+"Water shoot removal",
+"Corn stalk topping"
+],
+"Compensatory-Grazing-Style Pruning":[
+"Compensatory grazing simulation"
+],
+"Canopy / Vine Training (Trellising)":[
+"Staking/Trellising",
+"Trellising",
+"Vertical canopy management",
+"Vertical canopy training/trellising",
+"Vertical trellising",
+"Vine pressing",
+"Vine training"
+],
+"Crop Rotation":[
+"Crop rotation",
+"Diverse rotation",
+"Diverse rotations",
+"Time-based crop replacement"
+],
+"Intercropping / Companion Planting":[
+"Companion cropping",
+"Companion Planting",
+"Companion planting",
+"Intercropping",
+"Intercropping/filler crops",
+"Legume intercropping",
+"Shade intercropping",
+"Three-layer intercropping",
+"Perennial planting combinations",
+"Perennial/circular planting",
+"Staggered/perennial planting"
+],
+"Crop Diversification":[
+"Crop diversification",
+"Crop substitution",
+"Orchard Diversification",
+"Diverse Fodder Cultivation",
+"Diverse Forage Cultivation",
+"Polyculture"
+],
+"Agroforestry / Windbreaks":[
+"Agroforestry",
+"Agroforestry Species Selection",
+"Alley cropping",
+"Boundary Planting",
+"Deep-Rooted Tree Integration",
+"Fruit-hedge buffer strips",
+"Nurse-Tree Shade",
+"Silvopasture",
+"Windbreak crops"
+],
+"Shade Cropping":[
+"Shade cropping"
+],
+"Staggered / Continuous Planting Schedule":[
+"Daily planting/harvesting (OAP model)",
+"Staggered Sowing",
+"Soil-temperature-triggered sowing"
+],
+"Managed / Rotational Grazing":[
+"Biodiverse Pasture Grazing",
+"Grazing",
+"Grazing (biomass removal)",
+"Integrated Grazing",
+"Rotational/Managed Grazing",
+"Seed balls with livestock"
+],
+"Livestock/Aquaculture Integration":[
+"Integration with ducks/livestock/fish",
+"Azolla/Duckweed Feed Substitution"
+],
+"Biodiversity Habitat Fostering":[
+"Biodiversity Fostering",
+"Building soil microbial life and biodiversity",
+"Natural pest predator habitat",
+"Permanent beds and mulch for predator habitat continuity",
+"Under-Canopy Biodiversity for Pest Control",
+"Weedy field margins as habitat"
+],
+"Biological Pest Suppression":[
+"Biodiversity-based predator-prey balance",
+"Biological pest suppression"
+],
+"Reduced/Eliminated Chemical Input":[
+"Elimination of Agrochemicals",
+"Elimination of External Inputs",
+"No pesticide application (3+ seasons)",
+"No purchased inputs",
+"No synthetic fertilizer",
+"Reduced Chemical Input",
+"Reduced synthetic pesticide reliance",
+"Reduced/no synthetic pesticide use",
+"Zero external fertilizer/pesticide"
+],
+"Mechanical / Non-Chemical Weeding":[
+"Active Aeration Weeding",
+"Mechanical Weeding",
+"Mulch-based weed management",
+"Precision weeder-aerator"
+],
+"Biological Nutrient Cycling":[
+"Balanced nutrient cycling",
+"Biological nutrient cycling",
+"Biological nutrient cycling restoration",
+"Biological nutrient management",
+"Closed-Loop Nutrient Recycling",
+"Root Exudate Cycling",
+"Root exudate-mediated nutrient exchange",
+"Microbial mineral liberation",
+"Microbial Nutrient Delivery",
+"Mulch-Fed Microbial Mineralization",
+"Mycorrhizal Partnership Management",
+"Demand-Based Fertilization",
+"Controlled/Consistent Nutrient Delivery"
+],
+"Compost / Vermiwash / Bio-Input Application":[
+"Compost application",
+"Compost Tea/Vermiwash Application",
+"Compost/vermiwash inoculation",
+"Composting",
+"Jeevamrit application",
+"Waste processing/composting",
+"Foliar Feeding",
+"Foliar ethanol spray",
+"Foliar Ethanol Spray",
+"1% ethanol foliar spray (pre-frost/heat)",
+"Jaggery-water microbial culturing"
+],
+"Closed-Loop Input Management":[
+"Concentrated sourcing radius",
+"No biomass export"
+],
+"Soil Biology Restoration (General)":[
+"Aeration Management",
+"Aeration/infiltration correction",
+"Drainage/aeration correction",
+"Soil Biological Restoration Prioritization",
+"Soil Biology Activation",
+"Soil Microbiology Rejuvenation",
+"Soil mineral management",
+"Soil Regeneration",
+"Non-intervention/observation",
+"Field-Heat Removal",
+"Temperature Moderation",
+"Gentle/Gradual Drying",
+"Organic Matter Retention"
+],
+"Mulch Decomposition / Ground-Cover Monitoring":[
+"Mulch Decomposition Monitoring",
+"Mulch-Stabilized Root Zone"
+],
+"Raised-Bed Capillary Water Management":[
+"Raised Bed Capillary Management"
+],
+"PQNK Transition Protocol (Staged)":[
+"Four-Step Transition Protocol",
+"No-till plus manure integration"
+],
+"Harvest Timing / Selective Harvest":[
+"Cut (Not Plucked) Harvesting",
+"Selective harvest",
+"Selective/Continuous Harvesting",
+"Tuber harvest handling"
+],
+"Post-Harvest Handling / Ripening":[
+"Natural Ethylene Ripening (Banana/Mango Ratio)",
+"Post-harvest cold water immersion",
+"Semi-Ventilated Box Ripening",
+"Stamping (treading)"
+],
+"Roller Crimping":[
+"Roller crimping",
+"Rotavator incorporation (compared against)"
+],
+"Direct Marketing":[
+"Direct marketing"
+],
+"Periodic Nursery Refresh":[
+"Periodic Nursery-Plant Refresh"
+],
+"Moist / Aerobic Bed Cultivation (Non-Flooded Rice)":[
+"Moist (Non-Flooded) Bed Cultivation",
+"Moist-soil raised beds (vs flooding)"
+],
+"Input Timing Restraint (Flowering-Sensitive)":[
+"Avoiding Manure Application at Flowering",
+"Avoiding nitrogen forcing"
+],
+"Surface Scarification":[
+"Surface scarification"
+],
+"Relay Cropping":[]
+},
+"machineryTools":{
+"Raised Bed Shaper (PQNK machine)":[
+"Bed Shaper",
+"Bed shaper",
+"Bed shapers",
+"Raised Bed Shaper",
+"Raised Bed Former"
+],
+"SIPP (PQNK machine)":[
+"SIPP"
+],
+"VIPP (PQNK machine)":[
+"VIPP"
+],
+"Mulcher & Bed Renovator (PQNK machine)":[
+"Mulcher",
+"Forestry Mulcher"
+],
+"Generic No-Till Planter":[
+"No-till planter",
+"No-till Planter",
+"No-Till Planter",
+"Precision planter",
+"Pneumatic Precision Planter",
+"Multi-seed Pneumatic Precision Planter with Mulcher"
+],
+"Seed Drill":[],
+"Dry-Soil Transplanter":[
+"Dry-soil transplanter"
+],
+"Laser Leveler":[],
+"Rotavator":[],
+"Chisel Plough":[
+"Chisel plough"
+],
+"Combine Harvester":[],
+"Precision Weeder-Aerator":[
+"Precision weeder-aerator"
+],
+"Bulk Soil Shifter":[],
+"Dribble Board / Hand Dribbler":[
+"Dribble Board",
+"Hand Dribbler Tool"
+],
+"Roller Stamper":[],
+"Vine Roller/Plank":[],
+"Bamboo/Rope/Trellis Structures":[
+"Bamboo/rope/trellis structures"
+],
+"Siphon/Syphon Tubes":[
+"Siphon Tubes",
+"Syphon Tubes"
+],
+"Tractor (generic, by HP class)":[
+"Tractor (45-55 HP)",
+"Two-wheel-drive tractor (55-90HP)"
+],
+"Refractometer":[],
+"Subsoiler / Hardpan Breaker":[
+"Subsoiler",
+"Hardpan-shredding machinery"
+]
+},
+"conceptTerms":{
+"Gusra Soil Fraction":{
+"type":"soil-description-glossary-term",
+"definition":"A locally significant soil-texture fraction the corpus uses as a diagnostic reference point when discussing sandy/low-fertility soils. NOT a farmer-reported problem in its own right.",
+"relatedCanonical":[
+"Sandy / Low-Fertility Soil Texture"
+]
+},
+"Water:Air Framework":{
+"type":"conceptual-diagnostic-terminology",
+"definition":"A diagnostic framework describing the soil water:air balance governing root function and nitrogen fixation. NOT a discrete field action a Production Manager performs.",
+"relatedCanonical":[
+"Soil Moisture Management (SMM)"
+]
+},
+"Soil Life Conduit":{
+"type":"conceptual-diagnostic-terminology",
+"definition":"A conceptual/diagnostic term from one paper describing a pathway for biological activity through the soil profile. NOT a physical machine or purchasable tool.",
+"relatedCanonical":[
+"Soil Biology Restoration (General)"
+]
+}
+}
+}
