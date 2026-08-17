@@ -5,7 +5,7 @@ export const cropImages: Record<string, string> = {
   cotton: "/images/crops/cotton-mulched-raised-beds.jpg",
   rice: "/images/crops/rice-paddy-field.jpg",
   "citrus-kinnow": "/images/crops/kinnow-orchard-rows.jpg",
-  sugarcane: "/images/young-crop-beds.jpg",
+  sugarcane: "/images/crops/sugarcane-raton-crop.jpg",
   pomegranate: "/images/pomegranate.jpg",
   "onion-garlic": "/images/crops/garlic-harvest.jpg",
   potato: "/images/crops/potato-mulched-raised-beds.jpg",
