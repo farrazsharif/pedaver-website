@@ -20,6 +20,7 @@ const staticPages = [
   "/science/crop-protection",
   "/science/climate",
   "/science/food-quality",
+  "/science/production-architecture",
   "/science/transition",
   "/crops",
   "/resources",

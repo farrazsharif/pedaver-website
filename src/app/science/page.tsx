@@ -263,9 +263,11 @@ export default function SciencePage() {
             />
           </div>
 
-          <p className="mt-4 text-center text-sm font-semibold uppercase tracking-wide text-ink-soft/70">
-            Science page coming soon
-          </p>
+          <div className="mt-4 text-center">
+            <Link href="/science/production-architecture" className="text-sm font-semibold text-primary underline underline-offset-4">
+              Explore Production Architecture →
+            </Link>
+          </div>
         </div>
       </Section>
 
