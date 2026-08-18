@@ -159,8 +159,16 @@ export default function PapersBrowser({ papers }: { papers: Paper[] }) {
   // deliberately not next/navigation's useSearchParams, which would require a
   // Suspense boundary for this statically-exported site; see
   // AnalyticsClientRoot.tsx for why this codebase avoids that hook).
+  // True only for the single queryInput commit produced by restoring a shared
+  // URL on load — a URL with both `q` and filters is an intentional combined
+  // search and must restore exactly as shared. Any real keystroke in the
+  // search box (see the input's onChange below) clears this immediately, so
+  // it can never suppress a genuine new search.
+  const restoringFromURL = useRef(false);
+
   useEffect(() => {
     const initial = readFiltersFromURL();
+    restoringFromURL.current = true;
     setFilters(initial);
     setQueryInput(initial.q);
     hydrated.current = true;
@@ -171,10 +179,22 @@ export default function PapersBrowser({ papers }: { papers: Paper[] }) {
     writeFiltersToURL(filters);
   }, [filters]);
 
-  // debounce the search text -> filters.q so typing doesn't thrash the URL/history
+  // Debounce the search text -> filters.q so typing doesn't thrash the URL/history.
+  // The search bar is the primary discovery mechanism: starting a new text search
+  // clears any browse filters left over from earlier narrowing, so a query like
+  // "corn" always runs across the full library rather than silently staying
+  // AND-combined with a stale Crop/Problem/Science/Practice selection. Filters
+  // may then be deliberately re-applied on top of the new results.
   useEffect(() => {
     const id = setTimeout(() => {
-      setFilters((f) => (f.q === queryInput ? f : { ...f, q: queryInput }));
+      setFilters((f) => {
+        if (f.q === queryInput) return f;
+        if (restoringFromURL.current) {
+          restoringFromURL.current = false;
+          return { ...f, q: queryInput };
+        }
+        return { q: queryInput, crop: "", family: "", problem: "", domain: "", practice: "" };
+      });
     }, 250);
     return () => clearTimeout(id);
   }, [queryInput]);
@@ -247,7 +267,10 @@ export default function PapersBrowser({ papers }: { papers: Paper[] }) {
             id="knowledge-search"
             type="search"
             value={queryInput}
-            onChange={(e) => setQueryInput(e.target.value)}
+            onChange={(e) => {
+              restoringFromURL.current = false;
+              setQueryInput(e.target.value);
+            }}
             placeholder="What do you need to know? e.g. hardpan, wheat, waterlogging…"
             className="w-full rounded-full border border-border bg-card py-3.5 pl-12 pr-4 text-base text-ink shadow-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
           />
@@ -319,7 +342,15 @@ export default function PapersBrowser({ papers }: { papers: Paper[] }) {
             {filters.q && (
               <span className="inline-flex items-center gap-1.5 rounded-full bg-primary-light/20 px-3 py-1 text-xs font-medium text-primary-dark">
                 Search: “{filters.q}”
-                <button type="button" onClick={() => setQueryInput("")} aria-label="Clear search" className="text-primary-dark/60 hover:text-primary-dark">
+                <button
+                  type="button"
+                  onClick={() => {
+                    restoringFromURL.current = false;
+                    setQueryInput("");
+                  }}
+                  aria-label="Clear search"
+                  className="text-primary-dark/60 hover:text-primary-dark"
+                >
                   ×
                 </button>
               </span>
