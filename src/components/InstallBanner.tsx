@@ -26,7 +26,11 @@ export default function InstallBanner({ dict }: { dict: Dictionary }) {
   }
 
   return (
-    <div className="bg-accent/15 border-b border-accent/30">
+    // Desktop-only: a visitor already on their phone doesn't need a banner
+    // telling them to install the site on their phone. The underlying
+    // install capability (and /install page) is unaffected by hiding this
+    // promotional banner on narrower/touch layouts.
+    <div className="hidden bg-accent/15 border-b border-accent/30 lg:block">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-4 gap-y-2 px-4 py-2.5 text-center sm:px-6">
         <p className="text-sm font-medium text-primary-dark">📱 {dict.install.bannerText}</p>
         <div className="flex items-center gap-4">

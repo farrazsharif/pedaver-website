@@ -128,7 +128,7 @@ export default function Header({ dict }: { dict: Dictionary }) {
     <header className="sticky top-0 z-50 bg-cream/95 shadow-sm backdrop-blur">
       {/* Tier 1 — utility bar */}
       <div className="border-b-4 border-[#7cbf3f] bg-[#1c1c1e]">
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:py-1.5">
           <div className="flex min-w-0 items-center gap-2 sm:gap-4">
             <Link href="/" className="flex flex-none items-center" aria-label={`${dict.meta.siteName} home`}>
               <img

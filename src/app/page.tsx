@@ -49,7 +49,7 @@ export default function HomePage() {
         <div className="relative mx-auto w-full max-w-6xl px-4 py-20 text-center sm:px-6">
           <h1 className="mx-auto max-w-4xl leading-none">
             <span
-              className="block text-7xl font-extrabold tracking-tight text-accent-light sm:text-9xl"
+              className="block text-7xl font-extrabold tracking-tight text-accent-light sm:text-9xl lg:text-[6.9rem]"
               style={{ textShadow: "0 4px 24px rgba(0,0,0,0.6), 0 2px 6px rgba(0,0,0,0.5)" }}
             >
               {h.hero.eyebrow}
