@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import Section from "@/components/Section";
+import RelatedKnowledgeModule from "@/components/science/RelatedKnowledgeModule";
 import ScienceApplicationNote from "@/components/science/ScienceApplicationNote";
 import BedFurrowCrossSection from "@/components/science/BedFurrowCrossSection";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
@@ -735,6 +736,8 @@ export default function ScienceProductionArchitecturePage() {
           </div>
         </div>
       </Section>
+
+      <RelatedKnowledgeModule domainSlug="production-architecture" />
 
       {/* CONTINUE THE SCIENCE */}
       <Section>

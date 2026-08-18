@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import Section from "@/components/Section";
+import RelatedKnowledgeModule from "@/components/science/RelatedKnowledgeModule";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
 import {
   hero,
@@ -445,6 +446,8 @@ export default function ScienceFoodQualityPage() {
           </div>
         </div>
       </Section>
+
+      <RelatedKnowledgeModule domainSlug="food-quality" />
 
       {/* CONTINUE THE SCIENCE */}
       <Section>

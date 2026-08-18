@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import Section from "@/components/Section";
+import RelatedKnowledgeModule from "@/components/science/RelatedKnowledgeModule";
 import StageProgression from "@/components/science/StageProgression";
 import ScienceApplicationNote from "@/components/science/ScienceApplicationNote";
 import ProductionLoop from "@/components/science/ProductionLoop";
@@ -541,6 +542,8 @@ export default function ScienceCropProtectionPage() {
           </div>
         </div>
       </Section>
+
+      <RelatedKnowledgeModule domainSlug="crop-protection" />
 
       {/* CONTINUE THE SCIENCE */}
       <Section>

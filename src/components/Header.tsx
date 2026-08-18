@@ -205,7 +205,7 @@ export default function Header({ dict }: { dict: Dictionary }) {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder={dict.nav.searchPlaceholder}
-              className="w-full bg-transparent py-1 text-base text-ink outline-none placeholder:text-ink-soft"
+              className="w-full bg-transparent py-1 text-base text-ink placeholder:text-ink-soft focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
             />
             <button type="submit" className="rounded-full bg-primary px-5 py-2 text-sm font-semibold text-cream hover:bg-primary-dark">
               {dict.nav.searchLabel}
@@ -250,11 +250,17 @@ export default function Header({ dict }: { dict: Dictionary }) {
               className="relative"
               onMouseEnter={() => group.children && setOpenGroup(group.label)}
               onMouseLeave={() => setOpenGroup(null)}
+              onFocus={() => group.children && setOpenGroup(group.label)}
+              onBlur={(e) => {
+                if (!e.currentTarget.contains(e.relatedTarget as Node)) setOpenGroup(null);
+              }}
             >
               <Link
                 href={group.href}
                 aria-current={isActive(group) ? "page" : undefined}
-                className={`flex items-center gap-1 border-b-2 px-4 py-3.5 text-sm font-semibold transition ${
+                aria-haspopup={group.children ? true : undefined}
+                aria-expanded={group.children ? openGroup === group.label : undefined}
+                className={`flex items-center gap-1 border-b-2 px-4 py-3.5 text-sm font-semibold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-primary ${
                   isActive(group)
                     ? "border-accent text-primary-dark"
                     : "border-transparent text-ink-soft hover:border-accent/40 hover:text-primary-dark"
@@ -275,7 +281,7 @@ export default function Header({ dict }: { dict: Dictionary }) {
                       key={child.href}
                       href={child.href}
                       aria-current={hrefMatches(child.href) ? "page" : undefined}
-                      className={`block px-4 py-2.5 text-sm font-medium transition ${
+                      className={`block px-4 py-2.5 text-sm font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-primary ${
                         hrefMatches(child.href)
                           ? "bg-primary/10 text-primary"
                           : "text-ink-soft hover:bg-primary/10 hover:text-primary"

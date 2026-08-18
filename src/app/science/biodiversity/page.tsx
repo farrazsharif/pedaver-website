@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import Section from "@/components/Section";
+import RelatedKnowledgeModule from "@/components/science/RelatedKnowledgeModule";
 import StageProgression from "@/components/science/StageProgression";
 import ScienceApplicationNote from "@/components/science/ScienceApplicationNote";
 import FutureTopicCard from "@/components/science/FutureTopicCard";
@@ -655,6 +656,8 @@ export default function ScienceBiodiversityPage() {
           </div>
         </div>
       </Section>
+
+      <RelatedKnowledgeModule domainSlug="biodiversity" />
 
       {/* CONTINUE THE SCIENCE */}
       <Section muted>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import Section from "@/components/Section";
+import RelatedKnowledgeModule from "@/components/science/RelatedKnowledgeModule";
 import ScienceApplicationNote from "@/components/science/ScienceApplicationNote";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
 import {
@@ -559,6 +560,8 @@ export default function ScienceClimatePage() {
           </div>
         </div>
       </Section>
+
+      <RelatedKnowledgeModule domainSlug="climate" />
 
       {/* CONTINUE THE SCIENCE */}
       <Section>

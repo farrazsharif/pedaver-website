@@ -5,6 +5,7 @@ import StageProgression from "@/components/science/StageProgression";
 import ScienceApplicationNote from "@/components/science/ScienceApplicationNote";
 import FutureTopicCard from "@/components/science/FutureTopicCard";
 import LivingSystemDiagram from "@/components/science/LivingSystemDiagram";
+import RelatedKnowledgeModule from "@/components/science/RelatedKnowledgeModule";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
 import { coreComponents } from "@/lib/content/science";
 import {
@@ -625,6 +626,8 @@ export default function ScienceSoilPage() {
           </div>
         </div>
       </Section>
+
+      <RelatedKnowledgeModule domainSlug="soil" />
 
       {/* SCIENCE PATHWAY */}
       <Section>

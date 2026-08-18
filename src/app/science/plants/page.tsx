@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import Section from "@/components/Section";
+import RelatedKnowledgeModule from "@/components/science/RelatedKnowledgeModule";
 import StageProgression from "@/components/science/StageProgression";
 import ScienceApplicationNote from "@/components/science/ScienceApplicationNote";
 import FutureTopicCard from "@/components/science/FutureTopicCard";
@@ -467,6 +468,8 @@ export default function SciencePlantsPage() {
           </div>
         </div>
       </Section>
+
+      <RelatedKnowledgeModule domainSlug="plants" />
 
       {/* CONNECTION TO THE WIDER PQNK SCIENCE SYSTEM */}
       <Section>
