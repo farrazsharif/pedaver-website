@@ -4,10 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import type { Dictionary } from "@/lib/dictionaries";
-import { crops } from "@/lib/content/crops";
 import { papers } from "@/lib/content/papers";
-import { machines } from "@/lib/content/machines";
-import { resources } from "@/lib/content/resources";
 import TranslateWidget from "./TranslateWidget";
 import { trackInternalSearch } from "@/lib/analytics";
 
@@ -17,12 +14,15 @@ interface SearchResult {
   href: string;
 }
 
-const searchIndex: SearchResult[] = [
-  ...crops.map((c) => ({ label: c.name, sublabel: "Crop", href: `/crops/${c.slug}` })),
-  ...papers.map((p) => ({ label: p.title, sublabel: "Knowledge Paper", href: `/papers/${p.slug}` })),
-  ...machines.map((m) => ({ label: m.title, sublabel: "Machine", href: `/machines/${m.slug}` })),
-  ...resources.map((r) => ({ label: r.title, sublabel: "PQNK Technique", href: `/resources/${r.slug}` })),
-];
+// Scoped to Knowledge Papers only — this is the "Search Knowledge" utility
+// action, distinct in purpose from the full relevance-ranked search on
+// /papers itself (see search.ts). This index just gives quick as-you-type
+// jump suggestions; submitting always hands off to the real search below.
+const searchIndex: SearchResult[] = papers.map((p) => ({
+  label: p.title,
+  sublabel: "Knowledge Paper",
+  href: `/papers/${p.slug}/`,
+}));
 
 function searchSite(query: string): SearchResult[] {
   const q = query.trim().toLowerCase();
@@ -53,45 +53,50 @@ export default function Header({ dict }: { dict: Dictionary }) {
   const [openGroup, setOpenGroup] = useState<string | null>(null);
   const [searchOpen, setSearchOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [mobileOpenGroup, setMobileOpenGroup] = useState<string | null>(null);
   const [query, setQuery] = useState("");
 
   const groups: NavGroup[] = [
     { label: dict.nav.home, href: "/" },
+    { label: dict.nav.science, href: "/science" },
+    { label: dict.nav.papers, href: "/papers" },
+    {
+      label: dict.nav.crops,
+      href: "/crops",
+      children: [
+        { label: dict.nav.allCrops, href: "/crops" },
+        { label: dict.nav.machines, href: "/machines" },
+        { label: dict.nav.resources, href: "/resources" },
+      ],
+    },
+    {
+      label: dict.nav.advisory,
+      href: "/advisory",
+      children: [
+        { label: dict.nav.advisory, href: "/advisory" },
+        { label: dict.nav.farmerVoices, href: "/farmer-voices" },
+        { label: dict.nav.videoLibrary, href: "/video-library" },
+      ],
+    },
     {
       label: dict.nav.aboutGroup,
       href: "/about",
       children: [
         { label: dict.nav.about, href: "/about" },
         { label: dict.nav.founder, href: "/founder" },
+        { label: dict.nav.services, href: "/services" },
+        { label: dict.nav.validation, href: "/validation" },
       ],
     },
-    { label: dict.nav.advisory, href: "/advisory" },
-    {
-      label: dict.nav.crops,
-      href: "/crops",
-      children: [
-        { label: dict.nav.allCrops, href: "/crops" },
-        { label: dict.nav.resources, href: "/resources" },
-      ],
-    },
-    { label: dict.nav.papers, href: "/papers" },
-    { label: dict.nav.machines, href: "/machines" },
-    {
-      label: dict.nav.videos,
-      href: "/videos",
-      children: [
-        { label: dict.nav.videos, href: "/videos" },
-        { label: dict.nav.videoLibrary, href: "/video-library" },
-      ],
-    },
-    { label: dict.nav.farmerVoices, href: "/farmer-voices" },
-    { label: dict.nav.services, href: "/services" },
-    { label: dict.nav.validation, href: "/validation" },
-    { label: dict.nav.contact, href: "/contact" },
   ];
 
-  const isActive = (href: string) =>
+  // A group counts as active if its own href matches, or if any of its
+  // dropdown children do — so "Crops & Machinery" highlights on /machines
+  // and /resources too, not only on /crops itself.
+  const hrefMatches = (href: string) =>
     href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(href + "/");
+  const isActive = (group: NavGroup) =>
+    hrefMatches(group.href) || (group.children?.some((c) => hrefMatches(c.href)) ?? false);
 
   const searchResults = searchSite(query);
 
@@ -103,10 +108,20 @@ export default function Header({ dict }: { dict: Dictionary }) {
 
   function handleSearch(e: React.FormEvent) {
     e.preventDefault();
-    if (!query.trim()) return;
-    trackInternalSearch(query.trim().length, searchResults.length);
-    const [top] = searchResults;
-    goToResult(top ? top.href : "/papers");
+    const q = query.trim();
+    if (!q) return;
+    trackInternalSearch(q.length, searchResults.length);
+    setSearchOpen(false);
+    setQuery("");
+    // Hand off to the real Knowledge Papers search rather than guessing a
+    // single "top" local match — /papers applies the full relevance-ranked
+    // search over all 186 papers. A plain browser navigation (not
+    // router.push) is deliberate: this statically-exported site has
+    // trailingSlash:true, and client-side router.push has been observed to
+    // drop the query string during that normalization, while a full
+    // navigation always preserves it exactly and PapersBrowser reads it
+    // straight from window.location.search on mount either way.
+    window.location.href = `/papers/?q=${encodeURIComponent(q)}`;
   }
 
   return (
@@ -114,25 +129,25 @@ export default function Header({ dict }: { dict: Dictionary }) {
       {/* Tier 1 — utility bar */}
       <div className="border-b-4 border-[#7cbf3f] bg-[#1c1c1e]">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
-          <div className="flex items-center gap-3 sm:gap-4">
-            <Link href="/" className="flex items-center" aria-label={`${dict.meta.siteName} home`}>
+          <div className="flex min-w-0 items-center gap-2 sm:gap-4">
+            <Link href="/" className="flex flex-none items-center" aria-label={`${dict.meta.siteName} home`}>
               <img
                 src="/images/pedaver-logo-white.png"
                 alt={`${dict.meta.siteName} — The Transformative Producer`}
-                className="h-14 w-auto sm:h-16"
+                className="h-8 w-auto sm:h-14 lg:h-16"
               />
             </Link>
-            <span className="h-10 w-px bg-white/15 sm:h-12" aria-hidden="true" />
-            <Link href="/" className="flex items-center" aria-label="PQNK — The Science of Natural Farming">
+            <span className="h-6 w-px flex-none bg-white/15 sm:h-12" aria-hidden="true" />
+            <Link href="/" className="flex flex-none items-center" aria-label="PQNK — The Science of Natural Farming">
               <img
                 src="/images/pqnk-logo.png"
                 alt="PQNK — The Science of Natural Farming"
-                className="h-14 w-auto sm:h-16"
+                className="h-8 w-auto sm:h-14 lg:h-16"
               />
             </Link>
           </div>
 
-          <div className="flex items-center gap-2 sm:gap-3">
+          <div className="flex flex-none items-center gap-1 sm:gap-3">
             <TranslateWidget />
 
             <button
@@ -217,7 +232,9 @@ export default function Header({ dict }: { dict: Dictionary }) {
                   ))}
                 </ul>
               ) : (
-                <p className="px-1 text-sm text-ink-soft">No crops, papers, or machines match &ldquo;{query}&rdquo;.</p>
+                <p className="px-1 text-sm text-ink-soft">
+                  No Knowledge Paper titles match &ldquo;{query}&rdquo; — press Search to run a full search.
+                </p>
               )}
             </div>
           )}
@@ -236,8 +253,9 @@ export default function Header({ dict }: { dict: Dictionary }) {
             >
               <Link
                 href={group.href}
+                aria-current={isActive(group) ? "page" : undefined}
                 className={`flex items-center gap-1 border-b-2 px-4 py-3.5 text-sm font-semibold transition ${
-                  isActive(group.href)
+                  isActive(group)
                     ? "border-accent text-primary-dark"
                     : "border-transparent text-ink-soft hover:border-accent/40 hover:text-primary-dark"
                 }`}
@@ -256,7 +274,12 @@ export default function Header({ dict }: { dict: Dictionary }) {
                     <Link
                       key={child.href}
                       href={child.href}
-                      className="block px-4 py-2.5 text-sm font-medium text-ink-soft transition hover:bg-primary/10 hover:text-primary"
+                      aria-current={hrefMatches(child.href) ? "page" : undefined}
+                      className={`block px-4 py-2.5 text-sm font-medium transition ${
+                        hrefMatches(child.href)
+                          ? "bg-primary/10 text-primary"
+                          : "text-ink-soft hover:bg-primary/10 hover:text-primary"
+                      }`}
                     >
                       {child.label}
                     </Link>
@@ -268,35 +291,78 @@ export default function Header({ dict }: { dict: Dictionary }) {
         </div>
       </nav>
 
-      {/* Mobile drawer */}
+      {/* Mobile drawer — groups with children collapse to a tap-to-expand
+          accordion (closed by default) so the menu isn't one long flat
+          scroll; groups without children navigate straight away. */}
       {mobileOpen && (
         <div className="border-t border-border bg-card lg:hidden">
           <nav className="mx-auto max-w-6xl px-4 py-4 sm:px-6">
-            {groups.map((group) => (
-              <div key={group.label} className="border-b border-border py-1 last:border-b-0">
-                <Link
-                  href={group.href}
-                  onClick={() => setMobileOpen(false)}
-                  className="block py-2.5 text-sm font-semibold text-primary-dark"
-                >
-                  {group.label}
-                </Link>
-                {group.children && (
-                  <div className="mb-2 ms-4 flex flex-col gap-1">
-                    {group.children.map((child) => (
-                      <Link
-                        key={child.href}
-                        href={child.href}
-                        onClick={() => setMobileOpen(false)}
-                        className="py-1.5 text-sm text-ink-soft hover:text-primary"
+            {groups.map((group) => {
+              const active = isActive(group);
+              const expanded = mobileOpenGroup === group.label;
+              return (
+                <div key={group.label} className="border-b border-border py-1 last:border-b-0">
+                  {group.children ? (
+                    <button
+                      type="button"
+                      onClick={() => setMobileOpenGroup(expanded ? null : group.label)}
+                      aria-expanded={expanded}
+                      className={`flex w-full items-center justify-between gap-2 py-3 text-base font-semibold ${
+                        active ? "text-primary" : "text-primary-dark"
+                      }`}
+                    >
+                      {group.label}
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2.5"
+                        className={`flex-none transition-transform ${expanded ? "rotate-180" : ""}`}
                       >
-                        {child.label}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
+                        <path d="m6 9 6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </button>
+                  ) : (
+                    <Link
+                      href={group.href}
+                      onClick={() => setMobileOpen(false)}
+                      className={`block py-3 text-base font-semibold ${active ? "text-primary" : "text-primary-dark"}`}
+                    >
+                      {group.label}
+                    </Link>
+                  )}
+                  {group.children && expanded && (
+                    <div className="mb-2 ms-1 flex flex-col gap-1 border-s-2 border-border ps-4">
+                      {group.children.map((child) => (
+                        <Link
+                          key={child.href}
+                          href={child.href}
+                          onClick={() => setMobileOpen(false)}
+                          className={`py-2.5 text-base ${
+                            hrefMatches(child.href) ? "font-semibold text-primary" : "text-ink-soft hover:text-primary"
+                          }`}
+                        >
+                          {child.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+            <div className="pt-2">
+              <Link
+                href="/contact"
+                onClick={() => setMobileOpen(false)}
+                className={`block py-3 text-base font-semibold ${
+                  hrefMatches("/contact") ? "text-primary" : "text-primary-dark"
+                }`}
+              >
+                {dict.nav.contact}
+              </Link>
+            </div>
           </nav>
         </div>
       )}

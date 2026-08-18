@@ -94,7 +94,40 @@ export default function HomePage() {
         </Section>
       )}
 
-      {/* 2. WHY PQNK WAS NECESSARY */}
+      {/* 2. WHERE SHOULD YOU GO NEXT — moved up from the foot of the page so a
+          visitor can self-route by audience before reading the full
+          narrative below, rather than only discovering it after scrolling
+          past eight other sections. */}
+      <Section id="knowledge-pathways" muted>
+        <div className="mx-auto max-w-2xl text-center">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">{h.pathways.eyebrow}</p>
+          <h2 className="mt-3 text-3xl font-bold text-primary-dark">{h.pathways.title}</h2>
+        </div>
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
+          {h.pathways.cards.map((card) => (
+            <Link
+              key={card.href}
+              href={card.href}
+              className="group flex flex-col rounded-2xl border border-border bg-card p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+            >
+              <span className="text-sm font-semibold uppercase tracking-wide text-accent">{card.audience}</span>
+              <h3 className="mt-2 text-lg font-bold text-primary-dark group-hover:text-primary">{card.label}</h3>
+              <p className="mt-2 flex-1 text-base leading-relaxed text-ink-soft">{card.body}</p>
+              <span className="mt-4 inline-block text-base font-semibold text-accent">{card.cta} →</span>
+            </Link>
+          ))}
+        </div>
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-center">
+          <span className="text-base font-semibold text-ink-soft">{h.pathways.secondaryTitle}</span>
+          {h.pathways.secondaryLinks.map((link) => (
+            <Link key={link.href} href={link.href} className="text-base font-semibold text-primary underline underline-offset-4">
+              {link.label}
+            </Link>
+          ))}
+        </div>
+      </Section>
+
+      {/* 3. WHY PQNK WAS NECESSARY */}
       <Section id="why-necessary">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">{h.whyNecessary.eyebrow}</p>
@@ -120,7 +153,7 @@ export default function HomePage() {
         </p>
       </Section>
 
-      {/* 3. THE FOUR PRINCIPLES OF PQNK */}
+      {/* 4. THE FOUR PRINCIPLES OF PQNK */}
       <section id="four-principles" className="bg-primary-dark text-cream">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
           <div className="text-center">
@@ -148,7 +181,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4. THE PQNK JOURNEY */}
+      {/* 5. THE PQNK JOURNEY */}
       <Section id="pqnk-journey" muted>
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">{h.journey.eyebrow}</p>
@@ -185,7 +218,7 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* 5. WHAT PQNK CHANGES */}
+      {/* 6. WHAT PQNK CHANGES */}
       <Section id="what-changes">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">{h.changes.eyebrow}</p>
@@ -215,7 +248,7 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* 6. FIELD EVIDENCE */}
+      {/* 7. FIELD EVIDENCE */}
       <Section id="field-evidence" muted>
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">{h.evidence.eyebrow}</p>
@@ -311,7 +344,7 @@ export default function HomePage() {
         )}
       </Section>
 
-      {/* 7. ONE PQNK SYSTEM, EVERY CROP */}
+      {/* 8. ONE PQNK SYSTEM, EVERY CROP */}
       <Section id="every-crop">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">{h.everyCrop.eyebrow}</p>
@@ -344,36 +377,6 @@ export default function HomePage() {
           <Link href="/crops" className="text-base font-semibold text-primary underline underline-offset-4">
             {h.everyCrop.viewAll} →
           </Link>
-        </div>
-      </Section>
-
-      {/* 8. KNOWLEDGE PATHWAYS */}
-      <Section id="knowledge-pathways" muted>
-        <div className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">{h.pathways.eyebrow}</p>
-          <h2 className="mt-3 text-3xl font-bold text-primary-dark">{h.pathways.title}</h2>
-        </div>
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
-          {h.pathways.cards.map((card) => (
-            <Link
-              key={card.href}
-              href={card.href}
-              className="group flex flex-col rounded-2xl border border-border bg-card p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
-            >
-              <span className="text-sm font-semibold uppercase tracking-wide text-accent">{card.audience}</span>
-              <h3 className="mt-2 text-lg font-bold text-primary-dark group-hover:text-primary">{card.label}</h3>
-              <p className="mt-2 flex-1 text-base leading-relaxed text-ink-soft">{card.body}</p>
-              <span className="mt-4 inline-block text-base font-semibold text-accent">{card.cta} →</span>
-            </Link>
-          ))}
-        </div>
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-center">
-          <span className="text-base font-semibold text-ink-soft">{h.pathways.secondaryTitle}</span>
-          {h.pathways.secondaryLinks.map((link) => (
-            <Link key={link.href} href={link.href} className="text-base font-semibold text-primary underline underline-offset-4">
-              {link.label}
-            </Link>
-          ))}
         </div>
       </Section>
 

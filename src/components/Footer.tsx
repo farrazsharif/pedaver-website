@@ -9,6 +9,7 @@ export default function Footer({ dict }: { dict: Dictionary }) {
     { label: dict.install.navLabel, href: "/install" },
     { label: dict.nav.about, href: "/about" },
     { label: dict.nav.founder, href: "/founder" },
+    { label: dict.nav.science, href: "/science" },
     { label: dict.nav.crops, href: "/crops" },
     { label: dict.nav.resources, href: "/resources" },
     { label: dict.nav.papers, href: "/papers" },
@@ -18,7 +19,7 @@ export default function Footer({ dict }: { dict: Dictionary }) {
   const workLinks = [
     { label: dict.nav.services, href: "/services" },
     { label: dict.nav.machines, href: "/machines" },
-    { label: dict.nav.videos, href: "/videos" },
+    { label: dict.nav.videoLibrary, href: "/video-library" },
     { label: dict.nav.validation, href: "/validation" },
     { label: dict.nav.contact, href: "/contact" },
   ];

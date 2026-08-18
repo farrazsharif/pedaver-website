@@ -154,6 +154,7 @@ export default function PapersBrowser({ papers }: { papers: Paper[] }) {
   const [filters, setFilters] = useState<Filters>(EMPTY_FILTERS);
   const [queryInput, setQueryInput] = useState("");
   const hydrated = useRef(false);
+  const rootRef = useRef<HTMLDivElement>(null);
 
   // Read shareable filter state from the URL once, on mount (client-only —
   // deliberately not next/navigation's useSearchParams, which would require a
@@ -172,6 +173,16 @@ export default function PapersBrowser({ papers }: { papers: Paper[] }) {
     setFilters(initial);
     setQueryInput(initial.q);
     hydrated.current = true;
+
+    // A shared/deep-linked search or filter URL should land with its
+    // results already visible, not require scrolling past page content
+    // above this component — most of that gap is now gone since search
+    // sits right below the hero, but this guarantees it on shorter mobile
+    // viewports too.
+    const hasSharedState = Object.values(initial).some((v) => v);
+    if (hasSharedState) {
+      rootRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   }, []);
 
   useEffect(() => {
@@ -246,7 +257,7 @@ export default function PapersBrowser({ papers }: { papers: Paper[] }) {
   }
 
   return (
-    <div>
+    <div ref={rootRef} className="scroll-mt-24">
       {/* Search */}
       <div className="mx-auto max-w-2xl">
         <label className="sr-only" htmlFor="knowledge-search">

@@ -24,6 +24,16 @@ export default function PapersPage() {
         </div>
       </section>
 
+      <Section muted>
+        <h2 className="text-center text-xl font-bold text-primary-dark">What do you need to know?</h2>
+        <p className="mx-auto mt-1 max-w-2xl text-center text-sm text-ink-soft">
+          Search in your own words, or browse by crop, problem, PQNK Science, or field practice.
+        </p>
+        <div className="mt-6">
+          <PapersBrowser papers={papers} />
+        </div>
+      </Section>
+
       <Section>
         <div className="mx-auto max-w-4xl rounded-2xl border border-border bg-card p-8 shadow-sm">
           <h2 className="text-xl font-bold text-primary-dark">{dict.papers.tocTitle}</h2>
@@ -37,16 +47,6 @@ export default function PapersPage() {
               </li>
             ))}
           </ol>
-        </div>
-      </Section>
-
-      <Section muted>
-        <h2 className="text-center text-xl font-bold text-primary-dark">What do you need to know?</h2>
-        <p className="mx-auto mt-1 max-w-2xl text-center text-sm text-ink-soft">
-          Search in your own words, or browse by crop, problem, PQNK Science, or field practice.
-        </p>
-        <div className="mt-6">
-          <PapersBrowser papers={papers} />
         </div>
       </Section>
     </div>
