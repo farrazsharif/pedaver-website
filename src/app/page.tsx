@@ -293,14 +293,14 @@ export default function HomePage() {
         {/* Field documentation videos */}
         {evidenceVideos.length > 0 && (
           <div className="mt-8">
-            <div className="mb-4 flex items-center justify-between">
+            <div className="mb-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
               <h3 className="flex items-center gap-3 text-base font-semibold uppercase tracking-wide text-ink-soft">
                 {h.evidence.videosTitle}
                 <span className="rounded-full bg-primary/10 px-2.5 py-0.5 text-sm font-semibold text-primary">
                   {h.evidence.videosType}
                 </span>
               </h3>
-              <Link href="/videos" className="text-base font-semibold text-primary underline underline-offset-4">
+              <Link href="/video-library" className="text-base font-semibold text-primary underline underline-offset-4">
                 {h.evidence.videosCta} →
               </Link>
             </div>

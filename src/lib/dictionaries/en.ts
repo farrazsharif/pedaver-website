@@ -160,7 +160,7 @@ const en = {
       featuredVideoTitle: "See the Planter in Action",
       videosTitle: "More Field Documentation",
       videosType: "Field Observation",
-      videosCta: "More on Knowledge & Testimonials",
+      videosCta: "Explore the Video Library",
       farmerVoicesTitle: "Farmer Voices",
       farmerVoicesType: "Farmer Testimony",
       farmerVoicesCta: "See more Farmer Voices",
