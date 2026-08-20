@@ -28,7 +28,7 @@ function AuthorityTag({ status }: { status: string }) {
   if (status === REQUIRES_REVIEW) {
     return (
       <span className="inline-flex items-center rounded-full border border-amber-300 bg-amber-50 px-2 py-0.5 text-[10px] font-semibold text-amber-800">
-        Under PQNK Review
+        Editorial Review Pending
       </span>
     );
   }

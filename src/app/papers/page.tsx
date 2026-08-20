@@ -2,7 +2,7 @@ import Link from "next/link";
 import dict from "@/lib/dictionaries";
 import { papers } from "@/lib/content/papers";
 import Section from "@/components/Section";
-import { buildMetadata } from "@/lib/seo";
+import { buildMetadata, SITE_URL } from "@/lib/seo";
 import PapersBrowser from "./PapersBrowser";
 
 export const metadata = buildMetadata({
@@ -15,8 +15,32 @@ export const metadata = buildMetadata({
 export default function PapersPage() {
   const sortedPapers = [...papers].sort((a, b) => a.title.localeCompare(b.title));
 
+  // Mirrors the numbered list already rendered below — a structured
+  // inventory of the same real entries, not a separate claim.
+  const collectionJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Knowledge Papers — The Research Behind PQNK",
+    url: `${SITE_URL}/papers`,
+    isPartOf: { "@id": `${SITE_URL}/#organization` },
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: sortedPapers.length,
+      itemListElement: sortedPapers.map((paper, idx) => ({
+        "@type": "ListItem",
+        position: idx + 1,
+        url: `${SITE_URL}/papers/${paper.slug}`,
+        name: paper.title,
+      })),
+    },
+  };
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
+      />
       <section className="border-b border-border bg-primary-light/10">
         <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6">
           <h1 className="text-4xl font-extrabold text-primary-dark">{dict.papers.pageTitle}</h1>

@@ -42,7 +42,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...staticPages.map((path) => ({ url: `${SITE_URL}${path}`, lastModified: now })),
     ...crops.map((crop) => ({ url: `${SITE_URL}/crops/${crop.slug}`, lastModified: now })),
-    ...papers.map((paper) => ({ url: `${SITE_URL}/papers/${paper.slug}`, lastModified: new Date(paper.publishedDate) })),
+    // publishedDate means two different things depending on the paper: for
+    // Pedaver-authored papers it's genuinely when the page was published, a
+    // correct lastmod. For externally-cited papers (externalUrl set), it's
+    // the CITED WORK's original publication date — e.g. a 2011 Springer
+    // journal article — which has nothing to do with when Pedaver's own
+    // page about it was last touched. Using it as lastmod there makes a
+    // current page look 15 years stale to crawlers. Fall back to the same
+    // build-time signal every other content type already uses.
+    ...papers.map((paper) => ({
+      url: `${SITE_URL}/papers/${paper.slug}`,
+      lastModified: paper.externalUrl ? now : new Date(paper.publishedDate),
+    })),
     ...machines.map((machine) => ({ url: `${SITE_URL}/machines/${machine.slug}`, lastModified: now })),
     ...resources.map((resource) => ({ url: `${SITE_URL}/resources/${resource.slug}`, lastModified: now })),
   ];

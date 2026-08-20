@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { machines, getMachineBySlug } from "@/lib/content/machines";
+import { getRelatedPapersForMachine } from "@/lib/content/crossLinks";
 import Section from "@/components/Section";
 import VideoEmbed from "@/components/VideoEmbed";
 import TrackedVideo from "@/components/analytics/TrackedVideo";
@@ -43,6 +44,8 @@ export default async function MachineDetailPage({
   const { slug } = await params;
   const machine = getMachineBySlug(slug);
   if (!machine) notFound();
+
+  const relatedPapers = getRelatedPapersForMachine(machine);
 
   const techArticleJsonLd = {
     "@context": "https://schema.org",
@@ -219,6 +222,32 @@ export default async function MachineDetailPage({
                 </div>
               </div>
             )}
+          </div>
+        </Section>
+      )}
+
+      {relatedPapers.length > 0 && (
+        <Section>
+          <div className="mx-auto max-w-3xl">
+            <h2 className="text-lg font-bold text-primary-dark">Knowledge Papers Mentioning This Machine</h2>
+            <p className="mt-1 text-sm text-ink-soft">
+              Drawn from the Knowledge Library&rsquo;s own machinery tagging, not hand-picked.
+            </p>
+            <div className="mt-3 flex flex-wrap gap-3">
+              {relatedPapers.map((paper) => (
+                <TrackedRelatedLink
+                  key={paper.slug}
+                  href={`/papers/${paper.slug}`}
+                  fromType="machine"
+                  fromId={machine.slug}
+                  toType="paper"
+                  toId={paper.slug}
+                  className="rounded-full border border-border bg-card px-4 py-2 text-sm font-semibold text-primary transition hover:bg-primary/10"
+                >
+                  {paper.title} →
+                </TrackedRelatedLink>
+              ))}
+            </div>
           </div>
         </Section>
       )}

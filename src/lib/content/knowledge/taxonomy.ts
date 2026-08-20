@@ -44,7 +44,12 @@ export const PQNK_PRINCIPLES: string[] = taxonomyData.pqnkPrinciples;
 export const EVIDENCE_TYPES: string[] = taxonomyData.evidenceTypes;
 export const AUTHORITY_STATUSES: string[] = taxonomyData.authorityStatuses;
 
-export const REQUIRES_REVIEW = "Requires PQNK Review";
+// Editorial-consistency status, not an evidentiary/scientific one — the
+// underlying PQNK knowledge in a paper carrying this status is already
+// authenticated. Only wording, terminology, and presentation consistency
+// with the rest of the Pedaver knowledge system are still pending. Never
+// treat this as a reason to suppress, downgrade, or exclude a paper.
+export const REQUIRES_REVIEW = "PQNK Authenticated — Editorial Consistency Review Pending";
 export const EXTERNAL_EVIDENCE = "External Knowledge / Evidence";
 export const CURRENT_APPROVED = "Current / Approved PQNK Knowledge";
 export const HISTORICAL_FORMULATION = "Historical PQNK Formulation";

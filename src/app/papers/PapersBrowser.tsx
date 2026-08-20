@@ -54,7 +54,7 @@ function AuthorityBadge({ status }: { status: string }) {
   if (status === REQUIRES_REVIEW) {
     return (
       <span className="inline-flex items-center gap-1 rounded-full border border-amber-300 bg-amber-50 px-2.5 py-0.5 text-[11px] font-semibold text-amber-800">
-        Under PQNK Review
+        Editorial Review Pending
       </span>
     );
   }

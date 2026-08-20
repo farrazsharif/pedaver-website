@@ -1,9 +1,9 @@
 import Link from "next/link";
 import dict from "@/lib/dictionaries";
-import { flagshipCrops, otherCrops } from "@/lib/content/crops";
+import { crops, flagshipCrops, otherCrops } from "@/lib/content/crops";
 import { cropImages } from "@/lib/content/cropImages";
 import Section from "@/components/Section";
-import { buildMetadata } from "@/lib/seo";
+import { buildMetadata, SITE_URL } from "@/lib/seo";
 
 export const metadata = buildMetadata({
   title: "Crops & Solutions — PQNK Field Guides by Crop",
@@ -13,8 +13,31 @@ export const metadata = buildMetadata({
 });
 
 export default function CropsPage() {
+  // Mirrors the flagship + other crop cards already rendered below.
+  const collectionJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Crops & Solutions — PQNK Field Guides by Crop",
+    url: `${SITE_URL}/crops`,
+    isPartOf: { "@id": `${SITE_URL}/#organization` },
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: crops.length,
+      itemListElement: crops.map((crop, idx) => ({
+        "@type": "ListItem",
+        position: idx + 1,
+        url: `${SITE_URL}/crops/${crop.slug}`,
+        name: crop.name,
+      })),
+    },
+  };
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
+      />
       <section className="border-b border-border bg-primary-light/10">
         <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6">
           <h1 className="text-4xl font-extrabold text-primary-dark">{dict.crops.pageTitle}</h1>

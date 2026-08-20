@@ -8,7 +8,7 @@ import { videos } from "@/lib/content/videos";
 import Section from "@/components/Section";
 import VideoEmbed from "@/components/VideoEmbed";
 import TrackedExternalChannelLink from "@/components/analytics/TrackedExternalChannelLink";
-import { buildMetadata } from "@/lib/seo";
+import { buildMetadata, SITE_URL, SITE_NAME } from "@/lib/seo";
 
 export const metadata = buildMetadata({
   title: "PQNK Natural Ecosystem Science of Production Agriculture | Pedaver",
@@ -36,8 +36,22 @@ export default function HomePage() {
   const storyVideo = videos.find((v) => v.videoId === storyVideoId);
   const voicePreview = loadFarmerVoicePreview(3);
 
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: `${SITE_NAME} — PQNK`,
+    url: SITE_URL,
+    description:
+      "PQNK is the natural ecosystem science of production agriculture: four governing principles, a documented transition from degraded soil to a sustained closed loop, and field evidence across 20+ crops in Pakistan.",
+    publisher: { "@id": `${SITE_URL}/#organization` },
+  };
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+      />
       {/* 1. HERO — establishes what PQNK is, not a crop-promotion carousel */}
       <section className="relative flex min-h-[520px] items-center overflow-hidden text-cream sm:min-h-[600px]">
         <img

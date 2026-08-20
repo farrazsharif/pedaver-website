@@ -3,7 +3,7 @@ import dict from "@/lib/dictionaries";
 import { machines, machinePhilosophy, type Machine } from "@/lib/content/machines";
 import Section from "@/components/Section";
 import SectionViewTracker from "@/components/analytics/SectionViewTracker";
-import { buildMetadata } from "@/lib/seo";
+import { buildMetadata, SITE_URL } from "@/lib/seo";
 
 export const metadata = buildMetadata({
   title: "PQNK Machines — Hardpan Breaking, Permanent Raised Beds & SIPP/VIPP Planters",
@@ -48,8 +48,31 @@ function MachineCard({ machine }: { machine: Machine }) {
 }
 
 export default function MachinesPage() {
+  // Mirrors the machine cards already rendered below.
+  const collectionJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "PQNK Machines — Hardpan Breaking, Permanent Raised Beds & SIPP/VIPP Planters",
+    url: `${SITE_URL}/machines`,
+    isPartOf: { "@id": `${SITE_URL}/#organization` },
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: machines.length,
+      itemListElement: machines.map((machine, idx) => ({
+        "@type": "ListItem",
+        position: idx + 1,
+        url: `${SITE_URL}/machines/${machine.slug}`,
+        name: machine.title,
+      })),
+    },
+  };
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
+      />
       <section className="border-b border-border bg-primary-light/10">
         <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6">
           <h1 className="text-4xl font-extrabold text-primary-dark">{dict.machines.pageTitle}</h1>

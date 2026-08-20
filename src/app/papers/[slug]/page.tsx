@@ -11,9 +11,11 @@ import ContentViewTracker from "@/components/analytics/ContentViewTracker";
 import TrackedPdfLink from "@/components/analytics/TrackedPdfLink";
 import TrackedExternalLink from "@/components/analytics/TrackedExternalLink";
 import TrackedRelatedLink from "@/components/analytics/TrackedRelatedLink";
-import { buildMetadata, SITE_URL, SITE_NAME } from "@/lib/seo";
+import { buildMetadata, SITE_URL } from "@/lib/seo";
 import { getMetadata, REQUIRES_REVIEW, EXTERNAL_EVIDENCE } from "@/lib/content/knowledge/taxonomy";
 import { getRelatedKnowledge } from "@/lib/content/knowledge/related";
+import { getFarmerQuestionOrigin } from "@/lib/content/knowledge/farmerQuestions";
+import FarmerQuestionBlock from "@/components/papers/FarmerQuestionBlock";
 
 const SCIENCE_PAGE_LABELS: Record<string, string> = {
   "/science/soil": "Soil Science",
@@ -62,22 +64,24 @@ export default async function PaperDetailPage({
   const relatedCrops = getRelatedCrops(paper);
   const meta = getMetadata(slug);
   const relatedKnowledge = getRelatedKnowledge(paper, meta, papers, getMetadata, 4);
+  const farmerQuestionOrigin = getFarmerQuestionOrigin(slug);
 
   const scholarlyArticleJsonLd = {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
     headline: paper.title,
     description: paper.summary,
-    author: {
-      "@type": "Person",
-      name: "Asif Sharif",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: SITE_NAME,
-      url: SITE_URL,
-    },
+    author: { "@id": `${SITE_URL}/founder#person` },
+    publisher: { "@id": `${SITE_URL}/#organization` },
     url: `${SITE_URL}/papers/${slug}`,
+    // datePublished always reflects paper.publishedDate as authored (this
+    // is correct even for externally-cited papers, where it's the cited
+    // work's own original date — see sitemap.ts for why lastmod handles
+    // that case differently). No separate "last edited" signal exists yet,
+    // so dateModified mirrors it rather than asserting a freshness claim
+    // this data can't back up.
+    datePublished: paper.publishedDate,
+    dateModified: paper.publishedDate,
     ...(paper.heroImage ? { image: `${SITE_URL}${paper.heroImage}` } : {}),
   };
 
@@ -100,14 +104,16 @@ export default async function PaperDetailPage({
         </div>
       </section>
 
+      {farmerQuestionOrigin && <FarmerQuestionBlock origin={farmerQuestionOrigin} />}
+
       {meta?.authorityStatus === REQUIRES_REVIEW && (
         <div className="border-b border-amber-200 bg-amber-50">
           <div className="mx-auto max-w-4xl px-4 py-4 sm:px-6">
             <p className="text-sm text-amber-900">
-              <span className="font-semibold">PQNK Review Status —</span> this paper contains one or
-              more statements currently under Pedaver/PQNK review. It remains available as part of the
-              Knowledge Library, but flagged statements should not be treated as current authoritative
-              PQNK doctrine until review is complete.
+              <span className="font-semibold">PQNK Authenticated — Editorial Consistency Review Pending —</span>{" "}
+              this paper&rsquo;s underlying PQNK knowledge is authenticated. Wording, terminology, and
+              presentation consistency with the rest of the Pedaver knowledge system are still being
+              finalized.
             </p>
           </div>
         </div>
