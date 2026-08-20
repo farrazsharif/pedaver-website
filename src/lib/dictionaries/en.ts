@@ -401,7 +401,7 @@ const en = {
     ],
   },
   services: {
-    pageTitle: "Services",
+    pageTitle: "PQNK Support Services",
     pageSubtitle:
       "From barren land to a profitable production unit: Pedaver's paid advisory services for turning PQNK's regenerative system into a working farm, built on the lowest cost of production and the highest quality output.",
     freeTitle: "PQNK Knowledge Is Free & Open Source",
