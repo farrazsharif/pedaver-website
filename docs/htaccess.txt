@@ -12,6 +12,12 @@ RedirectMatch 301 ^/farmer-stories/?$ /videos/
 # old links get a real 301, not just the page's client-side JS redirect
 RedirectMatch 301 ^/certification/?$ /validation/
 
+# Sample Page was a leftover from the pre-Next.js site (an old founder bio
+# page). It no longer exists on the server at all, but Google's index still
+# has it — redirect it to the current Founder page so that stale link/index
+# entry resolves correctly instead of 404ing.
+RedirectMatch 301 ^/sample-page/?$ /founder/
+
 # Cache static assets aggressively (they are content-hashed by Next)
 <IfModule mod_expires.c>
   ExpiresActive On
