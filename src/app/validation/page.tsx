@@ -1,7 +1,7 @@
 import Link from "next/link";
 import dict from "@/lib/dictionaries";
 import Section from "@/components/Section";
-import { buildMetadata } from "@/lib/seo";
+import { buildMetadata, SITE_URL } from "@/lib/seo";
 import {
   validationInfographic,
   validationPageTitle,
@@ -10,16 +10,34 @@ import {
   validationSections,
 } from "@/lib/content/validationSystem";
 
+const PAGE_TITLE = "PQNK™ Validation — Validating Biological Excellence";
+const PAGE_DESCRIPTION =
+  "PQNK™ Validation is a comprehensive framework for biological, environmental, and economic performance, organised around four pillars: System, Food Value, Environmental, and Economic Validation — including laboratory-confirmed freedom from agrochemical residues.";
+
 export const metadata = buildMetadata({
-  title: "PQNK™ Validation — Validating Biological Excellence",
-  description:
-    "PQNK™ Validation is a comprehensive framework for biological, environmental, and economic performance, organised around four pillars: System, Food Value, Environmental, and Economic Validation — including laboratory-confirmed freedom from agrochemical residues.",
+  title: PAGE_TITLE,
+  description: PAGE_DESCRIPTION,
   path: "/validation",
 });
+
+const validationPageJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: PAGE_TITLE,
+  description: PAGE_DESCRIPTION,
+  url: `${SITE_URL}/validation`,
+  author: { "@id": `${SITE_URL}/founder#person` },
+  publisher: { "@id": `${SITE_URL}/#organization` },
+  about: { "@id": `${SITE_URL}/#pqnk` },
+};
 
 export default function ValidationPage() {
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(validationPageJsonLd) }}
+      />
       <section className="border-b border-border bg-primary-light/10">
         <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6">
           <h1 className="text-4xl font-extrabold text-primary-dark">{validationPageTitle}</h1>

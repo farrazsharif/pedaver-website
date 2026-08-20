@@ -3,7 +3,7 @@ import Section from "@/components/Section";
 import LivingSystemDiagram from "@/components/science/LivingSystemDiagram";
 import ScienceApplicationNote from "@/components/science/ScienceApplicationNote";
 import FutureTopicCard from "@/components/science/FutureTopicCard";
-import { buildMetadata } from "@/lib/seo";
+import { buildMetadata, SITE_URL } from "@/lib/seo";
 import {
   hero,
   inheritedSystem,
@@ -18,16 +18,53 @@ import {
   closing,
 } from "@/lib/content/science";
 
+const PAGE_TITLE = "PQNK Science — The Natural Ecosystem Science of Production Agriculture | Pedaver";
+const PAGE_DESCRIPTION =
+  "PQNK Science explains how soil, plants, water and biodiversity function together as one living production system, why agriculture disrupted it, and how PQNK restores it.";
+
 export const metadata = buildMetadata({
-  title: "PQNK Science — The Natural Ecosystem Science of Production Agriculture | Pedaver",
-  description:
-    "PQNK Science explains how soil, plants, water and biodiversity function together as one living production system, why agriculture disrupted it, and how PQNK restores it.",
+  title: PAGE_TITLE,
+  description: PAGE_DESCRIPTION,
   path: "/science",
 });
+
+// The same 10 domains actually rendered as cards below (coreComponents,
+// productionFunctions, systemOutcomes, plus the two singular
+// transition/productionArchitecture topics) — not a separately maintained
+// list.
+const ALL_SCIENCE_DOMAINS = [
+  ...coreComponents,
+  ...productionFunctions,
+  ...systemOutcomes,
+  productionArchitecture,
+  transition,
+];
+
+const scienceCollectionJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: PAGE_TITLE,
+  url: `${SITE_URL}/science`,
+  isPartOf: { "@id": `${SITE_URL}/#organization` },
+  mainEntity: {
+    "@type": "ItemList",
+    numberOfItems: ALL_SCIENCE_DOMAINS.length,
+    itemListElement: ALL_SCIENCE_DOMAINS.map((domain, idx) => ({
+      "@type": "ListItem",
+      position: idx + 1,
+      url: `${SITE_URL}${domain.futureRoute}`,
+      name: domain.name,
+    })),
+  },
+};
 
 export default function SciencePage() {
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(scienceCollectionJsonLd) }}
+      />
       {/* HERO */}
       <section className="border-b border-border bg-primary-light/10">
         <div className="mx-auto max-w-3xl px-4 py-16 text-center sm:px-6 sm:py-20">

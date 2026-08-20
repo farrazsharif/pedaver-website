@@ -38,6 +38,22 @@ export const viewport: Viewport = {
   themeColor: "#2f5233",
 };
 
+// The one stable, machine-readable identity for PQNK itself — referenced by
+// @id elsewhere rather than redeclared, exactly like Organization and Person
+// below. DefinedTerm is schema.org's type for a named system/body of
+// knowledge; name, alternateName and description are lifted directly from
+// the site's own existing description of PQNK (Partnership section of
+// /services/), not invented.
+const pqnkJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": `${SITE_URL}/#pqnk`,
+  name: "PQNK",
+  alternateName: "Paedar Qudratti Nizam Kashatkari",
+  description:
+    "PQNK® (Paedar Qudratti Nizam Kashatkari) is the science of managing production agriculture as a functioning natural ecosystem.",
+};
+
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -47,6 +63,7 @@ const organizationJsonLd = {
   logo: `${SITE_URL}/images/pedaver-logo-glow.png`,
   description: dict.meta.tagline,
   founder: { "@id": `${SITE_URL}/founder#person` },
+  knowsAbout: { "@id": `${SITE_URL}/#pqnk` },
   sameAs: [
     "https://www.facebook.com/Pedaver",
     "https://www.youtube.com/@pedaverpqnk3167/videos",
@@ -62,6 +79,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pqnkJsonLd) }} />
         <Header dict={dict} />
         <InstallBanner dict={dict} />
         <main className="flex-1">{children}</main>
