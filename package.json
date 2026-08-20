@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "generate:advisory": "tsx scripts/generate-advisory-manifest.ts"
+    "generate:advisory": "tsx scripts/generate-advisory-manifest.ts",
+    "indexnow:submit": "tsx scripts/indexnow-submit.ts"
   },
   "dependencies": {
     "next": "16.2.10",

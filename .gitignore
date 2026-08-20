@@ -48,6 +48,9 @@ yarn-error.log*
 # machine-local Claude Code settings (contains per-PC paths, e.g. hooks)
 /.claude/settings.local.json
 
+# local run logs from scripts/indexnow-submit.ts; not committed
+/scripts/indexnow-logs/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
