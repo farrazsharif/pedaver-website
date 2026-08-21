@@ -14038,4 +14038,82 @@
 }
 ]
 }
+,
+{
+"slug":"why-only-4kg-of-np-during-pqnk-transition",
+"primarySubject":"Why PQNK's transitional 4 kg NP per acre dose is a temporary bridge, not a permanent fertilizer programme",
+"questionsAnswered":[
+"If conventional farming recommends bags of fertilizer, how can 4 kg of NP be enough during PQNK transition?",
+"Why not apply a full bag of fertilizer just to be safe?",
+"Why is PQNK's transitional fertilizer applied through furrow irrigation water instead of broadcast?",
+"Does PQNK's 4 kg NP recommendation ever become the permanent fertilizer programme?",
+"How much of a plant's mass actually comes from fertilizer versus air and water?",
+"Why can a large fertilizer dose harm the soil life PQNK is trying to restore?"
+],
+"keywords":[
+"4 kg NP",
+"PQNK transition fertilizer",
+"plant mass composition",
+"soil nutrient conversion",
+"fertilizer dependency",
+"furrow-applied fertilizer",
+"nutrient availability vs quantity",
+"biological nutrient cycling",
+"chelation fertilizer",
+"slow release fertilizer"
+],
+"geography":null,
+"crops":[],
+"fieldProblems":[
+"Nutrient Deficiency Symptoms (Plant-Visible)",
+"External Input Dependency",
+"Preventive/Prophylactic Over-Application of Inputs (Fertilizer/Nitrogen)",
+"Nutrient Retention / Delivery Efficiency Concerns"
+],
+"problemFamily":[
+"Plant Growth & Nutrition",
+"Cost, Profit & Markets",
+"Transition / Conversion"
+],
+"fieldPractices":[
+"Soil Biology Restoration (General)",
+"Biological Nutrient Cycling",
+"PQNK Transition Protocol (Staged)",
+"Furrow Irrigation",
+"Reduced/Eliminated Chemical Input"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Soil",
+"Nutrition",
+"Transition"
+],
+"pqnkPrinciples":[
+"No Soil Disturbance",
+"No Inundation",
+"Permanent Biological Cover",
+"Maximum Biodiversity"
+],
+"productionStages":[
+"Transition/Conversion",
+"Vegetative Growth"
+],
+"evidenceType":"Scientific Mechanism",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/soil",
+"why":"soil mineral reserves and the biological conversion system that makes them plant-available"
+},
+{
+"page":"/science/nutrition",
+"why":"plant mass composition and on-demand nutrient conversion versus fertilizer supply"
+},
+{
+"page":"/science/transition",
+"why":"4 kg NP as a temporary transitional bridge dose, not a permanent fertility system"
+}
+]
+}
 ]

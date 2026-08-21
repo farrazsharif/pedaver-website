@@ -4625,6 +4625,30 @@ export const papers: Paper[] = [
       "Mulch must never pack so densely it restricts root-zone aeration; the goal is to protect and aerate the living soil, not to physically suffocate weeds.",
     ],
   },
+  {
+    slug: "why-only-4kg-of-np-during-pqnk-transition",
+    category: "Workforce & Practice Advisories",
+    title: "Why Only 4 kg of NP During PQNK Transition?",
+    summary:
+      "Answers a transitioning farmer's question, how can just 4 kg of NP per acre replace bags of conventional fertilizer, by showing that plant mass is built overwhelmingly from air and water rather than fertilizer, and that the 4 kg NP dose is a small, temporary, furrow-delivered bridge that supports the crop without overloading and damaging the soil biology PQNK is trying to restore.",
+    publishedDate: "2026-08-21",
+    pdfPath: "/papers/why-only-4kg-of-np-during-pqnk-transition.pdf",
+    heroImage: "/images/cereal-green.jpg",
+    abstract: [
+      "A farmer transitioning to PQNK asked a reasonable question: if conventional agriculture recommends bags of fertilizer per acre, how can roughly 4 kg of NP possibly be enough? The paper's answer starts with plant mass composition: approximately 95.917% of a plant's body is built from carbon, hydrogen and oxygen sourced from air and water, roughly 4% is nitrogen ultimately traceable to atmospheric sources, and only about 0.083% represents mineral elements drawn from the soil's geological reserve. Minerals remain essential, but the conventional error is treating 'essential' as synonymous with 'must be supplied in large manufactured quantities.'",
+      "The soil already holds an enormous mineral reserve; the actual constraint is that much of it sits in stable forms that are not immediately water-soluble. The paper describes a functioning biological soil as an on-demand nutrient conversion system, explicitly not a slow-release fertilizer, in which plant demand triggers biological conversion of the sustainable mineral reserve into balanced, water-soluble nutrients as needed. It reuses the wheat-flour-bread analogy from PQNK's soil-nutrition framework: a stored reserve is only useful with a functioning conversion process between it and the final usable product, and repeated tillage, inundation, bare soil and heavy agrochemical use are what damage that conversion machinery in the first place.",
+      "The paper then argues against applying a full bag 'just to be safe' on the grounds that fertilizer applied is not fertilizer absorbed: nitrogen is subject to volatilization, leaching and immobilization, phosphorus fixes into less available forms, and a large one-time application is often poorly synchronized with actual plant demand. It notes that fertilizer technology itself, through chelation and slow-release formulations, already concedes that availability and timing matter more than raw quantity. A large soluble dose carries a second cost specific to PQNK: it raises soil salt concentration and osmotic pressure, conditions unfavorable to the same microorganisms and soil life the transition is trying to restore, so the transitional dose has to correct deficiency and protect biological recovery at the same time.",
+      "The paper is explicit that the roughly 4 kg NP per acre figure is a temporary corrective bridge, not PQNK's permanent nutrient system, delivered diluted through furrow irrigation water directly into the active root zone rather than broadcast and left exposed. It should never harden into a new calendar prescription replacing 'apply one bag' with 'apply 4 kg': the correct sequence is to observe the crop, correct water and aeration first, confirm a genuine nutritional need exists, and only then apply the minimum corrective dose, repeating it solely if deficiency persists. Success is measured not by finding a better fertilizer programme but by the point at which routine fertilizer intervention becomes unnecessary as the soil's own conversion system recovers.",
+    ],
+    keyTakeaways: [
+      "Roughly 95.917% of plant mass comes from air and water (carbon, hydrogen, oxygen), about 4% from atmospheric nitrogen, and only about 0.083% from soil minerals, so minerals are essential but represent a tiny fraction of total plant mass.",
+      "A functioning living soil is described as an 'on-demand nutrient conversion system,' not a slow-release fertilizer: it converts the sustainable mineral reserve into water-soluble nutrients in response to plant demand rather than releasing a pre-loaded dose on a timer.",
+      "Fertilizer applied is not the same as fertilizer absorbed: nitrogen losses (volatilization, leaching, immobilization) and phosphorus fixation mean a large one-time dose is often poorly synchronized with actual plant uptake.",
+      "Large soluble fertilizer doses raise soil salt concentration and osmotic pressure, which can damage the same soil microorganisms PQNK transition is trying to restore, so an oversized 'just to be safe' dose actively works against recovery.",
+      "The roughly 4 kg NP per acre transitional dose is delivered diluted through furrow irrigation water into the active root zone, and used only when a crop shows genuine deficiency after water, aeration and root problems have been ruled out first.",
+      "The 4 kg figure is a temporary bridge, not PQNK's permanent fertility system; success is measured by the intervention becoming unnecessary as soil biology recovers, not by finding a better fertilizer schedule.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {
