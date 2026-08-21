@@ -4553,6 +4553,30 @@ export const papers: Paper[] = [
       "Concludes that in a mature PQNK system, the farmer's trained senses become the most sophisticated available instrument for assessing nutritional density and system health.",
     ],
   },
+  {
+    slug: "production-architecture-engineering-the-farm",
+    category: "Plant Physiology & Production Systems",
+    title: "Production Architecture: Engineering the Farm So the Living System Never Has to Be Rebuilt",
+    summary:
+      "Explains the physical engineering behind the four PQNK principles: permanent raised beds and furrows that separate destructive tractor traffic and irrigation from a protected biological zone, so a field accumulates biological function crop after crop instead of being torn down and rebuilt every season.",
+    publishedDate: "2026-08-21",
+    pdfPath: "/papers/production-architecture-engineering-the-farm.pdf",
+    heroImage: "/images/beds-prepared.jpg",
+    abstract: [
+      "Conventional agriculture treats soil preparation as a recurring requirement: a field is ploughed, planted, harvested and physically reconstructed for the next crop, with tractor tyres repeatedly crossing the same soil expected to support roots and irrigation repeatedly saturating it. This paper argues that PQNK reverses that relationship through Production Architecture, a physical field design that separates the farm into two permanent functional spaces so that farming operations can continue without repeatedly destroying the biological system that produces the crop.",
+      "The core move is functional separation: a protected biological production zone, the permanent raised bed, where crop roots, microorganisms, fungi and organic matter are left to accumulate biological infrastructure crop after crop; and a permanent traffic and hydraulic corridor, the furrow, where tractor tyres and irrigation water are deliberately confined. The paper is explicit that the familiar PQNK dimensions, roughly a 42-inch bed top and 18-inch furrow, are an engineering solution sized to a common tractor's wheel spacing and tyre width, not a universal biological law; the actual geometry must be recalculated for whatever tractor is in use. The same caveat applies to hardpan-breaking depth: rather than a fixed 22-inch prescription, the paper insists a Production Manager dig a soil pit to physically locate the restrictive layer and set subsoiler penetration below it, so the tine shatters the hardpan completely rather than scratching its surface.",
+      "Once the architecture is built, it is meant to be a one-time correction, not a recurring one: mechanical correction gives way to permanent architecture, which in turn gives way to biological maintenance, replacing the conventional cycle of compaction followed by repeated subsoiling. Machinery is adapted to this permanent geometry rather than the reverse, and the paper describes two purpose-built no-till planters, SIPP and VIPP, engineered to place seed through mulch and into undisturbed soil without reopening the bed. Mulch itself is reframed as engineering infrastructure rather than mere residue: under extreme summer conditions where bare soil can exceed 70°C against a 45-50°C ambient air temperature, adequate organic mulch cover can lower soil-surface temperature by roughly 30°C, moderating the thermal and hydraulic environment the crop depends on.",
+      "The paper closes by situating Production Architecture as the layer that makes the rest of PQNK's biological science operational under commercial production, protecting the physical conditions, intact roots, uncompacted pores, continuous cover, that nutrition, crop protection, food quality and climate function all depend on. It draws a firm distinction between PQNK's universal science, protect soil architecture, avoid inundation, maintain cover, retain roots, and its local engineering, bed width, furrow depth, corrective working depth, which must respond to the tractor and conditions actually in use.",
+    ],
+    keyTakeaways: [
+      "PQNK separates every field into a protected biological bed and a permanent traffic/hydraulic furrow, so tractor traffic and irrigation are physically confined away from the zone where roots and soil biology develop.",
+      "The commonly cited 42-inch bed and 18-inch furrow dimensions are an engineering solution for a specific tractor configuration, not a universal PQNK prescription; geometry must be recalculated for the actual tractor in use.",
+      "Hardpan-breaking depth (commonly around 22 inches) must be set by digging a soil pit and locating the restrictive layer, not applied as a fixed number; the subsoiler tine must shatter completely through the hardpan.",
+      "Once built, the architecture is a one-time correction: mechanical correction gives way to permanent architecture, which gives way to biological maintenance, rather than a cycle of repeated compaction and subsoiling.",
+      "Organic mulch functions as thermal and hydraulic infrastructure: under extreme heat it can lower soil-surface temperature by roughly 30°C compared to bare exposed soil.",
+      "SIPP and VIPP planters exist to plant into permanent beds through mulch with minimal disturbance, so a field does not need to be tilled again simply because another crop is being planted.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {
