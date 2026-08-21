@@ -1,0 +1,348 @@
+<title>PQNK Outreach Phase 1 Plan</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<style>
+  :root {
+    --cream: #f6f1e6; --cream-raised: #fffdf8; --ink: #24301f; --ink-soft: #52604a;
+    --green: #2f5233; --green-deep: #1e3722; --terracotta: #c97c3d; --gold: #e0a868;
+    --line: #dcd2ba; --line-soft: #e9e1cd; --code-bg: #efe8d4;
+    --p0: #b5482f; --p1: #c97c3d; --p2: #8a7a2f; --p3: #4a7a63;
+    --good: #3f7a4f; --bad: #b5482f; --warn: #a8792f;
+    --shadow: 0 1px 2px rgba(30,55,34,0.06), 0 8px 24px rgba(30,55,34,0.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --cream: #14201a; --cream-raised: #1a2921; --ink: #eae3cf; --ink-soft: #b7c2ac;
+      --green: #7bb489; --green-deep: #a9d3af; --terracotta: #e0a868; --gold: #e0a868;
+      --line: #33452f; --line-soft: #2a3a26; --code-bg: #1f2e22;
+      --p0: #e08066; --p1: #e0a868; --p2: #c9b877; --p3: #7bb489;
+      --good: #7bb489; --bad: #e08066; --warn: #c9b877;
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --cream: #14201a; --cream-raised: #1a2921; --ink: #eae3cf; --ink-soft: #b7c2ac;
+    --green: #7bb489; --green-deep: #a9d3af; --terracotta: #e0a868; --gold: #e0a868;
+    --line: #33452f; --line-soft: #2a3a26; --code-bg: #1f2e22;
+    --p0: #e08066; --p1: #e0a868; --p2: #c9b877; --p3: #7bb489;
+    --good: #7bb489; --bad: #e08066; --warn: #c9b877;
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--cream); color: var(--ink); font-family: "Hanken Grotesk", -apple-system, sans-serif; font-size: 16px; line-height: 1.6; }
+  h1, h2, h3 { font-family: "Bitter", Georgia, serif; text-wrap: balance; color: var(--green-deep); }
+  a { color: var(--terracotta); }
+  .shell { display: grid; grid-template-columns: 220px minmax(0,1fr); max-width: 1220px; margin: 0 auto; }
+  @media (max-width: 900px) { .shell { grid-template-columns: 1fr; } .nav { display: none; } }
+  .nav { position: sticky; top: 0; align-self: start; height: 100vh; overflow-y: auto; padding: 32px 16px 40px 24px; border-right: 1px solid var(--line); }
+  .nav .brand { font-family: "Bitter", serif; font-weight: 700; font-size: 0.9rem; color: var(--green-deep); margin: 0 0 2px; }
+  .nav .brand-sub { font-size: 0.66rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 18px; }
+  .nav ol { list-style: none; margin: 0; padding: 0; counter-reset: navsec; }
+  .nav li { counter-increment: navsec; margin-bottom: 1px; }
+  .nav a { display: flex; gap: 7px; padding: 4px 7px; border-radius: 5px; font-size: 0.78rem; text-decoration: none; color: var(--ink-soft); }
+  .nav a::before { content: counter(navsec); font-weight: 700; color: var(--terracotta); width: 1.3em; flex: none; }
+  .nav a:hover { background: var(--line-soft); color: var(--ink); }
+  main { padding: 44px 36px 100px; min-width: 0; }
+  @media (max-width: 900px) { main { padding: 28px 18px 80px; } }
+  .cover { margin-bottom: 20px; }
+  .cover .eyebrow { font-size: 0.74rem; letter-spacing: 0.10em; text-transform: uppercase; color: var(--terracotta); font-weight: 700; margin: 0 0 8px; }
+  .cover h1 { font-size: clamp(1.6rem, 2.8vw, 2.15rem); margin: 0 0 10px; line-height: 1.15; }
+  .cover p { max-width: 74ch; color: var(--ink-soft); font-size: 1rem; margin: 0 0 10px; }
+  .decisions-banner { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; background: color-mix(in srgb, var(--green) 10%, var(--cream-raised)); border: 1px solid var(--green); border-radius: 12px; padding: 14px 18px; margin: 14px 0 30px; font-size: 0.85rem; }
+  .decisions-banner .db-label { font-family: "Bitter", serif; font-weight: 700; color: var(--green-deep); flex: none; }
+  section.card { background: var(--cream-raised); border: 1px solid var(--line); border-radius: 14px; padding: 28px 32px; margin-bottom: 22px; box-shadow: var(--shadow); scroll-margin-top: 16px; }
+  @media (max-width: 640px) { section.card { padding: 20px 18px; } }
+  .sec-label { display: flex; align-items: baseline; gap: 10px; margin-bottom: 4px; }
+  .sec-num { font-family: "Bitter", serif; font-weight: 700; font-size: 1.25rem; color: var(--terracotta); line-height: 1; }
+  section.card h2 { margin: 0; font-size: 1.22rem; }
+  .sec-dek { color: var(--ink-soft); margin: 6px 0 16px; max-width: 76ch; }
+  p, ul, ol { max-width: 78ch; }
+  ul, ol { padding-left: 1.25em; }
+  li { margin-bottom: 5px; }
+  code, .mono { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.85em; }
+  .callout { border-left: 3px solid var(--terracotta); background: color-mix(in srgb, var(--terracotta) 8%, var(--cream-raised)); padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 12px 0; font-size: 0.92rem; }
+  .callout strong { color: var(--green-deep); }
+  .callout.bad { border-left-color: var(--bad); background: color-mix(in srgb, var(--bad) 8%, var(--cream-raised)); }
+  .callout.good { border-left-color: var(--good); background: color-mix(in srgb, var(--good) 8%, var(--cream-raised)); }
+  .quote-block { border-left: 3px solid var(--bad); padding: 8px 14px; margin: 10px 0; font-style: italic; color: var(--ink); font-size: 0.9rem; background: var(--code-bg); border-radius: 0 6px 6px 0; }
+
+  .item { border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; margin-bottom: 12px; background: var(--cream); }
+  .item.urgent { border-color: var(--bad); border-width: 1.5px; }
+  .item .i-head { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; flex-wrap: wrap; }
+  .item .i-title { font-family: "Bitter", serif; font-weight: 600; color: var(--green-deep); font-size: 1rem; }
+  .item dl { display: grid; grid-template-columns: max-content 1fr; gap: 4px 14px; margin: 8px 0 0; font-size: 0.87rem; }
+  .item dt { color: var(--ink-soft); font-weight: 600; white-space: nowrap; }
+  .item dd { margin: 0; }
+  .item .files { font-size: 0.82rem; margin-top: 6px; }
+  .item .files code { display: inline-block; background: var(--code-bg); padding: 1px 6px; border-radius: 4px; margin: 1px 3px 1px 0; }
+
+  .pill { display: inline-block; font-size: 0.66rem; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; padding: 2px 8px; border-radius: 5px; }
+  .pill.p0 { background: color-mix(in srgb, var(--p0) 18%, transparent); color: var(--p0); }
+  .pill.p1 { background: color-mix(in srgb, var(--p1) 18%, transparent); color: var(--p1); }
+  .pill.p2 { background: color-mix(in srgb, var(--p2) 18%, transparent); color: var(--p2); }
+  .pill.p3 { background: color-mix(in srgb, var(--p3) 18%, transparent); color: var(--p3); }
+  .pill.urgent { background: color-mix(in srgb, var(--bad) 20%, transparent); color: var(--bad); }
+  .pill.visyes { background: color-mix(in srgb, var(--terracotta) 18%, transparent); color: var(--terracotta); }
+  .pill.visno { background: color-mix(in srgb, var(--ink-soft) 15%, transparent); color: var(--ink-soft); }
+
+  .stop-banner { text-align: center; padding: 18px; border: 1.5px dashed var(--terracotta); border-radius: 12px; color: var(--green-deep); font-family: "Bitter", serif; font-weight: 600; font-size: 0.98rem; margin-top: 8px; }
+  footer.doc-footer { text-align: center; color: var(--ink-soft); font-size: 0.78rem; padding: 20px 0 60px; }
+</style>
+
+<div class="shell">
+  <nav class="nav">
+    <p class="brand">PQNK Outreach</p>
+    <p class="brand-sub">Revised Phase 1 Plan</p>
+    <ol>
+      <li><a href="#p0">P0 — Technical</a></li>
+      <li><a href="#p1">P1 — Paper understanding</a></li>
+      <li><a href="#p2">P2 — Knowledge network</a></li>
+      <li><a href="#p3">P3 — External outreach</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <div class="cover">
+      <p class="eyebrow">Plan for approval · No code, commit, push, or deploy yet</p>
+      <h1>PQNK Knowledge Outreach — Revised Phase 1 Implementation Plan</h1>
+      <p>Rebuilt from the original discoverability audit plus the approved corrections on <code>questionsAnswered</code> provenance and the <code>Requires PQNK Review</code> status. Every item below states what changes, why, the expected discoverability benefit, the risk, and whether visitor-visible content changes. Nothing here is implemented — this is the plan for your approval.</p>
+    </div>
+
+    <div class="decisions-banner">
+      <span class="db-label">Locked this round:</span>
+      <span>Discovery Questions terminology locked</span>
+      <span>·</span><span>No mechanical publish of all 1,041</span>
+      <span>·</span><span>No blind JSON-LD keyword injection</span>
+      <span>·</span><span>6 Tier-1 farmer papers get distinct treatment</span>
+      <span>·</span><span>4 Tier-2 stay unresolved</span>
+      <span>·</span><span>Status → <em>PQNK Authenticated — Editorial Consistency Review Pending</em></span>
+    </div>
+
+    <section class="card" id="p0">
+      <div class="sec-label"><span class="sec-num pill p0" style="font-size:0.9rem;">P0</span><h2>Technical discoverability corrections</h2></div>
+      <p class="sec-dek">Pure technical correctness. No editorial judgment, no visible-content risk.</p>
+
+      <div class="item">
+        <div class="i-head"><span class="pill p0">P0</span><span class="i-title">Confirm/set Google Search Console verification</span></div>
+        <dl>
+          <dt>What changes</dt><dd>Verify whether the <code>NEXT_PUBLIC_GSC_VERIFICATION</code> GitHub Actions secret is actually set (the code path is already correct — no source change expected, only a repo-settings/GSC-console check)</dd>
+          <dt>Why</dt><dd>No verification meta tag was found on the live homepage, despite the code being wired to emit one if the secret is present</dd>
+          <dt>Benefit</dt><dd>Unblocks indexed-page counts, impressions, and query data — the entire measurement framework depends on this</dd>
+          <dt>Risk</dt><dd>None</dd>
+          <dt>Visible to visitors?</dt><dd><span class="pill visno">No</span></dd>
+        </dl>
+      </div>
+
+      <div class="item">
+        <div class="i-head"><span class="pill p0">P0</span><span class="i-title">Fix sitemap lastmod for externally-cited papers</span></div>
+        <dl>
+          <dt>What changes</dt><dd>For papers carrying <code>externalUrl</code> (real third-party citations, e.g. the 2011 Springer SRI paper), stop using <code>publishedDate</code> as the sitemap <code>lastmod</code> — use the same build-time signal as other content types instead</dd>
+          <dt>Why</dt><dd><code>publishedDate</code> correctly records the external work's original publication date, which is a different fact from when Pedaver's own page was last touched; using it as lastmod currently makes one real, current page look 15 years stale to crawlers</dd>
+          <dt>Benefit</dt><dd>Accurate freshness signal for search engines deciding re-crawl priority</dd>
+          <dt>Risk</dt><dd>None</dd>
+          <dt>Visible to visitors?</dt><dd><span class="pill visno">No</span> (sitemap.xml only)</dd>
+        </dl>
+        <div class="files"><strong>Files:</strong> <code>src/app/sitemap.ts</code></div>
+      </div>
+    </section>
+
+    <section class="card" id="p1">
+      <div class="sec-label"><span class="sec-num pill p1" style="font-size:0.9rem;">P1</span><h2>Knowledge Paper machine understanding</h2></div>
+      <p class="sec-dek">How search engines and AI systems read what a Knowledge Paper actually is, backed by content that genuinely appears on the page.</p>
+
+      <div class="item urgent">
+        <div class="i-head"><span class="pill urgent">Urgent</span><span class="pill p1">P1</span><span class="i-title">Rewrite the "Requires PQNK Review" messaging — it currently contradicts decision 7 live, today</span></div>
+        <p style="margin:6px 0;">Found while scoping this plan, not previously flagged: the paper page's visible banner for this status currently reads —</p>
+        <div class="quote-block">"PQNK Review Status — this paper contains one or more statements currently under Pedaver/PQNK review. It remains available as part of the Knowledge Library, but flagged statements should not be treated as current authoritative PQNK doctrine until review is complete."</div>
+        <p style="margin:6px 0;">This is live, visible text on 54 real pages, telling both human readers and any crawler/AI system reading the page that its content <em>should not be treated as authoritative</em> — the exact framing decision 7 corrects. Two shorter badge labels elsewhere ("Under PQNK Review") are less actively wrong but should be updated for consistency.</p>
+        <dl>
+          <dt>What changes</dt><dd>Rename the status value everywhere it's stored; rewrite the banner and both badge labels to reflect "knowledge authenticated, wording/consistency review pending" — e.g. banner: "This paper's PQNK knowledge is authenticated. Wording, terminology, and presentation consistency across the site are still being finalized." Badges: "Editorial Review Pending."</dd>
+          <dt>Why</dt><dd>Decision 7 — the underlying knowledge must not be characterized as provisional; this page currently does exactly that, to visitors and machines alike, right now</dd>
+          <dt>Benefit</dt><dd>Removes an active, live signal that could cause a crawler or AI system to decline to cite 54 genuinely authoritative papers (29% of the corpus) — directly serves the outreach objective, not just internal consistency</dd>
+          <dt>Risk</dt><dd>Low. The comparison logic (<code>authorityStatus === REQUIRES_REVIEW</code>) is done via the exported constant, not a hardcoded string, in every file that uses it on the live site — confirmed in <code>page.tsx</code>, <code>PapersBrowser.tsx</code>, <code>RelatedKnowledgeModule.tsx</code> — so changing the constant's underlying string value is safe for those. <strong>Known, deliberately deferred consequence:</strong> the paused Ask PQNK backend (<code>ask-pqnk-service/src/retrieval.ts</code>, <code>scripts/export-content.ts</code>) and its docs hardcode the literal old string directly, not the constant — they will silently stop matching this status once renamed. Not fixed here (Ask PQNK is paused); flagged to reconcile only if/when it resumes.</dd>
+          <dt>Visible to visitors?</dt><dd><span class="pill visyes">Yes</span> — the banner and badge text change on 54 pages; the underlying content of those pages does not</dd>
+        </dl>
+        <div class="files"><strong>Files:</strong> <code>src/lib/content/knowledge/taxonomy.json</code>, <code>src/lib/content/knowledge/taxonomy.ts</code> (REQUIRES_REVIEW value), <code>src/lib/content/knowledge/metadata.json</code> (54 entries), <code>src/app/papers/[slug]/page.tsx</code> (banner text), <code>src/app/papers/PapersBrowser.tsx</code> (badge text), <code>src/components/science/RelatedKnowledgeModule.tsx</code> (badge text)</div>
+      </div>
+
+      <div class="item">
+        <div class="i-head"><span class="pill p1">P1</span><span class="i-title">Fix ScholarlyArticle JSON-LD linkage on Knowledge Paper pages</span></div>
+        <dl>
+          <dt>What changes</dt><dd>Replace inline literal <code>author</code>/<code>publisher</code> objects with <code>@id</code> references matching every other content type (Science, Crop, Machine pages); add <code>datePublished</code>/<code>dateModified</code> from the paper's own <code>publishedDate</code></dd>
+          <dt>Why</dt><dd>Paper pages are currently the one content type not linked into the shared Organization/Person entity graph, and omit dates the data already has</dd>
+          <dt>Benefit</dt><dd>Consistent, complete authorship/authority signal across the largest single content type (186 pages)</dd>
+          <dt>Risk</dt><dd>None</dd>
+          <dt>Visible to visitors?</dt><dd><span class="pill visno">No</span></dd>
+        </dl>
+        <div class="files"><strong>Files:</strong> <code>src/app/papers/[slug]/page.tsx</code></div>
+      </div>
+
+      <div class="item">
+        <div class="i-head"><span class="pill p1">P1</span><span class="i-title">Add a visible Topics row (crops/domains/problems), then mirror it into JSON-LD keywords</span></div>
+        <p style="margin:6px 0;">New finding: crops, science domains, and field problems are already fully tagged in <code>metadata.json</code> for every paper, but are currently <strong>not displayed anywhere</strong> on the paper page — confirmed by inspecting the template. Adding them to structured data without first making them visible would repeat exactly the "hidden content" problem decision 4 warns against for discovery questions.</p>
+        <dl>
+          <dt>What changes</dt><dd>Add a small tag-pill row to the paper page (e.g. "Topics: Wheat · Water · Poor Water Infiltration"), reusing the visual pattern already established by the existing Authority badges; mirror that same, now-visible set into the page's JSON-LD <code>keywords</code></dd>
+          <dt>Why</dt><dd>Genuinely useful to a human reader scanning a paper's subject at a glance, and only then a legitimate, standards-consistent basis for structured-data keywords — satisfies decision 4's "must accurately describe visible content" standard in both directions</dd>
+          <dt>Benefit</dt><dd>Real reader utility plus a defensible topical signal for search/AI systems — directly serves "machine-readable taxonomy and topical relationships" from decision 8's priority list</dd>
+          <dt>Risk</dt><dd>Low — purely additive, and the tags are the paper's own real, already-approved classification, not invented</dd>
+          <dt>Visible to visitors?</dt><dd><span class="pill visyes">Yes</span> — new tag row on 186 pages</dd>
+        </dl>
+        <div class="files"><strong>Files:</strong> <code>src/app/papers/[slug]/page.tsx</code></div>
+      </div>
+
+      <div class="item">
+        <div class="i-head"><span class="pill p1">P1</span><span class="i-title">Infrastructure for editorially-selected visible Discovery Questions</span></div>
+        <dl>
+          <dt>What changes</dt><dd>Add an opt-in field (e.g. a curated subset marker) that a paper can carry once editorially reviewed; the template renders a "Questions this paper addresses" section <em>only</em> for papers where this subset has been deliberately chosen — initially populated for zero or a small pilot set of papers, not all 186</dd>
+          <dt>Why</dt><dd>Decision 3 — visible questions must be selected because they genuinely help the reader, not rendered mechanically from all 1,041</dd>
+          <dt>Benefit</dt><dd>Builds the mechanism now so the ongoing editorial selection work (§5 of the correction audit — roughly 2–4 of each paper's 3–8 questions read as genuinely display-ready) can proceed incrementally, without a second engineering pass later</dd>
+          <dt>Risk</dt><dd>None — this step is infrastructure only; no paper's page changes visibly until a human has selected its subset</dd>
+          <dt>Visible to visitors?</dt><dd><span class="pill visno">No, not from this step alone</span> — becomes visible only as papers are individually curated, which is separate, ongoing editorial work outside this engineering change</dd>
+        </dl>
+        <div class="files"><strong>Files:</strong> <code>src/lib/content/knowledge/taxonomy.ts</code> (type addition), <code>src/app/papers/[slug]/page.tsx</code> (conditional render)</div>
+      </div>
+
+      <div class="item">
+        <div class="i-head"><span class="pill p1">P1</span><span class="i-title">Build the "Farmer Question → Pedaver/PQNK Answer" treatment for the 6 Tier-1 papers</span></div>
+        <dl>
+          <dt>What changes</dt><dd>A distinct visual/structural component — Farmer Question (preserving the best available original wording or an explicitly-labeled paraphrase) followed by Pedaver's Answer — applied only to the 6 confirmed papers (<code>the-breathing-soil-humidity-and-soil-structure</code>, <code>why-is-oxygen-less-in-soil-air-why-is-co2-high</code>, <code>the-paradox-of-resistance-pests-adapt-humans-degrade</code>, <code>two-pathways-to-pest-resistance</code>, <code>mango-sop-under-pqnk</code>, <code>white-and-green-growth-after-irrigation-qa</code>)</dd>
+          <dt>Why</dt><dd>Decision 5 — genuine Q&amp;A-origin content is a distinct class from ordinary Knowledge Papers and should read as one</dd>
+          <dt>Benefit</dt><dd>Authentic, verifiable Q&amp;A content is exactly what search/AI systems can confidently attribute and cite; this treatment makes that provenance legible instead of blending it into generic paper framing</dd>
+          <dt>Risk</dt><dd>Low. Not applied to the 4 unresolved Tier-2 candidates or any other paper</dd>
+          <dt>Visible to visitors?</dt><dd><span class="pill visyes">Yes</span> — new component on exactly 6 pages</dd>
+        </dl>
+        <div class="files"><strong>Files:</strong> new component (e.g. <code>src/components/papers/FarmerQuestionBlock.tsx</code>), a small data marker for the 6 slugs (<code>src/lib/content/papers.ts</code> or a new adjacent file), <code>src/app/papers/[slug]/page.tsx</code></div>
+      </div>
+
+      <div class="item">
+        <div class="i-head"><span class="pill p1">P1</span><span class="i-title">Add CollectionPage/ItemList JSON-LD to the Papers, Machines, and Crops index pages</span></div>
+        <dl>
+          <dt>What changes</dt><dd>Add structured-data markup declaring each page as a collection enumerating its real entries — mirroring the links already rendered on the page</dd>
+          <dt>Why</dt><dd>These three pages enumerate the full inventory of each content type but currently declare nothing structurally</dd>
+          <dt>Benefit</dt><dd>Gives crawlers/AI a structured inventory instead of requiring them to infer one from rendered links</dd>
+          <dt>Risk</dt><dd>None</dd>
+          <dt>Visible to visitors?</dt><dd><span class="pill visno">No</span></dd>
+        </dl>
+        <div class="files"><strong>Files:</strong> <code>src/app/papers/page.tsx</code>, <code>src/app/machines/page.tsx</code>, <code>src/app/crops/page.tsx</code></div>
+      </div>
+
+      <div class="item">
+        <div class="i-head"><span class="pill p1">P1</span><span class="i-title">Add homepage WebSite JSON-LD</span></div>
+        <dl>
+          <dt>What changes</dt><dd>Add a <code>WebSite</code> block (optionally with an <code>ItemList</code> of the 10 Science domains) to the homepage; currently it relies solely on the sitewide Organization block</dd>
+          <dt>Why</dt><dd>The most-linked entry point on the site currently has no page-specific structured data</dd>
+          <dt>Benefit</dt><dd>Completes structured-data coverage on the site's primary landing page</dd>
+          <dt>Risk</dt><dd>None</dd>
+          <dt>Visible to visitors?</dt><dd><span class="pill visno">No</span></dd>
+        </dl>
+        <div class="files"><strong>Files:</strong> <code>src/app/page.tsx</code></div>
+      </div>
+    </section>
+
+    <section class="card" id="p2">
+      <div class="sec-label"><span class="sec-num pill p2" style="font-size:0.9rem;">P2</span><h2>Internal knowledge-network strengthening</h2></div>
+      <p class="sec-dek">Wiring the parts of the Pedaver → PQNK → Science → Papers → Crops → Machines chain that are still one-directional or disconnected.</p>
+
+      <div class="item">
+        <div class="i-head"><span class="pill p2">P2</span><span class="i-title">Wire Crops and Machines into the same relationship graph as Papers/Science</span></div>
+        <dl>
+          <dt>What changes</dt><dd>Add explicit cross-reference fields to the Crop and Machine data models, feeding both visible links and JSON-LD, following the pattern already proven in <code>related.ts</code></dd>
+          <dt>Why</dt><dd>The entity chain is currently one-directional past Papers — Crop/Machine pages don't link back</dd>
+          <dt>Benefit</dt><dd>Completes the full entity chain named in the original audit</dd>
+          <dt>Risk</dt><dd>Low</dd>
+          <dt>Visible to visitors?</dt><dd><span class="pill visyes">Yes</span> — new related-content links on Crop and Machine pages</dd>
+        </dl>
+        <div class="files"><strong>Files:</strong> <code>src/lib/content/crops.ts</code>, <code>src/lib/content/machines.ts</code>, their detail page templates</div>
+      </div>
+
+      <div class="item">
+        <div class="i-head"><span class="pill p2">P2</span><span class="i-title">Fix crop→paper matching to use structured data instead of title text-search</span></div>
+        <dl>
+          <dt>What changes</dt><dd><code>crossLinks.ts</code> currently matches a crop to papers by searching for the crop's name inside paper <em>titles</em>; switch it to use the already-structured, already-populated <code>crops</code> field in <code>metadata.json</code></dd>
+          <dt>Why</dt><dd>A strictly better join key that's already used elsewhere in the codebase, just not here — likely catches paper↔crop relationships the current title search misses</dd>
+          <dt>Benefit</dt><dd>More accurate, more complete crop↔paper linking with no new data entry required</dd>
+          <dt>Risk</dt><dd>Low — could surface new relationships (good) or drop a previously title-matched but topically-unrelated one (also good, more accurate)</dd>
+          <dt>Visible to visitors?</dt><dd><span class="pill visyes">Yes</span> — related-papers lists on Crop pages may change</dd>
+        </dl>
+        <div class="files"><strong>Files:</strong> <code>src/lib/content/crossLinks.ts</code></div>
+      </div>
+
+      <div class="item">
+        <div class="i-head"><span class="pill p2">P2</span><span class="i-title">Resolve the "Economics" scientificDomains taxonomy drift</span></div>
+        <dl>
+          <dt>What changes</dt><dd>55 papers carry "Economics" as a <code>scientificDomains</code> value, which isn't one of the 10 canonical Science domains — either fold this content into the nearest canonical domain(s), or make a deliberate decision to formalize an 11th domain with its own Science page</dd>
+          <dt>Why</dt><dd>A paper tagged with a non-canonical domain has no matching Science page to link to — an internal-linking dead end for up to 55 papers</dd>
+          <dt>Benefit</dt><dd>Restores taxonomy integrity for ~30% of the corpus's domain tagging</dd>
+          <dt>Risk</dt><dd>Depends on resolution chosen — reclassification is low-risk; a new domain page is a bigger, separate content decision requiring its own sign-off</dd>
+          <dt>Visible to visitors?</dt><dd><span class="pill visyes">Yes, if reclassified</span> — affected papers' visible domain tags (once P1's Topics row exists) and Science-page relatedness would change</dd>
+        </dl>
+        <div class="files"><strong>Files:</strong> <code>src/lib/content/knowledge/metadata.json</code> (up to 55 entries), possibly <code>src/lib/content/knowledge/taxonomy.json</code></div>
+      </div>
+
+      <div class="item">
+        <div class="i-head"><span class="pill p2">P2</span><span class="i-title">Add /videos to primary navigation — requires explicit approval (locked header)</span></div>
+        <dl>
+          <dt>What changes</dt><dd>Add a nav entry for the "Knowledge & Testimonials" page, currently live and sitemap-indexed but reachable only via sitemap and one contextual link from crop pages</dd>
+          <dt>Why</dt><dd>Crawl-depth and human discoverability gap for a real, distinct content page</dd>
+          <dt>Benefit</dt><dd>Improves discoverability of official/testimonial video content</dd>
+          <dt>Risk</dt><dd>Low, but touches the locked header structure — explicit approval required before this specific item proceeds, separate from the rest of this plan</dd>
+          <dt>Visible to visitors?</dt><dd><span class="pill visyes">Yes</span> — one new nav entry</dd>
+        </dl>
+        <div class="files"><strong>Files:</strong> <code>src/components/Header.tsx</code></div>
+      </div>
+    </section>
+
+    <section class="card" id="p3">
+      <div class="sec-label"><span class="sec-num pill p3" style="font-size:0.9rem;">P3</span><h2>External AI/search-engine outreach and monitoring</h2></div>
+      <p class="sec-dek">Everything beyond the site's own code — platform setup, policy decisions, and measurement.</p>
+
+      <div class="item">
+        <div class="i-head"><span class="pill p3">P3</span><span class="i-title">Decide and apply an explicit AI-crawler robots.txt policy</span></div>
+        <dl>
+          <dt>What changes</dt><dd>Currently every crawler (search and AI-training alike) is allowed identically by one wildcard rule. A deliberate policy — e.g. allow OAI-SearchBot/Claude-SearchBot/PerplexityBot/Googlebot (citation-eligible) while deciding separately on GPTBot/ClaudeBot/Google-Extended/CCBot (training-only) — is a real, documented option per each vendor's own robots.txt guidance</dd>
+          <dt>Why</dt><dd>The current config is a default, not a decision</dd>
+          <dt>Benefit</dt><dd>Turns an accidental default into a deliberate choice, without narrowing citation-eligibility either way</dd>
+          <dt>Risk</dt><dd>None technically; the only open question is the policy itself, which is Pedaver's call, not a technical one — this item cannot proceed until that's answered</dd>
+          <dt>Visible to visitors?</dt><dd><span class="pill visno">No</span></dd>
+        </dl>
+        <div class="files"><strong>Files:</strong> <code>src/app/robots.ts</code></div>
+      </div>
+
+      <div class="item">
+        <div class="i-head"><span class="pill p3">P3</span><span class="i-title">Implement IndexNow, automated on deploy</span></div>
+        <dl>
+          <dt>What changes</dt><dd>A key file plus a ping step in the deploy workflow, firing only for newly-changed content URLs</dd>
+          <dt>Why</dt><dd>Currently not implemented at all (confirmed, zero references in the codebase)</dd>
+          <dt>Benefit</dt><dd>Faster Bing/Yandex/Naver/Seznam/Yep discovery of new or updated content; no effect on Google, which doesn't participate</dd>
+          <dt>Risk</dt><dd>None</dd>
+          <dt>Visible to visitors?</dt><dd><span class="pill visno">No</span></dd>
+        </dl>
+        <div class="files"><strong>Files:</strong> <code>.github/workflows/deploy.yml</code>, a new key file under <code>public/</code></div>
+      </div>
+
+      <div class="item">
+        <div class="i-head"><span class="pill p3">P3</span><span class="i-title">Set up Bing Webmaster Tools</span></div>
+        <dl>
+          <dt>What changes</dt><dd>Verification, sitemap submission, IndexNow key registration, review of the AI Performance reporting area</dd>
+          <dt>Why</dt><dd>No evidence of any Bing-side setup currently exists</dd>
+          <dt>Benefit</dt><dd>Closes the largest remaining measurement gap after Google Search Console</dd>
+          <dt>Risk</dt><dd>None</dd>
+          <dt>Visible to visitors?</dt><dd><span class="pill visno">No</span> (account-side action, not a code change)</dd>
+        </dl>
+      </div>
+
+      <div class="item">
+        <div class="i-head"><span class="pill p3">P3</span><span class="i-title">Rerun the 50-query benchmark after P0–P2 land</span></div>
+        <dl>
+          <dt>What changes</dt><dd>Same query list and methodology as the original baseline, including a Pakistan-context rerun to address the US-only search-scope caveat</dd>
+          <dt>Why</dt><dd>The only reliable way to know whether this work is actually moving PQNK content into search/AI results</dd>
+          <dt>Benefit</dt><dd>The real, ongoing measurement the whole effort is accountable to</dd>
+          <dt>Risk</dt><dd>None</dd>
+          <dt>Visible to visitors?</dt><dd><span class="pill visno">No</span> (measurement only)</dd>
+        </dl>
+      </div>
+    </section>
+
+    <div class="stop-banner">No code, commit, push, or deploy yet.<br>Awaiting approval of this plan before implementation begins.</div>
+    <footer class="doc-footer">PQNK Knowledge Outreach — Revised Phase 1 Implementation Plan · Plan only, not yet implemented</footer>
+  </main>
+</div>

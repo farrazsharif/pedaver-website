@@ -1,0 +1,716 @@
+<title>PQNK Discoverability Audit</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<style>
+  :root {
+    --cream: #f6f1e6; --cream-raised: #fffdf8; --ink: #24301f; --ink-soft: #52604a;
+    --green: #2f5233; --green-deep: #1e3722; --terracotta: #c97c3d; --gold: #e0a868;
+    --line: #dcd2ba; --line-soft: #e9e1cd; --code-bg: #efe8d4;
+    --p0: #b5482f; --p1: #c97c3d; --p2: #8a7a2f; --p3: #4a7a63;
+    --good: #3f7a4f; --bad: #b5482f;
+    --shadow: 0 1px 2px rgba(30,55,34,0.06), 0 8px 24px rgba(30,55,34,0.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --cream: #14201a; --cream-raised: #1a2921; --ink: #eae3cf; --ink-soft: #b7c2ac;
+      --green: #7bb489; --green-deep: #a9d3af; --terracotta: #e0a868; --gold: #e0a868;
+      --line: #33452f; --line-soft: #2a3a26; --code-bg: #1f2e22;
+      --p0: #e08066; --p1: #e0a868; --p2: #c9b877; --p3: #7bb489;
+      --good: #7bb489; --bad: #e08066;
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --cream: #14201a; --cream-raised: #1a2921; --ink: #eae3cf; --ink-soft: #b7c2ac;
+    --green: #7bb489; --green-deep: #a9d3af; --terracotta: #e0a868; --gold: #e0a868;
+    --line: #33452f; --line-soft: #2a3a26; --code-bg: #1f2e22;
+    --p0: #e08066; --p1: #e0a868; --p2: #c9b877; --p3: #7bb489;
+    --good: #7bb489; --bad: #e08066;
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--cream); color: var(--ink); font-family: "Hanken Grotesk", -apple-system, sans-serif; font-size: 16px; line-height: 1.6; }
+  h1, h2, h3 { font-family: "Bitter", Georgia, serif; text-wrap: balance; color: var(--green-deep); }
+  a { color: var(--terracotta); }
+  .shell { display: grid; grid-template-columns: 230px minmax(0,1fr); max-width: 1240px; margin: 0 auto; }
+  @media (max-width: 900px) { .shell { grid-template-columns: 1fr; } .nav { display: none; } }
+  .nav { position: sticky; top: 0; align-self: start; height: 100vh; overflow-y: auto; padding: 32px 16px 40px 24px; border-right: 1px solid var(--line); }
+  .nav .brand { font-family: "Bitter", serif; font-weight: 700; font-size: 0.92rem; color: var(--green-deep); margin: 0 0 2px; }
+  .nav .brand-sub { font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 18px; }
+  .nav ol { list-style: none; margin: 0; padding: 0; counter-reset: navsec; }
+  .nav li { counter-increment: navsec; margin-bottom: 1px; }
+  .nav a { display: flex; gap: 7px; padding: 4px 7px; border-radius: 5px; font-size: 0.78rem; text-decoration: none; color: var(--ink-soft); }
+  .nav a::before { content: counter(navsec); font-weight: 700; color: var(--terracotta); width: 1.3em; flex: none; }
+  .nav a:hover { background: var(--line-soft); color: var(--ink); }
+  main { padding: 44px 36px 100px; min-width: 0; }
+  @media (max-width: 900px) { main { padding: 28px 18px 80px; } }
+  .cover { margin-bottom: 34px; }
+  .cover .eyebrow { font-size: 0.76rem; letter-spacing: 0.10em; text-transform: uppercase; color: var(--terracotta); font-weight: 600; margin: 0 0 8px; }
+  .cover h1 { font-size: clamp(1.7rem, 3vw, 2.3rem); margin: 0 0 10px; line-height: 1.15; }
+  .cover p { max-width: 68ch; color: var(--ink-soft); font-size: 1rem; margin: 0 0 14px; }
+  .scope-box { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  .scope-pill { font-size: 0.76rem; font-weight: 600; padding: 5px 11px; border-radius: 999px; background: var(--cream-raised); border: 1px solid var(--line); color: var(--ink); }
+  .scope-pill.no { color: var(--terracotta); border-color: var(--terracotta); }
+
+  .stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 22px 0 8px; }
+  @media (max-width: 720px) { .stat-row { grid-template-columns: repeat(2, 1fr); } }
+  .stat { background: var(--cream-raised); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+  .stat .n { font-family: "Bitter", serif; font-size: 1.7rem; font-weight: 700; color: var(--green-deep); font-variant-numeric: tabular-nums; }
+  .stat .l { font-size: 0.76rem; color: var(--ink-soft); }
+
+  section.card { background: var(--cream-raised); border: 1px solid var(--line); border-radius: 14px; padding: 28px 32px; margin-bottom: 24px; box-shadow: var(--shadow); scroll-margin-top: 16px; }
+  @media (max-width: 640px) { section.card { padding: 20px 18px; } }
+  .sec-label { display: flex; align-items: baseline; gap: 10px; margin-bottom: 4px; }
+  .sec-num { font-family: "Bitter", serif; font-weight: 700; font-size: 1.3rem; color: var(--terracotta); line-height: 1; }
+  section.card h2 { margin: 0; font-size: 1.28rem; }
+  .sec-dek { color: var(--ink-soft); margin: 6px 0 18px; max-width: 72ch; }
+  p, ul, ol { max-width: 74ch; }
+  ul, ol { padding-left: 1.25em; }
+  li { margin-bottom: 5px; }
+  .subhead { font-family: "Bitter", serif; font-weight: 600; font-size: 0.98rem; color: var(--green-deep); margin: 20px 0 6px; }
+
+  table { border-collapse: collapse; width: 100%; margin: 12px 0 18px; font-size: 0.87rem; }
+  .table-wrap { overflow-x: auto; }
+  th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
+  th { font-family: "Bitter", serif; font-weight: 600; color: var(--green-deep); font-size: 0.78rem; text-transform: uppercase; border-bottom: 2px solid var(--line); }
+  tr:last-child td { border-bottom: none; }
+
+  code, .mono { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.85em; }
+
+  .callout { border-left: 3px solid var(--terracotta); background: color-mix(in srgb, var(--terracotta) 8%, var(--cream-raised)); padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 14px 0; font-size: 0.92rem; }
+  .callout strong { color: var(--green-deep); }
+  .callout.good { border-left-color: var(--good); background: color-mix(in srgb, var(--good) 8%, var(--cream-raised)); }
+  .callout.bad { border-left-color: var(--bad); background: color-mix(in srgb, var(--bad) 8%, var(--cream-raised)); }
+
+  .verdict-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 16px 0; }
+  @media (max-width: 640px) { .verdict-grid { grid-template-columns: 1fr; } }
+  .v-good, .v-bad { border-radius: 10px; padding: 14px 16px; border: 1px solid var(--line); }
+  .v-good { background: color-mix(in srgb, var(--good) 7%, var(--cream-raised)); }
+  .v-bad { background: color-mix(in srgb, var(--bad) 7%, var(--cream-raised)); }
+  .v-good h4, .v-bad h4 { font-family: "Bitter", serif; margin: 0 0 6px; font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.03em; }
+  .v-good h4 { color: var(--good); } .v-bad h4 { color: var(--bad); }
+  .v-good ul, .v-bad ul { margin: 0; padding-left: 1.1em; font-size: 0.87rem; }
+
+  .pill { display: inline-block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; padding: 2px 8px; border-radius: 5px; }
+  .pill.p0 { background: color-mix(in srgb, var(--p0) 18%, transparent); color: var(--p0); }
+  .pill.p1 { background: color-mix(in srgb, var(--p1) 18%, transparent); color: var(--p1); }
+  .pill.p2 { background: color-mix(in srgb, var(--p2) 18%, transparent); color: var(--p2); }
+  .pill.p3 { background: color-mix(in srgb, var(--p3) 18%, transparent); color: var(--p3); }
+  .pill.yes { background: color-mix(in srgb, var(--good) 18%, transparent); color: var(--good); }
+  .pill.no { background: color-mix(in srgb, var(--bad) 18%, transparent); color: var(--bad); }
+
+  .roadmap-item { border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; background: var(--cream); }
+  .roadmap-item .ri-head { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; flex-wrap: wrap; }
+  .roadmap-item .ri-title { font-family: "Bitter", serif; font-weight: 600; color: var(--green-deep); font-size: 0.98rem; }
+  .roadmap-item dl { display: grid; grid-template-columns: max-content 1fr; gap: 3px 12px; margin: 8px 0 0; font-size: 0.85rem; }
+  .roadmap-item dt { color: var(--ink-soft); font-weight: 600; white-space: nowrap; }
+  .roadmap-item dd { margin: 0; }
+
+  .stop-banner { text-align: center; padding: 20px; border: 1.5px dashed var(--terracotta); border-radius: 12px; color: var(--green-deep); font-family: "Bitter", serif; font-weight: 600; font-size: 1rem; margin-top: 8px; }
+  footer.doc-footer { text-align: center; color: var(--ink-soft); font-size: 0.8rem; padding: 20px 0 60px; }
+</style>
+
+<div class="shell">
+  <nav class="nav">
+    <p class="brand">PQNK Discoverability</p>
+    <p class="brand-sub">Audit Report</p>
+    <ol>
+      <li><a href="#s1">Executive audit</a></li>
+      <li><a href="#s2">Crawl/index status</a></li>
+      <li><a href="#s3">AI crawler status</a></li>
+      <li><a href="#s4">Google readiness</a></li>
+      <li><a href="#s5">Bing/Copilot readiness</a></li>
+      <li><a href="#s6">ChatGPT Search</a></li>
+      <li><a href="#s7">Paper readability</a></li>
+      <li><a href="#s8">Structured data</a></li>
+      <li><a href="#s9">Entity/authority</a></li>
+      <li><a href="#s10">Internal linking</a></li>
+      <li><a href="#s11">Farmer questions</a></li>
+      <li><a href="#s12">YouTube/Facebook</a></li>
+      <li><a href="#s13">Measurement</a></li>
+      <li><a href="#s14">50-query baseline</a></li>
+      <li><a href="#s15">Roadmap P0–P3</a></li>
+      <li><a href="#s16">Files to touch</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <div class="cover">
+      <p class="eyebrow">Audit and report only · Nothing changed on the site</p>
+      <h1>Pedaver / PQNK — Knowledge Outreach &amp; AI Discoverability Audit</h1>
+      <p>Ask PQNK's automated backend is paused. This audit evaluates whether pedaver.com — as it stands today, live in production — gives conventional search engines and AI retrieval systems the greatest legitimate opportunity to find, understand, and cite PQNK's agricultural knowledge. Every finding below is grounded in the live site (fetched directly, not inferred from source), the current codebase, current official crawler/search-engine documentation, and a real 50-query search test.</p>
+      <div class="scope-box">
+        <span class="scope-pill">Live site verified</span>
+        <span class="scope-pill">Codebase inspected</span>
+        <span class="scope-pill">Current docs researched</span>
+        <span class="scope-pill">50 real queries tested</span>
+        <span class="scope-pill no">No commit/push/deploy</span>
+        <span class="scope-pill no">Ask PQNK untouched</span>
+      </div>
+    </div>
+
+    <section class="card" id="s1">
+      <div class="sec-label"><span class="sec-num">1</span><h2>Executive audit</h2></div>
+      <p class="sec-dek">The technical foundation is genuinely stronger than typical for a site this size. The gap is not crawlability — it's that the site's most important discovery asset, real farmer questions, does not yet exist as published content.</p>
+
+      <div class="stat-row">
+        <div class="stat"><div class="n">271</div><div class="l">URLs in the live sitemap</div></div>
+        <div class="stat"><div class="n">186</div><div class="l">Knowledge Papers</div></div>
+        <div class="stat"><div class="n">1 / 50</div><div class="l">real farmer queries where Pedaver appeared at all</div></div>
+        <div class="stat"><div class="n">0</div><div class="l">notes in every Farmer Advisory category, live</div></div>
+      </div>
+
+      <div class="verdict-grid">
+        <div class="v-good">
+          <h4>Already strong</h4>
+          <ul>
+            <li>robots.txt is fully open — no crawler is blocked, no accidental noindex found</li>
+            <li>A real, linked JSON-LD entity graph: Organization ⇄ Person (founder), consistently reused across most page types</li>
+            <li>A sophisticated, taxonomy-driven internal-linking engine (fail-fast validated) — a genuine architectural asset</li>
+            <li>Clean canonical URLs, good titles/descriptions, consistent Open Graph — verified live</li>
+            <li>GA4 and Microsoft Clarity are live and collecting data today</li>
+            <li>An extensive, genuinely authored (not thin/scraped) knowledge corpus</li>
+          </ul>
+        </div>
+        <div class="v-bad">
+          <h4>What's actually blocking outreach</h4>
+          <ul>
+            <li>The Farmer Advisory page — the site's stated highest-priority discovery asset — is a content-empty placeholder: "0 notes" in all 5 categories, live, today</li>
+            <li>The 186-paper corpus was structured around PQNK's own vocabulary, not ordinary farmer phrasing — so even a fully crawlable page rarely matches how a real question is typed</li>
+            <li>Google Search Console verification appears broken (code is correct; the deploy secret is likely unset) — this blinds the primary measurement tool</li>
+            <li>No deliberate AI-crawler policy exists — training and citation bots are currently allowed identically, by default, not by decision</li>
+            <li>Structured-data coverage has real but fixable inconsistencies (detailed in §7–§8)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout"><strong>The central finding:</strong> nothing technical is preventing Pedaver.com from being crawled, indexed, or cited. What's missing is the bridge between how PQNK explains its science and how a farmer actually asks about it — and the one page purpose-built to be that bridge currently has no content on it.</div>
+    </section>
+
+    <section class="card" id="s2">
+      <div class="sec-label"><span class="sec-num">2</span><h2>Current crawl/index status</h2></div>
+      <p class="sec-dek">Verified against the live production site, not inferred from source.</p>
+      <div class="subhead">robots.txt — fetched live from pedaver.com/robots.txt</div>
+      <div class="code-block" style="background:var(--code-bg);border:1px solid var(--line-soft);border-radius:8px;padding:12px 14px;">User-Agent: *
+Allow: /
+
+Sitemap: https://pedaver.com/sitemap.xml</div>
+      <p>Matches <code>src/app/robots.ts</code> exactly — no drift between deployed and current source. Fully open; no crawler-specific rules exist at all (see §3).</p>
+
+      <div class="subhead">sitemap.xml — fetched live</div>
+      <ul>
+        <li><strong>271 URLs</strong>, single flat <code>&lt;urlset&gt;</code> (not a sitemap index — fine at this scale).</li>
+        <li>Generated by <code>src/app/sitemap.ts</code>: a hardcoded <code>staticPages</code> array plus a map over the crops/papers/machines/resources content arrays.</li>
+        <li>Every entry has <code>&lt;lastmod&gt;</code>, but the semantics are inconsistent: static/crop/machine/resource pages get the build's current timestamp (<code>new Date()</code> at build time — technically "last build," not "last content change"); paper pages get <code>paper.publishedDate</code> directly.</li>
+        <li><strong>Confirmed bug, but a nuanced one:</strong> one entry (<code>technical-adaptations-for-mechanized-sri-production</code>) shows <code>lastmod: 2011-01-09</code>. This is <em>not</em> bad data — the paper's <code>publishedDate</code> correctly records its real external publication (Springer, <em>Paddy and Water Environment</em> 9(1):111–119, 2011; <code>externalUrl</code> and <code>externalPublisher</code> fields confirm this is an externally-cited paper, not Pedaver's own authored content). The bug is that <code>sitemap.ts</code> uses this field for <em>lastmod</em> regardless of whether it's "when Pedaver last touched this page" or "when the cited external work was originally published" — those are different facts, and only the first belongs in a sitemap's lastmod.</li>
+        <li>No other implausible dates found in this pass (full corpus scan in §7).</li>
+      </ul>
+      <div class="subhead">Redirects &amp; near-duplicates</div>
+      <p><code>docs/htaccess.txt</code> defines exactly two 301s: <code>/farmer-stories/ → /videos/</code> and <code>/certification/ → /validation/</code>. <code>/videos</code> and <code>/video-library</code> are <strong>not</strong> duplicate content (confirmed: zero overlapping YouTube video IDs between their content sources) — but <code>/videos</code> is absent from the main header navigation, reachable only via the sitemap and a single contextual link on crop pages. Not a duplicate-content risk; a discoverability/crawl-depth one.</p>
+      <div class="callout good"><strong>No hard indexing blocker found</strong> — no accidental noindex, no broken canonical, no orphaned robots directive.</div>
+    </section>
+
+    <section class="card" id="s3">
+      <div class="sec-label"><span class="sec-num">3</span><h2>AI crawler accessibility</h2></div>
+      <p class="sec-dek">Sourced from current official documentation (OpenAI, Google, Anthropic, Perplexity, Apple, IndexNow.org), fetched directly — not assumed. See §16 for the exact source list.</p>
+      <div class="table-wrap">
+      <table>
+        <thead><tr><th>Crawler</th><th>Documented purpose</th><th>Current pedaver.com treatment</th></tr></thead>
+        <tbody>
+          <tr><td><span class="mono">Googlebot</span></td><td>Standard Search indexing</td><td rowspan="9" style="vertical-align:middle;"><span class="pill yes">Allowed</span> — the single wildcard <code>Allow: /</code> rule covers every crawler below identically. Nothing is blocked; nothing is deliberately chosen either.</td></tr>
+          <tr><td><span class="mono">Google-Extended</span></td><td>Gemini app training + AI grounding (Google's own docs: <em>"does not impact a site's inclusion in Search nor is it used as a ranking signal"</em>)</td></tr>
+          <tr><td><span class="mono">OAI-SearchBot</span></td><td>Powers ChatGPT Search citations</td></tr>
+          <tr><td><span class="mono">GPTBot</span></td><td>OpenAI model training</td></tr>
+          <tr><td><span class="mono">ChatGPT-User</span></td><td>Live fetch when a person asks ChatGPT to open a specific page (may ignore robots.txt — user-initiated)</td></tr>
+          <tr><td><span class="mono">ClaudeBot</span> / <span class="mono">Claude-SearchBot</span></td><td>Anthropic training / Claude search-relevance indexing respectively (documented as independently controllable)</td></tr>
+          <tr><td><span class="mono">PerplexityBot</span></td><td>Surfaces/links sites in Perplexity search results, not training</td></tr>
+          <tr><td><span class="mono">Applebot</span> / <span class="mono">Applebot-Extended</span></td><td>Spotlight/Siri/Safari search / Apple Intelligence training respectively</td></tr>
+          <tr><td><span class="mono">CCBot</span></td><td>Common Crawl's open archive — widely used as upstream AI-training data by many labs</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>OpenAI's own documentation gives the exact configuration for "citable, not trainable" — quoted verbatim from OpenAI's crawler docs: <em>"a webmaster can allow OAI-SearchBot in order to appear in search results while disallowing GPTBot to indicate that crawled content should not be used for training."</em> Google, Anthropic, and Apple each publish the equivalent split (Google-Extended, ClaudeBot vs. Claude-SearchBot, Applebot-Extended).</p>
+      <div class="callout"><strong>This is a policy decision Pedaver hasn't made yet, not a technical defect.</strong> The current config is "allow everyone equally, including training crawlers," by default rather than by choice. §15 (P2) proposes the concrete robots.txt block if a deliberate citation-yes/training-no policy is wanted — not recommended as an automatic default; this is explicitly Pedaver's call.</div>
+    </section>
+
+    <section class="card" id="s4">
+      <div class="sec-label"><span class="sec-num">4</span><h2>Google readiness</h2></div>
+      <div class="table-wrap">
+      <table>
+        <thead><tr><th>Dimension</th><th>Status</th><th>Evidence</th></tr></thead>
+        <tbody>
+          <tr><td>Indexability</td><td><span class="pill yes">Good</span></td><td>robots.txt open; no <code>noindex</code> meta tag found on live homepage</td></tr>
+          <tr><td>Sitemap</td><td><span class="pill p1">Minor issue</span></td><td>Present, fresh mostly, one lastmod-semantics bug (§2)</td></tr>
+          <tr><td>Canonicalization</td><td><span class="pill yes">Good</span></td><td>Verified live: <code>&lt;link rel="canonical" href="https://pedaver.com/"&gt;</code>, consistent trailing-slash policy</td></tr>
+          <tr><td>Titles/descriptions</td><td><span class="pill yes">Good</span></td><td>Verified live, natural phrasing, not stuffed — e.g. homepage: "PQNK Natural Ecosystem Science of Production Agriculture | Pedaver"</td></tr>
+          <tr><td>Structured data</td><td><span class="pill p1">Uneven</span></td><td>Strong core graph, real gaps — full detail §8</td></tr>
+          <tr><td>Page-level subject clarity</td><td><span class="pill p1">Uneven</span></td><td>Strong on Science/Paper pages (rich taxonomy); empty on Farmer Advisory</td></tr>
+          <tr><td>Original/authored knowledge</td><td><span class="pill yes">Good</span></td><td>186 authored papers, not thin or scraped content</td></tr>
+          <tr><td>Internal relationships</td><td><span class="pill yes">Good</span></td><td>Taxonomy-driven, fail-fast-validated linking engine (§10)</td></tr>
+          <tr><td>Author/organization signals</td><td><span class="pill p1">Mostly good</span></td><td>Strong Organization+Person graph; inconsistent on paper pages (§8)</td></tr>
+          <tr><td>Mobile/performance</td><td><span class="pill p2">Not independently measured</span></td><td>Not covered in this audit's tooling — recommend running Search Console's Core Web Vitals report as a fast next step, not asserted here without data</td></tr>
+          <tr><td>Duplicate/thin pages</td><td><span class="pill p1">One real instance</span></td><td>Farmer Advisory's 5 category pages currently render near-identical "0 notes... check back" placeholder text</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="callout bad"><strong>Do not build FAQPage schema.</strong> Google deprecated FAQ rich results site-wide (deprecation notice May 2025, documentation removed June 2025, effective in Search from May 2026) — confirmed via direct fetch of Google's current Search Central docs. This applies to every site, not just non-authoritative ones. QAPage schema is also not a fit — it's scoped to forum-style, multi-user-answer pages, not Pedaver's single-author knowledge model. Any farmer-question strategy here should be visible, well-structured prose (§11), not schema markup chasing a rich-result feature that no longer exists.</div>
+    </section>
+
+    <section class="card" id="s5">
+      <div class="sec-label"><span class="sec-num">5</span><h2>Bing/Copilot readiness</h2></div>
+      <div class="table-wrap">
+      <table>
+        <thead><tr><th>Dimension</th><th>Status</th><th>Note</th></tr></thead>
+        <tbody>
+          <tr><td>Bingbot indexing</td><td><span class="pill yes">Allowed</span></td><td>Same open robots.txt rule</td></tr>
+          <tr><td>Sitemap</td><td><span class="pill yes">Present</span></td><td>Same sitemap.xml Bing would consume</td></tr>
+          <tr><td>IndexNow</td><td><span class="pill no">Not implemented</span></td><td>Zero references anywhere in the codebase, confirmed by grep</td></tr>
+          <tr><td>Bing Webmaster Tools</td><td><span class="pill p1">No evidence of setup</span></td><td>No Bing verification signal found</td></tr>
+          <tr><td>Copilot-specific grounding crawler</td><td><span class="pill p2">Not documented to exist</span></td><td>Unlike OpenAI/Google/Anthropic/Apple, no official Microsoft doc describes a separate Copilot-grounding bot distinct from Bingbot — flagged as genuinely unverified, not asserted either way</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p><strong>IndexNow, confirmed via the current spec at indexnow.org:</strong> a simple ping (HTTP GET or batched JSON POST, up to 10,000 URLs) telling participating engines a URL was added, updated, or deleted — a real-time push instead of waiting for organic re-crawl. Current participants: <strong>Bing, Yandex, Naver, Seznam.cz, Yep</strong> — Google does not participate.</p>
+      <div class="callout good"><strong>Should IndexNow fire automatically on publish? Yes.</strong> The natural hook is the GitHub Actions deploy workflow (<code>.github/workflows/deploy.yml</code>) that already runs on every push: a build step could diff the newly-changed content-derived URLs (papers/science/advisory) against the previous deploy and ping IndexNow with just those, at effectively zero ongoing cost or manual effort. Not built in this audit — a concrete, scoped P3 item (§15).</div>
+    </section>
+
+    <section class="card" id="s6">
+      <div class="sec-label"><span class="sec-num">6</span><h2>ChatGPT Search discoverability</h2></div>
+      <p><strong>OAI-SearchBot is not blocked</strong> — the wide-open robots.txt allows it, so nothing currently prevents pedaver.com pages from being discovered, retrieved, summarized, or cited by ChatGPT Search. This is confirmed against OpenAI's own current crawler documentation, not assumed.</p>
+      <p>The same wildcard rule also allows <strong>GPTBot</strong> (training) and <strong>ChatGPT-User</strong> (live user-initiated fetch) identically — see §3 for why this is a decision point, not a defect.</p>
+      <p>Beyond the robots.txt question, ChatGPT Search's actual citation behavior depends on the same fundamentals as conventional search: is the page indexed/crawlable (yes), does it contain clear, well-structured, genuinely informative content that answers the query (uneven — strong on Science/Paper pages, absent on Farmer Advisory), and can the retrieval system confidently attribute the content to an authoritative source (helped by the Organization/Person entity graph in §8–§9). No OpenAI documentation was found describing any additional, ChatGPT-Search-specific technical requirement beyond being crawlable and genuinely useful.</p>
+    </section>
+
+    <section class="card" id="s7">
+      <div class="sec-label"><span class="sec-num">7</span><h2>Knowledge Paper machine-comprehension</h2></div>
+      <p class="sec-dek">Programmatic, corpus-wide inspection of all 186 papers (confirmed count — <code>src/lib/content/papers.ts</code> and <code>src/lib/content/knowledge/metadata.json</code> agree exactly). Systematic findings, not a per-paper list. One correction to note up front: the discoverability metadata (crops, field problems, questions answered, science domains, authority status, science links) does not live in <code>papers.ts</code> itself — it lives in a separate, parallel <code>metadata.json</code>, keyed by slug.</p>
+
+      <div class="callout bad"><strong>The single most important finding in this section: 1,027 real, farmer-phrased questions already exist in the data — and are never shown to a crawler or an AI system.</strong> Every one of the 186 papers has a <code>questionsAnswered</code> field (3–8 entries each, zero papers with none) — genuine practical questions written in plain language. But <code>src/app/papers/[slug]/page.tsx</code> never renders this field on the page, and the paper's JSON-LD never includes it either. The only place these questions are used at all is client-side search ranking (<code>search.ts</code>) and the internal relatedness scoring (<code>related.ts</code>) — both invisible to anything reading the page's actual content, whether a search crawler or an AI retrieval system. This is a direct, evidenced explanation for several of the 50-query benchmark misses (§14): the answer to "why does mulch suffocate roots" may already be written as one of these questions, on an already-published, already-indexed page — just never displayed.</div>
+
+      <div class="table-wrap">
+      <table>
+        <thead><tr><th>Dimension</th><th>Result</th></tr></thead>
+        <tbody>
+          <tr><td>Unique titles</td><td><span class="pill yes">100%</span> — 0 duplicates across 186</td></tr>
+          <tr><td>Summary present, reasonable length</td><td><span class="pill yes">100% present</span>; 30 papers (16%) exceed 400 characters (up to 485) — long enough to risk truncation as a meta description</td></tr>
+          <tr><td><code>crops</code> tagged</td><td>84/186 empty, but cross-checked against category: only <strong>1</strong> is a real gap (<code>motha-grass-dominance-a-pqnk-interpretation</code>, arguably a weed subject, defensible either way) — the rest are philosophy/framework/soil-science papers where being crop-agnostic is correct, not a gap</td></tr>
+          <tr><td><code>fieldProblems</code> tagged</td><td>183/186 (98%) — 3 empty, all abstract philosophy/economics essays</td></tr>
+          <tr><td><code>questionsAnswered</code> present</td><td><span class="pill yes">100%</span> — every paper has 3–8 real questions, 1,027 total — <strong>but see the callout above: never rendered, never in structured data</strong></td></tr>
+          <tr><td><code>scientificDomains</code> coverage</td><td><span class="pill yes">100%</span> — every paper tagged</td></tr>
+          <tr><td><code>scientificDomains</code> taxonomy drift</td><td><span class="pill no">"Economics" — 55 occurrences</span>, the only non-canonical value found anywhere in the corpus (every other taxonomy-governed field — crops, practices, principles, production stages, machinery — is 100% clean). Confined specifically to this one field, not a category-level issue.</td></tr>
+          <tr><td><code>publishedDate</code> outliers</td><td>1/186 — the 2011 SRI paper (§2), a legitimate external citation, not an error, though worth a small UX label so a reader doesn't mistake it for a stale page</td></tr>
+          <tr><td><code>authorityStatus</code> distribution</td><td>"Current / Approved" 122 (66%) · "Requires PQNK Review" 54 (29%) · "External Knowledge/Evidence" 10 (5%) · zero non-canonical values</td></tr>
+          <tr><td><code>scienceLinks</code> coverage</td><td><span class="pill yes">100%</span> — every paper links to at least one of the 10 Science domains (1–6 each)</td></tr>
+          <tr><td>Paper-to-paper relationship data</td><td><span class="pill no">Does not exist as stored data</span> — computed live at render time by <code>related.ts</code>; only 6 of 186 slugs (3.2%) have a persisted editorial relationship (the 3 explicit companion pairs). Everything else is algorithmic and never written to structured data.</td></tr>
+          <tr><td><code>category</code> distribution</td><td>7 buckets, smallest at 9/186 (5%) — not near-empty</td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <div class="callout"><strong>A governance nuance worth carrying into §9:</strong> 54 papers (29% of the corpus) are explicitly marked <code>"Requires PQNK Review"</code> — not yet approved current knowledge. A machine reading raw content without respecting this field would treat provisional material as equally authoritative as approved knowledge. This is a legitimate, working governance signal already in the data — it just needs to keep being respected as any new surfacing of this content (e.g. rendering <code>questionsAnswered</code>, per above) gets built.</div>
+
+      <p><strong>Two related gaps found in how the data that does exist gets used:</strong> the paper detail page's <code>ScholarlyArticle</code> JSON-LD (§8) emits only <code>headline, description, author, publisher, url, image</code> — omitting <code>keywords</code>, <code>about</code>/<code>mentions</code> (which could carry the already-tagged <code>scientificDomains</code>/<code>crops</code>), and <code>citation</code>, despite all of this data already existing in <code>metadata.json</code>. Separately, <code>src/lib/content/crops.ts</code>'s crop→paper linking (<code>crossLinks.ts</code>) matches on paper <em>titles</em> containing the crop's name, rather than using the already-structured <code>crops</code> field in <code>metadata.json</code> — a strictly better join key that's already there and already used elsewhere in the codebase, just not here.</p>
+    </section>
+
+    <section class="card" id="s8">
+      <div class="sec-label"><span class="sec-num">8</span><h2>Structured-data assessment</h2></div>
+      <p class="sec-dek">Verified from source (with file:line citations) and cross-checked live on the homepage, founder, and a Science page.</p>
+      <div class="table-wrap">
+      <table>
+        <thead><tr><th>Page type</th><th>@type used</th><th>Entity linkage</th></tr></thead>
+        <tbody>
+          <tr><td>Every page (global)</td><td><code>Organization</code></td><td>Verified live: <code>@id</code>, <code>sameAs</code> → Facebook Pedaver + both YouTube channels, <code>founder</code> → founder <code>@id</code></td></tr>
+          <tr><td>Founder</td><td><code>Person</code></td><td>Verified live: correct <code>@id</code>, resolves the Organization's <code>founder</code> reference, <code>worksFor</code> back to Organization</td></tr>
+          <tr><td>Science domains (×10)</td><td><code>TechArticle</code></td><td>Fully linked via <code>@id</code> to both Organization and founder</td></tr>
+          <tr><td>Crop detail</td><td><code>Article</code></td><td>Fully linked via <code>@id</code></td></tr>
+          <tr><td>Machine detail</td><td><code>TechArticle</code></td><td>Fully linked via <code>@id</code></td></tr>
+          <tr><td>Knowledge Paper detail</td><td><code>ScholarlyArticle</code></td><td><strong>Not linked</strong> — author/publisher are inline literal objects, not <code>@id</code> references; no <code>datePublished</code>/<code>dateModified</code> despite the data existing</td></tr>
+          <tr><td>Resource detail</td><td><code>TechArticle</code> (most) / <code>HowTo</code> (one slug)</td><td><code>TechArticle</code> branch linked; the single <code>HowTo</code> branch has no author/publisher at all</td></tr>
+          <tr><td>About</td><td><code>AboutPage</code></td><td>Faithful, linked to Organization</td></tr>
+          <tr><td>Homepage</td><td><em>none beyond global Organization</em></td><td>Confirmed live — no <code>WebSite</code>, no <code>SearchAction</code>, no listing of the 10 Science domains as data</td></tr>
+          <tr><td>Farmer Advisory</td><td><em>none</em></td><td>Confirmed live and in source</td></tr>
+          <tr><td>Papers / Machines / Crops index pages</td><td><em>none</em></td><td>No <code>CollectionPage</code>/<code>ItemList</code> on any of the three — the pages an AI crawler would use to discover the full inventory of each content type declare nothing structurally</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="callout good">Every claim in the JSON-LD examined is faithful to visible page content — no manufactured or unsupported markup found anywhere.</div>
+    </section>
+
+    <section class="card" id="s9">
+      <div class="sec-label"><span class="sec-num">9</span><h2>PQNK entity/authority architecture</h2></div>
+      <p class="sec-dek">The chain the site should teach machines: Pedaver → PQNK → Science Domains → Knowledge Papers → Crops → Problems → Practices → Machines → Farmer Advisory → Field Evidence.</p>
+      <div class="table-wrap">
+      <table>
+        <thead><tr><th>Link in the chain</th><th>Currently wired?</th><th>Evidence</th></tr></thead>
+        <tbody>
+          <tr><td>Pedaver ⇄ Founder (Asif Sharif)</td><td><span class="pill yes">Yes, correctly</span></td><td>Organization/Person <code>@id</code> pair resolves live (§8)</td></tr>
+          <tr><td>Pedaver → Science domains</td><td><span class="pill yes">Yes</span></td><td>Each Science page's <code>TechArticle</code> links back to Organization + founder</td></tr>
+          <tr><td>Science ⇄ Knowledge Papers</td><td><span class="pill yes">Yes, well</span></td><td>Hand-curated "Science Anchor" per domain plus algorithmic, taxonomy-scored supporting papers — a genuinely sophisticated module (§10)</td></tr>
+          <tr><td>Knowledge Papers ⇄ each other</td><td><span class="pill yes">Yes</span></td><td>Weighted scoring cascade (problem → crop → practice → domain → stage → machinery → principle) plus 3 hand-identified explicit companion pairs</td></tr>
+          <tr><td>Papers → Crops</td><td><span class="pill p1">One-directional at best</span></td><td>Papers tag crops as metadata; <code>Crop</code>'s own data model has no <code>relatedPapers</code>/<code>scienceLinks</code> field to link back</td></tr>
+          <tr><td>Papers → Machines</td><td><span class="pill p1">One-directional at best</span></td><td>Same gap — <code>Machine</code>'s data model has no cross-reference field either</td></tr>
+          <tr><td>Anything → Farmer Advisory</td><td><span class="pill no">Not wired — nothing to link to</span></td><td>The page is empty (§11)</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>The core of the entity graph (Pedaver, Asif Sharif, Science, Papers) is genuinely strong and mutually reinforcing. The chain breaks specifically at Crops/Machines (metadata exists but isn't bidirectionally linked at the data-model level) and at Farmer Advisory (nothing to connect to yet). §15 (P2) proposes closing the Crops/Machines gap; §11 addresses Farmer Advisory directly.</p>
+    </section>
+
+    <section class="card" id="s10">
+      <div class="sec-label"><span class="sec-num">10</span><h2>Internal-link architecture</h2></div>
+      <p>Two taxonomy-driven functions in <code>src/lib/content/knowledge/related.ts</code> power all cross-linking between Papers and Science pages — no manual link lists beyond 3 hand-identified companion pairs:</p>
+      <ul>
+        <li><strong>Paper → related Papers</strong> (used on every paper detail page): weighted overlap scoring — same field problem (highest weight) → same crop → same practice → same Science domain → same production stage → same machinery → shared PQNK principle (tiebreaker) — plus explicit companion pairs that always win.</li>
+        <li><strong>Science → related Papers</strong> (used on all 10 Science pages): one hand-curated "anchor" paper per domain, chosen by a human reviewer with documented reasoning per domain, plus algorithmically-selected supporting papers with a diversity pass (prefers introducing a new crop/problem over repeating one already shown). The anchor selection is fail-fast validated — the build throws if a configured anchor slug is ever removed or de-approved, rather than silently falling back to a wrong pick.</li>
+      </ul>
+      <div class="callout good">This is a real architectural strength, not boilerplate — it's specifically designed to avoid the "breadth mistaken for relevance" failure mode (a broad multi-topic paper outranking a precisely on-topic one), a lesson visibly baked into the scoring weights and the anchor-curation rationale.</div>
+      <p><strong>Coverage gap:</strong> this engine only operates on Papers and Science pages. Crops, Machines, and (once populated) Farmer Advisory are not part of the same relationship graph — see §9.</p>
+      <p><strong>Structural vs. visible linking:</strong> the relationship data computed by this engine renders as real <code>&lt;a&gt;</code> links on the page (good for both crawling and human navigation) but is not <em>also</em> expressed as structured data (e.g. no <code>relatedLink</code>/<code>about</code> properties in the JSON-LD) — a machine currently has to infer the relationship from link position/anchor text rather than read it as an explicit fact.</p>
+    </section>
+
+    <section class="card" id="s11">
+      <div class="sec-label"><span class="sec-num">11</span><h2>Farmer-question discoverability</h2></div>
+      <p class="sec-dek">The single most important finding in this audit.</p>
+      <div class="callout bad"><strong>Live, today: every one of the Farmer Advisory page's 5 categories reads "0 notes."</strong> Verified directly from production HTML — Adoption Difficulties, Planting, Water Management, Symptoms &amp; Diagnosis, and General Questions each display: <em>"This library is being built from real questions and voice notes shared across Pedaver's PQNK WhatsApp groups. Check back as new notes are added."</em> None of the real farmer questions named in this audit's brief — water not infiltrating, yellowing after rain, weeds through mulch, hardpan, the 4 kg NP transition rate, mulch suffocating roots — currently exist anywhere on the live site in question-and-answer form.</div>
+      <p>This directly explains a visible pattern in the 50-query benchmark (§14): queries phrased in exactly this kind of ordinary language returned zero Pedaver presence, even on topics — hardpan, mulch mechanics — where PQNK's own technical explanation is genuinely distinctive and already documented in the Science/Paper corpus. The knowledge exists; the question-shaped bridge to it doesn't.</p>
+
+      <div class="callout good"><strong>The cheapest, fastest win in this entire audit: a bridge already exists and is already written.</strong> §7 found that all 186 Knowledge Papers already carry a <code>questionsAnswered</code> field — 1,027 real, plain-language questions in total — that is never rendered on the page and never included in structured data. Before writing a single new sentence, simply <em>displaying</em> this already-authored content (as a visible "Questions this paper answers" section, and in the paper's JSON-LD as <code>keywords</code> or within the description) closes a meaningful part of the gap at near-zero editorial cost and zero new-content risk. This should happen first, ahead of authoring anything new.</div>
+
+      <div class="subhead">Recommended approach — content, not markup</div>
+      <p>Since Google has retired FAQ rich results entirely (§4) and Ask PQNK's automated Q&amp;A system is paused, every lever here is purely editorial/rendering work, fully within this audit's "no automated farmer-answering" constraint:</p>
+      <ol>
+        <li><strong>Render the existing 1,027 <code>questionsAnswered</code> entries on their paper pages</strong> (and surface them in JSON-LD) — no new writing required, this is exposure work on content that already exists (§7, §15 P1).</li>
+        <li><strong>Populate a real, modest first batch of Farmer Advisory entries</strong> using the actual WhatsApp-sourced questions named in this audit's brief — written as genuine content a human would read, in the farmer's own phrasing, answered by Pedaver directly. A first pass of 10–15 authentic entries against the existing category structure would already end the "0 notes" placeholder problem.</li>
+        <li><strong>Where a genuinely new question isn't already covered by an existing paper's <code>questionsAnswered</code> list, embed it as a natural subheading inside the relevant Science page or Knowledge Paper</strong> — e.g. the Water Science page gains a passage genuinely titled "Why is water not going into my soil?" This strengthens pages that are already authoritative rather than only adding new ones, with zero risk of reading as keyword-stuffed, since the questions are real and the answers are the site's own existing science.</li>
+      </ol>
+      <p>All three are P1 items in §15 — deliberately scoped as content and rendering work, not a system to build. Item 1 should come first: it's the same fix in spirit as items 2–3, but the content is already written.</p>
+    </section>
+
+    <section class="card" id="s12">
+      <div class="sec-label"><span class="sec-num">12</span><h2>YouTube &amp; Facebook integration strategy</h2></div>
+      <p>The three authenticated Pedaver media sources (Facebook Pedaver, Pedaver PQNK YouTube, Aasif Sharif YouTube) are <strong>already correctly declared</strong> via <code>sameAs</code> in the global Organization JSON-LD, verified live — a real, existing strength that establishes the entity linkage without any further work.</p>
+      <p><code>/video-library</code> (47 Urdu farmer lectures, organized by topic) and <code>/videos</code> (official + testimonial content) are both live, distinct, non-duplicate pages — but neither carries <code>VideoObject</code> structured data, and no evidence of transcripts or timestamped subject summaries was found for either.</p>
+      <div class="subhead">Recommendation — selective, not exhaustive (per the explicit "don't ingest everything yet" instruction)</div>
+      <ul>
+        <li><strong>VideoObject markup</strong> (name, description, thumbnailUrl, uploadDate, embedUrl) for a deliberately small, high-value first set — videos already referenced from crop pages or named in Knowledge Papers, not all 47 lectures at once.</li>
+        <li><strong>Contextual links from the relevant Knowledge Paper to the specific video</strong> (timestamped where the platform supports it), rather than a generic "watch our videos" link — this is what makes the website the canonical hub and YouTube the supporting evidence, matching the stated goal directly.</li>
+        <li><strong>Dedicated website pages only for a handful of flagship videos</strong> (e.g. a major transition case study) where the content genuinely warrants standalone treatment — not a blanket policy of one page per video.</li>
+        <li>Full transcription/ingestion of the 47-lecture library is explicitly out of scope for this pass, per instruction — flagged as a P3/future decision, not proposed here.</li>
+      </ul>
+    </section>
+
+    <section class="card" id="s13">
+      <div class="sec-label"><span class="sec-num">13</span><h2>Measurement architecture</h2></div>
+      <div class="table-wrap">
+      <table>
+        <thead><tr><th>Tool</th><th>Status</th><th>Note</th></tr></thead>
+        <tbody>
+          <tr><td>GA4</td><td><span class="pill yes">Live</span></td><td>Confirmed in live HTML, measurement ID present and firing</td></tr>
+          <tr><td>Microsoft Clarity</td><td><span class="pill yes">Live</span></td><td>Confirmed in live HTML</td></tr>
+          <tr><td>Google Search Console</td><td><span class="pill no">Likely broken</span></td><td>Code path is complete (<code>layout.tsx</code> reads <code>NEXT_PUBLIC_GSC_VERIFICATION</code>, the deploy workflow passes it through) — no verification meta tag found live, so the GitHub Actions secret is most likely unset. A configuration check, not a code fix.</td></tr>
+          <tr><td>Bing Webmaster Tools</td><td><span class="pill no">No evidence of setup</span></td><td>Recommend setting up alongside IndexNow (§5)</td></tr>
+          <tr><td>Bing AI Performance / citation visibility</td><td><span class="pill p2">Available once Webmaster Tools is set up</span></td><td>A feature area within Bing Webmaster Tools, not independently verified in this audit</td></tr>
+          <tr><td>ChatGPT referral traffic</td><td><span class="pill p1">Capturable via GA4 today</span></td><td>Referrer-domain acquisition reports (chatgpt.com) work with GA4 already live — recommend a saved segment, no new tooling needed</td></tr>
+          <tr><td>AI citation / grounding-query visibility</td><td><span class="pill p2">No platform dashboard exists</span></td><td>No official measurement API was found for this, for any provider — the practical proxy is the periodic rerun of the query benchmark in §14</td></tr>
+          <tr><td>Indexed-page count, impressions, organic queries</td><td><span class="pill p1">Blocked on GSC fix</span></td><td>Standard GSC reports, available once verification works</td></tr>
+          <tr><td>Knowledge Paper / Science-page entrances</td><td><span class="pill yes">Available now</span></td><td>Standard GA4 page-path reporting</td></tr>
+          <tr><td>YouTube/Facebook → Pedaver referrals</td><td><span class="pill p1">Needs a tagging convention</span></td><td>GA4 will show generic "youtube.com" referral traffic today; per-video/per-post attribution needs UTM parameters added to links placed in video descriptions and Facebook posts</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="callout"><strong>The important metric, per the brief, isn't traffic volume</strong> — it's whether PQNK knowledge is increasingly retrieved as an authoritative answer source. No platform currently offers a direct dashboard for that. The 50-query benchmark (§14) is the deliberate, reproducible proxy: rerun it on a fixed cadence and track how many of the 50 queries surface Pedaver, not just how many visits arrive.</div>
+    </section>
+
+    <section class="card" id="s14">
+      <div class="sec-label"><span class="sec-num">14</span><h2>50-query discoverability baseline</h2></div>
+      <p class="sec-dek">Run live via web search, 2026-08-20, verbatim query text, no paraphrasing needed (no two queries were similar enough to skip). <strong>Caveat, stated up front:</strong> the search tool used is documented as US-region only — a Pakistan-based searcher could see a different picture, especially for Pakistan-qualified queries. This baseline should be read as "what a US-based generic search sees," and re-running it from a Pakistan-based context is recommended as a P3 follow-up, not treated as contradicting this data.</p>
+
+      <div class="stat-row">
+        <div class="stat"><div class="n">1 / 50</div><div class="l">queries where pedaver.com appeared at all</div></div>
+        <div class="stat"><div class="n">44</div><div class="l">ordinary-language queries with zero Pedaver presence</div></div>
+        <div class="stat"><div class="n">4</div><div class="l">branded/PQNK-term queries where Pedaver should appear and mostly doesn't</div></div>
+        <div class="stat"><div class="n">7</div><div class="l">Pakistan-specific queries — Pedaver's home turf — with zero presence</div></div>
+      </div>
+
+      <div class="subhead">Full results</div>
+      <div class="table-wrap">
+      <table>
+        <thead><tr><th>#</th><th>Query</th><th>Pedaver?</th><th>Top competing sources</th><th>Why (inference)</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Why is water not going into my soil?</td><td><span class="pill no">No</span></td><td>osera.org, geoponicscorp.com, Wikipedia</td><td>Generic gardening sites own this phrasing</td></tr>
+          <tr><td>2</td><td>Why does my crop turn yellow after rain?</td><td><span class="pill no">No</span></td><td>bighaat.com, Bayer, Univ. Minnesota Extension</td><td>Ag-extension/agribusiness dominance</td></tr>
+          <tr><td>3</td><td>Why are weeds coming through mulch?</td><td><span class="pill no">No</span></td><td>gardeningknowhow.com, SF Gate, Grasshopper Gardens</td><td>Home-gardening sites own this phrasing</td></tr>
+          <tr><td>4</td><td>How does mulch know the difference between weeds and crop seed?</td><td><span class="pill no">No</span></td><td>PMC/NCBI, eOrganic</td><td>Academic sources own the mechanistic phrasing</td></tr>
+          <tr><td>5</td><td>Why does PQNK recommend only 4 kg NP during transition?</td><td><span class="pill no">No</span></td><td>Irrelevant results — search doesn't recognize "PQNK" here</td><td>No indexed page uses this exact term+number combination</td></tr>
+          <tr><td>6</td><td>Why can too much finely chopped mulch suffocate roots?</td><td><span class="pill no">No</span></td><td>Penn State, GreenUpside, Rutgers NJAES</td><td>US extension content owns "over-mulching"</td></tr>
+          <tr><td>7</td><td>What is hardpan and how do I break it without a tractor?</td><td><span class="pill no">No</span></td><td>growerexperts.com, livetoplant.com, Quora</td><td>Generic homestead content, despite this being core PQNK subject matter</td></tr>
+          <tr><td>8</td><td>Why is my soil compacted even after plowing?</td><td><span class="pill no">No</span></td><td>Cornell, Ohioline (OSU), Purdue Agronomy</td><td>Land-grant university extension dominance</td></tr>
+          <tr><td>9</td><td>How much water does wheat actually need per acre?</td><td><span class="pill no">No</span></td><td>Montana State Extension, Nebraska CropWatch</td><td>Generic global agronomy references</td></tr>
+          <tr><td>10</td><td>Why do my crop roots stay shallow?</td><td><span class="pill no">No</span></td><td>Eos.org, ScienceDirect, CropWatch</td><td>Technical/research content</td></tr>
+          <tr><td>11</td><td>Can I grow crops without irrigation in Pakistan?</td><td><span class="pill no">No</span></td><td>PreventionWeb, Dawn.com, PMC</td><td>Journalism/NGO water-scarcity coverage</td></tr>
+          <tr><td>12</td><td>Why is my soil losing fertility despite fertilizer?</td><td><span class="pill no">No</span></td><td>eos.com, greenlife.co.ke</td><td>Generic soil-science explainers</td></tr>
+          <tr><td>13</td><td>How do I increase organic matter in sandy soil?</td><td><span class="pill no">No</span></td><td>epicgardening.com, Oregon State Extension</td><td>US gardening/extension content</td></tr>
+          <tr><td>14</td><td>What causes stunted growth in cotton after sowing?</td><td><span class="pill no">No</span></td><td>Springer, ICL India, AgWeb</td><td>Agribusiness/agronomy publishers</td></tr>
+          <tr><td>15</td><td>How do I control pests without chemical pesticides?</td><td><span class="pill no">No</span></td><td>Lowe's, UC ANR, Minnesota Dept. of Ag</td><td>Consumer home/garden + state ag-dept content</td></tr>
+          <tr><td>16</td><td>Why does continuous tillage destroy soil structure?</td><td><span class="pill no">No</span></td><td>Iowa State Extension, Nature, PMC</td><td>Academic/extension dominance</td></tr>
+          <tr><td>17</td><td>What is regenerative agriculture — does it work in Pakistan?</td><td><span class="pill no">No</span></td><td>ISSI Islamabad, Dawn.com, WWF-Pakistan</td><td>Press/NGO coverage of the movement, no farming-solution company (Pedaver included) surfaces</td></tr>
+          <tr><td>18</td><td>How do I transition from conventional to organic farming?</td><td><span class="pill no">No</span></td><td>Rodale Institute, USDA/SARE</td><td>US organic-certification ecosystem — inherently USDA-flavored query</td></tr>
+          <tr><td>19</td><td>Why does my soil turn hard and cracked in summer?</td><td><span class="pill no">No</span></td><td>gardeningmentor.com, hortau.com</td><td>Consumer gardening blogs</td></tr>
+          <tr><td>20</td><td>What is the best natural fertilizer for wheat?</td><td><span class="pill no">No</span></td><td>Medium, growplant.org, ICL</td><td>Generic listicle/blog content</td></tr>
+          <tr><td>21</td><td>How can I reduce water usage in rice farming?</td><td><span class="pill no">No</span></td><td>IntechOpen, ResearchGate, MDPI</td><td>Global rice-science (SRI/AWD) literature — notable since PQNK builds explicitly on SRI</td></tr>
+          <tr><td>22</td><td>Why is biodiversity important on a farm?</td><td><span class="pill no">No</span></td><td>Farming Connect (Wales), Science.org</td><td>UK/US sustainability orgs and journals</td></tr>
+          <tr><td>23</td><td>What is no-till farming and how do I start?</td><td><span class="pill no">No</span></td><td>Farmers.gov (USDA), no-tillfarmer.com</td><td>USDA-owned topic in a US search context</td></tr>
+          <tr><td>24</td><td>How do earthworms improve soil health?</td><td><span class="pill no">No</span></td><td>Fine Gardening, Bayer, USDA blog</td><td>Consumer gardening + agribusiness</td></tr>
+          <tr><td>25</td><td>Why do crops need less fertilizer over time in natural farming?</td><td><span class="pill no">No</span></td><td>Carbon Herald, Our World in Data</td><td>Sustainability-journalism sites</td></tr>
+          <tr><td>26</td><td>What is soil moisture management?</td><td><span class="pill no">No</span></td><td>Vaia, Drought.gov, Iowa State Extension</td><td>Definitional/reference sites</td></tr>
+          <tr><td>27</td><td>How does mulching reduce irrigation needs?</td><td><span class="pill no">No</span></td><td>Oregon State, Frontiers, Springer</td><td>Even a Punjab/India zero-till wheat/mulch study (PMC) outranks Pedaver on this exact overlap topic</td></tr>
+          <tr><td>28</td><td>What is PQNK farming system?</td><td><span class="pill no">No</span> (pqnk.org ranks #2)</td><td>pqnk.org, maximagrotech.com, pqnktech.com</td><td>The brand's own term ranks — on a <em>different domain</em> than pedaver.com; apparent domain fragmentation</td></tr>
+          <tr><td>29</td><td>Paedar Qudratti Nizam Kashatqari</td><td><span class="pill no">No</span></td><td>facebook.com/Pedaver (×2), tribune.com.pk</td><td>Pedaver's own Facebook ranks; pedaver.com itself does not, for its own full system name</td></tr>
+          <tr><td>30</td><td>Pedaver PQNK</td><td><span class="pill yes">Yes</span> — position 7 &amp; 10</td><td>Instagram, Facebook, YouTube, maximagrotech.com all rank ahead of it</td><td>The only hit in 50 queries — and outranked by Pedaver's own social profiles</td></tr>
+          <tr><td>31</td><td>natural farming Pakistan</td><td><span class="pill no">No</span></td><td>infrc.or.jp, Wikipedia, hara.com.pk</td><td>Arguably Pedaver's most important category term — absent entirely</td></tr>
+          <tr><td>32</td><td>reduce nitrogen fertilizer wheat Pakistan</td><td><span class="pill no">No</span></td><td>CIMMYT, FAO, Nature.com</td><td>International ag-research institutions</td></tr>
+          <tr><td>33</td><td>sugarcane organic farming Pakistan</td><td><span class="pill no">No</span></td><td>IntechOpen, ISAAA, USDA FAS</td><td>Industry/policy and research sources</td></tr>
+          <tr><td>34</td><td>how to fix hardpan without machinery</td><td><span class="pill no">No</span></td><td>livetoplant.com, homesteadontherange.com</td><td>Same gap as query 7; query also noisy (cosmetics use of "hardpan")</td></tr>
+          <tr><td>35</td><td>why does my maize turn yellow</td><td><span class="pill no">No</span></td><td>Quora, Pioneer/Corteva, Yara</td><td>Global agri-input companies own this across many country TLDs</td></tr>
+          <tr><td>36</td><td>best mulch material for vegetable garden Pakistan</td><td><span class="pill no">No</span></td><td>lawnlove.com, horticlub.com.pk</td><td>A Pakistani commercial mulch retailer ranks — local sites <em>can</em> rank here, just not Pedaver</td></tr>
+          <tr><td>37</td><td>how to test soil compaction at home</td><td><span class="pill no">No</span></td><td>lawnstarter.com, Rutgers NJAES</td><td>US lawn-care/extension sources</td></tr>
+          <tr><td>38</td><td>natural pest control for cotton</td><td><span class="pill no">No</span></td><td>bioprotectionportal.com, cottongins.org</td><td>Industry/science-publisher content</td></tr>
+          <tr><td>39</td><td>why is my rice crop lodging</td><td><span class="pill no">No</span></td><td>LSU AgCenter, PMC, riceextension.com.au</td><td>Global rice-science/extension sources</td></tr>
+          <tr><td>40</td><td>how much organic matter does soil need</td><td><span class="pill no">No</span></td><td>Oregon State, SARE, ResearchGate</td><td>University soil-health reference content</td></tr>
+          <tr><td>41</td><td>companion planting for pest control</td><td><span class="pill no">No</span></td><td>Wikipedia, IntechOpen</td><td>Consumer gardening blogs</td></tr>
+          <tr><td>42</td><td>can jantar sesbania fix soil nitrogen</td><td><span class="pill no">No</span></td><td>ztbl.com.pk, IRRI Knowledge Bank, a small Pakistani farm blog</td><td>Very PQNK-adjacent, Pakistan-specific, Urdu-vocabulary term — and still no Pedaver</td></tr>
+          <tr><td>43</td><td>how deep should mulch be applied</td><td><span class="pill no">No</span></td><td>lawnstarter.com, Virginia Cooperative Extension</td><td>US landscaping/extension content</td></tr>
+          <tr><td>44</td><td>why do farmers till their soil</td><td><span class="pill no">No</span></td><td>Quora, USDA ERS</td><td>General-education and USDA sources</td></tr>
+          <tr><td>45</td><td>climate resilient farming practices Pakistan</td><td><span class="pill no">No</span></td><td>minutemirror.com.pk, Frontiers</td><td>Pakistani press/NGO/academic coverage — no farming-solutions company surfaces</td></tr>
+          <tr><td>46</td><td>reducing chemical dependency in agriculture</td><td><span class="pill no">No</span></td><td>Nature, farmonaut.com</td><td>Global sustainability-policy and ag-tech content</td></tr>
+          <tr><td>47</td><td>soil biology and microbial activity explained</td><td><span class="pill no">No</span></td><td>biologyinsights.com, ScienceDirect</td><td>Science-explainer and extension sources</td></tr>
+          <tr><td>48</td><td>what is production architecture in farming</td><td><span class="pill no">No</span></td><td>Dezeen, Agritecture, ArchDaily</td><td>Naming collision — read as building/vertical-farming architecture, not the PQNK term</td></tr>
+          <tr><td>49</td><td>how to improve water infiltration in clay soil</td><td><span class="pill no">No</span></td><td>alluvialsoillab.com, USDA NRCS</td><td>Soil-science and ag-input company content</td></tr>
+          <tr><td>50</td><td>field evidence for regenerative farming Pakistan</td><td><span class="pill no">No</span></td><td>ISSI Islamabad, Dawn.com/Prism</td><td>A Dawn/Prism farmer profile reads almost exactly like a PQNK case study, yet doesn't name Pedaver — a near-miss worth investigating for outreach, not indexing</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p style="font-size:0.85rem;color:var(--ink-soft);">This exact query list and methodology becomes the baseline — rerun on a fixed cadence, same wording, same caveats noted each time, to measure whether the P0–P3 work in §15 moves the needle.</p>
+    </section>
+
+    <section class="card" id="s15" style="border-color:var(--terracotta);border-width:1.5px;">
+      <div class="sec-label"><span class="sec-num">15</span><h2>Prioritized opportunity map — P0 through P3</h2></div>
+      <p class="sec-dek">Every item below states the problem, evidence, affected pages, proposed correction, expected benefit, difficulty, and risk. Analysis only — nothing here has been implemented.</p>
+
+      <div class="subhead"><span class="pill p0">P0 — Discovery blockers</span></div>
+      <div class="callout good">No hard technical blocker (broken robots.txt, accidental noindex, broken canonical) was found anywhere in this audit — worth stating plainly as good news. One item below is P0-adjacent because it blinds measurement of everything else.</div>
+      <div class="roadmap-item">
+        <div class="ri-head"><span class="pill p0">P0</span><span class="ri-title">Google Search Console verification is likely non-functional</span></div>
+        <dl>
+          <dt>Evidence</dt><dd>Code is correct (<code>layout.tsx:28-30</code>, secret wired through <code>deploy.yml:29</code>); no <code>google-site-verification</code> meta tag found on the live homepage</dd>
+          <dt>Affected</dt><dd>Site-wide measurement, not any specific page</dd>
+          <dt>Correction</dt><dd>Confirm/set the <code>NEXT_PUBLIC_GSC_VERIFICATION</code> GitHub Actions secret; no source code change needed</dd>
+          <dt>Benefit</dt><dd>Unblocks indexed-page counts, impressions, and query data — the entire §13 measurement framework depends on this</dd>
+          <dt>Difficulty</dt><dd>Trivial (a repo-settings check, not a code change)</dd>
+          <dt>Risk</dt><dd>None</dd>
+        </dl>
+      </div>
+
+      <div class="subhead"><span class="pill p1">P1 — Knowledge-understanding improvements</span></div>
+      <div class="roadmap-item" style="border-color:var(--terracotta);">
+        <div class="ri-head"><span class="pill p1">P1 · Do this first</span><span class="ri-title">Render the 1,027 already-written farmer questions that currently exist nowhere visible</span></div>
+        <dl>
+          <dt>Problem</dt><dd>Every paper's <code>questionsAnswered</code> field (3–8 real, plain-language questions each) is fully populated but never rendered on the page and never included in JSON-LD</dd>
+          <dt>Evidence</dt><dd>Corpus-wide field audit (§7); confirmed via repo-wide search that the field is read only by client-side search/relatedness logic, never by the page template</dd>
+          <dt>Affected</dt><dd>All 186 Knowledge Paper detail pages (<code>src/app/papers/[slug]/page.tsx</code>)</dd>
+          <dt>Correction</dt><dd>Add a visible "Questions this paper answers" section to the page template; include the same list in the <code>ScholarlyArticle</code> JSON-LD (as <code>keywords</code> or folded into an expanded description)</dd>
+          <dt>Benefit</dt><dd>The single highest-leverage fix in this audit — real content, already written, currently invisible to every crawler and AI system; directly closes gaps evidenced in §14</dd>
+          <dt>Difficulty</dt><dd>Low — one template change surfaces content for all 186 pages at once, no new writing required</dd>
+          <dt>Risk</dt><dd>None — the content already exists and was already editorially approved as part of each paper</dd>
+        </dl>
+      </div>
+      <div class="roadmap-item">
+        <div class="ri-head"><span class="pill p1">P1</span><span class="ri-title">Populate Farmer Advisory with real, authentic farmer questions</span></div>
+        <dl>
+          <dt>Problem</dt><dd>The site's stated highest-priority discovery asset is a content-empty placeholder</dd>
+          <dt>Evidence</dt><dd>Live page: "0 notes" in all 5 categories, confirmed via direct fetch (§11)</dd>
+          <dt>Affected</dt><dd><code>/advisory</code></dd>
+          <dt>Correction</dt><dd>Hand-author a first batch (10–15) of real WhatsApp-sourced Q&amp;A entries, written naturally, no schema dependency</dd>
+          <dt>Benefit</dt><dd>Directly closes the gap responsible for most of the 44/50 zero-presence queries in §14</dd>
+          <dt>Difficulty</dt><dd>Moderate — editorial work, not engineering</dd>
+          <dt>Risk</dt><dd>Low, provided questions stay authentic (per the explicit "no keyword-stuffing" instruction)</dd>
+        </dl>
+      </div>
+      <div class="roadmap-item">
+        <div class="ri-head"><span class="pill p1">P1</span><span class="ri-title">Embed real farmer questions as natural subheadings inside existing Science/Paper pages</span></div>
+        <dl>
+          <dt>Problem</dt><dd>PQNK's technical explanations exist but aren't phrased as the questions farmers actually ask</dd>
+          <dt>Evidence</dt><dd>§14 queries 1, 3, 6, 7, 34 — mechanism is documented, ordinary phrasing isn't present anywhere to match against</dd>
+          <dt>Affected</dt><dd>Relevant Science pages (Water, Soil) and specific Knowledge Papers on mulch/hardpan</dd>
+          <dt>Correction</dt><dd>Add a small number of genuine question-phrased passages to pages that already cover the mechanism — augment, don't create new pages</dd>
+          <dt>Benefit</dt><dd>Strengthens already-authoritative pages; helps both conventional and AI retrieval match casual phrasing</dd>
+          <dt>Difficulty</dt><dd>Low-moderate — editorial additions to existing content</dd>
+          <dt>Risk</dt><dd>Low if genuinely authored, not templated</dd>
+        </dl>
+      </div>
+      <div class="roadmap-item">
+        <div class="ri-head"><span class="pill p1">P1</span><span class="ri-title">Fix sitemap.ts's lastmod semantics for externally-cited papers</span></div>
+        <dl>
+          <dt>Problem</dt><dd><code>publishedDate</code> is used for sitemap <code>lastmod</code> regardless of whether it's Pedaver's own edit date or an external citation's original date</dd>
+          <dt>Evidence</dt><dd>The 2011 SRI paper's lastmod (§2)</dd>
+          <dt>Affected</dt><dd><code>src/app/sitemap.ts:45</code></dd>
+          <dt>Correction</dt><dd>Use a separate "page last touched" signal (or the build date, matching other content types) for papers with an <code>externalUrl</code>, reserving <code>publishedDate</code> for its citation meaning</dd>
+          <dt>Benefit</dt><dd>Accurate freshness signal to crawlers; currently one externally-cited page understates its own currency</dd>
+          <dt>Difficulty</dt><dd>Low — small, contained code change</dd>
+          <dt>Risk</dt><dd>None</dd>
+        </dl>
+      </div>
+      <div class="roadmap-item">
+        <div class="ri-head"><span class="pill p1">P1</span><span class="ri-title">Fix Knowledge Paper JSON-LD: link author/publisher by @id, add dates</span></div>
+        <dl>
+          <dt>Problem</dt><dd>Every other content type links author/publisher via <code>@id</code> into the shared entity graph; paper pages use inline literal objects instead, and omit <code>datePublished</code>/<code>dateModified</code> entirely</dd>
+          <dt>Evidence</dt><dd><code>src/app/papers/[slug]/page.tsx:71-77</code> (confirmed via codebase audit)</dd>
+          <dt>Affected</dt><dd>All 186 Knowledge Paper detail pages</dd>
+          <dt>Correction</dt><dd>Replace inline author/publisher with <code>@id</code> references matching every other page type; surface <code>paper.publishedDate</code> as <code>datePublished</code></dd>
+          <dt>Benefit</dt><dd>Closes the one real inconsistency in an otherwise well-connected entity graph, across the largest single content type on the site</dd>
+          <dt>Difficulty</dt><dd>Low — one template change applies to all 186 pages at once</dd>
+          <dt>Risk</dt><dd>None</dd>
+        </dl>
+      </div>
+      <div class="roadmap-item">
+        <div class="ri-head"><span class="pill p1">P1</span><span class="ri-title">Add CollectionPage/ItemList JSON-LD to the Papers, Machines, and Crops index pages</span></div>
+        <dl>
+          <dt>Problem</dt><dd>The three pages that enumerate the full inventory of each content type declare nothing structurally</dd>
+          <dt>Evidence</dt><dd>Confirmed absent in <code>src/app/papers/page.tsx</code>, <code>machines/page.tsx</code>, <code>crops/page.tsx</code></dd>
+          <dt>Affected</dt><dd>3 index pages</dd>
+          <dt>Correction</dt><dd>Add <code>CollectionPage</code>/<code>ItemList</code> mirroring the existing detail-page JSON-LD pattern</dd>
+          <dt>Benefit</dt><dd>Gives crawlers/AI systems a structured inventory rather than requiring them to infer it from rendered links</dd>
+          <dt>Difficulty</dt><dd>Low</dd>
+          <dt>Risk</dt><dd>None</dd>
+        </dl>
+      </div>
+      <div class="roadmap-item">
+        <div class="ri-head"><span class="pill p1">P1</span><span class="ri-title">Add page-specific JSON-LD to the homepage and Farmer Advisory</span></div>
+        <dl>
+          <dt>Problem</dt><dd>Both rely solely on the sitewide Organization block</dd>
+          <dt>Evidence</dt><dd>Confirmed live and in source (§8)</dd>
+          <dt>Affected</dt><dd><code>src/app/page.tsx</code>, <code>src/app/advisory/page.tsx</code></dd>
+          <dt>Correction</dt><dd>Homepage: <code>WebSite</code> (+ optionally an <code>ItemList</code> of the 10 Science domains). Advisory: a faithful <code>WebPage</code>/<code>Service</code> block once real content exists — sequence this after the content work above, not before.</dd>
+          <dt>Benefit</dt><dd>Completes structured-data coverage on the two most-linked entry points</dd>
+          <dt>Difficulty</dt><dd>Low</dd>
+          <dt>Risk</dt><dd>None</dd>
+        </dl>
+      </div>
+
+      <div class="subhead"><span class="pill p2">P2 — Authority/entity strengthening</span></div>
+      <div class="roadmap-item">
+        <div class="ri-head"><span class="pill p2">P2</span><span class="ri-title">Wire Crops and Machines into the same relationship graph as Papers/Science</span></div>
+        <dl>
+          <dt>Problem</dt><dd>The chain Pedaver → Science → Papers → Crops → Machines is only one-directional past Papers — Crop and Machine data models have no cross-reference fields, and where a crop→paper link is computed at all, it uses a weaker method than what's already available</dd>
+          <dt>Evidence</dt><dd><code>src/lib/content/crops.ts</code>/<code>machines.ts</code> interfaces lack <code>relatedPapers</code>/<code>scienceLinks</code>-style fields; separately, <code>crossLinks.ts</code> matches crops to papers by searching for the crop's name inside paper <em>titles</em>, rather than using the already-structured, already-populated <code>crops</code> field in <code>metadata.json</code> — a strictly better join key that's already used elsewhere in the codebase (§7)</dd>
+          <dt>Affected</dt><dd>Crop and Machine content models, detail pages, and <code>src/lib/content/crossLinks.ts</code></dd>
+          <dt>Correction</dt><dd>Add explicit cross-reference fields feeding both visible links and JSON-LD, following the pattern already proven in <code>related.ts</code>; switch <code>crossLinks.ts</code> to key off <code>metadata.json</code>'s <code>crops</code> field instead of title text-matching</dd>
+          <dt>Benefit</dt><dd>Completes the full entity chain named in the audit brief; the title-matching fix alone likely catches paper↔crop relationships the current text search misses</dd>
+          <dt>Difficulty</dt><dd>Moderate — data-model + template work across two content types</dd>
+          <dt>Risk</dt><dd>Low</dd>
+        </dl>
+      </div>
+      <div class="roadmap-item">
+        <div class="ri-head"><span class="pill p2">P2</span><span class="ri-title">Resolve the "Economics" taxonomy-drift and any other non-canonical domain values</span></div>
+        <dl>
+          <dt>Problem</dt><dd>A domain/category value used across the corpus (55 occurrences, confirmed) doesn't match any of the 10 canonical Science domains, breaking the Science-page linkage for every paper carrying it</dd>
+          <dt>Evidence</dt><dd>Corpus-wide scan of <code>papers.ts</code> (§7)</dd>
+          <dt>Affected</dt><dd>Up to 55 Knowledge Papers</dd>
+          <dt>Correction</dt><dd>Either fold "Economics" content into the nearest canonical domain(s) or make a deliberate decision to formalize it as an 11th domain with its own Science page — a content decision, not just a data fix</dd>
+          <dt>Benefit</dt><dd>Restores taxonomy integrity for a meaningful fraction of the corpus</dd>
+          <dt>Difficulty</dt><dd>Moderate — depends on which resolution is chosen</dd>
+          <dt>Risk</dt><dd>Low if done as reclassification; a new domain page is a bigger, separate decision</dd>
+        </dl>
+      </div>
+      <div class="roadmap-item">
+        <div class="ri-head"><span class="pill p2">P2</span><span class="ri-title">Add /videos to primary navigation</span></div>
+        <dl>
+          <dt>Problem</dt><dd>A live, sitemap-indexed page with distinct content is absent from the header nav, reachable only via sitemap and one contextual link</dd>
+          <dt>Evidence</dt><dd><code>src/components/Header.tsx:73-79</code> lists <code>/advisory</code>, <code>/farmer-voices</code>, <code>/video-library</code> — not <code>/videos</code></dd>
+          <dt>Affected</dt><dd>Header navigation, crawl depth for <code>/videos</code></dd>
+          <dt>Correction</dt><dd>Add a nav entry, or make a deliberate decision that this content should live inside <code>/video-library</code> instead — either resolves the orphan status</dd>
+          <dt>Benefit</dt><dd>Improves crawl-path clarity and human discoverability of testimonial/official-video content</dd>
+          <dt>Difficulty</dt><dd>Low — but touches the locked header, requires explicit approval per standing instruction</dd>
+          <dt>Risk</dt><dd>Low, contained to one nav entry</dd>
+        </dl>
+      </div>
+      <div class="roadmap-item">
+        <div class="ri-head"><span class="pill p2">P2</span><span class="ri-title">Make a deliberate AI-training-crawler policy decision</span></div>
+        <dl>
+          <dt>Problem</dt><dd>Training crawlers (GPTBot, ClaudeBot, CCBot, Google-Extended, Applebot-Extended) are currently allowed identically to citation crawlers, by default, not by choice</dd>
+          <dt>Evidence</dt><dd>§3, current live robots.txt</dd>
+          <dt>Affected</dt><dd><code>src/app/robots.ts</code></dd>
+          <dt>Correction</dt><dd>If Pedaver wants citation without bulk training exposure, OpenAI/Google/Anthropic/Apple each publish an independent opt-out token for exactly this split (§3) — implementable in a few lines once the policy is decided</dd>
+          <dt>Benefit</dt><dd>Turns an accidental default into a deliberate choice</dd>
+          <dt>Difficulty</dt><dd>Trivial once decided</dd>
+          <dt>Risk</dt><dd>None technically; the only real "risk" is the business decision itself, which is explicitly Pedaver's to make, not a default to assume</dd>
+        </dl>
+      </div>
+
+      <div class="subhead"><span class="pill p3">P3 — Outreach expansion</span></div>
+      <div class="roadmap-item">
+        <div class="ri-head"><span class="pill p3">P3</span><span class="ri-title">Implement IndexNow, automated on deploy</span></div>
+        <dl>
+          <dt>Correction</dt><dd>A key-file + ping step added to <code>.github/workflows/deploy.yml</code>, firing only for newly-changed content URLs</dd>
+          <dt>Benefit</dt><dd>Faster Bing/Yandex/Naver/Seznam/Yep discovery of new/updated Knowledge Papers and Advisory entries — no effect on Google, which doesn't participate</dd>
+          <dt>Difficulty</dt><dd>Low-moderate</dd>
+          <dt>Risk</dt><dd>None</dd>
+        </dl>
+      </div>
+      <div class="roadmap-item">
+        <div class="ri-head"><span class="pill p3">P3</span><span class="ri-title">Set up Bing Webmaster Tools</span></div>
+        <dl>
+          <dt>Correction</dt><dd>Verification, sitemap submission, IndexNow key registration, and review of the AI Performance reporting area once available</dd>
+          <dt>Benefit</dt><dd>Closes the largest measurement gap after GSC</dd>
+          <dt>Difficulty</dt><dd>Low</dd>
+        </dl>
+      </div>
+      <div class="roadmap-item">
+        <div class="ri-head"><span class="pill p3">P3</span><span class="ri-title">Broader video/Facebook integration, sequenced after the above</span></div>
+        <dl>
+          <dt>Correction</dt><dd>Expand VideoObject markup and contextual linking beyond the initial high-value set (§12), once the core content and structured-data work is proven</dd>
+          <dt>Benefit</dt><dd>Extends the "website as canonical hub" pattern to the full media library</dd>
+          <dt>Difficulty</dt><dd>Moderate, ongoing</dd>
+        </dl>
+      </div>
+      <div class="roadmap-item">
+        <div class="ri-head"><span class="pill p3">P3</span><span class="ri-title">Rerun the 50-query benchmark, including from a Pakistan-based context</span></div>
+        <dl>
+          <dt>Correction</dt><dd>Same query list and methodology (§14), plus a second pass from a Pakistan-located tool/VPN to address the US-only search-scope caveat</dd>
+          <dt>Benefit</dt><dd>The actual, ongoing measurement of whether this work is succeeding</dd>
+          <dt>Difficulty</dt><dd>Low, repeatable</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section class="card" id="s16">
+      <div class="sec-label"><span class="sec-num">16</span><h2>Exact files that would eventually need modification</h2></div>
+      <div class="table-wrap">
+      <table>
+        <thead><tr><th>File</th><th>Change</th></tr></thead>
+        <tbody>
+          <tr><td><code>src/app/sitemap.ts</code></td><td>Fix lastmod semantics for externally-cited papers (P1)</td></tr>
+          <tr><td><code>src/app/papers/[slug]/page.tsx</code></td><td>Render the existing <code>questionsAnswered</code> field visibly; link author/publisher by @id; add datePublished/dateModified/keywords/about to JSON-LD (P1 — highest leverage item in this audit)</td></tr>
+          <tr><td><code>src/lib/content/crossLinks.ts</code></td><td>Switch crop→paper matching from title text-search to the structured <code>crops</code> field in metadata.json (P2)</td></tr>
+          <tr><td><code>src/app/resources/[slug]/page.tsx</code></td><td>Add author/publisher @id to the HowTo branch (P1)</td></tr>
+          <tr><td><code>src/app/papers/page.tsx</code></td><td>Add CollectionPage/ItemList JSON-LD (P1)</td></tr>
+          <tr><td><code>src/app/machines/page.tsx</code></td><td>Add CollectionPage/ItemList JSON-LD (P1)</td></tr>
+          <tr><td><code>src/app/crops/page.tsx</code></td><td>Add CollectionPage/ItemList JSON-LD (P1)</td></tr>
+          <tr><td><code>src/app/page.tsx</code></td><td>Add WebSite (+ optional ItemList of Science domains) JSON-LD (P1)</td></tr>
+          <tr><td><code>src/app/advisory/page.tsx</code></td><td>Populate real content; add JSON-LD once populated (P1)</td></tr>
+          <tr><td><code>src/lib/content/crops.ts</code></td><td>Add relatedPapers/scienceLinks-style cross-reference fields (P2)</td></tr>
+          <tr><td><code>src/lib/content/machines.ts</code></td><td>Same (P2)</td></tr>
+          <tr><td><code>src/lib/content/papers.ts</code></td><td>Reclassify the ~55 "Economics"-tagged entries once a resolution is chosen (P2)</td></tr>
+          <tr><td><code>src/components/Header.tsx</code></td><td>Add /videos nav entry, or fold its content into /video-library — requires explicit approval (locked nav) (P2)</td></tr>
+          <tr><td><code>src/app/robots.ts</code></td><td>Add deliberate per-crawler rules, once the training-vs-citation policy is decided (P2)</td></tr>
+          <tr><td><code>.github/workflows/deploy.yml</code></td><td>Add an IndexNow ping step for changed content URLs (P3)</td></tr>
+          <tr><td>GitHub repo secrets</td><td>Verify/set <code>NEXT_PUBLIC_GSC_VERIFICATION</code> — not a source file (P0)</td></tr>
+          <tr><td>Relevant Science pages / Knowledge Papers (specific set TBD)</td><td>Add real farmer-question passages (P1) — exact list to be chosen editorially, not templated</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="stop-banner">Audit and report only. No file above has been touched.<br>Awaiting approval before any implementation work begins.</div>
+    </section>
+
+    <footer class="doc-footer">Pedaver / PQNK — Knowledge Outreach &amp; AI Discoverability Audit · Live-verified, current-documentation-sourced, analysis only</footer>
+  </main>
+</div>

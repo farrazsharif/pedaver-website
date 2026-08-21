@@ -35,6 +35,16 @@ RedirectMatch 301 ^/sample-page/?$ /founder/
   AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml
 </IfModule>
 
+# Canonical host — www.pedaver.com is not the canonical domain; send it
+# straight to the apex over HTTPS in a single redirect (checked first so an
+# http:// www. request doesn't need two hops through the HTTPS-force rule
+# below).
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^www\.pedaver\.com$ [NC]
+  RewriteRule ^ https://pedaver.com%{REQUEST_URI} [L,R=301]
+</IfModule>
+
 # Force HTTPS — send all http:// visitors to the secure https:// version
 <IfModule mod_rewrite.c>
   RewriteEngine On

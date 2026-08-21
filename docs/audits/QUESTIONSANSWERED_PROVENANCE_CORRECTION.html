@@ -1,0 +1,326 @@
+<title>Discovery Questions Provenance Audit</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<style>
+  :root {
+    --cream: #f6f1e6; --cream-raised: #fffdf8; --ink: #24301f; --ink-soft: #52604a;
+    --green: #2f5233; --green-deep: #1e3722; --terracotta: #c97c3d; --gold: #e0a868;
+    --line: #dcd2ba; --line-soft: #e9e1cd; --code-bg: #efe8d4;
+    --good: #3f7a4f; --bad: #b5482f; --warn: #a8792f;
+    --shadow: 0 1px 2px rgba(30,55,34,0.06), 0 8px 24px rgba(30,55,34,0.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --cream: #14201a; --cream-raised: #1a2921; --ink: #eae3cf; --ink-soft: #b7c2ac;
+      --green: #7bb489; --green-deep: #a9d3af; --terracotta: #e0a868; --gold: #e0a868;
+      --line: #33452f; --line-soft: #2a3a26; --code-bg: #1f2e22;
+      --good: #7bb489; --bad: #e08066; --warn: #c9b877;
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --cream: #14201a; --cream-raised: #1a2921; --ink: #eae3cf; --ink-soft: #b7c2ac;
+    --green: #7bb489; --green-deep: #a9d3af; --terracotta: #e0a868; --gold: #e0a868;
+    --line: #33452f; --line-soft: #2a3a26; --code-bg: #1f2e22;
+    --good: #7bb489; --bad: #e08066; --warn: #c9b877;
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--cream); color: var(--ink); font-family: "Hanken Grotesk", -apple-system, sans-serif; font-size: 16px; line-height: 1.6; }
+  h1, h2, h3 { font-family: "Bitter", Georgia, serif; text-wrap: balance; color: var(--green-deep); }
+  a { color: var(--terracotta); }
+  .shell { display: grid; grid-template-columns: 220px minmax(0,1fr); max-width: 1220px; margin: 0 auto; }
+  @media (max-width: 900px) { .shell { grid-template-columns: 1fr; } .nav { display: none; } }
+  .nav { position: sticky; top: 0; align-self: start; height: 100vh; overflow-y: auto; padding: 32px 16px 40px 24px; border-right: 1px solid var(--line); }
+  .nav .brand { font-family: "Bitter", serif; font-weight: 700; font-size: 0.9rem; color: var(--green-deep); margin: 0 0 2px; }
+  .nav .brand-sub { font-size: 0.66rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 18px; }
+  .nav ol { list-style: none; margin: 0; padding: 0; counter-reset: navsec; }
+  .nav li { counter-increment: navsec; margin-bottom: 1px; }
+  .nav a { display: flex; gap: 7px; padding: 4px 7px; border-radius: 5px; font-size: 0.76rem; text-decoration: none; color: var(--ink-soft); }
+  .nav a::before { content: counter(navsec); font-weight: 700; color: var(--terracotta); width: 1.3em; flex: none; }
+  .nav a:hover { background: var(--line-soft); color: var(--ink); }
+  main { padding: 44px 36px 100px; min-width: 0; }
+  @media (max-width: 900px) { main { padding: 28px 18px 80px; } }
+  .cover { margin-bottom: 26px; }
+  .cover .eyebrow { font-size: 0.74rem; letter-spacing: 0.10em; text-transform: uppercase; color: var(--bad); font-weight: 700; margin: 0 0 8px; }
+  .cover h1 { font-size: clamp(1.6rem, 2.8vw, 2.15rem); margin: 0 0 10px; line-height: 1.15; }
+  .cover p { max-width: 70ch; color: var(--ink-soft); font-size: 1rem; margin: 0 0 10px; }
+  section.card { background: var(--cream-raised); border: 1px solid var(--line); border-radius: 14px; padding: 28px 32px; margin-bottom: 22px; box-shadow: var(--shadow); scroll-margin-top: 16px; }
+  @media (max-width: 640px) { section.card { padding: 20px 18px; } }
+  .sec-label { display: flex; align-items: baseline; gap: 10px; margin-bottom: 4px; }
+  .sec-num { font-family: "Bitter", serif; font-weight: 700; font-size: 1.25rem; color: var(--terracotta); line-height: 1; }
+  section.card h2 { margin: 0; font-size: 1.22rem; }
+  .sec-dek { color: var(--ink-soft); margin: 6px 0 16px; max-width: 74ch; }
+  p, ul, ol { max-width: 76ch; }
+  ul, ol { padding-left: 1.25em; }
+  li { margin-bottom: 5px; }
+  .subhead { font-family: "Bitter", serif; font-weight: 600; font-size: 0.96rem; color: var(--green-deep); margin: 18px 0 6px; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0 16px; font-size: 0.85rem; }
+  .table-wrap { overflow-x: auto; }
+  th, td { text-align: left; padding: 6px 9px; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
+  th { font-family: "Bitter", serif; font-weight: 600; color: var(--green-deep); font-size: 0.74rem; text-transform: uppercase; border-bottom: 2px solid var(--line); }
+  tr:last-child td { border-bottom: none; }
+  code, .mono { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.85em; }
+  .callout { border-left: 3px solid var(--terracotta); background: color-mix(in srgb, var(--terracotta) 8%, var(--cream-raised)); padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 12px 0; font-size: 0.92rem; }
+  .callout strong { color: var(--green-deep); }
+  .callout.bad { border-left-color: var(--bad); background: color-mix(in srgb, var(--bad) 8%, var(--cream-raised)); }
+  .callout.good { border-left-color: var(--good); background: color-mix(in srgb, var(--good) 8%, var(--cream-raised)); }
+  .callout.warn { border-left-color: var(--warn); background: color-mix(in srgb, var(--warn) 9%, var(--cream-raised)); }
+  .fact-box { border: 1.5px solid var(--good); background: color-mix(in srgb, var(--good) 7%, var(--cream-raised)); border-radius: 10px; padding: 12px 16px; margin: 12px 0; }
+  .fact-box .label { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--good); }
+  .infer-box { border: 1.5px dashed var(--warn); background: color-mix(in srgb, var(--warn) 7%, var(--cream-raised)); border-radius: 10px; padding: 12px 16px; margin: 12px 0; }
+  .infer-box .label { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--warn); }
+  .stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 14px 0; }
+  @media (max-width: 720px) { .stat-row { grid-template-columns: repeat(2, 1fr); } }
+  .stat { background: var(--cream); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+  .stat .n { font-family: "Bitter", serif; font-size: 1.4rem; font-weight: 700; color: var(--green-deep); font-variant-numeric: tabular-nums; }
+  .stat .l { font-size: 0.72rem; color: var(--ink-soft); }
+  .pill { display: inline-block; font-size: 0.66rem; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; padding: 2px 7px; border-radius: 5px; }
+  .pill.good { background: color-mix(in srgb, var(--good) 18%, transparent); color: var(--good); }
+  .pill.warn { background: color-mix(in srgb, var(--warn) 20%, transparent); color: var(--warn); }
+  .pill.bad { background: color-mix(in srgb, var(--bad) 18%, transparent); color: var(--bad); }
+  .pill.tier1 { background: color-mix(in srgb, var(--green) 20%, transparent); color: var(--green-deep); }
+  .quote-block { border-left: 3px solid var(--line); padding: 8px 14px; margin: 10px 0; font-style: italic; color: var(--ink-soft); font-size: 0.9rem; background: var(--code-bg); border-radius: 0 6px 6px 0; }
+  .stop-banner { text-align: center; padding: 18px; border: 1.5px dashed var(--terracotta); border-radius: 12px; color: var(--green-deep); font-family: "Bitter", serif; font-weight: 600; font-size: 0.98rem; margin-top: 8px; }
+  footer.doc-footer { text-align: center; color: var(--ink-soft); font-size: 0.78rem; padding: 20px 0 60px; }
+</style>
+
+<div class="shell">
+  <nav class="nav">
+    <p class="brand">Discovery Questions</p>
+    <p class="brand-sub">Provenance Correction Audit</p>
+    <ol>
+      <li><a href="#s1">Corrected finding</a></li>
+      <li><a href="#s2">Provenance assessment</a></li>
+      <li><a href="#s3">Quantitative analysis</a></li>
+      <li><a href="#s4">Duplicate/quality</a></li>
+      <li><a href="#s5">46-item sample</a></li>
+      <li><a href="#s6">Genuine farmer papers</a></li>
+      <li><a href="#s7">Treatment recommendation</a></li>
+      <li><a href="#s8">Status terminology</a></li>
+      <li><a href="#s9">Revised Phase 1</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <div class="cover">
+      <p class="eyebrow">Correction &amp; pre-implementation audit · Nothing implemented</p>
+      <h1>Correction: <code style="font-size:0.75em;">questionsAnswered</code> Provenance and Use</h1>
+      <p>The prior audit's framing was wrong on a material point and is corrected here before Phase 1 proceeds. The 1,041 <code>questionsAnswered</code> entries are not farmer questions — they are discovery-metadata questions a paper may be capable of answering. This document verifies that distinction from the repository, quantifies and quality-checks the field, and separately establishes which papers <em>do</em> have genuine, evidenced farmer-question origin.</p>
+    </div>
+
+    <section class="card" id="s1">
+      <div class="sec-label"><span class="sec-num">1</span><h2>Corrected finding</h2></div>
+      <div class="callout bad"><strong>The prior audit's error:</strong> it described the 1,041 (previously misreported as 1,027 — corrected count below) <code>questionsAnswered</code> entries as "1,027 real, farmer-phrased questions" and implied their existence was evidence of Q&amp;A-origin content across the corpus. That was an overreach not supported by what the repository actually documents.</div>
+      <div class="fact-box">
+        <div class="label">Verified fact</div>
+        <p style="margin:6px 0 0;"><code>src/lib/content/knowledge/taxonomy.ts</code>'s own doc comment (lines 4–10) describes this data in its own words: <em>"This data is generated from the approved Controlled Vocabulary &amp; Taxonomy 1.1 package... It is a DISCOVERY/INDEX layer on top of the original Knowledge Paper content in <code>papers.ts</code> — joined by <code>slug</code>, never merged into it."</em> This is a repository-authored description of what the field is, and it says <strong>discovery/index layer</strong>, not <strong>farmer question log</strong>.</p>
+      </div>
+      <div class="infer-box">
+        <div class="label">Inference, not fact</div>
+        <p style="margin:6px 0 0;">The source "Controlled Vocabulary &amp; Taxonomy 1.1 package" and a referenced <code>normalized_classification.json</code> are named in that comment but <strong>do not exist anywhere in this repository</strong> — only their generated output (<code>taxonomy.json</code>, <code>metadata.json</code>) is committed. This means the actual generation process is not independently auditable from the repo; the doc comment's description is the best available first-party account, and it is corroborated (not contradicted) by every other piece of evidence in this report.</p>
+      </div>
+      <p>Corrected statement for the record: the 186 Knowledge Papers are authentic PQNK knowledge. The large majority were not written in direct response to a specific farmer's question. A small, identifiable set (§6) genuinely was. The <code>questionsAnswered</code> field is retrieval/discovery metadata — plausible, on-topic, well-formed questions a paper is capable of answering — generated as part of a taxonomy build process, not a transcript of real incoming questions.</p>
+    </section>
+
+    <section class="card" id="s2">
+      <div class="sec-label"><span class="sec-num">2</span><h2>Provenance assessment</h2></div>
+      <p class="sec-dek">What the repository can and cannot establish about how <code>questionsAnswered</code> was created.</p>
+      <div class="table-wrap">
+      <table>
+        <thead><tr><th>Question</th><th>Answer</th><th>Basis</th></tr></thead>
+        <tbody>
+          <tr><td>Is there a generation script in the repo?</td><td><span class="pill bad">Not found</span></td><td>Repo-wide search for the named source package and any script that writes <code>questionsAnswered</code> found nothing beyond the committed JSON output itself</td></tr>
+          <tr><td>Is there commit history showing incremental, per-paper authorship?</td><td><span class="pill warn">Not established in this pass</span></td><td>Not deeply mined in this audit; flagged as a possible follow-up, not asserted either way</td></tr>
+          <tr><td>Does the field's own documentation describe its purpose?</td><td><span class="pill good">Yes</span></td><td><code>taxonomy.ts:4-10</code>, quoted above — "DISCOVERY/INDEX layer"</td></tr>
+          <tr><td>Is <code>questionsAnswered</code> read anywhere as a farmer-interaction record?</td><td><span class="pill bad">No</span></td><td>Only two consumers found: client-side search ranking (<code>search.ts</code>) and relatedness scoring (<code>related.ts</code>) — both treat it as retrieval signal, neither treats it as a communication log</td></tr>
+          <tr><td>Does a separate, real farmer-question record structure exist elsewhere in this codebase?</td><td><span class="pill good">Yes — and it's instructive</span></td><td>The (paused) Ask PQNK system's <code>QA_KNOWLEDGE_SCHEMA.json</code> has a dedicated <code>farmerLanguageWording</code> field specifically for preserving a farmer's actual original phrasing, structurally separate from the paper's own canonical framing — i.e., this exact A/B/C distinction (§ below) was already independently designed into a different part of this codebase, for a different purpose. That's corroborating architectural precedent, not proof about <code>questionsAnswered</code> itself.</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>Independent corroborating signal (not proof, but consistent with the DISCOVERY/INDEX framing): a quantitative style analysis (§3–§4) shows <code>questionsAnswered</code> entries are cleanly worded, near-zero duplication, and cluster around a consistent small set of question templates ("How do I...", "What is the...", "Why does my...") — the signature of edited, generated discovery metadata, not the messier, more idiosyncratic phrasing typical of raw incoming farmer messages (compare against the verified real farmer quotes in §6).</p>
+    </section>
+
+    <section class="card" id="s3">
+      <div class="sec-label"><span class="sec-num">3</span><h2>Quantitative <code style="font-size:0.8em;">questionsAnswered</code> analysis</h2></div>
+      <p class="sec-dek">Recomputed directly from <code>src/lib/content/knowledge/metadata.json</code> (186 entries, cross-verified against <code>papers.ts</code> — both agree on 186 papers exactly).</p>
+      <div class="stat-row">
+        <div class="stat"><div class="n">1,041</div><div class="l">total entries (corrects the prior report's 1,027)</div></div>
+        <div class="stat"><div class="n">186 / 186</div><div class="l">papers with the field populated</div></div>
+        <div class="stat"><div class="n">3 – 8</div><div class="l">min–max entries per paper</div></div>
+        <div class="stat"><div class="n">5.60</div><div class="l">average entries per paper</div></div>
+      </div>
+      <p>Distribution: 3 entries (1 paper), 4 (8), 5 (73), 6 (89), 7 (13), 8 (2) — a tight, consistent band, itself a mild signal of systematic generation rather than organic, variable-length real-world accumulation.</p>
+    </section>
+
+    <section class="card" id="s4">
+      <div class="sec-label"><span class="sec-num">4</span><h2>Duplicate &amp; quality analysis</h2></div>
+      <div class="stat-row">
+        <div class="stat"><div class="n">0</div><div class="l">exact duplicate questions, corpus-wide (case/whitespace-insensitive)</div></div>
+        <div class="stat"><div class="n">0</div><div class="l">papers with an internally duplicated question</div></div>
+        <div class="stat"><div class="n">4</div><div class="l">near-duplicate pairs (token-overlap ≥0.70) — all across genuinely different papers</div></div>
+        <div class="stat"><div class="n">648 / 1,041</div><div class="l">distinct 3-word openers (62%) — real variety, not one template</div></div>
+      </div>
+      <p>The 4 near-duplicate pairs are parallel-structure content across different crops/topics, not sloppy repetition — e.g. <em>"How many pomegranate plants can I fit per acre under PQNK?"</em> vs. <em>"How many strawberry plants can I fit per acre under PQNK?"</em>. This is expected and fine.</p>
+      <p><strong>Generic/template-like framing:</strong> the top 3-word openers by frequency are "how do i" (57×), "what is the" (29×), "why does my" (19×), "what are the" (17×), "why does pqnk" (17×) — a consistent house style, not organic variation, but not junk either: within that style, the actual subject matter is specific and on-topic (crop names, PQNK-specific mechanisms), not filler.</p>
+      <p><strong>Overstatement risk:</strong> without reading all 186 full papers, this can't be fully verified at scale — flagged as inference-level in §5's sample, where a handful of questions read as broader or more analytically framed than what a typical single paper would fully resolve on its own (e.g. sweeping comparative questions like "What's the difference between PQNK, Conservation Agriculture, Organic Certification, and Regenerative Agriculture?").</p>
+    </section>
+
+    <section class="card" id="s5">
+      <div class="sec-label"><span class="sec-num">5</span><h2>46-item representative sample</h2></div>
+      <p class="sec-dek">40 stratified-random entries across all 10 Science domains, 8 crops, machinery-adjacent papers, philosophy/economics, and general subjects (seeded random selection, reproducible), plus all 6 Tier-1 genuine farmer-question papers (§6) included for direct comparison — 46 total. Assessment basis: title/category/question coherence and, for the 6 marked <span class="pill tier1">TIER 1</span>, verified against actual PDF source text. Full-paper verification for the other 40 was not performed at this scale — noted as inference where relevant, per the instruction to distinguish verified fact from inference.</p>
+
+      <div class="subhead">Tier 1 — verified genuine farmer-question papers (comparison set)</div>
+      <div class="table-wrap">
+      <table>
+        <thead><tr><th>Paper</th><th>Question shown</th><th>Natural farmer voice?</th><th>Public display?</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pill tier1">T1</span> The Breathing Soil (Mr. Rakesh, Rajasthan)</td><td>"Why does relative humidity around my crop matter in PQNK farming?"</td><td>Plausible paraphrase, not verbatim — see §6</td><td>Yes, framed as <em>Farmer Question</em>, not generic metadata</td></tr>
+          <tr><td><span class="pill tier1">T1</span> Why Is Oxygen Less in Soil Air?</td><td>"Why is there less oxygen and more CO2 in the soil compared to the air above it?"</td><td>Same register as non-Tier-1 entries — see note below</td><td>Yes, with Farmer Question framing</td></tr>
+          <tr><td><span class="pill tier1">T1</span> Mango Post-Harvest SOP (Mr. Kaushil Patel Gaubharat, named)</td><td>"Is calcium carbide or ethylene gas ripening acceptable under PQNK?"</td><td>Reformatted into checklist Qs by Pedaver — not verbatim</td><td>Yes, with named-farmer attribution</td></tr>
+          <tr><td><span class="pill tier1">T1</span> White/Green Growth After Irrigation</td><td>"I see white and green growth on my wheat field after irrigation, is this a disease?"</td><td>Closest to real farmer register in the whole sample — first-person, specific, worried tone</td><td>Yes — this is the model to replicate</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="callout warn"><strong>Important nuance found while building this comparison:</strong> even for the 4 Tier-1 papers checked against actual PDF text, the <code>questionsAnswered</code> metadata entries are <em>not</em> the farmer's verbatim wording — they read in the same clean, edited register as every other paper's discovery questions. The one exception is the White/Green Growth paper's <em>first</em> question, which is close to how a worried farmer would actually phrase it. See §6 for what the source PDFs actually preserve.</div>
+
+      <div class="subhead">Stratified sample — 40 entries across domains, crops, machinery, philosophy, general</div>
+      <div class="table-wrap">
+      <table>
+        <thead><tr><th>Domain/tag</th><th>Paper</th><th>Question</th><th>Assessment</th></tr></thead>
+        <tbody>
+          <tr><td>Soil</td><td>Wheat Growing Checklist</td><td>"What is the ideal spacing for PQNK wheat?"</td><td>On-topic, natural, generic-practical. Good discovery metadata; fine for display, unremarkable.</td></tr>
+          <tr><td>Plants</td><td>The Organismic Paradigm</td><td>"What does it mean if my field smells different at dawn than at midday?"</td><td>Specific and evocative — reads as genuinely tied to the paper's sensory-observation framing. Good candidate for display.</td></tr>
+          <tr><td>Water</td><td>Global Cost of Agricultural Degradation</td><td>"What's the difference between PQNK, Conservation Agriculture, Organic Certification, and Regenerative Agriculture?"</td><td><span class="pill warn">Overstatement risk</span> — a sweeping comparative question; plausible the paper addresses it, but this reads more like an analyst's framing device than a spontaneous farmer question. Keep as metadata; reconsider before public "Questions this paper answers" framing.</td></tr>
+          <tr><td>Biodiversity</td><td>Regenerative Animal Husbandry Framework</td><td>"How does PQNK's livestock economics differ from conventional high-input dairy?"</td><td>Technical/comparative register, plausible for the paper's actual scope (an economics-framework document). Fine as metadata; borderline for a farmer-facing display.</td></tr>
+          <tr><td>Nutrition</td><td>The PQNK Perspective on Micronutrients</td><td>"What three things should I actually do instead of buying micronutrients?"</td><td>Natural, practical, good register. Suitable for display.</td></tr>
+          <tr><td>Crop Protection</td><td>Embracing PQNK — A Regenerative Paradigm</td><td>"What actually separates PQNK from organic or 'sustainable' farming philosophically?"</td><td>Analytical/philosophical register, not a field-level farmer concern. Better retained as metadata than displayed as a "farmer question."</td></tr>
+          <tr><td>Climate</td><td>Climate-Resilient Rice Cultivation</td><td>"Why is my Basmati rice getting rejected for export?"</td><td>Sharp, specific, high-stakes — excellent natural register. Strong display candidate.</td></tr>
+          <tr><td>Food Quality</td><td>Shelf Life &amp; Pest Attraction</td><td>"Why do pests seem to prefer conventional and even organic produce over PQNK produce?"</td><td>Natural, specific, genuinely counter-intuitive framing that suits the paper. Good for display.</td></tr>
+          <tr><td>Production Architecture</td><td>Restoring Earth's Operating System</td><td>"How does PQNK's soil-temperature reduction from mulching compare to bare soil?"</td><td>Reasonable, slightly technical-comparative register. Fine as metadata.</td></tr>
+          <tr><td>Transition</td><td>Future of Potato Cultivation</td><td>"Can I grow and sell potatoes almost year-round under PQNK?"</td><td>Natural, practical, business-relevant. Good display candidate.</td></tr>
+          <tr><td>Crop: Mango</td><td>Batoor Flower Management</td><td>"What causes Batoor in mango trees?"</td><td>Direct, specific, on-topic. Good candidate.</td></tr>
+          <tr><td>Crop: general</td><td>High-TDS Water &amp; Saline Soils</td><td>"Does active root growth actually change soil pH right around the root?"</td><td>Precise, mechanism-level — reads more like an agronomist's question than a farmer's, but genuinely answerable by the paper. Metadata-appropriate.</td></tr>
+          <tr><td>Crop: general</td><td>Every Seed Is a Promise</td><td>"Can I recover an open-pollinated line even if my field got cross-pollinated with GMO stock?"</td><td><span class="pill warn">Register mismatch</span> — "open-pollinated line," "cross-pollinated" is breeder-technical vocabulary, unlikely spontaneous farmer phrasing. Keep as metadata, don't badge as a farmer question.</td></tr>
+          <tr><td>Crop: Citrus</td><td>Soil Strategy for Citrus in Sand Dunes</td><td>"How do I establish a citrus orchard on loose, sandy dune soil?"</td><td>Natural, practical. Good candidate.</td></tr>
+          <tr><td>Crop: Jantar/Moringa</td><td>Hydrological Transformation of Ag Landscapes</td><td>"Why does my field flood or pond even though it's not raining that much?"</td><td>Excellent natural register, specific, worried-farmer tone. Strong display candidate.</td></tr>
+          <tr><td>Crop: Castor</td><td>PQNK Factsheet: HD Castor</td><td>"How many years and harvests can I expect from a single HD Castor planting?"</td><td>Natural, practical, planning-oriented. Good candidate.</td></tr>
+          <tr><td>Crop: Cotton</td><td>Recalibrating Pakistan's Textile Value Chain</td><td>"What are the three historical 'epochs' of cotton improvement in Pakistan?"</td><td><span class="pill bad">Not a farmer question</span> — this is a historical/analytical framing device matching a policy paper's structure, not a practical field question. Retain purely as internal metadata.</td></tr>
+          <tr><td>Crop: Radish/Turnip</td><td>Agriculture in Sandy Soil (Lecture Transcript)</td><td>"How hot can soil get before it kills the soil life in it?"</td><td>Natural, specific, genuinely useful framing. Good candidate.</td></tr>
+          <tr><td>Machinery-adj.</td><td>PQNK Guide to Wheat Cultivation</td><td>"How many times should I prune wheat and when should I stop?"</td><td>Natural, practical, actionable. Good candidate.</td></tr>
+          <tr><td>Machinery-adj.</td><td>The Hidden Crisis (Water Cycle)</td><td>"How much has groundwater actually dropped because of industrial farming practices?"</td><td>Reads as a macro/statistical framing question, not a field-level farmer concern. Metadata-only.</td></tr>
+          <tr><td>Machinery-adj.</td><td>The Healer's Dialogue (Weeds)</td><td>"Can I use the weeds in my field to tell me what's actually wrong with my soil?"</td><td>Excellent natural register, genuinely practical. Strong display candidate.</td></tr>
+          <tr><td>Machinery-adj.</td><td>The Silenced Clock (Temperature Cues)</td><td>"How much does mulch actually change soil temperature swings?"</td><td>Natural, specific, quantifiable. Good candidate.</td></tr>
+          <tr><td>Machinery-adj.</td><td>High Yields in Mature PQNK Potato Systems</td><td>"What spacing should I use for potatoes on a mature PQNK bed?"</td><td>Natural, practical, generic-good. Fine for display.</td></tr>
+          <tr><td>Philosophy</td><td>The PQNK Imperative — Re-Mothering Agriculture</td><td>"What's the real difference between selective hybridization and GMOs?"</td><td>Reasonable technical-comparative register, plausibly farmer-relevant given seed-buying decisions. Borderline; lean metadata.</td></tr>
+          <tr><td>Philosophy</td><td>Response to Ag. Biotechnology Policy 2025</td><td>"At what point does soil organic matter loss make purchased nitrogen fertilizer unavoidable?"</td><td>Sharp, specific, genuinely useful decision-point framing. Good candidate despite technical register.</td></tr>
+          <tr><td>Philosophy</td><td>Restoring Food, Health, Sovereignty</td><td>"What's actually different about PQNK food at a molecular/nutritional level?"</td><td>"Molecular level" is a more analytical register than typical farmer phrasing. Metadata-only.</td></tr>
+          <tr><td>Philosophy</td><td>Economics of Resilience — Cost-Benefit</td><td>"How much money can a farm actually save per acre by switching to PQNK, and over what time frame?"</td><td>Excellent, exactly the kind of question a real prospective adopter asks. Strong display candidate.</td></tr>
+          <tr><td>Philosophy</td><td>Wealth Generation &amp; Value Addition</td><td>"Can PQNK scale to large industrial farms, or is it limited to small plots?"</td><td>Natural, genuinely relevant strategic question. Good candidate.</td></tr>
+          <tr><td>Philosophy</td><td>What Science Delivered</td><td>"Has conventional agricultural research actually delivered cheaper food and healthier soil?"</td><td>Rhetorical/analytical framing matching an essay's argument structure, not a field question. Metadata-only.</td></tr>
+          <tr><td>General</td><td>Highest Nutrition at Lowest Cost</td><td>"Do I need to buy special inputs or labels to prove my produce is high quality?"</td><td>Natural, practical, cost-conscious — good farmer register. Strong candidate.</td></tr>
+          <tr><td>General</td><td>The PQNK Food Chain — Bio-potentiation</td><td>"What is the evidence that organic or diverse crops have more antioxidants?"</td><td>Research-literacy framing, not typical field-level phrasing. Metadata-only.</td></tr>
+          <tr><td>General</td><td>Channeling Plant Energy</td><td>"What is corn stalk 'topping' and when should I do it?"</td><td>Natural, direct, practical. Good candidate.</td></tr>
+          <tr><td>General</td><td>Mechanized SRI Production (the 2011 external citation)</td><td>"Where does PQNK's rice system actually come from — is there a published scientific study behind it?"</td><td>Notable: a legitimately good, high-value discovery question — exactly the kind of authority/provenance question worth surfacing, and this paper can genuinely answer it (it <em>is</em> the cited study).</td></tr>
+          <tr><td>General</td><td>Beyond the Timeline (Transition Reframe)</td><td>"Why does everyone say regenerative farming takes 3-5 years?"</td><td>Natural, conversational, genuinely useful. Good candidate.</td></tr>
+          <tr><td>General</td><td>The Living Plant — Primer on Physiology</td><td>"Why does tillage damage a plant's internal water system?"</td><td>Natural, mechanism-focused, on-topic. Good candidate.</td></tr>
+          <tr><td>General</td><td>Sugarcane: The Bamboo Principle</td><td>"Why does my sugarcane yield drop with each ratoon cycle?"</td><td>Excellent natural register, first-person, specific problem. Strong candidate.</td></tr>
+          <tr><td>General</td><td>Deep Subsoil Remediation &amp; Activation</td><td>"Should I subsoil mechanically or let biology break up my hardpan?"</td><td>Natural, genuinely decision-relevant. Strong candidate.</td></tr>
+          <tr><td>General</td><td>Universal Application of PQNK</td><td>"Why would PQNK-grown feed improve egg quality or honey yield?"</td><td>Slightly unusual scope-jump (feed→eggs/honey) but plausible and specific. Fine as metadata.</td></tr>
+          <tr><td>General</td><td>Beyond Sand, Silt, and Clay</td><td>"Why does my sandy soil drain and lose nutrients so fast?"</td><td>Excellent natural register. Strong candidate.</td></tr>
+          <tr><td>General</td><td>Managing the Biological Transition</td><td>"How much NP fertilizer can I use if I see a real deficiency during transition?"</td><td>Directly practical, decision-relevant, natural. Strong candidate — and directly relevant to the earlier-flagged "4 kg NP" query gap.</td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <div class="callout"><strong>Pattern across all 46:</strong> zero entries read as nonsensical, off-topic, or fabricated relative to their paper. Roughly three-quarters read in a natural, farmer-plausible register and are reasonable public-display candidates as-is. Roughly one-quarter read in a more analytical/comparative/technical register — plausible and useful as retrieval metadata, but risk sounding manufactured or overstated if badged specifically as "a question a farmer asked." No case of a question the paper clearly does <em>not</em> address was found in this sample, though full-paper verification at scale was not performed.</div>
+    </section>
+
+    <section class="card" id="s6">
+      <div class="sec-label"><span class="sec-num">6</span><h2>Genuine farmer-question papers — established list</h2></div>
+      <p class="sec-dek">Repository-verified, not guessed. Two confidence tiers, reported separately as instructed.</p>
+
+      <div class="subhead">Tier 1 — strong, explicit evidence (6 papers)</div>
+      <p>Each of these has a sentence in <code>papers.ts</code>'s own <code>summary</code> field (and, where checked, the source PDF) explicitly stating the paper originated from a specific farmer/grower's question, in some cases naming the individual.</p>
+      <div class="table-wrap">
+      <table>
+        <thead><tr><th>Slug</th><th>Evidence</th></tr></thead>
+        <tbody>
+          <tr><td><code>the-breathing-soil-humidity-and-soil-structure</code></td><td>"Mr. Rakesh, a practicing PQNK farmer from Rajasthan, raised a set of questions in a PQNK WhatsApp learning group" — named individual</td></tr>
+          <tr><td><code>why-is-oxygen-less-in-soil-air-why-is-co2-high</code></td><td>"The paper opens from a farmer's question posed in a WhatsApp learning group"</td></tr>
+          <tr><td><code>the-paradox-of-resistance-pests-adapt-humans-degrade</code></td><td>"A farmer asked why pests evolve immunity to pesticides..."</td></tr>
+          <tr><td><code>two-pathways-to-pest-resistance</code></td><td>"Answers a farmer's question about why pests develop resistance..." — <strong>same underlying question as the paper above</strong>, a distinct second treatment</td></tr>
+          <tr><td><code>mango-sop-under-pqnk</code></td><td>PDF text: "Below are answers to the question raised by Mr. Kaushil Patel Gaubharat in PQNK learning group number 3 on WhatsApp" — named individual, verified in source PDF</td></tr>
+          <tr><td><code>white-and-green-growth-after-irrigation-qa</code></td><td>"the farmer asked whether this signaled a problem" — verified in source PDF, a specific field observation</td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <div class="callout warn"><strong>Honest limitation:</strong> even for these 6, the farmer's <em>verbatim</em> original wording does not appear to survive anywhere in the repository — the PDFs checked (mango, white/green growth) open with Pedaver's own reframed question and structured answer, with attribution ("the question raised by [Name]") but not a quoted original message. If verbatim wording exists, it would be in field notes, WhatsApp exports, or similar records outside this codebase — not something this audit can confirm or deny from the repo alone.</div>
+
+      <div class="subhead">Tier 2 — plausible but weaker evidence (4 additional papers, not confidently established)</div>
+      <p>These have "Q&amp;A" or "Farmer Q&amp;A" explicitly in their <em>title</em>, and summaries referencing "farmer questions," but without as explicit a single-origin-event narrative as Tier 1. They may well be genuinely farmer-sourced — the softer evidence doesn't disprove that — but this audit cannot confidently establish it the way it can for Tier 1.</p>
+      <ul>
+        <li><code>comparing-food-quality-pqnk-vs-aci</code> — "works through eight specific farmer questions"</li>
+        <li><code>watermelon-cultivation-pruning-and-nutrition-qa</code> — "a farmer's detailed field questions"</li>
+        <li><code>subsoiler-line-spacing-farmer-qa</code> — title only</li>
+        <li><code>flood-irrigation-and-jaggery-water-microbes-qa</code> — title only</li>
+      </ul>
+      <p style="font-size:0.85rem;color:var(--ink-soft);">Total surfaced by this search: 10 candidate papers. The 6-paper Tier-1 figure is what should be treated as established for messaging/decision purposes — it also happens to match the "approximately 5–6" estimate closely. The 4 Tier-2 papers are worth a direct editorial confirmation (does Pedaver recall a real originating conversation for each?) rather than either asserting or discarding them here.</p>
+
+      <div class="subhead">Recommended presentation for Tier 1 (and, once confirmed, Tier 2)</div>
+      <div class="quote-block">Farmer Question<br>— [preserve exact available wording; where only Pedaver's paraphrase survives, present it as a paraphrase, not a quotation, e.g. "A farmer in a PQNK WhatsApp group asked why..."]<br><br>Pedaver's Answer<br>— [the Knowledge Paper's own explanation, as already written]</div>
+      <p>This visually and structurally distinguishes genuine Q&amp;A-origin content (Concept B) from ordinary Knowledge Papers carrying discovery metadata (Concept C) — exactly the separation requested. It should <em>not</em> be applied to the other ~180 papers.</p>
+    </section>
+
+    <section class="card" id="s7">
+      <div class="sec-label"><span class="sec-num">7</span><h2>Recommended treatment of <code style="font-size:0.8em;">questionsAnswered</code></h2></div>
+      <p class="sec-dek">The prior recommendation ("render all 1,041 as visible 'Questions this paper answers'") is suspended. Replaced with a role-separated approach.</p>
+      <div class="table-wrap">
+      <table>
+        <thead><tr><th>Role</th><th>Recommendation</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td>1. Internal semantic/retrieval metadata</td><td><span class="pill good">Keep as-is</span></td><td>Already working well for this purpose (client-side search, relatedness) — no change needed</td></tr>
+          <tr><td>2. Structured machine-discovery signal (JSON-LD)</td><td><span class="pill good">Yes, expose — as metadata, not as attributed speech</span></td><td>Surfacing these as <code>keywords</code> or within an expanded <code>description</code> in each paper's <code>ScholarlyArticle</code> JSON-LD gives search/AI systems the retrieval benefit without any claim about who asked them — this is the safest, highest-leverage part of the original recommendation and should proceed</td></tr>
+          <tr><td>3. Visible human-facing "Questions this paper answers" content</td><td><span class="pill warn">Selective, not blanket</span></td><td>Per §5, roughly three-quarters read naturally enough for direct display; the rest read as analytical/comparative framing better left as metadata. A blanket render of all 1,041 risks displaying a meaningful minority of oddly-scoped or overstated questions. Recommend an editorial pass selecting the natural-register subset per paper (typically 2–4 of the 3–8 available) rather than rendering the full array everywhere.</td></tr>
+          <tr><td>4. Search landing/query language</td><td><span class="pill good">Yes</span></td><td>Legitimate use for informing which real search phrasings to target editorially (§9), and for the query-benchmark work already underway</td></tr>
+          <tr><td>5. Farmer Advisory ⇄ Knowledge Paper cross-linking</td><td><span class="pill warn">Only for Tier 1/2, not generically</span></td><td>Reserve genuine "Farmer Question → Answer" framing for papers with real provenance (§6); use ordinary taxonomy-based relatedness (already built, <code>related.ts</code>) for the rest</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="callout"><strong>What search engines and AI systems actually gain from role 2, concretely:</strong> not "more question sentences = better ranking" (no evidence supports that mechanism, and the prior audit should not have implied it). The genuine, documented mechanism is retrieval matching: a search or AI system matches a user's query against a page's actual text and metadata. Pages currently carry none of this question-form vocabulary anywhere machine-readable — adding it as <code>keywords</code>/description content gives the retrieval system more of the farmer's likely phrasing to match against, which is a real, well-understood mechanism (vocabulary overlap between query and indexed content), not a ranking trick. This is a modest, honest improvement — not a guarantee of appearing in results, and not a substitute for the genuine authority/backlink/usage signals discussed in the original audit's broader roadmap.</div>
+    </section>
+
+    <section class="card" id="s8">
+      <div class="sec-label"><span class="sec-num">8</span><h2>Status terminology: correcting "Requires PQNK Review"</h2></div>
+      <div class="fact-box">
+        <div class="label">Verified fact</div>
+        <p style="margin:6px 0 0;"><code>taxonomy.json</code>'s <code>authorityStatuses</code> array carries no description text — it is 4 bare strings: <code>Current / Approved PQNK Knowledge</code>, <code>Historical PQNK Formulation</code>, <code>External Knowledge / Evidence</code>, <code>Requires PQNK Review</code>. There is a structurally <em>separate</em> field, <code>evidenceType</code>, already carrying values like "Scientific Mechanism," "Field Observation," "Farmer Testimony" — i.e. the taxonomy already has a dedicated axis for the evidentiary character of a paper's content, distinct from <code>authorityStatus</code>. This is consistent with (though doesn't independently prove) your clarification that <code>authorityStatus</code> was never meant to encode scientific/evidentiary provisionality.</p>
+      </div>
+      <div class="callout warn"><strong>A genuine tension worth flagging directly:</strong> <code>docs/ask-pqnk/SOURCE_AUTHORITY_POLICY.md</code> §2 (written earlier in this engagement, for the now-paused Ask PQNK system) describes this exact status as Tier 5, "Any source type, <strong>not yet vetted</strong>" — ranked below even "External Knowledge / Evidence." That phrasing does read as describing evidentiary/authority provisionality, which is exactly the misreading this correction is fixing. This was this engagement's own prior interpretation, not something invented by the earlier audit in isolation — it should be reconciled if Ask PQNK is ever resumed, so a future retrieval decision doesn't accidentally treat "editorial review pending" as "unreliable knowledge." Not touched now, per the no-implementation instruction — flagged for the record.</div>
+      <p>54 of 186 papers (29%) currently carry this status. Per your correction: none of these should be suppressed, downgraded in authority, excluded from search/AI discoverability, or excluded from the <code>questionsAnswered</code> work in §7 solely on this basis.</p>
+      <div class="subhead">Recommended replacement</div>
+      <p>Your proposed direction — <code>PQNK Authenticated — Editorial Consistency Review Pending</code> — is a strong fit against the existing architecture: it's the same length/register as the other 3 canonical values, doesn't collide with <code>evidenceType</code>'s job, and removes the "not yet vetted" ambiguity directly. Two adjacent options if a shorter label is preferred for UI space:</p>
+      <ul>
+        <li><code>PQNK Knowledge — Editorial Review Pending</code> (shorter, keeps "PQNK Knowledge" as the anchor phrase)</li>
+        <li><code>Approved Knowledge — Wording Review Pending</code> (leans on "Approved" to explicitly borrow authority language from the <code>Current / Approved</code> status, making the contrast — approved content, pending polish — unmistakable)</li>
+      </ul>
+      <p>Whichever wording is chosen, it should propagate to: <code>taxonomy.json</code>'s <code>authorityStatuses</code> array, every <code>metadata.json</code> entry currently set to the old value (54 papers), <code>taxonomy.ts</code>'s <code>REQUIRES_REVIEW</code> constant (rename or keep the constant name and only change its string value — constant renaming is a larger, riskier change than a value change), and — separately, later, only if Ask PQNK resumes — a reconciling update to <code>SOURCE_AUTHORITY_POLICY.md</code> §2's Tier 5 description. None of this is implemented in this pass.</p>
+    </section>
+
+    <section class="card" id="s9" style="border-color:var(--terracotta);border-width:1.5px;">
+      <div class="sec-label"><span class="sec-num">9</span><h2>Revised Phase 1 priorities</h2></div>
+      <p class="sec-dek">Replaces the single "render all 1,041 <code>questionsAnswered</code> entries" item from the original roadmap with a sequenced, role-separated set.</p>
+      <ol>
+        <li><strong>Expose <code>questionsAnswered</code> in JSON-LD as retrieval metadata</strong> (keywords/description) across all 186 papers — low risk, no editorial judgment calls, proceeds as originally planned (§7 role 2).</li>
+        <li><strong>Editorial pass selecting a natural-register subset per paper for visible display</strong> — informed by the pattern in §5 (roughly 2–4 of each paper's 3–8 questions read as genuinely display-ready); this is now editorial judgment work, not a mechanical render-everything step.</li>
+        <li><strong>Build the "Farmer Question → PQNK Answer" presentation</strong> (§6) for the 6 Tier-1 papers specifically — a distinct visual/structural treatment from ordinary Knowledge Paper pages, not reused generically.</li>
+        <li><strong>Editorially confirm or reject the 4 Tier-2 candidates</strong> before deciding their treatment — a quick Pedaver-side check (does a real originating conversation exist?), not further repository archaeology.</li>
+        <li><strong>Decide and apply the corrected <code>authorityStatus</code> wording</strong> (§8) across <code>taxonomy.json</code>/<code>metadata.json</code> — independent of the <code>questionsAnswered</code> work, no dependency between them.</li>
+        <li><strong>Still untouched, still pending, unaffected by this correction:</strong> the sitemap lastmod fix, ScholarlyArticle @id linkage, CollectionPage/ItemList additions, GSC verification check, and the rest of the original P0–P2 items — none of those depended on the farmer-question framing and remain valid as scoped.</li>
+      </ol>
+      <div class="stop-banner">Correction and audit only. No website pages, metadata, schema, structured data, navigation, sitemap, robots, deployment workflow, or content have been modified.<br>No commit, push, or deploy. Awaiting approval before any implementation.</div>
+    </section>
+
+    <footer class="doc-footer">Pedaver / PQNK — Discovery Questions Provenance Correction · Verified against the repository, inference clearly marked where the repository could not establish fact</footer>
+  </main>
+</div>
