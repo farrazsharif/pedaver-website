@@ -18,6 +18,14 @@ RedirectMatch 301 ^/certification/?$ /validation/
 # entry resolves correctly instead of 404ing.
 RedirectMatch 301 ^/sample-page/?$ /founder/
 
+# Another pre-Next.js WordPress leftover — its entire body was a one-paragraph
+# definition of what PQNK stands for ("PQNK ... means sustainable natural
+# farming system"), confirmed via Wayback Machine snapshots (the page no
+# longer exists on the server, but still ranks live for "Pedaver PQNK"
+# searches and 404s). /science/ is the current site's dedicated "what PQNK is"
+# hub and the closest canonical successor to that content.
+RedirectMatch 301 ^/pqnk-paedar-qudratti-nizam-e-kashatqari/?$ /science/
+
 # Cache static assets aggressively (they are content-hashed by Next)
 <IfModule mod_expires.c>
   ExpiresActive On
