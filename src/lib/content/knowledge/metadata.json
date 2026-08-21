@@ -13905,4 +13905,70 @@
 }
 ]
 }
+,
+{
+"slug":"when-mulch-becomes-a-barrier",
+"primarySubject":"Diagnosing root-zone oxygen restriction caused by overly fine, deep mulch layers",
+"questionsAnswered":[
+"Why are my plants showing leaf burn even though I mulched heavily?",
+"Can too much mulch actually harm my plants?",
+"What is the difference between mulch that protects soil and mulch that suffocates it?",
+"How thick should my mulch layer be?",
+"Why do finely chopped residues behave differently from coarse residues as mulch?",
+"How do I check if my mulch is blocking root-zone oxygen?"
+],
+"keywords":[
+"mulch management",
+"mulch porosity",
+"root zone oxygen",
+"finely chopped straw",
+"mulch depth",
+"root aeration",
+"leaf discoloration diagnosis",
+"wheat straw mulch",
+"soil aeration",
+"mulch thickness"
+],
+"geography":null,
+"crops":[],
+"fieldProblems":[
+"Leaf Discoloration (Yellowing/Purpling)",
+"Low Root-Zone Oxygen / Poor Aeration",
+"Weak / Shallow Root Establishment",
+"Farmer Uncertainty / Diagnostic Skill Gap"
+],
+"problemFamily":[
+"Plant Growth & Nutrition",
+"Soil & Roots"
+],
+"fieldPractices":[
+"Surface Mulching (General)",
+"Chop-and-Drop Mulching",
+"Mulch Decomposition / Ground-Cover Monitoring"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Soil",
+"Plants"
+],
+"pqnkPrinciples":[
+"Permanent Biological Cover"
+],
+"productionStages":[
+"Vegetative Growth"
+],
+"evidenceType":"Field Observation",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/soil",
+"why":"root-zone oxygen, aeration and mulch porosity mechanics"
+},
+{
+"page":"/science/plants",
+"why":"root respiration and how oxygen restriction produces leaf-level stress symptoms"
+}
+]
+}
 ]

@@ -4577,6 +4577,30 @@ export const papers: Paper[] = [
       "SIPP and VIPP planters exist to plant into permanent beds through mulch with minimal disturbance, so a field does not need to be tilled again simply because another crop is being planted.",
     ],
   },
+  {
+    slug: "when-mulch-becomes-a-barrier",
+    category: "Workforce & Practice Advisories",
+    title: "When Mulch Becomes a Barrier: Why More Mulch Is Not Always Better",
+    summary:
+      "Diagnoses a farmer's report of leaf discoloration and apparent burning despite 8-9 inches of wheat-straw mulch, tracing the likely cause to finely chopped straw packing into a dense seal that blocks root-zone oxygen, and reframes mulch management around functional porosity rather than depth alone.",
+    publishedDate: "2026-08-21",
+    pdfPath: "/papers/when-mulch-becomes-a-barrier.pdf",
+    heroImage: "/images/guava-hd-mulched-rows.jpg",
+    abstract: [
+      "A farmer reported severe leaf discoloration and apparent burning on plants protected by roughly 8-9 inches of finely chopped wheat-straw mulch, an apparent contradiction given mulch's role in shielding soil from heat. This paper works through that field question and argues the cause is not too little protection but a specific combination: very fine particle size plus a deep layer, which can settle into a dense mat that blocks light effectively while sealing the soil from the atmosphere.",
+      "The underlying misconception it corrects is that mulch works simply by quantity, more material equals more protection. Long, coarse residue naturally leaves irregular air spaces between pieces; finely chopped material behaves differently, settling closely together after irrigation, rainfall or trampling until an 8-9 inch layer becomes far denser than an equivalent depth of coarse residue. The result can be an excellent light barrier and a poor air interface at the same time, one mulch function performed so aggressively it interferes with another.",
+      "The paper's diagnostic principle is that roots are living, respiring organs that need oxygen as much as water, so a plant can suffer physiologically even when the soil beneath it is moist, restricted root-zone aeration impairs nutrient uptake and water relations and can produce above-ground symptoms that look like an input problem when the actual cause is a sealed root zone. It reframes mulch as a porous insulating blanket rather than an airtight lid, and argues that a stated depth in inches is close to meaningless without describing the material, since functional porosity, not thickness, is what determines whether a mulch layer still lets the soil breathe.",
+      "For this specific case the paper recommends reducing the layer to roughly 2 inches, fluffing the remaining material so visible air spaces reappear, keeping mulch off the stem and root collar, and judging recovery from new growth rather than expecting already-damaged leaves to recover. It closes with a simple hand-lift field test farmers can use without instruments, and a working PQNK definition of mulching as a porous biological cover that blocks solar radiation while still permitting gaseous exchange between soil and atmosphere: mulch must shade the soil, not suffocate it.",
+    ],
+    keyTakeaways: [
+      "An 8-9 inch layer of finely chopped straw can behave as a dense seal rather than a porous blanket, restricting root-zone oxygen even though the soil beneath stays shaded and moist.",
+      "The determining variable is functional porosity, not depth: coarse, loosely arranged residue holds interconnected air spaces, while finely chopped material can pack down and lose them.",
+      "A plant can show visible stress even with adequate soil moisture, because roots need both water and oxygen; leaf symptoms alone cannot confirm which one is missing.",
+      "The corrective sequence: reduce the layer to about 2 inches, fluff it to restore visible air spaces, keep it off the stem/root collar, and judge recovery from new growth rather than existing damaged leaves.",
+      "PQNK defines mulching as a porous biological cover that blocks solar radiation and buffers temperature while still permitting gaseous exchange between soil and atmosphere, not simply 'covering soil with crop residue.'",
+      "A simple hand-lift field test (visible air spaces, no exposed bare soil, aerated not saturated soil beneath, clear root collar) turns mulch management into an observable condition instead of a fixed number.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {
