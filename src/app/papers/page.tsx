@@ -1,6 +1,6 @@
 import Link from "next/link";
 import dict from "@/lib/dictionaries";
-import { papers } from "@/lib/content/papers";
+import { papers, formatKpNumber } from "@/lib/content/papers";
 import Section from "@/components/Section";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
 import PapersBrowser from "./PapersBrowser";
@@ -63,10 +63,10 @@ export default function PapersPage() {
           <h2 className="text-xl font-bold text-primary-dark">{dict.papers.tocTitle}</h2>
           <p className="mt-1 text-sm text-ink-soft">{dict.papers.tocSubtitle}</p>
           <ol className="mt-5 columns-1 gap-x-8 sm:columns-2 lg:columns-3">
-            {sortedPapers.map((paper, idx) => (
+            {sortedPapers.map((paper) => (
               <li key={paper.slug} className="mb-2 break-inside-avoid text-sm leading-snug">
                 <Link href={`/papers/${paper.slug}`} className="text-ink-soft hover:text-accent">
-                  <span className="text-ink-soft/60">{idx + 1}.</span> {paper.title}
+                  <span className="text-ink-soft/60">{formatKpNumber(paper.kpNumber)}</span> · {paper.title}
                 </Link>
               </li>
             ))}

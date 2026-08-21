@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import dict from "@/lib/dictionaries";
-import { papers, getPaperBySlug } from "@/lib/content/papers";
+import { papers, getPaperBySlug, formatKpNumber } from "@/lib/content/papers";
 import { getRelatedCrops } from "@/lib/content/crossLinks";
 import { notFound } from "next/navigation";
 import Section from "@/components/Section";
@@ -98,7 +98,9 @@ export default async function PaperDetailPage({
           <Link href="/papers" className="text-sm font-semibold text-primary underline underline-offset-4">
             ← {dict.papers.backToAll}
           </Link>
-          <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-accent">{paper.category}</p>
+          <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-accent">
+            {formatKpNumber(paper.kpNumber)} · {paper.category}
+          </p>
           <h1 className="mt-2 text-4xl font-extrabold text-primary-dark">{paper.title}</h1>
           <p className="mt-4 max-w-2xl text-lg text-ink-soft">{paper.summary}</p>
         </div>

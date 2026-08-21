@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import dict from "@/lib/dictionaries";
 import type { Paper } from "@/lib/content/papers";
+import { formatKpNumber, formatLibraryDate, parseKpQuery } from "@/lib/content/papers";
 import {
   getMetadata,
   CROPS_IN_USE,
@@ -27,6 +28,15 @@ interface Filters {
 
 const EMPTY_FILTERS: Filters = { q: "", crop: "", family: "", problem: "", domain: "", practice: "" };
 
+// Sorting is deliberately independent of Filters: it decides display order of
+// whatever set the filters/search already produced, never which papers are in
+// that set. "recent" (newest libraryDate first) is the default for the main
+// browser — the separate Complete A-Z Index further down the page already
+// covers alphabetical browsing on its own.
+type SortMode = "recent" | "az" | "oldest";
+const DEFAULT_SORT: SortMode = "recent";
+const VALID_SORTS: SortMode[] = ["recent", "az", "oldest"];
+
 function readFiltersFromURL(): Filters {
   if (typeof window === "undefined") return EMPTY_FILTERS;
   const params = new URLSearchParams(window.location.search);
@@ -40,11 +50,18 @@ function readFiltersFromURL(): Filters {
   };
 }
 
-function writeFiltersToURL(filters: Filters) {
+function readSortFromURL(): SortMode {
+  if (typeof window === "undefined") return DEFAULT_SORT;
+  const raw = new URLSearchParams(window.location.search).get("sort");
+  return VALID_SORTS.includes(raw as SortMode) ? (raw as SortMode) : DEFAULT_SORT;
+}
+
+function writeStateToURL(filters: Filters, sort: SortMode) {
   const params = new URLSearchParams();
   for (const [key, value] of Object.entries(filters)) {
     if (value) params.set(key, value);
   }
+  if (sort !== DEFAULT_SORT) params.set("sort", sort);
   const qs = params.toString();
   const url = qs ? `${window.location.pathname}?${qs}` : window.location.pathname;
   window.history.replaceState(null, "", url);
@@ -68,8 +85,9 @@ function AuthorityBadge({ status }: { status: string }) {
   return null;
 }
 
-function PaperCard({ paper }: { paper: Paper }) {
+function PaperCard({ paper, sortMode }: { paper: Paper; sortMode: SortMode }) {
   const meta = getMetadata(paper.slug);
+  const eyebrowDate = sortMode === "recent" || sortMode === "oldest";
   return (
     <Link
       href={`/papers/${paper.slug}`}
@@ -86,7 +104,9 @@ function PaperCard({ paper }: { paper: Paper }) {
       )}
       <div className="flex flex-1 flex-col p-6">
         <div className="flex flex-wrap items-center gap-2">
-          <p className="text-xs font-semibold uppercase tracking-wide text-accent">{paper.category}</p>
+          <p className="text-xs font-semibold uppercase tracking-wide text-accent">
+            {formatKpNumber(paper.kpNumber)} · {eyebrowDate ? formatLibraryDate(paper.libraryDate) : paper.category}
+          </p>
           {meta && <AuthorityBadge status={meta.authorityStatus} />}
         </div>
         <h2 className="mt-2 text-xl font-bold text-primary-dark group-hover:text-primary">{paper.title}</h2>
@@ -152,6 +172,7 @@ function SelectField({
 
 export default function PapersBrowser({ papers }: { papers: Paper[] }) {
   const [filters, setFilters] = useState<Filters>(EMPTY_FILTERS);
+  const [sortMode, setSortMode] = useState<SortMode>(DEFAULT_SORT);
   const [queryInput, setQueryInput] = useState("");
   const hydrated = useRef(false);
   const rootRef = useRef<HTMLDivElement>(null);
@@ -172,6 +193,7 @@ export default function PapersBrowser({ papers }: { papers: Paper[] }) {
     restoringFromURL.current = true;
     setFilters(initial);
     setQueryInput(initial.q);
+    setSortMode(readSortFromURL());
     hydrated.current = true;
 
     // A shared/deep-linked search or filter URL should land with its
@@ -187,8 +209,8 @@ export default function PapersBrowser({ papers }: { papers: Paper[] }) {
 
   useEffect(() => {
     if (!hydrated.current) return;
-    writeFiltersToURL(filters);
-  }, [filters]);
+    writeStateToURL(filters, sortMode);
+  }, [filters, sortMode]);
 
   // Debounce the search text -> filters.q so typing doesn't thrash the URL/history.
   // The search bar is the primary discovery mechanism: starting a new text search
@@ -216,6 +238,17 @@ export default function PapersBrowser({ papers }: { papers: Paper[] }) {
   );
 
   const results = useMemo(() => {
+    // An explicit "KP-190" / "KP190" / "kp-190" query is a direct catalogue
+    // lookup, not a concept search — resolve it straight from kpNumber and
+    // skip the taxonomy/synonym matching engine entirely. A plain number
+    // ("190") deliberately does NOT trigger this, so it doesn't interfere
+    // with ordinary free-text search behavior.
+    const kpLookup = filters.q.trim() ? parseKpQuery(filters.q) : null;
+    if (kpLookup !== null) {
+      const hit = papers.find((p) => p.kpNumber === kpLookup);
+      return hit ? [hit] : [];
+    }
+
     let pool = papers;
 
     if (filters.q.trim()) {
@@ -223,7 +256,7 @@ export default function PapersBrowser({ papers }: { papers: Paper[] }) {
       pool = searchHits.map((r) => r.paper);
     }
 
-    return pool.filter((paper) => {
+    const filtered = pool.filter((paper) => {
       const meta = getMetadata(paper.slug);
       if (!meta) return false;
       if (filters.crop && !meta.crops.includes(filters.crop)) return false;
@@ -233,7 +266,18 @@ export default function PapersBrowser({ papers }: { papers: Paper[] }) {
       if (filters.practice && !meta.fieldPractices.includes(filters.practice)) return false;
       return true;
     });
-  }, [papers, filters]);
+
+    // Sorting is applied last, on top of whatever filtering/search already
+    // narrowed the set — it never changes which papers are included, only
+    // the order they're shown in, so it composes with every filter above.
+    if (sortMode === "az") {
+      return [...filtered].sort((a, b) => a.title.localeCompare(b.title));
+    }
+    if (sortMode === "oldest") {
+      return [...filtered].sort((a, b) => a.libraryDate.localeCompare(b.libraryDate) || a.kpNumber - b.kpNumber);
+    }
+    return [...filtered].sort((a, b) => b.libraryDate.localeCompare(a.libraryDate) || b.kpNumber - a.kpNumber);
+  }, [papers, filters, sortMode]);
 
   const activeChips: { key: keyof Filters; label: string }[] = [
     filters.crop && { key: "crop" as const, label: `Crop: ${filters.crop}` },
@@ -383,14 +427,37 @@ export default function PapersBrowser({ papers }: { papers: Paper[] }) {
 
       {/* Results */}
       <div className="mx-auto mt-8 max-w-6xl">
-        <p className="mb-4 text-center text-sm text-ink-soft">
-          {results.length} {results.length === 1 ? "paper" : "papers"} match{results.length === 1 ? "es" : ""}
-        </p>
+        <div className="mb-4 flex flex-col items-center gap-3 sm:flex-row sm:justify-between">
+          <p className="text-sm text-ink-soft">
+            {results.length} {results.length === 1 ? "paper" : "papers"} match{results.length === 1 ? "es" : ""}
+          </p>
+          <div className="inline-flex items-center gap-1 rounded-full border border-border bg-card p-1" role="group" aria-label="Sort Knowledge Papers">
+            {(
+              [
+                { mode: "recent" as const, label: "Recent" },
+                { mode: "az" as const, label: "A–Z" },
+                { mode: "oldest" as const, label: "Oldest First" },
+              ]
+            ).map(({ mode, label }) => (
+              <button
+                key={mode}
+                type="button"
+                onClick={() => setSortMode(mode)}
+                aria-pressed={sortMode === mode}
+                className={`rounded-full px-3.5 py-1.5 text-xs font-semibold transition ${
+                  sortMode === mode ? "bg-primary text-cream" : "text-ink-soft hover:text-primary-dark"
+                }`}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+        </div>
 
         {results.length > 0 ? (
           <div className="grid gap-6 md:grid-cols-2">
             {results.map((paper) => (
-              <PaperCard key={paper.slug} paper={paper} />
+              <PaperCard key={paper.slug} paper={paper} sortMode={sortMode} />
             ))}
           </div>
         ) : (

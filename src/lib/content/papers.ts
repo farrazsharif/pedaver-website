@@ -12,6 +12,13 @@ export type PaperCategory = (typeof PAPER_CATEGORIES)[number];
 
 export interface Paper {
   slug: string;
+  /** Permanent Knowledge Paper catalogue ID (KP-001, KP-002, ...). Assigned once
+   * by libraryDate order and never recomputed from sorting, titles, or taxonomy. */
+  kpNumber: number;
+  /** ISO date this paper entered the Pedaver Knowledge Papers library. Equal to
+   * publishedDate for ordinary papers; differs only for externally-cited works,
+   * where publishedDate is the cited work's own original publication date. */
+  libraryDate: string;
   category: PaperCategory;
   title: string;
   summary: string;
@@ -33,6 +40,8 @@ export interface Paper {
 export const papers: Paper[] = [
   {
     slug: "the-evolution-of-seed-placement",
+    kpNumber: 1,
+    libraryDate: "2026-07-25",
     category: "Plant Physiology & Production Systems",
     title: "The Evolution of Seed Placement: Why the Seed Opener Was Left Behind",
     summary:
@@ -56,6 +65,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "transforming-wheat-production-through-pqnk",
+    kpNumber: 2,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title: "Transforming Wheat Production through the Paedar Qudratti Nizam Kashatqari (PQNK)",
     summary:
@@ -81,6 +92,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "enhancing-wheat-crop-lifespan-through-pqnk",
+    kpNumber: 3,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title: "Enhancing Wheat Crop Lifespan through the PQNK System",
     summary:
@@ -106,6 +119,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "modern-semi-dwarf-wheat-vs-heirloom-and-ancient-varieties",
+    kpNumber: 4,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title: "Modern (Green Revolution) Semi-Dwarf Wheat vs. Heirloom and Ancient Wheat Varieties",
     summary:
@@ -131,6 +146,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "transforming-pakistans-sugar-industry-through-pqnk",
+    kpNumber: 5,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title: "Transforming Pakistan's Sugar Industry Through the PQNK (Pristine Organic Farming) System",
     summary:
@@ -155,6 +172,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "pqnk-paradigm-shift-for-climate-resilient-rice-cultivation",
+    kpNumber: 6,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title: "PQNK - The Paradigm Shift for Sustainable, Profitable, and Climate-Resilient Rice Cultivation",
     summary:
@@ -179,6 +198,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "transforming-garlic-and-onion-cultivation-through-pqnk",
+    kpNumber: 7,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title: "Transforming Garlic and Onion Cultivation through the PQNK Regenerative System",
     summary:
@@ -204,6 +225,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "restoring-prosperity-in-citrus-and-mango-orchards",
+    kpNumber: 8,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title: "Restoring Prosperity in Citrus and Mango Orchards Through the PQNK Regenerative System",
     summary:
@@ -229,6 +252,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "optimizing-mango-pruning-within-a-pqnk-ecosystem",
+    kpNumber: 9,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title: "Optimizing Mango Pruning Within a Self-Sustaining PQNK Ecosystem for Punjab",
     summary:
@@ -254,6 +279,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "achieving-high-density-kinnow-plantation-through-pqnk",
+    kpNumber: 10,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title: "Achieving a High-Density Kinnow Plantation through the PQNK Framework: A Comparative Analysis of Rootstock Options and Their Synergy with Regenerative Soil Ecology",
     summary:
@@ -279,6 +306,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-future-of-potato-cultivation-through-pqnk",
+    kpNumber: 11,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title: "The Future of Potato Cultivation: A Scientific and Economic Comparison of ACI, Global Best Practices, and the PQNK Framework",
     summary:
@@ -304,6 +333,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "watermelon-cultivation-under-pqnk",
+    kpNumber: 12,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title:
       "Watermelon Cultivation Under the Paedar Qudratti Nizam Kashatqari (PQNK): A Guideline Based on Practical Field Observations",
@@ -329,6 +360,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "batoor-flower-management-in-mango-under-pqnk",
+    kpNumber: 13,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title:
       "Comprehensive Advisory on 'Batoor' Flower Management in Mango: Blending Traditional Wisdom with Scientific Insight",
@@ -355,6 +388,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "commercial-rhodes-grass-production-under-pqnk",
+    kpNumber: 14,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title:
       "Commercial Rhodes Grass Production Under PQNK: A Factsheet for Punjab & Adjacent Areas",
@@ -380,6 +415,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "commercial-bamboo-plantation-under-pqnk",
+    kpNumber: 15,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title: "Factsheet: Commercial Bamboo Plantation Under PQNK",
     summary:
@@ -404,6 +441,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "cotton-cultivation-by-mulching",
+    kpNumber: 16,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title: "Cotton Cultivation by Mulching",
     summary:
@@ -429,6 +468,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "fruit-tree-alleys-and-filler-crops-on-pqnk",
+    kpNumber: 17,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title: "Fruit Tree Alleys and Filler Crops on PQNK",
     summary:
@@ -454,6 +495,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "achieving-high-density-pomegranate-production-through-pqnk",
+    kpNumber: 18,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title:
       "Knowledge Paper: Achieving High-Density Pomegranate Production Through the PQNK (Picnic) Pristine Organic Farming System",
@@ -480,6 +523,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "high-density-amla-farming-under-pqnk",
+    kpNumber: 19,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title: "Knowledge Paper: High-Density Amla Farming Under PQNK",
     summary:
@@ -504,6 +549,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "pqnk-rose-production",
+    kpNumber: 20,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title: "Knowledge Paper: PQNK Rose Production",
     summary:
@@ -533,6 +580,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "high-anthocyanin-black-carrot-under-pqnk",
+    kpNumber: 21,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title:
       "Comprehensive Guide: High-Anthocyanin Black Carrot Under the PQNK Closed-Loop System",
@@ -559,6 +608,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "citrus-flowering-and-fruiting-within-the-pqnk-ecosystem",
+    kpNumber: 22,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title:
       "A Knowledge Paper on Citrus Flowering and Fruiting Within the PQNK Ecosystem",
@@ -585,6 +636,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "tomato-cultivation-under-pqnk",
+    kpNumber: 23,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title: "PQNK Advisory Paper: Tomato (Solanum lycopersicum)",
     summary:
@@ -609,6 +662,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "strategic-pruning-of-brinjal-for-a-prolific-harvest",
+    kpNumber: 24,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title:
       "PQNK Advisory: Strategic Pruning of Brinjal (Eggplant) for a Prolific Harvest",
@@ -634,6 +689,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "chilli-production-under-pqnk",
+    kpNumber: 25,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title: "Chilli Production Under PQNK (PICNIC)",
     summary:
@@ -659,6 +716,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "banana-cultivation-on-pqnk",
+    kpNumber: 26,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title: "Banana Cultivation on PQNK (PICNIC)",
     summary:
@@ -684,6 +743,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "sugarcane-the-bamboo-principle",
+    kpNumber: 27,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title: "Sugarcane: The Bamboo Principle",
     summary:
@@ -708,6 +769,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "sugarcane-cultivation-on-pqnk",
+    kpNumber: 28,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title: "Sugarcane Cultivation on PQNK: A Perennial, Circular Production System",
     summary:
@@ -732,6 +795,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "motha-grass-dominance-a-pqnk-interpretation",
+    kpNumber: 29,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title: "Motha Grass (Cyperus rotundus) Dominance: A PQNK Knowledge Paper",
     summary:
@@ -757,6 +822,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "mitigating-post-harvest-losses-in-rice-through-pqnk",
+    kpNumber: 30,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title:
       "Knowledge Paper: Mitigating Post-Harvest Losses in Rice Through Controlled Environment Agriculture PQNK – A Case Study in Grain Structural Integrity",
@@ -782,6 +849,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "monitoring-soil-life-in-the-pqnk-system",
+    kpNumber: 31,
+    libraryDate: "2026-07-25",
     category: "Soil Science & PQNK System",
     title: "Monitoring Soil Life in the PQNK System: A Farmer's Guide",
     summary:
@@ -806,6 +875,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "managing-the-biological-transition",
+    kpNumber: 127,
+    libraryDate: "2026-07-30",
     category: "Soil Science & PQNK System",
     title: "Managing the Biological Transition: Protecting Crop Performance During the First Years of PQNK Conversion",
     summary:
@@ -830,6 +901,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-breathing-soil-humidity-and-soil-structure",
+    kpNumber: 32,
+    libraryDate: "2026-07-25",
     category: "Soil Science & PQNK System",
     title: "The Breathing Soil: A PQNK Dialogue on Humidity and Soil Structure",
     summary:
@@ -854,6 +927,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "unlocking-the-secrets-of-the-soil-deep-topsoil",
+    kpNumber: 33,
+    libraryDate: "2026-07-25",
     category: "Soil Science & PQNK System",
     title: "Unlocking the Secrets of the Soil: Understanding Deep Topsoil and Nature's Partnership",
     summary:
@@ -878,6 +953,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-mechanism-of-nutrient-absorption-in-pqnk-farming",
+    kpNumber: 34,
+    libraryDate: "2026-07-25",
     category: "Soil Science & PQNK System",
     title: "The Mechanism of Nutrient Absorption in PQNK Farming",
     summary:
@@ -901,6 +978,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "why-is-oxygen-less-in-soil-air-why-is-co2-high",
+    kpNumber: 35,
+    libraryDate: "2026-07-25",
     category: "Soil Science & PQNK System",
     title: "Why Is Oxygen Less in Soil Air? Why Is CO2 High?",
     summary:
@@ -925,6 +1004,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-autonomous-biome-self-assembling-fungal-networks",
+    kpNumber: 36,
+    libraryDate: "2026-07-25",
     category: "Soil Science & PQNK System",
     title: "The Autonomous Biome: Principles of Self-Assembling Fungal Networks in a Closed-Loop System",
     summary:
@@ -949,6 +1030,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-healers-dialogue-from-weed-signal-to-soil-silence",
+    kpNumber: 37,
+    libraryDate: "2026-07-25",
     category: "Soil Science & PQNK System",
     title: "The Healer's Dialogue: From Weed Signal to Soil Silence — A PQNK Pathway to Self-Regulating Abundance",
     summary:
@@ -973,6 +1056,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "deep-subsoil-remediation-and-activation",
+    kpNumber: 38,
+    libraryDate: "2026-07-25",
     category: "Soil Science & PQNK System",
     title: "Deep Subsoil Remediation & Activation: Strategic Pathways for Compacted Soils",
     summary:
@@ -997,6 +1082,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-self-liberating-mineral-cycle",
+    kpNumber: 39,
+    libraryDate: "2026-07-25",
     category: "Soil Science & PQNK System",
     title: "The Self-Liberating Mineral Cycle: Rejecting the Input Paradigm in the Restored Biome",
     summary:
@@ -1021,6 +1108,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "managing-soil-electrical-conductivity-and-redox-potential",
+    kpNumber: 40,
+    libraryDate: "2026-07-25",
     category: "Soil Science & PQNK System",
     title:
       "Managing Soil Electrical Conductivity & Redox Potential in a Pristine, No-Chemical System for Optimal Nutrient Uptake",
@@ -1046,6 +1135,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-qudratti-nizam-as-a-holistic-organism",
+    kpNumber: 41,
+    libraryDate: "2026-07-25",
     category: "Soil Science & PQNK System",
     title: "The Qudratti Nizam as a Holistic Organism: The Principle of Closed-Loop Perception",
     summary:
@@ -1070,6 +1161,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "soil-water-dynamics-microclimate-feedback-and-plant-vigor",
+    kpNumber: 42,
+    libraryDate: "2026-07-25",
     category: "Soil Science & PQNK System",
     title: "Soil Water Dynamics, Microclimate Feedback, and Plant Vigor in Raised Bed Systems",
     summary:
@@ -1095,6 +1188,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-pqnk-raised-bed-system-engineering-root-zones",
+    kpNumber: 43,
+    libraryDate: "2026-07-25",
     category: "Soil Science & PQNK System",
     title: "The PQNK Raised Bed System: Engineering Optimal Root Zone Environments for Vigorous Plant Production",
     summary:
@@ -1120,6 +1215,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-management-of-soil-density",
+    kpNumber: 44,
+    libraryDate: "2026-07-25",
     category: "Soil Science & PQNK System",
     title: "The Management of Soil Density within the Closed-Loop Regenerative System",
     summary:
@@ -1144,6 +1241,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "beyond-sand-silt-and-clay",
+    kpNumber: 45,
+    libraryDate: "2026-07-25",
     category: "Soil Science & PQNK System",
     title: "Beyond Sand, Silt, and Clay: The PQNK Guide to Creating Productive Soil",
     summary:
@@ -1168,6 +1267,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "role-of-soil-colloids-in-soil-properties",
+    kpNumber: 46,
+    libraryDate: "2026-07-25",
     category: "Soil Science & PQNK System",
     title: "Role of Soil Colloids in Determining the Physical and Chemical Properties of Soil",
     summary:
@@ -1192,6 +1293,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-underground-air-water-air-balance-and-nitrogen-fixation",
+    kpNumber: 47,
+    libraryDate: "2026-07-25",
     category: "Soil Science & PQNK System",
     title:
       "The Underground Air: Why Soil's Water:Air Balance Governs Nitrogen Fixation, and Every Other Root Function, in the PQNK System",
@@ -1217,6 +1320,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "breaking-hardpan-without-machinery",
+    kpNumber: 48,
+    libraryDate: "2026-07-25",
     category: "Soil Science & PQNK System",
     title: "Breaking Hardpan Without Machinery",
     summary:
@@ -1241,6 +1346,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-weeds-as-soil-physicians",
+    kpNumber: 49,
+    libraryDate: "2026-07-25",
     category: "Soil Science & PQNK System",
     title: "The Weeds as Soil Physicians: A PQNK Diagnostic Guide to Soil Health in the Punjab Region",
     summary:
@@ -1265,6 +1372,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-wholesale-four-step-system-to-end-water-scarcity",
+    kpNumber: 50,
+    libraryDate: "2026-07-25",
     category: "Water & Climate",
     title:
       "PQNK: The Wholesale Four-Step System to Reconnect the Water Cycle and End Water Scarcity",
@@ -1291,6 +1400,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "restoring-earths-hydrological-cycle-to-mitigate-erratic-weather",
+    kpNumber: 51,
+    libraryDate: "2026-07-25",
     category: "Water & Climate",
     title:
       "PQNK: Restoring Earth's Hydrological Cycle to Mitigate Erratic Weather & Food Sovereignty",
@@ -1316,6 +1427,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "creating-on-farm-micro-water-cycles",
+    kpNumber: 52,
+    libraryDate: "2026-07-25",
     category: "Water & Climate",
     title:
       "Creating On-Farm \"Micro-Water Cycles\": Landscape Design to Maximize Rain, Dew, and Humidity Capture at the Microclimate Level",
@@ -1341,6 +1454,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "smog-haze-and-the-unshakable-resilience-of-the-pqnk-farm",
+    kpNumber: 53,
+    libraryDate: "2026-07-25",
     category: "Water & Climate",
     title: "Smog, Haze, and the Unshakable Resilience of the PQNK Farm",
     summary:
@@ -1366,6 +1481,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "managing-saline-irrigation-water-and-soil-reclamation",
+    kpNumber: 54,
+    libraryDate: "2026-07-25",
     category: "Water & Climate",
     title: "Managing Saline Irrigation Water and Soil Reclamation Through PQNK",
     summary:
@@ -1390,6 +1507,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-silenced-clock-temperature-cued-plant-development",
+    kpNumber: 55,
+    libraryDate: "2026-07-25",
     category: "Water & Climate",
     title:
       "The Silenced Clock: How Broken Water Cycles Disrupt Temperature-Cued Plant Development, and the PQNK Restoration Pathway",
@@ -1416,6 +1535,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "heatwaves-pollination-failure-and-the-pqnk-buffer",
+    kpNumber: 56,
+    libraryDate: "2026-07-25",
     category: "Water & Climate",
     title: "Heatwaves, Pollination Failure, and the PQNK Soil–Plant–Atmosphere Buffer",
     summary:
@@ -1441,6 +1562,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-hydrological-transformation-of-agricultural-landscapes",
+    kpNumber: 57,
+    libraryDate: "2026-07-25",
     category: "Water & Climate",
     title:
       "The Hydrological Transformation of Agricultural Landscapes Through the Paedar Qudratti Nizam Kashatqari (PQNK) System",
@@ -1466,6 +1589,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "evaluation-of-tube-well-water-quality-for-irrigation",
+    kpNumber: 58,
+    libraryDate: "2026-07-25",
     category: "Water & Climate",
     title: "Evaluation of Tube-well Water Quality for Irrigation Under PQNK",
     summary:
@@ -1490,6 +1615,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "can-high-tds-water-be-used-to-rehabilitate-saline-soils",
+    kpNumber: 128,
+    libraryDate: "2026-07-30",
     category: "Water & Climate",
     title: "Can High-TDS Water Be Used to Rehabilitate Saline Soils?",
     summary:
@@ -1514,6 +1641,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "channeling-plant-energy-managing-vegetative-growth",
+    kpNumber: 59,
+    libraryDate: "2026-07-25",
     category: "Plant Physiology & Production Systems",
     title:
       "Channeling Plant Energy: A PQNK Guide to Managing Vegetative Growth for Regenerative Production",
@@ -1539,6 +1668,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-sacred-symbiosis-why-pqnk-feeds-plants",
+    kpNumber: 60,
+    libraryDate: "2026-07-25",
     category: "Plant Physiology & Production Systems",
     title:
       "The Sacred Symbiosis: Why PQNK Feeds Plants, While Chemical Agriculture Only Force-Feeds Them",
@@ -1564,6 +1695,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-living-plant-a-primer-on-physiology-and-processes",
+    kpNumber: 61,
+    libraryDate: "2026-07-25",
     category: "Plant Physiology & Production Systems",
     title: "The Living Plant: A Primer on Physiology & Processes",
     summary:
@@ -1588,6 +1721,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "above-soil-ecosystems-in-pqnk",
+    kpNumber: 62,
+    libraryDate: "2026-07-25",
     category: "Plant Physiology & Production Systems",
     title:
       "Above-Soil Ecosystems in PQNK: Plant-Directed Insect Dynamics, Pollination, and Natural Regulation",
@@ -1613,6 +1748,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-paradox-of-resistance-pests-adapt-humans-degrade",
+    kpNumber: 63,
+    libraryDate: "2026-07-25",
     category: "Plant Physiology & Production Systems",
     title: "The Paradox of Resistance: Why Pests Adapt While Humans Degrade – A PQNK Scientific Perspective",
     summary:
@@ -1637,6 +1774,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "understanding-nematode-damage-and-recovery-with-pqnk",
+    kpNumber: 64,
+    libraryDate: "2026-07-25",
     category: "Plant Physiology & Production Systems",
     title: "PQNK Advisory: Understanding Nematode Damage in ACI Systems and the Path to Recovery with PQNK",
     summary:
@@ -1662,6 +1801,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "cultivating-plant-intelligence-through-engineered-soil-gradients",
+    kpNumber: 65,
+    libraryDate: "2026-07-25",
     category: "Plant Physiology & Production Systems",
     title: "The PQNK System: Cultivating Plant Intelligence Through Engineered Soil Gradients",
     summary:
@@ -1687,6 +1828,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-plant-as-ceo-biological-agency-in-rhizobial-partnerships",
+    kpNumber: 66,
+    libraryDate: "2026-07-25",
     category: "Plant Physiology & Production Systems",
     title:
       "Knowledge Paper: The Plant as CEO — A PQNK Perspective on Biological Agency in Rhizobial Partnerships",
@@ -1712,6 +1855,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "what-this-uprooted-wheat-plant-is-telling-us",
+    kpNumber: 67,
+    libraryDate: "2026-07-25",
     category: "Plant Physiology & Production Systems",
     title: "What This Uprooted Wheat Plant Is Telling Us — Through the PQNK (\"picnic\") Lens",
     summary:
@@ -1737,6 +1882,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "contour-line-farming-through-the-pqnk-lens",
+    kpNumber: 68,
+    libraryDate: "2026-07-25",
     category: "Soil Science & PQNK System",
     title: "Contour Line Farming through the PQNK (PICNIC) Lens",
     summary:
@@ -1761,6 +1908,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "agroforestry-species-selection-under-the-pqnk-model",
+    kpNumber: 69,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title: "Scientific Note: Agroforestry Species Selection under the PQNK Model",
     summary:
@@ -1785,6 +1934,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "optimizing-tractor-setup-for-precision-planting",
+    kpNumber: 70,
+    libraryDate: "2026-07-25",
     category: "Plant Physiology & Production Systems",
     title: "Optimizing Tractor Setup for Precision Planting and Bed-Furrow Health",
     summary:
@@ -1809,6 +1960,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-inherent-shelf-life-advantage-of-pqnk-produce",
+    kpNumber: 71,
+    libraryDate: "2026-07-25",
     category: "Nutrition & Food Quality",
     title:
       "The Inherent Shelf-Life Advantage of PQNK Produce: A Scientific Analysis from Root Zone to Market",
@@ -1834,6 +1987,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-twofold-art-of-pruning-as-compensatory-grazing",
+    kpNumber: 72,
+    libraryDate: "2026-07-25",
     category: "Plant Physiology & Production Systems",
     title: "PQNK Knowledge Paper: The Twofold Art of Pruning as Compensatory Grazing",
     summary:
@@ -1858,6 +2013,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-philosophy-of-the-central-leader",
+    kpNumber: 73,
+    libraryDate: "2026-07-25",
     category: "Plant Physiology & Production Systems",
     title: "The PQNK Foundation: The Philosophy of the \"Central Leader\"",
     summary:
@@ -1882,6 +2039,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-pqnk-imperative-re-mothering-our-agriculture",
+    kpNumber: 74,
+    libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
     title: "Knowledge Paper: The PQNK Imperative — Re-Mothering Our Agriculture through the Pristine Organic System",
     summary:
@@ -1906,6 +2065,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "rethinking-agricultural-systems-the-pqnk-framework",
+    kpNumber: 75,
+    libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
     title: "Rethinking Agricultural Systems – The PQNK Framework (A1)",
     summary:
@@ -1930,6 +2091,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "liberating-pakistans-economy-through-pqnk",
+    kpNumber: 76,
+    libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
     title: "Knowledge Paper: Liberating Pakistan's Economy — The Unforgivable Neglect of the PQNK Revolution",
     summary:
@@ -1954,6 +2117,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-foundational-primacy-of-agriculture-over-industry",
+    kpNumber: 77,
+    libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
     title: "The Foundational Primacy of Agriculture Over Industry: A Knowledge Paper Through the PQNK Lens",
     summary:
@@ -1978,6 +2143,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-global-cost-of-agricultural-degradation",
+    kpNumber: 78,
+    libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
     title: "The Global Cost of Agricultural Degradation & the PQNK Restoration Dividend",
     summary:
@@ -2002,6 +2169,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-perpetual-abundance-principle",
+    kpNumber: 79,
+    libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
     title: "Knowledge Paper: The Perpetual Abundance Principle",
     summary:
@@ -2026,6 +2195,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-universal-application-of-pqnk-from-soil-to-supper",
+    kpNumber: 80,
+    libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
     title: "PQNK Knowledge Paper: The Universal Application of the PQNK Model — From Soil to Supper",
     summary:
@@ -2050,6 +2221,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "quantifying-the-abundance",
+    kpNumber: 81,
+    libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
     title: "Supplemental Knowledge Paper: Quantifying the Abundance",
     summary:
@@ -2074,6 +2247,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "restoring-earths-operating-system",
+    kpNumber: 82,
+    libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
     title: "Restoring Earth's Operating System: The PQNK Framework for Regenerative Agriculture",
     summary:
@@ -2098,6 +2273,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "reviving-the-self-regulating-agroecosystem",
+    kpNumber: 83,
+    libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
     title: "Knowledge Paper: PQNK — The Natural Ecosystem Science for Production Agriculture (Reviving the Self-Regulating Agroecosystem through Regenerative Principles)",
     summary:
@@ -2122,6 +2299,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "embracing-pqnk-a-regenerative-paradigm",
+    kpNumber: 84,
+    libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
     title: "Knowledge Paper: Embracing PQNK — A Regenerative Paradigm for Sustainable Agriculture",
     summary:
@@ -2146,6 +2325,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "beyond-extraction-and-illusion",
+    kpNumber: 85,
+    libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
     title: "Beyond Extraction and Illusion: Restoring True Wealth Through Regenerative Systems",
     summary:
@@ -2170,6 +2351,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "a-regenerative-imperative-a-pqnk-response",
+    kpNumber: 86,
+    libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
     title: "A Regenerative Imperative: A PQNK Critique and Response to the Colonizing Logic in \"Beyond Extraction and Illusion\"",
     summary:
@@ -2194,6 +2377,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-organismic-paradigm-quantum-reading-the-farm",
+    kpNumber: 87,
+    libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
     title: "PQNK Foundational Document, Topic 1: The Organismic Paradigm — Quantum-Reading the Farm as a Unified Biological Field",
     summary:
@@ -2218,6 +2403,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-bio-energetic-valuation-framework",
+    kpNumber: 88,
+    libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
     title: "PQNK Foundational Document, Topic 2: The Bio-Energetic Valuation Framework — Replacing Commodity Mass with Metabolic Currency",
     summary:
@@ -2242,6 +2429,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-economics-of-resilience-a-cost-benefit-analysis",
+    kpNumber: 89,
+    libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
     title: "PQNK Foundational Document, Topic 4: The Economics of Resilience — A Detailed Cost-Benefit Analysis over a 2-5 Year Horizon",
     summary:
@@ -2266,6 +2455,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-autonomous-cycle-planting-and-harvesting",
+    kpNumber: 90,
+    libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
     title: "PQNK Foundational Document, Topic 13: The Autonomous Cycle — Planting and Harvesting in the Perfected System",
     summary:
@@ -2290,6 +2481,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-expression-of-genetic-blueprint-phytochemical-density",
+    kpNumber: 91,
+    libraryDate: "2026-07-25",
     category: "Nutrition & Food Quality",
     title: "PQNK Foundational Document, Topic 14: The Expression of Genetic Blueprint — How PQNK's Restored Covenant Maximizes Phytochemical Density in Produce",
     summary:
@@ -2314,6 +2507,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-pqnk-framework-from-degenerative-to-sustainable",
+    kpNumber: 92,
+    libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
     title: "The PQNK Framework: From Degenerative Systems to Regenerative Process to Sustainable State",
     summary:
@@ -2338,6 +2533,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-pqnk-perspective-on-micronutrients",
+    kpNumber: 93,
+    libraryDate: "2026-07-25",
     category: "Nutrition & Food Quality",
     title: "The PQNK Perspective: You Are Asking the Wrong Question about \"Micronutrients\"",
     summary:
@@ -2362,6 +2559,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-role-of-supplemental-nutrition-in-pqnk",
+    kpNumber: 94,
+    libraryDate: "2026-07-25",
     category: "Nutrition & Food Quality",
     title: "PQNK Knowledge Paper: The Role and Perspective of Supplemental Nutrition in the Perpetual Abundance System",
     summary:
@@ -2386,6 +2585,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "comparing-food-quality-pqnk-vs-aci",
+    kpNumber: 95,
+    libraryDate: "2026-07-25",
     category: "Nutrition & Food Quality",
     title: "Q&A: Comparing the Quality of Food from PQNK and Ancient Conventional Industrial Production Systems",
     summary:
@@ -2410,6 +2611,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "scientific-parameters-behind-shelf-life-and-pest-attraction",
+    kpNumber: 96,
+    libraryDate: "2026-07-25",
     category: "Nutrition & Food Quality",
     title: "Scientific Parameters Behind Shelf Life, Pest Attraction & Deterioration — A Pristine PQNK Perspective",
     summary:
@@ -2434,6 +2637,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "addressing-the-untrained-farm-workforce-gap-in-pakistan",
+    kpNumber: 97,
+    libraryDate: "2026-07-25",
     category: "Workforce & Practice Advisories",
     title: "Addressing the Critical Gap of Untrained Farm Workforce for Sustainable Agricultural Advancement in Pakistan",
     summary:
@@ -2458,6 +2663,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "pqnk-farming-in-practice-site-specific-solutions",
+    kpNumber: 98,
+    libraryDate: "2026-07-25",
     category: "Workforce & Practice Advisories",
     title: "PQNK Farming in Practice: Site-Specific Solutions for Regenerative Agriculture — Questions & Detailed Answers",
     summary:
@@ -2482,6 +2689,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "advisory-for-one-acre-prosperity-in-vegetable-production",
+    kpNumber: 99,
+    libraryDate: "2026-07-25",
     category: "Workforce & Practice Advisories",
     title: "Advisory for One Acre Prosperity (OAP) in Vegetable Production: A PQNK Guide for the Smallholder",
     summary:
@@ -2507,6 +2716,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-pqnk-validation-system",
+    kpNumber: 100,
+    libraryDate: "2026-07-25",
     category: "Workforce & Practice Advisories",
     title: "The PQNK Validation System",
     summary:
@@ -2531,6 +2742,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-principle-of-permanent-confinement-pqnk-bed-geometry",
+    kpNumber: 101,
+    libraryDate: "2026-07-25",
     category: "Soil Science & PQNK System",
     title:
       "Knowledge Paper: The Principle of Permanent Confinement – The Mechanical-Synchrony Foundation of PQNK Bed Geometry",
@@ -2557,6 +2770,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "national-food-power-and-agricultural-civilization",
+    kpNumber: 102,
+    libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
     title: "National Food Power and the Reconstruction of Agricultural Civilization",
     summary:
@@ -2581,6 +2796,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "nutrition-dense-food-and-ecological-quality",
+    kpNumber: 103,
+    libraryDate: "2026-07-25",
     category: "Nutrition & Food Quality",
     title: "Nutrition-Dense Food and the Recovery of Ecological Quality",
     summary:
@@ -2605,6 +2822,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "farm-design-and-conversion-to-pqnk",
+    kpNumber: 104,
+    libraryDate: "2026-07-25",
     category: "Workforce & Practice Advisories",
     title: "The Farm You Only Have to Build Once: How PQNK Converts a Conventional Field into a Permanent, No-Till System",
     summary:
@@ -2629,6 +2848,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-role-of-jantar-in-biological-reconstruction",
+    kpNumber: 105,
+    libraryDate: "2026-07-25",
     category: "Soil Science & PQNK System",
     title: "The Role of Jantar (Sesbania) in Biological Reconstruction",
     summary:
@@ -2653,6 +2874,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-weed-indicator-system",
+    kpNumber: 106,
+    libraryDate: "2026-07-25",
     category: "Soil Science & PQNK System",
     title: "The Weed-Indicator System",
     summary:
@@ -2677,6 +2900,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "pest-ecology-and-the-collapse-of-biological-balance",
+    kpNumber: 107,
+    libraryDate: "2026-07-25",
     category: "Plant Physiology & Production Systems",
     title: "Pest Ecology and the Collapse of Biological Balance",
     summary:
@@ -2701,6 +2926,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "root-retention-science",
+    kpNumber: 108,
+    libraryDate: "2026-07-25",
     category: "Soil Science & PQNK System",
     title: "Root Retention Science",
     summary:
@@ -2725,6 +2952,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "every-seed-is-a-promise",
+    kpNumber: 109,
+    libraryDate: "2026-07-25",
     category: "Plant Physiology & Production Systems",
     title:
       "Every Seed Is a Promise to the Next Generation: Why PQNK Selects Open-Pollinated Genetics Over GMO, Hybrid, and Seedless Seed",
@@ -2750,6 +2979,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "why-conventional-rice-keeps-failing",
+    kpNumber: 110,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title: "Why Conventional Rice Keeps Failing: At the Mill, At the Table, and At the EU Border",
     summary:
@@ -2780,6 +3011,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "technical-adaptations-for-mechanized-sri-production",
+    kpNumber: 125,
+    libraryDate: "2026-07-28",
     category: "Crop-Specific Guides",
     title:
       "Technical Adaptations for Mechanized SRI Production to Achieve Water Saving and Increased Profitability in Punjab, Pakistan",
@@ -2804,6 +3037,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-missing-synthesis",
+    kpNumber: 111,
+    libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
     title: "The Missing Synthesis: Positioning PQNK Among a Century of Fragmented Regenerative Science",
     summary:
@@ -2828,6 +3063,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "what-science-delivered",
+    kpNumber: 112,
+    libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
     title: "What Science Delivered: The Documented Balance Sheet of a Century of Input-Funded Agricultural Research",
     summary:
@@ -2852,6 +3089,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "why-leaves-change-color-with-the-weather",
+    kpNumber: 113,
+    libraryDate: "2026-07-25",
     category: "Water & Climate",
     title: "Why Leaves Change Color With the Weather: Reading Temperature Signals Without Mistaking Them for Hunger",
     summary:
@@ -2876,6 +3115,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-pqnk-framework-for-regenerative-animal-husbandry",
+    kpNumber: 114,
+    libraryDate: "2026-07-25",
     category: "Crop-Specific Guides",
     title: "The PQNK Framework for Regenerative Animal Husbandry: Productivity, Profitability, and Planetary Health",
     summary:
@@ -2899,6 +3140,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-origin-of-plant-mass-and-the-role-of-the-soil-system",
+    kpNumber: 115,
+    libraryDate: "2026-07-25",
     category: "Soil Science & PQNK System",
     title: "PQNK Knowledge Paper: The Origin of Plant Mass and the Role of the Soil System",
     summary:
@@ -2923,6 +3166,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "pqnk-vs-soil-science-for-regenerative-agriculture",
+    kpNumber: 116,
+    libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
     title:
       "PQNK vs. \"Soil Science for Regenerative Agriculture\": Critical Analysis for NARC Colleagues",
@@ -2946,6 +3191,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "natures-algorithm-for-abundant-food",
+    kpNumber: 117,
+    libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
     title: "PQNK — Nature's Algorithm for Abundant Food: From a Failing Industrial Model to a Permanent Natural System",
     summary:
@@ -2969,6 +3216,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "commercial-advantages-of-pqnk-production",
+    kpNumber: 118,
+    libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
     title: "Commercial Advantages of PQNK Production: Why Biological Correctness Outperforms Industrial Efficiency",
     summary:
@@ -2993,6 +3242,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "wealth-generation-value-addition-and-money-circulation",
+    kpNumber: 119,
+    libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
     title: "Wealth Generation, Value Addition, and Money Circulation: The Biological Foundations of Economy",
     summary:
@@ -3017,6 +3268,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "how-pqnk-delivers-the-highest-nutrition-at-the-lowest-cost",
+    kpNumber: 120,
+    libraryDate: "2026-07-25",
     category: "Nutrition & Food Quality",
     title: "How PQNK Delivers the Highest Nutrition at the Lowest Cost — and Why This Paradox Is Your Real Power",
     summary:
@@ -3041,6 +3294,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-looming-convergence-of-oil-and-food-crises",
+    kpNumber: 121,
+    libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
     title:
       "Knowledge Paper: The Looming Convergence of Oil and Food Crises — The Imperative for a Paradigm Shift toward PQNK",
@@ -3066,6 +3321,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "earth-to-food-reclaiming-our-agricultural-future",
+    kpNumber: 122,
+    libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
     title: "Earth to Food: Reclaiming Our Agricultural Future",
     summary:
@@ -3090,6 +3347,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "understanding-mulch-types-functions-and-selection",
+    kpNumber: 123,
+    libraryDate: "2026-07-27",
     category: "Soil Science & PQNK System",
     title: "Understanding Mulch: Types, Functions, and Selection",
     summary:
@@ -3118,6 +3377,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "olive-under-pqnk",
+    kpNumber: 124,
+    libraryDate: "2026-07-27",
     category: "Crop-Specific Guides",
     title: "Knowledge Paper: Olive Under PQNK — Pakistan's Underdeveloped Potential",
     summary:
@@ -3145,6 +3406,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "five-decades-of-agricultural-innovation",
+    kpNumber: 126,
+    libraryDate: "2026-07-29",
     category: "PQNK Philosophy, Framework & Economics",
     title: "Five Decades of Agricultural Innovation: Interventions and Achievements in Chronological Order, 1973–2023",
     summary:
@@ -3172,6 +3435,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "castor-cultivation-under-pqnk",
+    kpNumber: 129,
+    libraryDate: "2026-08-04",
     category: "Crop-Specific Guides",
     title: "PQNK Factsheet: Production of HD Castor",
     summary:
@@ -3196,6 +3461,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "citrus-kinnow-soil-strategy",
+    kpNumber: 130,
+    libraryDate: "2026-08-04",
     category: "Crop-Specific Guides",
     title: "Soil Strategy for Citrus in Yellow Sand Dunes",
     summary:
@@ -3219,6 +3486,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "mango-sop-under-pqnk",
+    kpNumber: 131,
+    libraryDate: "2026-08-04",
     category: "Crop-Specific Guides",
     title: "Mango Post-Harvest Standard Operating Procedures",
     summary:
@@ -3243,6 +3512,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "onion-seed-production-under-pqnk",
+    kpNumber: 132,
+    libraryDate: "2026-08-04",
     category: "Crop-Specific Guides",
     title: "Commercial Onion Seed Production: A PQNK Ecosystem",
     summary:
@@ -3266,6 +3537,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "pqnk-onion-garlic-production-system",
+    kpNumber: 133,
+    libraryDate: "2026-08-04",
     category: "Crop-Specific Guides",
     title: "PQNK: The Pristine Organic Production System for Onion and Garlic Cultivation",
     summary:
@@ -3289,6 +3562,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "a-farmers-guide-to-olive-orchards",
+    kpNumber: 134,
+    libraryDate: "2026-08-04",
     category: "Crop-Specific Guides",
     title: "A Farmer's Guide to Establishing a Prosperous Olive Orchard",
     summary:
@@ -3313,6 +3588,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "potato-planting-depth-vs-mulch-no-till",
+    kpNumber: 135,
+    libraryDate: "2026-08-04",
     category: "Crop-Specific Guides",
     title:
       "Potato Planting Depth vs Mulch-Based No-Till Planting: A Production, Economics, and Quality Analysis under the PQNK System",
@@ -3338,6 +3615,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "achieving-high-yields-in-mature-pqnk-potato-systems",
+    kpNumber: 136,
+    libraryDate: "2026-08-04",
     category: "Crop-Specific Guides",
     title: "Achieving High Yields in Potato Cultivation within Mature PQNK Systems",
     summary:
@@ -3361,6 +3640,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "pqnk-and-plant-tropism",
+    kpNumber: 137,
+    libraryDate: "2026-08-04",
     category: "Plant Physiology & Production Systems",
     title: "PQNK Fully Supports Tropism",
     summary:
@@ -3385,6 +3666,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "adapting-to-erratic-weather-using-pqnk-principles",
+    kpNumber: 138,
+    libraryDate: "2026-08-04",
     category: "Water & Climate",
     title: "Comprehensive Guidance for Farmers Adapting to Man-Made Erratic Weather Using PQNK Principles",
     summary:
@@ -3409,6 +3692,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "pqnk-guide-to-wheat-cultivation",
+    kpNumber: 139,
+    libraryDate: "2026-08-04",
     category: "Crop-Specific Guides",
     title: "PQNK (Pristine Organic Farming) Guide to Wheat Cultivation",
     summary:
@@ -3433,6 +3718,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "pqnk-wheat-growing-checklist",
+    kpNumber: 140,
+    libraryDate: "2026-08-04",
     category: "Crop-Specific Guides",
     title: "Wheat Growing Checklist, Duly Vetted by Dr. Asif Sharif",
     summary:
@@ -3457,6 +3744,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-pqnk-strawberry-production-system",
+    kpNumber: 141,
+    libraryDate: "2026-08-04",
     category: "Crop-Specific Guides",
     title: "The PQNK Strawberry Production System: Achieving Commercial Abundance Through Ecosystem Logic",
     summary:
@@ -3482,6 +3771,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "returning-dairy-waste-to-the-land",
+    kpNumber: 142,
+    libraryDate: "2026-08-04",
     category: "Soil Science & PQNK System",
     title: "Knowledge Paper: Returning Dairy Waste to the Land, A PQNK Perspective for Dairy Farmers",
     summary:
@@ -3506,6 +3797,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-pqnk-kitchen-garden",
+    kpNumber: 143,
+    libraryDate: "2026-08-04",
     category: "Workforce & Practice Advisories",
     title: "The PQNK Kitchen Garden: A Regenerative Ecosystem for Household Abundance and Sovereignty",
     summary:
@@ -3530,6 +3823,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "answers-to-questions-on-soil-carbon",
+    kpNumber: 144,
+    libraryDate: "2026-08-04",
     category: "Soil Science & PQNK System",
     title: "Answers to Questions on Soil Carbon: Building Stable Soil Carbon Without Purchased Inputs",
     summary:
@@ -3553,6 +3848,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "composition-of-black-soil",
+    kpNumber: 145,
+    libraryDate: "2026-08-04",
     category: "Soil Science & PQNK System",
     title: "Composition of Black Soil: Natural Ways to Amend It Without Agrochemicals",
     summary:
@@ -3575,6 +3872,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "how-microbial-biodiversity-mines-geological-abundance",
+    kpNumber: 146,
+    libraryDate: "2026-08-04",
     category: "Soil Science & PQNK System",
     title: "The Rhizospheric Dialogue: How Microbial Biodiversity Mines Geological Abundance and Plant Diversity Unlocks Nutrient-Dense Food",
     summary:
@@ -3599,6 +3898,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "how-residue-management-affects-microbial-activity",
+    kpNumber: 147,
+    libraryDate: "2026-08-04",
     category: "Soil Science & PQNK System",
     title: "How Residue Management Affects Microbial Activity in PQNK Farming",
     summary:
@@ -3623,6 +3924,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "soil-moisture-management-in-pqnk-organic-farming",
+    kpNumber: 148,
+    libraryDate: "2026-08-04",
     category: "Soil Science & PQNK System",
     title: "Soil Moisture Management in PQNK Organic Farming: The 30/70 Rule",
     summary:
@@ -3646,6 +3949,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-living-soil-why-your-orchard-floor-matters",
+    kpNumber: 149,
+    libraryDate: "2026-08-04",
     category: "Soil Science & PQNK System",
     title: "The Living Soil: Why Your Orchard Floor Is as Important as Your Trees",
     summary:
@@ -3669,6 +3974,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-perenniality-of-the-soil-system",
+    kpNumber: 150,
+    libraryDate: "2026-08-04",
     category: "Soil Science & PQNK System",
     title: "Breaking the Perennial Design: How Industrial Agriculture Sabotaged the Soil System and Broke the Production Cycle",
     summary:
@@ -3692,6 +3999,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-pest-free-revolution",
+    kpNumber: 151,
+    libraryDate: "2026-08-04",
     category: "Soil Science & PQNK System",
     title: "The Pest-Free Revolution: Eliminating Agrochemicals by Unleashing Soil Biology with the PQNK System",
     summary:
@@ -3716,6 +4025,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "understanding-soil-water-absorption",
+    kpNumber: 152,
+    libraryDate: "2026-08-04",
     category: "Soil Science & PQNK System",
     title: "Understanding Soil Water Absorption: Composition, Gusra Soil, and a Field Test for Field Capacity",
     summary:
@@ -3739,6 +4050,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-soil-biome-and-water-nutrient-dynamics-in-pqnk",
+    kpNumber: 153,
+    libraryDate: "2026-08-04",
     category: "Soil Science & PQNK System",
     title: "Knowledge Paper: The Soil Biome & Water-Nutrient Dynamics in PQNK",
     summary:
@@ -3763,6 +4076,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "two-pathways-to-pest-resistance",
+    kpNumber: 154,
+    libraryDate: "2026-08-04",
     category: "Plant Physiology & Production Systems",
     title: "Two Pathways to \"Pest Resistance\": Genetic Selection, Sub-Lethal Dosing, and the Human Parallel",
     summary:
@@ -3787,6 +4102,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "pqnk-advisory-frost-cold-weather-irrigation",
+    kpNumber: 155,
+    libraryDate: "2026-08-04",
     category: "Water & Climate",
     title: "PQNK Advisory Note: Frost, Cold Weather & Irrigation Management",
     summary:
@@ -3812,6 +4129,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "cold-and-heat-induced-vascular-stress-in-plants",
+    kpNumber: 156,
+    libraryDate: "2026-08-04",
     category: "Plant Physiology & Production Systems",
     title: "Temperature-Induced Vascular Failure in Plants: Cold, Heat, Survival Mechanisms, and PQNK-Based Natural Interventions",
     summary:
@@ -3836,6 +4155,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "beyond-the-timeline-reframing-the-transition",
+    kpNumber: 157,
+    libraryDate: "2026-08-04",
     category: "Soil Science & PQNK System",
     title: "Beyond the Timeline: Re-framing the Transition to Regenerative Agriculture Through the Lens of Soil Life",
     summary:
@@ -3860,6 +4181,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "deeper-understanding-of-pqnk-ecosystem-science",
+    kpNumber: 158,
+    libraryDate: "2026-08-04",
     category: "PQNK Philosophy, Framework & Economics",
     title: "Deeper Understanding of PQNK: A Dialogue on Tillage, Soil Physics, and Biology with SRI Co-Founder Norman Uphoff",
     summary:
@@ -3883,6 +4206,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "balangu-and-basil-seed-production-under-pqnk",
+    kpNumber: 159,
+    libraryDate: "2026-08-04",
     category: "Crop-Specific Guides",
     title: "Balangu & Basil Seed Production Under PQNK",
     summary:
@@ -3907,6 +4232,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "watermelon-cultivation-pruning-and-nutrition-qa",
+    kpNumber: 160,
+    libraryDate: "2026-08-04",
     category: "Crop-Specific Guides",
     title: "Watermelon Cultivation: Pruning, Irrigation, and Trellis Q&A",
     summary:
@@ -3931,6 +4258,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "narc-pnard-wheat-ras-field-trials",
+    kpNumber: 161,
+    libraryDate: "2026-08-04",
     category: "Crop-Specific Guides",
     title: "NARC/PNARD Wheat Field Trials: Regenerative Agri-Production System Results (2021-22)",
     summary:
@@ -3955,6 +4284,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "phosphate-from-sahara-desert-to-amazon",
+    kpNumber: 162,
+    libraryDate: "2026-08-04",
     category: "Soil Science & PQNK System",
     title: "The Story of Phosphate: From Sahara Desert to Amazon",
     summary:
@@ -3978,6 +4309,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "subsoiler-line-spacing-farmer-qa",
+    kpNumber: 163,
+    libraryDate: "2026-08-04",
     category: "Soil Science & PQNK System",
     title: "Subsoiler Line Spacing and Stony-Land Conversion: A Farmer Q&A",
     summary:
@@ -4001,6 +4334,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "cropland-as-a-carbon-sink-qa",
+    kpNumber: 164,
+    libraryDate: "2026-08-04",
     category: "Soil Science & PQNK System",
     title: "Cropland as a Carbon Sink: Responses to a Student's Questions",
     summary:
@@ -4025,6 +4360,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "beyond-the-nodule-soil-aeration-for-non-legumes",
+    kpNumber: 165,
+    libraryDate: "2026-08-04",
     category: "Soil Science & PQNK System",
     title: "Beyond the Nodule: How Underground Air Serves Every Crop in the PQNK System",
     summary:
@@ -4049,6 +4386,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "subsoil-compaction-no-till-vs-pqnk-critical-analysis",
+    kpNumber: 166,
+    libraryDate: "2026-08-04",
     category: "Soil Science & PQNK System",
     title: "Subsoil Compaction Under No-Till Farming vs. PQNK-Based Regenerative Systems: A Critical Analysis",
     summary:
@@ -4071,6 +4410,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "agriculture-in-sandy-soil-lecture-transcript",
+    kpNumber: 167,
+    libraryDate: "2026-08-04",
     category: "Soil Science & PQNK System",
     title: "Agriculture in Sandy Soil: A PQNK Lecture Transcript",
     summary:
@@ -4095,6 +4436,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "science-behind-the-myth-of-cow-dung-and-urine",
+    kpNumber: 168,
+    libraryDate: "2026-08-04",
     category: "Soil Science & PQNK System",
     title: "The Science Behind the Myth of Cow Dung and Urine",
     summary:
@@ -4118,6 +4461,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "flood-irrigation-and-jaggery-water-microbes-qa",
+    kpNumber: 169,
+    libraryDate: "2026-08-04",
     category: "Water & Climate",
     title: "Flood Irrigation and Jaggery-Water Microbes: A Farmer Q&A",
     summary:
@@ -4141,6 +4486,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "when-a-natural-climate-cycle-meets-a-broken-planet",
+    kpNumber: 170,
+    libraryDate: "2026-08-04",
     category: "Water & Climate",
     title: "When a Natural Climate Cycle Meets a Broken Planet: Understanding Super El Niño Through the PQNK Water Cycle Lens",
     summary:
@@ -4164,6 +4511,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-hidden-crisis-industrial-agriculture-and-the-water-cycle",
+    kpNumber: 171,
+    libraryDate: "2026-08-04",
     category: "Water & Climate",
     title: "The Hidden Crisis: How Industrial Agriculture Has Broken Earth's Water Cycle",
     summary:
@@ -4187,6 +4536,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-greatest-climate-solution",
+    kpNumber: 172,
+    libraryDate: "2026-08-04",
     category: "Water & Climate",
     title: "The Greatest Climate Solution Is Not More Trees: It Is Changing How We Farm",
     summary:
@@ -4212,6 +4563,8 @@ export const papers: Paper[] = [
 
   {
     slug: "field-diagnostic-guide-roots-sap-and-pests",
+    kpNumber: 173,
+    libraryDate: "2026-08-04",
     category: "Plant Physiology & Production Systems",
     title: "Reading Roots, Sap, and Pest Risk: A Field Diagnostic Guide Through the PQNK Lens",
     summary:
@@ -4237,6 +4590,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "open-field-vertical-farming-under-pqnk",
+    kpNumber: 174,
+    libraryDate: "2026-08-04",
     category: "Plant Physiology & Production Systems",
     title: "Open Field Vertical Farming Under PQNK: Stacking Biology Instead of Expanding Land",
     summary:
@@ -4262,6 +4617,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "seed-resistance-in-the-stomach-endozoochory",
+    kpNumber: 175,
+    libraryDate: "2026-08-04",
     category: "Plant Physiology & Production Systems",
     title: "The Undigested Seed: Nature's Regenerative Logistics Through Animal-Mediated Dispersal",
     summary:
@@ -4286,6 +4643,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "why-unscientific-organic-farming-can-be-dangerous",
+    kpNumber: 176,
+    libraryDate: "2026-08-04",
     category: "Nutrition & Food Quality",
     title: "Why Unscientific \"Organic\" Farming Can Be Dangerous — and How PQNK Prevents It",
     summary:
@@ -4311,6 +4670,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-broken-chain-food-body-ecosystem-symbiosis",
+    kpNumber: 177,
+    libraryDate: "2026-08-04",
     category: "Nutrition & Food Quality",
     title: "The Broken Chain: Restoring the Symbiosis Between Food, Body, and Ecosystem Through PQNK",
     summary:
@@ -4336,6 +4697,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-pqnk-food-chain-bio-potentiation",
+    kpNumber: 178,
+    libraryDate: "2026-08-04",
     category: "Nutrition & Food Quality",
     title: "The PQNK Food Chain: From Soil to Soul — The Principle of Bio-potentiation",
     summary:
@@ -4361,6 +4724,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-nutritional-roots-of-healthcare-expansion",
+    kpNumber: 179,
+    libraryDate: "2026-08-04",
     category: "Nutrition & Food Quality",
     title: "The Nutritional Roots of Healthcare Expansion and the PQNK Solution",
     summary:
@@ -4385,6 +4750,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "pqnk-imperative-restoring-food-health-sovereignty",
+    kpNumber: 180,
+    libraryDate: "2026-08-04",
     category: "PQNK Philosophy, Framework & Economics",
     title: "The PQNK Imperative: Restoring Food, Health, and Sovereignty",
     summary:
@@ -4409,6 +4776,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "pqnk-response-to-national-agricultural-biotechnology-policy-2025",
+    kpNumber: 181,
+    libraryDate: "2026-08-04",
     category: "PQNK Philosophy, Framework & Economics",
     title: "Pakistan's Agricultural Biotechnology Policy 2025: The Right Intention, The Wrong Diagnosis",
     summary:
@@ -4434,6 +4803,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "recalibrating-pakistans-textile-value-chain",
+    kpNumber: 182,
+    libraryDate: "2026-08-04",
     category: "PQNK Philosophy, Framework & Economics",
     title: "Recalibrating Pakistan's Textile Value Chain: From Farm to Fabric and Beyond",
     summary:
@@ -4458,6 +4829,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-ethics-of-the-closed-loop-system",
+    kpNumber: 183,
+    libraryDate: "2026-08-04",
     category: "PQNK Philosophy, Framework & Economics",
     title: "PQNK Foundational Document, Topic 5: The PQNK Ethical Covenant — Rights Within the Self-Sustaining Loop",
     summary:
@@ -4481,6 +4854,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "failure-in-farm-management-inheritance-without-professionalization",
+    kpNumber: 184,
+    libraryDate: "2026-08-04",
     category: "Workforce & Practice Advisories",
     title: "Failure in Farm Management: Inheritance Without Professionalization",
     summary:
@@ -4506,6 +4881,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "white-and-green-growth-after-irrigation-qa",
+    kpNumber: 185,
+    libraryDate: "2026-08-04",
     category: "Workforce & Practice Advisories",
     title: "What Is This White and Green Growth Seen After Irrigation? A Farmer Q&A",
     summary:
@@ -4530,6 +4907,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "the-pqnk-system-of-assessment",
+    kpNumber: 186,
+    libraryDate: "2026-08-04",
     category: "Workforce & Practice Advisories",
     title: "The PQNK System of Assessment: Cultivating the Farmer as the Ultimate Instrument",
     summary:
@@ -4555,6 +4934,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "production-architecture-engineering-the-farm",
+    kpNumber: 187,
+    libraryDate: "2026-08-21",
     category: "Plant Physiology & Production Systems",
     title: "Production Architecture: Engineering the Farm So the Living System Never Has to Be Rebuilt",
     summary:
@@ -4579,6 +4960,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "when-mulch-becomes-a-barrier",
+    kpNumber: 188,
+    libraryDate: "2026-08-21",
     category: "Workforce & Practice Advisories",
     title: "When Mulch Becomes a Barrier: Why More Mulch Is Not Always Better",
     summary:
@@ -4603,6 +4986,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "why-mulch-suppresses-weeds-but-allows-crop-growth",
+    kpNumber: 189,
+    libraryDate: "2026-08-21",
     category: "Workforce & Practice Advisories",
     title: "Why Does Mulch Suppress Weeds but Allow the Crop to Grow?",
     summary:
@@ -4627,6 +5012,8 @@ export const papers: Paper[] = [
   },
   {
     slug: "why-only-4kg-of-np-during-pqnk-transition",
+    kpNumber: 190,
+    libraryDate: "2026-08-21",
     category: "Workforce & Practice Advisories",
     title: "Why Only 4 kg of NP During PQNK Transition?",
     summary:
@@ -4653,4 +5040,28 @@ export const papers: Paper[] = [
 
 export function getPaperBySlug(slug: string) {
   return papers.find((p) => p.slug === slug);
+}
+
+export function getPaperByKpNumber(kpNumber: number) {
+  return papers.find((p) => p.kpNumber === kpNumber);
+}
+
+/** Formats a permanent KP catalogue ID for display, e.g. 1 -> "KP-001". */
+export function formatKpNumber(kpNumber: number) {
+  return `KP-${String(kpNumber).padStart(3, "0")}`;
+}
+
+/** Parses a user-entered KP search token ("KP-190", "KP190", "kp-190") into its
+ * numeric kpNumber, or null if the string isn't a KP reference. */
+export function parseKpQuery(query: string): number | null {
+  const m = query.trim().match(/^kp-?0*(\d+)$/i);
+  return m ? Number(m[1]) : null;
+}
+
+/** Formats a libraryDate for chronological display, e.g. "2026-08-21" -> "21 AUG 2026". */
+export function formatLibraryDate(libraryDate: string) {
+  const d = new Date(`${libraryDate}T00:00:00Z`);
+  return d
+    .toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric", timeZone: "UTC" })
+    .toUpperCase();
 }
