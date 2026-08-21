@@ -4601,6 +4601,30 @@ export const papers: Paper[] = [
       "A simple hand-lift field test (visible air spaces, no exposed bare soil, aerated not saturated soil beneath, clear root collar) turns mulch management into an observable condition instead of a fixed number.",
     ],
   },
+  {
+    slug: "why-mulch-suppresses-weeds-but-allows-crop-growth",
+    category: "Workforce & Practice Advisories",
+    title: "Why Does Mulch Suppress Weeds but Allow the Crop to Grow?",
+    summary:
+      "Answers a farmer's question, how does mulch tell a weed seed from our own planted seed, by explaining that it doesn't: each seed carries its own germination triggers, and PQNK's intervention changes the soil environment rather than the seed, reframing weeds as ecological indicators of soil condition rather than automatic enemies.",
+    publishedDate: "2026-08-21",
+    pdfPath: "/papers/why-mulch-suppresses-weeds-but-allows-crop-growth.pdf",
+    heroImage: "/images/young-crop-beds.jpg",
+    abstract: [
+      "A farmer asked how mulch tells a weed seed from the crop seed deliberately planted beneath it, since crops reliably emerge under a well-managed mulch layer while weed pressure declines. The paper's direct answer is that mulch does not distinguish anything: every seed carries its own biological germination triggers, responding to moisture, temperature, oxygen, light and soil physical conditions, so the real question is not whether weed seeds are present in the soil, they almost always are, but what conditions caused a particular set of them to germinate now.",
+      "It identifies poor soil porosity and bare, exposed soil as the two conditions most responsible for heavy weed emergence: aggressive-rooted plants colonize compacted soil to reopen pathways for air and water, and vegetation occupies exposed ground because nature does not leave productive land permanently naked. Read this way, weed pressure becomes an ecological indicator of the field's condition rather than a random hostile event.",
+      "The paper then reframes the nutrient-competition fear that drives conventional weed control through a wheat-flour-bread analogy: soil mineral reserves are like a stored sack of wheat, abundant but useless without a functioning conversion system (grinding, kneading, baking) to turn it into something usable. Soil microorganisms, fungi and roots are that conversion system for plant nutrition; when tillage, inundation or bare soil damage it, mineral abundance stops translating into available nutrition and the farmer substitutes purchased fertilizer for a biological function that has stopped working. Once that living system is restored, nutrient supply is no longer a fixed bag divided between the crop and every other plant, so another plant's presence doesn't automatically mean it is stealing the crop's nutrients.",
+      "The paper is explicit that weeds are not therefore harmless in every case: the competition that matters under PQNK is primarily above ground, for sunlight, so vegetation that shades the cash crop should be cut or suppressed, while a low-growing plant that merely covers otherwise bare soil without shading the crop may be performing a useful ecological function. It closes by reframing the practical question from 'how do I kill this weed' to 'why has this plant appeared here', and states mulch's non-negotiable requirement that it never pack so densely it restricts root-zone aeration, since the objective is to protect the living soil while letting it breathe, not to suffocate weeds.",
+    ],
+    keyTakeaways: [
+      "Mulch does not distinguish crop seed from weed seed; every seed carries its own biological germination triggers and responds to the surrounding soil conditions, not to the mulch itself.",
+      "Heavy weed emergence is driven by two conditions in particular: poor soil porosity and bare, exposed soil, making weed pressure a readable indicator of field condition rather than a random problem.",
+      "The wheat-flour-bread analogy: abundant soil minerals are useless without a functioning biological conversion system (microorganisms, fungi, roots); damage that system and the farmer substitutes fertilizer for a function that has stopped working, regardless of how much mineral reserve is actually in the soil.",
+      "Because PQNK's living soil continuously converts and delivers nutrients rather than relying on a fixed quantity of fertilizer, another plant's presence doesn't automatically mean it is stealing the crop's nutrient supply.",
+      "The competition that actually matters under PQNK is primarily above ground, for sunlight: suppress vegetation that shades the cash crop, but reconsider automatically destroying a low-growing plant that merely covers otherwise bare soil.",
+      "Mulch must never pack so densely it restricts root-zone aeration; the goal is to protect and aerate the living soil, not to physically suffocate weeds.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {

@@ -13971,4 +13971,71 @@
 }
 ]
 }
+,
+{
+"slug":"why-mulch-suppresses-weeds-but-allows-crop-growth",
+"primarySubject":"Why mulch suppresses weeds without distinguishing weed seed from crop seed; weeds as an ecological indicator of soil condition",
+"questionsAnswered":[
+"How does mulch know which seed is a weed?",
+"Why do weeds germinate under some conditions but not others?",
+"Do weeds compete with crops for nutrients?",
+"Should all weeds be removed under PQNK?",
+"Why do weeds appear when soil is bare or poorly structured?",
+"When should weeds be cut or suppressed?"
+],
+"keywords":[
+"weed suppression",
+"mulch and weeds",
+"weed germination",
+"seed dormancy",
+"weed nutrient competition",
+"soil porosity weeds",
+"PQNK weed management",
+"bare soil weeds",
+"biodiversity weeds",
+"weeds as soil indicator"
+],
+"geography":null,
+"crops":[],
+"fieldProblems":[
+"Weed Pressure",
+"Poor Soil Structure / Aggregation",
+"Bare / Exposed Soil"
+],
+"problemFamily":[
+"Pests, Diseases & Weeds",
+"Soil & Roots"
+],
+"fieldPractices":[
+"Surface Mulching (General)",
+"Biodiversity Habitat Fostering",
+"Mechanical / Non-Chemical Weeding"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Biodiversity",
+"Soil"
+],
+"pqnkPrinciples":[
+"Permanent Biological Cover",
+"Maximum Biodiversity",
+"No Soil Disturbance"
+],
+"productionStages":[
+"Vegetative Growth"
+],
+"evidenceType":"Scientific Mechanism",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/soil",
+"why":"soil porosity, biological nutrient conversion and the conditions that trigger weed emergence"
+},
+{
+"page":"/science/biodiversity",
+"why":"ecological role of weeds and PQNK's read-the-field diagnostic approach"
+}
+]
+}
 ]
