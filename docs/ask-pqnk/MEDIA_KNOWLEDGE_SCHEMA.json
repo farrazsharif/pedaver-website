@@ -1,0 +1,301 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://pedaver.com/schemas/media-knowledge-record.json",
+  "title": "PQNK Media Knowledge Record",
+  "version": "1.2",
+  "$comment": "REVISION 1.2: authenticated source list is now LOCKED to exactly three channels/pages (see sourcePlatform/channelOrPage below and MEDIA_INGESTION_PLAN.md sec 2) -- www.facebook.com/Pedaver, youtube.com/@pedaverpqnk3167, youtube.com/@aasifsharif. Authentication of the source does not mean every old statement automatically overrides current doctrine -- SOURCE_AUTHORITY_POLICY.md's tier/conflict rules still apply per-record. Not implemented in V1 (Science + Papers + Farmer Advisory only) -- this schema defines the architecture Media indexing will use once that phase begins.",
+  "description": "Draft schema for Ask PQNK 1.2 — architecture only, not yet implemented, not part of V1. Normalizes YouTube and Facebook source video/post metadata plus segment-level indexing so a 45-minute lecture can be cited at the exact timestamp that answers a farmer's question. Reuses the controlled vocabularies already live in src/lib/content/knowledge/taxonomy.json wherever the concept overlaps with Knowledge Paper metadata, so retrieval can search Papers, Science, Farmer Advisory, and Media against one shared taxonomy rather than four parallel ones.",
+  "type": "object",
+  "required": [
+    "id",
+    "sourcePlatform",
+    "sourceUrl",
+    "channelOrPage",
+    "title",
+    "publishedDate",
+    "language",
+    "contentType",
+    "evidenceType",
+    "authorityStatus",
+    "reviewStatus",
+    "segments"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable internal ID, independent of platform video ID (so a YouTube/Facebook cross-post can share one record — see relatedRecordIds).",
+      "examples": ["media-2026-0142"]
+    },
+    "sourcePlatform": {
+      "type": "string",
+      "enum": ["YouTube", "Facebook"],
+      "description": "Extend this enum, don't branch the schema, if a third platform is added later."
+    },
+    "sourceUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "Canonical URL of the source video or post."
+    },
+    "relatedRecordIds": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "IDs of other Media Records that are the same underlying content cross-posted to another platform. See MEDIA_INGESTION_PLAN.md for cross-post detection.",
+      "default": []
+    },
+    "channelOrPage": {
+      "type": "string",
+      "enum": [
+        "Facebook: facebook.com/Pedaver",
+        "YouTube: youtube.com/@pedaverpqnk3167",
+        "YouTube: youtube.com/@aasifsharif"
+      ],
+      "description": "REVISION 1.2: constrained to the three LOCKED authenticated Pedaver/PQNK sources (MEDIA_INGESTION_PLAN.md sec 2). Adding a source requires a documented decision, not a schema-level free-text entry — see MEDIA_INGESTION_PLAN.md sec 2's process for adding a new approved source."
+    },
+    "title": { "type": "string" },
+    "description": {
+      "type": "string",
+      "description": "Original platform description/caption, verbatim."
+    },
+    "publishedDate": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO date, as published on the source platform."
+    },
+    "language": {
+      "type": "string",
+      "enum": ["English", "Urdu", "Roman Urdu", "Punjabi", "Mixed"],
+      "description": "Primary spoken language of the source media. 'Mixed' covers common code-switching (e.g. Urdu/English in one lecture) — segment-level transcript still carries the actual words used."
+    },
+    "speaker": {
+      "type": "string",
+      "description": "Primary speaker/presenter, e.g. 'Asif Sharif', 'Farmer — name withheld', 'Pedaver Field Team'.",
+      "examples": ["Asif Sharif"]
+    },
+    "contentType": {
+      "type": "string",
+      "enum": [
+        "Pedaver Lecture",
+        "Asif Sharif Advisory",
+        "Farmer Testimony",
+        "Field Demonstration",
+        "Interview",
+        "Third-Party Discussion",
+        "Historical Formulation"
+      ],
+      "description": "Who is speaking and in what capacity — drives the authority ceiling in SOURCE_AUTHORITY_POLICY.md §5. This is distinct from evidenceType (what kind of support the content offers)."
+    },
+    "evidenceType": {
+      "type": "string",
+      "enum": [
+        "Scientific Mechanism",
+        "Field Observation",
+        "Farmer Testimony",
+        "Demonstration",
+        "Measured Field Result",
+        "Economic Model/Projection",
+        "External Scientific Evidence",
+        "Philosophical/Framework Argument"
+      ],
+      "description": "Reuses the exact evidenceTypes enum already live in taxonomy.json for Knowledge Papers, so Ask PQNK can rank evidence quality identically across Papers and Media."
+    },
+    "authorityStatus": {
+      "type": "string",
+      "enum": [
+        "Current / Approved PQNK Knowledge",
+        "Historical PQNK Formulation",
+        "External Knowledge / Evidence",
+        "Requires PQNK Review"
+      ],
+      "description": "Reuses the exact authorityStatus enum already live in taxonomy.json. Set at the WHOLE-RECORD level as a default; individual segments may override this if one segment of a long video is historical while another is current (see segments[].authorityStatus)."
+    },
+    "crops": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Union of all crops discussed anywhere in the video/post. Prefer tagging at the segment level; this is the roll-up for whole-record browsing.",
+      "default": []
+    },
+    "problemFamilies": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Roll-up of taxonomy.json problemFamilies touched anywhere in this record.",
+      "default": []
+    },
+    "fieldProblems": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "scienceDomains": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Soil", "Plants", "Water", "Biodiversity", "Nutrition",
+          "Crop Protection", "Climate", "Food Quality",
+          "Production Architecture", "Transition"
+        ]
+      },
+      "description": "The 10 canonical Science domains — identical enum to SCIENTIFIC_DOMAINS in taxonomy.ts.",
+      "default": []
+    },
+    "fieldPractices": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "machinery": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Canonical machinery names from taxonomy.json machineryTools keys, e.g. 'Raised Bed Shaper (PQNK machine)'.",
+      "default": []
+    },
+    "pqnkPrinciples": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["No Soil Disturbance", "No Inundation", "Permanent Biological Cover", "Maximum Biodiversity"]
+      },
+      "default": []
+    },
+    "productionStages": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "questionsAnswered": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Roll-up of segment-level questionsAnswered — used for whole-record search fallback when segment boundaries are still coarse.",
+      "default": []
+    },
+    "farmerLanguage": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Colloquial/regional terms actually used in the transcript (e.g. local names for a pest or symptom), captured so retrieval can match farmer phrasing that doesn't appear in the canonical taxonomy. Distinct from 'language' (which language was spoken).",
+      "default": []
+    },
+    "keywords": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "fieldLocation": {
+      "type": "string",
+      "description": "Free-text location if disclosed (district/region), for regional-relevance ranking. Omit if not disclosed — do not infer.",
+      "examples": ["Toba Tek Singh, Punjab"]
+    },
+    "videoDuration": {
+      "type": "string",
+      "description": "Total duration, HH:MM:SS.",
+      "pattern": "^\\d{2}:\\d{2}:\\d{2}$"
+    },
+    "transcript": {
+      "type": "object",
+      "description": "Full transcript, kept at the record level; segments reference it by time range rather than duplicating text.",
+      "properties": {
+        "available": { "type": "boolean" },
+        "source": {
+          "type": "string",
+          "enum": ["Platform Auto-Caption", "Human Transcription", "Reviewed/Corrected", "Unavailable"]
+        },
+        "fullText": { "type": "string" }
+      },
+      "required": ["available", "source"]
+    },
+    "segments": {
+      "type": "array",
+      "description": "Segment-level records — see SEGMENT-LEVEL INDEXING. A long lecture is never treated as one indivisible citation.",
+      "items": { "$ref": "#/definitions/segment" },
+      "minItems": 0
+    },
+    "relatedKnowledgePapers": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Slugs of related Knowledge Papers (matches Paper.slug in papers.ts).",
+      "default": []
+    },
+    "relatedScience": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Science page paths this record supports, e.g. '/science/water'.",
+      "default": []
+    },
+    "relatedFarmerAdvisories": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "REVISION 1.1 addition. IDs of Farmer Advisory records (QA_KNOWLEDGE_SCHEMA.json) this media segment supports or is cited by — e.g. a video demonstration that backs up an approved Advisory's practicalAction. Cross-linking runs both directions: the Advisory record's relatedMedia and this field should stay in sync.",
+      "default": []
+    },
+    "reviewStatus": {
+      "type": "string",
+      "enum": ["Pending Ingestion Review", "Metadata Tagged", "Approved", "Rejected", "Needs Re-Review"],
+      "description": "Pipeline status distinct from authorityStatus — a record can be 'Approved' for indexing while its authorityStatus is 'Requires PQNK Review' (i.e., it's safely indexed and searchable, but not yet cleared to found an authoritative answer)."
+    },
+    "ingestionNotes": {
+      "type": "string",
+      "description": "Free-text reviewer notes, e.g. why a segment was marked Historical."
+    }
+  },
+  "definitions": {
+    "segment": {
+      "type": "object",
+      "required": ["segmentId", "startTime", "endTime", "summary", "questionsAnswered"],
+      "properties": {
+        "segmentId": {
+          "type": "string",
+          "examples": ["media-2026-0142-seg-03"]
+        },
+        "startTime": { "type": "string", "pattern": "^\\d{2}:\\d{2}:\\d{2}$" },
+        "endTime": { "type": "string", "pattern": "^\\d{2}:\\d{2}:\\d{2}$" },
+        "summary": {
+          "type": "string",
+          "description": "Short human-readable label, e.g. 'Why flooded soil damages roots'.",
+          "examples": ["Why flooded soil damages roots"]
+        },
+        "transcriptExcerpt": {
+          "type": "string",
+          "description": "The transcript slice for this time range, stored redundantly for fast retrieval without re-slicing the full transcript at query time."
+        },
+        "questionsAnswered": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1,
+          "description": "The specific farmer-facing question(s) this segment answers — the primary retrieval key at segment granularity."
+        },
+        "crops": { "type": "array", "items": { "type": "string" }, "default": [] },
+        "fieldProblems": { "type": "array", "items": { "type": "string" }, "default": [] },
+        "scienceDomains": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "Soil", "Plants", "Water", "Biodiversity", "Nutrition",
+              "Crop Protection", "Climate", "Food Quality",
+              "Production Architecture", "Transition"
+            ]
+          },
+          "default": []
+        },
+        "fieldPractices": { "type": "array", "items": { "type": "string" }, "default": [] },
+        "authorityStatus": {
+          "type": "string",
+          "enum": [
+            "Current / Approved PQNK Knowledge",
+            "Historical PQNK Formulation",
+            "External Knowledge / Evidence",
+            "Requires PQNK Review"
+          ],
+          "description": "Overrides the record-level authorityStatus for this segment only. Required when a single long video mixes current guidance with a now-superseded explanation in different segments."
+        },
+        "evidenceType": {
+          "type": "string",
+          "enum": [
+            "Scientific Mechanism", "Field Observation", "Farmer Testimony",
+            "Demonstration", "Measured Field Result", "Economic Model/Projection",
+            "External Scientific Evidence", "Philosophical/Framework Argument"
+          ]
+        }
+      }
+    }
+  }
+}

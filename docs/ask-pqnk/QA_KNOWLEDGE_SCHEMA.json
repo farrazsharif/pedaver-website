@@ -1,0 +1,251 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://pedaver.com/schemas/qa-knowledge-record.json",
+  "title": "PQNK Farmer Advisory Knowledge Record",
+  "version": "1.4.2",
+  "$comment": "REVISION 1.4.2 (pre-deployment hardening): added originReferenceNumber (self-contained provenance, sec below) and clarified that approvedBy is the record's answer-author provenance field, enforced by provenance.ts at the single insert site -- ASK PQNK GENERATED ANSWER != PEDAVER KNOWLEDGE (ASK_PQNK_ARCHITECTURE.md sec 19). No field was removed or renamed. Carried forward from REVISION 1.3: 'language' (below) now explicitly documented as the ORIGINAL QUESTION's language only -- 'answer'/'shortAnswer'/'practicalAction' are always composed in English regardless, per the locked simplification removing multilingual answer generation (ASK_PQNK_ARCHITECTURE.md sec 8, sec 18). No field was added, removed, or renamed. Carried forward from REVISION 1.2 (locked decisions): (1) Published records are PERMANENT knowledge -- there is no auto-deletion of an approved Q&A record; see PEDAVER_REFERRAL_WORKFLOW.md sec 13 for what IS time-limited (personal contact info and unpublished submission evidence, which are never part of THIS schema in the first place -- see personalDataSeparation note below). (2) Pedaver is the sole approval authority -- 'approvedBy' names the Pedaver reviewer who issued the answer; there is no second-reviewer/dual-sign-off field. (3) supersedesOrClarifies is new: the mechanism by which a Farmer Advisory record can outrank an older Paper or Media item on a specific claim, per SOURCE_AUTHORITY_POLICY.md sec 4 -- explicit and reviewer-asserted, never inferred from date alone. (4) Added machinery, geography, relatedFarmerAdvisories, problemFamily per the locked minimum field list.",
+  "description": "Draft schema for Ask PQNK 1.2 -- architecture only, not yet implemented. This is Farmer Advisory's structured content model: the same record is produced internally when Pedaver answers a referred question, and IS the public Farmer Advisory record once published. Searchable by Ask PQNK as a first-class Tier 2 source (SOURCE_AUTHORITY_POLICY.md).",
+  "type": "object",
+  "required": [
+    "id",
+    "question",
+    "canonicalQuestion",
+    "shortAnswer",
+    "answer",
+    "language",
+    "authorityStatus",
+    "evidenceType",
+    "publicationStatus",
+    "sources",
+    "version"
+  ],
+  "properties": {
+    "id": { "type": "string", "examples": ["adv-2026-0087"] },
+    "question": {
+      "type": "string",
+      "description": "The original farmer question, in the language/wording it was asked. This IS part of the permanent public knowledge record -- retaining and publishing the agricultural question itself does not require the asker's permission (locked decision). See personalDataSeparation below for what is deliberately excluded."
+    },
+    "canonicalQuestion": {
+      "type": "string",
+      "description": "Normalized, single reference phrasing of the underlying question, typically English for internal search/reporting consistency regardless of the record's answer language."
+    },
+    "farmerLanguageWording": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Colloquial terms/phrasing actually used (any script/transliteration) -- retrieval-matching value, preserved as agricultural context, not personal information.",
+      "default": []
+    },
+    "fieldContext": {
+      "type": "string",
+      "description": "Context needed to understand the question -- e.g. soil type, irrigation source, recent weather, symptom description as the farmer gave it. Agricultural context, retained; distinct from personal/location-identifying detail (see personalDataSeparation)."
+    },
+    "questionCluster": {
+      "type": ["string", "null"],
+      "description": "ID of the associated question cluster (definitions.questionCluster / PEDAVER_REFERRAL_WORKFLOW.md sec 5), if any.",
+      "default": null
+    },
+    "questionVariants": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Other phrasings of the same underlying question. Superseded in detail by questionCluster.variantQuestions where a cluster exists; kept for records with no formal cluster.",
+      "default": []
+    },
+    "shortAnswer": { "type": "string", "description": "One to three sentences." },
+    "answer": { "type": "string", "description": "Full answer / mechanism, in Pedaver's own words as issued." },
+    "practicalAction": {
+      "type": "string",
+      "description": "The concrete 'what to do' step(s), kept as its own field so Ask PQNK's What-to-do section can render it directly."
+    },
+    "language": {
+      "type": "string",
+      "enum": ["English", "Urdu", "Roman Urdu", "Punjabi", "Mixed"],
+      "description": "Language the ORIGINAL QUESTION was asked in -- retained for context/analytics and for the referral message (ASK_PQNK_ARCHITECTURE.md sec 18). Per Revision 1.3, 'answer' above is always composed in English regardless of this value; this field never implies the answer text is in this language."
+    },
+    "crops": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "problems": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "fieldProblems from the shared taxonomy.",
+      "default": []
+    },
+    "problemFamily": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "REVISION 1.2 addition. Coarser problemFamilies grouping (taxonomy.json), useful for the queue's 'most common unresolved problems' view even before every fieldProblem is precisely tagged.",
+      "default": []
+    },
+    "scienceDomains": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Soil", "Plants", "Water", "Biodiversity", "Nutrition",
+          "Crop Protection", "Climate", "Food Quality",
+          "Production Architecture", "Transition"
+        ]
+      },
+      "default": []
+    },
+    "practices": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "machinery": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "REVISION 1.2 addition. Canonical machinery names from taxonomy.json machineryTools, where applicable.",
+      "default": []
+    },
+    "geography": {
+      "type": "string",
+      "description": "REVISION 1.2 addition. Region/district-level agricultural context where materially relevant to the answer (e.g. a salinity or climate answer that's regionally specific), NOT a precise farm location -- see personalDataSeparation.",
+      "examples": ["Punjab, canal-irrigated plains"]
+    },
+    "questionsAnswered": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "authorityStatus": {
+      "type": "string",
+      "enum": [
+        "Current / Approved PQNK Knowledge",
+        "Historical PQNK Formulation",
+        "Requires PQNK Review"
+      ]
+    },
+    "evidenceType": {
+      "type": "string",
+      "enum": [
+        "Scientific Mechanism", "Field Observation", "Farmer Testimony",
+        "Demonstration", "Measured Field Result", "Economic Model/Projection",
+        "External Scientific Evidence", "Philosophical/Framework Argument"
+      ]
+    },
+    "publicationLevel": {
+      "type": "string",
+      "enum": ["Farmer Advisory Q&A", "Substantial Farmer Advisory", "Escalated to Knowledge Paper", "Escalated to Science Review"],
+      "default": "Farmer Advisory Q&A"
+    },
+    "escalatedTo": {
+      "type": ["object", "null"],
+      "properties": {
+        "type": { "type": "string", "enum": ["Knowledge Paper", "Science Review"] },
+        "reference": { "type": "string" },
+        "status": { "type": "string", "enum": ["Requested", "In Progress", "Published"] }
+      },
+      "default": null
+    },
+    "publicationStatus": {
+      "type": "string",
+      "enum": ["Internal", "Published"],
+      "description": "'Published' is permanent. There is no scheduled expiry or auto-deletion of a Published record -- see notes.permanentRetention below."
+    },
+    "advisoryReference": {
+      "type": ["string", "null"],
+      "description": "Once Published, the slug/identifier this record is exposed under in the public Farmer Advisory section.",
+      "default": null
+    },
+    "supersedesOrClarifies": {
+      "type": "array",
+      "description": "REVISION 1.2 addition -- the mechanism behind SOURCE_AUTHORITY_POLICY.md sec 4's ranking rule. An explicit, reviewer-asserted claim that this record updates or clarifies a specific prior source for a specific point. Never inferred automatically; set only when a Pedaver reviewer actually intends this record to be treated as the current position over the named one.",
+      "items": {
+        "type": "object",
+        "required": ["sourceType", "reference", "note"],
+        "properties": {
+          "sourceType": { "type": "string", "enum": ["Knowledge Paper", "Media Segment", "Farmer Advisory Record"] },
+          "reference": { "type": "string" },
+          "note": {
+            "type": "string",
+            "description": "Short reviewer note on what changed/clarified -- shown internally, and optionally surfaced to the farmer as 'this updates earlier guidance on X.'"
+          }
+        }
+      },
+      "default": []
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["sourceType", "reference"],
+        "properties": {
+          "sourceType": { "type": "string", "enum": ["Science Page", "Knowledge Paper", "Media Segment", "New Field Determination"] },
+          "reference": { "type": "string" }
+        }
+      },
+      "minItems": 1
+    },
+    "approvedBy": {
+      "type": "string",
+      "description": "The Pedaver reviewer who issued this answer. Pedaver is the sole approval authority for publication -- there is no second-reviewer field (locked decision). REVISION 1.4.2: this IS the record's answer-author provenance field -- always the literal string 'Pedaver', enforced independently at the single insert site by provenance.ts's assertPedaverAuthoredPublication (ASK_PQNK_ARCHITECTURE.md sec 19). Never AI, never any other value; there is no code path that can set this to anything else."
+    },
+    "approvedDate": { "type": "string", "format": "date" },
+    "relatedMedia": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Media record/segment IDs from authenticated Pedaver YouTube/Facebook sources -- the 'Watch' citations.",
+      "default": []
+    },
+    "relatedPapers": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "relatedScience": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "relatedFarmerAdvisories": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "REVISION 1.2 addition. IDs of other Farmer Advisory records covering closely related questions -- lets Ask PQNK say 'related advisories' the way Related Knowledge already does for Papers/Science.",
+      "default": []
+    },
+    "originQuestionModality": {
+      "type": "string",
+      "enum": ["Text", "Voice"],
+      "description": "How the originating question arrived, if known. Analytics only -- the published record is always structured text regardless."
+    },
+    "version": { "type": "integer", "minimum": 1 },
+    "supersededBy": {
+      "type": ["string", "null"],
+      "description": "ID of the record that replaces this one, if Pedaver later issues an improved/expanded answer. Historical versions are retained permanently for internal traceability -- see notes.versioning.",
+      "default": null
+    },
+    "originQueueId": { "type": "string" },
+    "originReferenceNumber": {
+      "type": "string",
+      "description": "REVISION 1.4.2 addition. The human-facing PQNK-Q-XXXXXXXX reference number of the referral_queue entry this record originated from, stored directly here so provenance survives independently of originQueueId's join target (ASK_PQNK_ARCHITECTURE.md sec 19 point 3). Every published record has one -- there is no publication path that doesn't trace back through Refer this Question to Pedaver."
+    },
+    "repeatCount": { "type": "integer", "minimum": 0, "default": 0 }
+  },
+  "definitions": {
+    "questionCluster": {
+      "type": "object",
+      "description": "Unchanged in shape from 1.1. Repeated questions are a knowledge-gap signal, not N separate records.",
+      "required": ["clusterId", "canonicalQuestion", "variantQuestions", "repeatCount", "firstAsked", "lastAsked", "answerCoverage", "knowledgeGapStatus"],
+      "properties": {
+        "clusterId": { "type": "string", "examples": ["cluster-2026-0031"] },
+        "canonicalQuestion": { "type": "string" },
+        "variantQuestions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["text", "language"],
+            "properties": {
+              "text": { "type": "string" },
+              "language": { "type": "string", "enum": ["English", "Urdu", "Roman Urdu", "Punjabi", "Mixed"] },
+              "askedDate": { "type": "string", "format": "date" },
+              "modality": { "type": "string", "enum": ["Text", "Voice"] }
+            }
+          }
+        },
+        "repeatCount": { "type": "integer", "minimum": 1 },
+        "languagesObserved": { "type": "array", "items": { "type": "string" } },
+        "cropsObserved": { "type": "array", "items": { "type": "string" }, "default": [] },
+        "regionsObserved": { "type": "array", "items": { "type": "string" }, "default": [] },
+        "firstAsked": { "type": "string", "format": "date" },
+        "lastAsked": { "type": "string", "format": "date" },
+        "answerCoverage": { "type": "string", "enum": ["Unanswered", "Partially Answered", "Fully Answered"] },
+        "knowledgeGapStatus": { "type": "string", "enum": ["Open Gap", "Under Pedaver Review", "Resolved", "Not a Genuine Gap"] },
+        "resolvedByRecordId": { "type": ["string", "null"], "default": null }
+      }
+    }
+  },
+  "notes": {
+    "permanentRetention": "LOCKED 1.2: a Published record is permanent knowledge. It is never subject to a scheduled deletion. This is deliberately different from the submission-time evidence (photos/video/voice, contact info) described in PEDAVER_REFERRAL_WORKFLOW.md sec 13, which lives in a separate structure entirely -- see personalDataSeparation.",
+    "personalDataSeparation": "LOCKED 1.2: this schema never carries the farmer's name, WhatsApp number, email, or precise location. Those fields exist only in the internal Pedaver Answers Queue entry (PEDAVER_REFERRAL_WORKFLOW.md sec 8), used solely to deliver the answer back to that specific person, and are handled under that document's retention rules -- not this one. A Published record contains the agricultural question, context needed to understand it, Pedaver's answer, classifications, sources, and related knowledge -- never contact information.",
+    "versioning": "A record is never silently edited in place once Published. A revision creates version N+1, sets supersededBy on version N, and version N remains permanently queryable as historical context -- 'preserve version history... while retaining historical traceability internally' (locked decision). Retrieval always prefers the current (non-superseded) version.",
+    "advisoryModelReconciliation": "LOCKED 1.2: proceed with evolving the live, currently-empty AdvisoryNote model (src/lib/content/advisory.ts) into this schema, rather than stretching the lighter model long-term. Implementation detail (migration path for the 5 existing AdvisoryCategorySlug values) is addressed in ASK_PQNK_V1_IMPLEMENTATION_SPEC.md."
+  }
+}

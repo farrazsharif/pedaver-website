@@ -2,40 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import type { Dictionary } from "@/lib/dictionaries";
-import { papers } from "@/lib/content/papers";
 import TranslateWidget from "./TranslateWidget";
-import { trackInternalSearch } from "@/lib/analytics";
-
-interface SearchResult {
-  label: string;
-  sublabel: string;
-  href: string;
-}
-
-// Scoped to Knowledge Papers only — this is the "Search Knowledge" utility
-// action, distinct in purpose from the full relevance-ranked search on
-// /papers itself (see search.ts). This index just gives quick as-you-type
-// jump suggestions; submitting always hands off to the real search below.
-const searchIndex: SearchResult[] = papers.map((p) => ({
-  label: p.title,
-  sublabel: "Knowledge Paper",
-  href: `/papers/${p.slug}/`,
-}));
-
-function searchSite(query: string): SearchResult[] {
-  const q = query.trim().toLowerCase();
-  if (!q) return [];
-  const starts: SearchResult[] = [];
-  const contains: SearchResult[] = [];
-  for (const item of searchIndex) {
-    const label = item.label.toLowerCase();
-    if (label.startsWith(q)) starts.push(item);
-    else if (label.includes(q)) contains.push(item);
-  }
-  return [...starts, ...contains].slice(0, 8);
-}
 
 interface NavChild {
   label: string;
@@ -49,12 +18,9 @@ interface NavGroup {
 
 export default function Header({ dict }: { dict: Dictionary }) {
   const pathname = usePathname();
-  const router = useRouter();
   const [openGroup, setOpenGroup] = useState<string | null>(null);
-  const [searchOpen, setSearchOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileOpenGroup, setMobileOpenGroup] = useState<string | null>(null);
-  const [query, setQuery] = useState("");
 
   const groups: NavGroup[] = [
     { label: dict.nav.home, href: "/" },
@@ -98,32 +64,6 @@ export default function Header({ dict }: { dict: Dictionary }) {
   const isActive = (group: NavGroup) =>
     hrefMatches(group.href) || (group.children?.some((c) => hrefMatches(c.href)) ?? false);
 
-  const searchResults = searchSite(query);
-
-  function goToResult(href: string) {
-    setSearchOpen(false);
-    setQuery("");
-    router.push(href);
-  }
-
-  function handleSearch(e: React.FormEvent) {
-    e.preventDefault();
-    const q = query.trim();
-    if (!q) return;
-    trackInternalSearch(q.length, searchResults.length);
-    setSearchOpen(false);
-    setQuery("");
-    // Hand off to the real Knowledge Papers search rather than guessing a
-    // single "top" local match — /papers applies the full relevance-ranked
-    // search over all 186 papers. A plain browser navigation (not
-    // router.push) is deliberate: this statically-exported site has
-    // trailingSlash:true, and client-side router.push has been observed to
-    // drop the query string during that normalization, while a full
-    // navigation always preserves it exactly and PapersBrowser reads it
-    // straight from window.location.search on mount either way.
-    window.location.href = `/papers/?q=${encodeURIComponent(q)}`;
-  }
-
   return (
     <header className="sticky top-0 z-50 bg-cream/95 shadow-sm backdrop-blur">
       {/* Tier 1 — utility bar */}
@@ -150,18 +90,22 @@ export default function Header({ dict }: { dict: Dictionary }) {
           <div className="flex flex-none items-center gap-1 sm:gap-3">
             <TranslateWidget />
 
-            <button
-              type="button"
-              onClick={() => setSearchOpen((v) => !v)}
-              aria-label={dict.nav.searchLabel}
-              aria-expanded={searchOpen}
-              className="flex h-10 w-10 items-center justify-center rounded-full text-cream/80 transition hover:bg-white/10 hover:text-cream"
+            {/* Global Search is replaced by Ask PQNK (Website Refinement /
+                Ask PQNK Architecture 1.2): the visitor asks a question in
+                their own words and is routed to Farmer Advisory, the Ask
+                PQNK interface — rather than filtering a keyword list. The
+                specialized search inside /papers/ is unrelated and
+                untouched. */}
+            <Link
+              href="/advisory"
+              aria-label="Ask PQNK"
+              className="flex h-10 items-center gap-1.5 rounded-full px-3 text-cream/80 transition hover:bg-white/10 hover:text-cream"
             >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <circle cx="11" cy="11" r="7" />
-                <path d="m21 21-4.3-4.3" strokeLinecap="round" />
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-            </button>
+              <span className="hidden text-sm font-semibold sm:inline">Ask PQNK</span>
+            </Link>
 
             <Link
               href="/contact"
@@ -190,56 +134,6 @@ export default function Header({ dict }: { dict: Dictionary }) {
           </div>
         </div>
       </div>
-
-      {/* Search overlay */}
-      {searchOpen && (
-        <div className="border-b border-border bg-card">
-          <form onSubmit={handleSearch} className="mx-auto flex max-w-6xl items-center gap-3 px-4 py-3 sm:px-6">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-ink-soft">
-              <circle cx="11" cy="11" r="7" />
-              <path d="m21 21-4.3-4.3" strokeLinecap="round" />
-            </svg>
-            <input
-              autoFocus
-              type="search"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder={dict.nav.searchPlaceholder}
-              className="w-full bg-transparent py-1 text-base text-ink placeholder:text-ink-soft focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
-            />
-            <button type="submit" className="rounded-full bg-primary px-5 py-2 text-sm font-semibold text-cream hover:bg-primary-dark">
-              {dict.nav.searchLabel}
-            </button>
-          </form>
-
-          {query.trim() && (
-            <div className="mx-auto max-w-6xl px-4 pb-4 sm:px-6">
-              {searchResults.length > 0 ? (
-                <ul className="overflow-hidden rounded-xl border border-border">
-                  {searchResults.map((result) => (
-                    <li key={result.href}>
-                      <button
-                        type="button"
-                        onClick={() => goToResult(result.href)}
-                        className="flex w-full items-center justify-between gap-3 border-b border-border bg-card px-4 py-2.5 text-left text-sm last:border-b-0 hover:bg-primary/10"
-                      >
-                        <span className="font-medium text-ink">{result.label}</span>
-                        <span className="flex-none text-xs font-semibold uppercase tracking-wide text-ink-soft">
-                          {result.sublabel}
-                        </span>
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <p className="px-1 text-sm text-ink-soft">
-                  No Knowledge Paper titles match &ldquo;{query}&rdquo; — press Search to run a full search.
-                </p>
-              )}
-            </div>
-          )}
-        </div>
-      )}
 
       {/* Tier 2 — main menu (desktop) */}
       <nav className="hidden lg:block">

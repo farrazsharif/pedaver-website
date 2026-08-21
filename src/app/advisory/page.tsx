@@ -2,11 +2,14 @@ import dict from "@/lib/dictionaries";
 import { getNotesByCategory, type AdvisoryCategorySlug } from "@/lib/content/advisory";
 import Section from "@/components/Section";
 import { buildMetadata } from "@/lib/seo";
+import AskPqnkBox from "@/components/advisory/AskPqnkBox";
+import AdvisoryBrowse from "@/components/advisory/AdvisoryBrowse";
+import ReferenceLookup from "@/components/advisory/ReferenceLookup";
 
 export const metadata = buildMetadata({
-  title: "Farmer Advisory — Real PQNK Questions & Answers",
+  title: "Farmer Advisory — Ask PQNK",
   description:
-    "Real questions from Pedaver's PQNK WhatsApp learning groups, and Asif Sharif's answers, organized by topic: adoption, planting, water management, and symptoms.",
+    "Ask PQNK a question in your own words and get an answer from approved PQNK Science, Knowledge Papers, and Farmer Advisory knowledge, with sources — or refer it to Pedaver if the answer isn't there yet.",
   path: "/advisory",
 });
 
@@ -21,7 +24,33 @@ export default function AdvisoryPage() {
       </section>
 
       <Section>
+        <div className="mx-auto max-w-3xl">
+          <AskPqnkBox />
+        </div>
+      </Section>
+
+      <Section muted>
+        <div className="mx-auto max-w-3xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">Farmer Advisory Knowledge</p>
+          <h2 className="mt-1 text-2xl font-bold text-primary-dark">Browse previously answered questions</h2>
+          <div className="mt-6">
+            <AdvisoryBrowse />
+          </div>
+          <div className="mt-6 max-w-sm">
+            <ReferenceLookup />
+          </div>
+        </div>
+      </Section>
+
+      <Section>
         <div className="mx-auto flex max-w-3xl flex-col gap-8">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">By Topic</p>
+            <h2 className="mt-1 text-2xl font-bold text-primary-dark">Farmer WhatsApp Notes</h2>
+            <p className="mt-2 max-w-2xl text-sm text-ink-soft">
+              Earlier questions and answers from Pedaver&apos;s PQNK WhatsApp learning groups, organized by topic.
+            </p>
+          </div>
           {dict.advisory.categories.map((category) => {
             const notes = getNotesByCategory(category.slug as AdvisoryCategorySlug);
             return (

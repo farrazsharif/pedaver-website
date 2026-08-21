@@ -1,0 +1,654 @@
+<title>Ask PQNK Production Infrastructure</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<style>
+  :root {
+    --cream: #f6f1e6;
+    --cream-raised: #fffdf8;
+    --ink: #24301f;
+    --ink-soft: #52604a;
+    --green: #2f5233;
+    --green-deep: #1e3722;
+    --terracotta: #c97c3d;
+    --gold: #e0a868;
+    --line: #dcd2ba;
+    --line-soft: #e9e1cd;
+    --tier1: var(--green);
+    --tier2: var(--terracotta);
+    --tier3: #9a8a5f;
+    --code-bg: #efe8d4;
+    --shadow: 0 1px 2px rgba(30,55,34,0.06), 0 8px 24px rgba(30,55,34,0.06);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --cream: #14201a;
+      --cream-raised: #1a2921;
+      --ink: #eae3cf;
+      --ink-soft: #b7c2ac;
+      --green: #7bb489;
+      --green-deep: #a9d3af;
+      --terracotta: #e0a868;
+      --gold: #e0a868;
+      --line: #33452f;
+      --line-soft: #2a3a26;
+      --tier1: var(--green);
+      --tier2: var(--terracotta);
+      --tier3: #a99a6e;
+      --code-bg: #1f2e22;
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --cream: #14201a;
+    --cream-raised: #1a2921;
+    --ink: #eae3cf;
+    --ink-soft: #b7c2ac;
+    --green: #7bb489;
+    --green-deep: #a9d3af;
+    --terracotta: #e0a868;
+    --gold: #e0a868;
+    --line: #33452f;
+    --line-soft: #2a3a26;
+    --tier1: var(--green);
+    --tier2: var(--terracotta);
+    --tier3: #a99a6e;
+    --code-bg: #1f2e22;
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: "Hanken Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  h1, h2, h3 { font-family: "Bitter", Georgia, serif; text-wrap: balance; color: var(--green-deep); }
+  a { color: var(--terracotta); }
+
+  .shell { display: grid; grid-template-columns: 220px minmax(0,1fr); gap: 0; max-width: 1180px; margin: 0 auto; }
+  @media (max-width: 880px) { .shell { grid-template-columns: 1fr; } .nav { display: none; } }
+
+  .nav {
+    position: sticky; top: 0; align-self: start; height: 100vh; overflow-y: auto;
+    padding: 40px 18px 40px 28px; border-right: 1px solid var(--line);
+  }
+  .nav .brand { font-family: "Bitter", serif; font-weight: 700; font-size: 0.95rem; color: var(--green-deep); margin: 0 0 4px; }
+  .nav .brand-sub { font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 24px; }
+  .nav ol { list-style: none; margin: 0; padding: 0; counter-reset: navsec; }
+  .nav li { counter-increment: navsec; margin-bottom: 2px; }
+  .nav a {
+    display: flex; gap: 8px; padding: 6px 8px; border-radius: 6px; font-size: 0.85rem;
+    text-decoration: none; color: var(--ink-soft);
+  }
+  .nav a::before { content: counter(navsec, upper-alpha); font-weight: 700; color: var(--tier2); width: 1.1em; flex: none; }
+  .nav a:hover { background: var(--line-soft); color: var(--ink); }
+
+  main { padding: 48px 40px 100px; min-width: 0; }
+  @media (max-width: 880px) { main { padding: 32px 20px 80px; } }
+
+  .cover { margin-bottom: 56px; }
+  .cover .eyebrow { font-size: 0.78rem; letter-spacing: 0.10em; text-transform: uppercase; color: var(--tier2); font-weight: 600; margin: 0 0 10px; }
+  .cover h1 { font-size: clamp(1.9rem, 3.2vw, 2.6rem); margin: 0 0 14px; line-height: 1.15; }
+  .cover p { max-width: 62ch; color: var(--ink-soft); font-size: 1.02rem; margin: 0 0 18px; }
+  .scope-box {
+    display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px;
+  }
+  .scope-pill {
+    font-size: 0.8rem; font-weight: 600; padding: 6px 12px; border-radius: 999px;
+    background: var(--cream-raised); border: 1px solid var(--line); color: var(--ink);
+  }
+  .scope-pill.no { color: var(--terracotta); border-color: var(--terracotta); }
+
+  section.card {
+    background: var(--cream-raised); border: 1px solid var(--line); border-radius: 14px;
+    padding: 32px 36px; margin-bottom: 28px; box-shadow: var(--shadow); scroll-margin-top: 20px;
+  }
+  @media (max-width: 640px) { section.card { padding: 24px 20px; } }
+
+  .sec-label { display: flex; align-items: baseline; gap: 12px; margin-bottom: 6px; }
+  .sec-letter {
+    font-family: "Bitter", serif; font-weight: 700; font-size: 1.5rem; color: var(--tier2);
+    line-height: 1;
+  }
+  section.card h2 { margin: 0; font-size: 1.4rem; }
+  .sec-dek { color: var(--ink-soft); margin: 6px 0 22px; max-width: 68ch; }
+
+  p { max-width: 72ch; }
+  section.card > p, section.card > ul, section.card > ol { max-width: 72ch; }
+  ul, ol { padding-left: 1.3em; }
+  li { margin-bottom: 6px; }
+
+  .subhead { font-family: "Bitter", serif; font-weight: 600; font-size: 1.02rem; color: var(--green-deep); margin: 24px 0 8px; }
+
+  table { border-collapse: collapse; width: 100%; margin: 14px 0 22px; font-size: 0.92rem; }
+  .table-wrap { overflow-x: auto; }
+  th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
+  th { font-family: "Bitter", serif; font-weight: 600; color: var(--green-deep); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.02em; border-bottom: 2px solid var(--line); }
+  tr:last-child td { border-bottom: none; }
+  td.num, th.num { font-variant-numeric: tabular-nums; text-align: right; }
+
+  .pick {
+    display: inline-block; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.03em;
+    padding: 2px 8px; border-radius: 5px; margin-left: 6px; vertical-align: middle;
+    background: color-mix(in srgb, var(--tier2) 16%, transparent); color: var(--tier2);
+  }
+
+  .callout {
+    border-left: 3px solid var(--tier2); background: color-mix(in srgb, var(--tier2) 8%, var(--cream-raised));
+    padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 18px 0; font-size: 0.95rem;
+  }
+  .callout strong { color: var(--green-deep); }
+
+  .callout.rule {
+    border-left-color: var(--green);
+    background: color-mix(in srgb, var(--green) 8%, var(--cream-raised));
+  }
+
+  code, .mono { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 0.87em; }
+  .code-block {
+    background: var(--code-bg); border: 1px solid var(--line-soft); border-radius: 8px;
+    padding: 14px 16px; font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.84rem; overflow-x: auto; white-space: pre; color: var(--ink); margin: 14px 0;
+  }
+
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 18px 0; }
+  @media (max-width: 640px) { .grid-2 { grid-template-columns: 1fr; } }
+  .opt-card { border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; background: var(--cream); }
+  .opt-card h4 { font-family: "Bitter", serif; margin: 0 0 6px; font-size: 0.98rem; color: var(--green-deep); }
+  .opt-card p { margin: 0; font-size: 0.88rem; color: var(--ink-soft); }
+
+  .cost-tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 18px 0 8px; }
+  @media (max-width: 720px) { .cost-tiers { grid-template-columns: 1fr; } }
+  .cost-card { border: 1px solid var(--line); border-radius: 10px; padding: 18px; background: var(--cream); }
+  .cost-card .tier-name { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-soft); font-weight: 600; }
+  .cost-card .tier-total { font-family: "Bitter", serif; font-size: 1.5rem; color: var(--green-deep); margin: 4px 0 10px; font-variant-numeric: tabular-nums; }
+  .cost-card dl { margin: 0; font-size: 0.85rem; }
+  .cost-card dt { color: var(--ink-soft); float: left; clear: left; }
+  .cost-card dd { margin: 0 0 0 0; text-align: right; font-variant-numeric: tabular-nums; }
+  .cost-row { display: flex; justify-content: space-between; padding: 3px 0; border-bottom: 1px dashed var(--line-soft); font-size: 0.85rem; }
+  .cost-row:last-child { border-bottom: none; }
+
+  .recommend {
+    background: linear-gradient(180deg, color-mix(in srgb, var(--green) 10%, var(--cream-raised)), var(--cream-raised));
+    border: 1px solid var(--green); border-radius: 14px; padding: 34px 38px; margin-bottom: 40px; box-shadow: var(--shadow);
+  }
+  .recommend h2 { font-size: 1.6rem; margin: 0 0 4px; }
+  .stack-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px,1fr)); gap: 14px; margin: 20px 0; }
+  .stack-item { background: var(--cream-raised); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+  .stack-item .role { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--tier2); font-weight: 700; margin-bottom: 4px; }
+  .stack-item .choice { font-family: "Bitter", serif; font-weight: 600; color: var(--green-deep); }
+
+  .stop-banner {
+    text-align: center; padding: 22px; border: 1.5px dashed var(--tier2); border-radius: 12px;
+    color: var(--green-deep); font-family: "Bitter", serif; font-weight: 600; font-size: 1.05rem; margin-top: 8px;
+  }
+
+  footer.doc-footer { text-align: center; color: var(--ink-soft); font-size: 0.82rem; padding: 20px 0 60px; }
+
+  .decisions-banner {
+    display: flex; flex-wrap: wrap; gap: 10px 24px; align-items: center;
+    background: color-mix(in srgb, var(--green) 10%, var(--cream-raised));
+    border: 1px solid var(--green); border-radius: 12px; padding: 16px 22px; margin: -8px 0 40px;
+    font-size: 0.88rem;
+  }
+  .decisions-banner .db-label { font-family: "Bitter", serif; font-weight: 700; color: var(--green-deep); flex: none; }
+  .decisions-banner .db-item { color: var(--ink); }
+  .decisions-banner .db-item b { color: var(--green-deep); }
+
+  .step-list { counter-reset: step; list-style: none; padding-left: 0; margin: 16px 0; }
+  .step-list > li { counter-increment: step; position: relative; padding: 4px 0 4px 40px; margin-bottom: 10px; }
+  .step-list > li::before {
+    content: counter(step); position: absolute; left: 0; top: 2px;
+    width: 26px; height: 26px; border-radius: 50%; background: var(--green); color: var(--cream-raised);
+    font-family: "Bitter", serif; font-weight: 700; font-size: 0.82rem; display: flex; align-items: center; justify-content: center;
+  }
+
+  .kv-list { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; margin: 14px 0 20px; font-size: 0.9rem; }
+  .kv-list dt { color: var(--ink-soft); font-weight: 600; white-space: nowrap; }
+  .kv-list dd { margin: 0; }
+
+  .tested-badge {
+    display: inline-flex; align-items: center; gap: 6px; font-size: 0.72rem; font-weight: 700;
+    letter-spacing: 0.03em; text-transform: uppercase; padding: 3px 10px; border-radius: 999px;
+    background: color-mix(in srgb, var(--green) 18%, transparent); color: var(--green-deep); margin-left: 8px; vertical-align: middle;
+  }
+
+  .drill-log {
+    border: 1px solid var(--line); border-radius: 10px; overflow: hidden; margin: 16px 0;
+  }
+  .drill-log .dl-row {
+    display: grid; grid-template-columns: 28px 1fr; gap: 12px; padding: 10px 14px; font-size: 0.87rem;
+    border-bottom: 1px solid var(--line-soft); align-items: start;
+  }
+  .drill-log .dl-row:last-child { border-bottom: none; }
+  .drill-log .dl-row.ok { background: color-mix(in srgb, var(--green) 6%, transparent); }
+  .drill-log .dl-row.warn { background: color-mix(in srgb, var(--terracotta) 10%, transparent); }
+  .drill-log .dl-icon { font-family: "Bitter", serif; font-weight: 700; text-align: center; }
+  .drill-log .dl-row.ok .dl-icon { color: var(--green); }
+  .drill-log .dl-row.warn .dl-icon { color: var(--terracotta); }
+  .drill-log code { display: block; margin-top: 3px; color: var(--ink-soft); }
+
+  .checklist { list-style: none; padding-left: 0; margin: 14px 0; }
+  .checklist li { position: relative; padding-left: 30px; margin-bottom: 8px; }
+  .checklist li::before {
+    content: ""; position: absolute; left: 0; top: 3px; width: 18px; height: 18px; border-radius: 5px;
+    border: 2px solid var(--tier2); background: var(--cream-raised);
+  }
+</style>
+
+<div class="shell">
+  <nav class="nav">
+    <p class="brand">Ask PQNK</p>
+    <p class="brand-sub">Production Infra Memo</p>
+    <ol>
+      <li><a href="#a">Backend hosting</a></li>
+      <li><a href="#b">Production database</a></li>
+      <li><a href="#c">AI provider</a></li>
+      <li><a href="#d">Authentication</a></li>
+      <li><a href="#e">Backup &amp; recovery</a></li>
+      <li><a href="#f">Data separation</a></li>
+      <li><a href="#g">Dev → prod migration</a></li>
+      <li><a href="#h">Cost estimate</a></li>
+      <li><a href="#i">Recommendation</a></li>
+      <li><a href="#j">Deployment plan</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <div class="cover">
+      <p class="eyebrow">Plan prepared · Nothing provisioned</p>
+      <h1>Production Infrastructure &amp; Provider Decision</h1>
+      <p>Ask PQNK's local architecture and knowledge-boundary hardening are approved. §A–§I compare the options; §J is the exact, approved deployment plan — Render, one SQLite instance, a backup/restore procedure that has actually been rehearsed against a real copy of the schema (not just described), and a rollback plan. The main Pedaver site's static cPanel deployment is untouched by everything below.</p>
+      <div class="scope-box">
+        <span class="scope-pill">Direction approved</span>
+        <span class="scope-pill">Exact plan prepared</span>
+        <span class="scope-pill no">No provisioning</span>
+        <span class="scope-pill no">No purchase</span>
+        <span class="scope-pill no">No paid credentials</span>
+        <span class="scope-pill no">No commit/push</span>
+      </div>
+    </div>
+
+    <div class="decisions-banner">
+      <span class="db-label">Locked this round:</span>
+      <span class="db-item">Host — <b>Render</b></span>
+      <span class="db-item">Database — <b>SQLite, one persistent disk</b></span>
+      <span class="db-item">Instances — <b>exactly one</b>, while SQLite is in use</span>
+      <span class="db-item">AI — <b>Haiku-class</b> for pilot, provider <b>not</b> permanently locked</span>
+      <span class="db-item">Budget — <b>$10–25/mo</b>, conservative pilot</span>
+    </div>
+
+    <section class="card" id="a">
+      <div class="sec-label"><span class="sec-letter">A</span><h2>Ask PQNK backend hosting</h2></div>
+      <p class="sec-dek">The service is a hand-rolled <code>node:http</code> server with server-rendered Inbox views and a <code>node:sqlite</code> file on disk — a real, stateful, always-listening process, not a set of stateless functions. That shape decides most of this section before cost even enters the picture.</p>
+
+      <div class="callout rule"><strong>Why serverless is ruled out, not merely disfavored:</strong> <code>node:sqlite</code> needs a durable, always-attached local disk. Lambda, Vercel Functions, and Cloudflare Workers give either no filesystem or a wiped one between invocations. Running there would mean rewriting the persistence layer first (see §B) — that's a database decision forcing an architecture change, not a hosting preference.</p></div>
+
+      <div class="table-wrap">
+      <table>
+        <thead><tr><th>Option</th><th>Fit with current code</th><th>HTTPS + custom domain</th><th>Restart/recovery</th><th>Logs</th><th>Deploy simplicity</th><th>Lock-in</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Small VPS</strong><br><span class="mono" style="color:var(--ink-soft)">Hetzner, DigitalOcean, Linode</span></td>
+            <td>Exact — runs the existing <code>server.listen()</code> code unmodified</td>
+            <td>Manual (Caddy/Certbot) — 15 min one-time setup</td>
+            <td>systemd unit, auto-restart on crash</td>
+            <td>journalctl / plain log files, self-managed</td>
+            <td>Lowest — script or SSH deploy</td>
+            <td>None — plain Linux + Node, portable anywhere</td>
+          </tr>
+          <tr>
+            <td><strong>PaaS with persistent volumes</strong><br><span class="mono" style="color:var(--ink-soft)">Fly.io, Render, Railway</span></td>
+            <td>Exact — same code, containerized as-is</td>
+            <td>Automatic, free TLS, custom domain in dashboard</td>
+            <td>Built-in supervisor, zero-downtime redeploys</td>
+            <td>Built-in log viewer/streaming, no setup</td>
+            <td>Highest — git push or Docker image to deploy</td>
+            <td>Low — still a plain container, easy to move</td>
+          </tr>
+          <tr>
+            <td><strong>Serverless / FaaS</strong><br><span class="mono" style="color:var(--ink-soft)">Lambda, Vercel Functions, Workers</span></td>
+            <td>Breaks — no persistent disk for SQLite; needs a code rewrite of both the server entry point and the DB layer</td>
+            <td>Automatic</td>
+            <td>Automatic, but cold starts add latency</td>
+            <td>Built-in, often costs extra past free tier</td>
+            <td>High, but only after the rewrite above</td>
+            <td>Highest — handler signatures and platform APIs are vendor-specific</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
+      <p><strong>Environment secrets</strong> — every one of these platforms provides an encrypted env-var store in its dashboard, which is exactly the mechanism the code already expects (<code>ANTHROPIC_API_KEY</code>, <code>ASK_PQNK_SESSION_SECRET</code>, <code>ASK_PQNK_PEDAVER_PASSWORD</code> are all read from <code>process.env</code> today). No change needed to how the app reads its own configuration.</p>
+      <p><strong>Traffic fit</strong> — at low/moderate initial volume, the smallest tier of either a VPS or a PaaS persistent-volume service is genuine overkill in raw compute and comfortably enough in practice. The real differentiator at this stage is <em>operational burden</em>, not horsepower: a VPS is cheaper in dollars but costs your own time for OS patching, TLS renewal, and log rotation; a PaaS service costs a few dollars more and removes essentially all of that.</p>
+
+      <div class="callout rule"><strong>A verdict — approved: Render.</strong> A small Render Web Service with a persistent disk — same code, zero rewrite, HTTPS and <code>api.pedaver.com</code> in the dashboard rather than a manual cert pipeline, and low enough lock-in that moving to a VPS later is a weekend project, not a migration. Exact setup in §J.</div>
+    </section>
+
+    <section class="card" id="b">
+      <div class="sec-label"><span class="sec-letter">B</span><h2>Production database</h2></div>
+      <p class="sec-dek">The local build already runs SQLite in WAL mode (<code>PRAGMA journal_mode = WAL</code> — already set in <code>db.ts</code>), which is what makes option 1 viable at all: WAL allows concurrent readers alongside a single writer, and Ask PQNK's actual write pattern — Pedaver publishing occasionally — never approaches that limit.</p>
+
+      <div class="grid-2">
+        <div class="opt-card">
+          <h4>1 · Retain SQLite, persistent volume <span class="pick">recommended</span></h4>
+          <p>Zero code change. One file, trivial mental model, fast for this read-heavy / rarely-written workload. Requires a host from §A that mounts a genuinely persistent disk — this is the one hard constraint the local-file design imposes on hosting choice.</p>
+        </div>
+        <div class="opt-card">
+          <h4>2 · Move to PostgreSQL</h4>
+          <p>Real multi-writer concurrency and mature tooling, but a data-layer rewrite for a concurrency problem V1 doesn't have. The existing prepared statements map cleanly to <code>pg</code>/<code>postgres.js</code> later — this is deferred work, not avoided work.</p>
+        </div>
+        <div class="opt-card">
+          <h4>3 · Managed database service</h4>
+          <p>The natural landing spot <em>if/when</em> 1 stops being enough — managed Postgres add-ons exist on every platform in §A with a few minutes' setup. Not a V1 decision; a documented next step.</p>
+        </div>
+        <div class="opt-card">
+          <h4>The constraint that governs all three</h4>
+          <p>Local-file SQLite is fine on durable attached storage and actively unsafe on ephemeral/serverless storage. This is exactly why §A ruled out FaaS hosting — the two decisions are coupled, not independent.</p>
+        </div>
+      </div>
+
+      <div class="subhead">Persistence, backup, concurrency, migration</div>
+      <ul>
+        <li><strong>Persistence</strong> — one file on a mounted volume that survives redeploys and restarts (every PaaS option in §A supports this).</li>
+        <li><strong>Backup/restore</strong> — covered fully in §E; SQLite's single-file shape makes this simpler than a running Postgres server, not harder.</li>
+        <li><strong>Concurrency</strong> — WAL-mode SQLite handles Ask PQNK's actual shape (many readers, rare single writer) without contention, <strong>provided exactly one app instance is running.</strong> Approved as a locked constraint, not just a preference: Render's persistent disks attach to a single instance by design (no multi-instance disk sharing), which happens to enforce the same constraint SQLite already needs — the platform default and the database requirement point the same direction.</li>
+        <li><strong>Migration path</strong> — well-defined and deferred: move to managed Postgres when either write-concurrency or horizontal app scaling becomes a real, measured need — not a speculative one.</li>
+        <li><strong>Operational burden</strong> — near zero for SQLite (no separate DB process to patch, secure, or monitor); Postgres, even managed, is a second service with its own connection limits, dashboard, and monthly line item.</li>
+        <li><strong>Cost</strong> — SQLite: $0 beyond the disk you're already paying for. Managed Postgres: commonly $7–25+/mo at the smallest usable tier.</li>
+      </ul>
+
+      <div class="callout rule"><strong>B verdict:</strong> retain <code>node:sqlite</code> on a persistent attached volume for V1. It is not a compromise — it is the simplest architecture that correctly matches this specific read-heavy, low-write workload, provided (and only provided) the host in §A actually gives it durable storage.</div>
+    </section>
+
+    <section class="card" id="c">
+      <div class="sec-label"><span class="sec-letter">C</span><h2>AI provider</h2></div>
+      <p class="sec-dek">The role is narrow by design: conditional intent tagging (skipped whenever the deterministic recognizer is already confident) and grounded, structured-claim synthesis strictly from retrieved sources. Not open-ended chat. Not multilingual generation — that requirement was removed from V1 and doesn't factor into this comparison at all.</p>
+
+      <div class="table-wrap">
+      <table>
+        <thead><tr><th>Provider</th><th>Grounded-synthesis quality</th><th>Structured JSON</th><th>Latency</th><th>API cost (this workload)</th><th>Integration cost</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Anthropic Claude</strong><br><span class="mono" style="color:var(--ink-soft)">Haiku-class model</span></td>
+            <td>Strong instruction-following on "use only the provided text" — the single property this system depends on most</td>
+            <td>Reliable with an explicit JSON-only system prompt</td>
+            <td>Low, for short focused calls</td>
+            <td>Negligible at ≤2 short calls/question, many questions needing 0–1</td>
+            <td><strong>Zero</strong> — <code>anthropicProvider.ts</code> already implements the current claim/citation contract, unexercised only for lack of a key</td>
+          </tr>
+          <tr>
+            <td><strong>OpenAI</strong><br><span class="mono" style="color:var(--ink-soft)">GPT-4o-mini / 4.1-mini class</span></td>
+            <td>Strong; native structured-output mode enforces schema conformance directly</td>
+            <td>Excellent — dedicated structured-output feature</td>
+            <td>Low</td>
+            <td>Often the cheapest per-token of the three</td>
+            <td>Small — one new class behind the existing <code>AiProvider</code> interface</td>
+          </tr>
+          <tr>
+            <td><strong>Google Gemini</strong><br><span class="mono" style="color:var(--ink-soft)">Flash-class model</span></td>
+            <td>Good structured output; more general community reports of elaborating past a short source than the other two — worth validating before relying on it here</td>
+            <td>Good</td>
+            <td>Very low</td>
+            <td>Typically the cheapest of the three</td>
+            <td>Small — new class needed</td>
+          </tr>
+          <tr>
+            <td>Self-hosted / open-weight <span class="mono" style="color:var(--ink-soft)">(Llama, Mistral via Together/Groq/Fireworks)</span></td>
+            <td>Variable, needs its own evaluation</td>
+            <td>Variable</td>
+            <td>Variable</td>
+            <td>Can be lowest at real scale</td>
+            <td>Larger — a future cost lever once volume justifies the evaluation work, not a V1 candidate</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
+      <p><strong>Privacy/data handling</strong> — Anthropic's and OpenAI's API tiers both exclude submitted content from model training by default and publish clear retention terms; either is workable for agricultural Q&amp;A that contains no farmer PII (contact info is never sent to the model — confirmed in the local hardening pass). <strong>Rate limits</strong> at entry tier comfortably exceed anything pilot or moderate traffic (§H) would produce.</p>
+
+      <p><strong>Voice, without vendor lock-in</strong> — this is already solved by decisions made earlier in the architecture, not by which text model gets picked here. Speech-to-text and text-to-speech were designed as separate input/output adapters around a modality-agnostic core; adding voice later means picking an STT/TTS pair independently, with zero coupling to whichever LLM composes the answer text. The <code>AiProvider</code> interface gives the same independence for the text model itself — switching provider later is a new class implementing an existing interface, never a retrieval or grounding-validator rewrite.</p>
+
+      <div class="callout rule"><strong>C verdict — approved: Anthropic Claude, Haiku-class, for the initial pilot only.</strong> Chosen because it is <em>already fully integrated</em> (zero remaining code) and has shown the strongest fit for "never go beyond the source," the one property this system's grounding validator exists to backstop. Explicitly <strong>not</strong> a permanent lock-in: the <code>AiProvider</code> interface is the mechanism that keeps this reversible — OpenAI is the clear second choice if cost-per-token becomes the deciding factor at higher volume, and switching is a new class behind the existing interface, never a retrieval or grounding-validator change.</div>
+    </section>
+
+    <section class="card" id="d">
+      <div class="sec-label"><span class="sec-letter">D</span><h2>Production authentication</h2></div>
+      <p class="sec-dek">The local build's <code>auth.ts</code> is intentionally minimal: one shared password from an env var, an HMAC-signed session cookie, no throttling, no CSRF token. Production needs to close those gaps for a handful of named Pedaver reviewers — not replace the approach with an identity platform it doesn't need.</p>
+
+      <div class="table-wrap">
+      <table>
+        <thead><tr><th>Concern</th><th>Local build today</th><th>Production change</th></tr></thead>
+        <tbody>
+          <tr><td>Password storage</td><td>One shared password, plain env var</td><td>Per-reviewer bcrypt/argon2-hashed passwords in a small <code>users</code> table — still no external identity provider, a few dozen lines added to <code>auth.ts</code></td></tr>
+          <tr><td>Transport</td><td>Plain HTTP (local dev)</td><td>HTTPS enforced at the host/proxy layer (free with the §A recommendation); cookies set <code>Secure</code></td></tr>
+          <tr><td>Session cookie</td><td>HMAC-signed, <code>HttpOnly</code>, <code>SameSite=Lax</code></td><td>Add <code>Secure</code>; tighten to <code>SameSite=Strict</code> — an admin-only surface has no legitimate cross-site navigation to protect</td></tr>
+          <tr><td>CSRF</td><td>None</td><td>Per-session token embedded as a hidden form field on every Inbox POST, verified server-side — the classic-form-POST pattern the Inbox already uses is exactly the surface CSRF protection targets</td></tr>
+          <tr><td>Login throttling</td><td>None</td><td>Per-IP attempt limit with backoff/lockout on <code>/inbox/login</code> — a small, high-value single target is worth this even at low traffic</td></tr>
+          <tr><td>Audit trail</td><td><code>approved_by</code> hardcoded to the literal <code>"Pedaver"</code> — correct for the knowledge-authority guarantee, but not per-person</td><td>Add a separate <code>reviewer_username</code> field recording which logged-in individual published. <code>approved_by</code> stays fixed to <code>"Pedaver"</code> — this doesn't touch the locked knowledge-boundary provenance, it adds accountability alongside it</td></tr>
+          <tr><td>Secrets</td><td><code>process.env</code></td><td>Unchanged pattern; stored in the host's encrypted secret store, never in the repo</td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <div class="callout rule"><strong>D verdict:</strong> harden the existing <code>auth.ts</code> in place — hashed per-user passwords, tightened cookies, a CSRF token, login throttling, and a separate per-person audit field. Every item is a modest, well-understood addition to code that already exists; none of it calls for OAuth, SSO, or a managed identity provider for two or three named users.</div>
+    </section>
+
+    <section class="card" id="e">
+      <div class="sec-label"><span class="sec-letter">E</span><h2>Backup &amp; recovery</h2></div>
+      <p class="sec-dek">Farmer Advisory knowledge, the referral queue, question clusters, and private contact/context data all live in the same SQLite file, in their already-separated tables (§F) — so a file-level backup captures all four categories in one consistent, atomic snapshot.</p>
+
+      <div class="grid-2">
+        <div class="opt-card">
+          <h4>Render's built-in disk backups <span class="pick">recommended for pilot</span></h4>
+          <p>Render's persistent disks include automatic daily backups, restorable from the dashboard, at no extra cost beyond the disk itself — zero new services, zero new credentials, fits the approved conservative pilot budget exactly. Confirm the current retention window in Render's own docs when setting the disk up.</p>
+        </div>
+        <div class="opt-card">
+          <h4>Litestream → R2/B2 <span class="pick">future upgrade</span></h4>
+          <p>Continuous WAL streaming to S3-compatible storage, near-real-time point-in-time restore. The stronger option once Farmer Advisory content is valuable enough to justify tighter recovery points than a daily snapshot — not required to launch the pilot, deferred to keep this round's budget conservative.</p>
+        </div>
+      </div>
+
+      <p><strong>Restore time</strong> — Render disk restore from the dashboard: minutes, with up to 24h of possible loss (bounded, in practice, by how rarely Pedaver actually publishes — see the tested procedure in §J, which uses the same mechanism a Render restore relies on internally: a consistent file-level snapshot, safely swapped in while the app is stopped).</p>
+
+      <div class="callout"><strong>Data-retention note, not resolved here:</strong> because contact/context data shares the same file as public knowledge, any future retention or deletion policy for personal contact info (§13 of the referral workflow) should also account for how long old backups are kept. That's a policy call for Pedaver, not an infrastructure one — flagged so it isn't missed later.</div>
+
+      <div class="callout rule"><strong>E verdict — approved for pilot: Render's built-in disk backups.</strong> Zero extra cost, zero extra services, matches the $10–25/mo budget precisely. Litestream stays the documented upgrade path once real corpus value justifies it. The restore procedure itself has been rehearsed end-to-end — see §J.</div>
+    </section>
+
+    <section class="card" id="f">
+      <div class="sec-label"><span class="sec-letter">F</span><h2>Production data separation</h2></div>
+      <p class="sec-dek">Already true today, not a production-only concern — confirmed directly in the schema and the local hardening pass, carried forward unchanged.</p>
+      <ul>
+        <li><strong>Public Farmer Advisory knowledge</strong> — <code>farmer_advisory</code> table only; never contains contact fields; the only two public read endpoints (<code>/api/advisory</code>, <code>/api/advisory/:id</code>) select from it exclusively.</li>
+        <li><strong>Private referral/contact data</strong> — structurally separate in <code>referral_queue</code>, never exposed by any public endpoint, readable only through the authenticated Inbox.</li>
+        <li><strong>Authentication/secrets</strong> — environment variables only, never in the database, never in the git repo, never returned by any response body.</li>
+        <li><strong>Logs</strong> — one production rule to carry forward that doesn't exist as code yet: request/error logging must never dump full request bodies for <code>/api/refer</code>, since that would leak contact fields into log storage even though the database schema keeps them properly separated. Log the outcome and the reference number, not the submitted contact object.</li>
+      </ul>
+      <div class="callout rule"><strong>F verdict:</strong> the separation is a property of the schema already, not something production introduces — the one new item is a logging-hygiene rule for whoever wires up the production log pipeline.</div>
+    </section>
+
+    <section class="card" id="g">
+      <div class="sec-label"><span class="sec-letter">G</span><h2>Migration from local development</h2></div>
+      <p class="sec-dek">The local <code>ask-pqnk.sqlite</code> file is a development and testing artifact — as of this session's teardown-tested acceptance suite, it holds zero rows in all three tables. It should never be the seed for production.</p>
+      <ol>
+        <li><strong>Never copy the local <code>.sqlite</code> file to production.</strong> It is already gitignored (<code>data/*.sqlite</code>, confirmed untracked) and should stay outside any deploy artifact entirely.</li>
+        <li><strong>Production starts from the schema, not a file.</strong> <code>db.ts</code>'s <code>CREATE TABLE IF NOT EXISTS</code> statements run automatically on first boot against a fresh, empty volume — production is correctly empty on day one with no manual seeding step.</li>
+        <li><strong>Any genuine day-one content goes through the real pathway.</strong> If Pedaver wants to seed a few known common answers before the first real farmer question arrives, those are authored through the same <code>/inbox/:id/publish</code> action (or an explicit, clearly-labeled one-time seed script that constructs records with real provenance) — never a raw copy of anything from local testing.</li>
+        <li><strong>Pre-deploy checklist item:</strong> confirm the production database path/connection string points at a new, empty target before the first deploy, as a deliberate gate rather than an assumption.</li>
+      </ol>
+      <div class="callout rule"><strong>G verdict:</strong> production inherits the <em>schema</em>, never the <em>file</em> — the clean corpus requirement is satisfied by how the app already boots, not by anything extra that needs building.</div>
+    </section>
+
+    <section class="card" id="h">
+      <div class="sec-label"><span class="sec-letter">H</span><h2>Cost estimate</h2></div>
+      <p class="sec-dek">Ranges reflect typical current pricing for the categories named in §A–§E, not live quotes. The widest uncertainty by far is AI inference at higher volume — directly a function of real question volume and how much of it the deterministic layer keeps handling without ever calling the model, which is itself a locked design goal, not a guess.</p>
+
+      <div class="cost-tiers">
+        <div class="cost-card" style="border-color: var(--green); border-width: 1.5px;">
+          <div class="tier-name">Pilot &nbsp;·&nbsp; &lt;500 questions/mo <span class="pick">approved budget</span></div>
+          <div class="tier-total">$10 – 25/mo</div>
+          <div class="cost-row"><span>Render Web Service (Starter)</span><span>$7</span></div>
+          <div class="cost-row"><span>Render persistent disk (1GB)</span><span>~$1</span></div>
+          <div class="cost-row"><span>Database (SQLite, same disk)</span><span>$0</span></div>
+          <div class="cost-row"><span>AI inference (Haiku)</span><span>$1–5</span></div>
+          <div class="cost-row"><span>Backups (Render disk backups)</span><span>$0</span></div>
+          <div class="cost-row"><span>Custom domain + TLS</span><span>$0</span></div>
+          <div class="cost-row"><span>Monitoring (Render built-in)</span><span>$0</span></div>
+        </div>
+        <div class="cost-card">
+          <div class="tier-name">Moderate &nbsp;·&nbsp; 5–20k questions/mo</div>
+          <div class="tier-total">$25 – 80/mo</div>
+          <div class="cost-row"><span>Hosting</span><span>$10–25</span></div>
+          <div class="cost-row"><span>Database</span><span>$0</span></div>
+          <div class="cost-row"><span>AI inference</span><span>$10–40</span></div>
+          <div class="cost-row"><span>Backups/storage</span><span>$1–3</span></div>
+          <div class="cost-row"><span>Monitoring</span><span>$0–10</span></div>
+        </div>
+        <div class="cost-card">
+          <div class="tier-name">Significant &nbsp;·&nbsp; 100k+ questions/mo</div>
+          <div class="tier-total">$105 – 470/mo</div>
+          <div class="cost-row"><span>Hosting</span><span>$25–75</span></div>
+          <div class="cost-row"><span>Database</span><span>$0–50<sup>*</sup></span></div>
+          <div class="cost-row"><span>AI inference</span><span>$50–300</span></div>
+          <div class="cost-row"><span>Backups/storage</span><span>$5–15</span></div>
+          <div class="cost-row"><span>Monitoring</span><span>$10–30</span></div>
+        </div>
+      </div>
+      <p style="font-size:0.82rem; color:var(--ink-soft);">* Only if this is the point managed Postgres becomes justified (§B) — not assumed by default even at this tier.</p>
+
+      <div class="callout"><strong>The shape that matters:</strong> cost grows gradually and in step with validated real demand — there is no large fixed infrastructure commitment made up front at any of these tiers, and the biggest lever (AI inference) is the one this architecture already spends the most design effort minimizing. The itemized pilot total lands around $9–13/mo in practice, comfortably inside the approved $10–25/mo envelope, with headroom already built in for AI usage spikes or an instance-size bump without needing a new approval.</div>
+    </section>
+
+    <div class="recommend" id="i">
+      <div class="sec-label"><span class="sec-letter" style="color:var(--green)">I</span><h2>Recommended architecture</h2></div>
+      <p>The simplest production stack is the one that changes none of the application code approved in §A–§F of the local hardening pass — every piece below is a deployment target for code that already exists and already passed its full acceptance suite.</p>
+
+      <div class="stack-grid">
+        <div class="stack-item"><div class="role">Hosting</div><div class="choice">Render Web Service</div><p style="margin:4px 0 0;font-size:0.85rem;color:var(--ink-soft)">Starter tier, one instance, persistent disk, HTTPS + <code>api.pedaver.com</code> in the dashboard</p></div>
+        <div class="stack-item"><div class="role">Database</div><div class="choice">node:sqlite, WAL mode</div><p style="margin:4px 0 0;font-size:0.85rem;color:var(--ink-soft)">On the Render disk — already the code, unchanged</p></div>
+        <div class="stack-item"><div class="role">Backups</div><div class="choice">Render disk backups</div><p style="margin:4px 0 0;font-size:0.85rem;color:var(--ink-soft)">Automatic, daily, zero extra cost; restore procedure tested — §J</p></div>
+        <div class="stack-item"><div class="role">AI provider</div><div class="choice">Anthropic Claude (Haiku), pilot only</div><p style="margin:4px 0 0;font-size:0.85rem;color:var(--ink-soft)">Already integrated; not permanently locked — <code>AiProvider</code> keeps it swappable</p></div>
+        <div class="stack-item"><div class="role">Auth</div><div class="choice">Hardened auth.ts</div><p style="margin:4px 0 0;font-size:0.85rem;color:var(--ink-soft)">Hashed per-user passwords, CSRF, throttling, per-person audit field</p></div>
+        <div class="stack-item"><div class="role">Deploy</div><div class="choice">Manual deploy from Render dashboard</div><p style="margin:4px 0 0;font-size:0.85rem;color:var(--ink-soft)">Connected to the repo, triggered deliberately — never auto-deploy-on-push for this service</p></div>
+      </div>
+
+      <p><strong>Why this is the right fit, not just the cheapest one:</strong> it requires zero rewrites (no Express migration, no Postgres migration, no provider-abstraction change — the <code>AiProvider</code> interface and retrieval/gate/validator separation built during local hardening are exactly what make every future upgrade path available without an architectural do-over). It costs roughly a subscription's worth of money at pilot scale (§H) and scales in proportion to real, measured farmer adoption rather than a speculative up-front commitment. And every named alternative in §A–§C remains a documented, low-effort door to walk through later — Postgres, a second AI provider, horizontal scaling — none of them foreclosed by this choice, none of them needed today.</p>
+
+      <p style="margin-top:18px;"><a href="#j" style="font-weight:600;">↓ The exact deployment plan for this stack — §J</a></p>
+
+      <div class="stop-banner">Nothing above has been provisioned, purchased, deployed, committed, or pushed.<br>Awaiting approval before any action is taken.</div>
+    </div>
+
+    <section class="card" id="j" style="border-color: var(--green); border-width: 1.5px;">
+      <div class="sec-label"><span class="sec-letter">J</span><h2>Approved deployment plan — Render + SQLite</h2></div>
+      <p class="sec-dek">Exact steps for the stack approved in §I. Nothing in this section has been executed against Render — no service created, no credentials entered. The backup/restore procedure <em>has</em> been executed, end to end, against a real copy of the production schema on this machine, with no cloud account involved — see J.6.</p>
+
+      <div class="subhead">J.1 — Render Web Service, exact configuration</div>
+      <dl class="kv-list">
+        <dt>Service type</dt><dd>Web Service (not Static Site, not Background Worker — only Web Services take inbound HTTP, support a persistent disk, and accept a custom domain)</dd>
+        <dt>Repo / root directory</dt><dd><code>pedaver-website</code> repo, Root Directory set to <code>ask-pqnk-service</code> (monorepo — Render builds only that subdirectory)</dd>
+        <dt>Runtime</dt><dd>Node — add <code>"engines": {"node": ">=22"}</code> to <code>ask-pqnk-service/package.json</code> so Render provisions a version that actually has <code>node:sqlite</code> (not yet added locally — see J.4)</dd>
+        <dt>Build command</dt><dd><code>npm install</code></dd>
+        <dt>Start command</dt><dd><code>npm start</code> (runs <code>tsx src/server.ts</code> — no watch mode, matches production use as-is)</dd>
+        <dt>Instance size</dt><dd>Starter ($7/mo) — Render's Free tier does not support persistent disks and spins down on inactivity; unsuitable for both requirements. Starter is the real floor.</dd>
+        <dt>Region</dt><dd>Whichever Render region is geographically closest to Pakistan-based traffic with the lowest advertised latency at signup time (worth a quick check in Render's region list, not decided here)</dd>
+        <dt>Auto-deploy</dt><dd><strong>Off.</strong> Manual "Deploy latest commit" trigger from the dashboard — nothing goes live from a push without a deliberate action, consistent with this engagement's standing caution around unattended deploys</dd>
+        <dt>Health check path</dt><dd><code>/api/advisory</code> (already exists, always returns 200, reads only public data — zero-code-change option) or a new <code>/healthz</code> route (small addition, see J.4)</dd>
+      </dl>
+
+      <div class="subhead">J.2 — Persistent disk</div>
+      <dl class="kv-list">
+        <dt>Size</dt><dd>1 GB (the current corpus is well under 1 MB at zero rows; thousands of Farmer Advisory records would still be low tens of MB — 1 GB is ample headroom, not a tight fit)</dd>
+        <dt>Mount path</dt><dd><code>/data</code> — a clean, dedicated path, not reused from anything else</dd>
+        <dt>Alignment with the app's DB path</dt><dd>See J.4 — this is the one place the current code needs a small, explicit change before this disk is useful.</dd>
+      </dl>
+
+      <div class="subhead">J.3 — Environment variables (set as Render secrets, never in the repo)</div>
+      <div class="table-wrap">
+      <table>
+        <thead><tr><th>Variable</th><th>Value</th><th>Note</th></tr></thead>
+        <tbody>
+          <tr><td><code>PORT</code></td><td><em>set automatically by Render</em></td><td>Do not override — see J.4, the app must read this, not <code>ASK_PQNK_PORT</code></td></tr>
+          <tr><td><code>ASK_PQNK_DATA_DIR</code></td><td><code>/data</code></td><td>New variable — see J.4</td></tr>
+          <tr><td><code>AI_PROVIDER</code></td><td><code>anthropic</code></td><td>Selects the already-built <code>AnthropicAiProvider</code></td></tr>
+          <tr><td><code>ANTHROPIC_API_KEY</code></td><td><em>the pilot API key</em></td><td>Not entered yet — this is the "paid credentials" this plan stops short of</td></tr>
+          <tr><td><code>ASK_PQNK_SESSION_SECRET</code></td><td><em>a freshly generated random value</em></td><td><strong>Must be set explicitly.</strong> If unset, <code>auth.ts</code> falls back to a value regenerated on every restart, silently invalidating every logged-in session on each redeploy</td></tr>
+          <tr><td><code>ASK_PQNK_PEDAVER_PASSWORD</code> <em>(interim)</em></td><td><em>a strong password</em></td><td>Until the per-user hashed-password change in §D lands; treat as a placeholder, not the final auth model</td></tr>
+          <tr><td><code>ASK_PQNK_ALLOWED_ORIGIN</code></td><td><code>https://pedaver.com</code> <em>(confirm exact production origin)</em></td><td>CORS allow-list for the public API — currently defaults to localhost</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>On the main site's side: set <code>NEXT_PUBLIC_ASK_PQNK_API_URL=https://api.pedaver.com</code> in the GitHub Actions build environment. No code change needed there — <code>askPqnkClient.ts</code> already reads this variable with a localhost fallback.</p>
+
+      <div class="subhead">J.4 — Pre-deploy code readiness checklist <span class="tested-badge">Not yet done</span></div>
+      <p>Three small, low-risk changes to <code>ask-pqnk-service</code>, identified while preparing this exact plan. None have been made — they need your go-ahead like any other code change, separate from the infrastructure approval above.</p>
+      <ul class="checklist">
+        <li><strong>Port binding.</strong> <code>server.ts</code> currently reads <code>ASK_PQNK_PORT</code>; Render injects and expects <code>PORT</code>. One-line fix: <code>Number(process.env.PORT ?? process.env.ASK_PQNK_PORT ?? 4001)</code> — keeps local dev unchanged, makes Render's routing work.</li>
+        <li><strong>Data directory.</strong> <code>db.ts</code> currently resolves the SQLite path relative to its own compiled location, not to any env var. Add <code>ASK_PQNK_DATA_DIR</code>, defaulting to today's relative path when unset (zero effect on local dev), and point it at <code>/data</code> in Render — this is what makes the persistent disk actually the disk the app writes to, rather than an unused, unrelated mount.</li>
+        <li><strong>Health check route</strong> <em>(optional)</em> — a trivial <code>GET /healthz</code> returning <code>200</code> with no DB access, or skip this and point Render's health check at the already-public <code>/api/advisory</code> instead.</li>
+      </ul>
+
+      <div class="subhead">J.5 — Custom domain: api.pedaver.com</div>
+      <ol class="step-list">
+        <li>In Render's dashboard, add the custom domain <code>api.pedaver.com</code> to the service.</li>
+        <li>Render provides a CNAME target. Add a CNAME record for the <code>api</code> subdomain, pointing at that target, in whichever DNS provider manages <code>pedaver.com</code> — confirm access to that DNS panel before starting (this may be the domain registrar, not the cPanel host).</li>
+        <li>Render auto-issues a free TLS certificate once DNS propagates — typically minutes, occasionally longer.</li>
+        <li>Update <code>ASK_PQNK_ALLOWED_ORIGIN</code> and <code>NEXT_PUBLIC_ASK_PQNK_API_URL</code> (J.3) to the real domains once this is live.</li>
+      </ol>
+
+      <div class="subhead">J.6 — Backup &amp; restore procedure <span class="tested-badge">✓ Tested, this session, against a real copy of the schema</span></div>
+      <p>Render's built-in disk backups (§E) handle the routine case automatically. The procedure below is what a <em>manual</em> restore looks like — for a pre-migration checkpoint, or if the automatic backup needs to be pulled and verified by hand. It was rehearsed just now against the actual local development database (which was already confirmed empty of real data), not against a hypothetical.</p>
+
+      <div class="drill-log">
+        <div class="dl-row ok"><div class="dl-icon">1</div><div>Opened the DB, inserted a marker record with full provenance fields, took a consistent snapshot with SQLite's own <code>VACUUM INTO</code>, closed the connection.<code>Snapshot: 45,056 bytes — succeeded.</code></div></div>
+        <div class="dl-row warn"><div class="dl-icon">!</div><div><strong>First attempt found a real bug in the naive procedure.</strong> Swapping only the main <code>.sqlite</code> file while stale <code>-wal</code>/<code>-shm</code> sidecar files remained (and, separately, while a background process still held the database open) produced <code>PRAGMA integrity_check</code> failures and silently missing data.<code>integrity_check: "wrong # of entries in index idx_queue_cluster"</code></div></div>
+        <div class="dl-row ok"><div class="dl-icon">2</div><div>Corrected procedure: confirmed the app process was fully stopped, then removed <strong>all three</strong> files together — <code>.sqlite</code>, <code>.sqlite-wal</code>, <code>.sqlite-shm</code> — before restoring, since a WAL file is tied to a specific base file's state and a mismatched pairing is exactly what caused the corruption above.</div></div>
+        <div class="dl-row ok"><div class="dl-icon">3</div><div>Copied the snapshot in as the new main file. Reopened.<code>PRAGMA integrity_check → "ok"</code></div></div>
+        <div class="dl-row ok"><div class="dl-icon">4</div><div>Verified the marker record restored with every provenance field intact.<code>{ id: "backup-drill-marker", approved_by: "Pedaver", publication_status: "Published", origin_reference_number: "PQNK-Q-DRILLTEST" }</code></div></div>
+        <div class="dl-row ok"><div class="dl-icon">5</div><div>Removed the marker and the drill snapshot; confirmed the database returned to its exact prior state.<code>{ advisory: 0, queue: 0, cluster: 0 } — matches baseline</code></div></div>
+      </div>
+
+      <p><strong>The procedure, as it must be followed in production:</strong></p>
+      <ol class="step-list">
+        <li><strong>Stop the app instance</strong> (Render dashboard → Suspend, or scale to zero) before touching any database file directly. An open connection holding a live WAL is what turned a routine file swap into corruption during this drill.</li>
+        <li><strong>Take or retrieve a snapshot.</strong> Either Render's own daily disk backup, or a fresh manual one via <code>VACUUM INTO</code> if the app can still be reached (e.g. a one-off admin script) before stopping it.</li>
+        <li><strong>Remove all three live files</strong> — the main <code>.sqlite</code> file and its <code>-wal</code>/<code>-shm</code> siblings, if present — never just the main file alone.</li>
+        <li><strong>Copy the snapshot in</strong> as the new main file.</li>
+        <li><strong>Restart the app</strong> — a clean boot with no stale sidecar files will recreate fresh, empty WAL/SHM files on first write, exactly as local dev already does.</li>
+        <li><strong>Verify</strong> — run <code>PRAGMA integrity_check</code> and spot-check a known record before considering the restore complete.</li>
+      </ol>
+
+      <div class="callout rule"><strong>What this drill actually proved:</strong> the difference between "described" and "tested" here was concrete — the first documented instinct (swap the file, done) is exactly wrong for a WAL-mode database, and running it for real is what surfaced that before it could happen against real Farmer Advisory content.</div>
+
+      <div class="subhead">J.7 — Rollback plan</div>
+      <ul>
+        <li><strong>Application rollback</strong> — Render retains deploy history; rolling back is redeploying the previous successful build from the dashboard, one action.</li>
+        <li><strong>Database rollback</strong> — restore from the most recent Render disk backup (or a manual pre-change snapshot, J.6) using the tested procedure above.</li>
+        <li><strong>Before any schema-affecting deploy</strong> (adding a column, as happened during this engagement's own local hardening pass): take a manual <code>VACUUM INTO</code> checkpoint first, as cheap insurance, before applying the change.</li>
+        <li><strong>Schema changes are never automatic in production.</strong> <code>db.ts</code>'s <code>CREATE TABLE IF NOT EXISTS</code> is additive-only — a new column needs one explicit, deliberate <code>ALTER TABLE</code> run against the production database, exactly mirroring how it was done locally this session (never a blind drop/recreate against a database holding real records).</li>
+      </ul>
+
+      <div class="subhead">J.8 — Go-live checklist, in order</div>
+      <ol class="step-list">
+        <li>Approve and make the three code changes in J.4 (port, data dir, health check).</li>
+        <li>Confirm DNS panel access for <code>pedaver.com</code> (J.5).</li>
+        <li>Generate <code>ASK_PQNK_SESSION_SECRET</code> and obtain the <code>ANTHROPIC_API_KEY</code> — held ready, not yet entered anywhere.</li>
+        <li>Create the Render Web Service (J.1), attach the persistent disk (J.2), set every environment variable except the two secrets above.</li>
+        <li>First deploy with a placeholder/test key, confirm the service boots and <code>/api/advisory</code> returns <code>200</code> with an empty <code>records</code> array — proof the schema created itself cleanly (§G) with no carried-over local data.</li>
+        <li>Enter the real <code>ANTHROPIC_API_KEY</code> and <code>ASK_PQNK_SESSION_SECRET</code>.</li>
+        <li>Add the custom domain (J.5), wait for DNS + TLS, confirm <code>https://api.pedaver.com/api/advisory</code> works.</li>
+        <li>Update <code>NEXT_PUBLIC_ASK_PQNK_API_URL</code> in the main site's build environment and redeploy the static site.</li>
+        <li>Run the full local acceptance suite's HTTP-facing checks against the production URL as a smoke test, before announcing anything.</li>
+        <li>Confirm Render's disk-backup schedule is active in the dashboard.</li>
+      </ol>
+
+      <div class="stop-banner">Plan prepared. No Render service created, no domain configured, no credentials entered.<br>Awaiting approval before step 1 of J.8.</div>
+    </section>
+
+    <footer class="doc-footer">Ask PQNK — Production Infrastructure &amp; Provider Decision · Analysis only</footer>
+  </main>
+</div>

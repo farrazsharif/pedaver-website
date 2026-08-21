@@ -1,0 +1,18 @@
+{
+  "name": "ask-pqnk-service",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Ask PQNK V1 backend — independently deployable, separate from the static Next.js Pedaver site. Local-only in this build (Architecture 1.2 / V1 spec).",
+  "type": "module",
+  "scripts": {
+    "export-content": "tsx scripts/export-content.ts",
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "seed": "tsx scripts/seed-check.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.23.0",
+    "typescript": "^5.7.0"
+  }
+}
