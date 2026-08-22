@@ -14041,26 +14041,30 @@
 ,
 {
 "slug":"why-only-4kg-of-np-during-pqnk-transition",
-"primarySubject":"Why PQNK's transitional 4 kg NP per acre dose is a temporary bridge, not a permanent fertilizer programme",
+"primarySubject":"Why PQNK's transitional 4 kg NP per acre dose is a temporary bridge, not a permanent fertilizer programme, and how soil-solution physics (mass flow, diffusion, transpiration) actually delivers nutrients to roots",
 "questionsAnswered":[
 "If conventional farming recommends bags of fertilizer, how can 4 kg of NP be enough during PQNK transition?",
-"Why not apply a full bag of fertilizer just to be safe?",
-"Why is PQNK's transitional fertilizer applied through furrow irrigation water instead of broadcast?",
-"Does PQNK's 4 kg NP recommendation ever become the permanent fertilizer programme?",
+"How do nutrients actually travel from the soil to a plant's roots?",
+"What is the difference between over-irrigation and waterlogging?",
+"Why does too much nitrogen make a crop grow lush and delay maturity?",
+"Is NPK fertilizer the same as complete plant nutrition?",
+"Why is a full bag of fertilizer not 'safer' than a small corrective dose?",
 "How much of a plant's mass actually comes from fertilizer versus air and water?",
-"Why can a large fertilizer dose harm the soil life PQNK is trying to restore?"
+"What role does transpiration play in how a plant absorbs nutrients?"
 ],
 "keywords":[
 "4 kg NP",
 "PQNK transition fertilizer",
 "plant mass composition",
-"soil nutrient conversion",
-"fertilizer dependency",
+"soil solution",
+"mass flow nutrient delivery",
+"diffusion nutrient uptake",
+"transpiration",
+"over-irrigation vs waterlogging",
+"nitrogen luxury consumption",
+"NPK complete nutrition",
 "furrow-applied fertilizer",
-"nutrient availability vs quantity",
-"biological nutrient cycling",
-"chelation fertilizer",
-"slow release fertilizer"
+"soil moisture management"
 ],
 "geography":null,
 "crops":[],
@@ -14068,32 +14072,37 @@
 "Nutrient Deficiency Symptoms (Plant-Visible)",
 "External Input Dependency",
 "Preventive/Prophylactic Over-Application of Inputs (Fertilizer/Nitrogen)",
-"Nutrient Retention / Delivery Efficiency Concerns"
+"Nutrient Retention / Delivery Efficiency Concerns",
+"Over-Irrigation",
+"Waterlogging",
+"Excess Vegetative Growth (at expense of yield/flowering)"
 ],
 "problemFamily":[
 "Plant Growth & Nutrition",
 "Cost, Profit & Markets",
-"Transition / Conversion"
+"Transition / Conversion",
+"Water & Drainage"
 ],
 "fieldPractices":[
 "Soil Biology Restoration (General)",
 "Biological Nutrient Cycling",
 "PQNK Transition Protocol (Staged)",
 "Furrow Irrigation",
-"Reduced/Eliminated Chemical Input"
+"Reduced/Eliminated Chemical Input",
+"Soil Moisture Management (SMM)"
 ],
 "machineryTools":[],
 "climateType":[],
 "scientificDomains":[
 "Soil",
 "Nutrition",
-"Transition"
+"Transition",
+"Water",
+"Plants"
 ],
 "pqnkPrinciples":[
 "No Soil Disturbance",
-"No Inundation",
-"Permanent Biological Cover",
-"Maximum Biodiversity"
+"No Inundation"
 ],
 "productionStages":[
 "Transition/Conversion",
@@ -14104,11 +14113,19 @@
 "scienceLinks":[
 {
 "page":"/science/soil",
-"why":"soil mineral reserves and the biological conversion system that makes them plant-available"
+"why":"soil solution, mineral reserves and the biological conversion system that makes them plant-available"
+},
+{
+"page":"/science/water",
+"why":"mass flow and diffusion as the mechanisms that deliver dissolved nutrients to roots; over-irrigation versus waterlogging"
+},
+{
+"page":"/science/plants",
+"why":"transpiration physiology, leaf area and nitrogen's role as a growth-signaling molecule"
 },
 {
 "page":"/science/nutrition",
-"why":"plant mass composition and on-demand nutrient conversion versus fertilizer supply"
+"why":"plant mass composition, luxury consumption, and why NPK alone is not complete nutrition"
 },
 {
 "page":"/science/transition",
