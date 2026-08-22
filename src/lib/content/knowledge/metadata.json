@@ -14132,5 +14132,84 @@
 "why":"4 kg NP as a temporary transitional bridge dose, not a permanent fertility system"
 }
 ]
+},
+{
+"slug":"from-chemistry-to-biology-what-pqnk-really-means",
+"primarySubject":"Why PQNK's 'from chemistry to biology' phrase means shifting from externally managed to biologically regulated soil chemistry, not eliminating chemistry itself",
+"questionsAnswered":[
+"What does PQNK really mean by 'from chemistry to biology'?",
+"Does PQNK reject or ignore soil chemistry?",
+"Why doesn't PQNK use the term 'soil biochemistry' or 'soil bioscience' instead?",
+"What is the difference between externally managed chemistry and biologically regulated chemistry?",
+"How does soil biology make nutrients like phosphorus available without chemistry stopping?",
+"Why do PQNK's four principles have to work together rather than individually?",
+"Is PQNK anti-chemistry or anti-science?"
+],
+"keywords":[
+"from chemistry to biology",
+"biologically regulated chemistry",
+"externally managed chemistry",
+"rhizosphere",
+"root exudates",
+"soil biochemistry",
+"soil bioscience",
+"Natural Ecosystem Science",
+"mycorrhizal fungi",
+"PQNK four principles",
+"system management vs input management"
+],
+"geography":null,
+"crops":[],
+"fieldProblems":[
+"External Input Dependency",
+"Terminology / Framework Confusion"
+],
+"problemFamily":[
+"Plant Growth & Nutrition",
+"Transition / Conversion"
+],
+"fieldPractices":[
+"Soil Biology Restoration (General)",
+"Biological Nutrient Cycling",
+"PQNK Transition Protocol (Staged)",
+"Reduced/Eliminated Chemical Input"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Soil",
+"Plants",
+"Nutrition",
+"Transition"
+],
+"pqnkPrinciples":[
+"No Soil Disturbance",
+"No Inundation",
+"Permanent Biological Cover",
+"Maximum Biodiversity"
+],
+"productionStages":[
+"Transition/Conversion"
+],
+"evidenceType":"Philosophical/Framework Argument",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/soil",
+"why":"the rhizosphere and phosphorus mobilization as the clearest example of biologically regulated versus externally managed chemistry"
+},
+{
+"page":"/science/plants",
+"why":"root exudates and how living roots actively change the chemical environment around themselves"
+},
+{
+"page":"/science/nutrition",
+"why":"why biological regulation of nutrient availability is not the same as eliminating chemistry"
+},
+{
+"page":"/science/transition",
+"why":"KP-190's small transitional NP dose as the practical test of restoring biological regulation rather than just reducing a chemical dose"
+}
+]
 }
 ]
