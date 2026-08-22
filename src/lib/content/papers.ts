@@ -22,7 +22,13 @@ export interface Paper {
   category: PaperCategory;
   title: string;
   summary: string;
-  publishedDate: string; // ISO date, e.g. "2026-07-25"
+  publishedDate: string; // ISO date, e.g. "2026-07-25" — original publication date, never changed by later revisions
+  /** ISO date of the latest substantive revision (e.g. an R1/R2 rewrite). Omit
+   * entirely for papers that have never been revised — every consumer falls
+   * back to publishedDate when this is absent, so omitting it is a no-op for
+   * the other 189 papers. A substantive revision does not get a new KP
+   * number, slug, or PDF URL — it updates this field only. */
+  modifiedDate?: string;
   pdfPath?: string; // path under /public, e.g. "/papers/the-evolution-of-seed-placement.pdf"
   externalUrl?: string; // use instead of pdfPath when the paper is hosted elsewhere (e.g. a journal DOI) and the PDF itself isn't hosted on this site
   externalPublisher?: string; // e.g. "Paddy and Water Environment (Springer, 2011)" — shown next to the external link
@@ -5018,7 +5024,8 @@ export const papers: Paper[] = [
     title: "Why Only 4 kg of NP During PQNK Transition?",
     summary:
       "Answers a transitioning farmer's question, why is PQNK's transitional dose only about 4 kg of NP per acre, by tracing how a plant actually feeds through a water-based soil solution shaped by transpiration, mass flow and diffusion rather than by counting fertilizer bags, and by drawing a precise distinction between over-irrigation and waterlogging that explains why excess soluble nitrogen produces lush, delayed, insect-prone growth.",
-    publishedDate: "2026-08-22",
+    publishedDate: "2026-08-21",
+    modifiedDate: "2026-08-22",
     pdfPath: "/papers/why-only-4kg-of-np-during-pqnk-transition.pdf",
     heroImage: "/images/cereal-green.jpg",
     abstract: [

@@ -77,11 +77,12 @@ export default async function PaperDetailPage({
     // datePublished always reflects paper.publishedDate as authored (this
     // is correct even for externally-cited papers, where it's the cited
     // work's own original date — see sitemap.ts for why lastmod handles
-    // that case differently). No separate "last edited" signal exists yet,
-    // so dateModified mirrors it rather than asserting a freshness claim
-    // this data can't back up.
+    // that case differently). dateModified uses modifiedDate when a
+    // substantive revision (e.g. an R1 rewrite) has set one, falling back
+    // to publishedDate for the common case of a paper that's never been
+    // revised.
     datePublished: paper.publishedDate,
-    dateModified: paper.publishedDate,
+    dateModified: paper.modifiedDate ?? paper.publishedDate,
     ...(paper.heroImage ? { image: `${SITE_URL}${paper.heroImage}` } : {}),
   };
 

@@ -50,9 +50,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // page about it was last touched. Using it as lastmod there makes a
     // current page look 15 years stale to crawlers. Fall back to the same
     // build-time signal every other content type already uses.
+    // modifiedDate (set only when a substantive revision like an R1 rewrite
+    // has happened) is the most recent applicable date when present, since
+    // that's a genuine "this page changed" signal for crawlers.
     ...papers.map((paper) => ({
       url: `${SITE_URL}/papers/${paper.slug}`,
-      lastModified: paper.externalUrl ? now : new Date(paper.publishedDate),
+      lastModified: paper.externalUrl ? now : new Date(paper.modifiedDate ?? paper.publishedDate),
     })),
     ...machines.map((machine) => ({ url: `${SITE_URL}/machines/${machine.slug}`, lastModified: now })),
     ...resources.map((resource) => ({ url: `${SITE_URL}/resources/${resource.slug}`, lastModified: now })),
