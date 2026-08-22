@@ -47,7 +47,6 @@ export async function generateMetadata({
     title: `${paper.title} | Pedaver`,
     description: paper.summary,
     path: `/papers/${slug}`,
-    image: paper.heroImage ? `${SITE_URL}${paper.heroImage}` : undefined,
     type: "article",
   });
 }
@@ -83,7 +82,6 @@ export default async function PaperDetailPage({
     // revised.
     datePublished: paper.publishedDate,
     dateModified: paper.modifiedDate ?? paper.publishedDate,
-    ...(paper.heroImage ? { image: `${SITE_URL}${paper.heroImage}` } : {}),
   };
 
   return (
