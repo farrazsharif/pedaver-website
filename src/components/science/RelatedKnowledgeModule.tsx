@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { papers } from "@/lib/content/papers";
-import { getMetadata, REQUIRES_REVIEW, EXTERNAL_EVIDENCE } from "@/lib/content/knowledge/taxonomy";
+import { getMetadata, EXTERNAL_EVIDENCE } from "@/lib/content/knowledge/taxonomy";
 import { getRelatedKnowledgeForScience } from "@/lib/content/knowledge/related";
 import TrackedRelatedLink from "@/components/analytics/TrackedRelatedLink";
 import Section from "@/components/Section";
@@ -25,13 +25,6 @@ const DOMAIN_LABELS: Record<string, string> = {
 };
 
 function AuthorityTag({ status }: { status: string }) {
-  if (status === REQUIRES_REVIEW) {
-    return (
-      <span className="inline-flex items-center rounded-full border border-amber-300 bg-amber-50 px-2 py-0.5 text-[10px] font-semibold text-amber-800">
-        Editorial Review Pending
-      </span>
-    );
-  }
   if (status === EXTERNAL_EVIDENCE) {
     return (
       <span className="inline-flex items-center rounded-full border border-slate-300 bg-slate-50 px-2 py-0.5 text-[10px] font-semibold text-slate-700">
@@ -67,7 +60,7 @@ export default function RelatedKnowledgeModule({ domainSlug }: { domainSlug: str
 
         <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {items.map(({ paper, meta, why }) => {
-            const hasBadge = meta.authorityStatus === REQUIRES_REVIEW || meta.authorityStatus === EXTERNAL_EVIDENCE;
+            const hasBadge = meta.authorityStatus === EXTERNAL_EVIDENCE;
             const tags = [...meta.crops.slice(0, 2), ...meta.fieldProblems.slice(0, 1)];
             return (
               <TrackedRelatedLink

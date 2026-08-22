@@ -12,7 +12,7 @@ import TrackedPdfLink from "@/components/analytics/TrackedPdfLink";
 import TrackedExternalLink from "@/components/analytics/TrackedExternalLink";
 import TrackedRelatedLink from "@/components/analytics/TrackedRelatedLink";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
-import { getMetadata, REQUIRES_REVIEW, EXTERNAL_EVIDENCE } from "@/lib/content/knowledge/taxonomy";
+import { getMetadata, EXTERNAL_EVIDENCE } from "@/lib/content/knowledge/taxonomy";
 import { getRelatedKnowledge } from "@/lib/content/knowledge/related";
 import { getFarmerQuestionOrigin } from "@/lib/content/knowledge/farmerQuestions";
 import FarmerQuestionBlock from "@/components/papers/FarmerQuestionBlock";
@@ -107,18 +107,6 @@ export default async function PaperDetailPage({
 
       {farmerQuestionOrigin && <FarmerQuestionBlock origin={farmerQuestionOrigin} />}
 
-      {meta?.authorityStatus === REQUIRES_REVIEW && (
-        <div className="border-b border-amber-200 bg-amber-50">
-          <div className="mx-auto max-w-4xl px-4 py-4 sm:px-6">
-            <p className="text-sm text-amber-900">
-              <span className="font-semibold">PQNK Authenticated — Editorial Consistency Review Pending —</span>{" "}
-              this paper&rsquo;s underlying PQNK knowledge is authenticated. Wording, terminology, and
-              presentation consistency with the rest of the Pedaver knowledge system are still being
-              finalized.
-            </p>
-          </div>
-        </div>
-      )}
       {meta?.authorityStatus === EXTERNAL_EVIDENCE && (
         <div className="border-b border-slate-200 bg-slate-50">
           <div className="mx-auto max-w-4xl px-4 py-4 sm:px-6">

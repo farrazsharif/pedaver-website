@@ -11,7 +11,6 @@ import {
   PRACTICES_IN_USE,
   PROBLEM_FAMILIES,
   SCIENTIFIC_DOMAINS,
-  REQUIRES_REVIEW,
   EXTERNAL_EVIDENCE,
   problemsInFamily,
 } from "@/lib/content/knowledge/taxonomy";
@@ -68,13 +67,6 @@ function writeStateToURL(filters: Filters, sort: SortMode) {
 }
 
 function AuthorityBadge({ status }: { status: string }) {
-  if (status === REQUIRES_REVIEW) {
-    return (
-      <span className="inline-flex items-center gap-1 rounded-full border border-amber-300 bg-amber-50 px-2.5 py-0.5 text-[11px] font-semibold text-amber-800">
-        Editorial Review Pending
-      </span>
-    );
-  }
   if (status === EXTERNAL_EVIDENCE) {
     return (
       <span className="inline-flex items-center gap-1 rounded-full border border-slate-300 bg-slate-50 px-2.5 py-0.5 text-[11px] font-semibold text-slate-700">
