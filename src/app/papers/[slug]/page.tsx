@@ -133,23 +133,6 @@ export default async function PaperDetailPage({
         </div>
       )}
 
-      {paper.heroImage && (
-        <div>
-          <div className="h-56 w-full overflow-hidden sm:h-72 lg:h-80">
-            <img
-              src={paper.heroImage}
-              alt={paper.title}
-              className="h-full w-full object-cover object-top"
-            />
-          </div>
-          {paper.heroImageCaption && (
-            <p className="mx-auto max-w-4xl px-4 pt-2 text-center text-xs text-ink-soft sm:px-6">
-              {paper.heroImageCaption}
-            </p>
-          )}
-        </div>
-      )}
-
       {paper.videoFile && (
         <Section>
           <div className="mx-auto max-w-3xl">

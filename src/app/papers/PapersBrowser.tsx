@@ -93,15 +93,13 @@ function PaperCard({ paper, sortMode }: { paper: Paper; sortMode: SortMode }) {
       href={`/papers/${paper.slug}`}
       className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition hover:-translate-y-1 hover:shadow-md"
     >
-      {paper.heroImage && (
-        <div className="h-40 w-full overflow-hidden">
-          <img
-            src={paper.heroImage}
-            alt={paper.title}
-            className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
-          />
-        </div>
-      )}
+      {/* Interim editorial state: hero images are deliberately off site-wide (cards
+          and paper detail pages) while they're reviewed paper-by-paper (see project
+          memory). This accent bar replaces the image slot so cards read as
+          intentionally text-first rather than as missing an image. paper.heroImage
+          itself is untouched — still set in data and still used for Open Graph/
+          JSON-LD image metadata. */}
+      <div className="h-1.5 w-full flex-none bg-accent" aria-hidden="true" />
       <div className="flex flex-1 flex-col p-6">
         <div className="flex flex-wrap items-center gap-2">
           <p className="text-xs font-semibold uppercase tracking-wide text-accent">
