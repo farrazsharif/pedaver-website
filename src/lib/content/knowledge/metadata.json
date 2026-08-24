@@ -14285,5 +14285,160 @@
 "why":"biological nutrient cycling and pest regulation as the internally regenerated functions that replace recurring purchased inputs"
 }
 ]
+},
+{
+"slug":"the-global-wheat-crisis-is-a-warning",
+"primarySubject":"Why the global wheat crisis reveals a deeper dependency on an unstable production model, and why Pakistan's food security requires rebuilding domestic biological production capacity rather than relying on trade and purchased inputs",
+"questionsAnswered":[
+"Why is the global wheat crisis more than a climate or trade problem?",
+"What is the 'fourth assumption' behind global food-system fragility?",
+"Why do two fields with the same rainfall experience different drought stress?",
+"How does PQNK reduce a wheat crop's irrigation and fertiliser dependency?",
+"Why should agricultural productivity be measured in nourishment, not just tonnes?",
+"What does it mean to treat soil as national infrastructure?",
+"What should Pakistan's wheat policy prioritize instead of just higher yield?"
+],
+"keywords":[
+"wheat crisis",
+"food security Pakistan",
+"global breadbasket concentration",
+"soil moisture management",
+"drought resilience",
+"climate adaptation agriculture",
+"fertiliser dependency",
+"nutritional density",
+"national food security policy",
+"PQNK four principles"
+],
+"geography":"Pakistan",
+"crops":[
+"Wheat"
+],
+"fieldProblems":[
+"Drought / Water Scarcity",
+"Heat Stress on Crop",
+"External Input Dependency"
+],
+"problemFamily":[
+"Water & Drainage",
+"Heat, Weather & Climate",
+"Cost, Profit & Markets"
+],
+"fieldPractices":[
+"Soil Moisture Management (SMM)",
+"Permanent Raised Bed Formation",
+"Crop Residue Retention",
+"Biological Nutrient Cycling"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Water",
+"Climate",
+"Soil",
+"Nutrition",
+"Economics"
+],
+"pqnkPrinciples":[
+"No Soil Disturbance",
+"No Inundation",
+"Permanent Biological Cover",
+"Maximum Biodiversity"
+],
+"productionStages":[],
+"evidenceType":"Philosophical/Framework Argument",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/water",
+"why":"soil moisture management and why identical rainfall produces different drought outcomes depending on root-zone condition"
+},
+{
+"page":"/science/climate",
+"why":"why climate adaptation begins below the crop canopy through soil cover and structure, not only through breeding for heat tolerance"
+},
+{
+"page":"/science/soil",
+"why":"soil as national infrastructure, and biological capacity as a renewable strategic reserve unlike stored grain"
+},
+{
+"page":"/science/nutrition",
+"why":"reframing agricultural productivity as nourishment per hectare rather than tonnes per hectare"
+}
+]
+},
+{
+"slug":"gmo-maize-and-the-question-pakistan-has-not-yet-asked",
+"primarySubject":"Whether Pakistan should evaluate GM maize against non-GM maize alone, or also test the same genetics under a fully restored PQNK biological production system, using Bt's own origin as a naturally occurring soil bacterium as the case study",
+"questionsAnswered":[
+"Should Pakistan approve GM maize, or continue with non-GM hybrids?",
+"Does Bt maize eliminate the need to restore soil health?",
+"Where did Bt actually come from before genetic engineering?",
+"Why did Bt cotton lose effectiveness against pink bollworm?",
+"What should Pakistan's GM maize field trials actually measure?",
+"Is PQNK opposed to genetic engineering?",
+"What is seed sovereignty, and how does PQNK define agricultural dependency more broadly?"
+],
+"keywords":[
+"GMO maize Pakistan",
+"Bt maize",
+"Bacillus thuringiensis",
+"pink bollworm resistance",
+"seed sovereignty",
+"gene flow maize",
+"PQNK field trial design",
+"biological pest regulation",
+"hybrid maize Pakistan"
+],
+"geography":"Pakistan",
+"crops":[
+"Maize (Corn)"
+],
+"fieldProblems":[
+"Pesticide Resistance",
+"Beneficial Insect / Predator Decline",
+"External Input Dependency",
+"Seed Sourcing / Genetic Vulnerability"
+],
+"problemFamily":[
+"Pests, Diseases & Weeds",
+"Soil & Roots"
+],
+"fieldPractices":[
+"Biological Pest Suppression",
+"Biodiversity Habitat Fostering",
+"Mechanical Hardpan Breaking (Subsoiling)",
+"Crop Residue Retention"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Crop Protection",
+"Soil",
+"Biodiversity"
+],
+"pqnkPrinciples":[
+"No Soil Disturbance",
+"No Inundation",
+"Permanent Biological Cover",
+"Maximum Biodiversity"
+],
+"productionStages":[],
+"evidenceType":"Philosophical/Framework Argument",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/crop-protection",
+"why":"Bt's biological origin and ecological pest regulation as a network versus a single-gene defense"
+},
+{
+"page":"/science/biodiversity",
+"why":"predator and parasitoid community restoration as the wider pest-regulation system Bt belongs to"
+},
+{
+"page":"/science/soil",
+"why":"hardpan breaking and soil architecture restoration as the other half of the Bt story"
+}
+]
 }
 ]
