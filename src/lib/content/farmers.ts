@@ -24,7 +24,7 @@ export const farmerStories: FarmerStory[] = [
     location: "Rajanpur",
     role: "Guava grower",
     quote:
-      "Guava on PQNK — three years without a single chemical, and market shelf life stretched from two days to two weeks.",
+      "Guava on PQNK — high-density planting, three years without a single chemical input, and market shelf life stretched from two days to two weeks.",
     videoId: "DLxK3CEoXkA",
     videoSourceName: "YouTube",
     videoSourceUrl: "https://www.youtube.com/watch?v=DLxK3CEoXkA",
