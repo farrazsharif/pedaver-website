@@ -20,6 +20,16 @@ export const farmerStories: FarmerStory[] = [
     videoSourceUrl: "https://www.youtube.com/@pedaverpqnk3167/search?query=Wheat+on+PQNK+Mian+Arfan+Khalid",
   },
   {
+    name: "Mian Arfan Khalid",
+    location: "Rajanpur",
+    role: "Guava grower",
+    quote:
+      "Guava on PQNK — three years without a single chemical, and market shelf life stretched from two days to two weeks.",
+    videoId: "DLxK3CEoXkA",
+    videoSourceName: "YouTube",
+    videoSourceUrl: "https://www.youtube.com/watch?v=DLxK3CEoXkA",
+  },
+  {
     name: "Nasir Goraya",
     location: "Sargodha",
     role: "Kinnow (citrus) grower",
