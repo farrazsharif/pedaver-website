@@ -14211,5 +14211,79 @@
 "why":"KP-190's small transitional NP dose as the practical test of restoring biological regulation rather than just reducing a chemical dose"
 }
 ]
+},
+{
+"slug":"the-purchased-input-treadmill",
+"primarySubject":"Why rising agricultural yield does not automatically translate into farmer prosperity, and how PQNK's economic proposition differs from simply substituting cheaper inputs",
+"questionsAnswered":[
+"Why does my input bill keep rising even when my yield is high?",
+"Is PQNK just a cheaper set of inputs instead of chemical ones?",
+"Why can't I just stop buying fertilizer and pesticide right away?",
+"How do I know if a farming input is making me more independent or more dependent?",
+"Why is input dependency especially risky for small farmers in Pakistan?",
+"What's the real economic goal of PQNK, if not just higher yield?"
+],
+"keywords":[
+"Purchased-Input Treadmill",
+"farmer prosperity",
+"input dependency",
+"production cost",
+"net farm income",
+"ratchet effect",
+"PQNK transition architecture",
+"smallholder economics",
+"input subsidy",
+"agricultural economics Pakistan",
+"biological input substitution"
+],
+"geography":"Pakistan",
+"crops":[],
+"fieldProblems":[
+"High Input / Production Cost",
+"External Input Dependency",
+"Farmer Income Instability / Debt"
+],
+"problemFamily":[
+"Cost, Profit & Markets",
+"Transition / Conversion"
+],
+"fieldPractices":[
+"PQNK Transition Protocol (Staged)",
+"Closed-Loop Input Management",
+"Reduced/Eliminated Chemical Input",
+"Soil Biology Restoration (General)"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Economics",
+"Production Architecture",
+"Transition"
+],
+"pqnkPrinciples":[
+"No Soil Disturbance",
+"No Inundation",
+"Permanent Biological Cover",
+"Maximum Biodiversity"
+],
+"productionStages":[
+"Transition/Conversion"
+],
+"evidenceType":"Economic Model/Projection",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/production-architecture",
+"why":"permanent soil and bed architecture as productive capital that remains, versus purchased inputs that disappear with the crop cycle"
+},
+{
+"page":"/science/transition",
+"why":"the ratchet effect and why PQNK requires a staged transition rather than an instant withdrawal of purchased inputs"
+},
+{
+"page":"/science/soil",
+"why":"biological nutrient cycling and pest regulation as the internally regenerated functions that replace recurring purchased inputs"
+}
+]
 }
 ]
