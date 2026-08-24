@@ -7,6 +7,15 @@ import { SITE_URL } from "@/lib/seo";
 
 export const dynamic = "force-static";
 
+// next.config.ts sets trailingSlash: true, so every page's actual canonical
+// URL (and the folder/index.html Apache serves) ends in "/" — but this
+// route's raw string URLs don't get that treatment automatically the way
+// page metadata does. Without this, every sitemap entry 301-redirects to
+// its own trailing-slash canonical before Google ever sees a 200.
+function toUrl(path: string): string {
+  return path === "" ? `${SITE_URL}/` : `${SITE_URL}${path}/`;
+}
+
 const staticPages = [
   "",
   "/about",
@@ -40,8 +49,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
   return [
-    ...staticPages.map((path) => ({ url: `${SITE_URL}${path}`, lastModified: now })),
-    ...crops.map((crop) => ({ url: `${SITE_URL}/crops/${crop.slug}`, lastModified: now })),
+    ...staticPages.map((path) => ({ url: toUrl(path), lastModified: now })),
+    ...crops.map((crop) => ({ url: toUrl(`/crops/${crop.slug}`), lastModified: now })),
     // publishedDate means two different things depending on the paper: for
     // Pedaver-authored papers it's genuinely when the page was published, a
     // correct lastmod. For externally-cited papers (externalUrl set), it's
@@ -54,10 +63,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // has happened) is the most recent applicable date when present, since
     // that's a genuine "this page changed" signal for crawlers.
     ...papers.map((paper) => ({
-      url: `${SITE_URL}/papers/${paper.slug}`,
+      url: toUrl(`/papers/${paper.slug}`),
       lastModified: paper.externalUrl ? now : new Date(paper.modifiedDate ?? paper.publishedDate),
     })),
-    ...machines.map((machine) => ({ url: `${SITE_URL}/machines/${machine.slug}`, lastModified: now })),
-    ...resources.map((resource) => ({ url: `${SITE_URL}/resources/${resource.slug}`, lastModified: now })),
+    ...machines.map((machine) => ({ url: toUrl(`/machines/${machine.slug}`), lastModified: now })),
+    ...resources.map((resource) => ({ url: toUrl(`/resources/${resource.slug}`), lastModified: now })),
   ];
 }
