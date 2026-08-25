@@ -83,7 +83,7 @@ export function trackVideoComplete(contextType: VideoContextType, contextId: str
  * for name/email/message: it structurally cannot leak form contents
  * because it never receives them.
  */
-export function trackEnquirySubmitIntent(source: "contact_form") {
+export function trackEnquirySubmitIntent(source: "contact_form" | "ask_form") {
   track("enquiry_submit_intent", { source });
 }
 

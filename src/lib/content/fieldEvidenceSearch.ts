@@ -23,7 +23,7 @@ export function searchFieldEvidence(records: FieldEvidence[], query: string): Fi
 
   const needle = q.toLowerCase();
   return records.filter((r) => {
-    const haystack = [r.title, r.farmer, r.cropOrTopic, r.location, r.evidenceType, r.summary, ...(r.tags ?? [])]
+    const haystack = [r.title, r.farmer, r.cropOrTopic, r.location, r.summary, ...r.evidenceTypes, ...(r.tags ?? [])]
       .filter(Boolean)
       .join(" ")
       .toLowerCase();

@@ -13,7 +13,9 @@ const en = {
     allCrops: "All Crops",
     resources: "Resources",
     papers: "Knowledge Papers",
-    fieldEvidence: "Field Evidence",
+    fieldEvidence: "Knowledge Exchange",
+    books: "PQNK Books",
+    ask: "Ask",
     advisory: "Farmer Advisory",
     services: "Services",
     machines: "PQNK Machines",
@@ -21,8 +23,6 @@ const en = {
     farmerVoices: "Farmer Voices",
     validation: "PQNK™ Validation",
     contact: "Contact",
-    searchLabel: "Search Knowledge",
-    searchPlaceholder: "What do you need to know? e.g. hardpan, wheat, waterlogging…",
     menuLabel: "Menu",
   },
   home: {
@@ -501,6 +501,25 @@ const en = {
     emailFieldLabel: "Your Email",
     messageLabel: "Message",
     submitButton: "Compose Email",
+  },
+  ask: {
+    pageTitle: "Ask Pedaver",
+    pageSubtitle:
+      "Have a specific question about PQNK for your crop, region or farm? Write to us — a real person on our team reads and answers every question personally.",
+    formTitle: "Ask Your Question",
+    formNote:
+      "This form opens your email app with your message pre-filled. Nothing is sent through this website directly.",
+    nameLabel: "Name",
+    emailFieldLabel: "Your Email",
+    messageLabel: "Your Question",
+    submitButton: "Compose Email",
+  },
+  books: {
+    pageTitle: "PQNK Books",
+    pageSubtitle:
+      "A four-book series documenting the Natural Ecosystem Science of Production Agriculture — currently being finalized.",
+    comingSoonNote:
+      "The four PQNK books are being completed and will be published here as free eBooks once ready.",
   },
   farmerVoices: {
     pageTitle: "Farmer Voices",

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import type { FieldEvidence } from "@/lib/content/fieldEvidence";
+import type { FieldEvidence, EvidenceType } from "@/lib/content/fieldEvidence";
 import { formatFeNumber } from "@/lib/content/fieldEvidence";
 import { searchFieldEvidence } from "@/lib/content/fieldEvidenceSearch";
 
@@ -56,7 +56,7 @@ function EvidenceCard({ fe }: { fe: FieldEvidence }) {
   return (
     <div className="flex flex-col rounded-2xl border border-border bg-card p-6 shadow-sm">
       <p className="text-xs font-semibold uppercase tracking-wide text-accent">
-        {formatFeNumber(fe.feNumber)} · {fe.evidenceType}
+        {formatFeNumber(fe.feNumber)} · {fe.evidenceTypes.join(" + ")}
         {fe.cropOrTopic ? ` · ${fe.cropOrTopic}` : ""}
       </p>
       <h2 className="mt-2 text-lg font-bold text-primary-dark">{fe.title}</h2>
@@ -153,7 +153,7 @@ export default function FieldEvidenceBrowser({ records }: { records: FieldEviden
   }, [queryInput]);
 
   const evidenceTypes = useMemo(
-    () => Array.from(new Set(records.map((r) => r.evidenceType))).sort(),
+    () => Array.from(new Set(records.flatMap((r) => r.evidenceTypes))).sort(),
     [records]
   );
   const cropOptions = useMemo(
@@ -165,7 +165,7 @@ export default function FieldEvidenceBrowser({ records }: { records: FieldEviden
     let pool = filters.q.trim() ? searchFieldEvidence(records, filters.q) : records;
 
     pool = pool.filter((fe) => {
-      if (filters.evidenceType && fe.evidenceType !== filters.evidenceType) return false;
+      if (filters.evidenceType && !fe.evidenceTypes.includes(filters.evidenceType as EvidenceType)) return false;
       if (filters.cropOrTopic && fe.cropOrTopic !== filters.cropOrTopic) return false;
       return true;
     });

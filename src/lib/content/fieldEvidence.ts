@@ -1,13 +1,25 @@
 /**
- * Field Evidence Library — a lightweight, permanent record of what farmers,
- * fields and machinery demonstrations show under actual production
- * conditions. Distinct in kind from Knowledge Papers (papers.ts), which
- * explain mechanism, science and policy.
+ * Field Evidence data — the underlying records behind the user-facing
+ * "Knowledge Exchange" page (renamed 2026-08-25 from "Field Evidence
+ * Library"; this file/variable/route name deliberately did NOT change and
+ * is not expected to — /field-evidence is the permanent technical URL for
+ * this indexed collection, see field-evidence/page.tsx). A lightweight,
+ * permanent record of what farmers, fields and machinery demonstrations
+ * show under actual production conditions.
+ * Distinct in kind from Knowledge Papers (papers.ts), which explain
+ * mechanism, science and policy.
  *
  * Pedaver stores the evidence RECORD, not the media. The original video
  * stays on YouTube/Facebook; this only holds the lightweight metadata
  * needed to identify, search and reference it. No individual FE page,
  * no embedded players, no re-hosted media — see /field-evidence/page.tsx.
+ *
+ * A record may carry more than one evidenceTypes classification (e.g. a
+ * farmer video can be both "Farmer Testimony" and "Field Evidence" at
+ * once) — added 2026-08-25 alongside the Knowledge Exchange rename.
+ * Existing records were reclassified accordingly; this was a taxonomy
+ * correction on the 10 already-migrated records, not a bulk import of
+ * new evidence.
  *
  * FE numbering rule (permanent, mirrors KP numbering):
  * Migrated 2026-08-25 from farmerStories, which previously lived in
@@ -45,21 +57,15 @@
  * both under the privacy rule above, same as any other unverified record.
  */
 
-export type EvidenceType =
-  | "Farmer Testimony"
-  | "Field Observation"
-  | "Field Comparison"
-  | "Crop Performance"
-  | "Machinery Demonstration"
-  | "PQNK Practice"
-  | "Training / Demonstration";
+export type EvidenceType = "Q&A" | "Advisory" | "Farmer Testimony" | "Field Evidence" | "Machinery Demonstration";
 
 export type SourcePlatform = "YouTube" | "Facebook" | "Keynote" | "Other";
 
 export interface FieldEvidence {
   feNumber: number;
   title: string;
-  evidenceType: EvidenceType;
+  /** At least one; a record may carry more than one (e.g. a farmer video is often both "Farmer Testimony" and "Field Evidence"). */
+  evidenceTypes: EvidenceType[];
   /** Crop or general topic this evidence concerns, when known. Free text — not required to match a crops.ts slug. */
   cropOrTopic?: string;
   year?: number;
@@ -86,7 +92,7 @@ export const fieldEvidence: FieldEvidence[] = [
   {
     feNumber: 1,
     title: "Wheat on PQNK",
-    evidenceType: "Farmer Testimony",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
     cropOrTopic: "Wheat",
     summary: "Wheat on PQNK — lowest cost of production, highest quality.",
     sourcePlatform: "YouTube",
@@ -98,7 +104,7 @@ export const fieldEvidence: FieldEvidence[] = [
   {
     feNumber: 2,
     title: "Guava on PQNK — Mian Arfan Khalid, Rajanpur",
-    evidenceType: "Farmer Testimony",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
     cropOrTopic: "Guava",
     year: 2026,
     summary:
@@ -113,7 +119,7 @@ export const fieldEvidence: FieldEvidence[] = [
   {
     feNumber: 3,
     title: "Citrus on PQNK",
-    evidenceType: "Farmer Testimony",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
     cropOrTopic: "Citrus (Kinnow)",
     summary: "Citrus on PQNK, documented on our own orchard.",
     sourcePlatform: "YouTube",
@@ -124,7 +130,7 @@ export const fieldEvidence: FieldEvidence[] = [
   {
     feNumber: 4,
     title: "Mango & Citrus Recovery on PQNK",
-    evidenceType: "Farmer Testimony",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
     cropOrTopic: "Mango & Citrus",
     summary: "Citrus recovery on PQNK — bringing a declining orchard back to health.",
     sourcePlatform: "YouTube",
@@ -135,7 +141,7 @@ export const fieldEvidence: FieldEvidence[] = [
   {
     feNumber: 5,
     title: "Vegetables on PQNK",
-    evidenceType: "Farmer Testimony",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
     cropOrTopic: "Vegetables",
     summary: "High-nutrition, high-density vegetables produced under PQNK.",
     sourcePlatform: "YouTube",
@@ -146,7 +152,7 @@ export const fieldEvidence: FieldEvidence[] = [
   {
     feNumber: 6,
     title: "PQNK Results",
-    evidenceType: "Farmer Testimony",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
     summary: "Reports on his own PQNK results and adoption.",
     sourcePlatform: "YouTube",
     sourceUrl: "https://www.youtube.com/@pedaverpqnk3167/search?query=PQNK+farmer+results",
@@ -155,7 +161,7 @@ export const fieldEvidence: FieldEvidence[] = [
   {
     feNumber: 7,
     title: "Wheat on PQNK",
-    evidenceType: "Farmer Testimony",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
     cropOrTopic: "Wheat",
     summary: "Wheat on PQNK — lowest cost of production, highest quality.",
     sourcePlatform: "YouTube",
@@ -167,7 +173,7 @@ export const fieldEvidence: FieldEvidence[] = [
   {
     feNumber: 8,
     title: "Citrus on PQNK",
-    evidenceType: "Farmer Testimony",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
     cropOrTopic: "Citrus (Kinnow)",
     summary: "Citrus on PQNK, documented on his own orchard.",
     sourcePlatform: "YouTube",
@@ -178,7 +184,7 @@ export const fieldEvidence: FieldEvidence[] = [
   {
     feNumber: 9,
     title: "Crop Light Requirements Under PQNK",
-    evidenceType: "Farmer Testimony",
+    evidenceTypes: ["Q&A", "Advisory"],
     summary:
       "Raised detailed questions on crop light requirements under PQNK, answered directly by our advisory team.",
     tags: ["advisory", "light requirements"],
@@ -186,7 +192,7 @@ export const fieldEvidence: FieldEvidence[] = [
   {
     feNumber: 10,
     title: "A Question on Natural Ecosystem Science",
-    evidenceType: "Farmer Testimony",
+    evidenceTypes: ["Q&A", "Advisory"],
     summary:
       "Brought a question on the Natural Ecosystem Science of Production Agriculture directly to our farmer WhatsApp group — answered as part of our ongoing advisory support.",
     tags: ["advisory", "natural ecosystem science"],

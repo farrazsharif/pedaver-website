@@ -14,14 +14,20 @@ export default function Footer({ dict }: { dict: Dictionary }) {
     { label: dict.nav.resources, href: "/resources" },
     { label: dict.nav.papers, href: "/papers" },
     { label: dict.nav.fieldEvidence, href: "/field-evidence" },
-    { label: dict.nav.advisory, href: "/advisory" },
+    { label: dict.nav.books, href: "/books" },
   ];
 
+  // Advisory, Farmer Voices and Video Library are no longer in main nav
+  // (folded under the Knowledge Exchange umbrella, 2026-08-25) but stay
+  // live and linked here so they're not orphaned from site navigation.
   const workLinks = [
     { label: dict.nav.services, href: "/services" },
     { label: dict.nav.machines, href: "/machines" },
+    { label: dict.nav.advisory, href: "/advisory" },
+    { label: dict.nav.farmerVoices, href: "/farmer-voices" },
     { label: dict.nav.videoLibrary, href: "/video-library" },
     { label: dict.nav.validation, href: "/validation" },
+    { label: dict.nav.ask, href: "/ask" },
     { label: dict.nav.contact, href: "/contact" },
   ];
 

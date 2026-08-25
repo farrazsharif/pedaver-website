@@ -1,18 +1,38 @@
 "use client";
 
 import { useState } from "react";
-import type { Dictionary } from "@/lib/dictionaries";
 import { trackEnquirySubmitIntent } from "@/lib/analytics";
 
-export default function ContactForm({ dict }: { dict: Dictionary["contact"] }) {
+// Shared shape between dict.contact and dict.ask — both have exactly these
+// fields, so this form can be reused as-is by both /contact and /ask
+// without either dict section depending on the other's exact type.
+interface ContactFormCopy {
+  formTitle: string;
+  formNote: string;
+  nameLabel: string;
+  emailFieldLabel: string;
+  messageLabel: string;
+  submitButton: string;
+}
+
+export default function ContactForm({
+  dict,
+  subjectPrefix = "Website inquiry",
+  trackingId = "contact_form",
+}: {
+  dict: ContactFormCopy;
+  /** Distinguishes the mailto subject line by which page/form sent it (e.g. "Question via Ask" vs the default "Website inquiry"). */
+  subjectPrefix?: string;
+  trackingId?: "contact_form" | "ask_form";
+}) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    trackEnquirySubmitIntent("contact_form");
-    const subject = encodeURIComponent(`Website inquiry from ${name || "a visitor"}`);
+    trackEnquirySubmitIntent(trackingId);
+    const subject = encodeURIComponent(`${subjectPrefix} from ${name || "a visitor"}`);
     const body = encodeURIComponent(`${message}\n\n— ${name}\n${email}`);
     window.location.href = `mailto:pedaver@gmail.com?subject=${subject}&body=${body}`;
   }

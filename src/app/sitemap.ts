@@ -38,10 +38,12 @@ const staticPages = [
   "/services",
   "/machines",
   "/field-evidence",
+  "/books",
   "/validation",
   "/videos",
   "/video-library",
   "/farmer-voices",
+  "/ask",
   "/install",
   "/contact",
 ];
