@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { fieldEvidence } from "@/lib/content/fieldEvidence";
 import Section from "@/components/Section";
+import TrackedExternalChannelLink from "@/components/analytics/TrackedExternalChannelLink";
 import { buildMetadata } from "@/lib/seo";
 import FieldEvidenceBrowser from "./FieldEvidenceBrowser";
 
@@ -37,10 +38,53 @@ export default function FieldEvidencePage() {
         </div>
       </section>
 
+      <Section>
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="text-xl font-bold text-primary-dark">Explore the Complete Knowledge Exchange</h2>
+          <p className="mx-auto mt-3 text-sm leading-relaxed text-ink-soft">
+            The cards below present a selected and indexed sample of farmer testimonies, field
+            evidence, questions, advisory discussions and practical experiences with PQNK.
+          </p>
+          <p className="mx-auto mt-3 text-sm leading-relaxed text-ink-soft">
+            Pedaver&rsquo;s knowledge exchange with farmers has developed over many years and
+            includes a much larger collection of field videos, farmer experiences, discussions and
+            practical observations. The extended collection remains available through our public
+            video channels.
+          </p>
+          <div className="mt-5 flex flex-wrap justify-center gap-3">
+            <TrackedExternalChannelLink
+              href="https://www.facebook.com/Pedaver"
+              label="Facebook — Pedaver"
+              className="rounded-full border border-border bg-card px-4 py-2 text-sm font-semibold text-primary-dark shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+            >
+              Facebook — Pedaver →
+            </TrackedExternalChannelLink>
+            <TrackedExternalChannelLink
+              href="https://www.youtube.com/@pedaverpqnk3167/videos"
+              label="YouTube — Pedaver PQNK"
+              className="rounded-full border border-border bg-card px-4 py-2 text-sm font-semibold text-primary-dark shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+            >
+              YouTube — Pedaver PQNK →
+            </TrackedExternalChannelLink>
+            <TrackedExternalChannelLink
+              href="http://www.youtube.com/@aasifsharif"
+              label="YouTube — Asif Sharif"
+              className="rounded-full border border-border bg-card px-4 py-2 text-sm font-semibold text-primary-dark shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+            >
+              YouTube — Asif Sharif →
+            </TrackedExternalChannelLink>
+          </div>
+          <p className="mx-auto mt-5 max-w-xl text-xs text-ink-soft">
+            New selected evidence will continue to be indexed here with permanent FE numbers,
+            while the original video collections remain on their source platforms.
+          </p>
+        </div>
+      </Section>
+
       <Section muted>
-        <h2 className="text-center text-xl font-bold text-primary-dark">Find a farmer, a crop, an FE number</h2>
+        <h2 className="text-center text-xl font-bold text-primary-dark">Find a crop, an FE number</h2>
         <p className="mx-auto mt-1 max-w-2xl text-center text-sm text-ink-soft">
-          Search by FE number (e.g. FE-002), farmer name, crop, or evidence type.
+          Search by FE number, crop, topic, evidence type, or keywords.
         </p>
         <div className="mt-6">
           <FieldEvidenceBrowser records={fieldEvidence} />
