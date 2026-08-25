@@ -2,7 +2,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import dict from "@/lib/dictionaries";
 import { papers, getPaperBySlug, formatKpNumber } from "@/lib/content/papers";
-import { getRelatedCrops } from "@/lib/content/crossLinks";
+import { getRelatedCrops, getFieldEvidenceForPaper } from "@/lib/content/crossLinks";
+import { formatFeNumber } from "@/lib/content/fieldEvidence";
 import { notFound } from "next/navigation";
 import Section from "@/components/Section";
 import VideoEmbed from "@/components/VideoEmbed";
@@ -61,6 +62,7 @@ export default async function PaperDetailPage({
   if (!paper) notFound();
 
   const relatedCrops = getRelatedCrops(paper);
+  const relatedFieldEvidence = getFieldEvidenceForPaper(paper);
   const meta = getMetadata(slug);
   const relatedKnowledge = getRelatedKnowledge(paper, meta, papers, getMetadata, 4);
   const farmerQuestionOrigin = getFarmerQuestionOrigin(slug);
@@ -290,6 +292,28 @@ export default async function PaperDetailPage({
                         className="text-sm font-semibold text-primary-dark hover:text-primary"
                       >
                         {crop.name} →
+                      </TrackedRelatedLink>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {relatedFieldEvidence.length > 0 && (
+              <div className="rounded-xl border border-border bg-card p-5">
+                <h2 className="text-sm font-bold uppercase tracking-wide text-accent">Related Field Evidence</h2>
+                <ul className="mt-3 flex flex-col gap-2">
+                  {relatedFieldEvidence.map((fe) => (
+                    <li key={fe.slug}>
+                      <TrackedRelatedLink
+                        href={`/field-evidence/${fe.slug}`}
+                        fromType="paper"
+                        fromId={slug}
+                        toType="field-evidence"
+                        toId={fe.slug}
+                        className="text-sm font-semibold text-primary-dark hover:text-primary"
+                      >
+                        {formatFeNumber(fe.feNumber)} · {fe.title} →
                       </TrackedRelatedLink>
                     </li>
                   ))}

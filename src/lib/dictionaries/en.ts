@@ -13,6 +13,7 @@ const en = {
     allCrops: "All Crops",
     resources: "Resources",
     papers: "Knowledge Papers",
+    fieldEvidence: "Field Evidence",
     advisory: "Farmer Advisory",
     services: "Services",
     machines: "PQNK Machines",
@@ -468,7 +469,9 @@ const en = {
     subscribers: "subscribers",
     videosCount: "videos",
     testimonialsTitle: "Farmer Testimonials",
-    testimonialsSubtitle: "PQNK is proven acre by acre. Here are a few of the growers documenting it themselves.",
+    testimonialsSubtitle:
+      "PQNK is proven acre by acre. Farmer testimony now lives in the searchable Field Evidence Library — find it by crop, farmer, or location.",
+    testimonialsCta: "Browse the Field Evidence Library",
     viewCrop: "View this crop",
   },
   videoLibrary: {

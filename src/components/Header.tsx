@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import type { Dictionary } from "@/lib/dictionaries";
 import { papers } from "@/lib/content/papers";
+import { fieldEvidence, formatFeNumber } from "@/lib/content/fieldEvidence";
 import TranslateWidget from "./TranslateWidget";
 import { trackInternalSearch } from "@/lib/analytics";
 
@@ -12,17 +13,31 @@ interface SearchResult {
   label: string;
   sublabel: string;
   href: string;
+  kind: "paper" | "field-evidence";
 }
 
-// Scoped to Knowledge Papers only — this is the "Search Knowledge" utility
-// action, distinct in purpose from the full relevance-ranked search on
-// /papers itself (see search.ts). This index just gives quick as-you-type
-// jump suggestions; submitting always hands off to the real search below.
-const searchIndex: SearchResult[] = papers.map((p) => ({
-  label: p.title,
-  sublabel: "Knowledge Paper",
-  href: `/papers/${p.slug}/`,
-}));
+// Covers both evidence libraries — Knowledge Papers and Field Evidence —
+// so a visitor typing a farmer's name, a crop, an FE number, or a paper
+// title all get a jump suggestion without needing to know which library it
+// lives in first (see /field-evidence's own README-style comment in
+// fieldEvidence.ts). This index just gives quick as-you-type suggestions;
+// each result carries its own href, so picking one always lands correctly
+// regardless of type. Submitting without picking one (handleSearch below)
+// hands off to whichever library's own full search is the better match.
+const searchIndex: SearchResult[] = [
+  ...papers.map((p) => ({
+    label: p.title,
+    sublabel: "Knowledge Paper",
+    href: `/papers/${p.slug}/`,
+    kind: "paper" as const,
+  })),
+  ...fieldEvidence.map((fe) => ({
+    label: fe.title,
+    sublabel: `Field Evidence · ${formatFeNumber(fe.feNumber)}`,
+    href: `/field-evidence/${fe.slug}/`,
+    kind: "field-evidence" as const,
+  })),
+];
 
 function searchSite(query: string): SearchResult[] {
   const q = query.trim().toLowerCase();
@@ -60,6 +75,7 @@ export default function Header({ dict }: { dict: Dictionary }) {
     { label: dict.nav.home, href: "/" },
     { label: dict.nav.science, href: "/science" },
     { label: dict.nav.papers, href: "/papers" },
+    { label: dict.nav.fieldEvidence, href: "/field-evidence" },
     {
       label: dict.nav.crops,
       href: "/crops",
@@ -113,15 +129,22 @@ export default function Header({ dict }: { dict: Dictionary }) {
     trackInternalSearch(q.length, searchResults.length);
     setSearchOpen(false);
     setQuery("");
-    // Hand off to the real Knowledge Papers search rather than guessing a
-    // single "top" local match — /papers applies the full relevance-ranked
-    // search over all 186 papers. A plain browser navigation (not
+    // Hand off to the real full search rather than guessing a single local
+    // match — but WHICH library's search depends on what the query looks
+    // like: an explicit "FE-002"/"FE002" reference or a query whose best
+    // local match is a Field Evidence record goes to /field-evidence; a
+    // "KP-190" reference or anything else (the common case) goes to
+    // /papers, which applies the full relevance-ranked search over the
+    // whole Knowledge Paper library. A plain browser navigation (not
     // router.push) is deliberate: this statically-exported site has
     // trailingSlash:true, and client-side router.push has been observed to
     // drop the query string during that normalization, while a full
-    // navigation always preserves it exactly and PapersBrowser reads it
+    // navigation always preserves it exactly and each browser reads it
     // straight from window.location.search on mount either way.
-    window.location.href = `/papers/?q=${encodeURIComponent(q)}`;
+    const looksLikeFeRef = /^fe-?\d+$/i.test(q);
+    const topResult = searchResults[0];
+    const target = looksLikeFeRef || topResult?.kind === "field-evidence" ? "/field-evidence" : "/papers";
+    window.location.href = `${target}/?q=${encodeURIComponent(q)}`;
   }
 
   return (

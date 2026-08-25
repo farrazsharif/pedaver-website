@@ -1,10 +1,16 @@
 import Link from "next/link";
 import dict from "@/lib/dictionaries";
 import { videos, officialChannel, founderChannel, workshopVideos } from "@/lib/content/videos";
-import { farmerStories } from "@/lib/content/farmers";
+import { fieldEvidence, formatFeNumber } from "@/lib/content/fieldEvidence";
 import Section from "@/components/Section";
 import VideoEmbed from "@/components/VideoEmbed";
 import { buildMetadata } from "@/lib/seo";
+
+// A handful of the most recently added Field Evidence records, as a light
+// teaser linking through to the full library — not a duplicate listing.
+// Static thumbnails, not embedded iframes: this page shouldn't grow an
+// iframe per record as the library scales (see field-evidence/page.tsx).
+const featuredFieldEvidence = [...fieldEvidence].sort((a, b) => b.feNumber - a.feNumber).slice(0, 4);
 
 export const metadata = buildMetadata({
   title: "Knowledge & Testimonials — PQNK Lectures and Farmer Stories",
@@ -129,59 +135,44 @@ export default function VideosPage() {
       )}
 
       <Section>
-        <h2 className="text-2xl font-bold text-primary-dark">{dict.videos.testimonialsTitle}</h2>
-        <p className="mt-1 text-ink-soft">{dict.videos.testimonialsSubtitle}</p>
-        <div className="mt-8 grid gap-6 md:grid-cols-2">
-          {farmerStories.map((farmer) => (
-            <div key={farmer.name} className="rounded-2xl border border-border bg-card p-6">
-              {farmer.videoId ? (
-                <div className="mb-4">
-                  <VideoEmbed
-                    videoId={farmer.videoId}
-                    title={`${farmer.name} — PQNK testimonial`}
-                    context="video-library"
-                    contextId={farmer.videoId}
+        <div className="flex flex-wrap items-end justify-between gap-3">
+          <div>
+            <h2 className="text-2xl font-bold text-primary-dark">{dict.videos.testimonialsTitle}</h2>
+            <p className="mt-1 max-w-xl text-ink-soft">{dict.videos.testimonialsSubtitle}</p>
+          </div>
+          <Link
+            href="/field-evidence"
+            className="inline-block flex-none rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-cream shadow-sm hover:bg-primary-dark"
+          >
+            {dict.videos.testimonialsCta} →
+          </Link>
+        </div>
+        <div className="mt-8 grid gap-6 sm:grid-cols-2 md:grid-cols-4">
+          {featuredFieldEvidence.map((fe) => (
+            <Link
+              key={fe.slug}
+              href={`/field-evidence/${fe.slug}`}
+              className="group overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+            >
+              {fe.videoId ? (
+                <div className="aspect-video w-full overflow-hidden bg-black">
+                  <img
+                    src={`https://i.ytimg.com/vi/${fe.videoId}/hqdefault.jpg`}
+                    alt=""
+                    loading="lazy"
+                    className="h-full w-full object-cover transition group-hover:scale-105"
                   />
-                  {farmer.videoSourceName && farmer.videoSourceUrl && (
-                    <a
-                      href={farmer.videoSourceUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-2 inline-block text-xs font-semibold text-accent hover:text-accent-light"
-                    >
-                      Watch on {farmer.videoSourceName} →
-                    </a>
-                  )}
                 </div>
               ) : (
-                farmer.videoSourceUrl && (
-                  <a
-                    href={farmer.videoSourceUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mb-4 inline-block text-sm font-semibold text-accent underline underline-offset-4 hover:text-accent-light"
-                  >
-                    Watch on {farmer.videoSourceName ?? "YouTube"} →
-                  </a>
-                )
+                <div className="h-1.5 w-full bg-accent" aria-hidden="true" />
               )}
-              <p className="text-lg italic leading-relaxed text-ink">&ldquo;{farmer.quote}&rdquo;</p>
-              <div className="mt-5 border-t border-border pt-4">
-                <p className="font-bold text-primary-dark">{farmer.name}</p>
-                <p className="text-sm text-ink-soft">
-                  {farmer.role}
-                  {farmer.location ? ` · ${farmer.location}` : ""}
+              <div className="p-4">
+                <p className="text-[11px] font-semibold uppercase tracking-wide text-accent">
+                  {formatFeNumber(fe.feNumber)}
                 </p>
-                {farmer.cropSlug && (
-                  <Link
-                    href={`/crops/${farmer.cropSlug}`}
-                    className="mt-2 inline-block text-sm font-semibold text-accent underline underline-offset-4"
-                  >
-                    {dict.videos.viewCrop} →
-                  </Link>
-                )}
+                <p className="mt-1 text-sm font-semibold text-primary-dark group-hover:text-primary">{fe.title}</p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </Section>

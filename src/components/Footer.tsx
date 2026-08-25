@@ -13,6 +13,7 @@ export default function Footer({ dict }: { dict: Dictionary }) {
     { label: dict.nav.crops, href: "/crops" },
     { label: dict.nav.resources, href: "/resources" },
     { label: dict.nav.papers, href: "/papers" },
+    { label: dict.nav.fieldEvidence, href: "/field-evidence" },
     { label: dict.nav.advisory, href: "/advisory" },
   ];
 

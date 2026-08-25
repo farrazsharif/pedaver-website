@@ -356,6 +356,15 @@ export default function HomePage() {
             </div>
           </div>
         )}
+
+        <div className="mt-10 text-center">
+          <Link
+            href="/field-evidence"
+            className="inline-block rounded-full bg-primary px-6 py-3 text-sm font-semibold text-cream shadow-sm transition hover:bg-primary-dark"
+          >
+            Browse the full Field Evidence Library →
+          </Link>
+        </div>
       </Section>
 
       {/* 8. ONE PQNK SYSTEM, EVERY CROP */}
