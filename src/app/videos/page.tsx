@@ -147,32 +147,24 @@ export default function VideosPage() {
             {dict.videos.testimonialsCta} →
           </Link>
         </div>
-        <div className="mt-8 grid gap-6 sm:grid-cols-2 md:grid-cols-4">
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 md:grid-cols-4">
           {featuredFieldEvidence.map((fe) => (
-            <Link
-              key={fe.slug}
-              href={`/field-evidence/${fe.slug}`}
-              className="group overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
-            >
-              {fe.videoId ? (
-                <div className="aspect-video w-full overflow-hidden bg-black">
-                  <img
-                    src={`https://i.ytimg.com/vi/${fe.videoId}/hqdefault.jpg`}
-                    alt=""
-                    loading="lazy"
-                    className="h-full w-full object-cover transition group-hover:scale-105"
-                  />
-                </div>
-              ) : (
-                <div className="h-1.5 w-full bg-accent" aria-hidden="true" />
+            <div key={fe.feNumber} className="rounded-2xl border border-border bg-card p-4">
+              <p className="text-[11px] font-semibold uppercase tracking-wide text-accent">
+                {formatFeNumber(fe.feNumber)}
+              </p>
+              <p className="mt-1 text-sm font-semibold text-primary-dark">{fe.title}</p>
+              {fe.sourceUrl && (
+                <a
+                  href={fe.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 inline-block text-xs font-semibold text-accent hover:text-accent-light"
+                >
+                  Watch Video →
+                </a>
               )}
-              <div className="p-4">
-                <p className="text-[11px] font-semibold uppercase tracking-wide text-accent">
-                  {formatFeNumber(fe.feNumber)}
-                </p>
-                <p className="mt-1 text-sm font-semibold text-primary-dark group-hover:text-primary">{fe.title}</p>
-              </div>
-            </Link>
+            </div>
           ))}
         </div>
       </Section>

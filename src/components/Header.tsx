@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import type { Dictionary } from "@/lib/dictionaries";
 import { papers } from "@/lib/content/papers";
 import { fieldEvidence, formatFeNumber } from "@/lib/content/fieldEvidence";
@@ -34,7 +34,10 @@ const searchIndex: SearchResult[] = [
   ...fieldEvidence.map((fe) => ({
     label: fe.title,
     sublabel: `Field Evidence · ${formatFeNumber(fe.feNumber)}`,
-    href: `/field-evidence/${fe.slug}/`,
+    // No individual FE page exists — land on the index with this exact
+    // record pre-searched via its FE number, which the index's own search
+    // resolves as a direct lookup (see fieldEvidenceSearch.ts).
+    href: `/field-evidence/?q=${encodeURIComponent(formatFeNumber(fe.feNumber))}`,
     kind: "field-evidence" as const,
   })),
 ];
@@ -64,7 +67,6 @@ interface NavGroup {
 
 export default function Header({ dict }: { dict: Dictionary }) {
   const pathname = usePathname();
-  const router = useRouter();
   const [openGroup, setOpenGroup] = useState<string | null>(null);
   const [searchOpen, setSearchOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -119,7 +121,12 @@ export default function Header({ dict }: { dict: Dictionary }) {
   function goToResult(href: string) {
     setSearchOpen(false);
     setQuery("");
-    router.push(href);
+    // Full navigation, not router.push: some suggestions (Field Evidence)
+    // now carry a "?q=" query string, and client-side router.push has been
+    // observed to drop query strings during this static site's
+    // trailingSlash normalization — see handleSearch below for the same
+    // reasoning, which already relied on a full navigation for that reason.
+    window.location.assign(href);
   }
 
   function handleSearch(e: React.FormEvent) {

@@ -3,7 +3,6 @@ import { papers, type Paper } from "./papers";
 import type { Machine } from "./machines";
 import { METADATA } from "./knowledge/taxonomy";
 import taxonomyData from "./knowledge/taxonomy.json";
-import { fieldEvidence, type FieldEvidence } from "./fieldEvidence";
 
 /**
  * Crop ↔ Knowledge Paper cross-linking.
@@ -104,39 +103,4 @@ export function getRelatedCrops(paper: Paper, max = 4): Crop[] {
   }
   const title = paper.title.toLowerCase();
   return crops.filter((crop) => keywordsFor(crop.name).some((keyword) => title.includes(keyword))).slice(0, max);
-}
-
-/**
- * Field Evidence ↔ Crop / Knowledge Paper cross-linking.
- *
- * Crop → Field Evidence is a direct join on FieldEvidence.cropSlug — no
- * inference. Field Evidence → Knowledge Paper deliberately does NOT
- * hand-curate a topic guess per record; it reuses getRelatedPapers() via
- * the same cropSlug, so an FE page shows exactly the Knowledge Papers its
- * crop page already shows, and stays in sync as papers get tagged. A
- * record's own `relatedKpSlugs` (set only when a specific, verified
- * connection is known — e.g. a paper that directly cites this farmer's
- * question) is added on top, not a replacement for the crop-based join.
- */
-export function getFieldEvidenceForCrop(crop: Crop, max = 6): FieldEvidence[] {
-  return fieldEvidence.filter((f) => f.cropSlug === crop.slug).slice(0, max);
-}
-
-export function getFieldEvidenceForPaper(paper: Paper, max = 6): FieldEvidence[] {
-  const directHits = fieldEvidence.filter((f) => f.relatedKpSlugs?.includes(paper.slug));
-  const relatedCropSlugs = new Set(getRelatedCrops(paper, 10).map((c) => c.slug));
-  const cropHits = fieldEvidence.filter(
-    (f) => f.cropSlug && relatedCropSlugs.has(f.cropSlug) && !directHits.includes(f)
-  );
-  return [...directHits, ...cropHits].slice(0, max);
-}
-
-export function getRelatedPapersForFieldEvidence(fe: FieldEvidence, max = 4): Paper[] {
-  const explicit = (fe.relatedKpSlugs ?? [])
-    .map((slug) => papers.find((p) => p.slug === slug))
-    .filter((p): p is Paper => Boolean(p));
-  if (explicit.length > 0) return explicit.slice(0, max);
-  if (!fe.cropSlug) return [];
-  const crop = crops.find((c) => c.slug === fe.cropSlug);
-  return crop ? getRelatedPapers(crop, max) : [];
 }

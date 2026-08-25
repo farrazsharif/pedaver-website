@@ -6,9 +6,10 @@ import { parseFeQuery } from "./fieldEvidence";
  * for Knowledge Papers (knowledge/search.ts) — that engine exists to match
  * natural-language farmer questions onto scientific taxonomy. Field
  * Evidence search is a direct lookup across known, structured fields (FE
- * number, farmer, crop, location, evidence type, title, tags, summary), so
- * a straightforward match is both correct and, unlike a synonym index,
- * trivial to keep fast at thousands of records without a build step.
+ * number, farmer, crop/topic, location, evidence type, title, tags,
+ * summary), so a straightforward match is both correct and, unlike a
+ * synonym index, trivial to keep fast at thousands of records with no
+ * build step.
  */
 export function searchFieldEvidence(records: FieldEvidence[], query: string): FieldEvidence[] {
   const q = query.trim();
@@ -22,19 +23,7 @@ export function searchFieldEvidence(records: FieldEvidence[], query: string): Fi
 
   const needle = q.toLowerCase();
   return records.filter((r) => {
-    const haystack = [
-      r.title,
-      r.farmer,
-      r.cropName,
-      r.cropSlug,
-      r.location,
-      r.district,
-      r.province,
-      r.country,
-      r.evidenceType,
-      r.summary,
-      ...(r.tags ?? []),
-    ]
+    const haystack = [r.title, r.farmer, r.cropOrTopic, r.location, r.evidenceType, r.summary, ...(r.tags ?? [])]
       .filter(Boolean)
       .join(" ")
       .toLowerCase();

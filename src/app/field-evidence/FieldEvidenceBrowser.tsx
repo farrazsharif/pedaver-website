@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import Link from "next/link";
 import type { FieldEvidence } from "@/lib/content/fieldEvidence";
 import { formatFeNumber } from "@/lib/content/fieldEvidence";
 import { searchFieldEvidence } from "@/lib/content/fieldEvidenceSearch";
@@ -9,18 +8,16 @@ import { searchFieldEvidence } from "@/lib/content/fieldEvidenceSearch";
 interface Filters {
   q: string;
   evidenceType: string;
-  crop: string;
-  country: string;
+  cropOrTopic: string;
 }
 
-const EMPTY_FILTERS: Filters = { q: "", evidenceType: "", crop: "", country: "" };
+const EMPTY_FILTERS: Filters = { q: "", evidenceType: "", cropOrTopic: "" };
 
 // Mirrors the Recent | A-Z | Oldest pattern from the Knowledge Paper
 // library. "Recent" sorts by feNumber descending: FE numbers are assigned
 // in arrival order and never renumbered (see fieldEvidence.ts), so feNumber
-// order IS chronological arrival order — a real record-keeping fact this
-// library can already guarantee, unlike a recordedDate that most entries
-// (migrated farmer testimony without a known filming date) don't have.
+// order IS chronological arrival order — a fact this library can already
+// guarantee, unlike a recorded date that most migrated testimony doesn't have.
 type SortMode = "recent" | "az" | "oldest";
 const DEFAULT_SORT: SortMode = "recent";
 const VALID_SORTS: SortMode[] = ["recent", "az", "oldest"];
@@ -31,8 +28,7 @@ function readFiltersFromURL(): Filters {
   return {
     q: params.get("q") ?? "",
     evidenceType: params.get("evidenceType") ?? "",
-    crop: params.get("crop") ?? "",
-    country: params.get("country") ?? "",
+    cropOrTopic: params.get("cropOrTopic") ?? "",
   };
 }
 
@@ -53,58 +49,36 @@ function writeStateToURL(filters: Filters, sort: SortMode) {
   window.history.replaceState(null, "", url);
 }
 
-function displayCrop(fe: FieldEvidence): string | undefined {
-  return fe.cropName ?? fe.cropSlug;
-}
-
+// Plain text card, no thumbnail/embed — see fieldEvidence.ts: Pedaver stores
+// the record, not the media. "Watch Video" links straight to the original
+// on YouTube/Facebook; nothing loads until the visitor clicks it.
 function EvidenceCard({ fe }: { fe: FieldEvidence }) {
-  const cropLabel = displayCrop(fe);
-  const placeLabel = [fe.location, fe.country].filter(Boolean).join(", ");
   return (
-    <Link
-      href={`/field-evidence/${fe.slug}`}
-      className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition hover:-translate-y-1 hover:shadow-md"
-    >
-      {fe.videoId ? (
-        <div className="aspect-video w-full flex-none overflow-hidden bg-black">
-          {/* Static thumbnail, not an embedded iframe — this list can grow to
-              thousands of records, so the player itself only mounts on the
-              individual FE page (see [slug]/page.tsx). */}
-          <img
-            src={`https://i.ytimg.com/vi/${fe.videoId}/hqdefault.jpg`}
-            alt=""
-            loading="lazy"
-            className="h-full w-full object-cover transition group-hover:scale-105"
-          />
-        </div>
-      ) : (
-        <div className="h-1.5 w-full flex-none bg-accent" aria-hidden="true" />
-      )}
-      <div className="flex flex-1 flex-col p-6">
-        <p className="text-xs font-semibold uppercase tracking-wide text-accent">
-          {formatFeNumber(fe.feNumber)} · {fe.evidenceType}
+    <div className="flex flex-col rounded-2xl border border-border bg-card p-6 shadow-sm">
+      <p className="text-xs font-semibold uppercase tracking-wide text-accent">
+        {formatFeNumber(fe.feNumber)} · {fe.evidenceType}
+        {fe.cropOrTopic ? ` · ${fe.cropOrTopic}` : ""}
+      </p>
+      <h2 className="mt-2 text-lg font-bold text-primary-dark">{fe.title}</h2>
+      <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-soft">{fe.summary}</p>
+      {(fe.farmer || fe.location) && (
+        <p className="mt-3 text-sm font-medium text-ink">
+          {fe.farmer}
+          {fe.farmer && fe.location ? " · " : ""}
+          {fe.location}
         </p>
-        <h2 className="mt-2 text-xl font-bold text-primary-dark group-hover:text-primary">{fe.title}</h2>
-        <p className="mt-2 flex-1 text-sm italic leading-relaxed text-ink-soft">&ldquo;{fe.summary}&rdquo;</p>
-        <div className="mt-4 flex flex-col gap-1 text-xs text-ink-soft">
-          {fe.farmer && (
-            <p>
-              <span className="font-semibold text-ink">Farmer</span> · {fe.farmer}
-            </p>
-          )}
-          {cropLabel && (
-            <p>
-              <span className="font-semibold text-ink">Crop</span> · {cropLabel}
-            </p>
-          )}
-          {placeLabel && (
-            <p>
-              <span className="font-semibold text-ink">Location</span> · {placeLabel}
-            </p>
-          )}
-        </div>
-      </div>
-    </Link>
+      )}
+      {fe.sourceUrl && (
+        <a
+          href={fe.sourceUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-3 inline-block text-sm font-semibold text-accent underline underline-offset-4 hover:text-accent-light"
+        >
+          Watch Video →
+        </a>
+      )}
+    </div>
   );
 }
 
@@ -171,10 +145,7 @@ export default function FieldEvidenceBrowser({ records }: { records: FieldEviden
     const id = setTimeout(() => {
       setFilters((f) => {
         if (f.q === queryInput) return f;
-        if (restoringFromURL.current) {
-          restoringFromURL.current = false;
-          return { ...f, q: queryInput };
-        }
+        restoringFromURL.current = false;
         return { ...f, q: queryInput };
       });
     }, 250);
@@ -186,11 +157,7 @@ export default function FieldEvidenceBrowser({ records }: { records: FieldEviden
     [records]
   );
   const cropOptions = useMemo(
-    () => Array.from(new Set(records.map((r) => displayCrop(r)).filter((c): c is string => Boolean(c)))).sort(),
-    [records]
-  );
-  const countryOptions = useMemo(
-    () => Array.from(new Set(records.map((r) => r.country).filter((c): c is string => Boolean(c)))).sort(),
+    () => Array.from(new Set(records.map((r) => r.cropOrTopic).filter((c): c is string => Boolean(c)))).sort(),
     [records]
   );
 
@@ -199,8 +166,7 @@ export default function FieldEvidenceBrowser({ records }: { records: FieldEviden
 
     pool = pool.filter((fe) => {
       if (filters.evidenceType && fe.evidenceType !== filters.evidenceType) return false;
-      if (filters.crop && displayCrop(fe) !== filters.crop) return false;
-      if (filters.country && fe.country !== filters.country) return false;
+      if (filters.cropOrTopic && fe.cropOrTopic !== filters.cropOrTopic) return false;
       return true;
     });
 
@@ -215,8 +181,7 @@ export default function FieldEvidenceBrowser({ records }: { records: FieldEviden
 
   const activeChips: { key: keyof Filters; label: string }[] = [
     filters.evidenceType && { key: "evidenceType" as const, label: `Type: ${filters.evidenceType}` },
-    filters.crop && { key: "crop" as const, label: `Crop: ${filters.crop}` },
-    filters.country && { key: "country" as const, label: `Country: ${filters.country}` },
+    filters.cropOrTopic && { key: "cropOrTopic" as const, label: `Crop/Topic: ${filters.cropOrTopic}` },
   ].filter(Boolean) as { key: keyof Filters; label: string }[];
 
   function clearFilter(key: keyof Filters) {
@@ -253,13 +218,13 @@ export default function FieldEvidenceBrowser({ records }: { records: FieldEviden
               restoringFromURL.current = false;
               setQueryInput(e.target.value);
             }}
-            placeholder="FE-002, a farmer's name, a crop, a location…"
+            placeholder="FE-002, a farmer's name, a crop…"
             className="w-full rounded-full border border-border bg-card py-3.5 pl-12 pr-4 text-base text-ink shadow-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
           />
         </div>
       </div>
 
-      <div className="mx-auto mt-6 max-w-4xl">
+      <div className="mx-auto mt-6 max-w-3xl">
         <div className="flex flex-col gap-4 sm:flex-row">
           <SelectField
             label="By Evidence Type"
@@ -269,18 +234,11 @@ export default function FieldEvidenceBrowser({ records }: { records: FieldEviden
             allLabel="All types"
           />
           <SelectField
-            label="By Crop"
-            value={filters.crop}
-            onChange={(v) => setFilters((f) => ({ ...f, crop: v }))}
+            label="By Crop / Topic"
+            value={filters.cropOrTopic}
+            onChange={(v) => setFilters((f) => ({ ...f, cropOrTopic: v }))}
             options={cropOptions}
-            allLabel="All crops"
-          />
-          <SelectField
-            label="By Country"
-            value={filters.country}
-            onChange={(v) => setFilters((f) => ({ ...f, country: v }))}
-            options={countryOptions}
-            allLabel="All countries"
+            allLabel="All crops/topics"
           />
         </div>
 
@@ -329,7 +287,7 @@ export default function FieldEvidenceBrowser({ records }: { records: FieldEviden
         )}
       </div>
 
-      <div className="mx-auto mt-8 max-w-6xl">
+      <div className="mx-auto mt-8 max-w-5xl">
         <div className="mb-4 flex flex-col items-center gap-3 sm:flex-row sm:justify-between">
           <p className="text-sm text-ink-soft">
             {results.length} {results.length === 1 ? "record" : "records"} match{results.length === 1 ? "es" : ""}
@@ -362,9 +320,9 @@ export default function FieldEvidenceBrowser({ records }: { records: FieldEviden
         </div>
 
         {results.length > 0 ? (
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-6 sm:grid-cols-2">
             {results.map((fe) => (
-              <EvidenceCard key={fe.slug} fe={fe} />
+              <EvidenceCard key={fe.feNumber} fe={fe} />
             ))}
           </div>
         ) : (

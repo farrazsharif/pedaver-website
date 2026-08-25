@@ -3,7 +3,6 @@ import { crops } from "@/lib/content/crops";
 import { papers } from "@/lib/content/papers";
 import { machines } from "@/lib/content/machines";
 import { resources } from "@/lib/content/resources";
-import { fieldEvidence } from "@/lib/content/fieldEvidence";
 import { SITE_URL } from "@/lib/seo";
 
 export const dynamic = "force-static";
@@ -70,6 +69,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...machines.map((machine) => ({ url: toUrl(`/machines/${machine.slug}`), lastModified: now })),
     ...resources.map((resource) => ({ url: toUrl(`/resources/${resource.slug}`), lastModified: now })),
-    ...fieldEvidence.map((fe) => ({ url: toUrl(`/field-evidence/${fe.slug}`), lastModified: now })),
   ];
 }

@@ -4,8 +4,7 @@ import dict from "@/lib/dictionaries";
 import { crops, getCropBySlug } from "@/lib/content/crops";
 import { getCropImage } from "@/lib/content/cropImages";
 import { cropSeo } from "@/lib/content/cropSeo";
-import { getRelatedPapers, getFieldEvidenceForCrop } from "@/lib/content/crossLinks";
-import { formatFeNumber } from "@/lib/content/fieldEvidence";
+import { getRelatedPapers } from "@/lib/content/crossLinks";
 import { notFound } from "next/navigation";
 import Section from "@/components/Section";
 import VideoEmbed from "@/components/VideoEmbed";
@@ -100,7 +99,6 @@ export default async function CropDetailPage({
 
   const bannerImage = getCropImage(slug);
   const relatedPapers = getRelatedPapers(crop);
-  const relatedFieldEvidence = getFieldEvidenceForCrop(crop);
   const [principleNoteBefore, principleNoteAfter] = dict.crops.principleNote
     .replace(/\{crop\}/g, crop.name)
     .split(dict.crops.principleNoteLink);
@@ -240,36 +238,6 @@ export default async function CropDetailPage({
                     className="block rounded-xl border border-border bg-card p-4 text-sm font-semibold text-primary-dark shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
                   >
                     {paper.title}
-                  </TrackedRelatedLink>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </Section>
-      )}
-
-      {relatedFieldEvidence.length > 0 && (
-        <Section>
-          <div className="mx-auto max-w-5xl">
-            <h2 className="text-xl font-bold text-primary-dark">Related Field Evidence</h2>
-            <p className="mt-1 text-sm text-ink-soft">
-              Farmer testimony and field results for {crop.name.toLowerCase()} under PQNK.
-            </p>
-            <ul className="mt-5 grid gap-3 sm:grid-cols-2">
-              {relatedFieldEvidence.map((fe) => (
-                <li key={fe.slug}>
-                  <TrackedRelatedLink
-                    href={`/field-evidence/${fe.slug}`}
-                    fromType="crop"
-                    fromId={slug}
-                    toType="field-evidence"
-                    toId={fe.slug}
-                    className="block rounded-xl border border-border bg-card p-4 text-sm shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
-                  >
-                    <span className="text-xs font-semibold uppercase tracking-wide text-accent">
-                      {formatFeNumber(fe.feNumber)}
-                    </span>
-                    <p className="mt-1 font-semibold text-primary-dark">{fe.title}</p>
                   </TrackedRelatedLink>
                 </li>
               ))}
