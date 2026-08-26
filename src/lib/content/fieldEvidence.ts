@@ -197,6 +197,18 @@ export const fieldEvidence: FieldEvidence[] = [
       "Brought a question on the Natural Ecosystem Science of Production Agriculture directly to our farmer WhatsApp group — answered as part of our ongoing advisory support.",
     tags: ["advisory", "natural ecosystem science"],
   },
+  {
+    feNumber: 11,
+    title: "Citrus Under PQNK — No Agrochemicals Applied",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
+    cropOrTopic: "Citrus (Kinnow)",
+    summary: "Citrus performing under PQNK with no agrochemical inputs applied.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/U4hON68JrBQ",
+    videoId: "U4hON68JrBQ",
+    relatedCropSlug: "citrus-kinnow",
+    tags: ["citrus", "zero chemical input"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
