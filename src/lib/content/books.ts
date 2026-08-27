@@ -100,6 +100,20 @@ export interface Book {
   subtitle?: string;
   description: string;
   status: BookStatus;
+  /**
+   * The approved cover/title-page artwork, when one exists. Optional so a
+   * book can be added to this array before its cover is ready — the
+   * landing page and the book card both already handle its absence.
+   * `width`/`height` are the actual pixel dimensions of `src`, used to
+   * preserve its exact aspect ratio and avoid layout shift; update both if
+   * the image is ever replaced.
+   */
+  coverImage?: {
+    src: string; // path under /public
+    alt: string;
+    width: number;
+    height: number;
+  };
   /** Set only once the manuscript is frozen — see the file note on the Complete First Edition. */
   edition?: string;
   parts: BookPart[];
@@ -121,6 +135,12 @@ export const books: Book[] = [
     bookId: "natural-ecosystem-science",
     title: "PQNK: The Natural Ecosystem Science of Production Agriculture",
     subtitle: "Industrial Devastation To Natural Abundance",
+    coverImage: {
+      src: "/books/natural-ecosystem-science/cover.jpg",
+      alt: "Cover of PQNK: The Natural Ecosystem Science of Production Agriculture — Industrial Devastation To Natural Abundance, showing a split landscape: an industrial field with a smokestack and bare, cracked soil on the left, and a thriving orchard with visible healthy root and mycorrhizal networks on the right. By Asif Sharif, Agricultural Researcher and PQNK Founder.",
+      width: 700,
+      height: 991,
+    },
     description:
       "The first of Pedaver's four PQNK books: the complete natural-ecosystem science behind PQNK, drawn from fifty-three years of field research. It is being published chapter by chapter as each is written, reviewed, and prepared for release, rather than held back until the whole manuscript is finished.",
     status: "in-progress",

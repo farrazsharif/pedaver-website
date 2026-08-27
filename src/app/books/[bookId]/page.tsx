@@ -9,6 +9,7 @@ import {
   getPublishedPartsWithChapters,
 } from "@/lib/content/books";
 import Section from "@/components/Section";
+import BookCoverImage from "@/components/books/BookCoverImage";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
 
 export async function generateStaticParams() {
@@ -62,16 +63,21 @@ export default async function BookLandingPage({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(bookJsonLd) }} />
 
       <section className="border-b border-border bg-primary-light/10">
-        <div className="mx-auto max-w-4xl px-4 py-14 text-center sm:px-6">
+        <div className="mx-auto max-w-4xl px-4 py-14 text-center sm:px-6 sm:text-left">
           <Link href="/books" className="text-sm font-semibold text-primary underline underline-offset-4">
             ← {dict.books.backToBooks}
           </Link>
-          <span className="mx-auto mt-5 inline-block rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-accent">
-            {book.status === "complete" ? dict.books.statusComplete : dict.books.statusInProgress}
-          </span>
-          <h1 className="mt-4 text-4xl font-extrabold text-primary-dark">{book.title}</h1>
-          {book.subtitle && <p className="mx-auto mt-3 max-w-2xl text-lg italic text-ink-soft">{book.subtitle}</p>}
-          <p className="mx-auto mt-5 max-w-2xl text-ink-soft">{book.description}</p>
+          <div className="mt-6 flex flex-col items-center gap-8 sm:flex-row sm:items-start">
+            <BookCoverImage book={book} className="w-44 sm:w-56" />
+            <div className="min-w-0">
+              <span className="inline-block rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-accent">
+                {book.status === "complete" ? dict.books.statusComplete : dict.books.statusInProgress}
+              </span>
+              <h1 className="mt-4 text-4xl font-extrabold text-primary-dark">{book.title}</h1>
+              {book.subtitle && <p className="mt-3 max-w-2xl text-lg italic text-ink-soft">{book.subtitle}</p>}
+              <p className="mt-5 max-w-2xl text-ink-soft">{book.description}</p>
+            </div>
+          </div>
         </div>
       </section>
 

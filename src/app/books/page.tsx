@@ -2,6 +2,7 @@ import Link from "next/link";
 import dict from "@/lib/dictionaries";
 import { books, getPublishedChapters } from "@/lib/content/books";
 import Section from "@/components/Section";
+import BookCoverImage from "@/components/books/BookCoverImage";
 import { buildMetadata } from "@/lib/seo";
 
 // Books Library — the top-level index of all PQNK books. Only one book is
@@ -37,21 +38,24 @@ export default function BooksPage() {
                 <Link
                   key={book.bookId}
                   href={`/books/${book.bookId}`}
-                  className="group rounded-2xl border border-border bg-card p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md sm:p-8"
+                  className="group flex flex-col items-center gap-5 rounded-2xl border border-border bg-card p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md sm:flex-row sm:items-start sm:gap-6 sm:p-8"
                 >
-                  <span className="inline-block rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-accent">
-                    {book.status === "complete" ? dict.books.statusComplete : dict.books.statusInProgress}
-                  </span>
-                  <h2 className="mt-3 text-2xl font-bold text-primary-dark group-hover:text-primary">
-                    {book.title}
-                  </h2>
-                  {book.subtitle && <p className="mt-1 text-sm italic text-ink-soft">{book.subtitle}</p>}
-                  <p className="mt-3 leading-relaxed text-ink-soft">{book.description}</p>
-                  <p className="mt-4 text-sm font-semibold text-primary">
-                    {publishedCount > 0
-                      ? `${publishedCount} chapter${publishedCount === 1 ? "" : "s"} published →`
-                      : "View book contents →"}
-                  </p>
+                  <BookCoverImage book={book} className="w-32 sm:w-36" />
+                  <div className="min-w-0 text-center sm:text-left">
+                    <span className="inline-block rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-accent">
+                      {book.status === "complete" ? dict.books.statusComplete : dict.books.statusInProgress}
+                    </span>
+                    <h2 className="mt-3 text-2xl font-bold text-primary-dark group-hover:text-primary">
+                      {book.title}
+                    </h2>
+                    {book.subtitle && <p className="mt-1 text-sm italic text-ink-soft">{book.subtitle}</p>}
+                    <p className="mt-3 leading-relaxed text-ink-soft">{book.description}</p>
+                    <p className="mt-4 text-sm font-semibold text-primary">
+                      {publishedCount > 0
+                        ? `${publishedCount} chapter${publishedCount === 1 ? "" : "s"} published →`
+                        : "View book contents →"}
+                    </p>
+                  </div>
                 </Link>
               );
             })}
