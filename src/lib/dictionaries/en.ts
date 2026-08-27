@@ -517,9 +517,29 @@ const en = {
   books: {
     pageTitle: "PQNK Books",
     pageSubtitle:
-      "A four-book series documenting the Natural Ecosystem Science of Production Agriculture — currently being finalized.",
-    comingSoonNote:
-      "The four PQNK books are being completed and will be published here as free eBooks once ready.",
+      "A four-book series documenting the Natural Ecosystem Science of Production Agriculture, published progressively as each is completed.",
+    libraryNote:
+      "Four books make up the complete PQNK series. Each is published here progressively, chapter by chapter, as it is written and reviewed — not held back until the whole book is finished.",
+    statusInProgress: "Publication in Progress",
+    statusComplete: "Complete First Edition",
+    progressiveNote:
+      "This book is being released progressively as chapters are completed and reviewed. Chapter sequence and numbering may change during development. Published chapters remain part of the evolving manuscript until the complete First Edition is compiled.",
+    contentsTitle: "Contents",
+    noChaptersYetNote:
+      "Chapters are being written, reviewed, and prepared for release. They will appear here, in order, as each is approved for publication.",
+    moreChaptersComingNote:
+      "Additional chapters are being completed and will be released here progressively as each is approved for publication.",
+    chapterNumbersProvisionalNote:
+      "Chapter numbers reflect the manuscript's current position and may change as it develops. They become permanent only once the complete First Edition is compiled.",
+    inPreparation: "In Preparation",
+    readChapter: "Read Chapter",
+    downloadChapterPdf: "Download Chapter PDF",
+    downloadCompleteBook: "Download Complete Book",
+    backToBook: "Back to Book Contents",
+    backToBooks: "All PQNK Books",
+    bookContents: "Book Contents",
+    previousChapter: "Previous Chapter",
+    nextChapter: "Next Chapter",
   },
   farmerVoices: {
     pageTitle: "Farmer Voices",

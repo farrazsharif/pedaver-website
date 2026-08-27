@@ -3,6 +3,7 @@ import { crops } from "@/lib/content/crops";
 import { papers } from "@/lib/content/papers";
 import { machines } from "@/lib/content/machines";
 import { resources } from "@/lib/content/resources";
+import { books, getPublishedChapters } from "@/lib/content/books";
 import { SITE_URL } from "@/lib/seo";
 
 export const dynamic = "force-static";
@@ -71,5 +72,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...machines.map((machine) => ({ url: toUrl(`/machines/${machine.slug}`), lastModified: now })),
     ...resources.map((resource) => ({ url: toUrl(`/resources/${resource.slug}`), lastModified: now })),
+    // Every book's landing page is always indexed, regardless of how many of
+    // its chapters are published — it's the permanent home of the book. Only
+    // PUBLISHED chapters get their own sitemap entry: an "in-preparation"
+    // chapter has no route at all (see books.ts / the chapter page's
+    // generateStaticParams), so there's nothing to list here for it yet.
+    ...books.map((book) => ({ url: toUrl(`/books/${book.bookId}`), lastModified: now })),
+    ...books.flatMap((book) =>
+      getPublishedChapters(book).map((chapter) => ({
+        url: toUrl(`/books/${book.bookId}/${chapter.chapterId}`),
+        lastModified: new Date(chapter.modifiedDate ?? chapter.publishedDate ?? now),
+      }))
+    ),
   ];
 }
