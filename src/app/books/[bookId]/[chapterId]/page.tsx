@@ -121,7 +121,14 @@ export default async function ChapterPage({
 
       <Section>
         <div className="mx-auto grid max-w-4xl gap-10 lg:grid-cols-[1fr_auto]">
-          <div className="min-w-0">{chapter.body && <ChapterBody blocks={chapter.body} />}</div>
+          <div className="min-w-0">
+            {chapter.body && (
+              <ChapterBody
+                blocks={chapter.body}
+                imageBase={`/books/${book.bookId}/${chapter.chapterId}`}
+              />
+            )}
+          </div>
 
           {chapter.pdfPath && (
             <div className="lg:w-56">

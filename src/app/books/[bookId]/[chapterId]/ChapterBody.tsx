@@ -12,7 +12,9 @@ import type { ChapterBlock } from "@/lib/content/books";
  *
  * Do not hand-format an individual chapter here — every visual decision
  * comes from this one block-type switch, so Chapters 2 onward inherit it
- * automatically the moment their own body arrays exist.
+ * automatically the moment their own body arrays exist. Each chapter's
+ * images live in that chapter's own folder (passed in as `imageBase`) —
+ * never assume another chapter's path.
  */
 
 const COLOR = {
@@ -26,9 +28,14 @@ const COLOR = {
   qaTint: "#E8F5E9",
 } as const;
 
-const IMAGE_BASE = "/books/natural-ecosystem-science/earths-original-design";
-
-export default function ChapterBody({ blocks }: { blocks: ChapterBlock[] }) {
+export default function ChapterBody({
+  blocks,
+  imageBase,
+}: {
+  blocks: ChapterBlock[];
+  /** Public path to this chapter's own image folder, e.g. "/books/{bookId}/{chapterId}" — every chapter's images live in its own folder, never shared with another chapter's. */
+  imageBase: string;
+}) {
   return (
     <div className="flex flex-col gap-5">
       {blocks.map((block, i) => {
@@ -90,7 +97,7 @@ export default function ChapterBody({ blocks }: { blocks: ChapterBlock[] }) {
                   // eslint-disable-next-line @next/next/no-img-element
                   <img
                     key={file}
-                    src={`${IMAGE_BASE}/${file}`}
+                    src={`${imageBase}/${file}`}
                     alt=""
                     className="w-full min-w-0 flex-1 rounded-lg border border-border object-cover"
                   />
