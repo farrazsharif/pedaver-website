@@ -6,7 +6,7 @@ import {
   books,
   getBookById,
   getChapterDisplayNumber,
-  getPublishedPartsWithChapters,
+  getAllPartsWithPublishedChapters,
 } from "@/lib/content/books";
 import Section from "@/components/Section";
 import BookCoverImage from "@/components/books/BookCoverImage";
@@ -41,11 +41,13 @@ export default async function BookLandingPage({
   const book = getBookById(bookId);
   if (!book) notFound();
 
-  // Public view only ever shows Parts that contain at least one PUBLISHED
-  // chapter, and only the published chapters within them — the manuscript's
-  // full working structure (66 chapters, mostly in-preparation) stays
-  // internal to books.ts, not on this page. See getPublishedPartsWithChapters.
-  const publishedPartsWithChapters = getPublishedPartsWithChapters(book);
+  // Public view shows every Part's title (the book's locked, stable
+  // structure), but only ever lists chapters within a Part that are
+  // PUBLISHED — the manuscript's full working structure (66 chapters, most
+  // in-preparation) stays internal to books.ts, never listed by name here.
+  // See getAllPartsWithPublishedChapters.
+  const allPartsWithPublishedChapters = getAllPartsWithPublishedChapters(book);
+  const hasAnyPublishedChapter = allPartsWithPublishedChapters.some((group) => group.chapters.length > 0);
 
   const bookJsonLd = {
     "@context": "https://schema.org",
@@ -106,40 +108,46 @@ export default async function BookLandingPage({
         <div className="mx-auto max-w-3xl">
           <h2 className="text-xl font-bold text-primary-dark">{dict.books.contentsTitle}</h2>
 
-          {publishedPartsWithChapters.length === 0 ? (
-            // Nothing published yet — a restrained note, not a list of 66
-            // "In Preparation" placeholders. Unpublished chapters are never
-            // shown individually on this page (see books.ts file header).
-            <p className="mt-4 text-ink-soft">{dict.books.noChaptersYetNote}</p>
-          ) : (
-            <>
-              <div className="mt-6 flex flex-col gap-8">
-                {publishedPartsWithChapters.map(({ part, chapters }) => (
-                  <div key={part.partId}>
-                    <h3 className="text-sm font-bold uppercase tracking-wide text-accent">{part.title}</h3>
-                    {part.subtitle && <p className="text-sm italic text-ink-soft">{part.subtitle}</p>}
-                    <ol className="mt-3 flex flex-col gap-2">
-                      {chapters.map((chapter) => {
-                        const number = getChapterDisplayNumber(book, chapter.chapterId);
-                        return (
-                          <li key={chapter.chapterId} className="flex items-baseline gap-3 text-sm">
-                            <span className="w-14 flex-none text-ink-soft/60">Ch. {number}</span>
-                            <Link
-                              href={`/books/${book.bookId}/${chapter.chapterId}`}
-                              className="font-semibold text-primary-dark hover:text-primary"
-                            >
-                              {chapter.title}
-                            </Link>
-                          </li>
-                        );
-                      })}
-                    </ol>
-                  </div>
-                ))}
+          <div className="mt-6 flex flex-col gap-8">
+            {allPartsWithPublishedChapters.map(({ part, chapters }) => (
+              <div key={part.partId}>
+                <div className="flex items-baseline gap-2">
+                  <h3 className="text-sm font-bold uppercase tracking-wide text-accent">{part.title}</h3>
+                  {chapters.length === 0 && (
+                    <span className="rounded-full bg-ink-soft/10 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-ink-soft">
+                      {dict.books.inPreparation}
+                    </span>
+                  )}
+                </div>
+                {part.subtitle && <p className="text-sm italic text-ink-soft">{part.subtitle}</p>}
+                {chapters.length > 0 && (
+                  <ol className="mt-3 flex flex-col gap-2">
+                    {chapters.map((chapter) => {
+                      const number = getChapterDisplayNumber(book, chapter.chapterId);
+                      return (
+                        <li key={chapter.chapterId} className="flex items-baseline gap-3 text-sm">
+                          <span className="w-14 flex-none text-ink-soft/60">Ch. {number}</span>
+                          <Link
+                            href={`/books/${book.bookId}/${chapter.chapterId}`}
+                            className="font-semibold text-primary-dark hover:text-primary"
+                          >
+                            {chapter.title}
+                          </Link>
+                        </li>
+                      );
+                    })}
+                  </ol>
+                )}
               </div>
+            ))}
+          </div>
+          {hasAnyPublishedChapter ? (
+            <>
               <p className="mt-6 text-sm text-ink-soft">{dict.books.moreChaptersComingNote}</p>
               <p className="mt-2 text-xs text-ink-soft">{dict.books.chapterNumbersProvisionalNote}</p>
             </>
+          ) : (
+            <p className="mt-6 text-sm text-ink-soft">{dict.books.noChaptersYetNote}</p>
           )}
         </div>
       </Section>

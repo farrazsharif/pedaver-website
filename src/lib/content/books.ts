@@ -144,15 +144,15 @@ export const books: Book[] = [
     description:
       "The first of Pedaver's four PQNK books: the complete natural-ecosystem science behind PQNK, drawn from fifty-three years of field research. It is being published chapter by chapter as each is written, reviewed, and prepared for release, rather than held back until the whole manuscript is finished.",
     status: "in-progress",
-    // Editorial contents structure below reflects the manuscript's current Part/Chapter
-    // arrangement as of 2026-08-27, shown per the task brief's allowance to display
-    // existing chapter titles even before any are published. Parts One through Five are
-    // reasonably settled; Part Six's boundary past Chapter 49 is NOT yet confirmed by the
-    // manuscript itself — no further Part heading exists after it, so Chapters 50-66 are
-    // grouped under Part Six provisionally, purely as a container, not as an editorial
-    // claim that they belong there. Because `partId` is just an organisational label,
-    // re-grouping any of them (or introducing a Part Seven) later is a one-line change
-    // per chapter here and touches no URL, no file, and no other part of the codebase.
+    // Editorial contents structure below is synced to the locked V60 manuscript's Table
+    // of Contents (as of 2026-08-30): 8 Parts, 66 chapters. Chapter titles/subtitles here
+    // reproduce V60's chapter names exactly; where V60's TOC gives a short bare title and
+    // an earlier draft here had folded a longer descriptive phrase into the title itself,
+    // that phrase was moved into `subtitle` rather than discarded — V60's TOC lists titles
+    // only, it says nothing about subtitles, so existing subtitle text was never
+    // contradicted by it, only the title/subtitle split needed correcting in a few places.
+    // Because `partId` is just an organisational label, re-grouping any chapter later is a
+    // one-line change here and touches no URL, no file, and no other part of the codebase.
     parts: [
       { partId: "part-one", title: "The Original System", subtitle: "Nature's 400-Million-Year Blueprint" },
       { partId: "part-two", title: "The Destruction", subtitle: "Ten Thousand Years of Incremental Error" },
@@ -160,6 +160,8 @@ export const books: Book[] = [
       { partId: "part-four", title: "The PQNK System", subtitle: "How It Works" },
       { partId: "part-five", title: "The Evidence", subtitle: "Crop by Crop" },
       { partId: "part-six", title: "The Transformation", subtitle: "From Farm to Future" },
+      { partId: "part-seven", title: "Extended Knowledge" },
+      { partId: "part-eight", title: "Policy and the Future" },
     ],
     chapters: [
       {
@@ -338,7 +340,7 @@ export const books: Book[] = [
       { chapterId: "weeds-as-soil-physicians", partId: "part-one", title: "Weeds as Soil Physicians", subtitle: "The Paradigm Inversion, Reading the Field's Own Diagnosis", status: "in-preparation" },
 
       { chapterId: "the-first-error", partId: "part-two", title: "The First Error", subtitle: "When Humans Buried Seeds in Fear, Not Understanding", status: "in-preparation" },
-      { chapterId: "ancient-conventional-industrial-aci-the-cover-up-technology-chain", partId: "part-two", title: "Ancient Conventional Industrial (ACI): The Cover-Up Technology Chain", subtitle: "How Each Agricultural Intervention Creates the Problem That Requires the Next", status: "in-preparation" },
+      { chapterId: "ancient-conventional-industrial-aci", partId: "part-two", title: "Ancient Conventional Industrial (ACI)", subtitle: "The Cover-Up Technology Chain: How Each Agricultural Intervention Creates the Problem That Requires the Next", status: "in-preparation" },
       { chapterId: "the-industrialization-of-agriculture", partId: "part-two", title: "The Industrialization of Agriculture", subtitle: "How the Living Ecosystem Was Replaced by an Industrial Response System", status: "in-preparation" },
       { chapterId: "the-68-year-experiment", partId: "part-two", title: "The 68-Year Experiment", subtitle: "1958 to the Present, Measuring the Quantified Catastrophe", status: "in-preparation" },
       { chapterId: "captured-science", partId: "part-two", title: "Captured Science", subtitle: "How Agricultural Research Became a Tool of the Input Supply Industry", status: "in-preparation" },
@@ -356,50 +358,52 @@ export const books: Book[] = [
       { chapterId: "the-four-prohibitions-and-four-principles", partId: "part-four", title: "The Four Prohibitions and Four Principles", subtitle: "The Litmus Test for True Natural Agriculture", status: "in-preparation" },
       { chapterId: "the-eight-step-transition-protocol", partId: "part-four", title: "The Eight-Step Transition Protocol", subtitle: "From ACI to PQNK in One Season", status: "in-preparation" },
       { chapterId: "the-complete-pqnk-system-timeline", partId: "part-four", title: "The Complete PQNK System Timeline", subtitle: "From the Day of Transition to the Mature Ecosystem", status: "in-preparation" },
-      { chapterId: "hardpan-what-it-is-what-it-does-and-how-to-shatter-it", partId: "part-four", title: "Hardpan: What It Is, What It Does, and How to Shatter It", subtitle: "The Invisible Wall Beneath Every Conventionally Managed Field", status: "in-preparation" },
+      { chapterId: "hardpan", partId: "part-four", title: "Hardpan", subtitle: "What It Is, What It Does, and How to Shatter It: The Invisible Wall Beneath Every Conventionally Managed Field", status: "in-preparation" },
       { chapterId: "soil-moisture-management", partId: "part-four", title: "Soil Moisture Management", subtitle: "The Water Revolution: Four Sources, One Protocol, Zero Waste", status: "in-preparation" },
-      { chapterId: "organic-mulch-natures-blanket", partId: "part-four", title: "Organic Mulch, Nature's Blanket", subtitle: "Thermostat, Food Source, Weed Suppressor, and Carbon Engine", status: "in-preparation" },
+      { chapterId: "organic-mulch", partId: "part-four", title: "Organic Mulch", subtitle: "Nature's Blanket: Thermostat, Food Source, Weed Suppressor, and Carbon Engine", status: "in-preparation" },
       { chapterId: "pqnk-machinery-engineering", partId: "part-four", title: "PQNK Machinery Engineering", subtitle: "Tools That Serve the Ecosystem", status: "in-preparation" },
       { chapterId: "sipp-and-precision-planting", partId: "part-four", title: "SIPP and Precision Planting", subtitle: "The Machine Revolution, Every Seed in Its Right Place", status: "in-preparation" },
       { chapterId: "the-closed-loop-farm", partId: "part-four", title: "The Closed-Loop Farm", subtitle: "Self-Sufficiency as a System State, Zero Inputs, Maximum Output", status: "in-preparation" },
       { chapterId: "pqnk-vs-all-others", partId: "part-four", title: "PQNK vs. All Others", subtitle: "The Definitive Comparison", status: "in-preparation" },
       { chapterId: "field-evidence-and-the-authority-of-living-ecosystems", partId: "part-four", title: "Field Evidence and the Authority of Living Ecosystems", subtitle: "The Farm as the Final Judge", status: "in-preparation" },
 
-      { chapterId: "rice-the-proof-of-concept", partId: "part-five", title: "Rice, The Proof of Concept", subtitle: "2008 to Present, Peer-Reviewed, Replicated, and Scaled", status: "in-preparation" },
-      { chapterId: "wheat-from-78-tillers-to-8-kg-seed", partId: "part-five", title: "Wheat, From 78 Tillers to 8 kg Seed", subtitle: "Pakistan's Food Security Crop Transformed", status: "in-preparation" },
-      { chapterId: "cotton-from-bt-to-pqnk", partId: "part-five", title: "Cotton, From BT to PQNK", subtitle: "The Fourth Turning Point, 200 Balls Per Plant, Zero Sprays", status: "in-preparation" },
-      { chapterId: "maize-three-crops-a-year", partId: "part-five", title: "Maize, Three Crops a Year", subtitle: "Dramatically Lower Cost, Dramatically Higher Annual Income", status: "in-preparation" },
-      { chapterId: "sugarcane-the-bamboo-principle", partId: "part-five", title: "Sugarcane: The Bamboo Principle", status: "in-preparation" },
-      { chapterId: "potato-circular-production", partId: "part-five", title: "Potato, Circular Production", subtitle: "Year-Round Yield, 75% Less Seed, Superior Quality", status: "in-preparation" },
+      { chapterId: "rice", partId: "part-five", title: "Rice", subtitle: "The Proof of Concept: 2008 to Present, Peer-Reviewed, Replicated, and Scaled", status: "in-preparation" },
+      { chapterId: "wheat", partId: "part-five", title: "Wheat", subtitle: "From 78 Tillers to 8 kg Seed: Pakistan's Food Security Crop Transformed", status: "in-preparation" },
+      { chapterId: "cotton", partId: "part-five", title: "Cotton", subtitle: "From BT to PQNK: The Fourth Turning Point, 200 Balls Per Plant, Zero Sprays", status: "in-preparation" },
+      { chapterId: "maize", partId: "part-five", title: "Maize", subtitle: "Three Crops a Year: Dramatically Lower Cost, Dramatically Higher Annual Income", status: "in-preparation" },
+      { chapterId: "sugarcane", partId: "part-five", title: "Sugarcane", subtitle: "The Bamboo Principle", status: "in-preparation" },
+      { chapterId: "potato", partId: "part-five", title: "Potato", subtitle: "Circular Production: Year-Round Yield, 75% Less Seed, Superior Quality", status: "in-preparation" },
       { chapterId: "garlic-onion-and-vegetables", partId: "part-five", title: "Garlic, Onion, and Vegetables", subtitle: "Rs. 1,000,000 per Acre in Six Months: The Designed Diversity System", status: "in-preparation" },
-      { chapterId: "orchards-citrus-mango-and-dying-trees", partId: "part-five", title: "Orchards, Citrus, Mango, and Dying Trees", subtitle: "The Toba Tek Singh Data, and How PQNK Revives What Conventional Management Is Killing", status: "in-preparation" },
-      { chapterId: "tropical-crops-banana-and-papaya", partId: "part-five", title: "Tropical Crops, Banana and Papaya", subtitle: "Banana Where It Shouldn't Grow; Papaya at Zero Cost", status: "in-preparation" },
-      { chapterId: "new-frontiers-five-unexpected-crops", partId: "part-five", title: "New Frontiers, Five Unexpected Crops", subtitle: "Strawberry, Olive, Bamboo, Watermelon, and Saffron in PQNK Systems", status: "in-preparation" },
+      { chapterId: "orchards", partId: "part-five", title: "Orchards", subtitle: "Citrus, Mango, and Dying Trees: The Toba Tek Singh Data, and How PQNK Revives What Conventional Management Is Killing", status: "in-preparation" },
+      { chapterId: "tropical-crops", partId: "part-five", title: "Tropical Crops", subtitle: "Banana and Papaya: Banana Where It Shouldn't Grow; Papaya at Zero Cost", status: "in-preparation" },
+      { chapterId: "new-frontiers", partId: "part-five", title: "New Frontiers", subtitle: "Five Unexpected Crops: Strawberry, Olive, Bamboo, Watermelon, and Saffron in PQNK Systems", status: "in-preparation" },
       { chapterId: "livestock-and-fodder", partId: "part-five", title: "Livestock and Fodder", subtitle: "From 70% to 20% Feeding Cost, Soil to Soul", status: "in-preparation" },
 
       { chapterId: "one-acre-prosperity", partId: "part-six", title: "One Acre Prosperity", subtitle: "The Smallholder's Path to Dignity", status: "in-preparation" },
       { chapterId: "water-floods-and-aquifer-replenishment", partId: "part-six", title: "Water, Floods, and Aquifer Replenishment", subtitle: "PQNK as Hydrological Solution", status: "in-preparation" },
       { chapterId: "climate-carbon-and-atmospheric-water", partId: "part-six", title: "Climate, Carbon, and Atmospheric Water", subtitle: "PQNK as Climate Solution", status: "in-preparation" },
-      { chapterId: "food-security-food-sovereignty-and-economy", partId: "part-six", title: "Food Security, Food Sovereignty, and Economy", subtitle: "What PQNK Means for Pakistan as a Nation-State", status: "in-preparation" },
-      { chapterId: "bio-potentiation-from-soil-to-soul", partId: "part-six", title: "Bio-potentiation, From Soil to Soul", subtitle: "The Food Chain as Fountain of Life", status: "in-preparation" },
+      { chapterId: "food-security", partId: "part-six", title: "Food Security", subtitle: "Food Sovereignty and Economy: What PQNK Means for Pakistan as a Nation-State", status: "in-preparation" },
+      { chapterId: "bio-potentiation", partId: "part-six", title: "Bio-potentiation", subtitle: "From Soil to Soul: The Food Chain as Fountain of Life", status: "in-preparation" },
       { chapterId: "pqnk-as-the-farmacy", partId: "part-six", title: "PQNK as the Farmacy", subtitle: "The Root of the Chronic Disease Epidemic, and Its Cure", status: "in-preparation" },
-      { chapterId: "re-mothering-agriculture-maaee-zameen", partId: "part-six", title: "Re-Mothering Agriculture: Maaee Zameen", status: "in-preparation" },
-      { chapterId: "okra-under-pqnk", partId: "part-six", title: "Okra Under PQNK", subtitle: "Fruiting Management and the Non-Intervention Principle", status: "in-preparation" },
-      { chapterId: "pakistans-sugar-industry", partId: "part-six", title: "Pakistan's Sugar Industry", subtitle: "The PQNK Transformation", status: "in-preparation" },
-      { chapterId: "the-four-step-pqnk-transition-protocol", partId: "part-six", title: "The Four-Step PQNK Transition Protocol", subtitle: "Reopening the Living Earth", status: "in-preparation" },
-      { chapterId: "the-pqnk-bed-system", partId: "part-six", title: "The PQNK Bed System", subtitle: "Engineering the Physical Architecture of Living Agriculture", status: "in-preparation" },
-      { chapterId: "jantar-and-the-biological-architecture-of-living-soil", partId: "part-six", title: "Jantar and the Biological Architecture of Living Soil", subtitle: "From Mechanical Restoration to Self-Organizing Regeneration", status: "in-preparation" },
-      { chapterId: "root-retention-science", partId: "part-six", title: "Root Retention Science", subtitle: "The Underground Architecture of the Permanent Bed", status: "in-preparation" },
-      { chapterId: "the-pqnk-weed-indicator-system", partId: "part-six", title: "The PQNK Weed-Indicator System", subtitle: "Reading the Field Through Vegetation", status: "in-preparation" },
-      { chapterId: "pest-ecology-and-the-collapse-of-biological-balance", partId: "part-six", title: "Pest Ecology and the Collapse of Biological Balance", status: "in-preparation" },
-      { chapterId: "nutrition-dense-food-and-the-recovery-of-ecological-quality", partId: "part-six", title: "Nutrition-Dense Food and the Recovery of Ecological Quality", status: "in-preparation" },
-      { chapterId: "the-farmer-as-the-ultimate-instrument", partId: "part-six", title: "The Farmer as the Ultimate Instrument", status: "in-preparation" },
-      { chapterId: "when-mulch-becomes-a-barrier", partId: "part-six", title: "When Mulch Becomes a Barrier", status: "in-preparation" },
-      { chapterId: "why-only-four-kilograms-of-np-during-transition", partId: "part-six", title: "Why Only Four Kilograms of NP During Transition", status: "in-preparation" },
-      { chapterId: "the-pqnk-validation-system", partId: "part-six", title: "The PQNK Validation System", status: "in-preparation" },
-      { chapterId: "policy-recommendations", partId: "part-six", title: "Policy Recommendations", subtitle: "What Governments, Academia, Finance, and Extension Must Do", status: "in-preparation" },
-      { chapterId: "a-call-to-action", partId: "part-six", title: "A Call to Action", subtitle: "For Farmers, Consumers, Youth, Environmentalists, and Scientists", status: "in-preparation" },
-      { chapterId: "the-field-record", partId: "part-six", title: "The Field Record", subtitle: "Production Economics of the PQNK System, Crop by Crop", status: "in-preparation" },
+
+      { chapterId: "re-mothering-agriculture", partId: "part-seven", title: "Re-Mothering Agriculture", subtitle: "Maaee Zameen", status: "in-preparation" },
+      { chapterId: "okra-under-pqnk", partId: "part-seven", title: "Okra Under PQNK", subtitle: "Fruiting Management and the Non-Intervention Principle", status: "in-preparation" },
+      { chapterId: "pakistans-sugar-industry", partId: "part-seven", title: "Pakistan's Sugar Industry", subtitle: "The PQNK Transformation", status: "in-preparation" },
+      { chapterId: "the-four-step-pqnk-transition-protocol", partId: "part-seven", title: "The Four-Step PQNK Transition Protocol", subtitle: "Reopening the Living Earth", status: "in-preparation" },
+      { chapterId: "the-pqnk-bed-system", partId: "part-seven", title: "The PQNK Bed System", subtitle: "Engineering the Physical Architecture of Living Agriculture", status: "in-preparation" },
+      { chapterId: "jantar", partId: "part-seven", title: "Jantar", subtitle: "The Biological Architecture of Living Soil: From Mechanical Restoration to Self-Organizing Regeneration", status: "in-preparation" },
+      { chapterId: "root-retention-science", partId: "part-seven", title: "Root Retention Science", subtitle: "The Underground Architecture of the Permanent Bed", status: "in-preparation" },
+      { chapterId: "the-pqnk-weed-indicator-system", partId: "part-seven", title: "The PQNK Weed-Indicator System", subtitle: "Reading the Field Through Vegetation", status: "in-preparation" },
+      { chapterId: "pest-ecology", partId: "part-seven", title: "Pest Ecology", subtitle: "The Collapse of Biological Balance", status: "in-preparation" },
+      { chapterId: "nutrition-dense-food", partId: "part-seven", title: "Nutrition-Dense Food", subtitle: "The Recovery of Ecological Quality", status: "in-preparation" },
+      { chapterId: "the-farmer-as-the-ultimate-instrument", partId: "part-seven", title: "The Farmer as the Ultimate Instrument", status: "in-preparation" },
+      { chapterId: "when-mulch-becomes-a-barrier", partId: "part-seven", title: "When Mulch Becomes a Barrier", status: "in-preparation" },
+      { chapterId: "why-only-four-kilograms-of-np-during-transition", partId: "part-seven", title: "Why Only Four Kilograms of NP During Transition", status: "in-preparation" },
+
+      { chapterId: "the-pqnk-validation-system", partId: "part-eight", title: "The PQNK™ Validation System", status: "in-preparation" },
+      { chapterId: "policy-recommendations", partId: "part-eight", title: "Policy Recommendations", subtitle: "What Governments, Academia, Finance, and Extension Must Do", status: "in-preparation" },
+      { chapterId: "a-call-to-action", partId: "part-eight", title: "A Call to Action", subtitle: "For Farmers, Consumers, Youth, Environmentalists, and Scientists", status: "in-preparation" },
+      { chapterId: "the-field-record", partId: "part-eight", title: "The Field Record", subtitle: "Production Economics of the PQNK System, Crop by Crop", status: "in-preparation" },
     ],
   },
   // Architecture supports additional books as records in this array — see file header.
@@ -462,6 +466,23 @@ export function getPublishedPartsWithChapters(book: Book): { part: BookPart; cha
       chapters: book.chapters.filter((c) => c.partId === part.partId && c.status === "published"),
     }))
     .filter((group) => group.chapters.length > 0);
+}
+
+/**
+ * Every Part in the book's locked structure, each with its published
+ * chapters only (an empty array for a Part with none yet) — safe for public
+ * display because it exposes Part titles (a stable, already-decided
+ * structure) but never an individual in-preparation chapter's title. Use
+ * this to show readers the book's overall shape (e.g. "8 Parts") while
+ * still keeping the 66-chapter working manuscript private — see
+ * getPublishedPartsWithChapters for the chapter-list-only variant that
+ * omits empty Parts entirely.
+ */
+export function getAllPartsWithPublishedChapters(book: Book): { part: BookPart; chapters: BookChapter[] }[] {
+  return book.parts.map((part) => ({
+    part,
+    chapters: book.chapters.filter((c) => c.partId === part.partId && c.status === "published"),
+  }));
 }
 
 /**
