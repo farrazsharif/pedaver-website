@@ -15,7 +15,9 @@ import Section from "@/components/Section";
 import ContentViewTracker from "@/components/analytics/ContentViewTracker";
 import TrackedPdfLink from "@/components/analytics/TrackedPdfLink";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
+import { buildChapterSpeech } from "@/lib/content/chapterSpeech";
 import ChapterBody from "./ChapterBody";
+import ReadAloud from "./ReadAloud";
 
 // Only PUBLISHED chapters get a static page — an "in-preparation" chapter
 // has no route at all, so it can never become a thin indexed page (see
@@ -62,6 +64,12 @@ export default async function ChapterPage({
   const number = getChapterDisplayNumber(book, chapterId);
   const part = getPartById(book, chapter.partId);
   const { prev, next } = getAdjacentPublishedChapters(book, chapterId);
+
+  // Read Aloud (browser-native TTS) input — built from the structured chapter
+  // blocks, never scraped from the DOM. Empty if the chapter has no body.
+  const speechSegments = chapter.body
+    ? buildChapterSpeech({ title: chapter.title, subtitle: chapter.subtitle, body: chapter.body })
+    : [];
 
   const chapterJsonLd = {
     "@context": "https://schema.org",
@@ -120,6 +128,11 @@ export default async function ChapterPage({
       </section>
 
       <Section>
+        {speechSegments.length > 0 && (
+          <div className="mx-auto mb-8 max-w-4xl">
+            <ReadAloud segments={speechSegments} />
+          </div>
+        )}
         <div className="mx-auto grid max-w-4xl gap-10 lg:grid-cols-[1fr_auto]">
           <div className="min-w-0">
             {chapter.body && (
