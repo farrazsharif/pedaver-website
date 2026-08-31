@@ -26,7 +26,7 @@ import { buildSpeechChunks, type SpeechSegment } from "@/lib/content/chapterSpee
 
 type Status = "idle" | "playing" | "paused" | "ended" | "unsupported" | "unavailable";
 
-const SPEEDS = [1, 1.25, 1.5, 2] as const;
+const SPEEDS = [0.75, 1, 1.1, 1.25] as const;
 const APPARATUS: React.CSSProperties = { fontFamily: "Arial, sans-serif" };
 
 const PRIVACY_NOTE =
