@@ -117,7 +117,7 @@ export default function HomePage() {
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">{h.pathways.eyebrow}</p>
           <h2 className="mt-3 text-3xl font-bold text-primary-dark">{h.pathways.title}</h2>
         </div>
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {h.pathways.cards.map((card) => (
             <Link
               key={card.href}
