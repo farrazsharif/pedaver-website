@@ -17,13 +17,15 @@ export default function Footer({ dict }: { dict: Dictionary }) {
     { label: dict.nav.books, href: "/books" },
   ];
 
-  // Advisory, Farmer Voices and Video Library are no longer in main nav
-  // (folded under the Knowledge Exchange umbrella, 2026-08-25) but stay
-  // live and linked here so they're not orphaned from site navigation.
+  // Farmer Voices and Video Library are no longer in main nav (folded under
+  // the Knowledge Exchange umbrella, 2026-08-25) but stay live and linked
+  // here so they're not orphaned from site navigation.
+  // Farmer Advisory is hidden for now — the route is de-registered
+  // (src/app/_advisory) and delinked everywhere until the four PQNK books
+  // are published; to re-activate see src/app/_advisory/page.tsx.
   const workLinks = [
     { label: dict.nav.services, href: "/services" },
     { label: dict.nav.machines, href: "/machines" },
-    { label: dict.nav.advisory, href: "/advisory" },
     { label: dict.nav.farmerVoices, href: "/farmer-voices" },
     { label: dict.nav.videoLibrary, href: "/video-library" },
     { label: dict.nav.validation, href: "/validation" },

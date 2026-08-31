@@ -1,3 +1,16 @@
+// HIDDEN — Farmer Advisory is deliberately off the live site until the four
+// PQNK books are published (expected to take ~a year). The folder is named
+// `_advisory` so Next does not register it as a route: /advisory returns a
+// 404 and appears nowhere.
+//
+// To re-activate:
+//   1. Rename this folder back:  src/app/_advisory  ->  src/app/advisory
+//   2. Re-add "/advisory" to staticPages in src/app/sitemap.ts
+//   3. Re-add the Farmer Advisory entry to workLinks in src/components/Footer.tsx
+//   4. Re-add the "Farmer Advisory Notes →" link in src/app/field-evidence/page.tsx
+//   5. Restore a "Farmers → Farmer Advisory" card in the homepage
+//      knowledge-pathways cards in src/lib/dictionaries/en.ts
+//
 import dict from "@/lib/dictionaries";
 import { getNotesByCategory, type AdvisoryCategorySlug } from "@/lib/content/advisory";
 import Section from "@/components/Section";

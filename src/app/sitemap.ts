@@ -35,7 +35,8 @@ const staticPages = [
   "/crops",
   "/resources",
   "/papers",
-  "/advisory",
+  // "/advisory" — hidden until the four PQNK books are published; route
+  // de-registered at src/app/_advisory.
   "/services",
   "/machines",
   "/field-evidence",

@@ -184,11 +184,11 @@ const en = {
           cta: "Explore PQNK Science",
         },
         {
-          audience: "Farmers",
-          label: "Farmer Advisory",
-          body: "Practical field guidance and farmer questions.",
-          href: "/advisory",
-          cta: "Go to Farmer Advisory",
+          audience: "Read the Science in Depth",
+          label: "PQNK Books",
+          body: "The Natural Ecosystem Science of Production Agriculture, published chapter by chapter as each is written and reviewed.",
+          href: "/books",
+          cta: "Browse the PQNK Books",
         },
         {
           audience: "Scientists & Researchers",

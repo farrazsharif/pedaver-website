@@ -70,13 +70,13 @@ export default function Header({ dict }: { dict: Dictionary }) {
           library (Knowledge Papers, Knowledge Exchange) provides its own
           contextual search on its own page instead. */}
       <div className="border-b-4 border-[#7cbf3f] bg-[#1c1c1e]">
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:py-1.5">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 min-[900px]:py-1.5">
           <div className="flex min-w-0 items-center gap-2 sm:gap-4">
             <Link href="/" className="flex flex-none items-center" aria-label={`${dict.meta.siteName} home`}>
               <img
                 src="/images/pedaver-logo-white.png"
                 alt={`${dict.meta.siteName} — The Transformative Producer`}
-                className="h-8 w-auto sm:h-14 lg:h-16"
+                className="h-8 w-auto sm:h-14 min-[900px]:h-16"
               />
             </Link>
             <span className="h-6 w-px flex-none bg-white/15 sm:h-12" aria-hidden="true" />
@@ -84,7 +84,7 @@ export default function Header({ dict }: { dict: Dictionary }) {
               <img
                 src="/images/pqnk-logo.png"
                 alt="PQNK — The Science of Natural Farming"
-                className="h-8 w-auto sm:h-14 lg:h-16"
+                className="h-8 w-auto sm:h-14 min-[900px]:h-16"
               />
             </Link>
           </div>
@@ -111,7 +111,7 @@ export default function Header({ dict }: { dict: Dictionary }) {
               onClick={() => setMobileOpen((v) => !v)}
               aria-label={dict.nav.menuLabel}
               aria-expanded={mobileOpen}
-              className="flex h-10 w-10 items-center justify-center rounded-md border border-white/20 text-cream lg:hidden"
+              className="flex h-10 w-10 items-center justify-center rounded-md border border-white/20 text-cream min-[900px]:hidden"
             >
               {mobileOpen ? (
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -127,8 +127,11 @@ export default function Header({ dict }: { dict: Dictionary }) {
         </div>
       </div>
 
-      {/* Tier 2 — main menu (desktop) */}
-      <nav className="hidden lg:block">
+      {/* Tier 2 — main menu (desktop). Shows from 900px wide (was lg/1024px)
+          so laptops and zoomed-in windows keep the full tab bar instead of
+          collapsing to the hamburger; below 900px the 7-item bar can't fit
+          on one line, so the mobile drawer takes over there. */}
+      <nav className="hidden min-[900px]:block">
         <div className="mx-auto flex max-w-6xl items-stretch gap-1 px-4 sm:px-6">
           {groups.map((group) => (
             <div
@@ -146,7 +149,7 @@ export default function Header({ dict }: { dict: Dictionary }) {
                 aria-current={isActive(group) ? "page" : undefined}
                 aria-haspopup={group.children ? true : undefined}
                 aria-expanded={group.children ? openGroup === group.label : undefined}
-                className={`flex items-center gap-1 border-b-2 px-4 py-3.5 text-sm font-semibold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-primary ${
+                className={`flex items-center gap-1 border-b-2 px-3.5 py-3.5 text-sm font-semibold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-primary ${
                   isActive(group)
                     ? "border-accent text-primary-dark"
                     : "border-transparent text-ink-soft hover:border-accent/40 hover:text-primary-dark"
@@ -187,7 +190,7 @@ export default function Header({ dict }: { dict: Dictionary }) {
           accordion (closed by default) so the menu isn't one long flat
           scroll; groups without children navigate straight away. */}
       {mobileOpen && (
-        <div className="border-t border-border bg-card lg:hidden">
+        <div className="border-t border-border bg-card min-[900px]:hidden">
           <nav className="mx-auto max-w-6xl px-4 py-4 sm:px-6">
             {groups.map((group) => {
               const active = isActive(group);

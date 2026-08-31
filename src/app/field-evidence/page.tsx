@@ -98,12 +98,9 @@ export default function FieldEvidencePage() {
             Related material not yet folded into the FE-numbered index above.
           </p>
           <div className="mt-5 flex flex-wrap justify-center gap-3">
-            <Link
-              href="/advisory"
-              className="rounded-full border border-border bg-card px-4 py-2 text-sm font-semibold text-primary-dark shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
-            >
-              Farmer Advisory Notes →
-            </Link>
+            {/* Farmer Advisory link hidden until the four PQNK books are
+                published — the /advisory route is de-registered
+                (src/app/_advisory) until then. */}
             <Link
               href="/farmer-voices"
               className="rounded-full border border-border bg-card px-4 py-2 text-sm font-semibold text-primary-dark shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"

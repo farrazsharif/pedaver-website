@@ -7,6 +7,14 @@ ErrorDocument 404 /404.html
 # Farmer Stories was merged into the Knowledge & Testimonials page
 RedirectMatch 301 ^/farmer-stories/?$ /videos/
 
+# Farmer Advisory is hidden until the four PQNK books are published — its
+# page route is de-registered (src/app/_advisory) so `out/advisory/` now
+# only holds the mobile app's manifest.json. Send the bare /advisory page
+# URL to Knowledge Exchange (its eventual umbrella) instead of letting the
+# directory 403 or list. The anchored pattern leaves /advisory/manifest.json
+# untouched for the app. Remove this line when the page is re-activated.
+RedirectMatch 301 ^/advisory/?$ /field-evidence/
+
 # Certification was renamed to Validation (PQNK validates practice, it doesn't
 # certify organic status) — redirect at the server level so search engines and
 # old links get a real 301, not just the page's client-side JS redirect
