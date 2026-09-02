@@ -14440,5 +14440,95 @@
 "why":"hardpan breaking and soil architecture restoration as the other half of the Bt story"
 }
 ]
+},
+{
+"slug":"the-plant-does-not-produce-for-humans-alone",
+"primarySubject":"Why the harvested crop is only one output of a much larger plant carbon economy, why carbon reaches the soil through both below-ground and above-ground pathways, and why agricultural production should be measured as nutritional productivity per hectare rather than physical yield alone",
+"questionsAnswered":[
+"Does a plant capture carbon only to produce the crop humans harvest?",
+"Is the carbon dioxide absorbed by leaves the only source of carbon in the soil?",
+"What is the difference between total below-ground carbon allocation and root exudation?",
+"What share of a plant's fixed carbon goes below ground?",
+"Is carbon sent to the roots lost from the harvest?",
+"Why should agricultural productivity be measured in nutrition rather than tonnes?",
+"What do physical yield, nutritional yield and biological food value mean?",
+"How should PQNK field evidence and published science be related to each other?"
+],
+"keywords":[
+"plant carbon economy",
+"below-ground carbon allocation",
+"root exudation",
+"rhizodeposition",
+"surplus carbon",
+"soil organic matter",
+"crop residue recycling",
+"pruning biomass",
+"nutritional productivity",
+"nutrient density",
+"biological food value",
+"nourishment per hectare",
+"PQNK mango orchard",
+"yield measurement"
+],
+"geography":"Pakistan",
+"crops":[
+"Mango"
+],
+"fieldProblems":[
+"Declining Nutrient Density in Food",
+"Soil Organic Matter / Carbon Loss",
+"Residue Mismanagement",
+"Terminology / Framework Confusion"
+],
+"problemFamily":[
+"Yield & Produce Quality",
+"Soil & Roots"
+],
+"fieldPractices":[
+"Crop Residue Retention",
+"Root Retention (Standing Roots After Harvest)",
+"Surface Mulching (General)",
+"Biological Nutrient Cycling",
+"Pruning (General)"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Plants",
+"Soil",
+"Nutrition",
+"Food Quality",
+"Production Architecture",
+"Climate"
+],
+"pqnkPrinciples":[
+"No Soil Disturbance",
+"Permanent Biological Cover",
+"Maximum Biodiversity"
+],
+"productionStages":[
+"Harvest",
+"Post-Harvest"
+],
+"evidenceType":"Philosophical/Framework Argument",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/plants",
+"why":"the whole-plant carbon economy and source-sink allocation, of which the harvested portion is one output"
+},
+{
+"page":"/science/soil",
+"why":"carbon entering soil through roots, rhizodeposition and residues, and total below-ground allocation versus root exudation"
+},
+{
+"page":"/science/nutrition",
+"why":"measuring production as nutrition delivered per hectare rather than physical mass"
+},
+{
+"page":"/science/food-quality",
+"why":"physical yield, nutritional yield and biological food value as distinct levels of output"
+}
+]
 }
 ]
