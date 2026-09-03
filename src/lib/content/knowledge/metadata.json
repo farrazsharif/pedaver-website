@@ -14619,5 +14619,93 @@
 "why":"biodiversity performing pest regulation, pollination, decomposition and nutrient transfer that agriculture replaced with chemicals"
 }
 ]
+},
+{
+"slug":"plant-nutrition-is-a-living-system",
+"primarySubject":"Why plant nutrition is a biological process before it is an input programme: a plant's mass comes mostly from air and water, minerals cycle rather than deplete, the biological interface between mineral and root governs availability, and PQNK restores that nutrient-cycling environment instead of feeding the plant element by element",
+"questionsAnswered":[
+"Is a crop principally built from the soil, or from air and water?",
+"Does the 0.083% figure mean minerals are only 0.083% of plant tissue?",
+"What is the difference between a nutrient requirement and geological depletion?",
+"Why can a soil be rich in an element while the plant still shows deficiency?",
+"Is crop-nutrient removal automatically a fertiliser prescription?",
+"Does organic farming avoid the input-prescription mistake, or repeat it with different materials?",
+"When, and how much, should a PQNK farmer apply during transition?",
+"Does PQNK need to know every essential trace element before it can work?"
+],
+"keywords":[
+"plant nutrition",
+"input prescription",
+"nutrient cycling",
+"biological availability",
+"rhizosphere interface",
+"mycorrhizal nutrient acquisition",
+"biological nitrogen fixation",
+"diazotrophs",
+"soil aeration",
+"organic matter recycling",
+"crop nutrient removal",
+"transitional NP dose",
+"essential elements",
+"manage the habitat",
+"0.083 percent net mineral draw"
+],
+"geography":"Pakistan",
+"crops":[],
+"fieldProblems":[
+"Nutrient Deficiency Symptoms (Plant-Visible)",
+"Locked / Unavailable Soil Minerals",
+"External Input Dependency",
+"Preventive/Prophylactic Over-Application of Inputs (Fertilizer/Nitrogen)",
+"Weak Below-Ground Symbiosis (Mycorrhizae/Nitrogen-Fixers)"
+],
+"problemFamily":[
+"Plant Growth & Nutrition",
+"Soil & Roots"
+],
+"fieldPractices":[
+"Biological Nutrient Cycling",
+"Root Retention (Standing Roots After Harvest)",
+"Crop Residue Retention",
+"Reduced/Eliminated Chemical Input",
+"Soil Moisture Management (SMM)",
+"Soil Biology Restoration (General)"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Soil",
+"Plants",
+"Nutrition",
+"Water",
+"Biodiversity"
+],
+"pqnkPrinciples":[
+"No Soil Disturbance",
+"No Inundation",
+"Permanent Biological Cover",
+"Maximum Biodiversity"
+],
+"productionStages":[],
+"evidenceType":"Philosophical/Framework Argument",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/soil",
+"why":"the biological interface between geological mineral and root, and why total soil inventory does not equal availability"
+},
+{
+"page":"/science/plants",
+"why":"a plant's structural mass built mainly from air and water, with minerals as physiologically essential trace tools"
+},
+{
+"page":"/science/nutrition",
+"why":"nutrition as a biological process before it is an input programme, and the crop as diagnostic instrument"
+},
+{
+"page":"/science/water",
+"why":"managing moisture while preserving root-zone aeration so nutrient-cycling biology can function"
+}
+]
 }
 ]

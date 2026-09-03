@@ -5207,6 +5207,32 @@ export const papers: Paper[] = [
       "The one sentence the paper adds to the forwarded message: the answer is not to fear nature's revenge, it is to stop fighting nature and learn again how to produce with it, which is what PQNK demonstrates field by field and crop by crop.",
     ],
   },
+  {
+    slug: "plant-nutrition-is-a-living-system",
+    kpNumber: 197,
+    libraryDate: "2026-09-03",
+    category: "Soil Science & PQNK System",
+    title:
+      "Plant Nutrition Is a Living System, Not an Input Prescription: Why PQNK Restores the Nutrient-Cycling Environment Instead of Feeding the Plant Element by Element",
+    summary:
+      "Modern agriculture describes plant nutrition element by element: identify what the plant contains, calculate what the crop removes, replace it from a bag. This paper argues that framing mistakes an accounting exercise for a biological one. A plant's mass is built mostly from air and water, its nitrogen comes from the atmosphere through biological fixation, and the net new mineral draw on the geological reserve after recycling is very small; what determines whether a crop can acquire a nutrient is the living biological interface between mineral and root, not the total inventory in the soil. PQNK therefore restores the nutrient-cycling environment rather than writing an ever-longer fertiliser prescription: manage the habitat, and the living system manages plant nutrition.",
+    publishedDate: "2026-09-03",
+    pdfPath: "/papers/plant-nutrition-is-a-living-system.pdf",
+    heroImage: "/images/guava-hd-mulched-rows.jpg",
+    abstract: [
+      "Modern agriculture has come to describe plant nutrition in the language of individual elements: identify what the plant contains, calculate what the crop removes, and replace those nutrients from a bag. This paper argues that framing mistakes an accounting exercise for a biological one. The structural mass of a plant is built overwhelmingly from carbon, hydrogen and oxygen drawn from air and water; nitrogen originates from the atmosphere through biological fixation; and the net new mineral draw on the geological reserve, once biological recycling is accounted for, is very small. Mineral elements are indispensable, but a trace element can be physiologically essential while forming a minute fraction of plant mass, so small quantity does not mean small importance.",
+      "A mineral atom taken up by one generation of vegetation does not disappear when that plant dies. If roots remain in the soil and above-ground biomass returns to the surface, decomposition, microbial processing and subsequent uptake move those elements through repeated cycles. Between the geological mineral and the growing plant stands a biological interface, roots and exudates, bacteria and fungi, mycorrhizal networks, decomposing residues and the oxygen in soil pores, and it is that interface, not the total mineral inventory, that determines whether a crop can acquire what it needs. PQNK, the Natural Ecosystem Science of Production Agriculture, therefore does not try to anticipate every future discovery with an ever-longer fertiliser prescription. It restores the nutrient-cycling environment: no routine soil disturbance, no unnecessary inundation, permanent biological cover, living roots and returned residues, encouraged biodiversity, and moisture managed while aeration is preserved. Crop-nutrient removal is treated as a measurement, not automatically a fertiliser requirement; and during the transition from a chemically dependent system a small corrective dose, up to about four kilograms of NP per acre and at most three applications where genuinely required, is used as a bridge, applied only when the crop itself shows a genuine deficiency. The governing principle: PQNK manages the habitat; the living system manages plant nutrition.",
+    ],
+    keyTakeaways: [
+      "Element-by-element nutrient thinking, identify what the plant contains, calculate what the crop removes, replace it from a bag, mistakes an accounting exercise for a biological one.",
+      "A plant's structural mass is built overwhelmingly from carbon, hydrogen and oxygen from air and water; nitrogen comes from the atmosphere through biological fixation; the net new mineral draw on the geological reserve after recycling is very small, and is not the same as the mineral content of plant tissue.",
+      "Small quantity is not small importance: a trace element can be physiologically essential while forming a minute fraction of plant mass.",
+      "Minerals cycle rather than disappear, an atom taken up by one crop returns to the biological cycle if roots and residues stay in the field, so crop-nutrient removal is a measurement, not automatically a fertiliser prescription.",
+      "Accessibility is a biological function: a soil can hold plenty of an element while the plant struggles to acquire it, because the biological interface (roots, exudates, bacteria, fungi, mycorrhizae, decomposing residues, soil oxygen), not total inventory, governs availability.",
+      "Organic agriculture can reproduce the input-prescription mistake with different materials (how many tonnes of manure or compost); the PQNK priority is to retain and recycle the biomass the field already produces, not to import it.",
+      "The crop is the diagnostic instrument: nothing is applied on a calendar; during transition a small corrective dose, up to about four kilograms of NP per acre and at most three applications, bridges biological restoration, applied only when a genuine deficiency appears. The governing principle: PQNK manages the habitat; the living system manages plant nutrition.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {
