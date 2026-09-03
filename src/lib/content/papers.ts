@@ -5179,6 +5179,34 @@ export const papers: Paper[] = [
       "Production should ultimately be measured as nutritional productivity, the useful and diverse nutrition delivered per hectare and per unit of water and cost, distinguishing physical yield, nutritional yield and biological food value: we do not grow kilograms, we grow nutrition.",
     ],
   },
+  {
+    slug: "the-earth-has-not-stopped-working",
+    kpNumber: 196,
+    libraryDate: "2026-09-03",
+    category: "PQNK Philosophy, Framework & Economics",
+    title:
+      "The Earth Has Not Stopped Working: A Production-Agriculture Response to Environmental Fatalism, and What PQNK Restores",
+    summary:
+      "A widely shared social-media message, built on Lovelock's Gaia Hypothesis, ends in resignation: the planet will correct a stressed system with floods and extinctions, and all we can do is await nature's revenge. This paper accepts that we are not separate from nature but rejects the fatalism. Drawing on more than fifty years in production agriculture, it argues the core error was redesigning natural systems before understanding them, that agriculture is the clearest case, and that a degraded field is a suppressed system rather than an extinguished one, so the answer is not to fear nature's revenge but to stop fighting nature and learn again to produce with it.",
+    publishedDate: "2026-09-03",
+    pdfPath: "/papers/the-earth-has-not-stopped-working.pdf",
+    heroImage: "/images/wheat-field-sunrise.jpg",
+    abstract: [
+      "A message shared widely on social media, drawing on James Lovelock's Gaia Hypothesis, argues that the Earth regulates itself like a living body, that it has survived five mass extinctions and will survive us, and that the real question is whether we can survive the corrections a stressed planet will impose. Its closing conviction is that humanity is not separate from nature, that a war on the planet is a war on ourselves, and that what remains is to await nature's revenge. This paper accepts the first part and takes issue with the last.",
+      "Drawing on more than fifty years of work in production agriculture, it argues that the central error was not simply that we consumed too much, but that we began redesigning natural systems before we understood how they function, and that agriculture is the clearest example. A natural ecosystem captures solar energy and atmospheric carbon continuously, keeps living roots in the soil, recycles its own biomass, maintains biodiversity, manages water through a biologically structured soil, and feeds one generation of life from the last. Industrial agriculture interrupted every step of that cycle, through tillage, bare fallow, residue removal and burning, chemical pest control, flood irrigation and factory fertiliser, and replaced the lost functions with purchased inputs, exchanging a system that funded itself for one that must be re-supplied every season.",
+      "PQNK, the Natural Ecosystem Science of Production Agriculture, was built by asking not how to make that system slightly less damaging but how nature produces without tillage, fertiliser factories, pesticides or flood irrigation, and what happens when those operating principles are restored inside a working farm. Farmed land is the largest managed interface between the atmosphere, the soil, the water cycle and living systems, and on it the same functions are available to a farmer who stops blocking them: every crop captures carbon, every covered surface conserves water and moderates its temperature, every living root helps rebuild the soil community, residues become biological capital, and biodiversity performs the pest regulation agriculture made itself chemically dependent on.",
+      "The paper's position is therefore not fatalism but its opposite: nature has not stopped working, we have repeatedly prevented it from working, and a degraded field is a suppressed system rather than an extinguished one, so recovery begins surprisingly fast once the obstructions are removed. Soil degradation, water scarcity, climate instability and declining food quality are treated as one connected consequence of disrupting a single system, and since we eat what that system produces, the goal is restated: abundant, nutritionally dense and diverse food, produced with far less pressure on water and other resources, leaving behind a biologically stronger system. We do not grow kilograms, we grow nutrition. Its one correction to the forwarded message: the answer is not to fear nature's revenge, but to stop fighting nature and learn again to produce with it.",
+    ],
+    keyTakeaways: [
+      "The paper accepts the Gaia message's core, that we are not separate from nature and a system pushed too far corrects itself without permission, but rejects its closing resignation that all we can do is await the correction.",
+      "The reframed error: not resource overuse in the first instance, but redesigning natural systems before understanding how they function, with agriculture as the clearest example.",
+      "A natural ecosystem runs a few operations continuously and in combination: capture solar energy and atmospheric carbon, keep living roots in the soil year-round, recycle biomass in place, maintain biodiversity, manage water through a biologically structured soil, and feed each generation of life from the last.",
+      "Industrial agriculture interrupted each step, tillage, bare fallow, residue burning, chemical pest control, flood irrigation, factory fertiliser, then replaced the lost functions with purchased inputs, swapping a self-funding system for one that must be re-supplied every season.",
+      "A degraded field is a suppressed system, not an extinguished one; when disturbance stops, cover returns, roots stay in and water and air are managed together, the biological community re-establishes surprisingly quickly, which is a very different situation from waiting for an ice age.",
+      "Soil degradation, water scarcity, climate instability and declining food quality are the connected consequences of disrupting one system the same way across most of the world's farmland, and the consequence reaches the body directly because we eat what that system produces.",
+      "The one sentence the paper adds to the forwarded message: the answer is not to fear nature's revenge, it is to stop fighting nature and learn again how to produce with it, which is what PQNK demonstrates field by field and crop by crop.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {
