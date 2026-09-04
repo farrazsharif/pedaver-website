@@ -7,6 +7,10 @@ contact/newsletter forms use `mailto:`.
 
 ## Working on this project
 - Read `README.md` for the human workflow and `AGENTS.md` for Next.js 16 caveats.
+- **PQNK book chapters:** before any work on the books, read
+  `docs/pqnk-book-workflow.md` — it is the living status of that workstream,
+  and its Decisions log is binding (do not re-raise a settled call). Update it
+  before you finish.
 - Content is data-driven. Prefer editing these over hardcoding in components:
   - Copy/labels: `src/lib/dictionaries/en.ts`
   - Crops: `src/lib/content/crops.ts` · crop→photo map: `src/lib/content/cropImages.ts`
