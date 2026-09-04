@@ -137,8 +137,23 @@ re-export can silently carry an old embedded image.
 - **2026-09-04 — Ch4 "Roughly half of a crop plant's mass is below ground as
   roots"** (in the "rate at which this happens surprises farmers" paragraph).
   Claude flagged this as agronomically high for the book's crops (measured
-  root fraction ~15–30%). **Author has accepted the phrasing as written and
-  requires no change.** Do not re-flag in future passes.
+  root fraction ~15–30%). First call: author accepted as written. **REVERSED
+  later the same day** by the author's "final scientific-consistency pass"
+  prompt (item 6): now to be reworded to "a large share ... varies widely
+  with species, growth stage, environment and production conditions", keeping
+  the point that retained roots are a major carbon return and leave pore
+  architecture. Corrected wording delivered; awaiting author sign-off.
+- **2026-09-04 — Ch4 scientific-consistency pass.** Author supplied a 15-point
+  prompt to remove residual scientific inconsistencies from Ch4 (0.083% wording,
+  below-ground allocation vs exudation, "one-way store" error, heterotroph
+  generalisation, humus/stability mechanism, root-mass claim, "eliminates
+  evaporation", "sterilised"/temperature wording, ACI "no deposits", labelling
+  the 0.5%→4% field figure as PQNK field evidence, carbon-not-single-factor,
+  climate/permanence, Sustained-State vs transition). Claude produced a
+  before→after report + a corrected running-text file
+  (`Chapter4_science_pass_corrected_text.md`). NOT yet applied to the docx or
+  the master; NOT published. Awaiting author sign-off, then the corrected
+  page-1 infographic, then publish.
 - **2026-09-04 — Ch4 below-ground photosynthate allocation = "twenty to forty
   percent."** The earlier Ch4 draft said "twenty to fifty percent"; corrected.
   This matches the PQNK-locked figure (`memory/project_pqnk_belowground_carbon_figure.md`).
