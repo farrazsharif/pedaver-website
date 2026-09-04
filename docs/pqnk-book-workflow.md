@@ -80,8 +80,8 @@ re-export can silently carry an old embedded image.
 |---|-----------|-------|--------|-------|
 | 1 | `earths-original-design` | Earth's Original Design | **Published** 2026-08-27 (v1.0) | |
 | 2 | `rock-dirt-soil-life` | Rock, Dirt, Soil, Life | **Published** 2026-08-29 (v1.0) | |
-| 3 | `the-0-083-paradox` | The 0.083% Paradox | **Published** 2026-08-31 (v1.0) | Closing paragraph still says "next chapter turns to water" — needs the Ch4 hand-off fix; ship with the Ch4 publish. |
-| 4 | `carbon-the-currency-of-life` | Carbon: The Currency of Life | **Text approved — awaiting final infographic + author page-by-page QA** | Scientific-consistency pass done and author-approved 2026-09-04. Remaining gate: corrected page-1 infographic embedded in a re-exported PDF/DOCX, then Asif's page QA, then publish. Hands to Chapter Five, `the-natural-water-system`. |
+| 3 | `the-0-083-paradox` | The 0.083% Paradox | **Published** 2026-08-31 (v1.0) | Closing-paragraph hand-off fixed 2026-09-04, commit `7b7e557` (now points to Carbon, not water). Live once next deployed. |
+| 4 | `carbon-the-currency-of-life` | Carbon: The Currency of Life | **Text corrections merged — awaiting final infographic + author page-by-page QA** | See Open issues §A/B. Hands to Chapter Five, `the-natural-water-system`. |
 | 5+ | — | — | In preparation | Full TOC (8 Parts, 66 chapters) is in `books.ts`. |
 
 ## 5. Open issues
@@ -99,17 +99,29 @@ established plant-mass framework; rounding is a separate decision, not part of
 this pass). Residual typographic tidy for whoever does the final image export:
 two dashes still present — "P·K·Ca·Mg·Zn·Fe **—** inexhaustible reserve" and the
 header "AIR AND WATER **–** THROUGH THE POWER OF CARBON" (make both a colon).
-**The corrected image is still only a chat screenshot — as of last check the
-`PQNK_Book_Chapter_4_Final - Publish ready.{pdf,docx}` files still carry the old
-page-1 graphic (`md5 19a1c301`). Re-verify the extracted page-1 image every time
-a new file is provided; never trust a "fixed" claim without re-extracting.**
+**The corrected image is still only a chat screenshot — Claude never receives a
+file for a pasted chat image, so it cannot be embedded programmatically. As of
+last check the original `PQNK_Book_Chapter_4_Final - Publish ready.{pdf,docx}`
+files still carry the old page-1 graphic (`md5 19a1c301`). Re-verify the
+extracted page-1 image every time a new file is provided; never trust a
+"fixed" claim without re-extracting.**
 
-**B. Apply the approved scientific-consistency corrections to the master, then
-Asif's page-by-page QA.** Corrections + author decisions are in the Decisions
-log below; full corrected running text is in scratchpad
-`Chapter4_science_pass_corrected_text.md` (each revised paragraph tagged with
-its item/decision). Author's position 2026-09-04: after these go in, Chapter 4
-is ready for final page QA, **not another substantive rewrite round.**
+**B. DONE — text corrections merged into a working copy.** All 13 corrections +
+6 author decisions (Decisions log below) applied directly into the DOCX at
+`PQNK Book/PQNK_Book_Chapter_4_Final - Publish ready (Claude-merged).docx`
+(2026-09-04), via targeted python-docx run edits — never a full-document
+rewrite, so every one of the 14 embedded images is untouched (verified
+byte-identical, media-file hashes match the source exactly). That file's
+page-1 image is still the OLD one (see §A) — everything else (text +
+13 other images) is final. Author's position: after these corrections are in,
+Chapter 4 is ready for final page QA, **not another substantive rewrite
+round.**
+
+**Remaining steps to publish:** (1) Asif swaps page 1's image in the
+Claude-merged docx for the finalised infographic (or tells Claude the
+corrected graphic's file path so Claude can do the swap), (2) export to PDF,
+(3) Asif's page-by-page QA, (4) Claude re-extracts page 1 to confirm, runs the
+typo pass, and publishes.
 
 Minor, non-blocking: the mulch-thermostat infographic says the bare-vs-mulch gap
 is "about 40 °C"; the Ch4 text now says "roughly forty degrees cooler … at the
