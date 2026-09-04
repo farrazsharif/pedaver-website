@@ -81,48 +81,40 @@ re-export can silently carry an old embedded image.
 | 1 | `earths-original-design` | Earth's Original Design | **Published** 2026-08-27 (v1.0) | |
 | 2 | `rock-dirt-soil-life` | Rock, Dirt, Soil, Life | **Published** 2026-08-29 (v1.0) | |
 | 3 | `the-0-083-paradox` | The 0.083% Paradox | **Published** 2026-08-31 (v1.0) | Closing paragraph still says "next chapter turns to water" — needs the Ch4 hand-off fix; ship with the Ch4 publish. |
-| 4 | `carbon-the-currency-of-life` | Carbon: The Currency of Life | **In review — blocked** | See Open issues. Next chapter it hands to = Chapter Five, `the-natural-water-system`. |
+| 4 | `carbon-the-currency-of-life` | Carbon: The Currency of Life | **Text approved — awaiting final infographic + author page-by-page QA** | Scientific-consistency pass done and author-approved 2026-09-04. Remaining gate: corrected page-1 infographic embedded in a re-exported PDF/DOCX, then Asif's page QA, then publish. Hands to Chapter Five, `the-natural-water-system`. |
 | 5+ | — | — | In preparation | Full TOC (8 Parts, 66 chapters) is in `books.ts`. |
 
 ## 5. Open issues
 
-### Chapter 4 — blocked on the corrected source file
-- **Page-1 title infographic** ("CARBON: THE CURRENCY OF LIFE" cover graphic,
-  PDF page 1). As reviewed 2026-09-04 it:
-  - shows `95.917% / 4.000% / 0.083%` summing to exactly 100.000% and framed
-    as plant composition — this reintroduces the biomass-composition reading
-    of 0.083% that the locked Ch3 rule forbids (0.083% = illustrative net
-    mineral *export* in harvested produce, not a composition fraction). The
-    published Ch3 web infographic (`ch3-img-01.png`) was deliberately rebuilt
-    to carry **no such percentages**.
-  - labels the carbon split "~20–50% root exudates / ~50–80% builds the
-    harvest" — conflicts with the chapter text and the sibling "Liquid Carbon
-    Pathway" infographic, both of which say **"20 to 40%"** (the locked
-    value), and "~50–80% builds the harvest" contradicts the chapter's own
-    opening argument.
-- Author states (2026-09-04) a corrected, self-approved version exists.
-  Attempt 1: file at canonical path unchanged (page-1 image `md5 19a1c301`).
-  Attempt 2 (2026-09-04 14:45): re-saved as
-  `PQNK_Book_Chapter_4_Final - Publish ready.{docx,pdf}` — this is a **rename
-  only**, byte-identical content, all 14 embedded images unchanged incl.
-  page-1 `md5 19a1c301`; the old `- Claude Reviewed` files were removed. The
-  infographic fix has NOT been exported yet. The corrected image must
-  actually reach the PDF before publishing.
-- **The exact fix the page-1 infographic needs:** (a) drop the
-  `95.917 / 4.000 / 0.083` three-column split, or relabel `0.083%` as
-  *illustrative net mineral export in harvested produce under stated PQNK
-  assumptions* — not a share of plant mass; match how published
-  `ch3-img-01.png` handles it (words, no percentages). (b) change the carbon
-  split from "~20–50% root exudates / ~50–80% builds the harvest" to
-  "20 to 40% below ground", and drop "builds the harvest" (contradicts the
-  chapter's own argument). (c) remove the em dash in the header line
-  ("SUNLIGHT, AIR AND WATER — THROUGH THE POWER OF CARBON").
-- **Re-verify the extracted page-1 image + carbon-split wording every time a
-  new file is provided** — do not trust a "fixed" claim without re-extracting.
-- Minor, non-blocking: the mulch-thermostat infographic says the bare-vs-mulch
-  gap is "about 40 °C"; the Ch4 text says "more than thirty degrees" and
-  published Ch1 says "thirty degrees cooler." Not a contradiction; align only
-  if the author wants.
+### Chapter 4 — text approved; two things left before publish
+
+**A. Corrected page-1 title infographic must be embedded in a re-exported PDF/DOCX.**
+Iterated over chat 2026-09-04. Resolved in the latest chat image: 0.083% pulled
+into its own "NET DRAW ON THE GEOLOGICAL RESERVE" box, labelled "net mineral
+export … not the mineral content of plant biomass"; carbon split now
+"~20–40% of photosynthate … below ground" and "~50–80% … supports above-ground
+growth" (no longer "builds the harvest"); section-2 title em dash → colon.
+Author has decided to **keep `4.000%` and `95.917%`** as-is (they belong to the
+established plant-mass framework; rounding is a separate decision, not part of
+this pass). Residual typographic tidy for whoever does the final image export:
+two dashes still present — "P·K·Ca·Mg·Zn·Fe **—** inexhaustible reserve" and the
+header "AIR AND WATER **–** THROUGH THE POWER OF CARBON" (make both a colon).
+**The corrected image is still only a chat screenshot — as of last check the
+`PQNK_Book_Chapter_4_Final - Publish ready.{pdf,docx}` files still carry the old
+page-1 graphic (`md5 19a1c301`). Re-verify the extracted page-1 image every time
+a new file is provided; never trust a "fixed" claim without re-extracting.**
+
+**B. Apply the approved scientific-consistency corrections to the master, then
+Asif's page-by-page QA.** Corrections + author decisions are in the Decisions
+log below; full corrected running text is in scratchpad
+`Chapter4_science_pass_corrected_text.md` (each revised paragraph tagged with
+its item/decision). Author's position 2026-09-04: after these go in, Chapter 4
+is ready for final page QA, **not another substantive rewrite round.**
+
+Minor, non-blocking: the mulch-thermostat infographic says the bare-vs-mulch gap
+is "about 40 °C"; the Ch4 text now says "roughly forty degrees cooler … at the
+peak of the day" (item 8) so these are aligned; published Ch1 still says "thirty
+degrees cooler" — leave unless the author wants Ch1 touched.
 
 ### Chapter 3 — ship with the Ch4 publish
 - `books.ts`, Ch3 `body`, the paragraph beginning *"The next chapter turns to
@@ -134,26 +126,39 @@ re-export can silently carry an old embedded image.
 
 ## 6. Decisions log — BINDING, do not re-litigate
 
-- **2026-09-04 — Ch4 "Roughly half of a crop plant's mass is below ground as
-  roots"** (in the "rate at which this happens surprises farmers" paragraph).
-  Claude flagged this as agronomically high for the book's crops (measured
-  root fraction ~15–30%). First call: author accepted as written. **REVERSED
-  later the same day** by the author's "final scientific-consistency pass"
-  prompt (item 6): now to be reworded to "a large share ... varies widely
-  with species, growth stage, environment and production conditions", keeping
-  the point that retained roots are a major carbon return and leave pore
-  architecture. Corrected wording delivered; awaiting author sign-off.
-- **2026-09-04 — Ch4 scientific-consistency pass.** Author supplied a 15-point
-  prompt to remove residual scientific inconsistencies from Ch4 (0.083% wording,
-  below-ground allocation vs exudation, "one-way store" error, heterotroph
-  generalisation, humus/stability mechanism, root-mass claim, "eliminates
-  evaporation", "sterilised"/temperature wording, ACI "no deposits", labelling
-  the 0.5%→4% field figure as PQNK field evidence, carbon-not-single-factor,
-  climate/permanence, Sustained-State vs transition). Claude produced a
-  before→after report + a corrected running-text file
-  (`Chapter4_science_pass_corrected_text.md`). NOT yet applied to the docx or
-  the master; NOT published. Awaiting author sign-off, then the corrected
-  page-1 infographic, then publish.
+- **2026-09-04 — Ch4 scientific-consistency pass: APPROVED by the author.**
+  Author supplied a 15-point prompt to remove residual scientific
+  inconsistencies; Claude delivered a before→after report + corrected running
+  text (`Chapter4_science_pass_corrected_text.md`, each ¶ tagged). Author
+  approved all 13 substantive corrections and ruled on the 6 open questions:
+  1. ¶50 — "almost the whole plant returns" → **"most of the plant biomass not
+     removed in the harvest returns…"** (more precise; strengthens the
+     carbon-accounting argument).
+  2. ¶18 — **correct the biochemistry**: CO₂ fixation's first stable product is
+     3-phosphoglycerate; glyceraldehyde-3-phosphate is produced subsequently
+     and is the first three-carbon sugar. No avoidable biochemical error.
+  3. ¶37 — **accept "several times"** more carbon than all living vegetation,
+     not "four times" (comparison varies with pools/depth).
+  4. ¶138 dew/humidity — reject both earlier wordings; use the author's exact
+     text: *"Supplemental moisture intercepted by mulch from dew and
+     atmospheric condensation adds to the soil-water supply, while the mulch
+     simultaneously reduces evaporative loss. PQNK field observations indicate
+     that this contribution forms part of the system's overall water economy,
+     although its quantity under different crops and climatic conditions
+     remains to be measured separately."*
+  5. Typography — **fix both now**: the double space in ¶35, and
+     "wheat & rice straw" / "Wheat & Rice straw" → **"wheat and rice straw"**.
+  6. Infographic — **keep `4.000%` (and `95.917%`)**: they belong to the
+     established plant-mass framework; rounding is a separate scientific
+     decision, not part of this pass. The 0.083% separation and the
+     "supports above-ground growth" relabel are the changes that mattered and
+     are done.
+  Root-mass claim ("Roughly half … as roots"): first accepted as written, then
+  reversed by this pass's item 6 — now "a large share … varies widely with the
+  species, the growth stage, the soil, and the growing conditions", keeping the
+  retained-roots carbon-return + pore-architecture point.
+  These corrections are approved for the master; after they go in, Chapter 4 is
+  ready for the author's page-by-page QA, **not another rewrite round.**
 - **2026-09-04 — Ch4 below-ground photosynthate allocation = "twenty to forty
   percent."** The earlier Ch4 draft said "twenty to fifty percent"; corrected.
   This matches the PQNK-locked figure (`memory/project_pqnk_belowground_carbon_figure.md`).
