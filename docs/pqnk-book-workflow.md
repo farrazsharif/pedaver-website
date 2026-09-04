@@ -76,6 +76,22 @@ re-export can silently carry an old embedded image.
 11. **Update this file** — move the chapter to Published + confirm LIVE
     (verify via SHA-256/Last-Modified against production, not just a 200),
     clear its open issues, add any new decisions.
+12. **Archive Word + PDF in the "Published Chapters" folder** (Asif's Mac:
+    `PQNK Book/Published Chapters/`, next to `PQNK_Book_Editorial_and_Typography_Style_Standard.docx`
+    — this is separate from the eBook/print master track in
+    `memory/pqnk_book_v60_status.md`). Copy the PDF **from the deployed site**
+    (`public/books/natural-ecosystem-science/<chapterId>.pdf`, i.e. what was
+    just SHA-256-verified live in step 11) — never from a loose draft PDF
+    elsewhere, those have been found to NOT byte-match what actually shipped.
+    Name both files `PQNK_Book_Chapter_<N>_<Title_With_Underscores>.docx` /
+    `.pdf` (Chapter 1 predates this convention — its docx is
+    `PQNK_Book_Chapter_1_Formatted.docx`; leave it named as-is, just keep its
+    `.pdf` pair current). For the `.docx`, use the same approved Word source
+    the chapter was published from; if the only fully-final version of a late
+    fix (e.g. an infographic swap) exists solely as `.pages` (Apple Pages) and
+    was never re-exported to `.docx`, archive the closest `.docx` available and
+    say so plainly rather than silently pairing a mismatched file — do not
+    assume Word and PDF match without checking (see the Ch2–4 note below).
 
 ## 4. Chapter status
 
@@ -188,3 +204,17 @@ touch Ch1 only if the author asks.
 - **Read Aloud** is in-scope for every published book chapter automatically;
   it is NOT to be expanded to non-chapter pages or given Urdu/cloud TTS
   without explicit approval (`memory/project_read_aloud_pilot.md`).
+- **2026-09-04 — "Published Chapters" archive populated + made a standing
+  step (checklist item 12).** `PQNK Book/Published Chapters/` now holds a
+  Word + PDF pair for Chapters 1–4. Every PDF was copied from the deployed
+  site (`public/books/.../<chapterId>.pdf`), not from a loose draft, after
+  discovering the loose "approved" PDFs sitting in the `PQNK Book/` root for
+  Ch2 and Ch3 do **not** byte-match what's actually live (different MD5,
+  different size — e.g. Ch2's loose PDF is ~26MB vs the deployed ~6.4MB).
+  Word files archived are the best available approved source per chapter, but
+  are **not guaranteed byte-identical** to the final published PDF: Ch4's
+  `.docx` predates its last infographic swap and the page-16 layout fix,
+  which exist only in `.pages` and the final `.pdf`. Treat the PDFs in this
+  archive as authoritative; treat the `.docx` files as "the approved working
+  source," not a certified match. If exact Word/PDF parity is ever needed,
+  re-export a fresh `.docx` from the chapter's `.pages` file.
