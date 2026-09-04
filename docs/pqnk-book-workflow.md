@@ -71,8 +71,11 @@ re-export can silently carry an old embedded image.
 8. `npm run build` — must pass.
 9. Commit: `Publish Chapter N: <Title>` (direct to `main`, matching every
    prior chapter/KP publish).
-10. **Update this file** — move the chapter to Published, clear its open
-    issues, add any new decisions.
+10. **`git push origin main`** — this alone deploys it. See "Deployment"
+    below; do not skip this step or assume a commit is live on its own.
+11. **Update this file** — move the chapter to Published + confirm LIVE
+    (verify via SHA-256/Last-Modified against production, not just a 200),
+    clear its open issues, add any new decisions.
 
 ## 4. Chapter status
 
@@ -80,15 +83,42 @@ re-export can silently carry an old embedded image.
 |---|-----------|-------|--------|-------|
 | 1 | `earths-original-design` | Earth's Original Design | **Published** 2026-08-27 (v1.0) | |
 | 2 | `rock-dirt-soil-life` | Rock, Dirt, Soil, Life | **Published** 2026-08-29 (v1.0) | |
-| 3 | `the-0-083-paradox` | The 0.083% Paradox | **Published** 2026-08-31 (v1.0) | Closing-paragraph hand-off fixed 2026-09-04, commit `7b7e557` (now points to Carbon, not water). |
-| 4 | `carbon-the-currency-of-life` | Carbon: The Currency of Life | **Published** 2026-09-04 (v1.0), commit `21da998` | 9 images, PDF from the author-approved `PQNK_Book_Chapter_4_Final - Publish ready (Claude-merged) Approved.pdf`. Hands to Chapter Five, `the-natural-water-system`. |
+| 3 | `the-0-083-paradox` | The 0.083% Paradox | **Published + LIVE** 2026-08-31 (v1.0) | Closing-paragraph hand-off fixed 2026-09-04, commit `7b7e557` (now points to Carbon, not water). Verified live on pedaver.com 2026-09-04. |
+| 4 | `carbon-the-currency-of-life` | Carbon: The Currency of Life | **Published + LIVE** 2026-09-04 (v1.0), commit `21da998` | 9 images, PDF from the author-approved `PQNK_Book_Chapter_4_Final - Publish ready (Claude-merged) Approved.pdf`. Hands to Chapter Five, `the-natural-water-system`. Verified live on pedaver.com 2026-09-04 (page-1 infographic + PDF byte-verified via SHA-256 against production). |
 | 5+ | — | — | In preparation | Full TOC (8 Parts, 66 chapters) is in `books.ts`. |
 
-**All of Chapters 1–4 and the Ch3 hand-off fix are committed to `main` but NOT
-yet deployed** — this site is 100% static and hand-deployed (build → zip `out/`
-→ upload via cPanel File Manager, see README §6–7). Claude has no server
-access and cannot deploy. Until Asif does that upload, pedaver.com keeps
-serving whatever was last uploaded; don't assume a commit is live.
+### Deployment — automatic via GitHub Actions, not manual
+
+**pedaver.com deploys automatically.** `.github/workflows/deploy.yml`
+("Build and deploy to cPanel") runs on every `git push` that lands commits on
+GitHub's `main` (or via manual `workflow_dispatch` from the Actions tab): it
+runs `npm ci`, `npm run build`, copies `docs/htaccess.txt` to `out/.htaccess`,
+then FTPS-uploads the contents of `out/` straight into the pedaver.com
+document root via a scoped `deploy@pedaver.com` FTP account
+(`SamKirkland/FTP-Deploy-Action`). No File Manager step, no manual zip.
+
+**The correct deploy sequence for any future chapter/paper publish is simply:**
+`git push origin main` → watch the "Build and deploy to cPanel" run in
+GitHub Actions (or poll `https://api.github.com/repos/farrazsharif/pedaver-website/actions/runs?branch=main`,
+the repo is public so this needs no auth) → once `conclusion: success`, verify
+live.
+
+**2026-09-04 correction:** earlier in this session Claude told the author
+deployment was 100%-manual-only (cPanel File Manager) and prepared a 932 MB
+`pedaver-deploy-2026-09-04.zip` for hand upload. That was wrong — Claude had
+only read `README.md`'s manual-deploy section and never checked for a CI
+workflow, even though recent Knowledge Paper publishes had already been going
+live this way. The author caught it by checking the GitHub Actions tab.
+**The manual zip/cPanel-File-Manager procedure is fallback-only** (e.g. if
+GitHub Actions or the FTP credentials are ever broken) — never the default.
+Always check `.github/workflows/` before telling the author a deploy step is
+manual.
+
+Chapters 1–4 and the Ch3 hand-off fix were pushed (`04db364`) and deployed via
+this workflow on 2026-09-04 (run #204, all steps succeeded) — confirmed live
+by byte-for-byte SHA-256 match between the production files and the approved
+local source, and by fresh `Last-Modified` timestamps matching the deploy
+window.
 
 ## 5. Open issues
 
