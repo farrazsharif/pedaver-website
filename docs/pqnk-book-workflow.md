@@ -100,11 +100,25 @@ re-export can silently carry an old embedded image.
     Pathway" infographic, both of which say **"20 to 40%"** (the locked
     value), and "~50–80% builds the harvest" contradicts the chapter's own
     opening argument.
-- Author states (2026-09-04) a corrected, self-approved version exists. As of
-  last check the file at the canonical path was **unchanged** (page-1 image
-  `md5 19a1c301`) and still held the flagged version. **Re-verify the
-  extracted page-1 image and the carbon-split numbers when the new file lands
-  before publishing.**
+- Author states (2026-09-04) a corrected, self-approved version exists.
+  Attempt 1: file at canonical path unchanged (page-1 image `md5 19a1c301`).
+  Attempt 2 (2026-09-04 14:45): re-saved as
+  `PQNK_Book_Chapter_4_Final - Publish ready.{docx,pdf}` — this is a **rename
+  only**, byte-identical content, all 14 embedded images unchanged incl.
+  page-1 `md5 19a1c301`; the old `- Claude Reviewed` files were removed. The
+  infographic fix has NOT been exported yet. The corrected image must
+  actually reach the PDF before publishing.
+- **The exact fix the page-1 infographic needs:** (a) drop the
+  `95.917 / 4.000 / 0.083` three-column split, or relabel `0.083%` as
+  *illustrative net mineral export in harvested produce under stated PQNK
+  assumptions* — not a share of plant mass; match how published
+  `ch3-img-01.png` handles it (words, no percentages). (b) change the carbon
+  split from "~20–50% root exudates / ~50–80% builds the harvest" to
+  "20 to 40% below ground", and drop "builds the harvest" (contradicts the
+  chapter's own argument). (c) remove the em dash in the header line
+  ("SUNLIGHT, AIR AND WATER — THROUGH THE POWER OF CARBON").
+- **Re-verify the extracted page-1 image + carbon-split wording every time a
+  new file is provided** — do not trust a "fixed" claim without re-extracting.
 - Minor, non-blocking: the mulch-thermostat infographic says the bare-vs-mulch
   gap is "about 40 °C"; the Ch4 text says "more than thirty degrees" and
   published Ch1 says "thirty degrees cooler." Not a contradiction; align only
