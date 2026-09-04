@@ -80,61 +80,26 @@ re-export can silently carry an old embedded image.
 |---|-----------|-------|--------|-------|
 | 1 | `earths-original-design` | Earth's Original Design | **Published** 2026-08-27 (v1.0) | |
 | 2 | `rock-dirt-soil-life` | Rock, Dirt, Soil, Life | **Published** 2026-08-29 (v1.0) | |
-| 3 | `the-0-083-paradox` | The 0.083% Paradox | **Published** 2026-08-31 (v1.0) | Closing-paragraph hand-off fixed 2026-09-04, commit `7b7e557` (now points to Carbon, not water). Live once next deployed. |
-| 4 | `carbon-the-currency-of-life` | Carbon: The Currency of Life | **Text corrections merged — awaiting final infographic + author page-by-page QA** | See Open issues §A/B. Hands to Chapter Five, `the-natural-water-system`. |
+| 3 | `the-0-083-paradox` | The 0.083% Paradox | **Published** 2026-08-31 (v1.0) | Closing-paragraph hand-off fixed 2026-09-04, commit `7b7e557` (now points to Carbon, not water). |
+| 4 | `carbon-the-currency-of-life` | Carbon: The Currency of Life | **Published** 2026-09-04 (v1.0), commit `21da998` | 9 images, PDF from the author-approved `PQNK_Book_Chapter_4_Final - Publish ready (Claude-merged) Approved.pdf`. Hands to Chapter Five, `the-natural-water-system`. |
 | 5+ | — | — | In preparation | Full TOC (8 Parts, 66 chapters) is in `books.ts`. |
+
+**All of Chapters 1–4 and the Ch3 hand-off fix are committed to `main` but NOT
+yet deployed** — this site is 100% static and hand-deployed (build → zip `out/`
+→ upload via cPanel File Manager, see README §6–7). Claude has no server
+access and cannot deploy. Until Asif does that upload, pedaver.com keeps
+serving whatever was last uploaded; don't assume a commit is live.
 
 ## 5. Open issues
 
-### Chapter 4 — text approved; two things left before publish
+None outstanding for Chapters 1–4. Next chapter to prepare: Chapter Five,
+`the-natural-water-system` ("The Natural Water System — Rain, Dew, Humidity,
+and Soil Moisture Management").
 
-**A. Corrected page-1 title infographic must be embedded in a re-exported PDF/DOCX.**
-Iterated over chat 2026-09-04. Resolved in the latest chat image: 0.083% pulled
-into its own "NET DRAW ON THE GEOLOGICAL RESERVE" box, labelled "net mineral
-export … not the mineral content of plant biomass"; carbon split now
-"~20–40% of photosynthate … below ground" and "~50–80% … supports above-ground
-growth" (no longer "builds the harvest"); section-2 title em dash → colon.
-Author has decided to **keep `4.000%` and `95.917%`** as-is (they belong to the
-established plant-mass framework; rounding is a separate decision, not part of
-this pass). Residual typographic tidy for whoever does the final image export:
-two dashes still present — "P·K·Ca·Mg·Zn·Fe **—** inexhaustible reserve" and the
-header "AIR AND WATER **–** THROUGH THE POWER OF CARBON" (make both a colon).
-**The corrected image is still only a chat screenshot — Claude never receives a
-file for a pasted chat image, so it cannot be embedded programmatically. As of
-last check the original `PQNK_Book_Chapter_4_Final - Publish ready.{pdf,docx}`
-files still carry the old page-1 graphic (`md5 19a1c301`). Re-verify the
-extracted page-1 image every time a new file is provided; never trust a
-"fixed" claim without re-extracting.**
-
-**B. DONE — text corrections merged into a working copy.** All 13 corrections +
-6 author decisions (Decisions log below) applied directly into the DOCX at
-`PQNK Book/PQNK_Book_Chapter_4_Final - Publish ready (Claude-merged).docx`
-(2026-09-04), via targeted python-docx run edits — never a full-document
-rewrite, so every one of the 14 embedded images is untouched (verified
-byte-identical, media-file hashes match the source exactly). That file's
-page-1 image is still the OLD one (see §A) — everything else (text +
-13 other images) is final. Author's position: after these corrections are in,
-Chapter 4 is ready for final page QA, **not another substantive rewrite
-round.**
-
-**Remaining steps to publish:** (1) Asif swaps page 1's image in the
-Claude-merged docx for the finalised infographic (or tells Claude the
-corrected graphic's file path so Claude can do the swap), (2) export to PDF,
-(3) Asif's page-by-page QA, (4) Claude re-extracts page 1 to confirm, runs the
-typo pass, and publishes.
-
-Minor, non-blocking: the mulch-thermostat infographic says the bare-vs-mulch gap
-is "about 40 °C"; the Ch4 text now says "roughly forty degrees cooler … at the
-peak of the day" (item 8) so these are aligned; published Ch1 still says "thirty
-degrees cooler" — leave unless the author wants Ch1 touched.
-
-### Chapter 3 — ship with the Ch4 publish
-- `books.ts`, Ch3 `body`, the paragraph beginning *"The next chapter turns to
-  water…"* — rewrite to hand off to *Carbon: The Currency of Life*. The
-  `transition` block right after it already names Chapter Four correctly; only
-  the prose paragraph is wrong. Prepared replacement text is in the session
-  that flagged it; keep Ch3's voice, point at carbon / crop-residue-and-roots
-  / the closed loop.
+Minor, non-blocking, left as-is: the Ch4 mulch-thermostat infographic says the
+bare-vs-mulch gap is "about 40 °C" (matches the text's "roughly forty degrees
+… at the peak of the day"); published Ch1 still says "thirty degrees cooler" —
+touch Ch1 only if the author asks.
 
 ## 6. Decisions log — BINDING, do not re-litigate
 
@@ -171,6 +136,17 @@ degrees cooler" — leave unless the author wants Ch1 touched.
   retained-roots carbon-return + pore-architecture point.
   These corrections are approved for the master; after they go in, Chapter 4 is
   ready for the author's page-by-page QA, **not another rewrite round.**
+  **DONE:** applied directly into the approved DOCX/PDF and published
+  2026-09-04, commit `21da998`.
+- **2026-09-04 — layout risk with anchored graphics: general lesson.** Adding
+  ~3,100 characters of corrected text to Ch4 shifted page flow enough that the
+  Q&A panel (anchored at a *fixed page position*, `wrapTopAndBottom`) collided
+  with the reflowed "WHAT THIS CHAPTER HAS ESTABLISHED" paragraph, mangling its
+  last line into wide letter-spacing — invisible in text extraction, only
+  caught by rendering the actual page image. Author fixed it by nudging the
+  panel in Pages. **Lesson for any future manuscript edit that changes text
+  length near a page carrying an anchored/floating graphic: render the actual
+  page image and eyeball it, don't just diff extracted text.**
 - **2026-09-04 — Ch4 below-ground photosynthate allocation = "twenty to forty
   percent."** The earlier Ch4 draft said "twenty to fifty percent"; corrected.
   This matches the PQNK-locked figure (`memory/project_pqnk_belowground_carbon_figure.md`).
