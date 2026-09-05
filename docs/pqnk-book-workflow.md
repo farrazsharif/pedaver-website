@@ -241,14 +241,16 @@ without the author explicitly reopening Ch4 for a v1.1.
    prose (prose uses "atmospheric nitrogen" twice, in passing, with no
    soil-pore-air point). Likely an infographic-wording change, possibly plus
    a short prose addition.
-2. **Carbon going "to you / any life form" (Feynman reference).** Author's
-   proposed fix: *"into plants, soil organisms, animals and us, and
-   eventually back to the atmosphere again."* Claude's check: **searched the
-   full published chapter (prose + every extracted infographic) — this exact
-   phrase is not present anywhere in Chapter 4 as published.** Source
-   unconfirmed — may be a different document (slide, summary, social caption,
-   or an earlier draft) rather than the live chapter. **Needs the author to
-   confirm the source before this can be located and actioned.**
+2. **Carbon going "to you / any life form" (Feynman reference).** CONFIRMED
+   by the author 2026-09-04: this is the chapter's **second body paragraph**,
+   `books.ts` line ~445 — "Without carbon cycling continuously through the
+   system, from atmosphere to plant to soil to atmosphere again, there is no
+   life." The colleague's point: this cycle description skips the step where
+   carbon passes through animate life (people, animals) before returning to
+   soil/atmosphere. Author's proposed fix, to replace "to plant to soil to
+   atmosphere again" with something closer to: *"into plants, soil organisms,
+   animals and us, and eventually back to the atmosphere again."* This is a
+   **prose change**, not an infographic change.
 3. **"PQNK turns every field into a carbon pump."** Author's proposed fix:
    *"PQNK turns every field into a living carbon capture and recycling
    system."* Claude's check: this is the closing banner line of the
