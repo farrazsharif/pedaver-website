@@ -218,3 +218,42 @@ touch Ch1 only if the author asks.
   archive as authoritative; treat the `.docx` files as "the approved working
   source," not a certified match. If exact Word/PDF parity is ever needed,
   re-export a fresh `.docx` from the chapter's `.pages` file.
+
+## 7. Post-publication feedback — QUEUED, NOT ACTIONED
+
+Chapter 4 is locked (author directive, 2026-09-04): no content, science,
+infographic, or design changes until the author explicitly reopens it. Colleague
+feedback + author replies get logged here as they arrive, saved by the author
+as Word docs (e.g. `PQNK_Claude_Work/Comments on Ch 4.docx`, outside the
+`PQNK Book` folder). Author's stated policy (in that doc): batch comments,
+don't react to each one individually, decide what enters "the next revision"
+once the colleague's full read-through is done. Do not action anything below
+without the author explicitly reopening Ch4 for a v1.1.
+
+### Batch 1 (logged 2026-09-04, from `Comments on Ch 4.docx`)
+
+1. **"Atmospheric nitrogen" / soil-pore air.** Colleague noted the term could
+   read as excluding N₂ present in soil-pore air. Author's proposed fix:
+   *"Atmospheric N₂, including N₂ present in soil-pore air, is converted into
+   biologically usable forms by nitrogen-fixing microorganisms."* Claude's
+   check: this matches the **page-1 infographic's** "ATMOSPHERIC NITROGEN /
+   THROUGH BIOLOGICAL NITROGEN FIXATION" panel register, not the running
+   prose (prose uses "atmospheric nitrogen" twice, in passing, with no
+   soil-pore-air point). Likely an infographic-wording change, possibly plus
+   a short prose addition.
+2. **Carbon going "to you / any life form" (Feynman reference).** Author's
+   proposed fix: *"into plants, soil organisms, animals and us, and
+   eventually back to the atmosphere again."* Claude's check: **searched the
+   full published chapter (prose + every extracted infographic) — this exact
+   phrase is not present anywhere in Chapter 4 as published.** Source
+   unconfirmed — may be a different document (slide, summary, social caption,
+   or an earlier draft) rather than the live chapter. **Needs the author to
+   confirm the source before this can be located and actioned.**
+3. **"PQNK turns every field into a carbon pump."** Author's proposed fix:
+   *"PQNK turns every field into a living carbon capture and recycling
+   system."* Claude's check: this is the closing banner line of the
+   **Soil Organic Matter Trajectory infographic** (`ch4-img-04.png`):
+   "Healthy soil is the largest carbon store on land. PQNK FARMING TURNS
+   EVERY FIELD INTO A CARBON PUMP." The prose separately uses "carbon pump"
+   once, narrowly, for roots ("Every living root is a carbon pump...") —
+   that usage is unambiguous and likely does not need the same fix.
