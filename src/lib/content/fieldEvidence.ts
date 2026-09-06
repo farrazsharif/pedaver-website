@@ -209,6 +209,18 @@ export const fieldEvidence: FieldEvidence[] = [
     relatedCropSlug: "citrus-kinnow",
     tags: ["citrus", "zero chemical input"],
   },
+  {
+    feNumber: 12,
+    title: "The Role of Hardpan, Nematodes, and Aeration in Plant Health",
+    evidenceTypes: ["Advisory", "Field Evidence"],
+    cropOrTopic: "Hardpan & soil aeration",
+    summary:
+      "Asif Sharif explains how the Farmer Advisory guidance on the compaction hardpan, nematode activity, and soil aeration played out in the field — a confirmation of how the advisory worked in practice.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/LHm57VFVFLc",
+    videoId: "LHm57VFVFLc",
+    tags: ["hardpan", "nematodes", "soil aeration", "plant health", "farmer advisory"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
