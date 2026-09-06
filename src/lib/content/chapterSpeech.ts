@@ -140,6 +140,7 @@ export const SPEECH_NORMALISATIONS: SpeechNormalisation[] = [
   { label: "i.e.", find: /\bi\.e\.\s*/g, replace: "that is, " },
   { label: "PQNK", find: /\bPQNK\b/g, replace: "picnic", note: "spoken-only: read as the ordinary English word; visible spelling is unchanged" },
   { label: "ACI", find: /\bACI\b/g, replace: "A C I" },
+  { label: "SMM", find: /\bSMM\b/g, replace: "S M M", note: "Soil Moisture Management, spoken as letters" },
   { label: "NPK", find: /\bNPK\b/g, replace: "N P K" },
   { label: "BT", find: /\bBT\b/g, replace: "B T", note: "Bacillus thuringiensis, spoken as letters" },
   { label: "SIPP", find: /\bSIPP\b/g, replace: "S I P P", note: "not present in the 3 pilot chapters" },
