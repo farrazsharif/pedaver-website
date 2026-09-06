@@ -101,7 +101,8 @@ re-export can silently carry an old embedded image.
 | 2 | `rock-dirt-soil-life` | Rock, Dirt, Soil, Life | **Published** 2026-08-29 (v1.0) | |
 | 3 | `the-0-083-paradox` | The 0.083% Paradox | **Published + LIVE** 2026-08-31 (v1.0) | Closing-paragraph hand-off fixed 2026-09-04, commit `7b7e557` (now points to Carbon, not water). Verified live on pedaver.com 2026-09-04. |
 | 4 | `carbon-the-currency-of-life` | Carbon: The Currency of Life | **Published + LIVE** 2026-09-04 (v1.0), commit `21da998` | 9 images, PDF from the author-approved `PQNK_Book_Chapter_4_Final - Publish ready (Claude-merged) Approved.pdf`. Hands to Chapter Five, `the-natural-water-system`. Verified live on pedaver.com 2026-09-04 (page-1 infographic + PDF byte-verified via SHA-256 against production). |
-| 5+ | — | — | In preparation | Full TOC (8 Parts, 66 chapters) is in `books.ts`. |
+| 5 | `the-natural-water-system` | The Natural Water System | **Published + LIVE** 2026-09-06 (v1.0), commit `66cca55` | 13 infographics. PDF from the author-approved `PQNK_Book_Chapter_5_Final - Approved.pdf` after the reviewer's geographic-framing + grammar corrections were applied directly to the DOCX and re-exported (see Decisions log, 2026-09-06). Hands to Chapter Six, `natures-pest-protection`. Verified live on pedaver.com 2026-09-06 — deployed PDF SHA-256 `1ac0008a…` matches the local source byte-for-byte. Added an `SMM` → `S M M` speech-normalisation rule in `chapterSpeech.ts`. |
+| 6+ | — | — | In preparation | Full TOC (8 Parts, 66 chapters) is in `books.ts`. |
 
 ### Deployment — automatic via GitHub Actions, not manual
 
@@ -138,9 +139,9 @@ window.
 
 ## 5. Open issues
 
-None outstanding for Chapters 1–4. Next chapter to prepare: Chapter Five,
-`the-natural-water-system` ("The Natural Water System — Rain, Dew, Humidity,
-and Soil Moisture Management").
+None outstanding for Chapters 1–5. Next chapter to prepare: Chapter Six,
+`natures-pest-protection` ("Nature's Pest Protection — BT Bacteria, the
+Living Immune System, and the Hundred-Billion-Dollar Lie").
 
 Minor, non-blocking, left as-is: the Ch4 mulch-thermostat infographic says the
 bare-vs-mulch gap is "about 40 °C" (matches the text's "roughly forty degrees
@@ -218,6 +219,30 @@ touch Ch1 only if the author asks.
   archive as authoritative; treat the `.docx` files as "the approved working
   source," not a certified match. If exact Word/PDF parity is ever needed,
   re-export a fresh `.docx` from the chapter's `.pages` file.
+
+- **2026-09-06 — geographic framing of the book: BINDING rule for every
+  chapter.** The book is written for an international readership, but early
+  chapters kept centring Pakistan/Punjab as the *subject*. Rule, agreed with
+  the author after a Chapter 5 reviewer (Vineet / Vasudha) flagged it:
+  **state each principle in universal terms, then use Pakistan as the
+  documented case study, with a global parallel at two or three anchor points
+  per chapter — not everywhere.** Keep every *named* piece of evidence exactly
+  as written (a case study is supposed to have a place name): the 2011 *Paddy
+  and Water Environment* rice trial, the 2020 Sindh floods, the Balochistan /
+  Cholistan / Pothohar demonstrations, the "Case Study: Pakistan" infographic
+  panels, the four-country water-table comparison. Universalise only the
+  *framing* sentences — e.g. "the water crisis in Pakistan" → "the water
+  crisis … in Pakistan or in any country where industrial agriculture has
+  hardened the soil"; "in Punjab summer conditions" → "in a hot, dry summer,
+  of the kind common across the world's irrigated drylands"; "the dominant
+  irrigation method in Pakistan" → "still the dominant method across Pakistan
+  and much of the irrigated world"; "farming context in Punjab and Sindh" →
+  "across the canal-irrigated plains of South Asia, Punjab and Sindh among
+  them"; drop "Pakistan's" / "in the country" from the closing rhetorical
+  line. Chapter 5 was corrected this way before publish — 5 framing edits + 3
+  grammar fixes applied directly to the approved DOCX and re-exported to PDF.
+  Apply the same rule to Chapter 6 onward; apply it to Chapters 1–4 only if
+  the author reopens them.
 
 ## 7. Post-publication feedback — QUEUED, NOT ACTIONED
 
