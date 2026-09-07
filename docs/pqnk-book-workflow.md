@@ -103,7 +103,8 @@ re-export can silently carry an old embedded image.
 | 4 | `carbon-the-currency-of-life` | Carbon: The Currency of Life | **Published + LIVE** 2026-09-04 (v1.0), commit `21da998` | 9 images, PDF from the author-approved `PQNK_Book_Chapter_4_Final - Publish ready (Claude-merged) Approved.pdf`. Hands to Chapter Five, `the-natural-water-system`. Verified live on pedaver.com 2026-09-04 (page-1 infographic + PDF byte-verified via SHA-256 against production). |
 | 5 | `the-natural-water-system` | The Natural Water System | **Published + LIVE** 2026-09-06 (v1.0), commit `66cca55` | 13 infographics. PDF from the author-approved `PQNK_Book_Chapter_5_Final - Approved.pdf` after the reviewer's geographic-framing + grammar corrections were applied directly to the DOCX and re-exported (see Decisions log, 2026-09-06). Hands to Chapter Six, `natures-pest-protection`. Verified live on pedaver.com 2026-09-06 — deployed PDF SHA-256 `1ac0008a…` matches the local source byte-for-byte. Added an `SMM` → `S M M` speech-normalisation rule in `chapterSpeech.ts`. |
 | 6 | `natures-pest-protection` | Nature's Pest Protection | **Published + LIVE** 2026-09-07 (v1.0), commit `bf800c8` | 6 infographics/photos. PDF from the author-locked `PQNK_Book_Chapter_6 - reviewer updates Locked.pdf` — incorporates the external scientific-tightening pass (established weed/BT ecology vs PQNK field interpretation, resistance not "impossible", BT not "all sucking insects", endophyte colonisation labelled as interpretation, two-stage BT-cotton history, "1,700 predators" → qualitative) and four final wording fixes (softened the "quietly destroying" phrase; "Monoculture eliminates ecological diversity" → "disrupts the ecological balance"; pull-quote "response" → "cure"; added a preventive-vs-curative health analogy in the closing, corrected to say a farm recovers fast — first crop shows change, a few crop cycles to restore). Hands to Chapter Seven, `weeds-as-soil-physicians`. Verified live on pedaver.com 2026-09-07. **PDF corrected 2026-09-07** (commit `cf7cd5e`): the author fixed the page-9 Q&A oversized-answer font in Pages and re-exported; the new PDF (SHA-256 `9989d1cd…`) is byte-identical in text and images to the previous one — only the page-9 layout reflows. Deployed PDF re-verified against the local source. |
-| 7+ | — | — | In preparation | Full TOC (8 Parts, 66 chapters) is in `books.ts`. Chapter 7, `weeds-as-soil-physicians`, is manuscript-final after a scientific-tightening pass; awaiting the author's final PDF export. |
+| 7 | `weeds-as-soil-physicians` | Weeds as Soil Physicians | **Published + LIVE** 2026-09-07 (v1.0), commit `c932a8c` | 6 figures. PDF from the author-locked `PQNK_Book_Chapter_7_FINAL - Claude Reviewed - Approved.pdf`. Incorporates the external scientific-tightening pass (weeds *do* compete — PQNK changes the conditions; diagnostic table hedged to "Soil conditions commonly associated"; Bathu "not proof of fixation", Maina "when effectively nodulated", Motha "a PQNK reading, not established botany", Deeela/Motha dominance "should decline"; herbicides "can disrupt/alter" not "destroy/kill", "limited or transient effects at recommended field rates"; resistance as progressive selection; three-season transition explicitly a PQNK field observation; "chemical snapshot vs living record" replaces "more accurate than any lab") and the country-name universalisation pass (P1 "Pakistani farmers" → "Farmers"; P6 "in Pakistani agriculture" → "one of the world's most herbicide-resistant weeds"; P8 dropped "in Pakistan"). Germination sentence rewritten (seed decides on its DNA cue; disturbance signals trigger it, light only "for many species"). Part Two hand-off corrected — soil degradation spans the whole ~10,000-year arc, "not for sixty years". **The page-5 diagnostic-guide table is a rendered image (`ch7-img-04.png`)** — no `table` block type was added to `books.ts` (deliberate: closing-out phase, no new structural work); the full selectable table is in the download PDF. Closes Part One; `transition` points to Part Two. Verified live on pedaver.com 2026-09-07 — deployed PDF SHA-256 `4a97e93f…` matches the local source byte-for-byte. |
+| 8+ | — | — | In preparation | Full TOC (8 Parts, 66 chapters) is in `books.ts`. Part Two opens with `the-first-error` ("The First Error"). No chapter is in active web-publication preparation. |
 
 ### Deployment — automatic via GitHub Actions, not manual
 
@@ -140,12 +141,16 @@ window.
 
 ## 5. Open issues
 
-None outstanding for Chapters 1–6 (the Ch6 page-9 Q&A oversized-answer font
-was corrected and the deployed PDF swapped on 2026-09-07). Next chapter to
-prepare for web publication: Chapter Seven, `weeds-as-soil-physicians`
-("Weeds as Soil Physicians — The Paradigm Inversion, Reading the Field's Own
-Diagnosis"). Its text and three infographics are approved; the author is
-finalising the PDF export.
+None outstanding. **Part One (Chapters 1–7) is fully published and LIVE.**
+The Ch6 page-9 Q&A oversized-answer font was corrected and the deployed PDF
+swapped on 2026-09-07. Chapter 7 shipped the same day. No chapter is in
+active web-publication preparation — Part Two work has not started.
+
+Ch7 note for a future revisit: the page-5 diagnostic-guide table ships as a
+rendered image (`ch7-img-04.png`), not selectable text, because adding a
+`table` block type to `books.ts` was ruled out during the closing-out phase.
+If the data model is ever reopened, a proper `table` block would let that
+table be read by Read Aloud and selected/searched on the page.
 
 Minor, non-blocking, left as-is: the Ch4 mulch-thermostat infographic says the
 bare-vs-mulch gap is "about 40 °C" (matches the text's "roughly forty degrees
