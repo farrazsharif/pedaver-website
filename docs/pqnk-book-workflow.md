@@ -102,7 +102,8 @@ re-export can silently carry an old embedded image.
 | 3 | `the-0-083-paradox` | The 0.083% Paradox | **Published + LIVE** 2026-08-31 (v1.0) | Closing-paragraph hand-off fixed 2026-09-04, commit `7b7e557` (now points to Carbon, not water). Verified live on pedaver.com 2026-09-04. |
 | 4 | `carbon-the-currency-of-life` | Carbon: The Currency of Life | **Published + LIVE** 2026-09-04 (v1.0), commit `21da998` | 9 images, PDF from the author-approved `PQNK_Book_Chapter_4_Final - Publish ready (Claude-merged) Approved.pdf`. Hands to Chapter Five, `the-natural-water-system`. Verified live on pedaver.com 2026-09-04 (page-1 infographic + PDF byte-verified via SHA-256 against production). |
 | 5 | `the-natural-water-system` | The Natural Water System | **Published + LIVE** 2026-09-06 (v1.0), commit `66cca55` | 13 infographics. PDF from the author-approved `PQNK_Book_Chapter_5_Final - Approved.pdf` after the reviewer's geographic-framing + grammar corrections were applied directly to the DOCX and re-exported (see Decisions log, 2026-09-06). Hands to Chapter Six, `natures-pest-protection`. Verified live on pedaver.com 2026-09-06 — deployed PDF SHA-256 `1ac0008a…` matches the local source byte-for-byte. Added an `SMM` → `S M M` speech-normalisation rule in `chapterSpeech.ts`. |
-| 6+ | — | — | In preparation | Full TOC (8 Parts, 66 chapters) is in `books.ts`. |
+| 6 | `natures-pest-protection` | Nature's Pest Protection | **Published + LIVE** 2026-09-07 (v1.0), commit `bf800c8` | 6 infographics/photos. PDF from the author-locked `PQNK_Book_Chapter_6 - reviewer updates Locked.pdf` — incorporates the external scientific-tightening pass (established weed/BT ecology vs PQNK field interpretation, resistance not "impossible", BT not "all sucking insects", endophyte colonisation labelled as interpretation, two-stage BT-cotton history, "1,700 predators" → qualitative) and four final wording fixes (softened the "quietly destroying" phrase; "Monoculture eliminates ecological diversity" → "disrupts the ecological balance"; pull-quote "response" → "cure"; added a preventive-vs-curative health analogy in the closing, corrected to say a farm recovers fast — first crop shows change, a few crop cycles to restore). Hands to Chapter Seven, `weeds-as-soil-physicians`. Verified live on pedaver.com 2026-09-07. **Known PDF-only blemish:** the page-9 Q&A box has one answer set in an oversized font (reviewer point 4, layout not applied). Web `qaPanel` renders uniformly, so the live chapter is unaffected; swap a corrected PDF when available. |
+| 7+ | — | — | In preparation | Full TOC (8 Parts, 66 chapters) is in `books.ts`. Chapter 7, `weeds-as-soil-physicians`, is manuscript-final after a scientific-tightening pass; awaiting the author's final PDF export. |
 
 ### Deployment — automatic via GitHub Actions, not manual
 
@@ -139,9 +140,12 @@ window.
 
 ## 5. Open issues
 
-None outstanding for Chapters 1–5. Next chapter to prepare: Chapter Six,
-`natures-pest-protection` ("Nature's Pest Protection — BT Bacteria, the
-Living Immune System, and the Hundred-Billion-Dollar Lie").
+None outstanding for Chapters 1–6 (see the Ch6 PDF-only Q&A font blemish
+noted in the status table — non-blocking, web unaffected). Next chapter to
+prepare for web publication: Chapter Seven, `weeds-as-soil-physicians`
+("Weeds as Soil Physicians — The Paradigm Inversion, Reading the Field's Own
+Diagnosis"). Its text and three infographics are approved; the author is
+finalising the PDF export.
 
 Minor, non-blocking, left as-is: the Ch4 mulch-thermostat infographic says the
 bare-vs-mulch gap is "about 40 °C" (matches the text's "roughly forty degrees
@@ -284,3 +288,35 @@ without the author explicitly reopening Ch4 for a v1.1.
    EVERY FIELD INTO A CARBON PUMP." The prose separately uses "carbon pump"
    once, narrowly, for roots ("Every living root is a carbon pump...") —
    that usage is unambiguous and likely does not need the same fix.
+
+### External reviewer: Norman Uphoff (Cornell) — endorsements, NO changes requested
+
+Norman Uphoff is the leading academic figure on SRI (System of Rice
+Intensification) and a career irrigation-management researcher (Gal Oya,
+Sri Lanka). Directly relevant here: PQNK's founding rice trial is the 2011
+*Paddy and Water Environment* (PAWE) paper Chapter 5 cites. Two emails to
+the author, forwarded 2026-09-06. Both are endorsements; neither asks for a
+manuscript change. Logged for the record.
+
+1. **On Chapter 1** (2026-08-28). "Truly wonderful"; says the writing is
+   "much better than in that PAWE article 15 years ago." Tone now "direct and
+   conversational … coherent and compelling"; the "somewhat strident" tone he
+   had flagged in an earlier draft "I did not sense in this … justifiably
+   urgent, but not strident." Likes the four-step model (rocks → dirt → soil →
+   life). Reports the same personal epiphany (plants growing 400M+ years
+   without exhausting the soil). Two non-editorial items worth tracking
+   separately from chapter work:
+   - **Dissemination:** he shared Chapter 1 with **Adam Parr**, a UK barrister
+     working to rein in fertiliser companies.
+   - **Translation network offer:** assumes an Urdu edition; offers colleagues
+     in Sri Lanka and Bangladesh for **Sinhalese and Bengali** editions, could
+     sound out a **Nepali** edition, and suggests **Hindi** via India
+     colleagues — "a force for all of South Asia." Author to pursue if/when
+     translation becomes a workstream; not book-editing work.
+2. **On Chapter 5** (2026-09-06). "The one that most raised my enthusiasm for
+   your project because it was so concrete, informative, and well-substantiated
+   scientifically." Singles out the **dew and atmospheric-humidity** treatment
+   — a topic he had long been interested in but "filed away" for lack of a way
+   to examine it — as brought "nicely and succinctly to the fore." Useful as
+   independent validation of Chapter 5's least-conventional section from a
+   water specialist.
