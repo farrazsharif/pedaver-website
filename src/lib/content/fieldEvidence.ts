@@ -221,6 +221,19 @@ export const fieldEvidence: FieldEvidence[] = [
     videoId: "LHm57VFVFLc",
     tags: ["hardpan", "nematodes", "soil aeration", "plant health", "farmer advisory"],
   },
+  {
+    feNumber: 13,
+    title: "Amla on PQNK on Rolling Land",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
+    cropOrTopic: "Amla (aonla) on rolling land",
+    summary:
+      "A PQNK farmer's field report on an amla (aonla) plantation established on rolling land using a contour-line layout — grown rainfed with no irrigation, no agrochemicals and no tillage.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/IuOKKARiP6w",
+    videoId: "IuOKKARiP6w",
+    relatedCropSlug: "amla",
+    tags: ["amla", "aonla", "contour planting", "rolling land", "rainfed", "no irrigation", "zero chemical input", "no-till"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
