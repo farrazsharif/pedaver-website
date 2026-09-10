@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+#
+# Pre-push hook — never deploy the Pedaver site without a fresh local backup.
+#
+# When you push to `main`, GitHub Actions rebuilds and uploads the site. This
+# hook makes sure a snapshot of the site exists on this Mac BEFORE that
+# happens, so a bad deploy (or a wiped server) can always be recovered from
+#   ~/Documents/Pedaver_Website_Backups/current
+#
+# It is skipped automatically when a snapshot < 20 minutes old already exists
+# (so a burst of pushes only rebuilds once).
+#
+# Emergency bypass:   git push --no-verify
+#
+# Activated by:  git config core.hooksPath .githooks   (run once per clone)
+#
+set -euo pipefail
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+
+# stdin lines: <local ref> <local sha> <remote ref> <remote sha>
+pushing_main=0
+while read -r _localref _localsha remoteref _remotesha; do
+  [ "$remoteref" = "refs/heads/main" ] && pushing_main=1
+done
+[ "$pushing_main" = 1 ] || exit 0
+
+BACKUP_ROOT="${PEDAVER_BACKUP_ROOT:-$HOME/Documents/Pedaver_Website_Backups}"
+manifest="$BACKUP_ROOT/current/MANIFEST.txt"
+if [ -f "$manifest" ] && [ -z "$(find "$manifest" -mmin +20 2>/dev/null)" ]; then
+  echo "pre-push: site snapshot is fresh (< 20 min old) — skipping." >&2
+  exit 0
+fi
+
+echo "pre-push: backing up the site before this deploy…" >&2
+echo "          (skip with 'git push --no-verify' in an emergency)" >&2
+if ! "$REPO_ROOT/scripts/backup-site.sh"; then
+  echo "pre-push: BACKUP FAILED — push aborted. Fix the build, or bypass with --no-verify." >&2
+  exit 1
+fi

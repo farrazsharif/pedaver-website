@@ -12,6 +12,36 @@ decisions already made with the author. That lives here now.
 
 ---
 
+## 0. Site backup rule — BINDING (added 2026-09-10)
+
+**Never push to `main` (i.e. never trigger a deploy) without a fresh local
+backup of the built site.** On 2026-09-10 the live site went down for hours
+during a run of failed deploys; the author's rule is that two rolling copies
+must always exist on the Mac so any bad deploy or wiped server is instantly
+recoverable.
+
+- The backup script is `scripts/backup-site.sh`. It builds the site, then
+  snapshots `out/` (with `.htaccess`) into
+  `~/Documents/Pedaver_Website_Backups/`, keeping exactly two copies:
+  `current/` (this run) and `previous/` (the run before), each with a
+  `MANIFEST.txt` (git commit, file count, SHA-256s of key files + every
+  chapter PDF). Copies are hard-linked, so the second and later snapshots
+  cost only the delta.
+- It runs **automatically** in two places, already wired on the author's Mac:
+  1. `.githooks/pre-push` — before every push to `main` (activated with
+     `git config core.hooksPath .githooks`; skipped if a snapshot < 20 min
+     old exists; emergency bypass `git push --no-verify`).
+  2. `~/Library/LaunchAgents/com.pedaver.website-backup.plist` — a launchd
+     agent, daily at 13:00 (reference copy: `scripts/com.pedaver.website-backup.plist`).
+- **To restore:** upload the contents of
+  `~/Documents/Pedaver_Website_Backups/current/site/` into the cPanel
+  document root (`public_html`), overwriting. `.htaccess` is included.
+- If a Claude session runs the publish checklist below, it must ensure a
+  snapshot was taken for the state being pushed (the pre-push hook does this;
+  if hooks are bypassed, run `scripts/backup-site.sh` by hand first).
+
+---
+
 ## 1. What the PQNK books are
 
 Four planned books. Book one is in active chapter-by-chapter publication:
@@ -71,8 +101,10 @@ re-export can silently carry an old embedded image.
 8. `npm run build` — must pass.
 9. Commit: `Publish Chapter N: <Title>` (direct to `main`, matching every
    prior chapter/KP publish).
-10. **`git push origin main`** — this alone deploys it. See "Deployment"
-    below; do not skip this step or assume a commit is live on its own.
+10. **`git push origin main`** — this alone deploys it. The `.githooks/pre-push`
+    hook snapshots the site first (see §0); if hooks are off, run
+    `scripts/backup-site.sh` by hand before pushing. See "Deployment" below;
+    do not skip this step or assume a commit is live on its own.
 11. **Update this file** — move the chapter to Published + confirm LIVE
     (verify via SHA-256/Last-Modified against production, not just a 200),
     clear its open issues, add any new decisions.

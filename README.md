@@ -89,6 +89,26 @@ before you zip it; see `docs/htaccess.txt` for its contents.
 The site is 100% static, so there is nothing to configure on the server —
 cPanel just serves the files.
 
+## 7a. Site backups (automatic — the rule)
+
+Two rolling copies of the built site are kept on the Mac at
+`~/Documents/Pedaver_Website_Backups/` — `current/` and `previous/` — so a
+bad deploy or a wiped server is instantly recoverable.
+
+- `scripts/backup-site.sh` builds the site and takes a snapshot (`--no-build`
+  snapshots the existing `out/`). Copies are hard-linked, so after the first
+  one each snapshot only costs what changed.
+- It runs on its own: **before every `git push` to `main`** (the
+  `.githooks/pre-push` hook — enable once per clone with
+  `git config core.hooksPath .githooks`; bypass with `git push --no-verify`),
+  and **daily at 13:00** (launchd agent
+  `~/Library/LaunchAgents/com.pedaver.website-backup.plist`; reference copy in
+  `scripts/`).
+- **Restore:** upload the contents of
+  `~/Documents/Pedaver_Website_Backups/current/site/` into `public_html`,
+  overwriting. `MANIFEST.txt` in each copy records the git commit and file
+  checksums so you know exactly what a snapshot contains.
+
 ## 8. Team workflow (two people)
 
 ```bash

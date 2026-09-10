@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Reference copy. The LIVE agent lives at:
+      ~/Library/LaunchAgents/com.pedaver.website-backup.plist
+
+  Install / update:
+      cp scripts/com.pedaver.website-backup.plist ~/Library/LaunchAgents/
+      launchctl unload ~/Library/LaunchAgents/com.pedaver.website-backup.plist 2>/dev/null || true
+      launchctl load  ~/Library/LaunchAgents/com.pedaver.website-backup.plist
+
+  Check it:
+      launchctl list | grep pedaver
+      tail -n 40 ~/Documents/Pedaver_Website_Backups/backup.log
+
+  Runs scripts/backup-site.sh once a day at 13:00. If the Mac is asleep or
+  off at 13:00, launchd runs it at the next wake. Paths are absolute for
+  asifsharif's Mac — edit if the repo or home dir moves.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.pedaver.website-backup</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/asifsharif/Documents/pedaver-website/scripts/backup-site.sh</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/asifsharif/Documents/pedaver-website</string>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+  </dict>
+
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key><integer>13</integer>
+    <key>Minute</key><integer>0</integer>
+  </dict>
+
+  <key>RunAtLoad</key>
+  <false/>
+
+  <key>StandardOutPath</key>
+  <string>/Users/asifsharif/Documents/Pedaver_Website_Backups/launchd.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/asifsharif/Documents/Pedaver_Website_Backups/launchd.err.log</string>
+</dict>
+</plist>
