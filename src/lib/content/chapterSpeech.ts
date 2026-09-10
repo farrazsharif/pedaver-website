@@ -142,6 +142,8 @@ export const SPEECH_NORMALISATIONS: SpeechNormalisation[] = [
   { label: "ACI", find: /\bACI\b/g, replace: "A C I" },
   { label: "SMM", find: /\bSMM\b/g, replace: "S M M", note: "Soil Moisture Management, spoken as letters" },
   { label: "NPK", find: /\bNPK\b/g, replace: "N P K" },
+  { label: "GMO", find: /\bGMO\b/g, replace: "G M O", note: "genetically modified organism, spoken as letters" },
+  { label: "GURT", find: /\bGURT\b/g, replace: "G U R T", note: "Genetic Use Restriction Technology, spoken as letters" },
   { label: "BT", find: /\bBT\b/g, replace: "B T", note: "Bacillus thuringiensis, spoken as letters" },
   { label: "SIPP", find: /\bSIPP\b/g, replace: "S I P P", note: "not present in the 3 pilot chapters" },
   { label: "VIPP", find: /\bVIPP\b/g, replace: "V I P P", note: "not present anywhere in current content" },
