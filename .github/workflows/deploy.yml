@@ -7,6 +7,13 @@ on:
     branches: [main]
   workflow_dispatch:
 
+# Only one deploy at a time. If a second push lands while a deploy is
+# running, the in-progress one is cancelled and the newest wins — this
+# prevents the racing-deploy collision seen on 2026-09-10 (runs #216/#217).
+concurrency:
+  group: deploy-cpanel
+  cancel-in-progress: true
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -33,16 +40,41 @@ jobs:
       - name: Add .htaccess to the build
         run: cp docs/htaccess.txt out/.htaccess
 
-      - name: Upload to cPanel via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      # Deploy over SSH (rsync), NOT FTP.
+      #
+      # Why: the old FTPS deploy failed because cPanel's firewall blocks the
+      # passive-mode DATA ports that FTPS opens for each file transfer
+      # ("Timeout when trying to open data connection", 2026-09-10). rsync
+      # runs entirely inside ONE SSH connection on port 22 — there are no
+      # passive data ports, so that whole class of failure is gone. It also
+      # only transfers changed files, so large PDFs aren't re-uploaded every
+      # time.
+      #
+      # Required repository secrets (Settings -> Secrets and variables ->
+      # Actions):
+      #   SSH_PRIVATE_KEY  the private key whose public half is in the cPanel
+      #                    account's ~/.ssh/authorized_keys
+      #   SSH_HOST         server hostname or IP (e.g. the FTP_SERVER value,
+      #                    or pedaver.com)
+      #   SSH_USER         the cPanel ACCOUNT username (NOT deploy@pedaver.com)
+      #   SSH_PORT         SSH port — 22 on most cPanel hosts
+      #   DEPLOY_PATH      absolute path to the document root, with trailing
+      #                    slash, e.g. /home/<cpaneluser>/public_html/
+      - name: Deploy to cPanel over SSH (rsync)
+        uses: easingthemes/ssh-deploy@v5.1.0
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          # The built site lives in out/ ; upload its CONTENTS.
-          local-dir: ./out/
-          # The deploy@pedaver.com FTP account is scoped to the pedaver.com
-          # document root, so we upload straight into its home directory.
-          server-dir: ./
-          # cPanel account uses explicit FTPS on port 21.
-          protocol: ftps
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.SSH_HOST }}
+          REMOTE_USER: ${{ secrets.SSH_USER }}
+          REMOTE_PORT: ${{ secrets.SSH_PORT }}
+          # Trailing slash on SOURCE = copy the CONTENTS of out/ into TARGET.
+          SOURCE: "out/"
+          TARGET: ${{ secrets.DEPLOY_PATH }}
+          # -rltvz: recurse, keep symlinks/times, verbose, compress.
+          # No --delete yet: it would prune anything in the doc root that
+          # isn't in out/. Once we've confirmed the doc root holds only the
+          # built site, add --delete here to mirror exactly (and remove
+          # stale pages). Leave it off until then to avoid wiping files by
+          # accident if DEPLOY_PATH is ever misconfigured.
+          ARGS: "-rltvz"
+          EXCLUDE: ".git/, .github/, node_modules/"
