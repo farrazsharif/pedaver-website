@@ -47,10 +47,15 @@ log() { echo "[$ts] $*" | tee -a "$LOG" ; }
 log "backup-site: start (build=$DO_BUILD, root=$BACKUP_ROOT)"
 cd "$REPO_ROOT"
 
-# --- disk headroom check (this Mac has run critically low before) -----------
+# --- disk headroom check --------------------------------------------------
+# NOTE: `df` reports only *immediately* free space; it does NOT count macOS
+# "purgeable" space (APFS local snapshots, caches) that the OS auto-frees when
+# a write needs room. The Storage settings pane shows the larger, purgeable-
+# inclusive figure. So a low number here is usually fine — the snapshot below
+# will still complete. Only warn if it's genuinely tight.
 avail_kb="$(df -k "$BACKUP_ROOT" | awk 'NR==2 {print $4}')"
-if [ "${avail_kb:-0}" -lt 3145728 ]; then   # < 3 GiB free
-  log "WARNING: only $((avail_kb/1024)) MiB free on the backup volume. Free up space."
+if [ "${avail_kb:-0}" -lt 2097152 ]; then   # < 2 GiB immediately free
+  log "NOTE: df shows only $((avail_kb/1024)) MiB immediately free (purgeable space not counted). Snapshot will proceed; free real space if this keeps shrinking."
 fi
 
 # --- build ----------------------------------------------------------------
