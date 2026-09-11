@@ -14707,5 +14707,89 @@
 "why":"managing moisture while preserving root-zone aeration so nutrient-cycling biology can function"
 }
 ]
+},
+{
+"slug":"the-seed-is-potential-the-soil-is-the-production-system",
+"primarySubject":"Genetics sets a seed's potential; the living soil environment determines how much of that potential is expressed — the same relationship as soil texture (inherited) versus soil structure (dynamic), applied across open-pollinated, heirloom, hybrid, high-yielding and GM seed, with a specific caution about pollen-mediated gene flow in maize",
+"questionsAnswered":[
+"Does \"fertiliser-responsive\" mean a variety requires synthetic fertiliser?",
+"Why were Green Revolution wheat and rice varieties bred for short stature?",
+"Does a high-yielding variety lose its yield potential without synthetic fertiliser?",
+"Are GM crops inherently more water- or fertiliser-dependent than other seed?",
+"Does genetic engineering itself damage soil?",
+"How does pollen-mediated gene flow move a GM trait into non-GM maize seed?",
+"Is there a safe isolation distance that guarantees no gene flow in maize?",
+"What does seed sovereignty require beyond access to seed?"
+],
+"keywords":[
+"fertiliser-responsive varieties",
+"genetics as potential",
+"soil texture vs structure",
+"semi-dwarf wheat",
+"Green Revolution breeding",
+"heirloom seed conservation",
+"seed sovereignty",
+"GMO seed",
+"pollen-mediated gene flow",
+"maize cross-pollination",
+"genetic purity",
+"seed saving",
+"demand-driven nutrition",
+"ecosystem responsiveness",
+"USDA APHIS"
+],
+"geography":"Pakistan",
+"crops":[
+"Maize (Corn)",
+"Wheat"
+],
+"fieldProblems":[
+"Seed Sourcing / Genetic Vulnerability",
+"External Input Dependency",
+"Lodging / Weak Stem Structure"
+],
+"problemFamily":[
+"Plant Growth & Nutrition",
+"Cost, Profit & Markets"
+],
+"fieldPractices":[
+"Variety / Seed Selection",
+"Seed Saving / Isolation"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Plants",
+"Soil",
+"Production Architecture",
+"Food Quality"
+],
+"pqnkPrinciples":[
+"No Soil Disturbance",
+"No Inundation",
+"Permanent Biological Cover",
+"Maximum Biodiversity"
+],
+"productionStages":[],
+"evidenceType":"Philosophical/Framework Argument",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/plants",
+"why":"genetics as inherited potential, and the environment that determines how much of it is expressed"
+},
+{
+"page":"/science/soil",
+"why":"the texture-versus-structure analogy: inherited mineral material versus the dynamic biological architecture that determines function"
+},
+{
+"page":"/science/production-architecture",
+"why":"separating a seed's genetics from the production package, monoculture, tillage, chemical inputs, it happens to be sold within"
+},
+{
+"page":"/science/food-quality",
+"why":"PQNK field reports on taste and satiety, and the case for measuring them directly rather than inferring from anecdote"
+}
+]
 }
 ]
