@@ -502,6 +502,10 @@ touch Ch1 only if the author asks.
   the author's spelling fixes had already made it into the final `- Publish`
   export, and only the forward-reference fix (above) still needed applying
   — mentioned here in case that scratch trail is ever puzzled over later.
+  **Archive gap closed:** step 12 (archive to `Published Chapters/`) had
+  been skipped for Chapter 10 in the prior session — closed now, alongside
+  Ch11 and Ch12, all three copied from the deployed/verified-live PDF (not
+  a loose draft) and SHA-256-matched against production before archiving.
 
 ## 7. Post-publication feedback — QUEUED, NOT ACTIONED
 
