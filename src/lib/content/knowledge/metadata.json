@@ -14791,5 +14791,90 @@
 "why":"PQNK field reports on taste and satiety, and the case for measuring them directly rather than inferring from anecdote"
 }
 ]
+},
+{
+"slug":"when-a-tree-bleeds-gum",
+"primarySubject":"Gummosis (gum exuding from citrus bark) is a visible symptom, not a single disease; Phytophthora is a well-documented cause driven by moisture, drainage and trunk wetting, and PQNK argues for restoring the soil-root-water-aeration balance that predisposes a tree to injury rather than treating the gum as the problem, while still requiring direct diagnosis and intervention for an already-diseased tree",
+"questionsAnswered":[
+"What is the sticky gum coming from a citrus trunk?",
+"Is gummosis always caused by Phytophthora?",
+"Why does overwatering increase citrus disease risk?",
+"Do roots need oxygen as well as water?",
+"Does having a pathogen present mean a tree will get sick?",
+"Can PQNK guarantee a tree will never get gummosis?",
+"What should a farmer do with a tree that already has an active lesion?",
+"What is the correct step-by-step way to diagnose a gumming tree?"
+],
+"keywords":[
+"gummosis",
+"citrus gum",
+"Phytophthora",
+"foot rot",
+"root rot",
+"trunk wetting",
+"soil moisture management",
+"root aeration",
+"waterlogging",
+"drainage",
+"oomycete",
+"zoospores",
+"plant disease diagnosis",
+"host-pathogen-environment triangle",
+"UC IPM",
+"plant protection vs plant health"
+],
+"crops":[
+"Citrus (Kinnow)"
+],
+"fieldProblems":[
+"Fungal / Bacterial Disease",
+"Waterlogging",
+"Low Root-Zone Oxygen / Poor Aeration",
+"Poor Water Infiltration"
+],
+"problemFamily":[
+"Pests, Diseases & Weeds",
+"Water & Drainage",
+"Soil & Roots"
+],
+"fieldPractices":[
+"Soil Moisture Management (SMM)",
+"Furrow/Water Infiltration Testing"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Plants",
+"Crop Protection",
+"Soil",
+"Water"
+],
+"pqnkPrinciples":[
+"No Soil Disturbance",
+"No Inundation",
+"Permanent Biological Cover",
+"Maximum Biodiversity"
+],
+"productionStages":[],
+"evidenceType":"External Scientific Evidence",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/crop-protection",
+"why":"gummosis as a symptom of tissue injury, Phytophthora biology, and diagnosis before treatment"
+},
+{
+"page":"/science/soil",
+"why":"root-zone aeration and the water-air balance that predisposes roots to disease"
+},
+{
+"page":"/science/water",
+"why":"Soil Moisture Management as the mechanism that prevents the waterlogging and prolonged trunk wetting Phytophthora exploits"
+},
+{
+"page":"/science/plants",
+"why":"the plant's own defensive response to tissue injury, and the host-pathogen-environment relationship that determines disease outcome"
+}
+]
 }
 ]
