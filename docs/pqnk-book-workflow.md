@@ -196,24 +196,42 @@ two concurrent deploys with no concurrency guard — but the solo re-run
 (workflow doc) / `9b6cfff` (empty re-trigger). Ch 9's page, image and PDF
 are right in `out/`. Nothing else is wrong.
 
-**To get Ch 9 (and anything after it) live, do ONE of:**
-1. Fix the host FTP — check cPanel's FTP config / passive port range, or
-   ask the hosting provider to open the passive data ports to inbound
-   connections. Then re-run the deploy (push any commit, or the Actions
-   "Re-run" button). This is the real fix; every future publish needs it.
-2. Manual upload (the sanctioned fallback): a 4.8 MB `ch9-manual-deploy.zip`
-   was built from `out/` (Ch 9 page + `ch9-img-01.png` + the `.pdf` +
-   updated `books/natural-ecosystem-science/index.html` + `sitemap.xml`).
-   Extract it into `public_html/` via cPanel File Manager, overwriting.
-   Then SHA-256-verify the live PDF against
-   `public/books/natural-ecosystem-science/ancient-conventional-industrial-aci.pdf`
-   (`38a25dee…`) and flip the §4 Ch 9 row back to "Published + LIVE".
-3. If the FTP outage is transient, a later re-run may just work — worth a
-   retry before doing #2.
+**Update 2026-09-11 — still broken, two paths tried, both fail:**
 
-Consider adding `concurrency: { group: deploy, cancel-in-progress: true }`
-to `deploy.yml` regardless, so future double-pushes don't spawn racing
-deploys.
+- The `concurrency` guard suggested above was added (commit `e848eb2` area).
+- The author's son tried switching the deploy to SSH/rsync
+  (`easingthemes/ssh-deploy`, commits `a55b80a`/`b8fc75f`/`cbe6f95`, after
+  SkyHost enabled SSH port 22 on the account). All 3 runs (**#220–#222**)
+  failed in **0.0 seconds** — before any connection attempt — which is the
+  action rejecting its own inputs, almost certainly `SSH_PRIVATE_KEY`
+  unset/invalid or its public half never added to the cPanel account's
+  `~/.ssh/authorized_keys`. Needs someone with cPanel access to generate a
+  real keypair and verify all 5 `SSH_*` secrets; parked for now (reverted
+  in `e848eb2`, preserved in git history at `a55b80a`).
+- Reverted to FTPS to test whether the passive-port issue had cleared
+  alongside the broader 2026-09-10 host outage (pedaver.com's web server on
+  80/443 was fully unreachable for hours while cPanel/FTP/mail stayed up —
+  confirmed a host-side outage, since resolved for the *website*). **It has
+  not cleared for FTP**: run **#223** failed with the identical error,
+  `Timeout when trying to open data connection to 95.217.124.130:59098`,
+  after running 395 seconds. **Both configured deploy paths are currently
+  non-functional.** This needs one of:
+  1. **SkyHost fixes the passive-FTP-data-connection block** on the account/
+     firewall (the actual, durable fix — ask them specifically about
+     passive-mode FTP data ports, not just "the site is down").
+  2. **Someone with cPanel access finishes the SSH route properly**:
+     generate an SSH keypair, add the private key as the `SSH_PRIVATE_KEY`
+     repo secret, add the public key to `~/.ssh/authorized_keys` in cPanel,
+     and confirm `SSH_HOST`/`SSH_USER`/`SSH_PORT`/`DEPLOY_PATH` are all set
+     correctly — then restore the SSH step from commit `a55b80a`.
+  3. **Manual upload** (sanctioned fallback, used meanwhile): a 10 MB
+     `ch9-ch10-manual-deploy.zip` built from `out/` — both Ch 9 and Ch 10
+     (pages, images, PDFs), the updated `books/natural-ecosystem-science/index.html`,
+     and `sitemap.xml`. Extract into `public_html/` via cPanel File Manager,
+     overwriting. SHA-256-verify the live PDFs against
+     `public/books/natural-ecosystem-science/ancient-conventional-industrial-aci.pdf`
+     (`38a25dee…`) and `.../the-industrialization-of-agriculture.pdf`
+     (`b425c29a…`), then flip both §4 rows to "Published + LIVE".
 
 ## 5. Open issues
 
