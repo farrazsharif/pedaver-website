@@ -14877,4 +14877,85 @@
 }
 ]
 }
+,
+{
+"slug":"the-farmers-crisis-will-not-be-solved-by-another-support-price",
+"primarySubject":"A nationwide farmers' association press conference over diesel, fertiliser and wheat/sugarcane policy is real, but the paper argues the durable remedy is not another support price; it is a production system whose farmer-controlled cost of production, restored biological function, and demonstrable produce quality make it able to survive volatile policy, prices and climate",
+"questionsAnswered":[
+"Why can't another support price or subsidy permanently solve a farmers' crisis?",
+"What is the difference between a commodity-price crisis and a production-system crisis?",
+"What is the one price a farmer can actually control?",
+"How does PQNK reduce a farm's cost of production?",
+"Why does lower production cost also mean better climate resilience?",
+"Can two farmers selling at the same market price have different profit?",
+"How does farmer autonomy relate to national food security?",
+"What should an agricultural emergency response actually measure?"
+],
+"keywords":[
+"cost of production",
+"farmer autonomy",
+"support price",
+"subsidy dependency",
+"production-system crisis",
+"policy dependency",
+"farmer debt",
+"climate resilience",
+"produce quality",
+"food security",
+"Pakistan agriculture policy",
+"wheat policy",
+"sugarcane policy",
+"input cost",
+"market resilience"
+],
+"geography":"Pakistan",
+"crops":[
+"Wheat",
+"Sugarcane"
+],
+"fieldProblems":[
+"High Input / Production Cost",
+"External Input Dependency",
+"Farmer Income Instability / Debt",
+"Price Volatility / Market Glut"
+],
+"problemFamily":[
+"Cost, Profit & Markets"
+],
+"fieldPractices":[
+"Permanent Raised Bed Formation",
+"Soil Moisture Management (SMM)",
+"PQNK Transition Protocol (Staged)"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Production Architecture",
+"Climate",
+"Transition"
+],
+"pqnkPrinciples":[
+"No Soil Disturbance",
+"No Inundation",
+"Permanent Biological Cover",
+"Maximum Biodiversity"
+],
+"productionStages":[],
+"evidenceType":"Philosophical/Framework Argument",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/production-architecture",
+"why":"reframing the farmer's crisis as a production-system design question, not only a price/policy question"
+},
+{
+"page":"/science/climate",
+"why":"the same soil-restoration changes that lower cost also build resilience to heat, erratic rainfall and drought"
+},
+{
+"page":"/science/transition",
+"why":"the staged reduction of purchased inputs as the mechanism that converts biological dependence into farmer autonomy"
+}
+]
+}
 ]

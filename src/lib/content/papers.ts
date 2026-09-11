@@ -5291,6 +5291,37 @@ export const papers: Paper[] = [
       "The paper sets out a concrete eight-step diagnostic sequence, observe, locate, examine tissue, examine water, examine soil and roots, examine the wider environment, correct the production system, then treat an established lesion, moving backward through the same causal chain from gum to production system that the paper traces forward.",
     ],
   },
+  {
+    slug: "the-farmers-crisis-will-not-be-solved-by-another-support-price",
+    kpNumber: 200,
+    libraryDate: "2026-09-11",
+    category: "PQNK Philosophy, Framework & Economics",
+    title:
+      "The Farmers' Crisis Will Not Be Solved by Another Support Price: Why Pakistan's Farmers Must Reduce Cost, Improve Quality and Build Independence Through PQNK",
+    summary:
+      "A nationwide farmers' association's press conference voiced real distress over diesel, fertiliser, wheat and sugarcane policy, and the danger that one failed crop leaves a farmer unable to finance the next. This paper argues that distress is real but the standard remedy, another support price or subsidy, cannot be the permanent foundation of farm viability, because it exchanges biological dependence for political dependence. PQNK reframes the question: since a farmer cannot control the market price, government policy, rainfall or the exchange rate, his strongest and most durable defence is progressively lowering his own cost of production by restoring the soil's biological functions, while building resilience to climate shocks and competing through demonstrable produce quality.",
+    publishedDate: "2026-09-11",
+    pdfPath:
+      "/papers/the-farmers-crisis-will-not-be-solved-by-another-support-price.pdf",
+    abstract: [
+      "A nationwide farmers' association's press conference voiced anger and anxiety now widespread across Pakistani agriculture: rising diesel and fertiliser costs, uncertainty over wheat and sugarcane policy, import competition, debt, and the danger that the failure of one crop leaves the farmer unable to finance the next. This paper takes that distress at face value while questioning where the remedy is being sought. The proposed remedy in the press conference depends mainly on government action; PQNK asks a harder question, how can the farmer remain viable even when policy, prices and climate move against him. The paper's central claim is that the crisis is not only a commodity-price problem but a production-system problem: when one failed crop destroys a farmer's ability to finance the next, the production system itself has become financially fragile.",
+      "Government policy matters, the paper argues, but it cannot be the production system. Farmers are justified in demanding coherent policy, since sudden changes in imports, exports, procurement or regulation can damage a farmer who has already invested in a crop. But no government can permanently remove agricultural risk: governments change, fiscal conditions change, international prices move, currencies move, weather changes. If farming remains profitable only when government announces the right support price, subsidises the right input and prevents the wrong import, the paper contends the farmer has not achieved economic security, he has exchanged biological dependence for political dependence. The price a farmer can influence most directly, the paper notes, is not the market price he receives but his own cost of production.",
+      "The paper sets out how PQNK attacks cost at the production-system level, through four operating rules derived from the natural terrestrial ecosystem, no inundation, no repeated soil disturbance, permanent organic soil cover and encouraged biodiversity. As transition progresses, permanent raised beds, controlled traffic, mulched residues and Soil Moisture Management progressively reduce the need for repeated tillage, large irrigation volumes, routine synthetic fertiliser and routine pesticide use, so the farm relies increasingly on solar energy, roots, microorganisms and nutrient cycling rather than on purchased inputs. The same transformation, the paper argues, builds climate resilience: permanent mulch and improved soil structure increase infiltration and protect the root zone from heat and evaporation, so two farmers selling into the same market at the same price do not receive the same profit, because one carries a far lower cost base.",
+      "Reducing cost, the paper argues, is only half the strategy; the farmer's second defence is demonstrable produce quality, since commodity agriculture has trained farmers to measure success only in tonnes and maunds when taste, nutritional composition and keeping quality can also capture market value once documented rather than merely claimed. The paper extends the argument to food security: a country cannot call its food system secure if its farmers cannot produce without continuous access to expensive fuel, fertiliser, chemicals, credit and policy rescue, so farmer autonomy is treated as part of national food security, not a separate concern. It closes by arguing that the appropriate agricultural emergency is a production-cost emergency, measuring the true cost of every purchased input and asking which of those functions a restored biological system can perform itself, so that public investment finances transition toward independence rather than indefinitely subsidising dependency. The paper is explicit that it does not independently authenticate every numerical or market claim from the press conference it responds to, and that PQNK field outcomes on cost, quality and resilience should be documented and measured crop by crop rather than treated as universal guarantees.",
+    ],
+    keyTakeaways: [
+      "The current farmers' crisis is not only a price crisis; it is a production-system crisis.",
+      "One failed crop can weaken a farmer's ability to finance subsequent crops, because the system requires repeated purchased inputs.",
+      "Government policy matters, but support prices and subsidies cannot be the permanent foundation of farm viability.",
+      "The price a farmer can influence most directly is his own cost of production.",
+      "PQNK reduces dependency by restoring biological functions now substituted by repeated tillage, flooding and purchased agrochemicals.",
+      "Lower production cost increases a farmer's ability to withstand weak commodity prices.",
+      "Healthy soil, permanent cover, deep rooting and Soil Moisture Management strengthen resilience to climatic stress.",
+      "Farmers should compete through lower cost and higher, measurable produce quality.",
+      "Farmer autonomy is part of national food security.",
+      "Public agricultural investment should finance transition toward independence rather than indefinitely subsidise dependency.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {
