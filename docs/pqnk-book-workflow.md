@@ -263,9 +263,11 @@ connection times out.
 
 ## 5. Open issues
 
-**Part One (Chapters 1–7) plus Chapters 8 and 9 (Part Two) are published
+**Part One (Chapters 1–7) plus Chapters 8, 9 and 10 (Part Two) are published
 and LIVE.** Chapter 8 shipped 2026-09-09 (`8a3a3a6`); Chapter 9 shipped
-2026-09-10 (`386dc98`).
+2026-09-10 (`386dc98`), Chapter 10 shipped 2026-09-11 (`4a95abf`) — both
+held by the FTP passive-port incident and confirmed live 2026-09-11 after
+SkyHost's fix (run #230).
 
 **Ch8 open issue — PDF one-word lag:** the deployed `the-first-error.pdf`
 closing paragraph reads "over the last sixty"; the web body was corrected
