@@ -390,6 +390,57 @@ touch Ch1 only if the author asks.
   Apply the same rule to Chapter 6 onward; apply it to Chapters 1–4 only if
   the author reopens them.
 
+- **2026-09-11 — KP-198 promoted to a standalone v61 master chapter, placed
+  at the end of Part Seven.** KP-198 ("The Seed Is Potential, the Soil Is
+  the Production System") was published live as a Knowledge Paper
+  unchanged; its content was separately elaborated (additional historical/
+  scientific sourcing: Borlaug/CIMMYT/Norin 10/Rht genes, IR8's sd1 gene,
+  genotype-by-environment interaction, the FAO ~75%-diversity-loss
+  estimate, Svalbard/CGIAR genebanks, the 2001 ITPGRFA, La Via Campesina's
+  "seed sovereignty", UPOV 1991, and the contested 2001 Oaxaca maize-
+  landrace study) into a ~4,100-word chapter and inserted into
+  `PQNK_Final_Book_v61.docx` as the new **Chapter Sixty-Three**, the last
+  chapter of **Part Seven (Extended Knowledge)** — the same slot used
+  previously for KP-186/188/190. Author's placement decision, reasoned
+  through explicitly: Part Two (narrative fit with the ACI/GMO-seed
+  critique in Chapters 9–10) was considered and rejected because it would
+  require renumbering roughly fifty subsequent chapters in a still-being-
+  edited master; Part Seven costs only renumbering the trailing four
+  Part Eight chapters, matches the exact precedent of the three prior
+  KP-to-chapter promotions, and fits the chapter's hybrid
+  science-explainer/ACI-critique register better than Part One or Four.
+  **Mechanics:** `document.xml`-only edit, byte-copy-verified against the
+  pre-edit file (all 179 other package entries, incl. every image,
+  byte-identical; backup at
+  `backups/PQNK_Final_Book_v61.pre-seed-chapter-insert.20260911-203938.docx`).
+  Old Chapters 63–66 (PQNK™ Validation System, Policy Recommendations, A
+  Call to Action, The Field Record) renumbered to 64–67 — book is now
+  **67 chapters**. Six cross-references updated (four chapter-header
+  kickers, one self-referential "Chapter Sixty-Four" callback inside
+  Policy Recommendations' own closing section, one "⁂" hand-off line into
+  A Call to Action) plus the Table of Contents (one new row, four renumbered
+  rows; new chapter's page number is provisional, like all TOC page numbers
+  in this master — needs the same eventual repagination pass). Verified: the
+  full 1–67 chapter-heading sequence is contiguous with no gaps or
+  duplicates; no other chapter anywhere in the book references "Chapter
+  Sixty-Three" through "Chapter Sixty-Six" by name (checked whole-document).
+  New chapter matches the **local** style of its immediate neighbours
+  Ch60–62 (plain bold `Body A`/`Body A A` paragraph styles, Title Case
+  mid-chapter headings, no epigraph/attribution line, one photo placeholder)
+  rather than the more elaborate green/letter-spaced style the "native"
+  chapters use — Ch60–62 already established that as the local convention
+  for this append point, not touched. A pre-existing, unrelated defect was
+  found but deliberately left alone: Chapter Forty-Nine's closing transition
+  line incorrectly reads "Chapter Sixty-One: Policy Recommendations…"
+  instead of naming Chapter Fifty — stale cross-reference left over from an
+  earlier renumbering pass, out of scope for this edit. **`books.ts`**: a
+  matching `in-preparation` stub added to `part-seven`
+  (`the-seed-is-potential-the-soil-is-the-production-system`), directly
+  after `why-only-four-kilograms-of-np-during-transition` — same pattern as
+  the three prior KP stubs; not web-published. **PDF/`.pages` version**:
+  not yet re-exported — same known, accepted limitation as every other v61
+  edit in this log (Pages re-export + repagination is Asif's step).
+
 ## 7. Post-publication feedback — QUEUED, NOT ACTIONED
 
 Chapter 4 is locked (author directive, 2026-09-04): no content, science,

@@ -1064,6 +1064,7 @@ export const books: Book[] = [
       { chapterId: "the-farmer-as-the-ultimate-instrument", partId: "part-seven", title: "The Farmer as the Ultimate Instrument", status: "in-preparation" },
       { chapterId: "when-mulch-becomes-a-barrier", partId: "part-seven", title: "When Mulch Becomes a Barrier", status: "in-preparation" },
       { chapterId: "why-only-four-kilograms-of-np-during-transition", partId: "part-seven", title: "Why Only Four Kilograms of NP During Transition", status: "in-preparation" },
+      { chapterId: "the-seed-is-potential-the-soil-is-the-production-system", partId: "part-seven", title: "The Seed Is Potential, the Soil Is the Production System", status: "in-preparation" },
 
       { chapterId: "the-pqnk-validation-system", partId: "part-eight", title: "The PQNK™ Validation System", status: "in-preparation" },
       { chapterId: "policy-recommendations", partId: "part-eight", title: "Policy Recommendations", subtitle: "What Governments, Academia, Finance, and Extension Must Do", status: "in-preparation" },
