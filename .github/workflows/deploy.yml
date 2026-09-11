@@ -7,7 +7,9 @@ on:
     branches: [main]
   workflow_dispatch:
 
-# Only one deploy at a time; a newer push cancels an in-progress one.
+# Only one deploy at a time. If a second push lands while a deploy is
+# running, the in-progress one is cancelled and the newest wins — this
+# prevents the racing-deploy collision seen on 2026-09-10 (runs #216/#217).
 concurrency:
   group: deploy-cpanel
   cancel-in-progress: true
@@ -38,31 +40,32 @@ jobs:
       - name: Add .htaccess to the build
         run: cp docs/htaccess.txt out/.htaccess
 
-      # Deploy over SSH (rsync), NOT FTP.
+      # Deploy via FTPS (reverted 2026-09-11 — see commit message).
       #
-      # Re-enabled 2026-09-11: FTPS is still blocked by the host's FTP
-      # passive-port firewall (retest #227 timed out on the data connection
-      # again after the server restart). rsync-over-SSH uses ONE connection
-      # on the SSH port with no passive data ports, so it sidesteps that
-      # firewall entirely. In earlier tests (#221/#222) the SSH connection
-      # and key auth succeeded on ports 5122 and 22; if this run fails, read
-      # the rsync error at the bottom of this step to see the remaining cause.
-      #
-      # Secrets: SSH_HOST, SSH_USER, SSH_PORT (5122), DEPLOY_PATH
-      # (/home/caremidc/pedaver.com/), SSH_PRIVATE_KEY (public half authorized
-      # in the cPanel account's ~/.ssh/authorized_keys).
-      - name: Deploy to cPanel over SSH (rsync)
-        uses: easingthemes/ssh-deploy@v5.1.0
+      # 2026-09-10: FTPS started failing ("Timeout when trying to open data
+      # connection") during the same window pedaver.com's web server (LiteSpeed,
+      # ports 80/443) went fully unreachable while cPanel/WHM/FTP/mail all
+      # stayed up — a host-side outage, not a deploy problem. We tried
+      # switching to SSH/rsync (easingthemes/ssh-deploy) instead; all 3 runs
+      # (#220-#222) failed in 0.0s, which is the action rejecting its inputs
+      # before it even opens a connection — almost certainly SSH_PRIVATE_KEY
+      # is unset/invalid or its public half was never added to the cPanel
+      # account's ~/.ssh/authorized_keys. That needs someone with cPanel
+      # access to generate a real keypair and verify all 5 SSH_* secrets, so
+      # it's parked. FTPS is back in the meantime since it deployed chapters
+      # 1-8 successfully before the outage and the host issue should now be
+      # resolved. The SSH step is preserved in git history at commit
+      # a55b80a if someone wants to finish wiring it up properly later.
+      - name: Upload to cPanel via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          REMOTE_HOST: ${{ secrets.SSH_HOST }}
-          REMOTE_USER: ${{ secrets.SSH_USER }}
-          REMOTE_PORT: ${{ secrets.SSH_PORT }}
-          # Trailing slash on SOURCE = copy the CONTENTS of out/ into TARGET.
-          SOURCE: "out/"
-          TARGET: ${{ secrets.DEPLOY_PATH }}
-          # No --delete yet: it would prune anything in the doc root not in
-          # out/. Add it later, once confirmed the doc root holds only the
-          # built site, to mirror exactly and remove stale pages.
-          ARGS: "-rltvz"
-          EXCLUDE: ".git/, .github/, node_modules/"
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          # The built site lives in out/ ; upload its CONTENTS.
+          local-dir: ./out/
+          # The deploy@pedaver.com FTP account is scoped to the pedaver.com
+          # document root, so we upload straight into its home directory.
+          server-dir: ./
+          # cPanel account uses explicit FTPS on port 21.
+          protocol: ftps
