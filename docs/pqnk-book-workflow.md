@@ -533,6 +533,27 @@ touch Ch1 only if the author asks.
   book's sequence. **Do not publish Ch14 or Ch15 until the cost-table
   arithmetic is reconciled and the author gives an explicit go-ahead.**
 
+- **2026-09-12 — Ch14 cost-table reconciliation memo produced.** Follow-up
+  to the entry above: the author asked for a full breakdown of exactly
+  where the cost-side and benefit-side tables diverge from the published
+  $1.9T / $2.8T headlines, then authored a detailed reconciliation memo
+  covering both mismatches, a source-verification checklist (10 fields per
+  line item: source, year, geographic scope, cost type, annualisation,
+  gross/net, agriculture-only share, inflation basis, overlap risk,
+  original calculation), the two highest-priority figures to re-check
+  first (the $1.2T healthcare cost, which alone is more than half the
+  cost-side subtotal, and the $417bn climate figure, for possible overlap
+  with soil/water estimates), suggested interim wording for Chapter 14 if
+  it must ship before reconciliation finishes, and a four-step decision
+  rule (reconstruct the source model → remove overlap/scope mismatch →
+  recompute totals from verified components → only then decide whether the
+  published headlines survive). Formatted and saved as
+  `PQNK_Ch14_Economic_Model_Reconciliation_Memo.docx` in
+  `PQNK_Claude_Work/PQNK Book/` for handoff to whoever reconstructs the
+  cost model. **This memo does not itself resolve anything** — Ch14/Ch15
+  remain held exactly as above until the source figures are actually
+  re-verified and the author gives an explicit go-ahead to publish.
+
 ## 7. Post-publication feedback — QUEUED, NOT ACTIONED
 
 Chapter 4 is locked (author directive, 2026-09-04): no content, science,
