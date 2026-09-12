@@ -554,6 +554,93 @@ touch Ch1 only if the author asks.
   remain held exactly as above until the source figures are actually
   re-verified and the author gives an explicit go-ahead to publish.
 
+- **2026-09-12 — MAJOR PIVOT: the $1.9T / $2.8T / $4.7T headline model does
+  not survive source verification; abandon rather than reconcile.**
+  Following the memo above, Claude independently verified each cited
+  source via live web search, and the author separately re-verified
+  against FAO, UNCCD, WHO/FAO and World Bank primary sources. Both checks
+  converged on the same conclusion, with the author's search finding sharper
+  specifics on two items:
+  - **Soil ($400bn, UNCCD)** — the one figure that holds up. FAO/UNCCD
+    currently publish ~$400bn/yr in lost agricultural production from soil
+    erosion. Already used correctly elsewhere on the site (see
+    `what-science-delivered`, KP, "$400 billion (UNCCD)") — leave as-is.
+  - **Water ($300bn, "World Bank")** — no such World Bank figure found by
+    either search. Nearby real figures exist (Fortune's $307bn drought-cost
+    estimate; a $425bn "water pollution costs businesses" figure) but none
+    match "World Bank, $300bn, agricultural water scarcity + pollution."
+  - **Healthcare ($1.2T, "WHO/WEF", presented as global)** — likely a
+    **US-only** diet-related-illness figure misapplied as a global one.
+    Confirmed by internal evidence: KP-82 (`restoring-earths-operating-system`,
+    live) cites the identical $1.2T figure and correctly labels it **"US
+    diet-related healthcare costs"**, while KP-78
+    (`the-global-cost-of-agricultural-degradation`, live) and Ch14 both fold
+    the same number into a *global* total — i.e. the error already exists
+    on a second live page (KP-78), not just in the unpublished Ch14.
+  - **Climate ($417bn, "IPCC/IMF")** — the author's search traced this
+    number to **2024 global natural-disaster economic losses** (a WEF
+    citation), unrelated to agriculture's climate externality. Claude's own
+    check had already found the 24% GHG-share figure itself is a legitimate
+    IPCC AFOLU number, but the $417bn dollar output is not a real IPCC/IMF
+    publication — now clear it is not even the right kind of figure.
+  - **Pakistan import substitution ($50bn, "SBP/FAO")** — no such figure
+    found; real FAO figure for Pakistan's food import bill is ~$9bn, and a
+    separate ~$55bn figure covers *all* energy+food imports, not
+    agricultural inputs specifically.
+  - **Benefit side ($2.8T)** — no authoritative source found supporting a
+    $2.8T/yr global restoration benefit under our six categories. UNCCD's
+    own restoration-economics work (150M ha restored → $85bn net benefit,
+    of which $30–40bn/yr smallholder income) does not scale to $2.8T under
+    any documented methodology either author could find.
+  - A real, authoritative, on-topic alternative exists and points the
+    other way: **FAO's State of Food and Agriculture 2023/2024** finds
+    global hidden agrifood-system costs of **~$10–12 trillion/yr** (~70%,
+    $8–8.1T, from unhealthy diets/NCDs; ~20% environmental) — a rigorous,
+    154-country UN methodology, and *larger* than Pedaver's $1.9T, meaning
+    the true-cost argument is if anything understated, not overstated.
+    Adopting it would mean replacing the framework, not patching it.
+
+  **Decision: do not preserve $1.9T / $2.8T / $4.7T on publication-history
+  grounds alone.** A number that cannot be sourced does not become more
+  defensible for having already shipped. **Author is now reconstructing
+  the Chapter 14 economic case from authoritative, traceable sources
+  (FAO/UNCCD/WHO/World Bank/peer-reviewed) and will hand Claude a precise
+  replacement/correction list.** Full corrected blast radius, confirmed by
+  Claude before the list arrives:
+  - **Ch11** (`the-68-year-experiment`) — one paragraph cites all three
+    headline figures. **Its hero infographic image (`ch11-img-01.png`)
+    also has the figures baked into the artwork itself** ("$1.9T avoidable
+    cost + $2.8T restoration opportunity ≈ $4.7T per year") — this cannot
+    be fixed by a text edit; the image asset itself needs regenerating or
+    replacing once the real numbers are set.
+  - **Ch12** (`captured-science`) — one paragraph, text only, no image
+    impact (its two infographics don't carry these figures).
+  - **Ch13** (`the-sevenfold-bankruptcy`) — one closing paragraph, text
+    only, no image impact.
+  - **Ch14 stub + full chapter** (`the-true-cost`, held, not live) — the
+    **chapter's own subtitle** is built from these numbers
+    (`"$1.9 Trillion Per Year, and the $4.7 Trillion PQNK Restoration
+    Dividend"`); if the headline changes, the chapter's identity/title
+    changes too, not just its body.
+  - **KP-78** (`the-global-cost-of-agricultural-degradation`, live) —
+    heaviest lift: summary line + 4 abstract paragraphs are built around
+    the framework, including the same US/global $1.2T conflation as Ch14.
+    Its title does not itself quote a figure. No `heroImage` set, so no
+    infographic-asset complication there — but its PDF has not yet been
+    checked for baked-in figures.
+  - **Ch9** — checked and confirmed clean: references "The True Cost" by
+    title only, cites no numbers, needs no correction. **KP-82**
+    (`restoring-earths-operating-system`, live) — checked and confirmed
+    clean: its $1.2T figure is already correctly labelled "US," and it
+    runs its own independent, self-contained cost model unrelated to
+    $1.9T/$2.8T/$4.7T. Neither needs touching.
+  - `metadata.json` — checked, no occurrences of these figures to update.
+
+  **Nothing has been edited yet.** Ch13 stays live as published; Ch11 and
+  Ch12 stay live with the now-known-unsourced paragraph pending the
+  author's replacement text; Ch14/Ch15 remain held. Wait for the author's
+  correction list before touching any of the above.
+
 ## 7. Post-publication feedback — QUEUED, NOT ACTIONED
 
 Chapter 4 is locked (author directive, 2026-09-04): no content, science,
