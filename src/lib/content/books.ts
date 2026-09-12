@@ -1230,6 +1230,8 @@ export const books: Book[] = [
         version: "1.0",
         pdfPath: "/books/natural-ecosystem-science/the-true-cost.pdf",
         body: [
+  { type: "imageGroup", files: ["ch14-img-01.png"] },
+  { type: "caption", text: "The true cost, what the farm account does not show: the same three independently sourced estimates as Chapter Eleven, reported separately because their scopes overlap; where those externalised costs land, soil, water, health, climate and society; and PQNK’s reversal, restoring biological functions to reduce purchased replacement and return productive capacity to the farm." },
   { type: "openingQuote", text: "“The reason ACI agriculture appears profitable is that it does not pay its bills. The soil pays. The water pays. The farmer pays. The sick person pays. The future pays. The industry collects. Pedaver does not need the biggest number to prove that. It needs the number it can defend.”" },
   { type: "attribution", text: "Asif Sharif, Lahore, 2026" },
   { type: "paragraph", runs: [{ text: "Every cost described in the six preceding chapters of Part Two, the soil degradation, the water table collapse, the nutritional decline, the biodiversity loss, the climate contribution, the farmer economic collapse, the healthcare burden, the social disintegration, has a monetary dimension. Some of these costs are measured with reasonable confidence by major institutions. Others can only be estimated. A smaller number, the permanent loss of species, the intergenerational consequences of nutritional deficiency, the civilisational risk of permanent aquifer loss, resist reliable monetisation altogether and must be acknowledged as qualitative rather than quantitative." }] },
