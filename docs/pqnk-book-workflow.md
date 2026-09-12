@@ -714,6 +714,38 @@ touch Ch1 only if the author asks.
     built once the text corrections were confirmed live — which they now
     are.
 
+- **2026-09-12 — Ch11 hero infographic rebuilt, commit `f8f731f`, closing
+  the correction.** The old six-panel "68-Year Balance Sheet" graphic
+  (soil/water/nutrition/biodiversity/climate/farmer bills) had the retired
+  figures baked into its bottom footer band only — but per the author's
+  explicit instruction ("Retire the existing PNG. Do not simply replace
+  $4.7T with another total"), the whole image was replaced rather than
+  patched; the six-panel content is not carried into the new graphic.
+  Built per the author's exact spec (heading, three evidence blocks
+  citing FAO SOFA 2024/UNCCD/FAO, the "DIFFERENT MEASURES. OVERLAPPING
+  COSTS. DO NOT ADD THEM." banner + the farm-account sentence beneath it).
+  **No LibreOffice, Chrome/Chromium, or wkhtmltopdf available on this
+  machine to render HTML/CSS to an image** — first prototyped the layout
+  as HTML/CSS (served over a throwaway local `python3 -m http.server` so
+  the Browser pane could screenshot it for a visual layout check, since a
+  `file://` URL renders as a static, non-interactive snapshot in that
+  tool), then rebuilt it for real as a raster image directly via Python +
+  Pillow at 1800×966, reusing the site's own `pedaver-logo-white.png` /
+  `pqnk-logo.png` assets, Georgia/Arial (house font profile), and the
+  established green/deep-green/terracotta/gold/cream palette. Old artwork
+  backed up to
+  `backups/ch11-img-01.pre-cost-model-correction.20260912-141014.png`.
+  Image caption updated to match (previously described the retired
+  six-panel content). Verified locally (1800×966 loads correctly in the
+  rendered chapter page, no console errors) before publish and **live
+  after deploy** — page and image both HTTP 200, image SHA-256
+  (`c82a0573…`) matches the local file byte-for-byte. **This closes the
+  $1.9T/$2.8T/$4.7T correction across every location identified in the
+  blast-radius audit** (Ch11 text + image, Ch12, Ch13, Ch14 stub subtitle,
+  KP-78 text + PDF); Ch14's own body and Ch15 remain held pending the
+  author's full economic-architecture rebuild for Chapter 14 itself
+  (§6, "Rebuild the Chapter 14 economic architecture").
+
 ## 7. Post-publication feedback — QUEUED, NOT ACTIONED
 
 Chapter 4 is locked (author directive, 2026-09-04): no content, science,
