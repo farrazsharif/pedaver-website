@@ -641,6 +641,79 @@ touch Ch1 only if the author asks.
   author's replacement text; Ch14/Ch15 remain held. Wait for the author's
   correction list before touching any of the above.
 
+- **2026-09-12 — Correction executed: Ch11, Ch12, Ch13, KP-78, commit
+  `24ea7e7`.** Author supplied a precise, sourced replacement-text list
+  (FAO SOFA 2024 ~$12T/yr global agrifood hidden costs, ~$8.1T of that tied
+  to unhealthy diets/NCDs; UNCCD ~$878bn/yr cost of land-degradation
+  inaction; FAO ~$400bn/yr soil-loss figure — reported separately, never
+  summed) after re-verifying against FAO/UNCCD/WHO/World Bank primary
+  sources directly. Executed as one controlled pass:
+  - **Ch11** (`the-68-year-experiment`) — replaced the one paragraph
+    citing $1.9T/$2.8T/$4.7T with the author's sourced replacement text.
+  - **Ch12** (`captured-science`) — same, replaced the "December 2025
+    Pedaver Research analysis" paragraph (the submission-to-institutions
+    narrative was dropped along with the figures, at the author's
+    direction).
+  - **Ch13** (`the-sevenfold-bankruptcy`) — replaced the closing paragraph.
+  - **Ch14 stub** (`the-true-cost`, still held/in-preparation) — subtitle
+    changed from the retired figures to "What Agriculture Does Not Put on
+    the Farm Account," per the author's title-change instruction (avoids
+    putting a food-system-wide FAO figure into a chapter about agriculture
+    specifically).
+  - **KP-78** (`the-global-cost-of-agricultural-degradation`) — the
+    heaviest lift, confirmed correctly: this KP's entire PDF (9 pages) was
+    built around the retired framework, including its own region-by-region
+    $2.8T benefit table with no findable supporting source for any
+    regional split. No editable Word source existed for it anywhere in
+    `PQNK_Claude_Work` (checked). No LibreOffice/Word/wkhtmltopdf available
+    on this Mac to convert from a rebuilt docx, so the corrected PDF was
+    generated directly via Python + `reportlab` (`pip3 install --user
+    reportlab`) — every section untouched by the correction (systems-
+    failure comparison, 8-step protocol, core innovations, policy section,
+    appendix, footer) carried over verbatim from the original PDF's text
+    extraction; the diagnosis section, the fabricated benefit table, and
+    the summary/conclusion were rewritten per the corrected framework.
+    Original PDF backed up to
+    `backups/KP-78.pre-cost-model-correction.20260912-135856.pdf` before
+    overwrite. **Two additional misattributions caught and fixed while
+    rebuilding, beyond the author's list:** (1) a "$300bn/yr, World Bank"
+    water-scarcity figure with no findable supporting publication —
+    withdrawn, with a sentence explaining the withdrawal rather than
+    silently dropped; (2) an "80% of threatened species, IPBES" biodiversity
+    claim — corrected to the already-established 86% (Chatham House/UN
+    Environment, 2021) per the identical fix already made in Ch11's own
+    publish pass; also standardised "PQNK Research Collective" →
+    "Pedaver Research" for the same entity, matching the Ch12/Ch14
+    precedent. Treated as a formal KP revision per §B of
+    `knowledge-paper-workflow.md`: `kpNumber` 78, slug and `publishedDate`
+    (2026-07-25) unchanged, `modifiedDate` set to 2026-09-12. `papers.ts`
+    summary/abstract/keyTakeaways rewritten to match, explicitly naming the
+    withdrawal rather than silently revising history (author's stated
+    preference — "that increases rather than reduces credibility").
+  - **Confirmed no changes needed:** Ch9 (references "The True Cost" by
+    title only) and KP-82 (`restoring-earths-operating-system`) — Claude
+    pulled KP-82's actual live PDF text directly and confirmed it reads
+    "$1.2 trillion/year in diet-related healthcare costs **(US only)**"
+    with no WHO/FAO/SOFI citation attached at all — the "US" scoping is
+    native to the source document, not a mislabel, so the author's
+    flagged concern about it did not apply.
+  - **Verified before publish:** all four affected pages rendered locally
+    (dev server) with the correct replacement text; KP-78's page JSON-LD
+    shows `dateModified: "2026-09-12"` while `datePublished` stays fixed
+    at the original date; the new KP-78 PDF's byte size matched what the
+    dev server actually served. **Verified live after deploy:** all four
+    pages return HTTP 200 with the correct new text; KP-78's production
+    PDF SHA-256 (`2093e963…`) matches the local rebuilt file byte-for-byte.
+  - **Explicitly deferred, per the author:** the Ch11 hero infographic
+    (`ch11-img-01.png`) still has the retired $1.9T/$2.8T/$4.7T figures
+    baked into the image artwork itself — text edits can't fix that. The
+    author's own spec for the replacement infographic (heading "THE COST
+    IS MEASURED IN TRILLIONS," three evidence blocks for the FAO/UNCCD/FAO
+    figures, bottom banner "DIFFERENT MEASURES. OVERLAPPING COSTS. DO NOT
+    ADD THEM.") is recorded above in the 2026-09-12 pivot entry, to be
+    built once the text corrections were confirmed live — which they now
+    are.
+
 ## 7. Post-publication feedback — QUEUED, NOT ACTIONED
 
 Chapter 4 is locked (author directive, 2026-09-04): no content, science,
