@@ -143,7 +143,7 @@ re-export can silently carry an old embedded image.
 | 12 | `captured-science` | Captured Science | **Published + LIVE 2026-09-12 (v1.0), commit `a9d7bb0`** | Body from `PQNK_Chapter_12_FINAL_PUBLISH_READY - Publish.docx/.pdf`. Examines funding/incentive mechanisms that can bias agricultural research (university funding, peer review, extension), then uses PQNK's own documented institutional history as a case study: the 2011 peer-reviewed *Paddy and Water Environment* SRI paper, the NARC wheat-trial comparison (58% lower cost of production vs. conventional), the December 2025 submission to FAO/UNEP/IPCC/World Bank/IMF/WHO/WEF/UNDP/IFAD/CGIAR/GEF/OECD, and the v-Fluence/Guardian investigation into organised industry attacks on pesticide critics. Two infographics (`ch12-img-01.png` hero "Nature Is The Production System", `ch12-img-02.png` "Why PQNK Can Challenge The Established Paradigm", both extracted from the PDF) and one Q&A panel ("What the Funding Structure Tells Us About Research", 4 items). **Editorial fixes before publish:** 29 straight apostrophes/quotes → curly; same "Chapter Fourteen, The True Cost" → "a later chapter, The True Cost" fix as Ch11; **"PQNK Research Collective" → "Pedaver Research"** — this chapter used both names for the same December 2025 analysis in different paragraphs (line ~87 said "PQNK Research Collective", line ~115 said "Pedaver Research"), standardised to match the entity-name fix already made in the Ch14 publish-ready pass. Ch11's `transition` already named Chapter Twelve correctly. Hands to Chapter Thirteen, `the-sevenfold-bankruptcy`. **Verified live 2026-09-12** — page, both images and PDF all return HTTP 200 on pedaver.com; PDF SHA-256 `93ee88d9…` matches the local source byte-for-byte. |
 | 13 | `the-sevenfold-bankruptcy` | The Sevenfold Bankruptcy | **Published + LIVE 2026-09-12 (v1.0), commit `d3f2076`** | Body from `PQNK_Chapter_13_PUBLISH_READY - Publish.docx/.pdf` — text identical to the 2026-09-09 publish-ready pass (see below), no further edits needed. Hero infographic (`ch13-img-01.png`) + the seven-dimension summary table (`ch13-img-02.png`, extracted as an image, same pattern as Ch7/Ch11 — no `table` block type added). "One. … Seven." numbered Title Case heading scheme preserved as-is. Ch12's `transition` already named Chapter Thirteen. Hands to Chapter Fourteen, `the-true-cost` (**held**, see §6 2026-09-12 entry). **Verified live 2026-09-12** — page, both images and PDF all return HTTP 200; PDF SHA-256 `1b9c91c7…` matches the local source byte-for-byte. |
 | 14 | `the-true-cost` | The True Cost | **Published + LIVE 2026-09-12 (v1.0), commit `d514ca0`** | Fully rebuilt, not repaired — see §6 for the full $1.9T/$2.8T/$4.7T correction history. Subtitle changed to "What Agriculture Does Not Put on the Farm Account." Ten sections: the farm-account/externality argument, why no single global total is honest (Pedaver's non-summing governing rule), three sourced cost windows (FAO ~$12T/yr agrifood hidden costs, UNCCD ~$878bn/yr land-degradation inaction, FAO ~$400bn/yr soil loss — reported separately, never summed), farm cost vs. social cost, UNCCD's real restoration economics replacing the fabricated $2.8T dividend, PQNK's own documented cost reductions (NARC trial, 58%), a restored-and-rewritten Pakistan section (FAO's ~$9bn food-import figure, the ~$55bn national energy-and-food import bill, the Ch11-established Economic Survey 14.1% fertiliser-offtake decline and Indus Basin aquifer stress — cross-referenced, not re-derived), a restored-and-rewritten policy section ("From Subsidising Inputs to Financing Independence"), what must be measured under PQNK, and the real dividend. The old $1.9T/$4.7T pie-chart infographic and every regional/Pakistan dollar split derived from the retired model were permanently removed, not adapted — a new infographic for the corrected architecture is a deliberate follow-up, not done yet. Docx and PDF rebuilt from scratch via docx-js/reportlab (no LibreOffice on this machine); old versions backed up at each rewrite pass. Also fixed in the same push: Ch13's own transition line, which still named the retired subtitle. Hands to Chapter Fifteen, `human-civilization-and-the-politics-of-food` (held — see below). **Verified live 2026-09-12** — page and PDF both HTTP 200; PDF SHA-256 (`1ba0efe3…`) matches the local rebuilt file byte-for-byte. |
-| 15 | — | — | **HELD** — awaiting continuity check against the now-corrected Chapter 14 | Chapter 15 (`human-civilization-and-the-politics-of-food`) has its `- Publish` docx/pdf ready (`PQNK_Chapter_15_FINAL - Publish.docx/.pdf`) and was independently verified clean back on 2026-09-12 (the Ch12 cross-reference fix carries through, hero infographic present, no US spelling/placeholders/straight quotes) but stays held: it opens referencing "the preceding fourteen chapters" and needs a final continuity check now that Ch14's content, title and transition have all changed. Ch 8–15 all use the "68-year (1958–2026)" framework and reference later chapters by title. **Ch 15 publish-ready pass done 2026-09-10** (source `PQNK_Chapter_15_FINAL.docx`; backup `backups/PQNK_Chapter_15_FINAL.pre-publishready.20260910-153850.docx`): removed a corrupted duplicate title block (photo placeholder + repeated subtitle + repeated straight-quote epigraph); US → British spelling, 39 replacements (civilization→civilisation, organis/centralis/specialis/fertiliser/industrialis/mechanis); 5× ` --- ` (em-dash substitute) → commas/colon/parentheses; 2× `\$` → `$`; "preceding thirteen chapters" → "fourteen"; title → "Human Civilisation and the Politics of Food". **Author decision (2026-09-10):** keep both Ch14 and Ch15 in Part Two, order …Ch13 → Ch14 (The True Cost) → Ch15 (Human Civilisation) → Part Three; the "Part Three: The Discovery" hand-off moved from the end of Ch14 to the end of Ch15. **Open flags:** (1) Ch15's "CAPTURED SCIENCE" section overlap with Chapter 12 — **resolved 2026-09-11**, one cross-reference sentence added. (2) `books.ts`'s Ch15 stub still spells "Civilization" (US); reconcile to British when Ch15 is web-published. (3) Since "preceding fourteen chapters" now needs to mean the corrected Ch14, re-read Ch15's opening against Ch14's final text before publishing — not yet done. **Ch 13 publish-ready pass done 2026-09-09** (source `PQNK_Chapter_13_PUBLISH_READY.docx`, backup `backups/PQNK_Chapter_13_PUBLISH_READY.pre-publishready.20260909-223453.docx`): font normalised to the house profile (`Noto Serif` → `Georgia`, 118 runs; result Georgia + Arial + Arial Unicode MS, matching Ch 10–12); straight apostrophes/quotes → curly; four spaced-hyphen parentheticals → parentheses/commas (house style, no em-dashes in body); section-heading spacing made uniform (3 blank lines before each of the seven numbered headings, "THE INTERCONNECTION…", "WHAT THIS CHAPTER…", and the ⁂). One factual fix: the 58% cost-of-production figure belongs to the **NARC wheat trial** (per Ch 4 and Ch 12), not a "rice trial" — corrected, and spelled "fifty-eight percent" to match Ch 12. Closing transition aligned to the canonical Ch 14 subtitle in `books.ts` ("$1.9 Trillion Per Year, and the $4.7 Trillion PQNK Restoration Dividend"). **PDF needs re-export** — the on-disk `PQNK_Chapter_13_PUBLISH_READY.pdf` predates these edits. Not touched: the "One. … Seven." numbered title-case heading scheme (intentional for a seven-part audit; renders Georgia-Bold after the font swap). |
+| 15 | `human-civilization-and-the-politics-of-food` | Human Civilisation and the Politics of Food | **Published + LIVE 2026-09-12 (v1.0), commit `bbcf3ba91`** | Continuity review against the corrected Chapters 1–14 (see §6 Decisions log for full detail): found two indirect survivals of the retired $1.9T figure in the docx's own closing paragraphs, fixed both by hand-editing `word/document.xml` (replaced with language pointing to Chapter 14's own accounting rather than restating a number), user re-exported the corrected docx to PDF via Pages, PDF verified programmatically (0 occurrences of "1.9 trillion", both replacement sentences present, 0 straight quotes, 0 US spelling, 0 placeholders). Title corrected to British spelling "Human Civilisation" in `books.ts` display title (chapterId/slug kept as the original US-spelled path). **Verified live 2026-09-12** — page HTTP 200 (redirect-followed), PDF HTTP 200, PDF SHA-256 (`6611bf11e6…`) matches the local file byte-for-byte, live page contains "documented in Chapter Fourteen" and zero "1.9 trillion" occurrences. This closes Part Two and the entire $1.9T/$2.8T/$4.7T correction episode. Prior history: Ch 8–15 all use the "68-year (1958–2026)" framework and reference later chapters by title. **Ch 15 publish-ready pass done 2026-09-10** (source `PQNK_Chapter_15_FINAL.docx`; backup `backups/PQNK_Chapter_15_FINAL.pre-publishready.20260910-153850.docx`): removed a corrupted duplicate title block (photo placeholder + repeated subtitle + repeated straight-quote epigraph); US → British spelling, 39 replacements (civilization→civilisation, organis/centralis/specialis/fertiliser/industrialis/mechanis); 5× ` --- ` (em-dash substitute) → commas/colon/parentheses; 2× `\$` → `$`; "preceding thirteen chapters" → "fourteen"; title → "Human Civilisation and the Politics of Food". **Author decision (2026-09-10):** keep both Ch14 and Ch15 in Part Two, order …Ch13 → Ch14 (The True Cost) → Ch15 (Human Civilisation) → Part Three; the "Part Three: The Discovery" hand-off moved from the end of Ch14 to the end of Ch15. Open flags from the 2026-09-10 pass: (1) Ch15's "CAPTURED SCIENCE" section overlap with Chapter 12 — resolved 2026-09-11, one cross-reference sentence added. (2)/(3) both resolved by the 2026-09-12 continuity review above. **Ch 13 publish-ready pass done 2026-09-09** (source `PQNK_Chapter_13_PUBLISH_READY.docx`, backup `backups/PQNK_Chapter_13_PUBLISH_READY.pre-publishready.20260909-223453.docx`): font normalised to the house profile (`Noto Serif` → `Georgia`, 118 runs; result Georgia + Arial + Arial Unicode MS, matching Ch 10–12); straight apostrophes/quotes → curly; four spaced-hyphen parentheticals → parentheses/commas (house style, no em-dashes in body); section-heading spacing made uniform (3 blank lines before each of the seven numbered headings, "THE INTERCONNECTION…", "WHAT THIS CHAPTER…", and the ⁂). One factual fix: the 58% cost-of-production figure belongs to the **NARC wheat trial** (per Ch 4 and Ch 12), not a "rice trial" — corrected, and spelled "fifty-eight percent" to match Ch 12. Closing transition aligned to the canonical Ch 14 subtitle in `books.ts` ("$1.9 Trillion Per Year, and the $4.7 Trillion PQNK Restoration Dividend"). **PDF needs re-export** — the on-disk `PQNK_Chapter_13_PUBLISH_READY.pdf` predates these edits. Not touched: the "One. … Seven." numbered title-case heading scheme (intentional for a seven-part audit; renders Georgia-Bold after the font swap). |
 
 ### Deployment — automatic via GitHub Actions, not manual
 
@@ -887,3 +887,83 @@ manuscript change. Logged for the record.
    to examine it — as brought "nicely and succinctly to the fore." Useful as
    independent validation of Chapter 5's least-conventional section from a
    water specialist.
+
+### 2026-09-12 — Chapter 15 continuity review, publish, and KP sweep close the correction episode
+
+With Chapter 14 locked, the author asked for the final continuity review of
+Chapter 15 against the corrected Chapters 1–14 before publishing. Findings
+and actions:
+
+1. **Two indirect survivals of the retired $1.9T figure found and fixed.**
+   Ch15's closing paragraphs restated "$1.9 trillion" directly rather than
+   pointing to Chapter 14's accounting. Both were hand-edited in
+   `word/document.xml` (exact string-replace, `count==1` verified before
+   each replace):
+   - "...that the dismantling has cost the world $1.9 trillion per year in
+     externalities while delivering declining soil health..." → "...that
+     the dismantling imposes real, documented costs, measured in the
+     trillions of dollars once the accounting set out in Chapter Fourteen
+     is applied, while delivering declining soil health..."
+   - "...a food system that produces abundant calories while generating
+     $1.9 trillion in annual externalities, declining nutritional
+     quality..." → "...a food system that produces abundant calories while
+     generating the trillions of dollars in annual externalities
+     documented in Chapter Fourteen, declining nutritional quality..."
+
+   Source backed up to
+   `backups/PQNK_Chapter_15_FINAL - Publish.pre-ch14-continuity-fix.20260912-144853.docx`
+   before editing. Everything else in Ch15 checked clean against the
+   corrected Ch1–14: no other retired-figure references, no stale chapter
+   titles/subtitles, no broken cross-references.
+
+2. **PDF regeneration handed to the author.** Ch15's PDF has an embedded
+   hero infographic, so unlike Ch14 (text-only, rebuilt from scratch via
+   reportlab) a from-scratch rebuild was judged too risky. Claude cannot
+   regenerate a Word-exact PDF on this Mac (no LibreOffice/Word/Chrome/
+   wkhtmltopdf). The author opened the corrected docx in Pages, confirmed
+   the text read correctly (screenshots), and exported to PDF at the same
+   filename ("PDF of Ch 15 is saved").
+
+3. **Fresh PDF verified programmatically** via PyMuPDF: 0 occurrences of
+   "1.9 trillion", both replacement sentences present verbatim, 0 straight
+   apostrophes/quotes, 0 "civilization" (US spelling), 0 "PHOTO
+   PLACEHOLDER". Hero image extracted from the fresh PDF via PyMuPDF
+   (bbox 56.7,142.1,538.3,503.3, upscaled to 1801×1351) to
+   `ch15-img-01.png`.
+
+4. **`books.ts` Ch15 entry built and published**: `status: "published"`,
+   `publishedDate: "2026-09-12"`, `version: "1.0"`, display `title`
+   corrected to British "Human Civilisation" (chapterId/slug kept as the
+   original US-spelled path — not renamed, to avoid breaking any existing
+   links), full `body` matching the corrected docx text exactly.
+
+5. **Committed and pushed** together with the Ch13 transition-line note
+   already in place from the Ch14 push (commit `bbcf3ba91`). GitHub
+   Actions deploy completed successfully.
+
+6. **Live verification, 2026-09-12**: page HTTP 200 (redirect-followed),
+   PDF HTTP 200, PDF SHA-256 `6611bf11e695073a90f71afe847b832c4058364d6e0ea87486f872a462e8aebf`
+   matches the local file byte-for-byte, live page contains "documented in
+   Chapter Fourteen" and zero occurrences of "1.9 trillion".
+
+7. **KP sweep, requested by the author ("what about KP's?")**: grepped
+   `src/lib/content/papers.ts` and `src/lib/content/knowledge/metadata.json`
+   for `$1.9 trillion` / `$2.8 trillion` / `$4.7 trillion`. Result: **KP-78
+   is the only Knowledge Paper referencing the retired figures anywhere in
+   the codebase**, and it was already corrected earlier in this episode
+   (summary/abstract/keyTakeaways rewritten to explicitly describe the
+   withdrawal, PDF rebuilt 9→7 pages via reportlab, `modifiedDate:
+   "2026-09-12"` added). `metadata.json` — the KP search/filter index — has
+   zero matches, confirming no other paper's indexed content touches these
+   figures. No further KP action required.
+
+**This closes the entire correction episode**: Chapters 9 (untouched by
+design), 11, 12, 13, 14, and 15 are all published, live, and verified
+consistent; KP-78 is corrected and live; the Ch11 hero infographic is
+rebuilt; no other chapter or Knowledge Paper references the retired
+$1.9T/$2.8T/$4.7T figures except within Ch14's and KP-78's own text
+explicitly explaining why those figures were withdrawn. Part Two of the
+book (Chapters 8–15) is now fully published. The Chapter 14 infographic
+redesign (three separately-reported cost windows, farm-account cost-flow
+diagram, PQNK reversal diagram) remains a deliberate, explicitly deferred
+follow-up — not blocking, not started.
