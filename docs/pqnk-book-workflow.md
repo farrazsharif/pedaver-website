@@ -1098,3 +1098,35 @@ HTTP 200 and SHA-256-matched, every key text marker (Ford caption,
 corrected cotton date, British spelling, Quiet Years section, farmer
 quote) confirmed present on the live page. This opens Part Three,
 "The Discovery."
+
+### 2026-09-13 — Chapter 16: rice-on-moist-soil forward-reference added post-publish
+
+Author flagged a missed achievement after Ch16 went live: PQNK's
+rice-on-moist-soil (not saturated/inundated) breakthrough, reporting
+70-90% water savings. Checked first against the existing Part Three
+outline in `books.ts` — Chapter 19, `the-first-experiment`, is already
+titled "The First Experiment: Rice on Moist Soil Raised Beds,
+Paradoxical Agriculture Becomes Proof," confirming this is a
+**post-2008 PQNK validation experiment**, not part of Ch16's own
+1973-2007 "before PQNK" scope. Author agreed and asked for only a
+brief forward-reference in Ch16, not the full story.
+
+**Claim softened per author's explicit instruction**: not "the first
+time in the world" (unverifiable absolute), but "a method with no
+known precedent elsewhere at the time" — the author's own words were
+"although in 2010/11 there was no such known technology elsewhere."
+One new sentence added to Ch16's closing section, naming the
+achievement and pointing to "a later chapter, The First Experiment"
+(house convention for forward references beyond the immediately next
+chapter — no hard-coded chapter number, since only Ch17's number is
+committed via the transition line).
+
+Applied to both `books.ts` (published immediately, single-sentence
+addition, low risk) and the master docx (same sentence inserted at
+the matching point, backup taken first, all 10 image relationships
+verified intact after the edit, non-`document.xml` parts confirmed
+byte-identical). **Verified live 2026-09-13**: page HTTP 200, both
+"seventy to ninety percent" and "no known precedent elsewhere"
+confirmed present. Author separately asked to insert an additional
+photograph in this chapter — not yet supplied; picture is pending,
+no other action needed until it arrives.
