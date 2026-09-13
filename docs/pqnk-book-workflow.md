@@ -145,6 +145,8 @@ re-export can silently carry an old embedded image.
 | 14 | `the-true-cost` | The True Cost | **Published + LIVE 2026-09-12 (v1.0), commit `d514ca0`; hero infographic added 2026-09-12, commit `10325e5`** | Fully rebuilt, not repaired — see §6 for the full $1.9T/$2.8T/$4.7T correction history. Subtitle changed to "What Agriculture Does Not Put on the Farm Account." Ten sections: the farm-account/externality argument, why no single global total is honest (Pedaver's non-summing governing rule), three sourced cost windows (FAO ~$12T/yr agrifood hidden costs, UNCCD ~$878bn/yr land-degradation inaction, FAO ~$400bn/yr soil loss — reported separately, never summed), farm cost vs. social cost, UNCCD's real restoration economics replacing the fabricated $2.8T dividend, PQNK's own documented cost reductions (NARC trial, 58%), a restored-and-rewritten Pakistan section (FAO's ~$9bn food-import figure, the ~$55bn national energy-and-food import bill, the Ch11-established Economic Survey 14.1% fertiliser-offtake decline and Indus Basin aquifer stress — cross-referenced, not re-derived), a restored-and-rewritten policy section ("From Subsidising Inputs to Financing Independence"), what must be measured under PQNK, and the real dividend. The old $1.9T/$4.7T pie-chart infographic and every regional/Pakistan dollar split derived from the retired model were permanently removed, not adapted. Docx and PDF rebuilt from scratch via docx-js/reportlab (no LibreOffice on this machine); old versions backed up at each rewrite pass. Also fixed in the same push: Ch13's own transition line, which still named the retired subtitle. Hands to Chapter Fifteen, `human-civilization-and-the-politics-of-food`. **New hero infographic (`ch14-img-01.png`), 2026-09-12** — built per the author's exact spec (see §6), placed at the top of the body (`imageGroup` + `caption`) matching the Ch11 placement pattern: same three evidence windows as Ch11 ($12T FAO / $878B UNCCD / $400B FAO) under "DIFFERENT SCOPES. OVERLAPPING COSTS. DO NOT ADD.", a cost-flow diagram (Farm Account → Externalised Costs → Soil/Water/Health/Climate/Society) and the PQNK reversal (Restore biological functions → Reduce purchased replacement → Return productive capacity to the farm). Built with PIL matching the Ch11 visual language exactly (same fonts, palette, header/footer bars). **Verified live 2026-09-12** — page HTTP 200, PDF HTTP 200, PDF SHA-256 (`1ba0efe3…`) matches the local rebuilt file byte-for-byte; infographic HTTP 200, SHA-256 (`d7a25758…`) matches the local file byte-for-byte, caption text confirmed present on the live page. This closes the $1.9T/$2.8T/$4.7T correction episode in full — see §6. |
 | 15 | `human-civilization-and-the-politics-of-food` | Human Civilisation and the Politics of Food | **Published + LIVE 2026-09-12 (v1.0), commit `bbcf3ba91`** | Continuity review against the corrected Chapters 1–14 (see §6 Decisions log for full detail): found two indirect survivals of the retired $1.9T figure in the docx's own closing paragraphs, fixed both by hand-editing `word/document.xml` (replaced with language pointing to Chapter 14's own accounting rather than restating a number), user re-exported the corrected docx to PDF via Pages, PDF verified programmatically (0 occurrences of "1.9 trillion", both replacement sentences present, 0 straight quotes, 0 US spelling, 0 placeholders). Title corrected to British spelling "Human Civilisation" in `books.ts` display title (chapterId/slug kept as the original US-spelled path). **Verified live 2026-09-12** — page HTTP 200 (redirect-followed), PDF HTTP 200, PDF SHA-256 (`6611bf11e6…`) matches the local file byte-for-byte, live page contains "documented in Chapter Fourteen" and zero "1.9 trillion" occurrences. This closes Part Two and the entire $1.9T/$2.8T/$4.7T correction episode. Prior history: Ch 8–15 all use the "68-year (1958–2026)" framework and reference later chapters by title. **Ch 15 publish-ready pass done 2026-09-10** (source `PQNK_Chapter_15_FINAL.docx`; backup `backups/PQNK_Chapter_15_FINAL.pre-publishready.20260910-153850.docx`): removed a corrupted duplicate title block (photo placeholder + repeated subtitle + repeated straight-quote epigraph); US → British spelling, 39 replacements (civilization→civilisation, organis/centralis/specialis/fertiliser/industrialis/mechanis); 5× ` --- ` (em-dash substitute) → commas/colon/parentheses; 2× `\$` → `$`; "preceding thirteen chapters" → "fourteen"; title → "Human Civilisation and the Politics of Food". **Author decision (2026-09-10):** keep both Ch14 and Ch15 in Part Two, order …Ch13 → Ch14 (The True Cost) → Ch15 (Human Civilisation) → Part Three; the "Part Three: The Discovery" hand-off moved from the end of Ch14 to the end of Ch15. Open flags from the 2026-09-10 pass: (1) Ch15's "CAPTURED SCIENCE" section overlap with Chapter 12 — resolved 2026-09-11, one cross-reference sentence added. (2)/(3) both resolved by the 2026-09-12 continuity review above. **Ch 13 publish-ready pass done 2026-09-09** (source `PQNK_Chapter_13_PUBLISH_READY.docx`, backup `backups/PQNK_Chapter_13_PUBLISH_READY.pre-publishready.20260909-223453.docx`): font normalised to the house profile (`Noto Serif` → `Georgia`, 118 runs; result Georgia + Arial + Arial Unicode MS, matching Ch 10–12); straight apostrophes/quotes → curly; four spaced-hyphen parentheticals → parentheses/commas (house style, no em-dashes in body); section-heading spacing made uniform (3 blank lines before each of the seven numbered headings, "THE INTERCONNECTION…", "WHAT THIS CHAPTER…", and the ⁂). One factual fix: the 58% cost-of-production figure belongs to the **NARC wheat trial** (per Ch 4 and Ch 12), not a "rice trial" — corrected, and spelled "fifty-eight percent" to match Ch 12. Closing transition aligned to the canonical Ch 14 subtitle in `books.ts` ("$1.9 Trillion Per Year, and the $4.7 Trillion PQNK Restoration Dividend"). **PDF needs re-export** — the on-disk `PQNK_Chapter_13_PUBLISH_READY.pdf` predates these edits. Not touched: the "One. … Seven." numbered title-case heading scheme (intentional for a seven-part audit; renders Georgia-Bold after the font swap). |
 
+| 16 | `building-the-machine` | Building the Machine | **Published + LIVE 2026-09-13 (v1.0), commit `57f2b91`** | Opens Part Three, "The Discovery." Built from the author's own five-decade visual-history material (10 self-captioned composite graphics plus a historical 1989 Ford-tractor-relaunch photo) — see §6 Decisions log for the full build history, the two extraction bugs found and fixed along the way, and the author's review corrections. Subtitle corrected to "1973-2007: Mastering Industrial Agriculture Before PQNK" (was the stub's placeholder "1973-1994...Before Rejecting It"). Covers: 1973 farm-design/syphon-tube work (seeds Soil Moisture Management), potato-corn-corn-potato rotation, 1976 Deltapine-15 cotton (corrected from an initial 1974 date), 1980s national dealerships (IMT, Ford, Massey Ferguson, Sperry New Holland), 1989 Ford tractor manufacturing licence + 1991 Pioneer Seed Company (PM Nawaz Sharif award), a direct role on PM Benazir Bhutto's 1994–96 liberalisation committee, the chance 1995 Bt-cotton discovery on a US highway (2kg of seed, not 20kg), a new "THE QUIET YEARS: 1997–2006" section handling a sensitive period gracefully per the author's explicit direction (no specifics, framed as pride not complaint), the 2007 Cholistan solar interlude extended into 2010s solar/CA-storage, and a three-paragraph machinery-progression narrative tying the 2000s/2020s PQNK machine catalogues to the chapter's thesis. Closes with a farmer's (Abdul Wajid) response to Chapters 9–10 as a coda. **Verified live 2026-09-13** — page HTTP 200, PDF HTTP 200 (SHA-256 `ebe1de26…` matches local byte-for-byte), all 10 images HTTP 200 and byte-matched, all key text markers (Ford caption, "began in 1976", British spelling, Quiet Years, farmer quote) confirmed present on the live page. |
+
 ### Deployment — automatic via GitHub Actions, not manual
 
 **pedaver.com deploys automatically.** `.github/workflows/deploy.yml`
@@ -1005,3 +1007,94 @@ $1.9T/$2.8T/$4.7T figures except within Ch14's and KP-78's own text
 explicitly explaining why those figures were withdrawn. Part Two of the
 book (Chapters 8–15) is now fully published, with no open items left from
 this episode.
+
+### 2026-09-13 — Chapter 16 built, reviewed and published: opens Part Three
+
+Author supplied the docx/PDF for Chapter 16, "Building the Machine"
+(1973–2007, pre-PQNK), with a text-only placeholder-driven skeleton
+built earlier in the session, then progressively inserted their own
+real photographs and composite graphics from a separate 36-page "Five
+Decades of Agricultural Innovation" reference deck (chronological
+year-by-year record of interventions 1973–2023), asking Claude to
+place each image and write matching prose around it.
+
+**Two serious XML-extraction bugs found and fixed during the build,
+both from the same root cause**: several of the author's composite
+images are `mc:AlternateContent` grouped shapes (a modern DrawingML
+picture + a VML fallback with its own *nested* `<w:p>` caption). A
+naive non-nesting-aware `<w:p>…</w:p>` regex scan desyncs on the first
+such nested paragraph and silently mis-bounds every paragraph match
+after it in the document — the fix is either full run-balancing
+(`<w:r>`/`</w:r>` depth tracking) for image extraction, or temporarily
+masking the whole nested run to a placeholder token before any
+paragraph-level text surgery, restoring it afterward. The first
+"final treatment" pass (relocating 5 of 9 images to their correct
+sections, rewriting surrounding prose) used whole-paragraph regex
+replacement without this fix and silently corrupted the solar/CA-store
+image's position; caught only when a later, unrelated edit made a
+paragraph's `r:embed` count come up short. The entire pipeline was
+rebuilt from the author's true original file with the fix applied
+throughout, and every image's final position was independently
+verified against its surrounding text (not just trusted from a
+textutil read-through) before re-sending.
+
+**Author's full review (after that corrected build) requested six
+changes**, all applied: (1) a three-paragraph machinery-progression
+narrative inserted after the 2000s/2020s PQNK machine-catalogue
+images, explaining the shift from capacity-focused to
+disturbance-minimising engineering objectives; (2) one sentence
+explaining why 2020s-era machines appear in a chapter whose historical
+boundary is 2007; (3) a historical 1989 Ford-tractor-relaunch photo
+(Punjab Governor Mian Azhar) to be added once supplied; (4) softened
+"gave New Holland a majority share…that it has held ever since" to
+"helped establish New Holland as a major force," removing an
+unsupported present-day market-share claim; (5) corrected the Deltapine
+cotton date from 1974 to 1976, matching the section heading and the
+"In 1976, Sharif did not yet have that diagnosis" line; (6) softened
+"were the cause" to "would identify the underlying production-system
+causes," avoiding an over-absolute single-causal claim.
+
+**Sensitive-content handling**: the reference deck described 2002–2006
+as forced business suspension ("state tyranny," "New World Order,"
+~4 years without charges) and framed it as when PQNK was conceptually
+born. Author's explicit instruction: do not use that language at all;
+handle gracefully, as a proud personal sacrifice, without specifics;
+keep the 2008 Amazon study (not 2002–2006) as PQNK's actual
+crystallising moment, consistent with Chapter 17's forward reference.
+Result: new "THE QUIET YEARS: 1997–2006" section, no accusation
+language, no imprisonment claim, framed entirely around the recurring
+question maturing "undisturbed." Also corrected on the author's
+instruction: the Bt-cotton seed brought back from the US was 2kg, not
+20kg as first transcribed from a screenshot.
+
+**A farmer's WhatsApp message** (Abdul Wajid, responding to the
+Ch9/Ch10 publish announcement — fireflies and honeybees returning with
+PQNK adoption) was condensed and placed as the chapter's closing quote,
+honestly framed as "received after Chapters Nine and Ten were
+published" rather than claimed as being about Chapter 16 itself.
+
+**Final round**: author's own Word/Pages edit (inserting the approved
+Ford 1989 photo) triggered two issues — an apparent large content loss
+around the Ford/Pioneer Seed paragraph (investigated and found to be a
+false alarm, the same nested-caption text-extraction quirk fooling
+both `textutil` and a first-pass regex check; the actual XML content
+was fully intact) and a genuine one, 9 words silently reverted from
+British to American spelling by autocorrect (recognised, modernisation
+×2, organisations, specialised, levelling, programme, customised,
+fertiliser) — all 9 fixed and verified via targeted string replacement,
+zero regressions.
+
+**Publish**: `books.ts` built with the corrected subtitle
+"1973-2007: Mastering Industrial Agriculture Before PQNK" (superseding
+the stub's placeholder), 10 images extracted at native resolution,
+two of them (potato-corn rotation, Ford 1989) needing separate
+`caption` blocks in `books.ts` since their captions are overlaid VML
+text boxes rather than baked into the raster like the other eight.
+Verified in local dev-server preview (all 10 images load at natural
+resolution, PDF fetches with matching byte size, zero console errors)
+before commit. **Verified live 2026-09-13**: page and PDF both HTTP
+200, PDF SHA-256 matches the local file byte-for-byte, all 10 images
+HTTP 200 and SHA-256-matched, every key text marker (Ford caption,
+corrected cotton date, British spelling, Quiet Years section, farmer
+quote) confirmed present on the live page. This opens Part Three,
+"The Discovery."
