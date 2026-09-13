@@ -270,6 +270,19 @@ export const fieldEvidence: FieldEvidence[] = [
     clippingImage: "/field-evidence/fe-014-kutchmitra-clipping.jpg",
     tags: ["Kutch", "Gujarat", "India", "Kutchmitra", "newspaper", "media coverage", "dryland farming", "water scarcity", "no-till", "raised beds", "international adoption"],
   },
+  {
+    feNumber: 15,
+    title: "Mango on PQNK in Saline Waterlogged Soil",
+    evidenceTypes: ["Advisory", "Field Evidence"],
+    cropOrTopic: "Mango",
+    summary:
+      "Raised beds under PQNK accelerate tree growth even in hard, saline and alkaline soils prone to waterlogging. Once the beds are formed, the irrigation water level does not reach the soil surface for weeks at a time — excess water moves off into the drains, and only the roots draw the moisture the tree needs.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/54HKEwQATAI",
+    videoId: "54HKEwQATAI",
+    relatedCropSlug: "mango",
+    tags: ["mango", "saline soil", "waterlogged soil", "raised beds", "salinity", "orchard"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
