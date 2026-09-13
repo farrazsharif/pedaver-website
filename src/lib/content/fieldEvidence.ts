@@ -57,7 +57,7 @@
  * both under the privacy rule above, same as any other unverified record.
  */
 
-export type EvidenceType = "Q&A" | "Advisory" | "Farmer Testimony" | "Field Evidence" | "Machinery Demonstration";
+export type EvidenceType = "Q&A" | "Advisory" | "Farmer Testimony" | "Field Evidence" | "Machinery Demonstration" | "Media Coverage";
 
 export type SourcePlatform = "YouTube" | "Facebook" | "Keynote" | "Other";
 
@@ -233,6 +233,18 @@ export const fieldEvidence: FieldEvidence[] = [
     videoId: "IuOKKARiP6w",
     relatedCropSlug: "amla",
     tags: ["amla", "aonla", "contour planting", "rolling land", "rainfed", "no irrigation", "zero chemical input", "no-till"],
+  },
+  {
+    feNumber: 14,
+    title: "PQNK Crosses the Border: Kutchmitra Newspaper Coverage, Kutch, Gujarat, India",
+    evidenceTypes: ["Media Coverage", "Farmer Testimony"],
+    year: 2025,
+    date: "2025-10-22",
+    summary:
+      "Kutchmitra, a regional Gujarati-language newspaper published in Bhuj, ran a special interview feature on PQNK's introduction into Kutch, India, under the headline “Complete Natural Regenerative Farming ‘PQNK’ Initiative in Kutch – India.” The piece profiles farmer Deepakbhai BhanuShali, who is practising PQNK in Nakhatrana under Kutch's difficult rainfall, water and soil conditions, and explains the system's no-till, minimum-disturbance approach and its use of raised beds and furrows to balance soil moisture and aeration under water scarcity. The coverage documents PQNK's first reported field adoption outside Pakistan, where the system was developed.",
+    farmer: "Deepakbhai BhanuShali",
+    location: "Nakhatrana, Kutch, Gujarat, India",
+    tags: ["Kutch", "Gujarat", "India", "Kutchmitra", "newspaper", "media coverage", "dryland farming", "water scarcity", "no-till", "raised beds", "international adoption"],
   },
 ];
 
