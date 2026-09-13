@@ -51,7 +51,9 @@ function writeStateToURL(filters: Filters, sort: SortMode) {
 
 // Plain text card, no thumbnail/embed — see fieldEvidence.ts: Pedaver stores
 // the record, not the media. "Watch Video" links straight to the original
-// on YouTube/Facebook; nothing loads until the visitor clicks it.
+// on YouTube/Facebook; nothing loads until the visitor clicks it. The one
+// exception is clippingImage, a locally-hosted photo of a print clipping
+// that has no online original to link to instead — see fieldEvidence.ts.
 function EvidenceCard({ fe }: { fe: FieldEvidence }) {
   return (
     <div className="flex flex-col rounded-2xl border border-border bg-card p-6 shadow-sm">
@@ -60,6 +62,14 @@ function EvidenceCard({ fe }: { fe: FieldEvidence }) {
         {fe.cropOrTopic ? ` · ${fe.cropOrTopic}` : ""}
       </p>
       <h2 className="mt-2 text-lg font-bold text-primary-dark">{fe.title}</h2>
+      {fe.clippingImage && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={fe.clippingImage}
+          alt={`Print clipping: ${fe.title}`}
+          className="mt-3 w-full rounded-lg border border-border object-cover"
+        />
+      )}
       <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-soft">{fe.summary}</p>
       {(fe.farmer || fe.location) && (
         <p className="mt-3 text-sm font-medium text-ink">

@@ -14,6 +14,14 @@
  * needed to identify, search and reference it. No individual FE page,
  * no embedded players, no re-hosted media — see /field-evidence/page.tsx.
  *
+ * One deliberate exception (added 2026-09-13, FE-014): a static print
+ * clipping (e.g. a newspaper feature) with no online original to link to
+ * at all may carry a `clippingImage`, a small locally-hosted photo of the
+ * clipping itself, since there is no external source to point to instead.
+ * This is not a general photo/gallery field — it exists only for this
+ * "no online original exists" case. Video/social evidence keeps pointing
+ * outward via sourceUrl as before.
+ *
  * A record may carry more than one evidenceTypes classification (e.g. a
  * farmer video can be both "Farmer Testimony" and "Field Evidence" at
  * once) — added 2026-08-25 alongside the Knowledge Exchange rename.
@@ -81,6 +89,8 @@ export interface FieldEvidence {
   farmer?: string;
   /** Include only when Claude has verified the farmer publicly self-disclosed this in the source material itself. Omit rather than guess — see privacy note above. */
   location?: string;
+  /** Path under /public to a locally-hosted photo of a print clipping with no online original — see the exception note above. Not for general use. */
+  clippingImage?: string;
   /** Capability only for now — not yet rendered as a cross-link anywhere (see project note, 2026-08-25). */
   relatedKpSlug?: string;
   /** Capability only for now — not yet rendered as a cross-link anywhere. */
@@ -244,6 +254,7 @@ export const fieldEvidence: FieldEvidence[] = [
       "Kutchmitra, a regional Gujarati-language newspaper published in Bhuj, ran a special interview feature on PQNK's introduction into Kutch, India, under the headline “Complete Natural Regenerative Farming ‘PQNK’ Initiative in Kutch – India.” The piece profiles farmer Deepakbhai BhanuShali, who is practising PQNK in Nakhatrana under Kutch's difficult rainfall, water and soil conditions, and explains the system's no-till, minimum-disturbance approach and its use of raised beds and furrows to balance soil moisture and aeration under water scarcity. The coverage documents PQNK's first reported field adoption outside Pakistan, where the system was developed.",
     farmer: "Deepakbhai BhanuShali",
     location: "Nakhatrana, Kutch, Gujarat, India",
+    clippingImage: "/field-evidence/fe-014-kutchmitra-clipping.jpg",
     tags: ["Kutch", "Gujarat", "India", "Kutchmitra", "newspaper", "media coverage", "dryland farming", "water scarcity", "no-till", "raised beds", "international adoption"],
   },
 ];
