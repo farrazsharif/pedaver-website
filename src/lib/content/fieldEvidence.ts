@@ -22,6 +22,19 @@
  * "no online original exists" case. Video/social evidence keeps pointing
  * outward via sourceUrl as before.
  *
+ * Author policy (2026-09-13, forward-looking only): every NEW record from
+ * this point on must carry a picture — either a real photo (clippingImage,
+ * for the print/no-online-original case above) or a YouTube thumbnail,
+ * which just needs a genuine per-video `videoId` (FieldEvidenceBrowser.tsx
+ * derives `https://img.youtube.com/vi/{videoId}/hqdefault.jpg` from it
+ * automatically; no thumbnail field to fill in). A record whose only link
+ * is a channel search query (no specific video) does not qualify — get the
+ * actual video URL first. Do not add a new text-only record going forward.
+ * This policy is NOT retroactive: FE-001 and FE-003 through FE-010 are
+ * known text-only/search-link records, left as a deliberate backlog until
+ * the author revisits them (deprioritised while work is focused on the
+ * book, per docs/pqnk-book-workflow.md) — don't "fix" them proactively.
+ *
  * A record may carry more than one evidenceTypes classification (e.g. a
  * farmer video can be both "Farmer Testimony" and "Field Evidence" at
  * once) — added 2026-08-25 alongside the Knowledge Exchange rename.
