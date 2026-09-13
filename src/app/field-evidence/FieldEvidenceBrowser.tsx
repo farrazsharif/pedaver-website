@@ -49,12 +49,23 @@ function writeStateToURL(filters: Filters, sort: SortMode) {
   window.history.replaceState(null, "", url);
 }
 
-// Plain text card, no thumbnail/embed — see fieldEvidence.ts: Pedaver stores
-// the record, not the media. "Watch Video" links straight to the original
-// on YouTube/Facebook; nothing loads until the visitor clicks it. The one
-// exception is clippingImage, a locally-hosted photo of a print clipping
-// that has no online original to link to instead — see fieldEvidence.ts.
+// Plain text card, no re-hosted media/embed — see fieldEvidence.ts: Pedaver
+// stores the record, not the media. "Watch Video" links straight to the
+// original on YouTube/Facebook; nothing loads until the visitor clicks it.
+// Two image exceptions, both still "point outward" rather than host media
+// ourselves: a YouTube thumbnail is pulled live from YouTube's own thumbnail
+// CDN (img.youtube.com) whenever a record has a specific videoId, and
+// clippingImage is a locally-hosted photo of a print clipping that has no
+// online original to point to at all — see fieldEvidence.ts.
+function youTubeThumbnail(fe: FieldEvidence): string | null {
+  if (fe.sourcePlatform === "YouTube" && fe.videoId) {
+    return `https://img.youtube.com/vi/${fe.videoId}/hqdefault.jpg`;
+  }
+  return null;
+}
+
 function EvidenceCard({ fe }: { fe: FieldEvidence }) {
+  const thumbnail = youTubeThumbnail(fe);
   return (
     <div className="flex flex-col rounded-2xl border border-border bg-card p-6 shadow-sm">
       <p className="text-xs font-semibold uppercase tracking-wide text-accent">
@@ -69,6 +80,16 @@ function EvidenceCard({ fe }: { fe: FieldEvidence }) {
           alt={`Print clipping: ${fe.title}`}
           className="mt-3 w-full rounded-lg border border-border object-cover"
         />
+      )}
+      {thumbnail && (
+        <a href={fe.sourceUrl} target="_blank" rel="noopener noreferrer" className="mt-3 block">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={thumbnail}
+            alt={`Video thumbnail: ${fe.title}`}
+            className="w-full rounded-lg border border-border object-cover"
+          />
+        </a>
       )}
       <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-soft">{fe.summary}</p>
       {(fe.farmer || fe.location) && (
