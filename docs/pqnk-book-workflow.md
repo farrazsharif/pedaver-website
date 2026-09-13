@@ -1130,3 +1130,22 @@ byte-identical). **Verified live 2026-09-13**: page HTTP 200, both
 confirmed present. Author separately asked to insert an additional
 photograph in this chapter — not yet supplied; picture is pending,
 no other action needed until it arrives.
+
+### 2026-09-14 — Chapter 16: rice-on-moist-soil photo added, chapter PDF refreshed
+
+Author saved an updated docx/PDF with the promised photograph: a
+PQNK raised-bed rice composite ("Rice crop on PQNK - permanent raised
+beds, Tillers on some plants reached 118"), pasted mid-sentence inside
+the closing farmer-quote paragraph (same "just drop it near the end"
+pattern as every prior image this chapter). Extracted cleanly with the
+same balanced-run technique used throughout this chapter's build (this
+one had no nested caption, unlike the rotation/Ford images), then
+moved to its actual home: directly after the rice-on-moist-soil
+sentence added the previous entry, since the photo (dry furrows
+visible between raised beds, no standing water) directly illustrates
+that claim. `books.ts` updated with the new `imageGroup`; the chapter
+PDF (public + archived copy) replaced with the author's fresh export,
+confirmed to already carry the rice-mention text. **Verified live
+2026-09-14**: page HTTP 200, new image HTTP 200 (SHA-256 byte-match),
+refreshed PDF HTTP 200 (SHA-256 byte-match). Chapter 16 has no further
+open items.
