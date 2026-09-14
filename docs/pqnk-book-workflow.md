@@ -1149,3 +1149,40 @@ confirmed to already carry the rice-mention text. **Verified live
 2026-09-14**: page HTTP 200, new image HTTP 200 (SHA-256 byte-match),
 refreshed PDF HTTP 200 (SHA-256 byte-match). Chapter 16 has no further
 open items.
+
+### 2026-09-14 — BINDING, permanent: the "Quiet Years" treatment applies to every chapter, not just Ch16
+
+Chapter 17's draft (`PQNK_Chapter_17_PUBLISH_READY.docx`) independently
+used the word "imprisonment," framed it as "a business dispute
+subsequently resolved through the Pakistani legal process," and
+pointed to "Chapter Nineteen" to address it directly (a stale forward
+reference — Ch19 is `the-first-experiment`, not an adversity chapter).
+This directly contradicted the Ch16 Quiet Years decision (§6,
+2026-09-13 entry). Flagged to the author before touching anything else
+in Ch17.
+
+**Author's ruling, verbatim intent: apply the Ch16 Quiet Years stance,
+and carry it into every future chapter.** This is now a permanent
+authorial rule for the whole book, on the same footing as the
+Ch14 non-summing economic rule: no "imprisonment," no "state tyranny,"
+no "New World Order," no legal/dispute specifics, no named chapter
+promising to address the episode directly — ever, in any chapter.
+Where the 1997-2006 period needs mentioning, use language matching
+Ch16's own: "circumstances outside his control," framed as personal
+sacrifice made in service of the wider farming community, not as a
+setback, spoken of "with pride, not complaint." Ch17's paragraph fixed
+to match: "For a period during these years, Sharif's business
+activities were substantially interrupted by circumstances outside
+his control, a period he regards, in his own words, as a significant
+personal sacrifice rather than a setback." Applied via targeted
+paragraph replacement (backup taken first, XML validated,
+non-`document.xml` parts confirmed byte-identical). **Not yet
+re-exported to PDF or published** — pending the author's PDF
+re-export and sign-off on the rest of Ch17 (boll-genetics correction
+also applied this same session; graphic/turning-point mismatch and
+straight-quote cleanup still open).
+
+**Applies going forward without being re-raised**: any future chapter
+touching this period (Ch18 onward) must default to the graceful,
+non-specific framing above. Do not ask the author to re-confirm this
+per chapter — it is settled.
