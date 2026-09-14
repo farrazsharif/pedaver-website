@@ -14958,4 +14958,80 @@
 }
 ]
 }
+,
+{
+"slug":"rice-is-not-the-problem",
+"primarySubject":"Public claims about rice water use, evaporation loss, diabetes and milling losses are addressed by tracing Pedaver/PQNK rice production from the 2009-2011 mechanised SRI trial to the current direct-seeded, mulch-covered, non-flooded PQNK bed system, showing that continuous inundation is a production choice, not a biological requirement of the rice plant",
+"questionsAnswered":[
+"Does rice have to be grown in flooded fields?",
+"How does present PQNK rice water use compare to the 2011 mechanised SRI trial and to conventional rice?",
+"Why is a universal figure like 4,000 litres of water per kilogram of rice misleading?",
+"Is it accurate to say 60% of rice irrigation water is lost to evaporation?",
+"Does eating rice cause diabetes?",
+"Is it true that milling removes 75% of rice's nutrients?",
+"What changed between the original mechanised SRI trial and current PQNK rice production?",
+"What is Soil Moisture Management and how does it replace calendar-based rice irrigation?"
+],
+"keywords":[
+"rice water use",
+"flooded rice",
+"non-flooded rice",
+"System of Rice Intensification",
+"mechanised SRI",
+"direct-seeded rice",
+"Soil Moisture Management",
+"rice and diabetes",
+"rice milling nutrient loss",
+"irrigation water efficiency",
+"raised-bed rice",
+"permanent mulch cover",
+"water footprint",
+"rice evaporation loss"
+],
+"geography":"Punjab, Pakistan",
+"crops":[
+"Rice"
+],
+"fieldProblems":[
+"Over-Irrigation",
+"High Irrigation Cost / Dependency"
+],
+"problemFamily":[
+"Water & Drainage"
+],
+"fieldPractices":[
+"Moist / Aerobic Bed Cultivation (Non-Flooded Rice)",
+"Soil Moisture Management (SMM)",
+"Direct Seeding",
+"Permanent Raised Bed Formation",
+"Surface Mulching (General)"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Water",
+"Nutrition"
+],
+"pqnkPrinciples":[
+"No Inundation",
+"Permanent Biological Cover"
+],
+"productionStages":[],
+"evidenceType":"Measured Field Result",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/water",
+"why":"the core claim that rice needs water but not continuous inundation, and how Soil Moisture Management replaces calendar-based flooding"
+},
+{
+"page":"/science/nutrition",
+"why":"correcting the broad rice-and-diabetes claim and explaining how processing and milling, not the grain itself, determine nutrient loss"
+},
+{
+"page":"/science/transition",
+"why":"the documented progression from the 2009-2011 mechanised SRI trial to mature, direct-seeded PQNK rice beds"
+}
+]
+}
 ]
