@@ -15034,4 +15034,74 @@
 }
 ]
 }
+,
+{
+"slug":"the-321-l-kg-question",
+"primarySubject":"A question from Saudi Arabia about whether KP-201's 321 L/kg PQNK rice-water figure is universal is answered by separating the environment-specific measured field reference from the production-system-specific 93% saving versus flooded rice, and by explaining how temperature, humidity, wind and rainfall change plant-side water demand independently of irrigation method",
+"questionsAnswered":[
+"Is the 321 L/kg PQNK rice-water figure a universal number, or is it specific to the climate it was measured under?",
+"How is the 321 L/kg field reference different from the approximately 93% water saving reported in KP-201?",
+"Does hotter, drier or windier weather increase how much water a PQNK rice crop needs?",
+"Does rice lose water only through evaporation, or also through the plant itself?",
+"Why doesn't low rainfall automatically mean a rice crop needs more water?",
+"Does mulch work mainly by absorbing atmospheric humidity?",
+"Will the approximately 93% water saving PQNK reports still apply if rice is compared to drip or sprinkler irrigation instead of flooding?",
+"How should a rice-water trial in a hot, dry, low-humidity climate such as Saudi Arabia be designed and measured?"
+],
+"keywords":[
+"rice water requirement",
+"climate and irrigation",
+"vapour-pressure deficit",
+"transpiration",
+"evaporative demand",
+"evapotranspiration",
+"Soil Moisture Management",
+"flooded rice irrigation",
+"Saudi Arabia rice trial",
+"water-use reference",
+"four-source water concept",
+"mulch and evaporation"
+],
+"geography":"Punjab, Pakistan (field reference); Saudi Arabia (application question)",
+"crops":[
+"Rice"
+],
+"fieldProblems":[
+"High Crop Water Demand",
+"Drought / Water Scarcity"
+],
+"problemFamily":[
+"Water & Drainage"
+],
+"fieldPractices":[
+"Soil Moisture Management (SMM)",
+"Surface Mulching (General)"
+],
+"machineryTools":[],
+"climateType":[
+"Arid",
+"Heat / Heatwave-Prone"
+],
+"scientificDomains":[
+"Water",
+"Climate"
+],
+"pqnkPrinciples":[
+"No Inundation",
+"Permanent Biological Cover"
+],
+"productionStages":[],
+"evidenceType":"Scientific Mechanism",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/water",
+"why":"separating the measured PQNK field water reference from the production-system comparison, and explaining transpiration and the four-source water concept"
+},
+{
+"page":"/science/climate",
+"why":"how temperature, humidity, wind and radiation change a crop's water demand independently of irrigation method"
+}
+]
+}
 ]
