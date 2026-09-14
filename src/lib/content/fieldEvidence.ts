@@ -283,6 +283,20 @@ export const fieldEvidence: FieldEvidence[] = [
     relatedCropSlug: "mango",
     tags: ["mango", "saline soil", "waterlogged soil", "raised beds", "salinity", "orchard"],
   },
+  {
+    feNumber: 16,
+    title: "Peanut on PQNK — Mulch Keeps Water Off the Bed in Heavy Monsoon Rain",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
+    cropOrTopic: "Peanut (Groundnut)",
+    year: 2026,
+    date: "2026-09-14",
+    summary:
+      "A farmer's own field demonstration during a heavy monsoon downpour: on PQNK beds with mulch — peanut, cucumber and tomato — a footstep on the bed stays firm and water does not rise onto the surface, while on unmulched beds, including an unmulched section of the same peanut plot, water climbs the bed and the soil gives way underfoot. The farmer credits the mulch layer and the retained root network of prior crops for holding the bed together, and thanks Asif Sharif directly for the technique.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/4PVrRQ05kU4",
+    videoId: "4PVrRQ05kU4",
+    tags: ["peanut", "groundnut", "mulching", "waterlogging resistance", "monsoon rain", "raised beds", "soil structure", "water infiltration"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
