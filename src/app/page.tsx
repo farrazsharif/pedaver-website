@@ -5,6 +5,9 @@ import dict from "@/lib/dictionaries";
 import { flagshipCrops } from "@/lib/content/crops";
 import { cropImages } from "@/lib/content/cropImages";
 import { videos } from "@/lib/content/videos";
+import { papers, formatKpNumber } from "@/lib/content/papers";
+import { fieldEvidence, formatFeNumber } from "@/lib/content/fieldEvidence";
+import { books, getPublishedChapters } from "@/lib/content/books";
 import Section from "@/components/Section";
 import VideoEmbed from "@/components/VideoEmbed";
 import TrackedExternalChannelLink from "@/components/analytics/TrackedExternalChannelLink";
@@ -29,12 +32,63 @@ const evidenceVideoIds = ["r1iN4iRsTmE", "xzORUOK79v4"];
 const featuredVideoId = "X2HHUcARW_g";
 const storyVideoId = "bpmGRdrccH4";
 
+type NewArrival = {
+  key: string;
+  badge: string;
+  title: string;
+  href: string;
+  external?: boolean;
+};
+
+/**
+ * Newest item of each content type, using each type's own reliable
+ * recency signal (permanent, arrival-ordered KP/FE numbers; explicit
+ * publishedDate for chapters) rather than a single merged date sort —
+ * Field Evidence records don't reliably carry a `date`, so cross-type
+ * date comparison isn't trustworthy.
+ */
+function getNewArrivals(): NewArrival[] {
+  const latestPapers = papers.slice(-2).reverse().map((p) => ({
+    key: `kp-${p.kpNumber}`,
+    badge: formatKpNumber(p.kpNumber),
+    title: p.title,
+    href: `/papers/${p.slug}`,
+  }));
+
+  const latestFieldEvidence = fieldEvidence
+    .filter((f) => f.sourceUrl)
+    .slice(-2)
+    .reverse()
+    .map((f) => ({
+      key: `fe-${f.feNumber}`,
+      badge: formatFeNumber(f.feNumber),
+      title: f.title,
+      href: f.sourceUrl!,
+      external: true,
+    }));
+
+  const latestChapter = books
+    .flatMap((book) => getPublishedChapters(book).map((chapter) => ({ book, chapter })))
+    .filter(({ chapter }) => chapter.publishedDate)
+    .sort((a, b) => (b.chapter.publishedDate! > a.chapter.publishedDate! ? 1 : -1))
+    .slice(0, 1)
+    .map(({ book, chapter }) => ({
+      key: `chapter-${chapter.chapterId}`,
+      badge: "Book Chapter",
+      title: chapter.title,
+      href: `/books/${book.bookId}/${chapter.chapterId}`,
+    }));
+
+  return [...latestPapers, ...latestFieldEvidence, ...latestChapter];
+}
+
 export default function HomePage() {
   const h = dict.home;
   const evidenceVideos = videos.filter((v) => evidenceVideoIds.includes(v.videoId));
   const featuredVideo = videos.find((v) => v.videoId === featuredVideoId);
   const storyVideo = videos.find((v) => v.videoId === storyVideoId);
   const voicePreview = loadFarmerVoicePreview(3);
+  const newArrivals = getNewArrivals();
 
   const websiteJsonLd = {
     "@context": "https://schema.org",
@@ -88,6 +142,35 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* NEW ARRIVALS — small, glanceable panel for a returning visitor to spot
+          recently published content without digging through each listing. */}
+      {newArrivals.length > 0 && (
+        <Section id="new-arrivals" className="!py-8">
+          <div className="mx-auto max-w-4xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">New on Pedaver</p>
+            <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+              {newArrivals.map((item) => (
+                <li key={item.key}>
+                  <Link
+                    href={item.href}
+                    target={item.external ? "_blank" : undefined}
+                    rel={item.external ? "noopener noreferrer" : undefined}
+                    className="group flex items-start gap-3 rounded-xl border border-border bg-card p-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                  >
+                    <span className="mt-0.5 flex-none rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-semibold uppercase tracking-wide text-primary">
+                      {item.badge}
+                    </span>
+                    <span className="text-sm font-medium leading-snug text-ink group-hover:text-primary">
+                      {item.title}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </Section>
+      )}
 
       {/* WATCH THE STORY — the full PQNK narrative, prominently placed right after the hero */}
       {storyVideo && (
