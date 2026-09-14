@@ -147,6 +147,8 @@ re-export can silently carry an old embedded image.
 
 | 16 | `building-the-machine` | Building the Machine | **Published + LIVE 2026-09-13 (v1.0), commit `57f2b91`** | Opens Part Three, "The Discovery." Built from the author's own five-decade visual-history material (10 self-captioned composite graphics plus a historical 1989 Ford-tractor-relaunch photo) — see §6 Decisions log for the full build history, the two extraction bugs found and fixed along the way, and the author's review corrections. Subtitle corrected to "1973-2007: Mastering Industrial Agriculture Before PQNK" (was the stub's placeholder "1973-1994...Before Rejecting It"). Covers: 1973 farm-design/syphon-tube work (seeds Soil Moisture Management), potato-corn-corn-potato rotation, 1976 Deltapine-15 cotton (corrected from an initial 1974 date), 1980s national dealerships (IMT, Ford, Massey Ferguson, Sperry New Holland), 1989 Ford tractor manufacturing licence + 1991 Pioneer Seed Company (PM Nawaz Sharif award), a direct role on PM Benazir Bhutto's 1994–96 liberalisation committee, the chance 1995 Bt-cotton discovery on a US highway (2kg of seed, not 20kg), a new "THE QUIET YEARS: 1997–2006" section handling a sensitive period gracefully per the author's explicit direction (no specifics, framed as pride not complaint), the 2007 Cholistan solar interlude extended into 2010s solar/CA-storage, and a three-paragraph machinery-progression narrative tying the 2000s/2020s PQNK machine catalogues to the chapter's thesis. Closes with a farmer's (Abdul Wajid) response to Chapters 9–10 as a coda. **Verified live 2026-09-13** — page HTTP 200, PDF HTTP 200 (SHA-256 `ebe1de26…` matches local byte-for-byte), all 10 images HTTP 200 and byte-matched, all key text markers (Ford caption, "began in 1976", British spelling, Quiet Years, farmer quote) confirmed present on the live page. |
 
+| 17 | `the-turning-points` | The Turning Points | **Published + LIVE 2026-09-14 (v1.0), commit `5edec44`** | Second Part Three chapter. Traces four cotton turning points across Sharif's career: the late-1970s bollworm crisis, the late-1980s/early-1990s whitefly surge and cotton leaf curl epidemic, the 1995 Bt cotton question (encountered by chance on a US highway, same pattern as Ch16's Bt story), and the PQNK 200-boll cotton result. Also introduces the milk-and-yogurt transition-speed paradigm and the 1990s–2008 adversity period. **Corrections applied before publish** (see §6 Decisions log for full detail): the 200-boll claim now explicitly requires the variety's own genetic potential (PQNK expresses it, does not create it); the "imprisonment"/legal-dispute language the author's draft had independently reintroduced was removed and replaced with the Ch16 Quiet Years framing, now locked as a permanent book-wide rule (§6, binding); the chapter's own cover graphic was regenerated via an AI-image prompt after the original mismatched the actual Turning-Point 3/4 content, then flattened (base graphic + transparent PQNK-logo overlay) into one composite PNG for the web to match the author's two-layer DOCX/PDF rendering; 13 straight apostrophes/quotes normalised to curly, matching house style. **Verified live 2026-09-14** — page HTTP 200, PDF HTTP 200 (SHA-256 `893bee80…` matches local byte-for-byte), all 3 images HTTP 200 and byte-matched, genetic-potential and Quiet-Years phrasing confirmed present, zero "imprison" occurrences on the live page. |
+
 ### Deployment — automatic via GitHub Actions, not manual
 
 **pedaver.com deploys automatically.** `.github/workflows/deploy.yml`
@@ -1186,3 +1188,95 @@ straight-quote cleanup still open).
 touching this period (Ch18 onward) must default to the graceful,
 non-specific framing above. Do not ask the author to re-confirm this
 per chapter — it is settled.
+
+### 2026-09-14 — Chapter 17 built, corrected, and published
+
+Author supplied `PQNK_Chapter_17_PUBLISH_READY.docx/.pdf` directly
+(no incremental placeholder-build pass this time, unlike Ch16). Two
+issues found on first read, both flagged before any other work:
+
+1. **The 200-boll claim** ("individual PQNK cotton plants reached
+   about two hundred bolls... without pesticide spraying") stated as
+   if PQNK alone produced the result. Author's correction: this is
+   only possible when the cotton variety itself carries the genetic
+   potential for a high boll count — PQNK restores the conditions
+   under which that potential is expressed, it does not create
+   boll-bearing capacity a variety does not already have. Fixed by
+   adding: "of a variety with the genetic potential for high boll
+   counts... That starting genetic potential matters: PQNK restores
+   the conditions under which a plant can express what it is
+   genetically capable of, but it does not create boll-bearing
+   capacity a variety does not already carry."
+
+2. **The draft independently used "imprisonment"** for the 1997-2006
+   period, framed as "a business dispute...subsequently resolved
+   through the Pakistani legal process," and pointed to a wrong
+   "Chapter Nineteen" (Ch19 is `the-first-experiment`, not an
+   adversity chapter) to address it directly — directly contradicting
+   the Ch16 Quiet Years decision. **Author's ruling: apply the Ch16
+   stance and carry it into every future chapter, permanently** — now
+   locked above as a binding, book-wide rule and saved to Claude's
+   persistent memory so it applies automatically without being
+   re-raised per chapter. Fixed to: "For a period during these years,
+   Sharif's business activities were substantially interrupted by
+   circumstances outside his control, a period he regards, in his own
+   words, as a significant personal sacrifice rather than a setback."
+
+Both fixes applied via targeted XML paragraph replacement on the
+docx (backup taken before each), then the author added a real cotton
+photo ("Cotton on PQNK — no-pest — no-disease — no-dropping, No
+Agrochemical Applied") embedded mid-paragraph inside the same 200-boll
+paragraph the genetic-potential fix touched — directly illustrating
+the corrected claim.
+
+**Cover-graphic mismatch, found and resolved**: the chapter's own
+AI-generated cover infographic labelled Turning Point 3 "The Yield
+Plateau" and Turning Point 4 "The Bt Cotton Failure" — neither matches
+the actual text (Turning Point 3 is "The Bt Cotton Question," Turning
+Point 4 is "The 200-Boll Cotton Plant"). Flagged via `AskUserQuestion`
+(dismissed — author chose to handle it directly rather than answer
+inline); author then asked Claude to write an AI image-generation
+prompt to redraw the graphic with correct panel 3/4 content. First
+regenerated version's panel 4 subtitle ("No spray. No purchased
+input. No exception made for genetics.") was flagged as inadvertently
+undercutting the freshly-added genetic-potential nuance — read as a
+parallel list, "no exception made for genetics" implies genetics
+wasn't a factor, the opposite of the correction just made. Author
+regenerated with the suggested fix ("The variety's own genetic
+potential, fully expressed.") — accepted as final.
+
+**Extraction bug found and fixed during the "final treatment" pass**:
+the corrected cover graphic was pasted into the docx as a *group* of
+two stacked pictures (base graphic `wp:anchor`-full-size, plus a
+separate PQNK-logo TIFF positioned and sized via the group's *own*
+child-coordinate `a:xfrm`, not the outer `wp:extent`/`wp:position`
+Claude was reading). Naively resizing the logo to the outer anchor's
+extent (as the previous chapter's simpler images allowed) produced a
+massively distorted, canvas-filling logo; the actual rendered PDF
+showed a small, correctly-scaled logo top-left. Fixed by reading the
+group's inner `wpg:grpSpPr/a:xfrm` (chOff/chExt) and each child
+`pic:spPr/a:xfrm` (off/ext) to compute true relative position and
+size, then flattening base + logo into one composite PNG via PIL
+alpha-compositing for the web (the site's `imageGroup` renders plain
+`<img>` tags, not stacked/layered pictures) — verified pixel-for-pixel
+against a fresh render of the author's own PDF page before use.
+
+**House-style cleanup**: 13 straight apostrophes/quotes across the
+chapter (this docx was typed with straight quotes throughout, unlike
+the rest of the book) normalised to curly, one paragraph requiring
+special handling since the cotton photo was embedded mid-sentence
+inside it (image run extracted, text corrected, image reinserted at
+the same relative position, to avoid the same "whole-paragraph
+replace silently drops embedded image" bug caught and fixed once
+already in Ch16).
+
+**Publish**: `books.ts` built with the docx's own subtitle "Four
+Cotton Turning Points and the Questions They Forced" (differs slightly
+from the stub's "Four Cotton Crises..."), 3 images (composite cover,
+200-boll cotton photo, milk-and-yogurt illustration). Verified in
+local dev-server preview (all images at natural resolution, PDF byte
+size match, zero console errors) before commit. **Verified live
+2026-09-14**: page and PDF both HTTP 200, PDF SHA-256 matches the
+local file byte-for-byte, all 3 images HTTP 200 and SHA-256-matched,
+genetic-potential and Quiet-Years phrasing both confirmed present,
+zero "imprison" occurrences live. Archived to `Published Chapters/`.
