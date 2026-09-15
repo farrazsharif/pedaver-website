@@ -148,6 +148,7 @@ re-export can silently carry an old embedded image.
 | 16 | `building-the-machine` | Building the Machine | **Published + LIVE 2026-09-13 (v1.0), commit `57f2b91`** | Opens Part Three, "The Discovery." Built from the author's own five-decade visual-history material (10 self-captioned composite graphics plus a historical 1989 Ford-tractor-relaunch photo) — see §6 Decisions log for the full build history, the two extraction bugs found and fixed along the way, and the author's review corrections. Subtitle corrected to "1973-2007: Mastering Industrial Agriculture Before PQNK" (was the stub's placeholder "1973-1994...Before Rejecting It"). Covers: 1973 farm-design/syphon-tube work (seeds Soil Moisture Management), potato-corn-corn-potato rotation, 1976 Deltapine-15 cotton (corrected from an initial 1974 date), 1980s national dealerships (IMT, Ford, Massey Ferguson, Sperry New Holland), 1989 Ford tractor manufacturing licence + 1991 Pioneer Seed Company (PM Nawaz Sharif award), a direct role on PM Benazir Bhutto's 1994–96 liberalisation committee, the chance 1995 Bt-cotton discovery on a US highway (2kg of seed, not 20kg), a new "THE QUIET YEARS: 1997–2006" section handling a sensitive period gracefully per the author's explicit direction (no specifics, framed as pride not complaint), the 2007 Cholistan solar interlude extended into 2010s solar/CA-storage, and a three-paragraph machinery-progression narrative tying the 2000s/2020s PQNK machine catalogues to the chapter's thesis. Closes with a farmer's (Abdul Wajid) response to Chapters 9–10 as a coda. **Verified live 2026-09-13** — page HTTP 200, PDF HTTP 200 (SHA-256 `ebe1de26…` matches local byte-for-byte), all 10 images HTTP 200 and byte-matched, all key text markers (Ford caption, "began in 1976", British spelling, Quiet Years, farmer quote) confirmed present on the live page. |
 
 | 17 | `the-turning-points` | The Turning Points | **Published + LIVE 2026-09-14 (v1.0), commit `5edec44`** | Second Part Three chapter. Traces four cotton turning points across Sharif's career: the late-1970s bollworm crisis, the late-1980s/early-1990s whitefly surge and cotton leaf curl epidemic, the 1995 Bt cotton question (encountered by chance on a US highway, same pattern as Ch16's Bt story), and the PQNK 200-boll cotton result. Also introduces the milk-and-yogurt transition-speed paradigm and the 1990s–2008 adversity period. **Corrections applied before publish** (see §6 Decisions log for full detail): the 200-boll claim now explicitly requires the variety's own genetic potential (PQNK expresses it, does not create it); the "imprisonment"/legal-dispute language the author's draft had independently reintroduced was removed and replaced with the Ch16 Quiet Years framing, now locked as a permanent book-wide rule (§6, binding); the chapter's own cover graphic was regenerated via an AI-image prompt after the original mismatched the actual Turning-Point 3/4 content, then flattened (base graphic + transparent PQNK-logo overlay) into one composite PNG for the web to match the author's two-layer DOCX/PDF rendering; 13 straight apostrophes/quotes normalised to curly, matching house style. **Verified live 2026-09-14** — page HTTP 200, PDF HTTP 200 (SHA-256 `893bee80…` matches local byte-for-byte), all 3 images HTTP 200 and byte-matched, genetic-potential and Quiet-Years phrasing confirmed present, zero "imprison" occurrences on the live page. |
+| 18 | `the-amazon-revelation` | The Amazon Revelation | **Published + LIVE 2026-09-15 (v1.0), commit `b80710a`** | Third Part Three chapter. Sharif's 2008 Amazon field trip, framed as continental-scale confirmation (not inspiration) of thirty years of field observation: five observations (no bare soil, no monoculture, a self-generating closed water cycle, a closed nutrient loop running on soil biology despite poor underlying geology — "the 0.083 percent paradox written at continental scale" — and zero pest outbreaks across four hundred million years) map directly onto PQNK's four prohibitions and four positive principles. One hero infographic (`ch18-img-01.png`, "The Amazon Revelation: 2008" ACI-vs-forest comparison panel plus a root-network/nutrient-cycling diagram, extracted from the docx at its native 1500×1125, no higher-resolution source available) placed after the "Why the Amazon" section, matching its position in the source docx. One `qaPanel` ("What Four Hundred Million Years Tells Us About Inputs", 3 items). Closes with a "Note on Prior Work: The Missing Synthesis" section positioning PQNK against six named regenerative-science traditions/programmes (Yeomans, Kravčík/Jehne/Loess Plateau, Hamaker/Sawadogo, FAO Conservation Agriculture, Andhra Pradesh CMNF, Savory Institute, Gabe Brown, Zero Budget Natural Farming/Palekar, Ernst Götsch), forward-referencing the already-published companion Knowledge Paper `the-missing-synthesis` (KP-111) for the full account. **Editorial fixes before publish:** the source docx said the Amazon's predator network was "the 1,700 species of biological controllers described in Chapter Six" — Chapter Six no longer states that figure (softened to qualitative language in its own publish pass, per this file's Ch6 history); corrected to "the diverse community of predators and parasitoids described in Chapter Six", matching Ch6's actual current text. 4 straight apostrophes → curly. Attribution line's stray leading comma dropped. The chapter's own duplicate in-body repeat of its subtitle line was dropped (subtitle is already carried by the `subtitle` field, per house convention). **Open item, non-blocking:** the source docx (`PQNK_Chapter_18_FINAL.docx`, despite the "FINAL" filename) still contains two unfulfilled `[ PHOTO PLACEHOLDER ]` bracket markers — one for an "Amazon rainforest floor" photo near the opening, one for a "PQNK farmer showing empty input store" photo near the closing — neither has a real photo behind it (only the one hero infographic is actually embedded). Both were left out of the web body entirely (images are optional per the publish checklist; rendering the literal bracket text would have looked broken). If the author supplies these two photos later, add them as `imageGroup` blocks at the same narrative points (directly after the "For a man who had spent thirty years..." paragraph, and directly after the "The Amazon is the longest-running agricultural trial in history..." closing paragraph), same pattern as the Ch16 rice-photo post-publish addition. Ch17's `transition` already named Chapter Eighteen correctly (no change needed). Hands to Chapter Nineteen, `the-first-experiment`. **Verified live 2026-09-15** — page, image and PDF all HTTP 200; image SHA-256 (`d36cde3e…`) and PDF SHA-256 (`bfb90d3a…`) both match the local source byte-for-byte; live page text confirmed free of "PHOTO PLACEHOLDER" and the stale "1,700" figure, and confirmed to contain the Chapter Nineteen transition. Archived to `Published Chapters/`. |
 
 ### Deployment — automatic via GitHub Actions, not manual
 
@@ -302,6 +303,17 @@ Minor, non-blocking, left as-is: the Ch4 mulch-thermostat infographic says the
 bare-vs-mulch gap is "about 40 °C" (matches the text's "roughly forty degrees
 … at the peak of the day"); published Ch1 still says "thirty degrees cooler" —
 touch Ch1 only if the author asks.
+
+[Note: Chapters 13–17 have since published; see their §4 rows and the
+dated §7 entries for their history. This section (§5) has not been kept
+current chapter-by-chapter since Ch9 — treat the §4 table as the source
+of truth for chapter status.]
+
+**Ch18 open issue — two unfilled photo placeholders, non-blocking:** the
+source docx (`PQNK_Chapter_18_FINAL.docx`) has two `[ PHOTO PLACEHOLDER ]`
+bracket markers with no real photo behind either — see the §4 row and the
+2026-09-15 §7 entry for the exact insertion points. Add them as
+`imageGroup` blocks if/when the author supplies the two photos.
 
 ## 6. Decisions log — BINDING, do not re-litigate
 
@@ -1280,3 +1292,92 @@ size match, zero console errors) before commit. **Verified live
 local file byte-for-byte, all 3 images HTTP 200 and SHA-256-matched,
 genetic-potential and Quiet-Years phrasing both confirmed present,
 zero "imprison" occurrences live. Archived to `Published Chapters/`.
+
+### 2026-09-15 — Chapter 18 built and published
+
+Author supplied `PQNK_Chapter_18_FINAL.docx/.pdf` directly (9 pages,
+one embedded image). Third Part Three chapter: Sharif's 2008 Amazon
+field trip. Editorial pass found one cross-reference inconsistency and
+fixed it before publish, both logged in the §4 table row above:
+
+1. **Stale predator-count cross-reference.** The source text read "the
+   predator network: the 1,700 species of biological controllers
+   described in Chapter Six." Chapter Six's own publish pass (see its
+   §4 row) had already softened that figure to qualitative language —
+   Ch6's current text states no "1,700" number anywhere. Fixed by
+   matching Ch6's own phrasing: "the diverse community of predators and
+   parasitoids described in Chapter Six." A same-class error to the
+   kind this file's Decisions log has flagged before (a later chapter
+   citing an earlier chapter's retired figure) — worth a standing
+   reminder for future chapters that reference Ch3, Ch6, Ch9's nutrient
+   figure, or any other chapter whose numbers have since been revised:
+   check the cited chapter's *current* text, not just its title.
+2. **4 straight apostrophes → curly**, matching house style (this docx,
+   unusually for this book, was typed with straight quotes in a few
+   spots — "PQNK's", "forest's", "farmer's", "block's").
+3. **Attribution line fixed**: the docx's own epigraph attribution ran
+   ", Asif Sharif, Lahore, 2008" with a stray leading comma (evidently a
+   leftover from a template where the attribution followed the quote on
+   the same line) — dropped the comma to match every other chapter's
+   attribution format.
+4. **Duplicate subtitle line dropped**: the docx repeats "2008, What
+   Four Hundred Million Years Showed in a Forest" as a body line
+   directly under the chapter title — this is already carried by the
+   `subtitle` field and every other published chapter omits the
+   duplicate from its body, so it was dropped here too for consistency.
+
+**Two open photo placeholders, left unfilled.** Despite the "FINAL" in
+its filename, the source docx contains two literal
+`[ PHOTO PLACEHOLDER | ... | Caption: ... ]` bracket markers with no
+photo behind either of them — only one real image exists in the whole
+document (the hero infographic, `ch18-img-01.png`, "The Amazon
+Revelation: 2008", extracted at its native 1500×1125, no higher-res
+source available on this Mac). Confirmed via the docx's own
+relationships file: exactly one image relationship (`rId4` →
+`media/image1.png`), so this was not a paragraph-matching artefact.
+Both placeholders (an "Amazon rainforest floor" shot near the opening,
+a "PQNK farmer showing empty input store" shot near the closing) were
+left out of the web body entirely rather than rendered as literal
+bracket text — images are optional per the publish checklist, and nothing
+elsewhere in the chapter depends on either caption's content. Logged in
+the §4 row with the exact insertion points for whenever the author
+supplies the two photos, same pattern as Ch16's post-publish rice-photo
+addition.
+
+**Consistency checks that passed with no changes needed:** the "1,700"
+fix aside, cross-checked "12.84 tonnes per hectare... three times the
+regional average" and "seventy percent less water" against Ch5's
+founding-trial paragraph (`the-natural-water-system`) — both match
+exactly. Confirmed the companion Knowledge Paper the chapter
+forward-references, "The Missing Synthesis: Positioning PQNK Among a
+Century of Fragmented Regenerative Science" (`the-missing-synthesis`,
+KP-111), already exists and is live — no dangling forward reference.
+Noted, but did not reconcile, that the KP's own list of six comparison
+programmes includes SRI where Ch18's in-chapter list does not (Ch18
+naturally excludes SRI since Sharif's own 2011 SRI trial is PQNK's own
+direct root, not a parallel discovery) — not a contradiction, just a
+different framing for a different audience, left as authored.
+
+**Publish**: `books.ts` built with `status: "published"`, one
+`imageGroup` + `caption` (hero infographic, placed after the "Why the
+Amazon" section matching its position in the source docx rather than
+forced to the very top) and one `qaPanel`. Verified in local dev-server
+preview before commit (page text sanity-checked via `get_page_text` and
+a `document.body.innerText` scan for the placeholder string, the "1,700"
+figure, and the Chapter Nineteen transition; image confirmed loaded via
+`naturalWidth`/`complete` since the Browser pane was hidden and its
+screenshots were blank as a result — not a rendering bug, see the tool's
+own hidden-pane caveat). Committed and pushed (commit `b80710a`);
+`.githooks/pre-push` took a fresh site backup first, per the binding
+§0 rule. GitHub Actions deploy (run `34916507835`) completed
+successfully in about 90 seconds. **Verified live 2026-09-15**: page,
+image and PDF all HTTP 200; image SHA-256 (`d36cde3e…`) and PDF SHA-256
+(`bfb90d3a…`) both match the local source byte-for-byte; live page text
+confirmed free of "PHOTO PLACEHOLDER" and the stale "1,700" figure, and
+confirmed to contain the Chapter Nineteen transition. Archived to
+`Published Chapters/` as `PQNK_Book_Chapter_18_The_Amazon_Revelation.docx/.pdf`
+— PDF copied from the deployed/verified `public/` file, docx copied
+from the same approved `PQNK_Chapter_18_FINAL.docx` the chapter was
+built from. Ch17's `transition` already named Chapter Eighteen
+correctly, no change needed. Hands to Chapter Nineteen,
+`the-first-experiment`.
