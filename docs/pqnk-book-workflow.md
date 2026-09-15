@@ -1588,3 +1588,29 @@ replaces `public/books/natural-ecosystem-science/the-amazon-revelation.pdf`
 (this Mac has no Word/Pages/LibreOffice to export PDFs itself, so this
 round-trip is the established pattern for anything beyond raw text
 correction — see Ch15's PDF re-export for precedent).
+
+**Same day: Chapter 19's docx found to have the identical class of bug,
+half-fixed.** While reviewing Ch18's typography, the author pointed at
+a screenshot of Chapter 19's own docx ("THE DESIGN OF THE FIRST
+EXPERIMENT") and flagged that heading style and pre-section spacing
+still didn't match. Checked all 8 of Ch19's L1 headings individually:
+**5 of the 8 had no character formatting applied at all** — plain
+default black Times New Roman text that only happened to be typed in
+caps (`WHAT THE PROBLEM WITH PADDY...`, `WHY THE YIELD WAS HIGH...`,
+`FROM THE FIRST EXPERIMENT TO THE FULL SYSTEM`, `FROM TRANSPLANTING TO
+DIRECT SEEDING...`, `WHAT THIS CHAPTER HAS ESTABLISHED`), while the
+other 3 (`THE DESIGN OF THE FIRST EXPERIMENT`, `THE RESULTS...`,
+`PUBLICATION AND ITS RECEPTION`) were already correctly Arial/11pt/
+Accent Green/bold/letter-spaced — explaining the "doesn't match"
+complaint precisely: it was inconsistent *within the same document*,
+not a wrong-vs-right question. Fixed all 5 to match the other 3 exactly
+(same rPr template, count-verified single-occurrence replacements).
+Pre-heading spacer paragraphs (the empty paragraph before each heading
+that creates the visual gap) were already present and consistent
+throughout — not the actual cause, despite "space before new section"
+being how the author described the symptom. Straight quotes/apostrophes
+checked and already clean (0 found). Saved as
+`PQNK_Chapter_19_BOOK_STYLE.docx`, zip-integrity and byte-diff verified
+against the source (only `word/document.xml` changed). Chapter 19 is
+still withdrawn (§4 row) — this is prep work for whenever it's
+reopened, not a republish.
