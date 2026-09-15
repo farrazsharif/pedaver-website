@@ -1,0 +1,22 @@
+name: One-off - delete stale Ch18/19 PDFs from cPanel
+
+# Manual-only, one-time cleanup. The main deploy workflow
+# (SamKirkland/FTP-Deploy-Action) removed the Ch18/Ch19 image files when
+# they were dropped from the repo, but left the two top-level PDFs behind
+# on the server (its remote-sync state didn't have them tracked for
+# deletion). This explicitly deletes just those two files via FTP DELE.
+# Delete this workflow file once it has run successfully.
+on:
+  workflow_dispatch:
+
+jobs:
+  delete-stale-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete the-amazon-revelation.pdf and the-first-experiment.pdf
+        run: |
+          curl -v --ftp-ssl \
+            --user "${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}" \
+            -Q "DELE books/natural-ecosystem-science/the-amazon-revelation.pdf" \
+            -Q "DELE books/natural-ecosystem-science/the-first-experiment.pdf" \
+            "ftp://${{ secrets.FTP_SERVER }}/"
