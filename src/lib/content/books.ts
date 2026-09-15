@@ -1502,6 +1502,7 @@ export const books: Book[] = [
         version: "1.0",
         pdfPath: "/books/natural-ecosystem-science/the-amazon-revelation.pdf",
         body: [
+  { type: "imageGroup", files: ["ch18-img-01.png"] },
   { type: "openingQuote", text: "“The Amazon did not give me a farming recipe. It allowed me to see, in one living landscape, the relationships that decades of farming had taught me to look for.”" },
   { type: "attribution", text: "Asif Sharif, Lahore, 2008" },
   { type: "heading", text: "BEFORE THE AMAZON" },
@@ -1518,7 +1519,6 @@ export const books: Book[] = [
   { type: "paragraph", runs: [{ text: "The soil surface was protected. Roots occupied the ground continuously. Organic material returned to the surface and decomposed. Water moved through vegetation, soil and atmosphere. Many organisms occupied different ecological niches. Herbivores existed alongside predators, parasites, pathogens and competitors. Fertility was not being delivered according to a fertiliser schedule; nutrients were continually being taken up, incorporated into living material, returned and recycled." }] },
   { type: "paragraph", runs: [{ text: "The important realisation was that none of these functions stood alone. Cover affected temperature and moisture. Moisture affected roots and microorganisms. Roots affected soil structure and water movement. Organic residues fed decomposers. Diversity created many biological relationships. The system worked through interaction." }] },
   { type: "paragraph", runs: [{ text: "This became one of the central foundations of PQNK: agriculture should not begin by asking which purchased input can replace a missing function. It should first ask why that function has been lost and whether the production environment can be managed so that the biological system performs more of the work itself." }] },
-  { type: "imageGroup", files: ["ch18-img-01.png"] },
   { type: "heading", text: "THE FIRST OBSERVATION: PROTECT THE SOIL SURFACE" },
   { type: "paragraph", runs: [{ text: "One of the clearest contrasts with cultivated land was the condition of the soil surface. In intact rainforest, the ground is commonly protected by vegetation, fallen leaves, decomposing organic material and living roots. The surface is not routinely exposed to direct sun and raindrop impact, then cultivated again before the next biological cycle." }] },
   { type: "paragraph", runs: [{ text: "Natural disturbance can expose soil. Trees fall, rivers move, animals disturb the ground, and climatic events can create openings. But exposed space is normally recolonised. Biological cover is the prevailing direction of the system." }] },
