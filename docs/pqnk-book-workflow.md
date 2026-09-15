@@ -149,6 +149,7 @@ re-export can silently carry an old embedded image.
 
 | 17 | `the-turning-points` | The Turning Points | **Published + LIVE 2026-09-14 (v1.0), commit `5edec44`** | Second Part Three chapter. Traces four cotton turning points across Sharif's career: the late-1970s bollworm crisis, the late-1980s/early-1990s whitefly surge and cotton leaf curl epidemic, the 1995 Bt cotton question (encountered by chance on a US highway, same pattern as Ch16's Bt story), and the PQNK 200-boll cotton result. Also introduces the milk-and-yogurt transition-speed paradigm and the 1990s–2008 adversity period. **Corrections applied before publish** (see §6 Decisions log for full detail): the 200-boll claim now explicitly requires the variety's own genetic potential (PQNK expresses it, does not create it); the "imprisonment"/legal-dispute language the author's draft had independently reintroduced was removed and replaced with the Ch16 Quiet Years framing, now locked as a permanent book-wide rule (§6, binding); the chapter's own cover graphic was regenerated via an AI-image prompt after the original mismatched the actual Turning-Point 3/4 content, then flattened (base graphic + transparent PQNK-logo overlay) into one composite PNG for the web to match the author's two-layer DOCX/PDF rendering; 13 straight apostrophes/quotes normalised to curly, matching house style. **Verified live 2026-09-14** — page HTTP 200, PDF HTTP 200 (SHA-256 `893bee80…` matches local byte-for-byte), all 3 images HTTP 200 and byte-matched, genetic-potential and Quiet-Years phrasing confirmed present, zero "imprison" occurrences on the live page. |
 | 18 | `the-amazon-revelation` | The Amazon Revelation | **Published + LIVE 2026-09-15 (v1.0), commit `b80710a`** | Third Part Three chapter. Sharif's 2008 Amazon field trip, framed as continental-scale confirmation (not inspiration) of thirty years of field observation: five observations (no bare soil, no monoculture, a self-generating closed water cycle, a closed nutrient loop running on soil biology despite poor underlying geology — "the 0.083 percent paradox written at continental scale" — and zero pest outbreaks across four hundred million years) map directly onto PQNK's four prohibitions and four positive principles. One hero infographic (`ch18-img-01.png`, "The Amazon Revelation: 2008" ACI-vs-forest comparison panel plus a root-network/nutrient-cycling diagram, extracted from the docx at its native 1500×1125, no higher-resolution source available) placed after the "Why the Amazon" section, matching its position in the source docx. One `qaPanel` ("What Four Hundred Million Years Tells Us About Inputs", 3 items). Closes with a "Note on Prior Work: The Missing Synthesis" section positioning PQNK against six named regenerative-science traditions/programmes (Yeomans, Kravčík/Jehne/Loess Plateau, Hamaker/Sawadogo, FAO Conservation Agriculture, Andhra Pradesh CMNF, Savory Institute, Gabe Brown, Zero Budget Natural Farming/Palekar, Ernst Götsch), forward-referencing the already-published companion Knowledge Paper `the-missing-synthesis` (KP-111) for the full account. **Editorial fixes before publish:** the source docx said the Amazon's predator network was "the 1,700 species of biological controllers described in Chapter Six" — Chapter Six no longer states that figure (softened to qualitative language in its own publish pass, per this file's Ch6 history); corrected to "the diverse community of predators and parasitoids described in Chapter Six", matching Ch6's actual current text. 4 straight apostrophes → curly. Attribution line's stray leading comma dropped. The chapter's own duplicate in-body repeat of its subtitle line was dropped (subtitle is already carried by the `subtitle` field, per house convention). **Open item, non-blocking:** the source docx (`PQNK_Chapter_18_FINAL.docx`, despite the "FINAL" filename) still contains two unfulfilled `[ PHOTO PLACEHOLDER ]` bracket markers — one for an "Amazon rainforest floor" photo near the opening, one for a "PQNK farmer showing empty input store" photo near the closing — neither has a real photo behind it (only the one hero infographic is actually embedded). Both were left out of the web body entirely (images are optional per the publish checklist; rendering the literal bracket text would have looked broken). If the author supplies these two photos later, add them as `imageGroup` blocks at the same narrative points (directly after the "For a man who had spent thirty years..." paragraph, and directly after the "The Amazon is the longest-running agricultural trial in history..." closing paragraph), same pattern as the Ch16 rice-photo post-publish addition. Ch17's `transition` already named Chapter Eighteen correctly (no change needed). Hands to Chapter Nineteen, `the-first-experiment`. **Verified live 2026-09-15** — page, image and PDF all HTTP 200; image SHA-256 (`d36cde3e…`) and PDF SHA-256 (`bfb90d3a…`) both match the local source byte-for-byte; live page text confirmed free of "PHOTO PLACEHOLDER" and the stale "1,700" figure, and confirmed to contain the Chapter Nineteen transition. Archived to `Published Chapters/`. **Post-publish correction, 2026-09-15** (author caught this by listening to the chapter via Read Aloud): the author's actual 2008 Amazon trip was **one week inside the Amazon rainforest**, not three — he spent **three weeks in Brazil total**, one in the Amazon and two further weeks visiting farms elsewhere in the country to substantiate what he'd observed. All 6 "three weeks ... Amazon" conflations fixed in `books.ts` to correctly separate "the week in the Amazon" from "the three weeks in Brazil." The 2008/2009 rice-trial acreage the author also flagged (4 acres control, 40 acres trial) was already correct as published — no change needed there. Also applied the same timeline fix plus the already-published "1,700"→qualitative fix to the master `PQNK_Chapter_18_FINAL.docx` (backup: `backups/PQNK_Chapter_18_FINAL.pre-timeline-correction.20260915-121558.docx`) and refreshed the archived copy in `Published Chapters/`, so the source and the site now agree on wording — **the PDF still needs re-export** (same known, accepted lag pattern as Ch8's one-word PDF fix): both `public/books/natural-ecosystem-science/the-amazon-revelation.pdf` and the archived PDF still read the old "three weeks ... Amazon" / "1,700 species" text baked into their pages, since this Mac has no Word/Pages/LibreOffice to re-render a Word-exact PDF. Swap in a fresh PDF on the author's next re-export, then re-verify SHA-256 against production and update this row. Non-blocking — the live web text (what Read Aloud reads) is correct. |
+| 19 | `the-first-experiment` | The First Experiment | **Published + LIVE 2026-09-15 (v1.0), commit TBD** | Fourth Part Three chapter: the 2009 founding rice trial (mechanised SRI on newly formed raised beds — 12.84 t/ha, ~70% lower irrigation water, peer-reviewed in *Paddy and Water Environment*, 2011). The chapter is unusually careful throughout to keep this early trial's real, measured 70% water-saving separate from the ~92-93%/321 L/kg figure that belongs only to the later, mature, direct-seeded PQNK system — repeated as an explicit rule three times (once in body text, twice in the Q&A panel) rather than let the two get conflated. Hero infographic (`ch19-img-01.jpg`) plus 5 supporting field photos (`ch19-img-02.png`–`ch19-img-06.png`: an AAJ TV field segment from the original 44-acre trial, nursery/water-wheel-transplanter, furrow-irrigation/bed-overtopping, the precision weeder-aerator, and the harvest). One `qaPanel` ("What 12.84 Tonnes of Rice Tells Us About the System", 3 items). **Structural bug found and fixed before publish:** the source docx had the entire Q&A panel embedded *twice*, verbatim — two separate floating text-box tables anchored to the same paragraph, confirmed via raw XML (`<w:tbl>` count of 2, both identical). Kept one. Also folded one stray mid-sentence Word paragraph break ("Targeted nutrition rather than a no-input claim. The published experiment used banded / fertiliser together with compost...") into a single paragraph. **Orphaned reference fixed, author-approved:** the draft's "Publication and Its Reception" section referenced "the important lesson from Hanoi" with no prior mention of Hanoi anywhere in the chapter — traced to an already-published Knowledge Paper (KP-110) stating the trial "was presented at the International Rice Congress held in Vietnam on October 30, 2010" (Hanoi being Vietnam's capital); a new sentence was added introducing that conference presentation before the Hanoi reference, per the author's explicit instruction. **Author-confirmed, retained as authored:** the 100+ tillers per plant figure (image caption only: "Typical plants produced more than 100 tillers, while the comparison group yielded 10") is, per the author, a well-documented number — kept as a field-photo caption only, deliberately not promoted into the chapter's own carefully-hedged "Tiller development" paragraph as a general trial result, matching the chapter's own measured-vs-observed discipline. `chapterSpeech.ts`: added `SRI → "S R I"`. Ch18's `transition` already named Chapter Nineteen correctly. Hands to Chapter Twenty, `the-naming-of-pqnk`. **Known asset gap, non-blocking:** the author reported having corrected the "Transposing" → "Transplanting" image-caption typo and replaced the hero infographic (to fix a 4.0 vs 4.2 t/ha conventional-yield mismatch against KP-110) in a newly re-saved `PQNK_Chapter_19_FINAL.docx`/`.pdf` — but a byte-for-byte diff of every zip entry and the full extracted PDF text against the prior save showed **zero content difference** (only outer file/zip metadata changed; every image and all document text identical). Flagged to the author; the chapter published with the original, unmodified art. Swap in the actually-corrected hero infographic and re-verify once a genuinely different file is supplied. |
 
 ### Deployment — automatic via GitHub Actions, not manual
 
@@ -1388,3 +1389,68 @@ from the same approved `PQNK_Chapter_18_FINAL.docx` the chapter was
 built from. Ch17's `transition` already named Chapter Eighteen
 correctly, no change needed. Hands to Chapter Nineteen,
 `the-first-experiment`.
+
+### 2026-09-15 — Chapter 19 reviewed and published; cross-reference correction to KP-110
+
+Author supplied `PQNK_Chapter_19_FINAL.docx/.pdf` and asked for a full
+review with a publish-ready draft prepared for approval before anything
+went live — the first time in this project a chapter was held for
+sign-off rather than published straight through. Full editorial pass
+(see §4 row) found one genuine structural bug (a duplicate floating
+Q&A panel, fixed) and one orphaned reference ("Hanoi," fixed after the
+author's go-ahead by adding an introducing sentence).
+
+**The most consequential finding was cross-document, not internal to
+Ch19.** Ch19 is explicit and repeated (body text once, Q&A panel twice)
+that the 2009 founding trial's own peer-reviewed result was **~70%**
+irrigation-water reduction, and that the **~92-93% / 321 L/kg** figure
+belongs only to the later, mature, direct-seeded PQNK system — "must
+not be attributed to the original trial." An already-live Knowledge
+Paper, KP-110 (`why-conventional-rice-keeps-failing`), directly
+contradicted this: its abstract and a keyTakeaway stated "PQNK's rice
+work began in **2008** with an inaugural 44-acre moist-soil trial...
+**that original trial** cut water use to **321 liters per kilogram, a
+93% reduction**" — the same trial, wrong year, and the mature-system
+figure misattributed to it. Flagged to the author rather than silently
+resolved either direction, since it involved conflicting claims about
+the company's own documented history that only the author could settle.
+
+**Author's ruling:** Ch19 is correct (2009, ~70% for the founding
+trial); KP-110 was wrong on both the year and the attribution. Fixed
+KP-110's abstract paragraph and keyTakeaway in `papers.ts`
+(`why-conventional-rice-keeps-failing`, KP-110): 2008 → 2009 throughout,
+and the 321 L/kg/93% figure now explicitly attributed to "the mature
+system's own field records, not to the original 2009 trial." Checked
+and confirmed no other file (other Knowledge Papers, `metadata.json`,
+the KP's own PDF) carries the same 2008/93% conflation — the PDF's only
+"2008" occurrence is an unrelated reference citation (Xu et al. 2008).
+The `~4.2 t/ha` vs Ch19 infographic's `4.0 t/ha` conventional-yield
+figure was left untouched, per the author's instruction to fix only the
+year and the attribution, not the rounding difference.
+
+**Two items the author ruled on directly, both applied as instructed:**
+1. The "Transposing" → "Transplanting" image caption typo, and a
+   4.0-vs-4.2 t/ha hero-infographic correction — the author reported
+   having fixed both in a freshly re-saved docx/PDF. Verified via a
+   byte-for-byte diff of every zip entry (docx) and the full extracted
+   PDF text against the prior save: **zero content difference** — only
+   outer file metadata had changed, every image and all document text
+   were identical to what was already reviewed. Flagged to the author;
+   published with the original art rather than block on a save that
+   hadn't actually taken. Swap in the genuinely corrected file when
+   supplied.
+2. The 100+ tillers-per-plant figure (image-6 caption only) — author
+   confirmed it is a well-documented number, but instructed it be kept
+   strictly as a field-photo caption, not folded into the chapter's own
+   "Tiller development" paragraph as a general trial result, preserving
+   the chapter's measured-vs-observed discipline.
+
+**Publish**: `books.ts` built with `status: "published"`, deduped Q&A
+panel, one Hanoi/Vietnam sentence added, 6 images placed against the
+text they illustrate, `chapterSpeech.ts` given an `SRI → "S R I"` rule.
+Verified in local dev-server preview (all images loaded, Q&A panel
+count == 1, Hanoi sentence present, zero console errors of substance)
+before commit. KP-110's correction verified the same way. Archived to
+`Published Chapters/` as
+`PQNK_Book_Chapter_19_The_First_Experiment.docx/.pdf`. Hands to Chapter
+Twenty, `the-naming-of-pqnk`.

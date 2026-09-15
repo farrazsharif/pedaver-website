@@ -148,6 +148,7 @@ export const SPEECH_NORMALISATIONS: SpeechNormalisation[] = [
   { label: "CGIAR", find: /\bCGIAR\b/g, replace: "C G I A R", note: "the international agricultural-research-centre network, spoken as letters" },
   { label: "IFPRI", find: /\bIFPRI\b/g, replace: "I F P R I", note: "International Food Policy Research Institute, spoken as letters" },
   { label: "BT", find: /\bBT\b/g, replace: "B T", note: "Bacillus thuringiensis, spoken as letters" },
+  { label: "SRI", find: /\bSRI\b/g, replace: "S R I", note: "System of Rice Intensification, spoken as letters" },
   { label: "SIPP", find: /\bSIPP\b/g, replace: "S I P P", note: "not present in the 3 pilot chapters" },
   { label: "VIPP", find: /\bVIPP\b/g, replace: "V I P P", note: "not present anywhere in current content" },
   { label: "kg", find: /\bkg\b/g, replace: "kilograms" },
