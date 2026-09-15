@@ -1614,3 +1614,21 @@ checked and already clean (0 found). Saved as
 against the source (only `word/document.xml` changed). Chapter 19 is
 still withdrawn (§4 row) — this is prep work for whenever it's
 reopened, not a republish.
+
+**Chapter 18 PDF closed out same day.** Author opened
+`PQNK_Chapter_18_BOOK_STYLE.docx` in Pages and exported
+`PQNK_Chapter_18_BOOK_STYLE.pdf`. Verified before swapping it in:
+rendered all 8 pages to images and visually confirmed the title
+(26pt Deep Green), subtitle (13pt), opening quote (Quote Grey, 11pt)
+and closing line (now a proper italic Accent Green pull paragraph, not
+a second bold quotation) all render correctly, the hero infographic
+sits before the opening quote as intended, and the attribution and
+transition lines are present. Full-text diff against the
+previously-live PDF confirmed **only the intended changes**: curly
+quotes/apostrophes, the new attribution line, the new transition line
+— no accidental content drift from the Pages round-trip. Replaced
+`public/books/natural-ecosystem-science/the-amazon-revelation.pdf`;
+archived both the docx and PDF to `Published Chapters/`, superseding
+the versions saved right after the 2026-09-16 publish. This closes the
+last open Chapter 18 item — see the §4 row for the chapter's full
+history.
