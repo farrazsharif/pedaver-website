@@ -1524,3 +1524,67 @@ fix what's found, publish once nothing blocking remains) — that
 pattern remains fine for post-publish corrections to already-approved
 chapters (typo fixes, cross-reference corrections, the KP-110 fix
 above), just not for the initial decision to take something live.
+
+### 2026-09-16 — Chapter 18 republished from a full rewrite, on explicit approval
+
+Author supplied a completely rewritten `PQNK_Chapter_18_FINAL_TEXT_REVIEW.docx/.pdf`
+and approved it for publish. See the §4 row for the full content summary
+(new subtitle, five re-sequenced observations, zero photo placeholders,
+timeline stated correctly at the source, three new infographics, no
+cross-chapter references). Published, commit `1d818b1`.
+
+**Hero-infographic placement bug found and fixed the same day.** The
+image was anchored in the same Word paragraph as the chapter title (a
+docx quirk — title text and all three title-page images share one
+paragraph), which led to placing it several paragraphs into the body
+instead of where the PDF actually renders it: immediately after the
+title/subtitle, before the opening quote. Caught by checking the PDF's
+own page-1 text/image y-coordinates directly rather than trusting the
+XML anchor paragraph alone — the other two infographics were already
+correctly placed because their anchor paragraphs matched their true
+visual position; only the hero, being grouped with the title, did not.
+Fixed, commit `5588656`.
+
+**Word-document typography pass, requested separately.** The author
+pointed out the approved docx had never been formatted to the book's
+locked house style — it was a content-review draft, not a typeset one.
+Compared it paragraph-by-paragraph against `PQNK_Book_Chapter_17_The_Turning_Points.docx`
+(an already-approved, already-published reference) rather than relying
+solely on `PQNK_Book_Editorial_and_Typography_Style_Standard.docx`, since
+the two disagree on Level-1 headings (the written standard says Georgia;
+every actually-published chapter uses Arial). **Author confirmed
+directly: body is Georgia 12pt, headings are Arial — the written
+standard is stale on this point**, not the published chapters. (The
+standard document itself should probably be corrected to match at some
+point — not done here, out of scope for a single chapter's formatting.)
+
+Found and fixed, all via precise XML string-replacement (each change
+count-verified before applying, backup and byte-diff against every
+non-`document.xml` package part afterward, confirmed unchanged):
+chapter title 27pt → 26pt and its colour corrected from a slightly-off
+green (`1b3e28`) to the locked Deep Green (`1a4731`); subtitle 14pt →
+13pt; the opening quotation's colour corrected from Deep Green to the
+locked Quote Grey (`3d3d3d`) with an explicit 11pt size added; the
+closing punch-line paragraph ("The Amazon helped me see the system...")
+restyled from bold-italic Deep Green to the locked PQNK Pull Paragraph
+spec (italic-only, Accent Green `2d6a4f`, 13pt) — it was styled like a
+second opening quote in the source, but its role and position match a
+closing pull paragraph, not a quotation. Body-text ink colour corrected
+globally from `1e1e1e` to the locked `1c1c1c` (162 occurrences, both the
+`w:color` and `w14:srgbClr` forms). Section headings needed no change —
+already correct (Arial, 11pt, Accent Green) despite the discrepancy with
+the written standard. 9 straight apostrophes/quotes → curly, matching
+every other chapter. Two structural elements the docx was missing
+entirely (unlike every other chapter) were added: an attribution line
+("Asif Sharif, Lahore, 2008") after the opening quote, and a closing
+`⁂ Chapter Nineteen: …` transition line — both flagged to the author as
+content additions, not pure formatting, since the typography standard
+explicitly scopes itself to formatting only.
+
+Saved as `PQNK_Chapter_18_BOOK_STYLE.docx` in `PQNK_Claude_Work/PQNK Book/`
+for the author to open in Pages and export to PDF. **Not yet applied
+anywhere** — waiting for the author's Pages-exported PDF, which then
+replaces `public/books/natural-ecosystem-science/the-amazon-revelation.pdf`
+(this Mac has no Word/Pages/LibreOffice to export PDFs itself, so this
+round-trip is the established pattern for anything beyond raw text
+correction — see Ch15's PDF re-export for precedent).
