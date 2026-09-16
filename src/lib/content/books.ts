@@ -1749,6 +1749,7 @@ export const books: Book[] = [
           "A prolonged interruption to Asif Sharif's agricultural and commercial work, from the late 1990s through 2006, separated decades of accumulated field knowledge from the business structures through which it had previously been applied. From 2006, rebuilding began with FarmAll Technology, solar irrigation work that exposed the limits of cheaper pumping alone, and a growing written record — the Knowledge Papers — that let PQNK travel independently of its originator and reach farmers directly. The chapter closes Part Three by tracing how field experience, engineering and a self-funded, farmer-connected knowledge network converted decades of practice into a documented natural ecosystem science.",
         publishedDate: "2026-09-17",
         version: "1.0",
+        pdfPath: "/books/natural-ecosystem-science/adversity-as-laboratory.pdf",
         body: [
   { type: "openingQuote", text: "“I feel honoured and proud to have made that sacrifice in service of my fellow farming community.”" },
   { type: "attribution", text: "Asif Sharif" },
