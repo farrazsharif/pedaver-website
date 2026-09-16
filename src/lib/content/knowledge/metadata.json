@@ -15104,4 +15104,79 @@
 }
 ]
 }
+,
+{
+"slug":"pqnk-integrated-poultry-production",
+"primarySubject":"A point-by-point PQNK response to a widely circulated critique of industrial poultry, separating well-supported welfare/antimicrobial/manure concerns from overstated hormone and disease claims, and proposing a closed-loop PQNK Integrated Poultry Production model that traces the bird back to the soil that grew its feed",
+"questionsAnswered":[
+"Is the six-week broiler grown with hormones, or is something else responsible for how fast it reaches slaughter weight?",
+"Should I care whether my chicken feed is GMO, or does how the crop was farmed matter more?",
+"Why does PQNK connect poultry farming back to soil health at all?",
+"Is chicken manure a pollutant, or is it only a problem in certain conditions?",
+"Why does PQNK say routine antibiotic use in healthy birds is a concern even without a specific disease claim?",
+"Does a brown or desi egg mean better nutrition than a white or industrial egg?",
+"Can a single water-use or carbon number per chicken be used to compare production systems fairly?",
+"What is PQNK Integrated Poultry Production, and how is it different from organic or free-range poultry?",
+"What should actually be measured to compare conventional, organic and PQNK poultry systems?"
+],
+"keywords":[
+"PQNK poultry",
+"industrial chicken critique",
+"broiler growth hormones",
+"EFSA broiler welfare",
+"antimicrobial resistance poultry",
+"chicken feed GMO",
+"poultry manure pollution",
+"River Wye phosphorus",
+"egg nutrient composition",
+"closed-loop livestock",
+"feed-to-soil chain",
+"poultry water footprint"
+],
+"geography":"Global",
+"crops":[
+"Maize (Corn)",
+"Soybean"
+],
+"fieldProblems":[
+"Animal Health / Welfare / Product Quality",
+"External Input Dependency",
+"Waste Accumulation / Disposal",
+"Contamination / Residue / Food Safety Risk",
+"Macro / Policy-Level Externalities"
+],
+"problemFamily":[
+"Yield & Produce Quality"
+],
+"fieldPractices":[
+"Livestock/Aquaculture Integration",
+"Closed-Loop Input Management",
+"Biological Nutrient Cycling",
+"Crop Diversification"
+],
+"machineryTools":[],
+"climateType":[
+"Global / Systemic (not climate-specific)"
+],
+"scientificDomains":[
+"Nutrition",
+"Food Quality",
+"Soil",
+"Biodiversity"
+],
+"pqnkPrinciples":[],
+"productionStages":[],
+"evidenceType":"External Scientific Evidence",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/food-quality",
+"why":"how production-system choices in poultry, not breed or label, determine measured meat and egg nutrient quality"
+},
+{
+"page":"/science/soil",
+"why":"why the poultry feed chain traces back to soil health rather than starting at the bird"
+}
+]
+}
 ]
