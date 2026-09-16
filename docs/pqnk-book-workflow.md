@@ -1789,3 +1789,65 @@ embedded for client-side use, not a rendered link — confirmed by
 grepping for an actual `href` containing the chapterId, which returns
 only the canonical page URL itself), and "Part Four: The PQNK System"
 transition text present.
+
+### 2026-09-17 — Chapter 21 Word source corrected at the author's request
+
+The author re-saved `PQNK_Chapter_21_PUBLISH_READY.docx/.pdf` believing
+the hero infographic had been replaced; checked and it hadn't — new
+timestamp and file hash, but the embedded image (`image1.tif`) and all
+document text were byte-for-byte/character-for-character identical to
+the version reviewed above, confirmed by SHA-256 and a full-text diff.
+Sent the author a render of the image to make the problem visible (the
+prison-cell artwork and its caption). Author then asked Claude to make
+the corrections directly and save a file for their review before any
+republish — a different pattern from the docx round-trip used for
+Ch18/19 typography (there the author does the Word edit; here Claude
+does, because there's no Word/Pages on this Mac to *view* the result,
+but XML-level removal of a drawing element doesn't require rendering to
+verify correctness).
+
+**What was fixed, directly in `word/document.xml` via precise XML
+surgery** (backed up first to `backups/PQNK_Chapter_21_PUBLISH_READY.pre-correction.20260917-040513.docx`):
+- Removed the single `<w:drawing>` element (and its containing `<w:r>`
+  run) that embeds the prison-cell hero infographic — isolated by
+  finding the sole `rId4` reference, confirmed exactly one enclosing
+  `<w:r>...</w:r>` via count checks before removal, then removed that
+  run entirely. The image was a floating anchor (`wp:anchor`,
+  `wrapTopAndBottom`) sharing a paragraph with the chapter title text
+  (same docx quirk noted for Ch18's hero-image anchor bug) — removing
+  just the drawing run leaves the title paragraph and its own text run
+  intact.
+- Removed the now-orphaned `rId4` relationship entry from
+  `word/_rels/document.xml.rels` and deleted `word/media/image1.tif`
+  from the package, so the corrected docx carries no trace of the image
+  at all rather than an unused embed.
+- Applied the same four text corrections already live on the web (see
+  the Chapter 21 publish entry above): the opening quote, the
+  imprisonment/legal-process sentence, "The imprisonment formed part of
+  this wider interruption," and "After release in 2006." Each
+  old-string was count-verified to occur exactly once before replacing.
+
+**Verification**: re-extracted the corrected docx and confirmed zero
+occurrences of imprison/tyrann/oppress/"After release"/"business
+dispute"/"legal process" anywhere in the text, zero `<w:drawing>`
+elements remaining, and the four corrected sentences present with
+exactly the intended wording. Byte-diffed every other package part
+(`styles.xml`, `settings.xml`, `header1.xml`, `footer1.xml`,
+`theme1.xml`, `fontTable.xml`, both `docProps` files, `[Content_Types].xml`,
+`_rels/.rels`) against the pre-correction extraction — all identical,
+confirming only `document.xml` and its own rels file changed. Opened
+the result with `python-docx` to confirm the package isn't corrupted
+(40 paragraphs read back correctly, first paragraph "CHAPTER
+TWENTY-ONE").
+
+Saved as `PQNK_Chapter_21_CORRECTED.docx` in `PQNK Book/` (not
+overwriting `PQNK_Chapter_21_PUBLISH_READY.docx`, so the author's own
+file and Claude's correction pass stay distinguishable) — **for the
+author's review only, not published**. This docx now has no title
+graphic at all (matches the current live web state: text-only, no
+hero image). **Still needed before this can offer a PDF download
+again**: a compliant replacement graphic, or a decision to publish the
+chapter permanently without one — the author's call, not made here.
+No PDF was regenerated (no Word/Pages/LibreOffice on this Mac); the
+author will need to open this docx and export a fresh PDF themselves if
+they want one, per the established round-trip pattern.
