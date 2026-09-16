@@ -297,6 +297,21 @@ export const fieldEvidence: FieldEvidence[] = [
     videoId: "4PVrRQ05kU4",
     tags: ["peanut", "groundnut", "mulching", "waterlogging resistance", "monsoon rain", "raised beds", "soil structure", "water infiltration"],
   },
+  {
+    feNumber: 17,
+    title: "Citrus (Lemon) on PQNK — No Agrochemicals, Farmer's Best Result Yet",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
+    cropOrTopic: "Citrus (Lemon)",
+    year: 2026,
+    date: "2026-09-16",
+    summary:
+      "A farmer in a lemon-growing belt reports that most growers around him are spraying pesticide heavily against recurring pest and disease pressure, while his own PQNK crop has had no spray applied at all. He describes this season's result as the best he has ever seen — better even than last year's already strong result.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/SSE1SRp-P7M",
+    videoId: "SSE1SRp-P7M",
+    relatedCropSlug: "citrus-kinnow",
+    tags: ["citrus", "lemon", "zero spray", "no agrochemicals", "pest pressure"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
