@@ -152,6 +152,7 @@ re-export can silently carry an old embedded image.
 | 19 | `the-first-experiment` | The First Experiment | **Published + LIVE 2026-09-16 (v1.0), commit `d3a468e` — republished after explicit author approval, from `PQNK_Chapter_19_BOOK_STYLE - Approved.docx/.pdf`.** | Withdrawn 2026-09-15 (see the withdrawal §7 entry), then rebuilt from a fresh approved source and republished. Structure unchanged from the withdrawn version (see the original 2026-09-15 §4 history for the full content summary — founding 2009 trial, careful 70%-vs-92% separation, deduped Q&A panel, 5 images). **Acreage precision fix applied before publish:** the author's newly-approved "The Results" paragraph stated the acreage breakdown explicitly (44 acres total = 4 acres flooded control + 40 acres raised beds, with hectare conversions and a 5.20 t/acre figure added) but, in doing so, dropped the sentence that kept the monitored-block distinct from the full 40 acres — as written, it attributed the 12.84 t/ha crop-cut result to "the raised-bed crop" across all 40 acres, contradicting the chapter's own earlier, unchanged sentence that the yield came from "the monitored 8-hectare block" (a 20-acre sub-block within the 40). Fixed by merging: kept every number the author added (44/4/40 acres, 17.8/1.6/16.2 ha, 5.20 t/acre) and restored the monitored-block qualifier and the "avoids turning a sub-block result into a claim about every acre" caution sentence. Flagged to the author before publishing rather than silently corrected. **"Hanoi" resolved by removal, not addition:** the author's own edit of "Publication and Its Reception" dropped "from Hanoi" from "The important lesson from Hanoi and from the years that followed..." rather than adding the introducing sentence Claude had drafted for the web-only version earlier — the web content was rebuilt from this approved docx to match (no Hanoi/Vietnam sentence), keeping web and source in sync rather than carrying forward a patch the author's own edit had superseded. **Duplicate Q&A panel bug persisted through every docx revision** (now anchored to the "Reduced disturbance" paragraph instead of "No continuous flooding" — the anchor moved when nearby text was edited, but the underlying two-floating-tables defect was never fixed at the source) — deduped in the web body as before; the underlying docx defect is cosmetic-only in the PDF (both panels render, just twice) and doesn't block publishing on that basis alone. Own build mistake caught during pre-publish preview: the hero infographic was accidentally dropped when the body was rebuilt from the newly-approved source — caught because it showed 4 images loaded instead of 5, fixed before commit. Archived to `Published Chapters/`. Hands to Chapter Twenty, `the-naming-of-pqnk`. **Image placement corrected same day, author-flagged:** the author pointed out the harvest/tillers photo appeared to be missing on the web and that image sequence didn't match the PDF. Root cause: the initial build had redistributed all 6 images across sections by narrative guess (hero mid-chapter, one photo per design principle) instead of checking the PDF's actual layout — the same class of mistake made and caught on Chapter 18's hero image, repeated here at larger scale. Checked the approved PDF's true page-by-page image/text y-coordinates directly: the hero infographic sits at the very top (before the opening quote, matching Ch18's corrected pattern), and all 5 field photos are clustered together as one consecutive block, immediately after the "Flooded rice soils…" paragraph in "The Problem With Paddy" (in-order: AAJ TV segment, irrigation/siphon tubes, weeder-aerator, harvest/tillers, the nursery+transplanter+irrigation composite) — none of them are in "The Design of the First Experiment" or "The Results" sections at all, where the initial build had scattered them by topical guess. Rebuilt to match exactly; also caught that the irrigation/siphon-tubes photo (`image3.png` in the source) had never been copied to `public/` at all in the first build — genuinely absent, not just misplaced. All 6 images renumbered `ch19-img-01` through `06` in true reading order. |
 | 20 | `the-naming-of-pqnk` | The Naming of PQNK | **Published + LIVE** 2026-09-17 (v1.0), commit `d6f8a9f` | Body from `PQNK_Chapter_20_PUBLISH_READY - Approved.docx/.pdf`. Traces the name from "Paradoxical Agriculture" (Prof. Dr. Norman Uphoff's description of the 2009 rice results) to PQNK, unpacks the name word by word, explains why PQNK is deliberately not organic/regenerative/natural farming, codifies the eight-step transition protocol and four governing rules, covers the tools, the pronunciation, and the five-level production framework. 9 images (title-page group photo + machinery montage; a self-captioned field-design diagram; a self-captioned bed-dimension diagram; subsoiler + wash-field photos; a mulcher photo; a two-up furrow-irrigation pair), all placed by direct PDF y-coordinate verification, not docx anchors or narrative guess — see the §7 entry for the full mapping. The docx's "word by word" name table (2 genuinely duplicate `<w:tbl>` elements at the source, same defect class as Ch19's Q&A panel) has no `table` block type in `books.ts` (closing-out phase, no new structural work, per the Ch7/Ch11/Ch13 precedent) — rendered as five bold-lead paragraphs instead, deduped to one copy. Two author corrections from review folded in: the missing sentence ("This production system suppressed pests...") and the 2017/2011 date conflict resolved by removing the specific year ("Later, the name PQNK... was adopted"); a small grammatical gap the author's own edit left behind ("adoption of the PQNK came" → "adoption of the PQNK name came") was fixed during transcription. Hands to Chapter Twenty-One, `adversity-as-laboratory`. |
 | 21 | `adversity-as-laboratory` | Adversity as Laboratory | **Published + LIVE** 2026-09-17 (v1.0), commits `c69a607` (web body) + `58ba457` (PDF added) | Closes Part Three. Body originally from `PQNK_Chapter_21_PUBLISH_READY.docx`, **substantially rewritten before publish to comply with the binding Quiet Years rule** (`memory/feedback_quiet_years_treatment.md`, and this doc's 2026-09-14 entry) — the source docx repeatedly used "imprisoned"/"imprisonment," "After release in 2006," and "a business dispute...resolved through the Pakistani legal process," and its opening quote read "I feel honoured and proud to have withstood oppression and tyranny..." All rewritten to the established Ch16 graceful framing ("circumstances outside his control," "personal sacrifice," no specifics) — see the §7 entries for the exact before/after text and the full correction history. **PDF added 2026-09-17**: the source `PQNK_Chapter_21_PUBLISH_READY.pdf`'s own hero infographic (`image1.tif`, AI-generated) depicted a man behind prison bars over the quote "They imprisoned the man. They could not imprison the observations." — the same violation baked into the image itself. Claude removed the drawing element and its text violations directly from the docx via XML surgery (backed up first), saved as `PQNK_Chapter_21_CORRECTED.docx` for the author's review; author opened it, approved, and exported `PQNK_Chapter_21_CORRECTED.pdf` (5 pages, zero embedded images, text verified identical to the live web body) — now published as the chapter's download PDF. Chapter is text-only by design: no title graphic, matching the corrected docx exactly. Chapter's closing `transition` hands to Part Four ("The PQNK System, How It Works," matching the registered `part-four` title exactly — the docx's own closing line said "The Complete Protocol," left as a cosmetic difference between docx and web since the web transition already reads correctly). Ch20's own `transition` corrected in the same pass — it said "The Years That Built the Knowledge System," not matching Ch21's actual subtitle "The Years That Forged the PQNK Knowledge System." Archived to `Published Chapters/` as `PQNK_Book_Chapter_21_Adversity_as_Laboratory.docx/.pdf`. |
+| 22 | `the-four-prohibitions-and-four-principles` | The Four Governing Rules | **Published + LIVE** 2026-09-17 (v1.0), commit `c29cdfd` | Opens Part Four. Body from `PQNK_Chapter_22_PUBLISH_READY - Approved.docx/.pdf`. Title/subtitle corrected from the `in-preparation` stub's guess ("The Four Prohibitions and Four Principles" / "The Litmus Test for True Natural Agriculture") to the approved source's actual title/subtitle: "The Four Governing Rules" / "The Litmus Test for PQNK Agriculture" (same pattern as Ch10/Ch15/Ch16/Ch21 — chapterId stays permanent, only title/subtitle sync to the source). Establishes the four biological rules (no inundation, no tillage after conversion, continuous organic soil cover, encouraged biodiversity) as governing boundaries distinct from the engineering that implements them (permanent raised beds, SIPP/VIPP, SMM, cover cropping), then gives the four rules as a field diagnostic and lists the four recurring implementation misapplications. All figures (42-inch bed, 18-inch furrow, 22-inch hardpan depth, 45–65 HP / 58–60 inch tyre spacing, 9–11 inch narrow tyres, 4 kg NP transitional dose, 10 percent pest threshold) cross-checked against `resources.ts`/`machines.ts`/`scienceProductionArchitecture.ts`/`papers.ts` — all consistent, no changes needed. **Infographic correction caught before publish, not after:** the first "Approved" export (11:02) carried two infographics — a well-hedged hero panel, and a second "Four Absolute Prohibitions" panel with two overstated claims flagged during review: point 1 said soil microbes "cannot survive" in flooded conditions (contradicts the chapter's own text on methanogenesis under anaerobic conditions — flooded soils shift the microbial community, they do not sterilise it) and point 4 ("Monocultures...invite pest and disease epidemics") used alarmist language inconsistent with the chapter's hedged register; the author independently flagged point 4 at the same time. Since both claims were baked into raster image text (not editable like the docx), the options put to the author were: publish without the second graphic, hold it for a corrected regeneration, or publish as-is. **The author regenerated a single corrected replacement** (11:17 re-save) that folds both panels into one hero graphic with hedged, accurate language throughout (e.g. "creates conditions for anaerobic processes (e.g. methane)"; "can increase the risk of pest outbreaks" rather than "invite...epidemics") — extracted from PDF p1 at 1800px as `ch22-img-01.png`, placed after the title per the established Ch10/Ch14 pattern, with a `caption` block summarising it. `chapterSpeech.ts`: added `NP` → `N P` (the transitional dose acronym wasn't previously covered; `NPK` already was). Hands to Chapter Twenty-Three, `the-eight-step-transition-protocol`. **Verified live 2026-09-17** — page, image and PDF all HTTP 200 on pedaver.com, PDF SHA-256 (`8c561540…`) and image SHA-256 (`837267af…`) both match the local source byte-for-byte. |
 
 ### Deployment — automatic via GitHub Actions, not manual
 
@@ -1879,3 +1880,80 @@ correct path. Archived `PQNK_Chapter_21_CORRECTED.docx/.pdf` to
 copying the PDF from the deployed/verified file per the standing
 archive rule. This fully closes out Chapter 21 and Part Three — no
 open items remain.
+
+### 2026-09-17 — Chapter 22 built and published, opens Part Four; author caught and fixed an overstated infographic before publish
+
+`PQNK_Chapter_22_PUBLISH_READY - Approved.docx/.pdf` extracted fresh (no
+prior review). Structurally clean: 0 straight quotes, 0 em-dashes, no
+placeholders, 118 paragraphs. All engineering figures (42-inch bed,
+18-inch furrow top/8-inch bottom/8-inch depth, 22-inch hardpan-break
+depth, 45–65 HP tractors with 58–60 inch tyre spacing, 9–11 inch narrow
+tyres, 4 kg NP transitional dose, 10 percent pest-damage threshold)
+cross-checked against `resources.ts`, `machines.ts`,
+`scienceProductionArchitecture.ts` and `papers.ts` — all consistent
+with the established figures, nothing to correct.
+
+**Title/subtitle corrected from the stub**, same pattern as Ch10/15/16/21:
+the `in-preparation` placeholder guessed "The Four Prohibitions and Four
+Principles" / "The Litmus Test for True Natural Agriculture"; the
+approved source's actual title/subtitle are "The Four Governing Rules" /
+"The Litmus Test for PQNK Agriculture". `chapterId` left unchanged
+(permanent).
+
+**Infographic problem caught during review, before publish.** The first
+"Approved" export (saved 11:02) carried two infographics: a well-hedged
+hero comparison panel ("The Four Governing Rules of PQNK"), and a second
+panel ("Four Absolute Prohibitions") with two claims that overstated the
+science relative to the chapter's own careful hedging:
+- Point 1 ("No Soil Inundation With Water") read *"Microbes are
+  terrestrial; they cannot survive in oxygen-depleted, waterlogged
+  conditions."* This directly contradicts the chapter's own body text
+  (`One. No inundation`): *"strongly reduced conditions can favour
+  processes such as methanogenesis"* — an anaerobic microbial process.
+  Flooded soils shift the microbial community toward anaerobic
+  organisms; they do not sterilise it. Real flooded-soil systems (paddy
+  rice) sustain active, if different, microbial ecology.
+- Point 4 ("No Uni-Cropping") read *"Monocultures destroy biodiversity,
+  eliminate ecological interactions, and invite pest and disease
+  epidemics."* — alarmist language ("epidemics") inconsistent with the
+  chapter's hedged register throughout. The author independently flagged
+  this same point before Claude's flag was even shown to them.
+
+Since the offending text was baked into raster image content (not
+editable like the docx body), the three options put to the author were:
+publish without the second graphic, hold it for a corrected
+regeneration, or publish as-is. **The author regenerated a single
+replacement graphic** (re-saved 11:17/11:18) that folds both panels'
+content into one hero comparison, with both problems fixed: point 1 now
+reads *"Flooding reduces oxygen in the soil, suppresses aerobic biology
+and creates conditions for anaerobic processes (e.g. methane)"*
+(consistent with the body's methanogenesis point), and the
+monoculture panel now reads *"can increase the risk of pest outbreaks"*
+(hedged, no "epidemics"). The orphaned caption paragraph that had sat
+under the old second graphic (mismatched, reading "Four Governing
+Rules..." under a panel titled "Four Absolute Prohibitions") was also
+removed from the docx in the same re-save — confirmed by a fresh
+paragraph-by-paragraph extraction showing only one embedded image left
+in the PDF.
+
+Extracted the corrected graphic from PDF page 1 at 1800px width
+(`ch22-img-01.png`) and placed it after the title, before the epigraph —
+the established Ch10/Ch14 hero-image pattern — with a `caption` block
+summarising the four-panel comparison. `chapterSpeech.ts`: added
+`NP` → `N P` (the transitional-dose acronym was not previously covered;
+`NPK` already was, and the new rule's word-boundary regex does not
+collide with it). `npm run build` passed; previewed locally and
+confirmed the page renders the corrected image, correct title/subtitle,
+and the "Chapter Twenty-Three: The Eight-Step Transition Protocol"
+transition line.
+
+Pushed as commit `c29cdfd`; deploy completed `success` (run
+`35189791400`). **Verified live**: page, PDF and image all HTTP 200 on
+pedaver.com; PDF SHA-256 (`8c561540…`) and image SHA-256 (`837267af…`)
+both match the local source byte-for-byte. Archived
+`PQNK_Chapter_22_PUBLISH_READY - Approved.docx/.pdf` to
+`Published Chapters/` as `PQNK_Book_Chapter_22_The_Four_Governing_Rules.docx/.pdf`,
+copying the PDF from the deployed/verified file per the standing
+archive rule. Hands to Chapter Twenty-Three,
+`the-eight-step-transition-protocol` — no source file for it yet as of
+this session.
