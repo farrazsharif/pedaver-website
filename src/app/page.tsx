@@ -40,20 +40,33 @@ type NewArrival = {
   external?: boolean;
 };
 
+type NewArrivalGroup = {
+  key: string;
+  label: string;
+  href: string;
+  items: NewArrival[];
+};
+
 /**
  * Newest item of each content type, using each type's own reliable
  * recency signal (permanent, arrival-ordered KP/FE numbers; explicit
  * publishedDate for chapters) rather than a single merged date sort —
  * Field Evidence records don't reliably carry a `date`, so cross-type
- * date comparison isn't trustworthy.
+ * date comparison isn't trustworthy. Grouped by category, each under its
+ * own banner, rather than flattened into one undifferentiated list.
  */
-function getNewArrivals(): NewArrival[] {
+function getNewArrivalGroups(): NewArrivalGroup[] {
+  const groups: NewArrivalGroup[] = [];
+
   const latestPapers = papers.slice(-2).reverse().map((p) => ({
     key: `kp-${p.kpNumber}`,
     badge: formatKpNumber(p.kpNumber),
     title: p.title,
     href: `/papers/${p.slug}`,
   }));
+  if (latestPapers.length > 0) {
+    groups.push({ key: "papers", label: "Knowledge Papers", href: "/papers", items: latestPapers });
+  }
 
   const latestFieldEvidence = fieldEvidence
     .filter((f) => f.sourceUrl)
@@ -66,13 +79,18 @@ function getNewArrivals(): NewArrival[] {
       href: f.sourceUrl!,
       external: true,
     }));
+  if (latestFieldEvidence.length > 0) {
+    groups.push({ key: "field-evidence", label: "Knowledge Exchange", href: "/field-evidence", items: latestFieldEvidence });
+  }
 
-  const latestChapters = books
+  const chapterEntries = books
     .flatMap((book) => getPublishedChapters(book).map((chapter) => ({ book, chapter })))
     .filter(({ chapter }) => chapter.publishedDate)
     .sort((a, b) => (b.chapter.publishedDate! > a.chapter.publishedDate! ? 1 : -1))
-    .slice(0, 2)
-    .map(({ book, chapter }) => {
+    .slice(0, 2);
+  if (chapterEntries.length > 0) {
+    const book = chapterEntries[0].book;
+    const latestChapters = chapterEntries.map(({ chapter }) => {
       const chapterNumber = getChapterDisplayNumber(book, chapter.chapterId);
       return {
         key: `chapter-${chapter.chapterId}`,
@@ -81,8 +99,10 @@ function getNewArrivals(): NewArrival[] {
         href: `/books/${book.bookId}/${chapter.chapterId}`,
       };
     });
+    groups.push({ key: "book-chapters", label: book.title, href: `/books/${book.bookId}`, items: latestChapters });
+  }
 
-  return [...latestPapers, ...latestFieldEvidence, ...latestChapters];
+  return groups;
 }
 
 export default function HomePage() {
@@ -91,7 +111,7 @@ export default function HomePage() {
   const featuredVideo = videos.find((v) => v.videoId === featuredVideoId);
   const storyVideo = videos.find((v) => v.videoId === storyVideoId);
   const voicePreview = loadFarmerVoicePreview(3);
-  const newArrivals = getNewArrivals();
+  const newArrivalGroups = getNewArrivalGroups();
 
   const websiteJsonLd = {
     "@context": "https://schema.org",
@@ -147,30 +167,47 @@ export default function HomePage() {
       </section>
 
       {/* NEW ARRIVALS — small, glanceable panel for a returning visitor to spot
-          recently published content without digging through each listing. */}
-      {newArrivals.length > 0 && (
+          recently published content without digging through each listing.
+          Grouped under a banner per category (Knowledge Papers, Knowledge
+          Exchange, book chapters) rather than one flat, undifferentiated list. */}
+      {newArrivalGroups.length > 0 && (
         <Section id="new-arrivals" className="!py-8">
           <div className="mx-auto max-w-4xl">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">New on Pedaver</p>
-            <ul className="mt-4 grid gap-3 sm:grid-cols-2">
-              {newArrivals.map((item) => (
-                <li key={item.key}>
+            <div className="mt-4 space-y-6">
+              {newArrivalGroups.map((group) => (
+                <div key={group.key}>
                   <Link
-                    href={item.href}
-                    target={item.external ? "_blank" : undefined}
-                    rel={item.external ? "noopener noreferrer" : undefined}
-                    className="group flex items-start gap-3 rounded-xl border border-border bg-card p-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                    href={group.href}
+                    className="group flex items-center justify-between rounded-lg bg-primary-dark px-4 py-2.5 text-cream transition hover:bg-primary"
                   >
-                    <span className="mt-0.5 flex-none rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-semibold uppercase tracking-wide text-primary">
-                      {item.badge}
-                    </span>
-                    <span className="text-sm font-medium leading-snug text-ink group-hover:text-primary">
-                      {item.title}
+                    <span className="text-sm font-bold leading-snug sm:text-base">{group.label}</span>
+                    <span className="flex-none text-xs font-semibold uppercase tracking-wide text-cream/80 group-hover:text-cream">
+                      See all →
                     </span>
                   </Link>
-                </li>
+                  <ul className="mt-3 grid gap-3 sm:grid-cols-2">
+                    {group.items.map((item) => (
+                      <li key={item.key}>
+                        <Link
+                          href={item.href}
+                          target={item.external ? "_blank" : undefined}
+                          rel={item.external ? "noopener noreferrer" : undefined}
+                          className="group flex items-start gap-3 rounded-xl border border-border bg-card p-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                        >
+                          <span className="mt-0.5 flex-none rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-semibold uppercase tracking-wide text-primary">
+                            {item.badge}
+                          </span>
+                          <span className="text-sm font-medium leading-snug text-ink group-hover:text-primary">
+                            {item.title}
+                          </span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         </Section>
       )}

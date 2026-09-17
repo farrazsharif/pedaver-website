@@ -249,7 +249,7 @@ export default function FieldEvidenceBrowser({ records }: { records: FieldEviden
               restoringFromURL.current = false;
               setQueryInput(e.target.value);
             }}
-            placeholder="FE-002, a crop, topic, or keyword…"
+            placeholder="KE-002, a crop, topic, or keyword…"
             className="w-full rounded-full border border-border bg-card py-3.5 pl-12 pr-4 text-base text-ink shadow-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
           />
         </div>

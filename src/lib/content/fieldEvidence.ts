@@ -318,13 +318,13 @@ export function getFieldEvidenceByFeNumber(feNumber: number) {
   return fieldEvidence.find((f) => f.feNumber === feNumber);
 }
 
-/** Formats a permanent Field Evidence catalogue ID for display, e.g. 2 -> "FE-002". */
+/** Formats a permanent Field Evidence catalogue ID for display, e.g. 2 -> "KE-002" (displayed as "KE" to match the Knowledge Exchange section name; the internal field/id remain "fe" for stability). */
 export function formatFeNumber(feNumber: number) {
-  return `FE-${String(feNumber).padStart(3, "0")}`;
+  return `KE-${String(feNumber).padStart(3, "0")}`;
 }
 
-/** Parses a user-entered FE reference ("FE-002", "FE002", "fe-2") into its numeric feNumber, or null. */
+/** Parses a user-entered KE/FE reference ("KE-002", "FE-002", "KE002", "ke-2") into its numeric feNumber, or null. */
 export function parseFeQuery(query: string): number | null {
-  const m = query.trim().match(/^fe-?0*(\d+)$/i);
+  const m = query.trim().match(/^(?:ke|fe)-?0*(\d+)$/i);
   return m ? Number(m[1]) : null;
 }

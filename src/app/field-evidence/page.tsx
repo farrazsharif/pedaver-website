@@ -75,16 +75,16 @@ export default function FieldEvidencePage() {
             </TrackedExternalChannelLink>
           </div>
           <p className="mx-auto mt-5 max-w-xl text-xs text-ink-soft">
-            New selected evidence will continue to be indexed here with permanent FE numbers,
+            New selected evidence will continue to be indexed here with permanent KE numbers,
             while the original video collections remain on their source platforms.
           </p>
         </div>
       </Section>
 
       <Section muted>
-        <h2 className="text-center text-xl font-bold text-primary-dark">Find a crop, an FE number</h2>
+        <h2 className="text-center text-xl font-bold text-primary-dark">Find a crop, a KE number</h2>
         <p className="mx-auto mt-1 max-w-2xl text-center text-sm text-ink-soft">
-          Search by FE number, crop, topic, evidence type, or keywords.
+          Search by KE number, crop, topic, evidence type, or keywords.
         </p>
         <div className="mt-6">
           <FieldEvidenceBrowser records={fieldEvidence} />
@@ -95,7 +95,7 @@ export default function FieldEvidencePage() {
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-lg font-bold text-primary-dark">More From Pedaver&rsquo;s Knowledge Exchange</h2>
           <p className="mx-auto mt-2 max-w-xl text-sm text-ink-soft">
-            Related material not yet folded into the FE-numbered index above.
+            Related material not yet folded into the KE-numbered index above.
           </p>
           <div className="mt-5 flex flex-wrap justify-center gap-3">
             {/* Farmer Advisory link hidden until the four PQNK books are
