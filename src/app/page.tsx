@@ -7,7 +7,7 @@ import { cropImages } from "@/lib/content/cropImages";
 import { videos } from "@/lib/content/videos";
 import { papers, formatKpNumber } from "@/lib/content/papers";
 import { fieldEvidence, formatFeNumber } from "@/lib/content/fieldEvidence";
-import { books, getPublishedChapters } from "@/lib/content/books";
+import { books, getPublishedChapters, getChapterDisplayNumber } from "@/lib/content/books";
 import Section from "@/components/Section";
 import VideoEmbed from "@/components/VideoEmbed";
 import TrackedExternalChannelLink from "@/components/analytics/TrackedExternalChannelLink";
@@ -67,19 +67,22 @@ function getNewArrivals(): NewArrival[] {
       external: true,
     }));
 
-  const latestChapter = books
+  const latestChapters = books
     .flatMap((book) => getPublishedChapters(book).map((chapter) => ({ book, chapter })))
     .filter(({ chapter }) => chapter.publishedDate)
     .sort((a, b) => (b.chapter.publishedDate! > a.chapter.publishedDate! ? 1 : -1))
-    .slice(0, 1)
-    .map(({ book, chapter }) => ({
-      key: `chapter-${chapter.chapterId}`,
-      badge: "Book Chapter",
-      title: chapter.title,
-      href: `/books/${book.bookId}/${chapter.chapterId}`,
-    }));
+    .slice(0, 2)
+    .map(({ book, chapter }) => {
+      const chapterNumber = getChapterDisplayNumber(book, chapter.chapterId);
+      return {
+        key: `chapter-${chapter.chapterId}`,
+        badge: chapterNumber ? `Chapter ${chapterNumber}` : "Book Chapter",
+        title: chapter.title,
+        href: `/books/${book.bookId}/${chapter.chapterId}`,
+      };
+    });
 
-  return [...latestPapers, ...latestFieldEvidence, ...latestChapter];
+  return [...latestPapers, ...latestFieldEvidence, ...latestChapters];
 }
 
 export default function HomePage() {
