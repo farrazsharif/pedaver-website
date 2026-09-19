@@ -312,6 +312,21 @@ export const fieldEvidence: FieldEvidence[] = [
     relatedCropSlug: "citrus-kinnow",
     tags: ["citrus", "lemon", "zero spray", "no agrochemicals", "pest pressure"],
   },
+  {
+    feNumber: 18,
+    title: "Papaya on PQNK — Farmer from Nepal",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
+    cropOrTopic: "Papaya",
+    year: 2026,
+    date: "2026-09-19",
+    summary:
+      "A papaya farmer in Nepal explains how organic mulch on PQNK raised beds gives soil microbes both an organic-matter food source and a place to live, keeps the soil under the mulch noticeably cooler than the exposed surface, and lets roots breathe rather than sitting waterlogged. He contrasts this with chemical-input farming, where poison compounds poison and nutrition quality suffers, arguing that leaving the soil's own biological system alone lets it do its own work — protecting the soil ecosystem, he says, ultimately protects people too.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/7sybBx-qpQ0",
+    videoId: "7sybBx-qpQ0",
+    location: "Nepal",
+    tags: ["papaya", "mulching", "soil microbes", "raised beds", "soil temperature", "root aeration"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
