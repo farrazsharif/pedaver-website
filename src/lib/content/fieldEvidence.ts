@@ -327,6 +327,20 @@ export const fieldEvidence: FieldEvidence[] = [
     location: "Nepal",
     tags: ["papaya", "mulching", "soil microbes", "raised beds", "soil temperature", "root aeration"],
   },
+  {
+    feNumber: 19,
+    title: "SIPP in Operation — Planting in a Matured Crop",
+    evidenceTypes: ["Field Evidence", "Machinery Demonstration"],
+    cropOrTopic: "SIPP / Precision Planting",
+    year: 2026,
+    date: "2026-09-20",
+    summary:
+      "A short field clip of the SIPP (Slit Insertion Precision Planter) operating in a bed where the standing crop has already matured, placing seed through the existing crop and residue without disturbing it — a practical demonstration of the crop-in-crop, no-till planting capability described in the PQNK machinery chapters.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/gQF3kUvAV60",
+    videoId: "gQF3kUvAV60",
+    tags: ["SIPP", "precision planting", "crop-in-crop", "no-till", "machinery demonstration"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
