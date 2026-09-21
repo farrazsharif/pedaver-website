@@ -341,6 +341,20 @@ export const fieldEvidence: FieldEvidence[] = [
     videoId: "gQF3kUvAV60",
     tags: ["SIPP", "precision planting", "crop-in-crop", "no-till", "machinery demonstration"],
   },
+  {
+    feNumber: 20,
+    title: "Gladiolus on PQNK — Early September Planting and Germination",
+    evidenceTypes: ["Field Evidence"],
+    cropOrTopic: "Gladiolus",
+    year: 2026,
+    date: "2026-09-21",
+    summary:
+      "A field update on gladiolus grown under PQNK, planted on 5 September, roughly a month earlier than the previous practice of planting only after October. Germination is described as excellent, with strong leaf colour and growth achieved before any irrigation was given. Planting density was also substantially increased over previous seasons, from a single row on one side of the bed to four rows spanning both sides, including the bed top. A small patch left without mulch after wind disturbed it shows patchier emergence than the surrounding mulched area, illustrating mulch’s role in even germination.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/jCIckx2tmrs",
+    videoId: "jCIckx2tmrs",
+    tags: ["gladiolus", "early planting", "germination", "mulching", "planting density"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
