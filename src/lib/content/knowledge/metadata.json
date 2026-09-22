@@ -15179,4 +15179,77 @@
 }
 ]
 }
+,
+{
+"slug":"wheat-hybrid-and-organic-wheat-through-the-pqnk-lens",
+"primarySubject":"A PQNK critical review of a widely circulated article comparing hybrid and organic wheat, arguing that hybrid is a genetic category and organic is a production standard that cannot be compared as opposites, and applying the seed-is-potential/soil-is-the-production-system framework to wheat breeding, chemical dependence, organic certification, water use and wheat health claims",
+"questionsAnswered":[
+"Is modern wheat really 'hybrid wheat', and does that mean it depends on the same seed companies every season?",
+"Why can't hybrid wheat and organic wheat be judged against each other directly?",
+"Does a semi-dwarf wheat variety inherently need glyphosate or synthetic fertiliser to perform?",
+"Does certified organic wheat guarantee an intact, undisturbed soil-root-microbe relationship?",
+"Is gluten or wheat itself a cause of obesity, or does the evidence support a narrower conclusion?",
+"Is ancient wheat automatically lower in gluten or safer for wheat-sensitive people?",
+"How much water does PQNK Soil Moisture Management save on wheat compared with precision irrigation alone?",
+"Is HB4 genetically engineered wheat the same issue as conventional semi-dwarf wheat breeding?"
+],
+"keywords":[
+"hybrid wheat vs organic wheat",
+"semi-dwarf wheat genetics",
+"F1 hybrid wheat",
+"glyphosate wheat",
+"pre-harvest desiccation",
+"organic wheat certification",
+"celiac disease prevalence",
+"non-celiac gluten sensitivity",
+"Wheat Belly claims",
+"ancient wheat gluten content",
+"HB4 drought-tolerant wheat",
+"PQNK Soil Moisture Management wheat"
+],
+"geography":"Global",
+"crops":[
+"Wheat"
+],
+"fieldProblems":[
+"Terminology / Framework Confusion",
+"External Input Dependency",
+"Contamination / Residue / Food Safety Risk",
+"Declining Nutrient Density in Food",
+"Macro / Policy-Level Externalities"
+],
+"problemFamily":[
+"Yield & Produce Quality"
+],
+"fieldPractices":[
+"Variety / Seed Selection",
+"Reduced/Eliminated Chemical Input",
+"Soil Moisture Management (SMM)"
+],
+"machineryTools":[],
+"climateType":[
+"Global / Systemic (not climate-specific)"
+],
+"scientificDomains":[
+"Plants",
+"Soil",
+"Nutrition",
+"Food Quality"
+],
+"pqnkPrinciples":[],
+"productionStages":[],
+"evidenceType":"External Scientific Evidence",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/plants",
+"why":"why a wheat genotype's tillering, grain filling and quality cannot be judged apart from its production environment"
+},
+{
+"page":"/science/food-quality",
+"why":"how to separate well-supported wheat health concerns from overstated population-wide claims"
+}
+]
+}
+
 ]
