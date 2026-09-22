@@ -355,6 +355,20 @@ export const fieldEvidence: FieldEvidence[] = [
     videoId: "jCIckx2tmrs",
     tags: ["gladiolus", "early planting", "germination", "mulching", "planting density"],
   },
+  {
+    feNumber: 21,
+    title: "One Acre Prosperity Model on PQNK — Fruit Tree Biodiversity",
+    evidenceTypes: ["Field Evidence"],
+    cropOrTopic: "One Acre Prosperity",
+    year: 2026,
+    date: "2026-09-22",
+    summary:
+      "A field walkthrough of the fruit-tree component of the One Acre Prosperity model under PQNK, moving between nectarine, guava, date, lemon and peach trees at different growth and fruiting stages within the same managed plot. The clip illustrates the perennial fruit layer of the OAP design described in the PQNK book's Closed-Loop Farm chapter, showing several species carrying fruit simultaneously on the same acre rather than a single-crop planting.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/E6TNbYvCkT8",
+    videoId: "E6TNbYvCkT8",
+    tags: ["one acre prosperity", "biodiversity", "fruit trees", "nectarine", "guava", "peach", "date", "lemon"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
