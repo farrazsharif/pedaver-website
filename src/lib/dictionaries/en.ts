@@ -193,7 +193,7 @@ const en = {
         {
           audience: "Scientists & Researchers",
           label: "Knowledge Papers",
-          body: "Search 186 papers in your own words, or browse by crop, problem, or field practice.",
+          body: "Search {count} papers in your own words, or browse by crop, problem, or field practice.",
           href: "/papers",
           cta: "Search the Knowledge Papers",
         },

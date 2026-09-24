@@ -249,7 +249,9 @@ export default function HomePage() {
             >
               <span className="text-sm font-semibold uppercase tracking-wide text-accent">{card.audience}</span>
               <h3 className="mt-2 text-lg font-bold text-primary-dark group-hover:text-primary">{card.label}</h3>
-              <p className="mt-2 flex-1 text-base leading-relaxed text-ink-soft">{card.body}</p>
+              <p className="mt-2 flex-1 text-base leading-relaxed text-ink-soft">
+                {card.body.replace("{count}", String(papers.length))}
+              </p>
               <span className="mt-4 inline-block text-base font-semibold text-accent">{card.cta} →</span>
             </Link>
           ))}
