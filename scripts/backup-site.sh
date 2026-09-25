@@ -30,6 +30,9 @@
 #
 set -euo pipefail
 
+# launchd starts jobs with a 256 open-file limit, too low for rsync over ~3,200 files.
+ulimit -n 10240 2>/dev/null || ulimit -n "$(ulimit -Hn)" 2>/dev/null || true
+
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 BACKUP_ROOT="${PEDAVER_BACKUP_ROOT:-$HOME/Documents/Pedaver_Website_Backups}"
 CURRENT="$BACKUP_ROOT/current"
