@@ -15250,6 +15250,182 @@
 "why":"how to separate well-supported wheat health concerns from overstated population-wide claims"
 }
 ]
+},
+{
+"slug":"beyond-the-traditional-cooperative",
+"primarySubject":"A PQNK institutional framework arguing that smallholders need a third structure between the traditional cooperative and the corporation, drawing on cooperative, machinery-service, land-reform and price-reform experience to propose the farmer-owned Crop Production Management Company (CPMC)",
+"questionsAnswered":[
+"Why do traditional agricultural cooperatives so often fail smallholders?",
+"Why does collectively owned farm machinery tend to be poorly maintained?",
+"What machinery-service model works better for smallholders than shared ownership?",
+"What can India's and Pakistan's land-reform histories teach about farmer engagement?",
+"What does 'sell before you produce' mean for a smallholder?",
+"What do successful cooperatives such as Amul actually do differently?",
+"What is a Crop Production Management Company (CPMC) and how would it serve PQNK farmers?",
+"How can smallholders gain market power without surrendering ownership of their land?"
+],
+"keywords":[
+"farmer-owned company",
+"Crop Production Management Company",
+"CPMC",
+"agricultural cooperatives",
+"smallholder prosperity",
+"machinery service entrepreneurs",
+"custom hiring farm machinery",
+"land reform India Pakistan",
+"sell before you produce",
+"Farmers' Facilitation Centres",
+"commodity exchange",
+"Amul cooperative model",
+"Production Manager"
+],
+"geography":"Pakistan",
+"crops":[],
+"fieldProblems":[
+"Farmer Income Instability / Debt",
+"Price Volatility / Market Glut",
+"Untrained Labor / Management",
+"Machinery / Field-Operation Decision Difficulty",
+"External Input Dependency",
+"Macro / Policy-Level Externalities"
+],
+"problemFamily":[
+"Cost, Profit & Markets",
+"Machinery & Field Operations"
+],
+"fieldPractices":[
+"Direct Marketing",
+"Permanent Raised Bed Formation",
+"Controlled Traffic (Furrow-Confined)",
+"Precision Seed Placement (SIPP/VIPP-style)"
+],
+"machineryTools":[
+"Laser Leveler",
+"Combine Harvester"
+],
+"climateType":[],
+"scientificDomains":[
+"Production Architecture",
+"Economics",
+"Transition"
+],
+"pqnkPrinciples":[],
+"productionStages":[
+"Transition/Conversion",
+"Post-Harvest"
+],
+"evidenceType":"Philosophical/Framework Argument",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/production-architecture",
+"why":"how machinery-service entrepreneurs, trained operators and Production Managers deliver PQNK's permanent-bed, controlled-traffic and precision-planting architecture"
+},
+{
+"page":"/science/transition",
+"why":"why smallholders adopting PQNK need transitional finance, risk protection and supervised implementation, not training alone"
+}
+]
+},
+{
+"slug":"farming-beyond-the-calendar",
+"primarySubject":"A PQNK framework for farming under uncertain weather without dependence on forecasts, replacing the fixed sowing calendar with a field-based sowing window and explaining how mulch-covered permanent beds, the four non-negotiable rules and a 2% ethanol foliar spray protect crops from heat, cold, drought, intense and excessive rainfall and an erratic monsoon",
+"questionsAnswered":[
+"Why is the traditional fixed sowing calendar no longer reliable?",
+"Does PQNK need weather forecasts to protect a crop?",
+"Why do conventional fields suffer more damage from heat, drought and heavy rain?",
+"How does PQNK protect a crop from extreme heat and cold?",
+"How do permanent raised beds and furrows handle both drought and excessive rainfall?",
+"What should a Production Manager check before deciding when to sow?",
+"Should a farmer plant the whole acreage on one date when the weather is uncertain?",
+"Why are precision machinery and trained operators part of climate resilience?"
+],
+"keywords":[
+"climate resilience farming",
+"sowing window",
+"sowing calendar",
+"weather uncertainty",
+"2% ethanol foliar spray",
+"cold stress crops",
+"El Niño La Niña agriculture",
+"erratic monsoon",
+"heat stress crops",
+"drought resilience",
+"excessive rainfall waterlogging",
+"organic mulch soil temperature",
+"raised bed drainage",
+"Soil Moisture Management",
+"ball test"
+],
+"geography":"Pakistan",
+"crops":[],
+"fieldProblems":[
+"Erratic / Unpredictable Weather Patterns",
+"Heat Stress on Crop",
+"Cold / Frost Damage",
+"Drought / Water Scarcity",
+"Waterlogging",
+"Runoff",
+"Poor Water Infiltration",
+"Bare / Exposed Soil",
+"Evaporation / Moisture Loss"
+],
+"problemFamily":[
+"Heat, Weather & Climate",
+"Water & Drainage",
+"Soil & Roots"
+],
+"fieldPractices":[
+"Surface Mulching (General)",
+"Permanent Raised Bed Formation",
+"Soil Moisture Management (SMM)",
+"Soil Moisture Ball/Field Test",
+"Furrow Irrigation",
+"Controlled Traffic (Furrow-Confined)",
+"Precision Seed Placement (SIPP/VIPP-style)",
+"Crop Diversification",
+"Staggered / Continuous Planting Schedule"
+],
+"machineryTools":[
+"SIPP (PQNK machine)",
+"VIPP (PQNK machine)"
+],
+"climateType":[
+"Heat / Heatwave-Prone",
+"Cold / Frost-Prone",
+"Monsoon / High Rainfall",
+"Semi-Arid"
+],
+"scientificDomains":[
+"Climate",
+"Water",
+"Soil",
+"Production Architecture",
+"Transition"
+],
+"pqnkPrinciples":[
+"No Inundation",
+"No Soil Disturbance",
+"Permanent Biological Cover",
+"Maximum Biodiversity"
+],
+"productionStages":[
+"Planting",
+"Establishment",
+"Transition/Conversion"
+],
+"evidenceType":"Scientific Mechanism",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/climate",
+"why":"how PQNK moderates heat, drought, intense rainfall and an erratic monsoon at the soil-root-water-air level rather than by predicting the weather"
+},
+{
+"page":"/science/water",
+"why":"how permanent pores, raised beds, furrows and Soil Moisture Management make rain and supplementary water usable while draining excess water"
+}
+]
 }
 
 ]

@@ -5444,6 +5444,58 @@ export const papers: Paper[] = [
       "HB4 genetically engineered drought-tolerant wheat is a separate question from conventional semi-dwarf breeding; a drought trait in the seed cannot by itself repair degraded soil, a broken mycorrhizal network or poor water management.",
     ],
   },
+  {
+    slug: "beyond-the-traditional-cooperative",
+    kpNumber: 205,
+    libraryDate: "2026-09-25",
+    category: "PQNK Philosophy, Framework & Economics",
+    title: "Beyond the Traditional Cooperative",
+    summary:
+      "Argues that smallholders need a third structure between the traditional cooperative and the corporation: individual land ownership and accountability combined with professional production management, machinery services, risk protection, processing and collective market power. Draws on cooperative, machinery-service, land-reform and price-reform experience in Yugoslavia, Pakistan, India and Scandinavia to propose the farmer-owned Crop Production Management Company (CPMC) as the institutional vehicle for PQNK.",
+    publishedDate: "2026-09-25",
+    pdfPath: "/papers/beyond-the-traditional-cooperative.pdf",
+    abstract: [
+      "Agricultural development is often framed as a choice between the cooperative and the corporation. This paper argues that smallholders need a third structure: one that keeps individual land ownership and accountability while supplying professional production management, machinery services, risk protection, processing and collective market power. PQNK provides the production system; the proposed Crop Production Management Company (CPMC) provides the institutional structure through which smallholders can implement it.",
+      "The central weakness of collective ownership is accountability. Cooperative systems observed in Yugoslavia, and those promoted in Pakistan during the 1970s, struggled because common machinery was used by everyone but maintained and replaced by no one, and because larger farmers often gained control of societies meant to serve smallholders. A better machinery model kept ownership, operation and replacement responsibility together in one accountable entrepreneur who serves other farmers, the pattern now visible in private laser-levelling, tractor, thresher and combine-harvester services. Under PQNK this matters even more, because permanent raised beds, controlled traffic and precision seed placement depend on properly designed machinery and skilled operators.",
+      "Land reform and price reform add two further lessons. Indian land ceilings pushed owners into hands-on farming, while concentrated holdings in Pakistan often separated ownership from production, leaving decisions to untrained supervisors; yet India's subsidised inputs also show that engagement without an understanding of the living production system can damage soil and groundwater. When Pakistan linked agricultural prices more closely to international markets in the mid-1990s, proposed Farmers' Facilitation Centres and a Commodity Exchange, built around the principle of \"sell before you produce\", were meant to supply the knowledge, machinery and market access that price reform alone could not; they never materialised.",
+      "Successful cooperatives such as Swedish farmer cooperatives and India's Amul leave production with the individual and create scale after harvest through aggregation, processing and marketing. The CPMC applies this to PQNK crop production, which also requires field conversion, precision machinery and whole-cycle management: farmers retain their land, accountable entrepreneurs supply machinery, trained Production Managers supervise implementation, and the farmer-owned company manages risk, aggregates produce, adds value and develops markets. Proposed during farmer training in May 2026 and paused for lack of sufficient farmer commitment, it remains, in the author's view, the most practical institutional route to smallholder prosperity.",
+    ],
+    keyTakeaways: [
+      "Smallholders need neither isolation nor loosely held collective ownership, but a structure that joins individual ownership and accountability with professional management and collective market power.",
+      "Collective ownership of machinery fails mainly on accountability; ownership, operation and replacement responsibility should stay together in one accountable service entrepreneur.",
+      "PQNK's permanent beds, controlled traffic and precision planting make trained operators and properly maintained machinery essential, not optional.",
+      "Owner engagement matters, but it must be guided by an understanding of the living production system, as India's experience with subsidised inputs shows.",
+      "Successful cooperatives such as Amul keep production individual and create scale after harvest through aggregation, processing and marketing.",
+      "\"Sell before you produce\" means identifying demand, buyer, quality, quantity and indicative price before committing land and resources.",
+      "The farmer-owned Crop Production Management Company (CPMC) is proposed as the institutional vehicle that lets smallholders implement PQNK with management, risk protection and market power they cannot build alone.",
+    ],
+  },
+  {
+    slug: "farming-beyond-the-calendar",
+    kpNumber: 206,
+    libraryDate: "2026-09-25",
+    category: "Water & Climate",
+    title: "Farming Beyond the Calendar",
+    summary:
+      "Explains why changing weather has made the fixed sowing calendar unreliable and why PQNK does not depend on weather forecasts. Permanent raised beds under continuous organic mulch hold soil temperature and the moisture-air balance, so healthy plants withstand heat, cold, drought, intense and excessive rainfall and an erratic monsoon; a 2% ethanol foliar spray relieves ambient temperature stress, and the sowing decision is made from the condition of the field.",
+    publishedDate: "2026-09-25",
+    pdfPath: "/papers/farming-beyond-the-calendar.pdf",
+    abstract: [
+      "Changing weather has made the traditional fixed sowing calendar unreliable. A crop sown on the date that worked for a previous generation may now meet a heatwave at flowering, a dry interval after germination, excessive rain during establishment or conditions that favour a new pest cycle. No single date can be prescribed for a whole province when temperature, rainfall, soil moisture, variety, irrigation access and field condition vary, even within one district. The Production Manager replaces the rigid calendar with a field-based sowing window, and the decision comes from the condition of the field, not from a forecast.",
+      "PQNK does not depend on weather forecasts. Seasonal and short-range forecasts can indicate probabilities, but none can predict the exact rainfall or temperature a particular field will receive, and a production system that must wait on a forecast stays exposed to every event the forecast misses. PQNK builds the protection into the field: a permanent raised bed under continuous organic mulch keeps soil temperature moderate and holds the balance of moisture and air in the root zone, so a healthy plant can withstand ambient temperature extremes that would stress a crop in bare, compacted or inundated soil. Conventional fields, by contrast, amplify weather damage: tillage, bare soil, compaction and flood irrigation turn a short dry spell into drought and a heavy shower into runoff or waterlogging.",
+      "The protection comes from four non-negotiable rules applied together: no inundation, no soil disturbance after conversion, continuous organic mulch and biodiversity. Mulch shades and insulates the soil and reduces evaporation; permanent pores, root channels and Soil Moisture Management, guided by the ball test, make more of the water that arrives usable; raised beds keep the root zone aerated while furrows receive supplementary flow and drain excess water; and biodiversity and crop-in-crop or crop-after-crop sequencing spread biological and economic risk. When ambient temperature rises above or falls below the crop's comfortable range, a foliar spray of 2% ethanol solution relieves the plant of temperature stress, supporting a crop that is already protected at the root.",
+      "Before sowing, the Production Manager evaluates the crop's safe temperature range, actual seed-zone moisture, the sensitive stages of the crop and variety, bed, mulch and drainage readiness, SIPP or VIPP calibration and operator competence, and the capacity for supplementary furrow irrigation; where uncertainty is high, planting can be phased within the window. Precision machinery and trained operators are part of resilience, and transitional fields need closer observation because recovery cannot be promised by a fixed number of seasons. The durable response to a changing climate is to convert fields to PQNK, so that natural processes again regulate temperature, water, nutrient cycling and biological protection.",
+    ],
+    keyTakeaways: [
+      "A fixed sowing calendar no longer matches changing weather; the Production Manager works from a field-based sowing window decided by the condition of the field.",
+      "PQNK does not depend on weather forecasts: no forecast can predict what a particular field will receive, and a system that waits on forecasts stays exposed to every event they miss.",
+      "Permanent raised beds under continuous organic mulch hold soil temperature and the moisture-air balance, so healthy plants can withstand ambient temperature extremes.",
+      "A 2% ethanol foliar spray relieves plant stress when ambient temperature rises above or falls below the crop's comfortable range; it supports, and does not replace, the mulch-covered bed.",
+      "Conventional fields amplify weather damage because tillage, bare soil, compaction and flood irrigation have already removed the field's natural protection.",
+      "Raised beds keep the root zone aerated in excess water, while furrows drain surplus water and carry supplementary flow in dry intervals.",
+      "Precision machinery and trained operators are part of climate resilience, and transitional fields need closer observation until maturity is shown by field evidence.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {
