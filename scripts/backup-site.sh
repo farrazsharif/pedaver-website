@@ -87,6 +87,19 @@ else
   rsync -a --delete "$REPO_ROOT/out/" "$STAGING/site/"
 fi
 
+# --- unchanged since the current snapshot? keep both copies as they are -----
+# Rotating on every run would let a quiet day (or a docs-only push) replace the
+# last *different* version with a duplicate. sitemap.xml is compared without its
+# <lastmod> lines, which are build-time timestamps that change on every build.
+if [ -d "$CURRENT/site" ] \
+   && diff -rq -x sitemap.xml "$CURRENT/site" "$STAGING/site" >/dev/null 2>&1 \
+   && diff -q <(grep -v '<lastmod>' "$CURRENT/site/sitemap.xml") \
+              <(grep -v '<lastmod>' "$STAGING/site/sitemap.xml") >/dev/null 2>&1; then
+  rm -rf "$STAGING"
+  log "backup-site: site unchanged since current snapshot — current and previous kept as they are"
+  exit 0
+fi
+
 # --- manifest -----------------------------------------------------------
 commit="$(git rev-parse HEAD 2>/dev/null || echo '(no git)')"
 branch="$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo '?')"
