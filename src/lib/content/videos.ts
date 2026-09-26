@@ -62,6 +62,13 @@ export const videos: VideoEntry[] = [
     channel: "official",
   },
   {
+    videoId: "7gUHowqR8D4",
+    title: "No Other Business Is as Profitable as Food Production (Lecture, 2023)",
+    channel: "official",
+    description:
+      "Asif Sharif's 2023 lecture, in Urdu, on the viability of farming as a business. Working from slides, he walks through four one-acre crop rotations on PQNK beds, such as rice, potato and maize in a single year, peanut followed by onion and garlic, and melons interplanted with a continuous run of vegetables, with the costs and returns of each. He argues that low input costs, higher quality and a managed supply chain that pays the farmer more and charges the consumer less make food production more profitable than most industries, and calls for Crop Production Management Companies and business investment in the sector.",
+  },
+  {
     videoId: "xzORUOK79v4",
     title: "Pomegranate on PQNK",
     channel: "official",
