@@ -369,6 +369,21 @@ export const fieldEvidence: FieldEvidence[] = [
     videoId: "E6TNbYvCkT8",
     tags: ["one acre prosperity", "biodiversity", "fruit trees", "nectarine", "guava", "peach", "date", "lemon"],
   },
+  {
+    feNumber: 22,
+    title: "Sesame Between Ber (Jujube) Rows on PQNK — Farmer from Nepal",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
+    cropOrTopic: "Sesame",
+    year: 2026,
+    date: "2026-09-26",
+    summary:
+      "The PQNK farmer in Nepal whose papaya field appears in KE-018 shows sesame (til) grown between rows of ber (jujube) trees. The land was first shaped into raised beds and mulched, then the ber was planted with 20 feet between rows, leaving three beds between each tree row, which were sown with sesame. The plants are compact rather than tall and flowering well, with three to four branches each carrying pods along their length. A small conventional plot grown alongside as a comparison shows visible crop problems, while the PQNK beds show none. He values sesame as an easily grown oilseed and a good dietary source of calcium, and says the same guided approach is being applied to papaya, ber, guava and mango on the farm.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/MoUWr1U9ZsY",
+    videoId: "MoUWr1U9ZsY",
+    location: "Nepal",
+    tags: ["sesame", "ber", "jujube", "intercropping", "raised beds", "mulching", "conventional comparison"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
