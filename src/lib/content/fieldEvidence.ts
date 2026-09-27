@@ -384,6 +384,21 @@ export const fieldEvidence: FieldEvidence[] = [
     location: "Nepal",
     tags: ["sesame", "ber", "jujube", "intercropping", "raised beds", "mulching", "conventional comparison"],
   },
+  {
+    feNumber: 23,
+    title: "Rice on PQNK Raised Beds — First Crop With No Puddling or Fertiliser",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
+    cropOrTopic: "Rice",
+    year: 2026,
+    date: "2026-09-27",
+    summary:
+      "Field footage of a standing PQNK paddy crop on raised beds, followed by the farmer's own voice report and an English reading of it. After attending the PQNK training in Lahore, he and a fellow farmer from his village decided to introduce PQNK on their farms, and this rice is their first result. His partner has been associated with PQNK since 2018 and had already run small-scale PQNK trials with satisfactory results. The crop was grown without puddling (kaddu) and, the farmer reports, with no fertiliser at all: no DAP and no urea. The crop was still standing ahead of harvest, drawing a steady stream of neighbouring farmers asking how it was grown. No yield is reported yet.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/WFErthS3rT4",
+    videoId: "WFErthS3rT4",
+    relatedCropSlug: "rice",
+    tags: ["rice", "paddy", "raised beds", "no puddling", "no inundation", "zero fertiliser", "farmer adoption"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
