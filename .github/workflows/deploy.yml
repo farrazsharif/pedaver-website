@@ -7,9 +7,7 @@ on:
     branches: [main]
   workflow_dispatch:
 
-# Only one deploy at a time. If a second push lands while a deploy is
-# running, the in-progress one is cancelled and the newest wins — this
-# prevents the racing-deploy collision seen on 2026-09-10 (runs #216/#217).
+# Only one deploy at a time; a newer push cancels an in-progress one.
 concurrency:
   group: deploy-cpanel
   cancel-in-progress: true
@@ -20,6 +18,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          # Full history so the deploy script can diff the current commit
+          # against the last successful deploy's commit (incremental media).
+          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -40,32 +42,27 @@ jobs:
       - name: Add .htaccess to the build
         run: cp docs/htaccess.txt out/.htaccess
 
-      # Deploy via FTPS (reverted 2026-09-11 — see commit message).
+      # Deploy over the cPanel API on port 2083 — NOT FTP, NOT SSH.
       #
-      # 2026-09-10: FTPS started failing ("Timeout when trying to open data
-      # connection") during the same window pedaver.com's web server (LiteSpeed,
-      # ports 80/443) went fully unreachable while cPanel/WHM/FTP/mail all
-      # stayed up — a host-side outage, not a deploy problem. We tried
-      # switching to SSH/rsync (easingthemes/ssh-deploy) instead; all 3 runs
-      # (#220-#222) failed in 0.0s, which is the action rejecting its inputs
-      # before it even opens a connection — almost certainly SSH_PRIVATE_KEY
-      # is unset/invalid or its public half was never added to the cPanel
-      # account's ~/.ssh/authorized_keys. That needs someone with cPanel
-      # access to generate a real keypair and verify all 5 SSH_* secrets, so
-      # it's parked. FTPS is back in the meantime since it deployed chapters
-      # 1-8 successfully before the outage and the host issue should now be
-      # resolved. The SSH step is preserved in git history at commit
-      # a55b80a if someone wants to finish wiring it up properly later.
-      - name: Upload to cPanel via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          # The built site lives in out/ ; upload its CONTENTS.
-          local-dir: ./out/
-          # The deploy@pedaver.com FTP account is scoped to the pedaver.com
-          # document root, so we upload straight into its home directory.
-          server-dir: ./
-          # cPanel account uses explicit FTPS on port 21.
-          protocol: ftps
+      # FTP (SamKirkland/FTP-Deploy-Action) was the previous method; it works
+      # but depends on SkyHost's FTP passive-port firewall config, which kept
+      # resetting (broke 2026-09-10 and 2026-09-26). SSH/rsync isn't an option
+      # either (SSH port firewalled + shell access disabled on the account).
+      # The cPanel API on :2083 answers reliably from outside, so we deploy
+      # through it. The old FTP step is preserved in git history (commit
+      # 45defe1) as a fallback. See scripts/deploy-cpanel.sh for how the
+      # incremental upload works, and docs/pqnk-book-workflow.md for context.
+      #
+      # Required repo secrets: CPANEL_USER, CPANEL_TOKEN (a cPanel API token
+      # created under Security -> Manage API Tokens for user caremidc).
+      - name: Deploy to cPanel via API
+        env:
+          CPANEL_HOST: cpanel.pedaver.com
+          CPANEL_USER: ${{ secrets.CPANEL_USER }}
+          CPANEL_TOKEN: ${{ secrets.CPANEL_TOKEN }}
+          DOCROOT_REL: pedaver.com
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Last successful FTP deploy (run #336) — baseline for the first
+          # API run so it doesn't try to re-upload the whole 1.1 GB site.
+          FALLBACK_BASE: 87b24491a3de53315209bce9ba79bfef928b65a8
+        run: bash scripts/deploy-cpanel.sh
