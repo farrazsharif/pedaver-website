@@ -284,6 +284,36 @@ asking them to re-align Pure-FTPd `PassivePortRange` with the firewall's
 `TCP_IN` range. The tell: FTP login (port 21) succeeds, only the data
 connection times out.
 
+### It recurred (2026-09-26) → deploy migrated OFF FTP (2026-09-27)
+
+The passive-FTP fix did **not** persist: FTP broke again on 2026-09-26 (runs
+#337–#341 failed with the same data-connection timeout — SkyHost's
+`PassivePortRange` config resets on their server updates). To stop depending
+on SkyHost's FTP config, **the deploy was migrated to the cPanel API over
+port 2083** (which answers reliably from outside).
+
+- **How it works now:** `.github/workflows/deploy.yml` runs
+  `scripts/deploy-cpanel.sh`. Because the site is ~1.1 GB (mostly PDFs), the
+  deploy is **incremental**: it re-uploads the small non-media set
+  (HTML/JS/CSS, always current) every run, and only uploads media
+  (PDFs/images) changed since the last successful deploy (via `git diff` of
+  `public/`). Files are chunked into ≤40 MB zips, uploaded with UAPI
+  `Fileman::upload_files`, and unpacked into the docroot with API2
+  `Fileman::fileop op=extract&overwrite=1`. Baseline = last successful run's
+  commit (via the GitHub API).
+- **Secrets:** `CPANEL_USER` (=`caremidc`) and `CPANEL_TOKEN` (a cPanel API
+  token, Security → Manage API Tokens). Host `cpanel.pedaver.com:2083`.
+- **First green run: #345** (2026-09-27). Verified live: homepage, the new
+  paper `the-global-cost-of-agricultural-degradation.pdf`, new chapter pages
+  (`the-closed-loop-farm`, `field-evidence-…`), and the book index +
+  `sitemap.xml` correctly overwritten to list the new chapters.
+- **No more FTP, no more SkyHost tickets for deploys.** The old FTP step is
+  preserved in git history at commit `45defe1` if ever needed.
+- **Known caveats:** deleted files are not auto-pruned from the server
+  (extract only adds/overwrites); a single media file >~40 MB uploads as its
+  own chunk and could hit a cPanel upload cap (rare — only if a very large
+  PDF changes).
+
 ## 5. Open issues
 
 **Part One (Chapters 1–7) plus Chapters 8, 9, 10, 11 and 12 (Part Two) are
