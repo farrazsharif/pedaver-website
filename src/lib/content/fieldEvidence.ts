@@ -399,6 +399,20 @@ export const fieldEvidence: FieldEvidence[] = [
     relatedCropSlug: "rice",
     tags: ["rice", "paddy", "raised beds", "no puddling", "no inundation", "zero fertiliser", "farmer adoption"],
   },
+  {
+    feNumber: 24,
+    title: "Soybean on PQNK Raised Beds: No Inputs but the Seed and Two Furrow Waterings",
+    evidenceTypes: ["Field Evidence"],
+    cropOrTopic: "Soybean",
+    year: 2026,
+    date: "2026-09-29",
+    summary:
+      "Field footage of a dense, even soybean crop growing on PQNK permanent raised beds, with the canopy closing over the beds and the furrows still visible between them. As reported by Asif Sharif, the crop received no input other than the seed and two supplementary flows of water through the furrows: no fertiliser, no pesticide and no other purchased input. It is a legume grown on the living, covered soil of the permanent beds, relying on the field's own biology for its nutrition. No yield is reported yet.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/j32tfG3icS0",
+    videoId: "j32tfG3icS0",
+    tags: ["soybean", "legume", "raised beds", "furrow irrigation", "zero fertiliser", "zero pesticide", "zero purchased inputs"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
