@@ -15426,6 +15426,111 @@
 "why":"how permanent pores, raised beds, furrows and Soil Moisture Management make rain and supplementary water usable while draining excess water"
 }
 ]
+},
+{
+"slug": "chemical-fertiliser-dependency-pqnk",
+"primarySubject": "An evidence-qualified PQNK review of the article Chemical Fertilizer Industry, arguing that fertiliser dependency is a symptom of a damaged soil production system (tillage, flooding, bare soil, residue removal and simplified biology) and that PQNK removes it by restoring aerated, covered, living soil",
+"questionsAnswered": [
+"Is chemical fertiliser itself the central problem, or a symptom of a damaged production system?",
+"Which global fertiliser statistics can be repeated responsibly, and which need qualification?",
+"How is biological nutrient delivery different from applying fertiliser from a bag?",
+"Why does flooding or tillage make a field dependent on fertiliser?",
+"Can a farmer stop fertiliser immediately, and how does PQNK protect the crop during transition?",
+"What does the 0.083% figure mean, and what does it not mean?",
+"Does fertiliser cause diseases such as thyroid, kidney or bone problems?",
+"What should fertiliser policy fund instead of recurring input subsidies?"
+],
+"keywords": [
+"chemical fertiliser dependency",
+"fertilizer industry",
+"soil degradation",
+"nutrient pollution",
+"dead zones",
+"nitrate in drinking water",
+"cadmium",
+"biological nutrient delivery",
+"mycorrhizal networks",
+"rhizosphere",
+"30/70 rule",
+"0.083% net mineral export",
+"transition protocol",
+"4 kg NP",
+"fertiliser subsidy policy"
+],
+"geography": null,
+"crops": [],
+"fieldProblems": [
+"External Input Dependency",
+"High Input / Production Cost",
+"General Soil Fertility / Land Degradation",
+"Soil Biology / Microbiome Decline",
+"Soil Organic Matter / Carbon Loss",
+"Tillage Damage to Soil Biology / Structure",
+"Preventive/Prophylactic Over-Application of Inputs (Fertilizer/Nitrogen)",
+"Contamination / Residue / Food Safety Risk",
+"Declining Nutrient Density in Food",
+"Macro / Policy-Level Externalities"
+],
+"problemFamily": [
+"Plant Growth & Nutrition",
+"Soil & Roots",
+"Cost, Profit & Markets",
+"Transition / Conversion"
+],
+"fieldPractices": [
+"Biological Nutrient Cycling",
+"Reduced/Eliminated Chemical Input",
+"Soil Moisture Management (SMM)",
+"Soil Moisture Ball/Field Test",
+"Permanent Raised Bed Formation",
+"Controlled Traffic (Furrow-Confined)",
+"Mechanical Hardpan Breaking (Subsoiling)",
+"Sulfuric Acid Water-Wash (pH Correction)",
+"Jantar (Sesbania) Cover Cropping",
+"Surface Mulching (General)",
+"Precision Seed Placement (SIPP/VIPP-style)",
+"PQNK Transition Protocol (Staged)",
+"Threshold-Based Pest/Predator Monitoring"
+],
+"machineryTools": [
+"Subsoiler / Hardpan Breaker",
+"Raised Bed Shaper (PQNK machine)",
+"SIPP (PQNK machine)"
+],
+"climateType": [],
+"scientificDomains": [
+"Soil",
+"Nutrition",
+"Water",
+"Food Quality",
+"Transition"
+],
+"pqnkPrinciples": [
+"No Inundation",
+"No Soil Disturbance",
+"Permanent Biological Cover",
+"Maximum Biodiversity"
+],
+"productionStages": [
+"Transition/Conversion",
+"Vegetative Growth"
+],
+"evidenceType": "External Scientific Evidence",
+"authorityStatus": "Current / Approved PQNK Knowledge",
+"scienceLinks": [
+{
+"page": "/science/soil",
+"why": "how aerated, covered, living soil delivers nutrients biologically so that purchased fertiliser becomes unnecessary at maturity"
+},
+{
+"page": "/science/nutrition",
+"why": "why the 0.083% figure is net mineral export, not plant composition, and how the soil system shapes the nutritional density of food"
+},
+{
+"page": "/science/transition",
+"why": "how PQNK withdraws fertiliser on field evidence, with about 4 kg NP only against a verified deficiency"
+}
+]
 }
 
 ]

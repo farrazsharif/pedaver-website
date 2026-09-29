@@ -5517,6 +5517,32 @@ export const papers: Paper[] = [
       "Precision machinery and trained operators are part of climate resilience, and transitional fields need closer observation until maturity is shown by field evidence.",
     ],
   },
+  {
+    slug: "chemical-fertiliser-dependency-pqnk",
+    kpNumber: 207,
+    libraryDate: "2026-09-29",
+    category: "Soil Science & PQNK System",
+    title: "Chemical Fertiliser Dependency Through the PQNK Lens",
+    summary:
+      "An evidence-qualified review of the article \u201cChemical Fertilizer Industry\u201d. It keeps the article's warning about soil degradation, nutrient pollution and biological decline, disciplines its headline numbers, and argues that fertiliser dependency is a symptom of a damaged production system (tillage, flooding, bare soil and simplified biology) that PQNK removes by restoring aerated, covered, living soil, reaching zero purchased fertiliser and pesticide at maturity.",
+    publishedDate: "2026-09-29",
+    pdfPath: "/papers/chemical-fertiliser-dependency-pqnk.pdf",
+    abstract: [
+      "The article Chemical Fertilizer Industry assembles an important warning about soil degradation, nutrient pollution, biological decline, water demand, greenhouse-gas emissions and human exposure. Its central concern is justified: agriculture cannot indefinitely compensate for a deteriorating soil ecosystem by increasing soluble nutrient inputs. However, several headline figures are presented without sufficient boundaries, and several global problems are attributed too directly to fertiliser alone. Soil erosion, salinity, aquatic dead zones and chronic disease have multiple interacting causes. A scientifically defensible response must preserve the warning while separating established evidence, association, extrapolation and advocacy.",
+      "Through the PQNK lens, the deeper problem is not the fertiliser bag by itself. Fertiliser dependency develops when tillage destroys structure and fungal continuity, flooding displaces soil air, bare soil overheats and loses moisture, crop residue is removed, roots are terminated and biodiversity is simplified. Chemical nutrients then substitute for biological functions that the production system has disabled. Removing the bag without rebuilding those functions can reduce yield; keeping the bag while leaving the damaged architecture unchanged preserves dependency.",
+      "The paper contrasts two nutrient pathways: biological delivery, which is demand-led through roots, microorganisms and mycorrhizal networks in an aerated rhizosphere, and bag application, which creates a concentration event that invites loss, soft growth and further purchases. Water determines the outcome: PQNK Soil Moisture Management keeps the root zone at roughly 30 percent water to 70 percent air, verified by the soil-ball test, with supplementary furrow irrigation no deeper than half the furrow and no flooding.",
+      "PQNK restores the functions the input-centred system displaced through its four rules and permanent engineering: the hardpan fractured once, permanent raised beds with traffic confined to the furrows, continuous mulch, precision placement and retained roots and residues. Transition is protected rather than abrupt: a deep water wash, a cover crop, about 4 kg NP with furrow water only against a verified deficiency, and pest intervention only above the 10 percent threshold. At maturity, zero purchased fertiliser and pesticide are evidence that the field has regained the capacity to produce. The policy question therefore shifts from securing fertiliser supply to financing the machinery, skills and risk protection that end dependency.",
+    ],
+    keyTakeaways: [
+      "The article's warning is justified, but its headline numbers need boundaries: soil degradation, erosion, dead zones and disease have several interacting causes, not fertiliser alone.",
+      "Fertiliser dependency is a system outcome: tillage, flooding, bare soil, residue removal and simplified biology disable the biological nutrient pathway that the bag then replaces.",
+      "Biological nutrient delivery is demand-led through roots, microbes and mycorrhizae; a soluble fertiliser application is a concentration event that invites losses, soft growth and pest attraction.",
+      "Water decides the outcome: PQNK keeps the root zone moist and aerated at roughly 30 percent water to 70 percent air, with supplementary furrow irrigation and no flooding.",
+      "The 0.083% figure is the net mineral export in harvested produce under PQNK recycling, not the total mineral content of the plant; most plant mass is built from air and water.",
+      "Transition is engineered, not abrupt: about 4 kg NP only against a verified deficiency and pest intervention only above the 10 percent threshold, until maturity brings purchased inputs to zero.",
+      "Health claims must separate nitrate, cadmium, ammonia and occupational exposure; PQNK adds the question of the nutritional density the soil system produces.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {
