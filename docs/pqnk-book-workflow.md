@@ -72,6 +72,8 @@ Always confirm the file's mtime/size actually changed before trusting a
 "re-saved" claim. Extract and eyeball the infographics every time — a
 re-export can silently carry an old embedded image.
 
+**2026-10-01 — drafts moved off the Mac.** Copies, duplicates and drafts of PUBLISHED work (old full-book versions v18–v61, `backups/` folders, the 64 "proposed" format-pass files, the working/infographic drafts of Ch16/31/32/34/35/36) now live on the external `SSD PQNK/1 Archive (moved off the Mac)/Book work drafts and copies (2026-10-01)/` (list in `_WHAT_IS_HERE.txt`). Published work stays on the Mac: `PQNK Book/Published Chapters/` and `Published Book/` remain the archive of record. File paths in older rows of §4 that point to loose `PQNK Book/` drafts now refer to that SSD folder.
+
 ## 3. How a chapter gets published (the mechanical checklist)
 
 1. **Editorial pass** on the approved `.docx`/`.pdf`: typos, internal number
