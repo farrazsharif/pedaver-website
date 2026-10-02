@@ -429,6 +429,20 @@ export const fieldEvidence: FieldEvidence[] = [
     location: "Rajanpur",
     tags: ["orchard", "high-density planting", "raised beds", "farm layout", "mustard intercrop", "farmer adoption", "zero fertiliser"],
   },
+  {
+    feNumber: 26,
+    title: "Can High-TDS Water Rehabilitate Saline Soils? The PQNK Salt Equation",
+    evidenceTypes: ["Q&A", "Advisory"],
+    cropOrTopic: "Saline soils and high-TDS irrigation water",
+    year: 2026,
+    date: "2026-10-02",
+    summary:
+      "An illustrated explainer on whether groundwater with high total dissolved solids can be used for crops on saline or alkaline soil. It argues that the limiting factor is not the salt concentration alone but what happens to the salts after the water enters the soil. Under conventional flood irrigation, poor infiltration, surface evaporation, capillary rise and a hardpan leave salts concentrated in the root zone. PQNK conversion breaks the hardpan to about 22 inches, gives a deep water wash (with acid where soil pH is high), forms permanent raised beds and grows a Jantar cover crop; the mature system keeps the soil covered and the root zone moist and aerated. Because the salt load equals concentration multiplied by the volume of water applied, far less irrigation water means far less salt entering the field. The ten-step transition protocol is summarised, and the conclusion is that high-TDS water is not automatically the enemy: poor water and soil management is the greater problem.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/KBCFIp3lWj8",
+    videoId: "KBCFIp3lWj8",
+    tags: ["saline soil", "alkaline soil", "high TDS water", "groundwater", "salt accumulation", "hardpan", "deep water wash", "permanent raised beds", "Jantar", "soil moisture management"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
