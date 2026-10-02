@@ -413,6 +413,22 @@ export const fieldEvidence: FieldEvidence[] = [
     videoId: "j32tfG3icS0",
     tags: ["soybean", "legume", "raised beds", "furrow irrigation", "zero fertiliser", "zero pesticide", "zero purchased inputs"],
   },
+  {
+    feNumber: 25,
+    title: "Laying Out a High-Density Orchard on a Four-Year PQNK Field: Mian Arfan Khalid, Rajanpur",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
+    cropOrTopic: "High-density orchard",
+    year: 2026,
+    date: "2026-10-02",
+    summary:
+      "Speaking on camera in front of freshly shaped raised beds, the farmer explains that his plot has been under PQNK for about four years. This season he re-laid the beds, not because they had failed to mature, but to plan a systematic high-density orchard: the earlier one-acre plots watered from a central channel have become straight two-acre plots across a six to eight acre belt, fed directly from a lined water channel. Mustard has been sown as an intercrop, and the orchard will be planted next with reduced plant-to-plant and row-to-row spacing, laid out so that picking and transport stay easy. He reports that the farm has become a model in his area that other farmers visit to learn from, and describes PQNK as farming without fertiliser or chemicals.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/5XNUenOwq4k",
+    videoId: "5XNUenOwq4k",
+    farmer: "Mian Arfan Khalid",
+    location: "Rajanpur",
+    tags: ["orchard", "high-density planting", "raised beds", "farm layout", "mustard intercrop", "farmer adoption", "zero fertiliser"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
