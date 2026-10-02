@@ -332,6 +332,11 @@ port 2083** (which answers reliably from outside).
 
 ## 5. Open issues
 
+**PUBLISH QUEUE (2026-10-02) — publish together on the author's go-ahead today:**
+- **KP-208** "White Grub: Friend, Foe, or Part of the Living Soil?" — APPROVED by the author 2026-10-02 (no text changes; he inserted a life-cycle infographic). Source files: `~/Documents/KP-208_White_Grub_Living_Soil - Claude Reviewed.pages/.docx/.pdf` (09:07). Review build: `Claude tools/chapter_builds/kp208_build.py`. Before publish: strip the yellow review highlights, choose the slug, add the papers.ts entry (kpNumber 208) and a targeted metadata.json insertion only. Infographic flagged to the author: generic temperate-lawn life cycle (June–July eggs, seasons, "Typical/Grass hosts", "Proper lawn care"), garbled labels ("Earthen cell pup", "Plant at Roots"), "Most destructive period" — suggested caption: generalised life cycle, timing varies by species and region.
+- **Ch37 Sugarcane** — review file sent 2026-10-01; awaiting the author's approval, the sugarcane irrigation answer and the sugarcane-KP decision (see §4 row 37).
+
+
 **Part One (Chapters 1–7) plus Chapters 8, 9, 10, 11 and 12 (Part Two) are
 published and LIVE.** Chapter 8 shipped 2026-09-09 (`8a3a3a6`); Chapter 9
 shipped 2026-09-10 (`386dc98`), Chapter 10 shipped 2026-09-11 (`4a95abf`) —
