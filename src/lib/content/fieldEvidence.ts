@@ -458,6 +458,20 @@ export const fieldEvidence: FieldEvidence[] = [
     relatedCropSlug: "sugarcane",
     tags: ["sugarcane", "yield", "2,800 maunds", "112 tonnes per acre", "zero fertiliser", "zero pesticide", "water saving", "sugar recovery", "no tillage"],
   },
+  {
+    feNumber: 28,
+    title: "The Four Stages of Learning: From Information to Complete Understanding",
+    evidenceTypes: ["Advisory"],
+    cropOrTopic: "Learning PQNK",
+    year: 2026,
+    date: "2026-10-02",
+    summary:
+      "An illustrated advisory on how a farmer moves from hearing about PQNK to mastering it, in four stages that each build on the one before. Information comes from reading papers and books, watching videos and presentations, listening to experienced farmers and discussing questions in the group. Knowledge comes from seeing the system actually work: field results, how it behaves in real conditions, successful farmers and before-and-after examples. Experience comes from applying it with your own hands: starting on a small area with your own tools and resources, observing, learning and solving problems. Understanding comes from seeing the whole production ecosystem work together and why: soil biology, plants, water, biodiversity, environment and climate, and productivity and livelihoods, so that the farmer can make better decisions and help guide other farmers.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/HpiVY6FXeQY",
+    videoId: "HpiVY6FXeQY",
+    tags: ["learning PQNK", "farmer training", "information", "knowledge", "experience", "understanding", "start small", "farmer-to-farmer learning"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
