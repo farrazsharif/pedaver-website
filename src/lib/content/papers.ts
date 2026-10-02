@@ -5543,6 +5543,56 @@ export const papers: Paper[] = [
       "Health claims must separate nitrate, cadmium, ammonia and occupational exposure; PQNK adds the question of the nutritional density the soil system produces.",
     ],
   },
+  {
+    slug: "white-grub-friend-foe-or-part-of-the-living-soil",
+    kpNumber: 208,
+    libraryDate: "2026-10-02",
+    category: "Soil Science & PQNK System",
+    title: "White Grub: Friend, Foe, or Part of the Living Soil?",
+    summary:
+      "A farmer noticed that soil with white grubs looked more porous and full of small dark aggregates. This paper explains why finding an insect is not the same as having a pest problem, how white grubs take part in the soil food web, and the PQNK field protocol: observe first, compare roots, and intervene only when measurable damage shows the biological balance is failing.",
+    publishedDate: "2026-10-02",
+    pdfPath: "/papers/white-grub-friend-foe-or-part-of-the-living-soil.pdf",
+    abstract: [
+      "A farmer observed white grubs in pots and noticed that wherever they were present the soil looked more porous, with very small dark aggregates forming. His question was whether the white grub should be treated as an enemy, a friend, or left alone. The PQNK answer is that no label should be applied merely because an organism has been found; the first question is what is actually happening to the plant and to the soil ecosystem.",
+      "White grub is a general name for the larvae of many scarab beetles. Species and developmental stages differ: some feed heavily on living roots, others on mixtures of roots, organic matter and soil. Their burrowing, feeding and frass can influence aeration, aggregation, microbial activity and nutrient cycling, but an observation in pots is not proof that the grub alone created the aggregates or that they are beneficial.",
+      "Treatment thresholds vary with species, crop, soil, climate and plant condition, so PQNK does not import a threshold from another crop or country. Its general transition rule still applies: intervention is considered only when pest pressure or damage crosses about 10 percent, and for white grub that damage is read in the roots and the stand of the crop, not in the number of larvae found.",
+      "The paper sets out a five-step PQNK field protocol: observe the crop; examine and compare the roots of healthy and affected plants; look for a consistent link between root damage and unusually high grub numbers; observe natural regulation by birds, predators and diseased or parasitised grubs; and intervene only when measurable damage shows the balance is failing, favouring the narrowest, least disruptive response.",
+    ],
+    keyTakeaways: [
+      "Presence is not damage: an organism is not a pest merely because it can become one.",
+      "\"White grub\" covers many scarab species with different feeding habits; identification matters before any conclusion.",
+      "Grub burrowing and frass can change soil structure and microbial activity, but a pot observation is not proof of benefit.",
+      "PQNK does not import foreign thresholds; its about-10-percent transition rule is judged from root damage and crop stand, not larva counts.",
+      "Predators, parasitoids, entomopathogenic nematodes, fungi, bacteria and birds help regulate grubs; indiscriminate soil treatment can weaken that regulation.",
+      "Field protocol: observe, compare roots, look for a relationship, watch natural regulation, and only then intervene with the narrowest response.",
+    ],
+  },
+  {
+    slug: "why-the-world-needs-pqnk",
+    kpNumber: 209,
+    libraryDate: "2026-10-02",
+    category: "PQNK Philosophy, Framework & Economics",
+    title: "Why the World Needs PQNK",
+    summary:
+      "A case for large-scale PQNK adoption addressed to five constituencies: farmers, governments, environmentalists, health professionals and poverty-alleviation institutions. Because agriculture sits where soil, water, biodiversity, food, farm economics and human health meet, restoring the farm as a living ecosystem benefits all of them at once.",
+    publishedDate: "2026-10-02",
+    pdfPath: "/papers/why-the-world-needs-pqnk.pdf",
+    abstract: [
+      "Production agriculture sits at the meeting point of soil, plants, microorganisms, insects, animals, water, atmosphere and human society. When it is managed against the natural ecosystem the damage spreads far beyond the crop; brought back into alignment, the benefits spread as widely. PQNK restores those conditions through its four governing rules: no inundation, no soil disturbance, permanent organic cover and encouraged biodiversity.",
+      "For farmers, PQNK replaces repeated field reconstruction and recurring purchased inputs with permanent beds, retained roots and residues, Soil Moisture Management and biological function; its field experience is higher and more stable yields once the system matures, recorded farm by farm. For governments, PQNK is not a laboratory concept awaiting proof: it began in 2009 with rice on raised beds and has since moved into farmer practice, so the task is large-scale adaptation and adoption, with measurement as a record of implementation rather than a test of nature.",
+      "For environmentalists, permanent cover, undisturbed soil, aeration and biodiversity work beneath the crop canopy on soil carbon, structure and farmland habitat. For health professionals, PQNK reduces occupational pesticide exposure, and a mature PQNK field applies no agrochemical, so its food carries no chemical residue. For poverty alleviation, PQNK lowers the structural cost and risk of producing food before the farmer falls into debt.",
+      "These five agendas meet in the same acre. Responsible promotion means training farmers in the four rules and the transition protocol, recording every crop cycle, measuring water and inputs, and adapting engineering to local tractors, soils and climates without abandoning the governing ecological principles.",
+    ],
+    keyTakeaways: [
+      "Agriculture connects soil, water, biodiversity, food, farm economics and human health, so restoring the farm ecosystem benefits all of them together.",
+      "PQNK began in 2009 with rice on raised beds, where the first step was simply to stop inundating the soil; other crops and steps were added and tested before it was made public.",
+      "The government task is large-scale adaptation and adoption; measurement records how well PQNK is implemented, not whether nature works.",
+      "A mature PQNK field applies no agrochemical; traces are possible only in rare transition cases after the 10 percent pest threshold.",
+      "PQNK field experience is higher and more stable yields once the system matures, with the size of the gain varying by place, crop and management.",
+      "Poverty alleviation can begin inside the economics of production, by reducing recurring input costs and risk before the harvest.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {

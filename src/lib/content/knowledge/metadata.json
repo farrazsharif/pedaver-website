@@ -15531,6 +15531,175 @@
 "why": "how PQNK withdraws fertiliser on field evidence, with about 4 kg NP only against a verified deficiency"
 }
 ]
+},
+{
+"slug":"white-grub-friend-foe-or-part-of-the-living-soil",
+"primarySubject":"A PQNK reading of white grubs in the soil: why finding scarab larvae is not the same as a pest problem, how grubs take part in the soil food web and soil structure, and a five-step field protocol for deciding when, if ever, to intervene",
+"questionsAnswered":[
+"Is a white grub in my field a pest, a friend, or neither?",
+"Do white grubs improve soil porosity and aggregation?",
+"How do I know whether white grubs are actually damaging my crop?",
+"What pest threshold does PQNK use for white grub?",
+"Who controls white grub populations naturally?",
+"Should I treat the soil when I find white grubs?",
+"What is the PQNK field protocol when white grubs are found?"
+],
+"keywords":[
+"white grub",
+"scarab beetle larvae",
+"root feeding",
+"soil food web",
+"frass",
+"soil aggregation",
+"soil porosity",
+"below-ground herbivory",
+"entomopathogenic nematodes",
+"natural enemies",
+"pest threshold",
+"10 percent threshold",
+"presence is not damage",
+"biological pest regulation",
+"field protocol"
+],
+"geography":null,
+"crops":[],
+"fieldProblems":[
+"Named Pest Infestation (Bollworm, Fruit Fly, Nematode, etc.)",
+"General Pest Pressure",
+"Weak / Shallow Root Establishment",
+"Beneficial Insect / Predator Decline",
+"Biodiversity Loss",
+"Soil Biology / Microbiome Decline"
+],
+"problemFamily":[
+"Pests, Diseases & Weeds",
+"Soil & Roots"
+],
+"fieldPractices":[
+"Threshold-Based Pest/Predator Monitoring",
+"Biological Pest Suppression",
+"Biodiversity Habitat Fostering",
+"Reduced/Eliminated Chemical Input"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Crop Protection",
+"Soil",
+"Biodiversity"
+],
+"pqnkPrinciples":[
+"Maximum Biodiversity",
+"No Soil Disturbance"
+],
+"productionStages":[
+"Establishment",
+"Vegetative Growth"
+],
+"evidenceType":"Farmer Testimony",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/crop-protection",
+"why":"how PQNK relies on biological regulation and intervenes only above the transition threshold"
+},
+{
+"page":"/science/biodiversity",
+"why":"why a diverse soil food web keeps any one organism, including root feeders, in balance"
+}
+]
+},
+{
+"slug":"why-the-world-needs-pqnk",
+"primarySubject":"The case for large-scale PQNK adoption addressed to farmers, governments, environmentalists, health professionals and poverty-alleviation institutions, arguing that restoring production agriculture to the natural ecosystem delivers connected benefits for soil, water, biodiversity, food, health and rural livelihoods",
+"questionsAnswered":[
+"Why should governments promote large-scale adoption of PQNK?",
+"Why should every farmer adopt PQNK?",
+"How does PQNK benefit the environment and biodiversity?",
+"Does food from a mature PQNK field carry chemical residues?",
+"How can PQNK help reduce rural poverty?",
+"When did PQNK begin and how was it developed?",
+"What does responsible promotion of PQNK mean?"
+],
+"keywords":[
+"why the world needs PQNK",
+"large-scale adoption",
+"agricultural policy",
+"four governing rules",
+"public benefits",
+"food security",
+"water security",
+"biodiversity",
+"soil carbon",
+"occupational pesticide exposure",
+"residue-free food",
+"poverty alleviation",
+"rural livelihoods",
+"input dependency",
+"performance measurement"
+],
+"geography":null,
+"crops":[],
+"fieldProblems":[
+"External Input Dependency",
+"High Input / Production Cost",
+"Macro / Policy-Level Externalities",
+"Biodiversity Loss",
+"Contamination / Residue / Food Safety Risk",
+"Diet-Related Health / Food Security Concern",
+"General Soil Fertility / Land Degradation",
+"Groundwater / Aquifer Depletion"
+],
+"problemFamily":[
+"Cost, Profit & Markets",
+"Soil & Roots",
+"Water & Drainage",
+"Transition / Conversion"
+],
+"fieldPractices":[
+"Permanent Raised Bed Formation",
+"No-Till / Minimal-Disturbance Planting",
+"Soil Moisture Management (SMM)",
+"Surface Mulching (General)",
+"Biodiversity Habitat Fostering",
+"Reduced/Eliminated Chemical Input",
+"Biological Nutrient Cycling"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Soil",
+"Water",
+"Biodiversity",
+"Climate",
+"Food Quality",
+"Transition"
+],
+"pqnkPrinciples":[
+"No Inundation",
+"No Soil Disturbance",
+"Permanent Biological Cover",
+"Maximum Biodiversity"
+],
+"productionStages":[
+"Transition/Conversion"
+],
+"evidenceType":"Philosophical/Framework Argument",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/soil",
+"why":"how living, covered, undisturbed soil becomes the biological engine of production"
+},
+{
+"page":"/science/biodiversity",
+"why":"why restoring the farm ecosystem benefits life above and below ground"
+},
+{
+"page":"/science/transition",
+"why":"how PQNK is adopted field by field, with inputs withdrawn on field evidence"
+}
+]
 }
 
 ]
