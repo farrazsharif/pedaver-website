@@ -443,6 +443,21 @@ export const fieldEvidence: FieldEvidence[] = [
     videoId: "KBCFIp3lWj8",
     tags: ["saline soil", "alkaline soil", "high TDS water", "groundwater", "salt accumulation", "hardpan", "deep water wash", "permanent raised beds", "Jantar", "soil moisture management"],
   },
+  {
+    feNumber: 27,
+    title: "Sugarcane on PQNK: 2,800 Maunds (112 Tonnes) per Acre",
+    evidenceTypes: ["Field Evidence"],
+    cropOrTopic: "Sugarcane",
+    year: 2026,
+    date: "2026-10-02",
+    summary:
+      "Field footage of a mature PQNK sugarcane crop being harvested from a residue-covered field, with the stalks cut and the trash left on the ground. The video's summary slide states a yield of 2,800 maunds (about 112 tonnes) per acre grown without fertiliser or pesticides, against 600 to 1,000 maunds for conventional sugarcane with high input costs, together with over 80 percent water saving, no tillage and 44 percent higher sugar recovery, and credits Al-Noor Sugar Mills, Sindh. It is the documented result behind the 2,800-maund figure in Chapters Five and Thirty-Seven of the PQNK book.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/b51QG7Mc3BY",
+    videoId: "b51QG7Mc3BY",
+    relatedCropSlug: "sugarcane",
+    tags: ["sugarcane", "yield", "2,800 maunds", "112 tonnes per acre", "zero fertiliser", "zero pesticide", "water saving", "sugar recovery", "no tillage"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
