@@ -247,6 +247,8 @@ const en = {
     pageTitle: "About Pedaver",
     intro:
       "Pedaver is the independent knowledge, research and validation institution behind PQNK, the natural ecosystem science of production agriculture, built around one core conviction: conventional agriculture's input-heavy model is ecologically, economically and nutritionally unsustainable, and there is a better way. Field-tested across Pakistan's diverse growing regions in Food, Feed, Fiber and Timber production, the system is built to apply just as widely: across different soils, climates, crops and production scales.",
+    nameMeaning:
+      "Pedaver is an Urdu word meaning ‘The Producer’. In our perspective it is the farmer, the producer, and what the farmer grows is the Pedavaar, ‘The Produce’.",
     missionTitle: "What We Do",
     missionPoints: [
       {

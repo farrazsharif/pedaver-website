@@ -75,6 +75,7 @@ export default function AboutPage() {
           <p className="mx-auto mt-5 max-w-2xl text-lg text-ink-soft">
             {withInlineLinks(dict.about.intro, INTRO_LINKS)}
           </p>
+          <p className="mx-auto mt-4 max-w-2xl text-base italic text-ink-soft">{dict.about.nameMeaning}</p>
         </div>
       </section>
 
