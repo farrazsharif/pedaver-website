@@ -460,17 +460,17 @@ export const fieldEvidence: FieldEvidence[] = [
   },
   {
     feNumber: 28,
-    title: "The Four Stages of Learning: From Information to Complete Understanding",
+    title: "The Five Stages of Learning: From Information to Wisdom",
     evidenceTypes: ["Advisory"],
     cropOrTopic: "Learning PQNK",
     year: 2026,
-    date: "2026-10-02",
+    date: "2026-10-03",
     summary:
-      "An illustrated advisory on how a farmer moves from hearing about PQNK to mastering it, in four stages that each build on the one before. Information comes from reading papers and books, watching videos and presentations, listening to experienced farmers and discussing questions in the group. Knowledge comes from seeing the system actually work: field results, how it behaves in real conditions, successful farmers and before-and-after examples. Experience comes from applying it with your own hands: starting on a small area with your own tools and resources, observing, learning and solving problems. Understanding comes from seeing the whole production ecosystem work together and why: soil biology, plants, water, biodiversity, environment and climate, and productivity and livelihoods, so that the farmer can make better decisions and help guide other farmers.",
+      "An illustrated advisory on learning PQNK as a journey in which each stage prepares the farmer for the next. Information comes by reading and listening: papers, books, videos, experienced farmers and group discussion. Knowledge comes by seeing the system actually work: crops, soil and roots in the field, compared results and farmers already applying it. Experience comes by doing it yourself, preferably on a small area with your own soil, water, tools and conditions, making mistakes and solving problems until knowledge becomes skill and confidence. Understanding comes when soil, plants, water, biodiversity, climate and productivity are seen as one living production ecosystem, with cause and effect clear enough to decide well when conditions change. Wisdom, the fifth stage, is knowing what to do, when to do it and when not to interfere: an insect seen is not automatically a reason to spray, a dry surface not automatically a reason to irrigate, a changing plant not automatically a reason to add fertiliser. Sometimes the ecosystem is already correcting itself, and wisdom also carries the responsibility to share experience and guide those who follow.",
     sourcePlatform: "YouTube",
-    sourceUrl: "https://youtu.be/HpiVY6FXeQY",
-    videoId: "HpiVY6FXeQY",
-    tags: ["learning PQNK", "farmer training", "information", "knowledge", "experience", "understanding", "start small", "farmer-to-farmer learning"],
+    sourceUrl: "https://youtu.be/4kSgUWxnnSg",
+    videoId: "4kSgUWxnnSg",
+    tags: ["learning PQNK", "farmer training", "information", "knowledge", "experience", "understanding", "wisdom", "observe before acting", "start small", "farmer-to-farmer learning"],
   },
 ];
 
