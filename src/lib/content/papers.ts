@@ -5597,6 +5597,56 @@ export const papers: Paper[] = [
       "Poverty alleviation can begin inside the economics of production, by reducing recurring input costs and risk before the harvest.",
     ],
   },
+  {
+    slug: "the-underground-network-we-have-been-farming-against",
+    kpNumber: 210,
+    libraryDate: "2026-10-04",
+    category: "Soil Science & PQNK System",
+    title: "The Underground Network We Have Been Farming Against",
+    summary:
+      "New 3D synchrotron imaging (Braunmiller et al., New Phytologist 2026) shows mycorrhizal hyphae spanning air-filled pores, bridging soil particles and growing along roots in intact soil. This paper separates what the research shows from what it means for PQNK: soil architecture is part of the root-fungal partnership, conventional farming dismantles it after every harvest, and a moist but aerated, undisturbed root zone protects it.",
+    publishedDate: "2026-10-04",
+    pdfPath: "/papers/the-underground-network-we-have-been-farming-against.pdf",
+    abstract: [
+      "A 2026 New Phytologist methods paper by Braunmiller and colleagues, reported in Eos, used synchrotron-based X-ray micro-computed tomography to image arbuscular mycorrhizal fungi, roots, soil particles and pore space together in three dimensions in intact soil. Hyphae were seen spanning air-filled pores, forming branching networks, connecting soil particles and growing toward and along roots. The method detects hyphae best in air-filled pores, because water in fine pores obscures them.",
+      "The study did not test PQNK, rice, flooding or Alternate Wetting and Drying. Its significance for PQNK is that it makes visible the living architecture that the four governing rules are meant to protect: no inundation, no soil disturbance after conversion, permanent organic cover and encouraged biodiversity. Soil structure is not merely a container for roots; it is part of the operating environment of the root-fungal partnership.",
+      "Conventional production rebuilds the field after every harvest: residue is burnt or removed and the soil is ploughed, rotavated, levelled and re-ridged, tearing hyphal networks and collapsing the pores they occupy. The same holds for SRI as commonly practised, which still ploughs and usually puddles before each transplanting. PQNK, which began in 2009 as a mechanised SRI trial on raised beds, added permanence, so the network can accumulate from crop to crop.",
+      "PQNK Soil Moisture Management keeps the root zone moist but aerated, at roughly 30 percent water to 70 percent air in the pore space. Field photographs from PQNK beds show central rows standing taller and denser than the rows beside the furrows. The paper proposes a rice study comparing continuous flooding, AWD and a moist, aerated PQNK root zone, combining micro-CT with oxygen, redox, moisture, root and yield measurements.",
+    ],
+    keyTakeaways: [
+      "Synchrotron micro-CT (Braunmiller et al., 2026) images mycorrhizal hyphae, roots, soil particles and pores together in intact soil for the first time.",
+      "Hyphae are resolved in air-filled pores, bridging particles and growing along roots; this is a limit of the imaging method, not proof that fungi avoid wetter microsites.",
+      "The study did not test PQNK, rice, flooding or AWD; it makes visible the architecture PQNK’s four rules protect.",
+      "Conventional farming, and SRI as commonly practised, rebuild the field after every harvest and dismantle the underground network each crop.",
+      "PQNK keeps the root zone moist but aerated at roughly 30 percent water to 70 percent air, with beds, roots and residues carried forward from crop to crop.",
+      "A three-way rice comparison of continuous flooding, AWD and PQNK moisture management is proposed to document the effect on root-zone architecture.",
+    ],
+  },
+  {
+    slug: "why-pqnk-sugarcane-does-not-need-earthing-up",
+    kpNumber: 211,
+    libraryDate: "2026-10-04",
+    category: "Crop-Specific Guides",
+    title: "Why PQNK Sugarcane Does Not Need Earthing Up",
+    summary:
+      "Earthing up is routine in conventional sugarcane because cane is planted in furrows above a compacted hardpan, roots stay shallow and the stool needs soil piled around it. PQNK removes the cause instead: the hardpan is broken once, cane grows on permanent beds, roots go deep, the crown stays near the aerated surface and the full sugar-rich base can be harvested.",
+    publishedDate: "2026-10-04",
+    pdfPath: "/papers/why-pqnk-sugarcane-does-not-need-earthing-up.pdf",
+    abstract: [
+      "Earthing up is a standard operation in many conventional sugarcane systems: soil is moved toward the cane stool after establishment, often more than once. PQNK asks why the operation became necessary. In the conventional system the furrow is first made to keep moisture around the planted set; later, soil from the adjoining ridge is moved back into that furrow, so the original furrow becomes the cane row and the ridge becomes the new furrow.",
+      "Where repeated tillage and traffic have left a compacted hardpan, roots are confined to the loosened upper layer and spread sideways, so the tall, heavy crop is poorly anchored. Earthing up adds support around the stool, but it treats the consequence and leaves the hardpan in place. Repeated earthing also buries the crown and buds, giving new tillers a longer path to the surface, and in PQNK field observations it can leave around 12 inches of mature basal cane below the cutting level.",
+      "PQNK changes the field before planting: the hardpan is broken once with a subsoiler set at about 22 inches, permanent raised beds are formed, traffic stays in the furrows and the bed is never rebuilt. Roots can then go deep, anchoring the plant from below, the crown stays near the mulched, aerated surface, and mature cane can be cut close to its base while younger shoots continue the plantation.",
+      "Sugarcane is not a high-water crop: on mature beds with 400 mm or more of annual rainfall, rain, dew, humidity and capillary rise carry the crop and furrow water is supplementary. Earthing up becomes unnecessary not because an operation is skipped but because the system is redesigned so that its original purpose is largely removed.",
+    ],
+    keyTakeaways: [
+      "Earthing up exists because conventional cane is planted in furrows above a hardpan that keeps roots shallow; it treats the consequence, not the cause.",
+      "PQNK breaks the hardpan once (subsoiler at about 22 inches), forms permanent beds and never rebuilds them, so roots can anchor the cane from deep in the profile.",
+      "Avoiding repeated earthing keeps the crown and buds near the aerated surface, supporting continuing tiller emergence.",
+      "PQNK field observations show earthing up can leave around 12 inches of mature, sugar-rich basal cane below the cutting level; PQNK keeps the base accessible.",
+      "Lodging is addressed through deeper root anchorage rather than soil piled around the stem, without claiming lodging becomes impossible.",
+      "Sugarcane is not a high-water crop: on mature beds at 400 mm or more of rainfall, furrow water is supplementary and given only when the soil-ball test shows a need.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {

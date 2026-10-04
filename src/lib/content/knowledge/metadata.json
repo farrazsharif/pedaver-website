@@ -15700,6 +15700,176 @@
 "why":"how PQNK is adopted field by field, with inputs withdrawn on field evidence"
 }
 ]
+},
+{
+"slug":"the-underground-network-we-have-been-farming-against",
+"primarySubject":"A PQNK reading of new 3D synchrotron imaging of mycorrhizal fungi in intact soil, separating the research findings from their implications for a moist, aerated, undisturbed living root zone and for tillage, flooding and SRI",
+"questionsAnswered":[
+"What did the new 3D imaging of mycorrhizal fungi in soil show?",
+"Does the Braunmiller micro-CT study prove PQNK?",
+"Why does tillage after every harvest harm the soil fungal network?",
+"Why does PQNK keep the root zone moist but aerated instead of flooded?",
+"How is PQNK different from SRI and AWD for rice?",
+"Why are plants in the centre of a PQNK bed more vigorous?",
+"What rice experiment could compare flooding, AWD and PQNK?"
+],
+"keywords":[
+"mycorrhizal fungi",
+"arbuscular mycorrhiza",
+"hyphae",
+"synchrotron micro-CT",
+"Braunmiller 2026",
+"Eos",
+"soil pore space",
+"air-filled pores",
+"root-fungal partnership",
+"tillage destroys fungal network",
+"SRI",
+"alternate wetting and drying",
+"30/70 rule",
+"centre-row vigour",
+"living root zone"
+],
+"geography":null,
+"crops":[
+"Rice",
+"Wheat"
+],
+"fieldProblems":[
+"Tillage Damage to Soil Biology / Structure",
+"Weak Below-Ground Symbiosis (Mycorrhizae/Nitrogen-Fixers)",
+"Low Root-Zone Oxygen / Poor Aeration",
+"Waterlogging",
+"Soil Biology / Microbiome Decline",
+"Poor Soil Structure / Aggregation"
+],
+"problemFamily":[
+"Soil & Roots",
+"Water & Drainage",
+"Plant Growth & Nutrition"
+],
+"fieldPractices":[
+"No-Till / Minimal-Disturbance Planting",
+"Soil Moisture Management (SMM)",
+"Permanent Raised Bed Formation",
+"Root Retention (Standing Roots After Harvest)",
+"Surface Mulching (General)",
+"Biological Nutrient Cycling"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Soil",
+"Plants",
+"Water",
+"Biodiversity"
+],
+"pqnkPrinciples":[
+"No Soil Disturbance",
+"No Inundation",
+"Permanent Biological Cover",
+"Maximum Biodiversity"
+],
+"productionStages":[
+"Vegetative Growth",
+"Transition/Conversion"
+],
+"evidenceType":"External Scientific Evidence",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/soil",
+"why":"how the root-fungal network lives in the pore architecture of undisturbed, covered soil"
+},
+{
+"page":"/science/water",
+"why":"why PQNK keeps the root zone moist but aerated at roughly 30 percent water to 70 percent air"
+}
+]
+},
+{
+"slug":"why-pqnk-sugarcane-does-not-need-earthing-up",
+"primarySubject":"Why PQNK sugarcane needs no earthing up: the operation compensates for furrow planting above a hardpan, while one-time hardpan correction, permanent beds and deep rooting remove its purpose",
+"questionsAnswered":[
+"Why is sugarcane earthed up in conventional farming?",
+"Does PQNK sugarcane need earthing up?",
+"How does PQNK prevent sugarcane lodging?",
+"Why does earthing up reduce harvestable cane?",
+"How is sugarcane planted on PQNK permanent beds?",
+"Does earthing up affect tillering in sugarcane?"
+],
+"keywords":[
+"earthing up",
+"sugarcane",
+"hardpan",
+"plough pan",
+"lodging",
+"root anchorage",
+"crown burial",
+"tillering",
+"basal cane",
+"selective harvest",
+"permanent raised beds",
+"subsoiler 22 inches",
+"ratoon",
+"circular sugarcane"
+],
+"geography":null,
+"crops":[
+"Sugarcane"
+],
+"fieldProblems":[
+"Hardpan",
+"Weak / Shallow Root Establishment",
+"Soil Compaction (General)",
+"High Input / Production Cost",
+"Labor Scarcity / Cost"
+],
+"problemFamily":[
+"Soil & Roots",
+"Machinery & Field Operations",
+"Yield & Produce Quality"
+],
+"fieldPractices":[
+"Mechanical Hardpan Breaking (Subsoiling)",
+"Permanent Raised Bed Formation",
+"Controlled Traffic (Furrow-Confined)",
+"No-Till / Minimal-Disturbance Planting",
+"Root Retention (Standing Roots After Harvest)",
+"Soil Moisture Management (SMM)"
+],
+"machineryTools":[
+"Subsoiler / Hardpan Breaker",
+"Raised Bed Shaper (PQNK machine)"
+],
+"climateType":[],
+"scientificDomains":[
+"Soil",
+"Plants",
+"Production Architecture"
+],
+"pqnkPrinciples":[
+"No Soil Disturbance",
+"No Inundation",
+"Permanent Biological Cover"
+],
+"productionStages":[
+"Land Preparation",
+"Planting",
+"Harvest"
+],
+"evidenceType":"Field Observation",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/production-architecture",
+"why":"how one-time hardpan correction and permanent beds remove the need for recurring corrective operations"
+},
+{
+"page":"/science/soil",
+"why":"why roots that can go deep anchor the crop and keep the soil system intact"
+}
+]
 }
 
 ]
