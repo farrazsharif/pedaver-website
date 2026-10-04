@@ -15873,6 +15873,89 @@
 "why":"why roots that can go deep anchor the crop and keep the soil system intact"
 }
 ]
+},
+{
+"slug":"rain-where-it-falls",
+"primarySubject":"Restoring infiltration where rain falls as the first step in agricultural water management: hardpan correction, undisturbed covered soil and reduced irrigation demand before more water storage, drawing on the Rajasthan water-harvesting experience",
+"questionsAnswered":[
+"Why do wells and rivers dry up even when it rains?",
+"How does hardpan affect groundwater recharge?",
+"Does PQNK oppose dams and water-harvesting structures?",
+"How can farms reduce groundwater depletion?",
+"Why is soil the first water reservoir?",
+"What can agriculture learn from Rajendra Singh and the Rajasthan water story?"
+],
+"keywords":[
+"rain where it falls",
+"infiltration",
+"runoff",
+"groundwater recharge",
+"groundwater depletion",
+"Rajasthan",
+"Rajendra Singh",
+"water harvesting",
+"hardpan",
+"organic mulch",
+"evaporation",
+"watershed management",
+"dams",
+"soil as reservoir",
+"irrigation demand"
+],
+"geography":null,
+"crops":[],
+"fieldProblems":[
+"Runoff",
+"Poor Water Infiltration",
+"Groundwater / Aquifer Depletion",
+"Hardpan",
+"Bare / Exposed Soil",
+"Drought / Water Scarcity",
+"High Irrigation Cost / Dependency",
+"Soil Erosion"
+],
+"problemFamily":[
+"Water & Drainage",
+"Soil & Roots",
+"Heat, Weather & Climate"
+],
+"fieldPractices":[
+"Mechanical Hardpan Breaking (Subsoiling)",
+"No-Till / Minimal-Disturbance Planting",
+"Surface Mulching (General)",
+"Soil Moisture Management (SMM)",
+"Soil Moisture Ball/Field Test",
+"Furrow Irrigation"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Water",
+"Soil",
+"Climate"
+],
+"pqnkPrinciples":[
+"No Soil Disturbance",
+"No Inundation",
+"Permanent Biological Cover",
+"Maximum Biodiversity"
+],
+"productionStages":[
+"Land Preparation",
+"Transition/Conversion"
+],
+"evidenceType":"Philosophical/Framework Argument",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/water",
+"why":"how covered, undisturbed soil receives and holds rain where it falls"
+},
+{
+"page":"/science/soil",
+"why":"why correcting the hardpan restores the soil profile as a pathway for water"
+}
+]
 }
 
 ]

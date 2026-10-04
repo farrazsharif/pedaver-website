@@ -5649,6 +5649,31 @@ export const papers: Paper[] = [
       "PQNK does not control tiller population by burying the stool: it removes the leader tiller early to break apical dominance, so the secondary tillers grow together; millable-cane numbers depend on variety, soil maturity and planting accuracy.",
     ],
   },
+  {
+    slug: "rain-where-it-falls",
+    kpNumber: 212,
+    libraryDate: "2026-10-04",
+    category: "Water & Climate",
+    title: "Rain Where It Falls: Restoring the Soil Before Building More Water Storage",
+    summary:
+      "Rajendra Singh’s Rajasthan story shows that slowing runoff lets water enter the ground and restore wells and rivers. PQNK moves that principle upstream into the field itself: correct the hardpan, stop disturbing the soil, keep the surface covered, and let every acre receive and hold the rain where it falls, so that agricultural water demand stays within what the landscape renews.",
+    publishedDate: "2026-10-04",
+    pdfPath: "/papers/rain-where-it-falls.pdf",
+    abstract: [
+      "The restoration of water systems in Rajasthan, as told in an account of Rajendra Singh and village communities, shows that water scarcity is not set only by how much rain falls but by what the landscape does with it. Traditional structures in drainage channels slowed runoff, increased infiltration and helped restore groundwater, wells and river baseflow.",
+      "PQNK takes the same principle farther upstream and asks why so much rain left the agricultural land in the first place. Repeated tillage, hardpan, bare soil, residue removal and overgrazing reduce the land’s ability to receive water, while heavy pumping withdraws groundwater faster than rain replenishes it. Hardpan is therefore a water issue as much as a root issue, and bare soil loses the water that does enter to evaporation.",
+      "PQNK restores infiltration across the land where rain actually falls: the hardpan is corrected once, the soil is no longer disturbed, roots stay in place and living and dead organic cover protects the surface. Water is given only when the soil-ball test shows a need, PQNK fields use 77 to 92 percent less irrigation water than local flood irrigation, and mature mulch-covered beds at 400 mm or more of rainfall need no irrigation.",
+      "The paper sets an ecological order of priority rather than rejecting dams: the first reservoir is living, porous, covered soil, the second is the deeper profile and groundwater, and structures manage only the genuine surplus. Restore the landscape first, then calculate the remaining deficit. Every acre can become a rainwater receiving area and every aquifer a reserve from which withdrawal stays below recharge.",
+    ],
+    keyTakeaways: [
+      "Water scarcity depends not only on how much rain falls but on what the land does with it.",
+      "Rajasthan’s water harvesting shows that slowed runoff can infiltrate and restore groundwater, wells and rivers; PQNK moves that principle into the field itself.",
+      "Hardpan is a water issue: it turns part of the soil profile into a barrier; PQNK corrects it once and turns the profile back into a pathway.",
+      "Infiltration alone is not enough: organic cover keeps the water that enters from being lost to evaporation.",
+      "Recharge and demand must be managed together: PQNK fields use 77 to 92 percent less irrigation water, and mature beds at 400 mm or more of rain need none.",
+      "The soil is the first reservoir; dams and structures should manage genuine surplus, not compensate for a damaged water cycle.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {
