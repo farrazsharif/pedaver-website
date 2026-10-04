@@ -5637,6 +5637,7 @@ export const papers: Paper[] = [
       "Where repeated tillage and traffic have left a compacted hardpan, roots are confined to the loosened upper layer and spread sideways, so the tall, heavy crop is poorly anchored. Earthing up adds support around the stool, but it treats the consequence and leaves the hardpan in place. Repeated earthing also buries the crown and buds, giving new tillers a longer path to the surface, and in PQNK field observations it can leave around 12 inches of mature basal cane below the cutting level.",
       "PQNK changes the field before planting: the hardpan is broken once with a subsoiler set at about 22 inches, permanent raised beds are formed, traffic stays in the furrows and the bed is never rebuilt. Roots can then go deep, anchoring the plant from below, the crown stays near the mulched, aerated surface, and mature cane can be cut close to its base while younger shoots continue the plantation.",
       "Sugarcane is not a high-water crop: on mature beds with 400 mm or more of annual rainfall, rain, dew, humidity and capillary rise carry the crop and furrow water is supplementary. Earthing up becomes unnecessary not because an operation is skipped but because the system is redesigned so that its original purpose is largely removed.",
+      "Earthing up is also said to control tillering. On PQNK beds it is not possible at all, because the cane grows in the centre of the permanent 42-inch bed. PQNK instead removes the dominant leader tiller in the first few weeks so that the remaining tillers grow together, uniform in height and girth; a high tiller count is not excess tillering, and how many tillers become millable canes depends on the variety’s genetic potential, the soil’s progress from the regenerative to the sustained state, and planting accuracy.",
     ],
     keyTakeaways: [
       "Earthing up exists because conventional cane is planted in furrows above a hardpan that keeps roots shallow; it treats the consequence, not the cause.",
@@ -5645,6 +5646,7 @@ export const papers: Paper[] = [
       "PQNK field observations show earthing up can leave around 12 inches of mature, sugar-rich basal cane below the cutting level; PQNK keeps the base accessible.",
       "Lodging is addressed through deeper root anchorage rather than soil piled around the stem, without claiming lodging becomes impossible.",
       "Sugarcane is not a high-water crop: on mature beds at 400 mm or more of rainfall, furrow water is supplementary and given only when the soil-ball test shows a need.",
+      "Earthing up is not used to control tillers: PQNK removes the leader tiller early so the rest grow together, and millable-cane numbers depend on variety, soil maturity and planting accuracy.",
     ],
   },
 ];
