@@ -1008,6 +1008,8 @@ manuscript change. Logged for the record.
    independent validation of Chapter 5's least-conventional section from a
    water specialist.
 
+- **2026-10-04 — on KP-210 (The Underground Network…), by email:** "This is brilliant… Few agronomy professors could write more concisely and precisely. The tone is very measured and the presentation well-informed. No hyperbole, just important factual statements." Suggested contacting Zahir (UAF; co-author with the late Mohammad Arshad of the phytohormones chapter in Uphoff & Thies, *Biological Approaches to Regenerative Soil Systems*) to start soil-structure research — fits KP-210 §8 (flooded vs AWD vs PQNK rice). Attached Ch20 (Phytohormones) and Ch13 (AMF) of that book. Private email: ask before quoting publicly.
+
 ### 2026-09-12 — Chapter 15 continuity review, publish, and KP sweep close the correction episode
 
 With Chapter 14 locked, the author asked for the final continuity review of
