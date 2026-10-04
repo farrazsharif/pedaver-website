@@ -14,6 +14,7 @@ import {
 import Section from "@/components/Section";
 import ContentViewTracker from "@/components/analytics/ContentViewTracker";
 import TrackedPdfLink from "@/components/analytics/TrackedPdfLink";
+import ShareButton from "@/components/ShareButton";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
 import { buildChapterSpeech } from "@/lib/content/chapterSpeech";
 import ChapterBody from "./ChapterBody";
@@ -153,6 +154,7 @@ export default async function ChapterPage({
               >
                 {dict.books.downloadChapterPdf}
               </TrackedPdfLink>
+              <ShareButton title={chapter.title} path={`/books/${bookId}/${chapterId}/`} className="mt-3 inline-block w-full rounded-full border border-primary px-6 py-3 text-center text-sm font-semibold text-primary transition hover:bg-primary/10" />
             </div>
           )}
         </div>

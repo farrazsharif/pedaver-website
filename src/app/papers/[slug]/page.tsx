@@ -9,6 +9,7 @@ import VideoEmbed from "@/components/VideoEmbed";
 import TrackedVideo from "@/components/analytics/TrackedVideo";
 import ContentViewTracker from "@/components/analytics/ContentViewTracker";
 import TrackedPdfLink from "@/components/analytics/TrackedPdfLink";
+import ShareButton from "@/components/ShareButton";
 import TrackedExternalLink from "@/components/analytics/TrackedExternalLink";
 import TrackedRelatedLink from "@/components/analytics/TrackedRelatedLink";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
@@ -178,6 +179,7 @@ export default async function PaperDetailPage({
           </div>
 
           <div className="flex flex-col gap-6">
+            <ShareButton title={paper.title} path={`/papers/${slug}/`} className="rounded-full border border-primary px-6 py-3 text-center text-sm font-semibold text-primary transition hover:bg-primary/10" />
             {paper.pdfPath ? (
               <TrackedPdfLink
                 href={paper.pdfPath}
