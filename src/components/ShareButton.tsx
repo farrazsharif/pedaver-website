@@ -30,9 +30,17 @@ export default function ShareButton({ title, path, className }: { title: string;
     }
   }
 
+  // WhatsApp is not always in the system share list (e.g. on a Mac), so it gets its own button.
+  const whatsapp = `https://wa.me/?text=${encodeURIComponent(`${title}\n${url}`)}`;
+
   return (
-    <button type="button" onClick={share} className={className}>
-      {copied ? "Link copied" : "Share this page"}
-    </button>
+    <>
+      <button type="button" onClick={share} className={className}>
+        {copied ? "Link copied" : "Share this page"}
+      </button>
+      <a href={whatsapp} target="_blank" rel="noopener noreferrer" className={className}>
+        Share on WhatsApp
+      </a>
+    </>
   );
 }
