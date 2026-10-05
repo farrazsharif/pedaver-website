@@ -5647,6 +5647,7 @@ export const papers: Paper[] = [
       "Lodging is addressed through deeper root anchorage rather than soil piled around the stem, without claiming lodging becomes impossible.",
       "Sugarcane is not a high-water crop: on mature beds at 400 mm or more of rainfall, furrow water is supplementary and given only when the soil-ball test shows a need.",
       "PQNK does not control tiller population by burying the stool: it removes the leader tiller early to break apical dominance, so the secondary tillers grow together; millable-cane numbers depend on variety, soil maturity and planting accuracy.",
+      "Where soil moisture cannot be kept above the set’s own, coat both cut ends of each set, bud or node with pure cement: it closes the exposed pores and keeps the juice inside for proper germination.",
     ],
   },
   {
