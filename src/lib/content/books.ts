@@ -3153,7 +3153,7 @@ export const books: Book[] = [
         summary:
           "Chapter 38 shows how permanent beds and organic mulch separate the potato’s tuber zone from the season above it: bare soil passes 70 °C in summer while the soil under mulch stays at 30–33 °C, so crop can follow crop on the same bed. It covers the Punjab climate year, the thermal shield, precision seed pieces coated with cement, keeping seed free of disease without buying new seed, Soil Moisture Management, late blight and the economics of circular production.",
         publishedDate: "2026-10-05",
-        version: "1.0",
+        version: "1.1",
         pdfPath: "/books/natural-ecosystem-science/potato.pdf",
         body: [
   { type: "openingQuote", text: "“The conventional potato farmer spends heavily on seed and grows one crop a year. The PQNK potato farmer plants a fraction of that seed, grows crop after crop on the same permanent bed, and meets the market more than once a year. The circular system is not a farming technique. It is a business model.”" },
@@ -3167,7 +3167,6 @@ export const books: Book[] = [
   { type: "paragraph", runs: [{ text: "Established potato physiology supports this distinction. FAO guidance gives an optimum soil temperature of about 15–18°C for tuber growth, while reporting favourable daytime air temperatures of about 25–32°C and night temperatures of about 12–18°C. High temperature can promote vegetative growth while progressively suppressing tuber initiation and bulking. Experimental work separating air and soil temperature found that hot soil could largely prevent tuber development even when the air was comparatively cool. This is why a potato calendar cannot be judged from maximum air temperature alone." }] },
   { type: "paragraph", runs: [{ text: "PQNK field observation adds the management dimension. The accompanying Pedaver soil-temperature video, and the infographic below, show the large thermal contrast that organic surface cover creates. In hot summer, naked soil exposed to direct sun passes 70 °C and the top of a dead mulch layer reaches about 66 °C, while the soil beneath dead or living mulch stays at about 30–33 °C: roughly 40 °C cooler. In winter, mulched soil in the production zone commonly remains around 10–20 °C even while ambient temperatures range much more widely." }] },
   { type: "imageGroup", files: ["ch38-img-02.jpg"] },
-  { type: "caption", text: "From the Pedaver video “The Significance of Soil Temperature”: field readings of bare and mulch-covered soil" },
   { type: "heading", text: "PUNJAB CLIMATE: WHAT THE POTATO CANOPY EXPERIENCES THROUGH THE YEAR" },
   { type: "paragraph", runs: [{ text: "The table below uses Lahore as a representative central-Punjab reference. Day and night temperatures and relative humidity are 1992–2021 Lahore Airport climate averages reported by Timeanddate.com. Day length is approximate astronomical daylight near the middle of each month at Lahore latitude. These are climatic averages, not daily limits: individual days can be substantially hotter or colder, including occasional winter frost and extreme summer heat." }] },
   { type: "imageGroup", files: ["ch38-table-00.png"] },
