@@ -398,6 +398,8 @@ and update the §4 row. Web text (what Read Aloud reads) is correct.
 
 ## 6. Decisions log — BINDING, do not re-litigate
 
+- **2026-10-05 — Published Papers folder.** `PQNK_Claude_Work/Published Papers/` holds every published KP as `KP-0NN Title.pdf` (exact website PDF) plus Word/Pages copies where they exist; `_INDEX.txt` lists links and sources. Rebuild with `python3 "Claude tools/build_published_papers.py"` after every KP publish. Never rename files inside `public/papers/` (the author once renamed KP-042's PDF in Finder; restored, since it breaks the website link).
+
 - **2026-10-05 — Author-chosen images are used exactly as he saves them.** Ch38 "Mulch Keeps Soil Cool": the author chose and twice restored his own version (~68 °C / ~28 °C, `PQNK Book/Mulch Keeps Soil Cool-2.png`); Claude's edit of its numbers was published twice against his wish. Never edit, "correct" or swap a picture the author has placed or supplied; if its figures differ from the text, mention it once and use his picture.
 
 - **2026-09-04 — Ch4 scientific-consistency pass: APPROVED by the author.**
