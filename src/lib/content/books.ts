@@ -3153,7 +3153,7 @@ export const books: Book[] = [
         summary:
           "Chapter 38 shows how permanent beds and organic mulch separate the potato’s tuber zone from the season above it: bare soil passes 70 °C in summer while the soil under mulch stays at 30–33 °C, so crop can follow crop on the same bed. It covers the Punjab climate year, the thermal shield, precision seed pieces coated with cement, keeping seed free of disease without buying new seed, Soil Moisture Management, late blight and the economics of circular production.",
         publishedDate: "2026-10-05",
-        version: "1.1",
+        version: "1.2",
         pdfPath: "/books/natural-ecosystem-science/potato.pdf",
         body: [
   { type: "openingQuote", text: "“The conventional potato farmer spends heavily on seed and grows one crop a year. The PQNK potato farmer plants a fraction of that seed, grows crop after crop on the same permanent bed, and meets the market more than once a year. The circular system is not a farming technique. It is a business model.”" },
@@ -3178,7 +3178,7 @@ export const books: Book[] = [
   { type: "heading", text: "THE PQNK THERMAL SHIELD" },
   { type: "paragraph", runs: [{ text: "Conventional ridged potato places the tuber inside a mass of cultivated mineral soil. As the ridge heats, the developing tuber is surrounded by that heated medium. PQNK changes the geometry: seed potato is placed on or near the surface of the permanent biological bed and covered by approximately 4–6 inches of organic mulch. The mulch intercepts solar radiation, reduces direct heating, reduces evaporation, buffers rapid temperature change and maintains a biologically active, aerated moisture environment around the developing stolons and tubers." }] },
   { type: "imageGroup", files: ["ch38-img-03.jpg"] },
-  { type: "caption", text: "Mulch keeps soil cool: in hot summer, bare soil passes 70 °C while the soil under mulch stays at 30–33 °C (PQNK field readings)" },
+  { type: "caption", text: "Mulch keeps soil cool: bare soil and soil under organic mulch in hot summer (PQNK field readings)" },
   { type: "paragraph", runs: [{ text: "The thermal effect depends on mulch type and thickness. Coarse, dry, airy residues generally insulate differently from compact, wet or decomposed material. The practical PQNK rule is therefore not merely ‘apply mulch’. It is to maintain enough organic cover to keep the tuber zone protected throughout the crop and to observe soil temperature as part of crop management, particularly during hot-season cycles." }] },
   { type: "heading", text: "THE SEED-COST PARADOX" },
   { type: "paragraph", runs: [{ text: "Potato is unusual because its planting material is itself a marketable tuber. Conventional systems commonly plant whole small seed tubers or larger tubers cut into pieces, so hundreds of kilograms of saleable product can be returned to each acre as planting material. Conventional Punjab practice commonly plants 600–800 kg of seed potato per acre; the established PQNK protocol uses 150–200 kg/acre. This is a 75% reduction at the midpoint and is one of the strongest immediate economic advantages of precision placement." }] },
