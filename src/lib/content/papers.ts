@@ -5675,6 +5675,30 @@ export const papers: Paper[] = [
       "The soil is the first reservoir; dams and structures should manage genuine surplus, not compensate for a damaged water cycle.",
     ],
   },
+  {
+    slug: "when-13-inches-of-rain-falls-in-eight-hours",
+    kpNumber: 213,
+    libraryDate: "2026-10-07",
+    category: "Water & Climate",
+    title: "When 13 Inches of Rain Falls in Eight Hours",
+    summary:
+      "After 13 inches of rain in eight hours, the PQNK orchard beds of Jaskaran Singh in Fazilka district, Indian Punjab, had taken the water into the soil and could be walked on in slippers, while neighbouring conventional orchards and fields stood under water, and so did a strip of his own orchard where the hardpan had not been broken. The paper explains why hardpan is a water barrier as well as a root barrier, and why the soil is the first reservoir.",
+    publishedDate: "2026-10-07",
+    pdfPath: "/papers/when-13-inches-of-rain-falls-in-eight-hours.pdf",
+    abstract: [
+      "Thirteen inches (330 mm) of rain fell in eight hours. A field video recorded by Jaskaran Singh, a PQNK farmer in Fazilka district, Indian Punjab, shows that on his PQNK beds, where the hardpan had been broken, the water had gone into the soil and the beds could be walked on in slippers, while the neighbouring conventionally managed orchards and fields stood under water.",
+      "Within his own orchard, a strip where beds had been shaped but the hardpan had not been broken was still holding water. Because that strip had the same rain in the same orchard, the comparison points directly at the hardpan as the barrier.",
+      "Hardpan is therefore not only a restriction on roots. It is also a barrier to water: a field capped by a compacted layer fills quickly and behaves like a shallow container. PQNK corrects the hardpan once, with one subsoiler pass to about 22 inches, and then protects the profile with no repeated disturbance, permanent cover, retained roots and residues, and machinery traffic confined to the furrows.",
+      "The soil is the first reservoir. Before building more places to store runoff, PQNK restores the land’s ability to receive the rain where it falls; storage and flood-management works then deal only with the genuine surplus.",
+    ],
+    keyTakeaways: [
+      "After 13 inches of rain in eight hours, PQNK beds with the hardpan broken had taken the water into the soil, while conventional land next to them stood under water.",
+      "A strip of the same orchard with beds but unbroken hardpan still held water: the hardpan, not the rain, made the difference.",
+      "Hardpan is a water barrier as well as a root barrier, contributing to both drought stress and waterlogging.",
+      "PQNK breaks the hardpan once and then stops rebuilding it: no repeated tillage, permanent cover, roots and residues retained, traffic only in the furrows.",
+      "The soil pore beneath the raindrop is the first place to harvest rain; restore the land before building more storage.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {

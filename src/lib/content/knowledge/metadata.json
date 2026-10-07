@@ -15957,6 +15957,87 @@
 "why":"why correcting the hardpan restores the soil profile as a pathway for water"
 }
 ]
+},
+{
+"slug":"when-13-inches-of-rain-falls-in-eight-hours",
+"primarySubject":"Field evidence from an extreme rainfall event (13 inches in eight hours) showing rapid infiltration on PQNK beds with the hardpan broken, compared with flooded conventional land and an unbroken-hardpan strip in the same orchard; hardpan as a barrier to water as well as roots",
+"questionsAnswered":[
+"What happens to a PQNK field in extreme rainfall?",
+"Why does water stand on conventional fields after heavy rain?",
+"How does breaking the hardpan affect water infiltration?",
+"Is hardpan only a root problem?",
+"Why is the soil the first water reservoir?",
+"Does PQNK prevent flooding of fields?"
+],
+"keywords":[
+"13 inches of rain",
+"extreme rainfall",
+"infiltration",
+"hardpan",
+"plough pan",
+"subsoiling",
+"standing water",
+"waterlogging",
+"flooding",
+"orchard",
+"Fazilka",
+"Indian Punjab",
+"Jaskaran Singh",
+"soil as reservoir",
+"rain where it falls"
+],
+"geography":"Fazilka, Punjab, India",
+"crops":[
+"Fruit Trees (crop group)"
+],
+"fieldProblems":[
+"Hardpan",
+"Poor Water Infiltration",
+"Waterlogging",
+"Flooding",
+"Runoff",
+"Soil Compaction (General)"
+],
+"problemFamily":[
+"Water & Drainage",
+"Soil & Roots",
+"Heat, Weather & Climate"
+],
+"fieldPractices":[
+"Mechanical Hardpan Breaking (Subsoiling)",
+"Permanent Raised Bed Formation",
+"Controlled Traffic (Furrow-Confined)",
+"No-Till / Minimal-Disturbance Planting",
+"Surface Mulching (General)"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Water",
+"Soil",
+"Climate"
+],
+"pqnkPrinciples":[
+"No Soil Disturbance",
+"No Inundation",
+"Permanent Biological Cover"
+],
+"productionStages":[
+"Land Preparation",
+"Transition/Conversion"
+],
+"evidenceType":"Field Observation",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/water",
+"why":"how covered, undisturbed soil receives rain where it falls"
+},
+{
+"page":"/science/soil",
+"why":"why breaking the hardpan turns the soil profile into a pathway for water"
+}
+]
 }
 
 ]
