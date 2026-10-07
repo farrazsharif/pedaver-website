@@ -18,8 +18,17 @@ const GUARD =
   'function d(l){l=(l||"").split("-")[0].toLowerCase();if(l)h.dir=R[l]?"rtl":"ltr"}' +
   'd(new URLSearchParams(location.search).get("_x_tr_tl"));' +
   'new MutationObserver(function(){d(h.lang)}).observe(h,{attributes:true,attributeFilter:["lang"]});' +
+  // Google translates lazily, only the parts of the page that have been on screen. Before saving, scroll through the
+  // whole page, wait until Google has stopped adding translated text (<font> wrappers stable for 1.5 s, at most ~18 s),
+  // return to where the reader was, then open print / Save as PDF.
   'document.addEventListener("click",function(e){var b=e.target&&e.target.closest&&e.target.closest("[data-print-page]");' +
-  'if(b){e.preventDefault();window.print()}})})();</script>';
+  'if(!b)return;e.preventDefault();if(b.getAttribute("data-busy"))return;b.setAttribute("data-busy","1");b.style.opacity="0.5";' +
+  'var y0=window.scrollY,y=0;' +
+  'function step(){window.scrollTo(0,y);y+=window.innerHeight*0.8;if(y<document.documentElement.scrollHeight)setTimeout(step,250);else settle(0,-1,0)}' +
+  'function settle(k,last,same){var c=document.getElementsByTagName("font").length;same=c===last?same+1:0;' +
+  'if(same>=5||k>=60){window.scrollTo(0,y0);b.removeAttribute("data-busy");b.style.opacity="";setTimeout(function(){window.print()},300)}' +
+  'else setTimeout(function(){settle(k+1,c,same)},300)}' +
+  'step()})})();</script>';
 const MARK = "translate\\.goog$/.test(location.hostname)";
 
 function walk(dir, out = []) {
