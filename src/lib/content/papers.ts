@@ -5699,6 +5699,30 @@ export const papers: Paper[] = [
       "The soil pore beneath the raindrop is the first place to harvest rain; restore the land before building more storage.",
     ],
   },
+  {
+    slug: "harvesting-without-irrigation",
+    kpNumber: 214,
+    libraryDate: "2026-10-08",
+    category: "Water & Climate",
+    title: "Harvesting Without Irrigation",
+    summary:
+      "Crop water requirement is not the same as irrigation requirement. Three field clips show organic residue capturing humidity and dew and keeping the soil beneath it moist and soft, on a roller-compacted road and in the Cholistan Desert, while exposed soil beside it dries and hardens. Receive the rain, store it in the profile, protect it with cover and let roots reach it: on mature PQNK beds at 400 mm or more of annual rainfall, no irrigation is needed.",
+    publishedDate: "2026-10-08",
+    pdfPath: "/papers/harvesting-without-irrigation.pdf",
+    abstract: [
+      "Agriculture commonly treats crop water requirement and irrigation requirement as though they were the same. They are not. Plants require water, but irrigation is only one possible source.",
+      "The Pedaver video \u201cHarvesting without Irrigation\u201d shows this in three field clips: sugarcane residue holding moisture in the soil beneath it on a roller-compacted road that is otherwise rock hard; a heap of residue in the Cholistan Desert, lifted after five to six months, with moist, soft soil beneath it while the land around it is dry and hard; and soil with and without mulch compared side by side.",
+      "Organic cover captures humidity and dew and keeps the soil beneath it moist. When the hardpan is corrected so that rain infiltrates, the soil profile stores it, permanent cover cuts evaporation and roots explore a larger volume of soil, dependence on irrigation falls sharply.",
+      "Under PQNK, water is given only when the soil-ball test shows a need, run slowly in the furrow and never above a 4-inch head; in transition two or three such flows may be needed. On mature PQNK beds where annual rainfall is 400 mm or more, rain, dew, humidity and capillary rise carry the crop through its production cycle without irrigation.",
+    ],
+    keyTakeaways: [
+      "Crop water requirement is not the same as irrigation requirement: the plant needs water, not a particular irrigation method.",
+      "Organic residue captures humidity and dew and keeps the soil beneath it moist and soft, even in the Cholistan Desert, while exposed soil beside it dries and hardens.",
+      "The sequence is: receive the rain, store it in the soil profile, protect it with cover, give roots access to it, and irrigate only when the soil-ball test shows a need.",
+      "In transition, a few slow furrow flows (never above a 4-inch head) may be needed; water demand is a sign of soil that has not yet matured.",
+      "On mature PQNK beds at 400 mm or more of annual rainfall, rain, dew, humidity and capillary rise carry the crop without irrigation.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {

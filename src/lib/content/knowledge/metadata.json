@@ -16038,6 +16038,86 @@
 "why":"why breaking the hardpan turns the soil profile into a pathway for water"
 }
 ]
+},
+{
+"slug":"harvesting-without-irrigation",
+"primarySubject":"Why crop water requirement is not irrigation requirement: organic residue capturing humidity and dew and conserving soil moisture (field clips on a compacted road and in the Cholistan Desert), infiltration, storage, rooting and Soil Moisture Management leading to crops harvested without irrigation on mature PQNK beds",
+"questionsAnswered":[
+"Can crops be grown without irrigation?",
+"What is the difference between crop water requirement and irrigation requirement?",
+"How does mulch keep soil moist?",
+"Does dew contribute water to crops?",
+"When does a PQNK field need irrigation?",
+"How much irrigation does a mature PQNK bed need?"
+],
+"keywords":[
+"harvesting without irrigation",
+"no irrigation",
+"dew",
+"humidity",
+"organic mulch",
+"sugarcane residue",
+"Cholistan",
+"soil moisture",
+"evaporation",
+"capillary rise",
+"soil-ball test",
+"Soil Moisture Management",
+"crop water requirement",
+"irrigation requirement",
+"400 mm rainfall"
+],
+"geography":"Punjab, Pakistan",
+"crops":[],
+"fieldProblems":[
+"Drought / Water Scarcity",
+"High Irrigation Cost / Dependency",
+"Poor Water Infiltration",
+"Hardpan",
+"Bare / Exposed Soil",
+"High Crop Water Demand"
+],
+"problemFamily":[
+"Water & Drainage",
+"Soil & Roots",
+"Heat, Weather & Climate"
+],
+"fieldPractices":[
+"Surface Mulching (General)",
+"Soil Moisture Management (SMM)",
+"Soil Moisture Ball/Field Test",
+"Furrow Irrigation",
+"Mechanical Hardpan Breaking (Subsoiling)",
+"No-Till / Minimal-Disturbance Planting"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Water",
+"Soil",
+"Climate"
+],
+"pqnkPrinciples":[
+"No Soil Disturbance",
+"No Inundation",
+"Permanent Biological Cover"
+],
+"productionStages":[
+"Transition/Conversion",
+"Vegetative Growth"
+],
+"evidenceType":"Field Observation",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/water",
+"why":"how rain, dew, humidity and capillary rise supply a covered PQNK bed"
+},
+{
+"page":"/science/soil",
+"why":"why covered, undisturbed soil stores water and stays soft"
+}
+]
 }
 
 ]

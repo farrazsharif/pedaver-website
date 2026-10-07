@@ -514,6 +514,34 @@ export const fieldEvidence: FieldEvidence[] = [
     videoId: "Gdzhr-fIL8E",
     tags: ["tomato", "heat", "organic mulch", "soil temperature", "moisture conservation", "plant vigour", "root environment", "farmer field"],
   },
+  {
+    feNumber: 32,
+    title: "When 13 Inches of Rain Falls in Eight Hours: PQNK Beds Take the Water In",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
+    cropOrTopic: "Kinnow orchard: rainfall infiltration after hardpan breaking",
+    year: 2026,
+    date: "2026-10-08",
+    summary:
+      "Jaskaran Singh, a PQNK farmer in Fazilka district, Indian Punjab, records his Kinnow orchard after extreme rain (13 inches in eight hours). On the permanent beds he made under PQNK, where the hardpan had been broken, the water has gone into the soil within a short time and he walks on the beds in slippers; water is left only in the furrows. In the neighbouring conventionally managed orchards and fields, water stands a foot deep. A strip of his own orchard where beds were shaped but the hardpan was not broken still holds water. He credits the guidance he received and notes the Jantar cover crop and mulch on his beds. The field evidence behind Knowledge Paper KP-213.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/AOgnRUUc7KI",
+    videoId: "AOgnRUUc7KI",
+    tags: ["extreme rainfall", "infiltration", "hardpan", "permanent raised beds", "Kinnow", "citrus orchard", "flooding", "Jantar", "Fazilka", "Indian Punjab", "KP-213"],
+  },
+  {
+    feNumber: 33,
+    title: "Harvesting Without Irrigation: Residue Holds Moisture, Even in the Desert",
+    evidenceTypes: ["Field Evidence"],
+    cropOrTopic: "Soil moisture under organic cover",
+    year: 2026,
+    date: "2026-10-08",
+    summary:
+      "Three field clips on how organic cover keeps soil moist without irrigation. Sugarcane residue lying on a roller-compacted road is pulled aside to show moist soil soft enough to open by hand, while the uncovered road beside it is as hard as rock. In the Cholistan Desert, on the road from Chishtian towards Haroonabad, a heap of residue left in an open place for five to six months is lifted to reveal moist, soft soil, while the land around it is so dry and hard that a metal key cannot open it. A third clip compares soil with and without mulch. Residue captures humidity and dew and slows the loss of moisture, so the soil beneath stays soft and alive. The field evidence behind Knowledge Paper KP-214.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/EsgsgFdRqEA",
+    videoId: "EsgsgFdRqEA",
+    tags: ["harvesting without irrigation", "organic mulch", "sugarcane residue", "dew", "humidity", "soil moisture", "Cholistan", "desert", "compacted soil", "KP-214"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
