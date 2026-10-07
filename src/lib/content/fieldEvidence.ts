@@ -486,6 +486,20 @@ export const fieldEvidence: FieldEvidence[] = [
     videoId: "Egvsfx6GBLI",
     tags: ["Urdu", "saline soil", "alkaline soil", "high TDS water", "groundwater", "salt accumulation", "hardpan", "deep water wash", "permanent raised beds", "soil moisture management"],
   },
+  {
+    feNumber: 30,
+    title: "Green Peas on PQNK: Strong Germination in Unusually Hot Weather",
+    evidenceTypes: ["Field Evidence"],
+    cropOrTopic: "Green peas",
+    year: 2026,
+    date: "2026-10-07",
+    summary:
+      "A short field clip of green peas sown under PQNK, emerging through a thick layer of organic mulch on the bed. Although the temperature at sowing was unusually high for peas, germination is uniform and the young plants are healthy and vigorous. The reason is the organic mulch on the soil surface: it shields the soil from direct sun, moderates soil temperature and conserves moisture around the seed and the young roots. The clip sums up the PQNK approach: instead of making the crop fight the weather, give its roots a better environment.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/kGu_HBY-Nys",
+    videoId: "kGu_HBY-Nys",
+    tags: ["green peas", "germination", "organic mulch", "soil temperature", "moisture conservation", "heat", "permanent raised beds", "root environment"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
