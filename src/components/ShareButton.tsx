@@ -7,6 +7,9 @@ import { useState } from "react";
  * (manifest display "standalone"), iPhone shows no address bar or share button, so a paper or
  * chapter could not be forwarded. Uses the phone's share sheet where available, otherwise copies
  * the link.
+ * 2026-10-07: "Download this page" saves the page as it is on screen through the browser's print / Save as PDF.
+ * When a farmer has translated the page (Google's translate proxy runs our page's scripts), the saved copy is
+ * in the translated language. Header, footer and buttons are left out of the copy by the print styles (.no-print).
  */
 export default function ShareButton({ title, path, className }: { title: string; path: string; className?: string }) {
   const [copied, setCopied] = useState(false);
@@ -41,6 +44,9 @@ export default function ShareButton({ title, path, className }: { title: string;
       <a href={whatsapp} target="_blank" rel="noopener noreferrer" className={className}>
         Share on WhatsApp
       </a>
+      <button type="button" onClick={() => window.print()} className={className}>
+        Download this page (PDF)
+      </button>
     </>
   );
 }

@@ -130,7 +130,7 @@ export default async function ChapterPage({
 
       <Section>
         {speechSegments.length > 0 && (
-          <div className="mx-auto mb-8 max-w-4xl">
+          <div className="no-print mx-auto mb-8 max-w-4xl">
             <ReadAloud segments={speechSegments} />
           </div>
         )}
@@ -145,7 +145,7 @@ export default async function ChapterPage({
           </div>
 
           {chapter.pdfPath && (
-            <div className="lg:w-56">
+            <div className="no-print lg:w-56">
               <TrackedPdfLink
                 href={chapter.pdfPath}
                 contentId={`${bookId}/${chapterId}`}
@@ -160,7 +160,7 @@ export default async function ChapterPage({
         </div>
       </Section>
 
-      <div className="border-t border-border bg-card">
+      <div className="no-print border-t border-border bg-card">
         <div className="mx-auto flex max-w-4xl flex-col items-center gap-3 px-4 py-8 text-center sm:flex-row sm:justify-between sm:px-6">
           <div className="sm:text-left">
             {prev ? (

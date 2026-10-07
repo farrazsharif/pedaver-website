@@ -60,3 +60,11 @@ h1, h2, h3, h4 {
 body {
   top: 0 !important;
 }
+
+/* Print / "Download this page (PDF)": keep only the page content, in whatever language it is shown. */
+@media print {
+  header, footer, .no-print, #gt-nvframe, .goog-te-banner-frame { display: none !important; }
+  body { background: #fff !important; }
+  img { break-inside: avoid; }
+  @page { margin: 14mm; }
+}

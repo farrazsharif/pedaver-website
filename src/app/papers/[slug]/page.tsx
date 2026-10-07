@@ -178,7 +178,7 @@ export default async function PaperDetailPage({
             </div>
           </div>
 
-          <div className="flex flex-col gap-6">
+          <div className="no-print flex flex-col gap-6">
             <ShareButton title={paper.title} path={`/papers/${slug}/`} className="rounded-full border border-primary px-6 py-3 text-center text-sm font-semibold text-primary transition hover:bg-primary/10" />
             {paper.pdfPath ? (
               <TrackedPdfLink
