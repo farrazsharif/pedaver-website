@@ -68,3 +68,7 @@ body {
   img { break-inside: avoid; }
   @page { margin: 14mm; }
 }
+
+/* Shown only on Google's translated copy of a page (html[data-translated] is set by the early script in layout.tsx). */
+.translated-only { display: none; }
+html[data-translated] .translated-only { display: block; }

@@ -44,7 +44,7 @@ export default function ShareButton({ title, path, className }: { title: string;
       <a href={whatsapp} target="_blank" rel="noopener noreferrer" className={className}>
         Share on WhatsApp
       </a>
-      <button type="button" onClick={() => window.print()} className={className}>
+      <button type="button" data-print-page="" onClick={() => window.print()} className={className}>
         Download this page (PDF)
       </button>
     </>
