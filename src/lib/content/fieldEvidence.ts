@@ -472,6 +472,20 @@ export const fieldEvidence: FieldEvidence[] = [
     videoId: "4kSgUWxnnSg",
     tags: ["learning PQNK", "farmer training", "information", "knowledge", "experience", "understanding", "wisdom", "observe before acting", "start small", "farmer-to-farmer learning"],
   },
+  {
+    feNumber: 29,
+    title: "Using High-TDS Water in PQNK Agriculture (Urdu Version)",
+    evidenceTypes: ["Q&A", "Advisory"],
+    cropOrTopic: "Saline soils and high-TDS irrigation water",
+    year: 2026,
+    date: "2026-10-07",
+    summary:
+      "The Urdu version, with Urdu on-screen text and voiceover, of the PQNK explainer on whether groundwater with high total dissolved solids can be used to grow crops on saline or alkaline soil (the English version is KE-026). The message is the same: the limiting factor is not the salt concentration of the water alone but what happens to the salts once the water enters the soil. Conventional flood irrigation, a hardpan, surface evaporation and capillary rise leave salts concentrated in the root zone. PQNK conversion breaks the hardpan to about 22 inches, gives a deep water wash (with acid where soil pH is high), forms permanent raised beds and grows a cover crop, and the mature system keeps the soil covered and the root zone moist and aerated. Because the salt load is concentration multiplied by the volume of water applied, using far less water means far less salt entering the field. High-TDS water is not automatically the enemy; poor water and soil management is the greater problem.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/Egvsfx6GBLI",
+    videoId: "Egvsfx6GBLI",
+    tags: ["Urdu", "saline soil", "alkaline soil", "high TDS water", "groundwater", "salt accumulation", "hardpan", "deep water wash", "permanent raised beds", "soil moisture management"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
