@@ -494,7 +494,7 @@ export const fieldEvidence: FieldEvidence[] = [
     year: 2026,
     date: "2026-10-07",
     summary:
-      "A short field clip of green peas sown under PQNK, emerging through a thick layer of organic mulch on the bed. Although the temperature at sowing was unusually high for peas, germination is uniform and the young plants are healthy and vigorous. The reason is the organic mulch on the soil surface: it shields the soil from direct sun, moderates soil temperature and conserves moisture around the seed and the young roots. The clip sums up the PQNK approach: instead of making the crop fight the weather, give its roots a better environment.",
+      "A short field clip, in Urdu and English, of green peas sown under PQNK, emerging through a thick layer of organic mulch on the bed. Although the temperature at sowing was unusually high for peas, germination is uniform and the young plants are healthy and vigorous. The reason is the organic mulch on the soil surface: it shields the soil from direct sun, moderates soil temperature and conserves moisture around the seed and the young roots. The clip sums up the PQNK approach: instead of making the crop fight the weather, give its roots a better environment.",
     sourcePlatform: "YouTube",
     sourceUrl: "https://youtu.be/kGu_HBY-Nys",
     videoId: "kGu_HBY-Nys",
