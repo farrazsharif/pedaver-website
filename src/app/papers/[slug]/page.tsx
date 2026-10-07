@@ -10,6 +10,7 @@ import TrackedVideo from "@/components/analytics/TrackedVideo";
 import ContentViewTracker from "@/components/analytics/ContentViewTracker";
 import TrackedPdfLink from "@/components/analytics/TrackedPdfLink";
 import ShareButton from "@/components/ShareButton";
+import TranslatedPageDownload from "@/components/TranslatedPageDownload";
 import TrackedExternalLink from "@/components/analytics/TrackedExternalLink";
 import TrackedRelatedLink from "@/components/analytics/TrackedRelatedLink";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
@@ -166,6 +167,7 @@ export default async function PaperDetailPage({
       })()}
 
       <Section>
+        <TranslatedPageDownload />
         <div className="mx-auto grid max-w-5xl gap-10 lg:grid-cols-[1.6fr_1fr]">
           <div>
             <h2 className="text-xl font-bold text-primary-dark">Abstract</h2>

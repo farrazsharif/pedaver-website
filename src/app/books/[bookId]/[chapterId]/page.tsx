@@ -15,6 +15,7 @@ import Section from "@/components/Section";
 import ContentViewTracker from "@/components/analytics/ContentViewTracker";
 import TrackedPdfLink from "@/components/analytics/TrackedPdfLink";
 import ShareButton from "@/components/ShareButton";
+import TranslatedPageDownload from "@/components/TranslatedPageDownload";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
 import { buildChapterSpeech } from "@/lib/content/chapterSpeech";
 import ChapterBody from "./ChapterBody";
@@ -129,6 +130,7 @@ export default async function ChapterPage({
       </section>
 
       <Section>
+        <TranslatedPageDownload />
         {speechSegments.length > 0 && (
           <div className="no-print mx-auto mb-8 max-w-4xl">
             <ReadAloud segments={speechSegments} />
