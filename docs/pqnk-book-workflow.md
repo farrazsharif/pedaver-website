@@ -399,6 +399,8 @@ and update the §4 row. Web text (what Read Aloud reads) is correct.
 
 ## 6. Decisions log — BINDING, do not re-litigate
 
+- **2026-10-07 — KP-213 "When 13 Inches of Rain Falls in Eight Hours" in review.** Built by `Claude tools/chapter_builds/kp213_build.py` from the author's `PQNK_KP_When_13_Inches_of_Rain_Falls_in_Eight_Hours_Publish_Ready.docx`, checked against the video (Jaskaran Singh, Fazilka district, Indian Punjab; orchard beds; a strip with unbroken hardpan still held water). Section 9 "What Should Be Measured Next" removed, section 8 and the source note rewritten without measurement/validation language, drains/drainage removed. Review file `New Knowledge paper for upload/KP-213_When_13_Inches_of_Rain_Falls - Claude Reviewed.docx/.pdf` (4 pp.).
+
 - **2026-10-07 — Never mention drainage.** PQNK work never says beds or the system "drain" or "ensure drainage". When the hardpan is properly broken, water infiltrates the soil within a short time (field evidence: 13 inches of rain in 8 hours soaked into a PQNK field while neighbouring conventional fields stood under water). Write infiltration, not drainage. Ch39 Step Three corrected in review; already-published chapters/KPs contain about 200 "drain" words (books.ts 54, papers.ts 56, metadata.json 91) and are NOT changed unless the author asks.
 
 - **2026-10-05 — Published Papers folder.** `PQNK_Claude_Work/Published Papers/` holds every published KP as `KP-0NN Title.pdf` (exact website PDF) plus Word/Pages copies where they exist; `_INDEX.txt` lists links and sources. Rebuild with `python3 "Claude tools/build_published_papers.py"` after every KP publish. Never rename files inside `public/papers/` (the author once renamed KP-042's PDF in Finder; restored, since it breaks the website link).
