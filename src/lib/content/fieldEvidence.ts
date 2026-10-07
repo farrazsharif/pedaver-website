@@ -508,7 +508,7 @@ export const fieldEvidence: FieldEvidence[] = [
     year: 2026,
     date: "2026-10-07",
     summary:
-      "A short field clip of tomatoes growing under PQNK in the field of farmer Abdul Razak at Sherpur. Even in intense heat the plants show strong health, good colour and exceptional vigour; the farmer himself calls it the happiness of the plants. Organic mulch on the soil surface shields the soil from direct sun, conserves moisture and helps moderate the environment around the roots. The clip sums up the PQNK approach: PQNK does not control the weather; it improves the environment of the soil and roots so that the plant can express its natural potential.",
+      "A short field clip of tomatoes growing under PQNK in the field of farmer Abdul Razak at Sherkpur. Even in intense heat the plants show strong health, good colour and exceptional vigour; the farmer himself calls it the happiness of the plants. Organic mulch on the soil surface shields the soil from direct sun, conserves moisture and helps moderate the environment around the roots. The clip sums up the PQNK approach: PQNK does not control the weather; it improves the environment of the soil and roots so that the plant can express its natural potential.",
     sourcePlatform: "YouTube",
     sourceUrl: "https://youtu.be/Gdzhr-fIL8E",
     videoId: "Gdzhr-fIL8E",
