@@ -16195,6 +16195,84 @@
 "why":"why topping the leader shoot breaks apical dominance and adds flowering branches"
 }
 ]
+},
+{
+"slug":"how-much-water-does-one-irrigation-use",
+"primarySubject":"Calculation of water used in one irrigation per acre: 4-inch flood (411,161 L) against PQNK furrow flow at a 4-inch head on the standard bed-furrow profile (71,953 L), and seasonal water use efficiency of flood, drip and PQNK for seven crops",
+"questionsAnswered":[
+"How much water does one flood irrigation use per acre?",
+"How many litres are in one acre-inch?",
+"How much water does PQNK furrow irrigation use?",
+"How does PQNK compare with drip irrigation for water use?",
+"What is water use efficiency?",
+"Why does PQNK need fewer irrigations?"
+],
+"keywords":[
+"acre-inch",
+"flood irrigation",
+"furrow irrigation",
+"4-inch head",
+"drip irrigation",
+"water use efficiency",
+"litres per acre",
+"bed-furrow profile",
+"permanent raised beds",
+"mulch",
+"evaporation",
+"soil-ball test",
+"irrigation calculation",
+"kg per cubic metre",
+"400 mm rainfall"
+],
+"geography":"Punjab, Pakistan",
+"crops":[],
+"fieldProblems":[
+"High Irrigation Cost / Dependency",
+"High Crop Water Demand",
+"Drought / Water Scarcity",
+"Hardpan"
+],
+"problemFamily":[
+"Water & Drainage",
+"Cost, Profit & Markets",
+"Soil & Roots"
+],
+"fieldPractices":[
+"Furrow Irrigation",
+"Permanent Raised Bed Formation",
+"Controlled Traffic (Furrow-Confined)",
+"Surface Mulching (General)",
+"Soil Moisture Management (SMM)",
+"Soil Moisture Ball/Field Test"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Water",
+"Soil",
+"Production Architecture"
+],
+"pqnkPrinciples":[
+"No Inundation",
+"Permanent Biological Cover",
+"No Soil Disturbance"
+],
+"productionStages":[
+"Transition/Conversion",
+"Vegetative Growth"
+],
+"evidenceType":"Scientific Mechanism",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/water",
+"why":"how the covered bed receives water from the furrow and from rain, dew and humidity"
+},
+{
+"page":"/science/production-architecture",
+"why":"the bed-furrow profile that confines water to the furrow"
+}
+]
 }
 
 ]

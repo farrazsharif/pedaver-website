@@ -5747,6 +5747,30 @@ export const papers: Paper[] = [
       "Never increase irrigation to fight frost; mulched, living soil keeps the root zone at about 10 to 20 °C in winter.",
     ],
   },
+  {
+    slug: "how-much-water-does-one-irrigation-use",
+    kpNumber: 216,
+    libraryDate: "2026-10-09",
+    category: "Water & Climate",
+    title: "How Much Water Does One Irrigation Use?",
+    summary:
+      "Calculated for one acre of 220 by 198 feet: one 4-inch flood irrigation puts 411,161 litres on the field, while the furrows of a PQNK permanent bed hold 71,953 litres at a 4-inch head, less than one-fifth of a flood. Across a season PQNK in transition uses 5.5 to 16.2 percent of flood water and one-tenth to one-third of drip, mulch keeps evaporation minimal so applications are fewer, and mature beds at 400 mm or more of rainfall need no irrigation.",
+    publishedDate: "2026-10-09",
+    pdfPath: "/papers/how-much-water-does-one-irrigation-use.pdf",
+    abstract: [
+      "Farmers are often told how many irrigations a crop needs, but rarely how much water each one uses. For one acre of 220 by 198 feet (43,560 sq ft), a single flood irrigation of 4 acre-inches puts 411,161 litres on the field. That average includes the water standing on the surface, the water absorbed by the upper 6 to 8 inches above the hardpan, and evaporation from a fully flooded surface.",
+      "On the PQNK permanent bed (42-inch bed top, 52-inch bed bottom, 18-inch furrow top, 8-inch furrow bottom, 8-inch depth, beds every 60 inches) an acre carries 8,712 feet of furrow. At a 4-inch head the water section in each furrow is 42 square inches, so the furrows hold 71,953 litres: 17.5 percent of a flood, an 82.5 percent saving. The furrow bottom is compacted by tractor traffic, so the water moves sideways into the beds pore by pore, and open water covers only about one-fifth of the field.",
+      "Across a season, PQNK in transition uses between 5.5 and 16.2 percent of the flood volume and between one-tenth and one-third of the water of drip irrigation (taken at the Punjab Government figure of a 50 percent saving over flood). Wheat produces 6.5 kg of grain per cubic metre of irrigation water under PQNK, against 1.7 kg under drip and 0.85 kg under flood.",
+      "Because the beds are covered with organic mulch, evaporation is minimal and water is needed far less often; it is given only when the soil-ball test shows a need, never above a 4-inch head. As the soil system matures over the first few crop cycles, the water received and retained from rain, dew and humidity, with capillary rise, meets the crop’s needs, and mature beds at 400 mm or more of annual rainfall need no irrigation.",
+    ],
+    keyTakeaways: [
+      "One 4-inch flood irrigation puts 411,161 litres on an acre; at a 4-inch head the furrows of a PQNK bed hold 71,953 litres, less than one-fifth of a flood.",
+      "The flood figure includes standing water, water absorbed above the hardpan and evaporation from the whole surface; in PQNK the water moves sideways from the compacted furrow into the beds.",
+      "Per season, PQNK in transition uses 5.5 to 16.2 percent of flood water and one-tenth to one-third of drip water.",
+      "Water use efficiency: wheat gives 6.5 kg per cubic metre of irrigation water under PQNK, 1.7 under drip, 0.85 under flood.",
+      "Mulch keeps evaporation minimal, so applications are fewer; on mature beds at 400 mm or more of rainfall no irrigation is needed.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {
