@@ -5723,6 +5723,30 @@ export const papers: Paper[] = [
       "On mature PQNK beds at 400 mm or more of annual rainfall, rain, dew, humidity and capillary rise carry the crop without irrigation.",
     ],
   },
+  {
+    slug: "rapeseed-frost-and-the-sowing-window",
+    kpNumber: 215,
+    libraryDate: "2026-10-09",
+    category: "Crop-Specific Guides",
+    title: "Rapeseed, Frost and the Sowing Window",
+    summary:
+      "Rapeseed survives winter cold; the danger is frost on its flowers and young pods. For central Punjab, PQNK sows between 1 and 15 October with a suitable variety so that the crop flowers after the main frost period, tops the leader shoot at about 12 inches for a shorter, branchier crop, and sprays a 2% solution of food-grade ethanol when flowering meets frost. Mulched living soil keeps roots active through winter; irrigation is never increased to fight frost.",
+    publishedDate: "2026-10-09",
+    pdfPath: "/papers/rapeseed-frost-and-the-sowing-window.pdf",
+    abstract: [
+      "The central question is not whether rapeseed can survive winter. It is whether the crop will be flowering, setting pods or filling seed when damaging frost occurs. Rapeseed is naturally cold-tolerant in vegetative growth, but its flowers, pollen and young pods are vulnerable to freezing.",
+      "Sowing date, together with the variety, decides when the crop meets the frost. For central Punjab, including Faisalabad and Toba Tek Singh, PQNK sows between 1 and 15 October with a variety suited to the area, so that the crop flowers after the local period of damaging frost and still fills its seed before spring heat. Cooler northern and hotter southern districts adjust the variety and date.",
+      "PQNK adds a vigorous, deep-rooted crop on mulched, living soil that stays at about 10 to 20 °C in winter. Irrigation is never increased to fight frost. The leader shoot is chopped off when plants reach about 12 inches, breaking apical dominance for a shorter, sturdier crop with more flowering branches.",
+      "If flowering coincides with frost, a 2% solution of food-grade ethanol sprayed on the crop helps protect flowers and young pods for four to five days; when frost is forecast it is applied beforehand as a preventive measure.",
+    ],
+    keyTakeaways: [
+      "Rapeseed survives ordinary winter cold; frost damages its flowers, pollen and young pods.",
+      "Central Punjab: sow between 1 and 15 October with a suitable variety so that flowering follows the main frost period.",
+      "Chop off the leader shoot at about 12 inches to keep the crop shorter and bring out more flowering branches.",
+      "If flowering meets frost, spray a 2% solution of food-grade ethanol; it protects for four to five days, and is applied ahead of forecast frost.",
+      "Never increase irrigation to fight frost; mulched, living soil keeps the root zone at about 10 to 20 °C in winter.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {

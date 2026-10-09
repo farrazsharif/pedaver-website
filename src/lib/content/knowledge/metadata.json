@@ -16118,6 +16118,83 @@
 "why":"why covered, undisturbed soil stores water and stays soft"
 }
 ]
+},
+{
+"slug":"rapeseed-frost-and-the-sowing-window",
+"primarySubject":"Avoiding frost damage to rapeseed/canola flowers and pods through sowing date and variety choice in Punjab (1-15 October in central Punjab), topping the leader shoot at about 12 inches, and a 2% food-grade ethanol spray when flowering meets frost, within PQNK soil management",
+"questionsAnswered":[
+"When should rapeseed be sown in Punjab?",
+"How does frost damage rapeseed?",
+"How can frost damage to flowering rapeseed be prevented?",
+"Should the leader shoot of rapeseed be cut?",
+"Does irrigation protect crops from frost?",
+"How does mulch affect soil temperature in winter?"
+],
+"keywords":[
+"rapeseed",
+"canola",
+"frost",
+"sowing date",
+"sowing window",
+"flowering",
+"pod set",
+"Punjab",
+"Faisalabad",
+"Toba Tek Singh",
+"ethanol spray",
+"leader shoot",
+"topping",
+"apical dominance",
+"winter"
+],
+"geography":"Punjab, Pakistan",
+"crops":[
+"Rapeseed"
+],
+"fieldProblems":[
+"Cold / Frost Damage",
+"Poor Flowering / Fruit Set",
+"Lodging / Weak Stem Structure"
+],
+"problemFamily":[
+"Heat, Weather & Climate",
+"Yield & Produce Quality"
+],
+"fieldPractices":[
+"Pruning (General)",
+"Surface Mulching (General)",
+"Soil Moisture Management (SMM)",
+"Irrigation Reduction / Timing Restraint"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Climate",
+"Plants"
+],
+"pqnkPrinciples":[
+"No Soil Disturbance",
+"No Inundation",
+"Permanent Biological Cover",
+"Maximum Biodiversity"
+],
+"productionStages":[
+"Planting",
+"Vegetative Growth",
+"Reproductive/Flowering"
+],
+"evidenceType":"Field Observation",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/climate",
+"why":"how sowing time and soil cover manage frost risk for a winter crop"
+},
+{
+"page":"/science/plants",
+"why":"why topping the leader shoot breaks apical dominance and adds flowering branches"
+}
+]
 }
 
 ]
