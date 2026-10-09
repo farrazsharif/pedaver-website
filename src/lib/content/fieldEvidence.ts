@@ -542,6 +542,22 @@ export const fieldEvidence: FieldEvidence[] = [
     videoId: "EsgsgFdRqEA",
     tags: ["harvesting without irrigation", "organic mulch", "sugarcane residue", "dew", "humidity", "soil moisture", "Cholistan", "desert", "compacted soil", "KP-214"],
   },
+  {
+    feNumber: 34,
+    title: "Q&A on PQNK Citrus: Soil in the Furrows, Water, and the Empty Centre Bed",
+    evidenceTypes: ["Q&A", "Advisory"],
+    cropOrTopic: "Citrus orchard on PQNK permanent beds",
+    year: 2026,
+    date: "2026-10-09",
+    farmer: "Ikram",
+    location: "Sillanwali, Sargodha",
+    summary:
+      "Farmer Ikram has moved his citrus orchard onto PQNK permanent beds and the trees are healthy and active. Soil and weeds are collecting in the furrows between the rows, and he asks whether to remove the soil from the centre so the water can flow. The answer: do not remove the soil; the problem is excess water, not soil. Before watering, check the soil 2 feet from the trunk and 4 inches deep, and if it forms a ball, do not water; with good mulch and correct water management the orchard hardly needs irrigation. Do not leave the centre bed empty: grow wheat or vegetables on it. About 8 feet between trees is best; where trees are farther apart, plant a peach between them, for a peach harvest in summer and citrus in winter, two harvests a year and less risk. Never disturb the beds, and give water only in the furrow and only when it is needed. Weeds in the furrow do no harm, as the water runs slowly. Running the tractor two or three times along the furrow makes its bottom firm, like a footpath, so the water moves into the beds. Next step: mulch the tree beds and the centre bed with paddy straw, then sow wheat or vegetables. Orchards under PQNK are covered in PQNK Book Chapter 40.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/wpNUKbCNXAA",
+    videoId: "wpNUKbCNXAA",
+    tags: ["citrus", "Kinnow", "orchard", "furrow", "soil-ball test", "irrigation", "excess water", "mulch", "paddy straw", "intercropping", "peach", "tree spacing", "controlled traffic", "Sargodha"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
