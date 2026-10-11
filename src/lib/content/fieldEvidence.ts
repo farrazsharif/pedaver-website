@@ -575,6 +575,20 @@ export const fieldEvidence: FieldEvidence[] = [
     relatedCropSlug: "mango",
     tags: ["mango", "orchard recovery", "dying trees", "dieback", "decline", "permanent beds", "no fertiliser", "cost of production", "plant population", "Sujjahabad", "Multan", "Mango Association"],
   },
+  {
+    feNumber: 36,
+    title: "Papaya on PQNK: The Profitable Tropical Plant",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
+    cropOrTopic: "Papaya on PQNK permanent beds",
+    year: 2026,
+    date: "2026-10-11",
+    summary:
+      "A papaya grower shows his orchard, fully on PQNK: no fertiliser and no spray. Last year the beds were mulched with paddy straw; over the year the mulch blew away in places and broke down, so after the water channel was cleaned the beds were mulched again. The trees are fruiting heavily, the fruit is going to market, and his crop is better than that of the growers around him. Before PQNK, he says, there was endless labour, spraying day and night at high cost, and still the diseases were not controlled; since the beds were mulched the family has been free of that worry, and they only check the plants and give water. The slide sets out the economics, kept on the low side: conventional papaya costs more than Rs. 200,000 per acre per year, while PQNK needs no purchased inputs and about 90 percent less water. At 600 plants per acre, an average of 50 fruits per plant at 0.62 kg each and Rs. 50 per kg, well below the wholesale price of over Rs. 100, the gross income is close to Rs. 1,000,000 per acre. Papaya under PQNK is covered in PQNK Book Chapter 41.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/G-dP-x8U0j8",
+    videoId: "G-dP-x8U0j8",
+    tags: ["papaya", "tropical crops", "paddy straw", "mulch", "no fertiliser", "no spray", "disease control", "cost of production", "fruit yield", "income per acre", "water saving"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
