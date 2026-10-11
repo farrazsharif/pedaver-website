@@ -95,6 +95,10 @@ re-export can silently carry an old embedded image.
 5. **Images** → `public/books/natural-ecosystem-science/<chapterId>/chN-img-*.{png,jpg}`,
    referenced from `imageGroup` blocks. Each chapter's images live only in its
    own folder. Images are optional — a text-only chapter is valid.
+   **Table pictures (since 2026-10-11, accessibility):** every table shown as a picture must also get its
+   text in `src/lib/content/chapterTables.ts` (keyed by the image file name: title?, headers, rows, from the
+   approved Word table). Screen readers then get a real hidden table and Read Aloud reads it row by row; a
+   blind reader reported that both skipped table pictures. Check the text against the picture (OCR).
 6. **Previous chapter's `transition`** block: make sure it names this chapter.
 7. **Read Aloud** needs no wiring — `page.tsx` renders `<ReadAloud>` for any
    published chapter with a body. If the chapter introduces a new acronym or
