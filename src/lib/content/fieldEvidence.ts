@@ -558,6 +558,23 @@ export const fieldEvidence: FieldEvidence[] = [
     videoId: "wpNUKbCNXAA",
     tags: ["citrus", "Kinnow", "orchard", "furrow", "soil-ball test", "irrigation", "excess water", "mulch", "paddy straw", "intercropping", "peach", "tree spacing", "controlled traffic", "Sargodha"],
   },
+  {
+    feNumber: 35,
+    title: "Mango Orchard on Death Row, Recovered Within Nine Months on PQNK",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
+    cropOrTopic: "Mango orchard recovery on PQNK",
+    year: 2026,
+    date: "2026-10-11",
+    farmer: "Abdul Qadir",
+    location: "Sujjahabad",
+    summary:
+      "The slide, \"Mango orchard on death row, recovered within just nine months with PQNK: Mango Research Station Sujjahabad reports\", shows the same declining mango tree in September 2019 and, on PQNK, in full healthy leaf in July 2020. In the video, Abdul Qadir, mango grower and President of the Mango Association, says growers had believed they would never reach the planned plant population per acre: trees raised for ten to twelve years fell to dieback, disease and decline, and had to be planted again. With PQNK he is now sure that every tree in the orchards will be healthy and give a proper crop. His orchards are healthy, produce without fertiliser, and the cost of production has fallen sharply. He has about 200 acres of mango and, with the fruit harvest almost over, has started shifting the whole orchard onto beds this winter, so that not a single tree will be off the beds. Orchards under PQNK, including this recovery, are covered in PQNK Book Chapter 40.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/ppRk8ZXBdDU",
+    videoId: "ppRk8ZXBdDU",
+    relatedCropSlug: "mango",
+    tags: ["mango", "orchard recovery", "dying trees", "dieback", "decline", "permanent beds", "no fertiliser", "cost of production", "plant population", "Sujjahabad", "Multan", "Mango Association"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
