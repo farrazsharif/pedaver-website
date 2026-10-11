@@ -111,6 +111,14 @@ export default async function PaperDetailPage({
           </p>
           <h1 className="mt-2 text-4xl font-extrabold text-primary-dark">{paper.title}</h1>
           <p className="mt-4 max-w-2xl text-lg text-ink-soft">{paper.summary}</p>
+          {body && (
+            <a
+              href="#full-paper"
+              className="no-print mt-6 inline-block rounded-full bg-primary px-6 py-3 text-sm font-semibold text-cream shadow-sm transition hover:bg-primary-dark"
+            >
+              Read or listen to the full paper ↓
+            </a>
+          )}
         </div>
       </section>
 
@@ -187,7 +195,7 @@ export default async function PaperDetailPage({
             </div>
 
             {body && (
-              <div className="mt-10 border-t border-border pt-8 [overflow-wrap:anywhere]">
+              <div id="full-paper" className="mt-10 scroll-mt-24 border-t border-border pt-8 [overflow-wrap:anywhere]">
                 <h2 className="text-xl font-bold text-primary-dark">Full Paper</h2>
                 <div className="no-print mt-4 mb-6">
                   <ReadAloud segments={speechSegments} noun="paper" />
