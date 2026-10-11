@@ -1,4 +1,5 @@
 import type { ChapterBlock } from "@/lib/content/books";
+import { CHAPTER_TABLES } from "@/lib/content/chapterTables";
 
 /**
  * Renders a published chapter's body blocks using the exact font/colour
@@ -93,15 +94,54 @@ export default function ChapterBody({
           case "imageGroup":
             return (
               <div key={i} className={`flex w-full gap-3 ${block.files.length > 1 ? "flex-col sm:flex-row" : "flex-col"}`}>
-                {block.files.map((file) => (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
-                    key={file}
-                    src={`${imageBase}/${file}`}
-                    alt=""
-                    className="w-full min-w-0 flex-1 rounded-lg border border-border object-cover"
-                  />
-                ))}
+                {block.files.map((file) => {
+                  const table = CHAPTER_TABLES[file];
+                  return (
+                    <div key={file} className="flex w-full min-w-0 flex-1">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={`${imageBase}/${file}`}
+                        alt=""
+                        aria-hidden={table ? true : undefined}
+                        className="w-full min-w-0 flex-1 rounded-lg border border-border object-cover"
+                      />
+                      {/* A table shown as a picture is also given as a real table that only screen readers see. */}
+                      {table && (
+                        <div className="sr-only">
+                          <table>
+                            <caption>{table.title ?? "Table"}</caption>
+                            {table.headers && (
+                              <thead>
+                                <tr>
+                                  {table.headers.map((h, j) => (
+                                    <th key={j} scope="col">
+                                      {h}
+                                    </th>
+                                  ))}
+                                </tr>
+                              </thead>
+                            )}
+                            <tbody>
+                              {table.rows.map((row, r) => (
+                                <tr key={r}>
+                                  {row.map((cell, j) =>
+                                    j === 0 && table.headers ? (
+                                      <th key={j} scope="row">
+                                        {cell}
+                                      </th>
+                                    ) : (
+                                      <td key={j}>{cell}</td>
+                                    )
+                                  )}
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
               </div>
             );
           case "caption":

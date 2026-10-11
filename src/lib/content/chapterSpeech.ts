@@ -15,6 +15,7 @@
  */
 
 import type { ChapterBlock } from "@/lib/content/books";
+import { CHAPTER_TABLES, type ChapterTable } from "@/lib/content/chapterTables";
 
 /* ------------------------------------------------------------------ *
  * 1. Speech segments — what gets read, and in what order
@@ -39,14 +40,26 @@ export type SpeechSegment = {
   text: string;
 };
 
+/** One table row as a spoken sentence: each cell after its column heading ("Metric: A-grade fruit. PQNK Citrus: 70-80%."). */
+function tableRowSentence(table: ChapterTable, row: string[]): string {
+  const end = (t: string) => (/[.!?:]$/.test(t) ? t : `${t}.`);
+  return row
+    .map((cell, j) => (table.headers?.[j] ? `${table.headers[j]}: ${cell}` : cell))
+    .filter((t) => t.trim())
+    .map(end)
+    .join(" ");
+}
+
 /**
  * Turn a published chapter into the ordered list of things to read aloud.
  *
  * READ:   title, subtitle, opening quote, attribution, section headings,
  *         body paragraphs, pull paragraphs, Q&A (heading + every question
- *         and answer), closing heading.
+ *         and answer), closing heading, and every table shown as a picture
+ *         (from chapterTables.ts: "Table", its title, then each row, cell by
+ *         cell with its column heading, then "End of table").
  * SKIP:   PART/CHAPTER eyebrow and release metadata (never passed in here),
- *         image groups, infographic text, captions, the transition line that
+ *         photos and infographics, captions, the transition line that
  *         announces the next chapter, and every piece of site chrome.
  */
 export function buildChapterSpeech(chapter: {
@@ -89,6 +102,14 @@ export function buildChapterSpeech(chapter: {
         segments.push({ kind: "closing", text: block.text });
         break;
       case "imageGroup":
+        for (const file of block.files) {
+          const table = CHAPTER_TABLES[file];
+          if (!table) continue;
+          segments.push({ kind: "heading", text: table.title ? `Table: ${table.title}` : "Table" });
+          for (const row of table.rows) segments.push({ kind: "paragraph", text: tableRowSentence(table, row) });
+          segments.push({ kind: "paragraph", text: "End of table." });
+        }
+        break;
       case "caption":
       case "transition":
         // Intentionally not read — see the file header.
