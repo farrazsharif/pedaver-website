@@ -18,6 +18,10 @@ import { getMetadata, EXTERNAL_EVIDENCE } from "@/lib/content/knowledge/taxonomy
 import { getRelatedKnowledge } from "@/lib/content/knowledge/related";
 import { getFarmerQuestionOrigin } from "@/lib/content/knowledge/farmerQuestions";
 import FarmerQuestionBlock from "@/components/papers/FarmerQuestionBlock";
+import { PAPER_BODIES } from "@/lib/content/paperBodies";
+import { buildChapterSpeech } from "@/lib/content/chapterSpeech";
+import ChapterBody from "@/app/books/[bookId]/[chapterId]/ChapterBody";
+import ReadAloud from "@/app/books/[bookId]/[chapterId]/ReadAloud";
 
 const SCIENCE_PAGE_LABELS: Record<string, string> = {
   "/science/soil": "Soil Science",
@@ -66,6 +70,9 @@ export default async function PaperDetailPage({
   const meta = getMetadata(slug);
   const relatedKnowledge = getRelatedKnowledge(paper, meta, papers, getMetadata, 4);
   const farmerQuestionOrigin = getFarmerQuestionOrigin(slug);
+  // Full text in book style, only for papers that have it (paperBodies.ts); every other paper page is unchanged.
+  const body = PAPER_BODIES[slug];
+  const speechSegments = body ? buildChapterSpeech({ title: paper.title, body }) : [];
 
   const scholarlyArticleJsonLd = {
     "@context": "https://schema.org",
@@ -178,6 +185,16 @@ export default async function PaperDetailPage({
                 </p>
               ))}
             </div>
+
+            {body && (
+              <div className="mt-10 border-t border-border pt-8 [overflow-wrap:anywhere]">
+                <h2 className="text-xl font-bold text-primary-dark">Full Paper</h2>
+                <div className="no-print mt-4 mb-6">
+                  <ReadAloud segments={speechSegments} noun="paper" />
+                </div>
+                <ChapterBody blocks={body} imageBase={`/papers/${slug}`} />
+              </div>
+            )}
           </div>
 
           <div className="no-print flex flex-col gap-6">

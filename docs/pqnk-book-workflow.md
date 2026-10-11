@@ -140,6 +140,14 @@ re-export can silently carry an old embedded image.
     Needs the chapter's Word file archived in step 12 first. **v62 is never touched by this**
     — it stays the working manuscript.
 
+### Knowledge Papers in book style (since 2026-10-11, author: "Yes I agree with your plan. Make sure that we play safe.")
+A KP page shows a **Full Paper** section (book-style blocks + Listen + screen-reader tables) only when the paper has an entry in
+`src/lib/content/paperBodies.ts`; every other KP page is unchanged. At every KP publish, after the FINAL Word file exists:
+`python3 "Claude tools/chapter_builds/kp_body.py" <KP number> "<FINAL .docx>"` (writes the body, the pictures and table images under
+`public/papers/<slug>/`, and the table text in `chapterTables.ts`; re-running replaces that paper's entries). It skips the abstract and
+"Read Online". Backfill of older papers: newest first, in batches between chapters, each checked against its PDF. Safety check used for
+the pilot (KP-216): every paper/chapter page's visible markup compared before/after the build; only the paper given a body changed.
+
 ## 4. Chapter status
 
 | # | chapterId | Title | Status | Notes |

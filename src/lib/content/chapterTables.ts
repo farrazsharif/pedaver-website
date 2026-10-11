@@ -1,6 +1,6 @@
 /**
- * Text of every chapter table that the web page shows as a picture (keyed by the image file name, which is unique
- * across chapters because each name starts with its chapter number). ChapterBody renders it as a real table that only
+ * Text of every chapter and Knowledge Paper table that the web page shows as a picture (keyed by the image file name,
+ * which is unique because each name starts with its chapter number, "chN-", or its paper number, "kpN-"). ChapterBody renders it as a real table that only
  * screen readers see, and Read Aloud reads it row by row, so blind and listening readers get the same figures as
  * sighted ones. Generated 2026-10-11 from the archived Word file of each published chapter (Published Chapters/) and
  * checked word by word against the picture with OCR. When a chapter adds or changes a table picture, add or update
@@ -309,5 +309,43 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["Pesticide sprays/yr", "8-12", "0-2 (transitional)", "-80 to 100%"],
     ["Irrigation (litres/acre/yr)", "High flood volume", "8–23% of conventional in transition; none on mature beds at 400 mm+ rainfall", "−77 to −92% (−100% on mature beds)"],
     ["Dying tree recovery", "N/A - trees removed", "Recovery documented", "Case-specific"],
+  ] },
+  "kp216-table-01.png": { headers: ["Step", "Calculation", "Result"], rows: [
+    ["Area of one acre", "220 ft × 198 ft", "43,560 sq ft"],
+    ["Depth of one flood", "4 inches = 4 ÷ 12 ft", "0.333 ft"],
+    ["Water volume", "43,560 sq ft × 0.333 ft", "14,520 cubic ft"],
+    ["In litres", "14,520 cubic ft × 28.317 L", "411,161 litres"],
+  ] },
+  "kp216-table-02.png": { headers: ["Step", "Calculation", "Result"], rows: [
+    ["Water surface width at a 4-inch head", "8 in + 2 × (5 ÷ 8) × 4 in", "13 in"],
+    ["Water cross-section in one furrow", "(8 in + 13 in) ÷ 2 × 4 in", "42 sq in = 0.2917 sq ft"],
+    ["Total furrow length per acre", "43,560 sq ft ÷ 5 ft spacing", "8,712 ft"],
+    ["Water volume", "0.2917 sq ft × 8,712 ft", "2,541 cubic ft"],
+    ["In litres", "2,541 cubic ft × 28.317 L", "71,953 litres"],
+    ["Equivalent depth over the acre", "2,541 ÷ 43,560 × 12", "0.70 acre-inch"],
+  ] },
+  "kp216-table-03.png": { headers: ["One application, one acre", "Litres", "Share of one flood"], rows: [
+    ["Flood irrigation, 4 acre-inches", "411,161", "100%"],
+    ["PQNK furrow flow, 4-inch head", "71,953", "17.5%"],
+    ["Water saved", "339,208", "82.5%"],
+    ["For reference: furrow filled to its full 8-inch depth", "178,170", "43.3%"],
+  ] },
+  "kp216-table-04.png": { headers: ["Crop", "Flood (litres)", "Drip (litres)", "PQNK in transition (litres)", "PQNK mature beds"], rows: [
+    ["Wheat", "1,644,640", "822,320", "215,859 (3 applications)", "None"],
+    ["Cotton", "2,261,380", "1,130,690", "359,765 (5)", "None"],
+    ["Corn, autumn", "1,336,270", "668,135", "215,859 (3)", "None"],
+    ["Corn, spring", "2,055,800", "1,027,900", "287,812 (4)", "None"],
+    ["Potato", "1,336,270", "668,135", "215,859 (3)", "None"],
+    ["Sugarcane", "6,578,560", "3,289,280", "575,624 (8)", "None"],
+    ["Rice", "6,578,560", "3,289,280", "359,765 (5)", "None"],
+  ] },
+  "kp216-table-05.png": { headers: ["Crop", "Yield (kg per acre)", "Flood (kg per m³)", "Drip (kg per m³)", "PQNK (kg per m³)"], rows: [
+    ["Wheat", "1,400", "0.85", "1.70", "6.49"],
+    ["Cotton", "800", "0.35", "0.71", "2.22"],
+    ["Corn, autumn", "2,400", "1.80", "3.59", "11.12"],
+    ["Corn, spring", "3,200", "1.56", "3.11", "11.12"],
+    ["Potato", "12,000", "8.98", "17.96", "55.59"],
+    ["Sugarcane", "32,000", "4.86", "9.73", "55.59"],
+    ["Rice", "1,400", "0.21", "0.43", "3.89"],
   ] },
 };

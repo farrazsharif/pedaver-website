@@ -1,0 +1,57 @@
+import type { ChapterBlock } from "@/lib/content/books";
+
+/**
+ * Full text of Knowledge Papers, in the same typed blocks as book chapters (see ChapterBlock in books.ts), keyed by the
+ * paper's slug. A paper with an entry here shows a "Full Paper" section on its page, rendered by the chapter display
+ * (ChapterBody) with Read Aloud; a paper without one is unchanged (abstract + PDF only). Pictures and table images live
+ * in public/papers/<slug>/, and every table picture has its text in chapterTables.ts.
+ *
+ * Generated from each paper's FINAL Word file by PQNK_Claude_Work/Claude tools/chapter_builds/kp_body.py, which
+ * rewrites only the lines between that paper's BEGIN/END markers. Added 2026-10-11, newest papers first.
+ */
+export const PAPER_BODIES: Record<string, ChapterBlock[]> = {
+  // BEGIN how-much-water-does-one-irrigation-use
+  "how-much-water-does-one-irrigation-use": [
+    { type: "pullParagraph", text: "One flood irrigation of 4 acre-inches puts 411,161 litres of water on an acre. In one PQNK application at a 4-inch head, the furrows hold 71,953 litres: less than one-fifth of a flood, 82.5 percent less water." },
+    { type: "heading", text: "1. The Acre and the Two Ways of Giving Water" },
+    { type: "paragraph", runs: [{ text: "An acre measured as 220 by 198 feet is 43,560 square feet (4,047 square metres). One inch of water spread over it, one acre-inch, is 3,630 cubic feet or 102,790 litres. Flood irrigation covers the whole surface of this acre with water. PQNK never inundates the field: the crop grows on permanent raised beds, and when water is needed it runs slowly through the furrows between the beds, so that it moves into the bed from the sides while the bed surface and its mulch stay above the water." }] },
+    { type: "heading", text: "2. One Flood Irrigation: 411,161 Litres" },
+    { type: "paragraph", runs: [{ text: "An average flood irrigation applies 4 acre-inches. The calculation is direct:" }] },
+    { type: "imageGroup", files: ["kp216-table-01.png"] },
+    { type: "heading", text: "3. The PQNK Bed-Furrow Profile" },
+    { type: "paragraph", runs: [{ text: "The standard PQNK profile is a 42-inch bed top and an 18-inch furrow top, so beds repeat every 60 inches. The furrow is 8 inches deep with an 8-inch bottom; its sides therefore slope 5 inches across over the 8-inch depth, and the bed is 52 inches wide at its base (52 + 8 = 60 inches, matching 42 + 18 at the top). With one furrow every 60 inches (5 feet), an acre carries 43,560 ÷ 5 = 8,712 feet of furrow, whichever way the beds run." }] },
+    { type: "imageGroup", files: ["kp216-img-01.jpg"] },
+    { type: "caption", text: "Figure 1. The PQNK permanent bed and furrow, drawn to scale, with water standing at a 4-inch head in the furrows and organic mulch on the beds." },
+    { type: "heading", text: "4. One Furrow Application at a 4-Inch Head: 71,953 Litres" },
+    { type: "paragraph", runs: [{ text: "When water runs in the furrow at a 4-inch head, its cross-section is a trapezium: 8 inches wide at the bottom and, because each side slopes 5 inches over 8 inches of depth, 13 inches wide at the water surface (8 + 2 × 0.625 × 4). Multiplying that cross-section by the total furrow length gives the water held in the furrows of one acre:" }] },
+    { type: "imageGroup", files: ["kp216-table-02.png"] },
+    { type: "paragraph", runs: [{ text: "The two figures describe the same thing: the water an acre receives in one application. The 4 inches of a flood is an average that includes the water standing above the surface, the water absorbed by the soil, and the evaporation from a field whose whole surface is under water. In a conventional field that water is absorbed only by the upper 6 to 8 inches of soil; below that lies the hardpan, which water does not infiltrate. In PQNK the furrow bottom is compacted by tractor traffic, which runs only in the furrows, so the water does not sink away below the furrow: it moves sideways into the beds, pore by pore, into the soil where the roots are. Evaporation during the application is small, because open water covers only the 13-inch strip at the furrow surface, about one-fifth of the field, while the beds stay covered by their mulch. The water held in the furrows at a 4-inch head is therefore the water of one PQNK application, and it is the reason PQNK never runs water above a 4-inch head: the water reaches the root zone from the furrow without ever covering the bed." }] },
+    { type: "heading", text: "5. The Comparison" },
+    { type: "imageGroup", files: ["kp216-table-03.png"] },
+    { type: "paragraph", runs: [{ text: "A single PQNK application therefore uses less than one-fifth of the water of a flood irrigation, a saving of 339,208 litres on every acre, every time water is given. The same calculation at other heads is in the companion spreadsheet; at a 2-inch head the furrows hold 31,694 litres, and even a furrow filled to the brim holds less than half of one flood." }] },
+    { type: "heading", text: "6. Water Use Efficiency: Flood, Drip and PQNK" },
+    { type: "paragraph", runs: [{ text: "The same calculation, carried through a whole season, compares the three ways of giving water. Flood irrigation uses the seasonal acre-inches commonly applied to each crop; drip is taken at 50 percent of flood, the water saving stated by the Punjab Government for its high-efficiency irrigation programme (published claims range from about 30 to 70 percent); PQNK uses the number of furrow applications given to each crop during transition, each at 71,953 litres. The yields are the same in all three cases, so the difference is the water alone." }] },
+    { type: "imageGroup", files: ["kp216-table-04.png"] },
+    { type: "caption", text: "Table 1. Irrigation water per acre per season. “None”: mature PQNK beds where annual rainfall is 400 mm or more need no irrigation." },
+    { type: "paragraph", runs: [{ text: "Water use efficiency is the crop produced from each cubic metre (1,000 litres) of irrigation water:" }] },
+    { type: "imageGroup", files: ["kp216-table-05.png"] },
+    { type: "caption", text: "Table 2. Water use efficiency: kilograms of crop per cubic metre of irrigation water, with the same yield under all three methods." },
+    { type: "paragraph", runs: [{ text: "Even in transition, PQNK uses between 5.5 percent (rice) and 16.2 percent (corn and potato) of the flood volume, and between one-tenth and one-third of the water of drip, without pipes, emitters or filters: the furrow and the covered bed do the work. Wheat on PQNK produces 6.5 kg of grain from each cubic metre of irrigation water, against 1.7 kg under drip and 0.85 kg under flood; rice produces 3.9 kg against 0.4 and 0.2. The number of PQNK applications differs from crop to crop, and for a long-season crop such as sugarcane it depends on how far the beds have matured and on the thickness of the mulch layer on them: the more mature the bed and the better its cover, the fewer the applications. On mature PQNK beds the comparison ends altogether: the crop is carried by rain, dew, humidity and capillary rise, and the irrigation water used per kilogram is zero." }] },
+    { type: "heading", text: "7. Fewer Applications as Well as Smaller Ones" },
+    { type: "paragraph", runs: [{ text: "The saving per application is only the first part of the difference. On a PQNK bed the soil surface is permanently covered with organic mulch. The mulch shields the soil from direct sun and wind, so evaporation from the surface is minimal and the moisture that enters the bed stays in the root zone far longer than in bare, flooded soil. Water is therefore needed much less often. Under PQNK it is never given by the calendar: it is given only when the soil-ball test shows that the root zone needs it, run slowly through the furrows and never above a 4-inch head. Smaller applications, given less often, are why PQNK fields use 77 to 92 percent less irrigation water than local flood irrigation, depending on the crop." }] },
+    { type: "heading", text: "8. When the Soil System Matures" },
+    { type: "paragraph", runs: [{ text: "The need for irrigation falls further as the soil system matures. With the hardpan corrected, the soil left undisturbed and the surface permanently covered, the bed receives and retains the water that nature provides: rain that infiltrates instead of running off, dew that condenses on the mulch, and humidity drawn in by the cool, covered soil, with capillary rise from the moist profile below. During the first few crop cycles, while the soil is in transition, a few furrow flows may still be needed when the ball test fails; how many depends on the crop, on how far the bed has matured and on the thickness of its mulch. Once the soil system matures, this natural water cycle is sufficient to meet the plant’s needs: on mature PQNK beds where annual rainfall is 400 mm or more, no irrigation is needed at all." }] },
+    { type: "heading", text: "Conclusion" },
+    { type: "paragraph", runs: [{ text: "One flood irrigation puts 411,161 litres of water on an acre; in one PQNK application at a 4-inch head the furrows hold 71,953 litres. Because mulch keeps evaporation minimal, PQNK applications are also far less frequent, and as the soil matures over the first few crop cycles the water received and retained from rain, dew and humidity carries the crop. Water demand on a PQNK field is a sign of soil that is still maturing; on a mature bed, the natural water cycle does the work." }] },
+    { type: "pullParagraph", text: "PQNK Principle: Give water to the furrow, never to the bed, and only when the soil asks for it. A mature, covered soil asks less and less." },
+    { type: "heading", text: "How the Figures Are Worked Out" },
+    { type: "paragraph", runs: [{ text: "All figures come from the PQNK spreadsheet “Water per Application: Flood vs Furrow at a 4-inch Head”: acre 220 × 198 ft; flood depth 4 inches; bed top 42 in, bed bottom 52 in, furrow top 18 in, furrow bottom 8 in, furrow depth 8 in; flow head 4 in; 1 cubic foot = 28.317 litres. The furrow figure is the water standing in the furrows at the stated head, the volume of one application. Section 6: seasonal flood acre-inches, drip at 50 percent of flood (Punjab Government high-efficiency irrigation programme), the PQNK applications per crop and the yields are those of the PQNK workbook “Crop Water Requirement”; 1 acre-inch = 102,790 litres." }] },
+    { type: "heading", text: "Related PQNK Sources" },
+    { type: "paragraph", runs: [{ text: "1. PQNK Knowledge Paper KP-214: Harvesting Without Irrigation. https://pedaver.com/papers/harvesting-without-irrigation/" }] },
+    { type: "paragraph", runs: [{ text: "2. PQNK Knowledge Paper KP-213: When 13 Inches of Rain Falls in Eight Hours. https://pedaver.com/papers/when-13-inches-of-rain-falls-in-eight-hours/" }] },
+    { type: "paragraph", runs: [{ text: "3. PQNK Knowledge Paper KP-212: Rain Where It Falls. https://pedaver.com/papers/rain-where-it-falls/" }] },
+    { type: "paragraph", runs: [{ text: "4. PQNK Book, Chapter 26: Soil Moisture Management. https://pedaver.com/books/natural-ecosystem-science/soil-moisture-management/" }] },
+    { type: "paragraph", runs: [{ text: "5. Drip saving over flood: Government of the Punjab, On-Farm Water Management, high-efficiency irrigation materials. https://ofwm-agripunjab.punjab.gov.pk/system/files/vegetables_shk.pdf" }] },
+  ],
+  // END how-much-water-does-one-irrigation-use
+};

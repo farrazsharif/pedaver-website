@@ -34,7 +34,14 @@ const PRIVACY_NOTE =
   "operating system’s speech provider, such as Apple, Google or Microsoft, depending " +
   "on the voice your device uses. Pedaver does not process, transmit or store any audio.";
 
-export default function ReadAloud({ segments }: { segments: SpeechSegment[] }) {
+export default function ReadAloud({
+  segments,
+  noun = "chapter",
+}: {
+  segments: SpeechSegment[];
+  /** What is being read, for the button and its label: "chapter" (default) or "paper". */
+  noun?: string;
+}) {
   const chunks = useMemo(() => buildSpeechChunks(segments), [segments]);
 
   const [status, setStatus] = useState<Status>("idle");
@@ -235,7 +242,7 @@ export default function ReadAloud({ segments }: { segments: SpeechSegment[] }) {
   const active = status === "playing" || status === "paused";
 
   return (
-    <div role="group" aria-label="Read this chapter aloud" style={APPARATUS} className="text-sm">
+    <div role="group" aria-label={`Read this ${noun} aloud`} style={APPARATUS} className="text-sm">
       <p aria-live="polite" className="sr-only">
         {live}
       </p>
@@ -253,7 +260,7 @@ export default function ReadAloud({ segments }: { segments: SpeechSegment[] }) {
               className="inline-flex w-fit items-center gap-2 rounded-md border border-border px-3 py-1.5 font-semibold text-ink-soft transition hover:border-primary-light hover:text-primary-dark"
             >
               <span aria-hidden="true">{status === "ended" ? "↻" : "▶"}</span>
-              {status === "ended" ? "Listen again" : "Listen to this chapter"}
+              {status === "ended" ? "Listen again" : `Listen to this ${noun}`}
             </button>
           )}
 
