@@ -1,5 +1,6 @@
 import type { ChapterBlock } from "@/lib/content/books";
 import { CHAPTER_TABLES } from "@/lib/content/chapterTables";
+import { IMAGE_DESCRIPTIONS } from "@/lib/content/imageDescriptions";
 
 /**
  * Renders a published chapter's body blocks using the exact font/colour
@@ -101,7 +102,7 @@ export default function ChapterBody({
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         src={`${imageBase}/${file}`}
-                        alt=""
+                        alt={IMAGE_DESCRIPTIONS[file] ?? ""}
                         aria-hidden={table ? true : undefined}
                         className="w-full min-w-0 flex-1 rounded-lg border border-border object-cover"
                       />

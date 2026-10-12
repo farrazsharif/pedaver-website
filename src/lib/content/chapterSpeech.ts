@@ -16,6 +16,7 @@
 
 import type { ChapterBlock } from "@/lib/content/books";
 import { CHAPTER_TABLES, type ChapterTable } from "@/lib/content/chapterTables";
+import { IMAGE_DESCRIPTIONS } from "@/lib/content/imageDescriptions";
 
 /* ------------------------------------------------------------------ *
  * 1. Speech segments — what gets read, and in what order
@@ -57,9 +58,11 @@ function tableRowSentence(table: ChapterTable, row: string[]): string {
  *         body paragraphs, pull paragraphs, Q&A (heading + every question
  *         and answer), closing heading, and every table shown as a picture
  *         (from chapterTables.ts: "Table", its title, then each row, cell by
- *         cell with its column heading, then "End of table").
+ *         cell with its column heading, then "End of table"), picture
+ *         descriptions (imageDescriptions.ts, "Picture: …") and captions
+ *         (as "Picture: <caption>" when the picture had no table or description).
  * SKIP:   PART/CHAPTER eyebrow and release metadata (never passed in here),
- *         photos and infographics, captions, the transition line that
+ *         pictures with neither caption nor description, the transition line that
  *         announces the next chapter, and every piece of site chrome.
  */
 export function buildChapterSpeech(chapter: {
@@ -72,6 +75,9 @@ export function buildChapterSpeech(chapter: {
   segments.push({ kind: "title", text: chapter.title });
   if (chapter.subtitle) segments.push({ kind: "subtitle", text: chapter.subtitle });
 
+  // Whether the last picture group was already read (a table or a description); its caption is then read
+  // plainly, otherwise the caption itself announces the picture ("Picture: …").
+  let pictureRead = false;
   for (const block of chapter.body) {
     switch (block.type) {
       case "openingQuote":
@@ -102,15 +108,25 @@ export function buildChapterSpeech(chapter: {
         segments.push({ kind: "closing", text: block.text });
         break;
       case "imageGroup":
+        pictureRead = false;
         for (const file of block.files) {
           const table = CHAPTER_TABLES[file];
-          if (!table) continue;
-          segments.push({ kind: "heading", text: table.title ? `Table: ${table.title}` : "Table" });
-          for (const row of table.rows) segments.push({ kind: "paragraph", text: tableRowSentence(table, row) });
-          segments.push({ kind: "paragraph", text: "End of table." });
+          const description = IMAGE_DESCRIPTIONS[file];
+          if (table) {
+            segments.push({ kind: "heading", text: table.title ? `Table: ${table.title}` : "Table" });
+            for (const row of table.rows) segments.push({ kind: "paragraph", text: tableRowSentence(table, row) });
+            segments.push({ kind: "paragraph", text: "End of table." });
+            pictureRead = true;
+          } else if (description) {
+            segments.push({ kind: "paragraph", text: `Picture: ${description}` });
+            pictureRead = true;
+          }
         }
         break;
       case "caption":
+        segments.push({ kind: "paragraph", text: pictureRead ? block.text : `Picture: ${block.text}` });
+        pictureRead = false;
+        break;
       case "transition":
         // Intentionally not read — see the file header.
         break;

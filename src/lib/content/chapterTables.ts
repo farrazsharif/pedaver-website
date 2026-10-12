@@ -348,4 +348,8 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["Sugarcane", "32,000", "4.86", "9.73", "55.59"],
     ["Rice", "1,400", "0.21", "0.43", "3.89"],
   ] },
+  "ch39-img-05.jpg": { title: "Onion & Garlic plants and yield", headers: ["Row to row & plant to plant distance", "Plants per acre", "Gram weight", "Bulbs in 1 kg", "Kg per acre", "Maunds per acre", "Price per kg (Rs.)", "Income Rs. per acre"], rows: [
+    ["4 × 4 inches: 9 rows on a 42-inch bed top", "235,224", "20", "50", "4,704", "118", "100", "470,448"],
+    ["4 × 4 inches: 9 rows on a 42-inch bed top", "235,224", "50", "20", "11,761", "294", "100", "1,176,120"],
+  ] },
 };

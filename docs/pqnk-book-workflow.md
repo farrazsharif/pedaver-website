@@ -99,6 +99,9 @@ re-export can silently carry an old embedded image.
    text in `src/lib/content/chapterTables.ts` (keyed by the image file name: title?, headers, rows, from the
    approved Word table). Screen readers then get a real hidden table and Read Aloud reads it row by row; a
    blind reader reported that both skipped table pictures. Check the text against the picture (OCR).
+   **Pictures (since 2026-10-11):** Read Aloud reads every caption ("Picture: …"). A picture that carries information
+   (diagram, infographic, slide) also needs a plain-sentence description in `src/lib/content/imageDescriptions.ts`
+   (used as the screen-reader text and read as "Picture: …"); photos need only their caption. Done so far: Ch38–40, KP-216.
 6. **Previous chapter's `transition`** block: make sure it names this chapter.
 7. **Read Aloud** needs no wiring — `page.tsx` renders `<ReadAloud>` for any
    published chapter with a body. If the chapter introduces a new acronym or
