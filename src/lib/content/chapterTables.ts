@@ -310,6 +310,10 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["Irrigation (litres/acre/yr)", "High flood volume", "8–23% of conventional in transition; none on mature beds at 400 mm+ rainfall", "−77 to −92% (−100% on mature beds)"],
     ["Dying tree recovery", "N/A - trees removed", "Recovery documented", "Case-specific"],
   ] },
+  "ch39-img-05.jpg": { title: "Onion & Garlic plants and yield", headers: ["Row to row & plant to plant distance", "Plants per acre", "Gram weight", "Bulbs in 1 kg", "Kg per acre", "Maunds per acre", "Price per kg (Rs.)", "Income Rs. per acre"], rows: [
+    ["4 × 4 inches: 9 rows on a 42-inch bed top", "235,224", "20", "50", "4,704", "118", "100", "470,448"],
+    ["4 × 4 inches: 9 rows on a 42-inch bed top", "235,224", "50", "20", "11,761", "294", "100", "1,176,120"],
+  ] },
   "kp216-table-01.png": { headers: ["Step", "Calculation", "Result"], rows: [
     ["Area of one acre", "220 ft × 198 ft", "43,560 sq ft"],
     ["Depth of one flood", "4 inches = 4 ÷ 12 ft", "0.333 ft"],
@@ -347,9 +351,5 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["Potato", "12,000", "8.98", "17.96", "55.59"],
     ["Sugarcane", "32,000", "4.86", "9.73", "55.59"],
     ["Rice", "1,400", "0.21", "0.43", "3.89"],
-  ] },
-  "ch39-img-05.jpg": { title: "Onion & Garlic plants and yield", headers: ["Row to row & plant to plant distance", "Plants per acre", "Gram weight", "Bulbs in 1 kg", "Kg per acre", "Maunds per acre", "Price per kg (Rs.)", "Income Rs. per acre"], rows: [
-    ["4 × 4 inches: 9 rows on a 42-inch bed top", "235,224", "20", "50", "4,704", "118", "100", "470,448"],
-    ["4 × 4 inches: 9 rows on a 42-inch bed top", "235,224", "50", "20", "11,761", "294", "100", "1,176,120"],
   ] },
 };
