@@ -5771,6 +5771,29 @@ export const papers: Paper[] = [
       "Mulch keeps evaporation minimal, so applications are fewer; on mature beds at 400 mm or more of rainfall no irrigation is needed.",
     ],
   },
+  {
+    slug: "why-pqnk-sugarcane-tillers-from-the-inside",
+    kpNumber: 218,
+    libraryDate: "2026-10-12",
+    category: "Plant Physiology & Production Systems",
+    title: "Why PQNK Sugarcane Tillers From the Inside",
+    summary:
+      "On a PQNK sugarcane plot where the mother shoot is cut early, new tillers rise from inside the stool; on a conventional plot where it is left, tillers spread from the outside. The reason is apical dominance: auxin from the mother shoot’s tip, reinforced by strigolactones, holds the central buds dormant, and cutting it lets cytokinins and sugars from roots in living soil release them together, giving a uniform stool of tillers of one age.",
+    publishedDate: "2026-10-12",
+    pdfPath: "/papers/why-pqnk-sugarcane-tillers-from-the-inside.pdf",
+    abstract: [
+      "A PQNK grower, Vasudha Sardar, keeps two sugarcane plots side by side. On the PQNK plot, where the mother shoot of each stool is cut early, new tillers come up from inside the stool. On the conventional plot, where the mother shoot is left, new tillers appear on the outside, and the soil of the two plots is strikingly different.",
+      "Tillers grow from buds on the short underground nodes at the base of a shoot, and the mother shoot’s own buds sit at the centre of the stool. While the mother shoot grows, auxin flowing down from its tip, reinforced by strigolactones, holds those central buds dormant, so tillering spreads outward one generation at a time, with tillers of mixed ages, many of which never become millable canes.",
+      "Cutting the mother shoot within a few weeks of emergence, once several secondary tillers have leaf area, removes that hold: the central buds break together, pushed by cytokinins and sugars from a root system that, in cool, moist, living soil, is vigorous. The result is a compact stool of tillers of one age, uniform in height and girth, standing over the root zone on the centre of the 42-inch bed, with no earthing up.",
+    ],
+    keyTakeaways: [
+      "Sugarcane tillers grow from buds on the short underground nodes at the base of a shoot; the mother shoot’s buds sit at the centre of the stool.",
+      "Apical dominance: auxin from the growing tip, reinforced by strigolactones, holds buds dormant; cytokinins from the roots and sugar push them to grow.",
+      "Mother shoot left: tillering creeps outward, generation by generation, giving mixed ages and many tillers that never become millable canes.",
+      "Mother shoot cut early (KP-211): the central buds break together, giving a compact, uniform stool of tillers of one age that needs no earthing up.",
+      "Roots in cool, moist, living soil drive bud release; the shape of the stool and the colour of the soil are two views of the same thing.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {

@@ -19,4 +19,7 @@ export const IMAGE_DESCRIPTIONS: Record<string, string> = {
   // KP-216, How Much Water Does One Irrigation Use?
   "kp216-img-01.jpg":
     "Scale diagram of the PQNK permanent bed and furrow. The bed is 42 inches across the top and 52 inches at the base, covered with organic mulch: a permanent bed of living, covered soil. Each furrow is 18 inches wide at the top, 8 inches at the bottom and 8 inches deep, and beds repeat every 60 inches, centre to centre. Water stands 4 inches deep in the furrows. Water at a 4-inch head fills 42 square inches of each furrow: 71,953 litres per acre, against 411,161 litres for one 4-inch flood.",
+  // KP-218, Why PQNK Sugarcane Tillers From the Inside (Figure 3, the author's illustration, caption built into the picture)
+  "kp218-img-03.jpg":
+    "Illustration: how a sugarcane stool builds, the mother shoot decides. Left, mother shoot left (conventional): the tall mother shoot, the main cane, stands at the centre, and a red arrow shows auxin from its tip holding the central buds at its base; tillers of later generations, numbered 1, 2 and 3, emerge further and further out, of mixed ages and heights, with the young outer ones shaded and many dying. Right, mother shoot cut (PQNK): the mother shoot is cut to a stump at the centre, and tillers of one age, uniform in height and girth, rise together from the buds at the centre of the stool, with roots spreading through living soil below and mulch and green cover on the surface.",
 };

@@ -16273,6 +16273,83 @@
 "why":"the bed-furrow profile that confines water to the furrow"
 }
 ]
+},
+{
+"slug":"why-pqnk-sugarcane-tillers-from-the-inside",
+"primarySubject":"Why sugarcane tillers rise from inside the stool when the mother shoot is cut (PQNK) and spread from the outside when it is left (conventional): stool architecture and apical dominance (auxin, strigolactones, cytokinins, sugar), from Vasudha Sardar’s field observation",
+"questionsAnswered":[
+"Why do PQNK sugarcane tillers come from inside the stool?",
+"Why do conventional sugarcane tillers come from the outside?",
+"What is apical dominance in sugarcane?",
+"Why cut the mother shoot of sugarcane?",
+"When should the sugarcane leader tiller be removed?",
+"How do auxin and cytokinins control tillering?",
+"Why does soil condition affect sugarcane tillering?"
+],
+"keywords":[
+"sugarcane",
+"tillering",
+"mother shoot",
+"leader tiller",
+"apical dominance",
+"auxin",
+"cytokinin",
+"strigolactone",
+"stool",
+"basal buds",
+"uniform tillers",
+"millable canes",
+"earthing up",
+"living soil",
+"mulch"
+],
+"geography":null,
+"crops":[
+"Sugarcane"
+],
+"fieldProblems":[
+"Poor Tillering",
+"Inconsistent / Uneven Crop Uniformity",
+"Hormonal Growth Imbalance (Vegetative/Reproductive)",
+"Bare / Exposed Soil",
+"Soil Temperature Extremes"
+],
+"problemFamily":[
+"Plant Growth & Nutrition",
+"Soil & Roots"
+],
+"fieldPractices":[
+"Pruning (General)",
+"Surface Mulching (General)",
+"Soil Moisture Management (SMM)",
+"Soil Moisture Ball/Field Test"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Plants",
+"Soil"
+],
+"pqnkPrinciples":[
+"No Soil Disturbance",
+"Permanent Biological Cover"
+],
+"productionStages":[
+"Establishment",
+"Vegetative Growth"
+],
+"evidenceType":"Scientific Mechanism",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/plants",
+"why":"how apical dominance and root-supplied hormones decide which buds become tillers"
+},
+{
+"page":"/science/soil",
+"why":"why roots in living, covered soil drive strong, uniform tillering"
+}
+]
 }
 
 ]
