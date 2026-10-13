@@ -589,6 +589,22 @@ export const fieldEvidence: FieldEvidence[] = [
     videoId: "G-dP-x8U0j8",
     tags: ["papaya", "tropical crops", "paddy straw", "mulch", "no fertiliser", "no spray", "disease control", "cost of production", "fruit yield", "income per acre", "water saving"],
   },
+  {
+    feNumber: 37,
+    title: "Dew on PQNK Sugarcane at Dawn: Wet Mulch, Moist Living Soil Beneath",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
+    cropOrTopic: "Dew, mulch and soil moisture in PQNK sugarcane",
+    year: 2026,
+    date: "2026-10-13",
+    farmer: "Vasudha Sardar",
+    summary:
+      "On a clear morning, Vasudha Sardar walks her PQNK sugarcane plot and shows dew collected on the leaves of almost every plant, with the mulch beneath wet with it. Lifting the mulch with a stick, she finds the soil underneath moist and sweet-smelling, with white fungal growth in it, which she reads as beneficial fungi. It is the water a living, covered soil gathers from the air every night: dew condenses on the leaves and runs down into the mulch, and the mulch keeps the soil beneath moist. The PQNK water cycle of receiving, retaining and using this water is explained in Knowledge Papers KP-214 and KP-217.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/Vf8L--0XZII",
+    videoId: "Vf8L--0XZII",
+    relatedCropSlug: "sugarcane",
+    tags: ["dew", "humidity", "mulch", "soil moisture", "sugarcane", "beneficial fungi", "living soil", "harvesting without irrigation", "KP-214", "KP-217"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
