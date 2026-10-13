@@ -67,3 +67,29 @@ RedirectMatch 301 ^/pqnk-paedar-qudratti-nizam-e-kashatqari/?$ /science/
   RewriteCond %{HTTPS} off
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>
+
+# Security headers. Static site, so the attack surface is small — these harden
+# against clickjacking, MIME sniffing, referrer leakage, and downgrade attacks.
+# Guarded by mod_headers so the server silently skips them if it's not loaded.
+<IfModule mod_headers.c>
+  # Only trust HTTPS for a year (sent only over HTTPS, per the spec). No
+  # includeSubDomains/preload yet — add once every subdomain is confirmed HTTPS.
+  Header always set Strict-Transport-Security "max-age=31536000" "expr=%{HTTPS} == 'on'"
+  # Stop browsers guessing content types (blocks a class of XSS via sniffing).
+  Header always set X-Content-Type-Options "nosniff"
+  # Don't let other sites frame pedaver.com (clickjacking). Does NOT affect our
+  # own embeds of YouTube etc.
+  Header always set X-Frame-Options "SAMEORIGIN"
+  # Trim the Referer sent to other origins.
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  # Disable browser features the site doesn't use.
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=()"
+
+  # Content-Security-Policy in REPORT-ONLY mode: it logs violations to the
+  # browser console but does NOT block anything, so it can't break the live
+  # site. Covers the real third parties the site loads (Google Analytics/Tag
+  # Manager, Microsoft Clarity, YouTube embeds). Once the console shows no
+  # violations in normal use, rename this header to "Content-Security-Policy"
+  # (drop "-Report-Only") to start enforcing it.
+  Header always set Content-Security-Policy-Report-Only "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://www.clarity.ms https://*.clarity.ms; frame-src https://www.youtube.com https://www.youtube-nocookie.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:"
+</IfModule>
