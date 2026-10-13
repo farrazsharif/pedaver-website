@@ -605,6 +605,21 @@ export const fieldEvidence: FieldEvidence[] = [
     relatedCropSlug: "sugarcane",
     tags: ["dew", "humidity", "mulch", "soil moisture", "sugarcane", "beneficial fungi", "living soil", "harvesting without irrigation", "KP-214", "KP-217"],
   },
+  {
+    feNumber: 38,
+    title: "No-Till Planting of Canola on PQNK Permanent Beds in a Mango Orchard",
+    evidenceTypes: ["Field Evidence", "Machinery Demonstration"],
+    cropOrTopic: "Canola (rapeseed) sown without tillage between mango rows",
+    year: 2026,
+    date: "2026-10-13",
+    location: "Haroonabad (Maxim Farm)",
+    summary:
+      "On an organic PQNK mango orchard at Haroonabad, with the trees planted 10 by 20 feet, the three empty permanent beds between the tree rows are sown with canola without tillage. A Jantar cover crop grown on the beds is cut with a mulcher, the beds are lightly renovated and the furrows cleaned, and all the residue stays on the surface as mulch. The canola is then sown straight through the residue with a precision planter, the two outer rows about 6 inches in from the bed edges. The field had received rain, and the crop was sown on that moisture with no irrigation. The sowing window and care of PQNK rapeseed are covered in Knowledge Paper KP-215.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/QXq8cEaFrzw",
+    videoId: "QXq8cEaFrzw",
+    tags: ["canola", "rapeseed", "no-till", "precision planter", "permanent raised beds", "mulcher", "Jantar", "cover crop", "residue mulch", "mango orchard", "intercropping", "rain-fed sowing", "Haroonabad", "KP-215"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
