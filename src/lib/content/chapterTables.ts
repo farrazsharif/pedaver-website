@@ -373,4 +373,14 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["Season", "A few furrow flows in transition, fewer as the bed matures", "77 to 92 percent less irrigation water than flood"],
     ["Mature bed", "Rain, dew, humidity and capillary rise", "No irrigation where annual rainfall is 400 mm (16 inches) or more"],
   ] },
+  "kp219-table-01.png": { headers: ["Crop", "PQNK practice", "When"], rows: [
+    ["Sugarcane", "Cut the mother (leader) shoot", "Within a few weeks of emergence, once several secondary tillers have leaf area (KP-211)"],
+    ["Wheat", "Prune the leader tiller at 1.5 inches (4 cm)", "At the prescribed growth stages (KP-073, Chapter 34)"],
+    ["Rice", "Clip the top 10 to 15 percent of the foliage", "At 6 to 8 inches (15 to 20 cm) of plant height (KP-072)"],
+    ["Rapeseed", "Chop off the leader shoot", "At about 12 inches (30 cm) of plant height (KP-215)"],
+    ["Chilli", "Pinch the leader shoot", "At 10 to 12 inches (25 to 30 cm) of plant height (KP-025)"],
+    ["Cucurbits", "3D pruning; cut the runner tip", "Guide runners at 5 to 6 leaves; cut the tip when its fruit reaches marble size (KP-012)"],
+    ["Potato", "Roll an empty 220-litre metal drum (about 20 kg) over the crop", "Third week after germination"],
+    ["Peanut", "Roll the same drum over the crop (Figure 2)", "When the plants start pegging into the soil"],
+  ] },
 };

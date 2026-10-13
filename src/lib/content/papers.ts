@@ -5818,6 +5818,29 @@ export const papers: Paper[] = [
       "Mature PQNK beds where annual rainfall is 400 mm (16 inches) or more need no irrigation; water demand is a sign of soil still maturing.",
     ],
   },
+  {
+    slug: "plants-respond-to-disturbance",
+    kpNumber: 219,
+    libraryDate: "2026-10-13",
+    category: "Plant Physiology & Production Systems",
+    title: "Plants Respond to Disturbance",
+    summary:
+      "In nature plants are browsed, trampled, clipped and broken, and they answer by branching, flowering and setting more seed. PQNK uses the same response on purpose: rolling potato and peanut with a light drum, cutting the sugarcane mother shoot, pruning the leader tiller of wheat and rice, topping rapeseed and other branching crops, and 3D pruning of cucurbit vines. Checking the dominant growing point breaks apical dominance, and in a living soil the plant turns its energy into more branches, tillers, flowers and yield.",
+    publishedDate: "2026-10-13",
+    pdfPath: "/papers/plants-respond-to-disturbance.pdf",
+    abstract: [
+      "PQNK fields show that a crop can yield more after a well-timed physical check to its growth: potato and peanut after careful rolling, sugarcane after the mother shoot is cut, wheat, rice, rapeseed and other crops after the leader is pruned, and cucurbit vines under 3D pruning. In natural ecosystems, browsing, trampling, clipping and breakage are regulatory steps that plants have answered for hundreds of millions of years, and a plant has never produced for humans alone.",
+      "The mechanism is apical dominance: the dominant growing point holds the buds below it dormant through auxin, and when it is checked, cytokinins from the roots and the plant’s sugars release those buds into new branches, tillers, flowers and storage organs. In a living PQNK soil the roots are vigorous, so the response is strong.",
+      "In practice: potato is rolled with an empty 220-litre metal drum of about 20 kg in the third week after germination, and peanut when the plants start pegging into the soil; the sugarcane mother shoot is removed within a few weeks of emergence; the wheat leader tiller is pruned at 1.5 inches (4 cm) and rice is clipped at 6 to 8 inches (15 to 20 cm); rapeseed is topped at about 12 inches (30 cm); cucurbit runners are tipped when their fruit reaches marble size. Never remove more than 30 percent of the living foliage at one time.",
+    ],
+    keyTakeaways: [
+      "In nature, browsing, trampling, clipping and breakage are regulatory steps, not injuries; plants answer them with more branches, flowers and seed.",
+      "Checking the dominant growing point breaks apical dominance: cytokinins from the roots and the plant’s sugars release the buds below.",
+      "Potato: roll an empty 220-litre metal drum (about 20 kg) over the crop in the third week after germination; peanut: when the plants start pegging into the soil.",
+      "Sugarcane mother shoot removed early (KP-211); wheat leader tiller pruned at 1.5 inches (4 cm); rice clipped at 6 to 8 inches (15 to 20 cm); rapeseed topped at about 12 inches (30 cm).",
+      "Golden rule: never remove more than 30 percent of the living foliage at one time, oldest and lowest leaves first; the response is strong only in a living soil.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {

@@ -16431,6 +16431,80 @@
 "why":"why breaking the hardpan once lets rain enter the soil where it falls"
 }
 ]
+},
+{
+"slug":"plants-respond-to-disturbance",
+"primarySubject":"How plants answer physical disturbance with more branching, flowering and yield, and how PQNK uses it deliberately: drum rolling of potato and peanut, sugarcane mother-shoot removal, leader-tiller pruning in wheat and rice, topping rapeseed and branching crops, and 3D pruning of cucurbits, explained by apical dominance",
+"questionsAnswered":[
+"Why does trampling or rolling increase potato and peanut yield?",
+"When should potato be rolled under PQNK?",
+"When should peanut be rolled?",
+"How does cutting the leader shoot increase branching?",
+"What is apical dominance?",
+"How much foliage can be removed at one time?",
+"How is 3D pruning done in cucurbits?"
+],
+"keywords":[
+"trampling",
+"drum rolling",
+"potato",
+"peanut",
+"pegging",
+"apical dominance",
+"leader shoot",
+"tillering",
+"pruning",
+"topping",
+"3D pruning",
+"cucurbits",
+"sugarcane mother shoot",
+"rice clipping",
+"rapeseed topping"
+],
+"geography":null,
+"crops":[
+"Potato",
+"Sugarcane"
+],
+"fieldProblems":[
+"Poor Tillering",
+"Excess Vegetative Growth (at expense of yield/flowering)",
+"Hormonal Growth Imbalance (Vegetative/Reproductive)",
+"Inconsistent / Uneven Crop Uniformity"
+],
+"problemFamily":[
+"Plant Growth & Nutrition"
+],
+"fieldPractices":[
+"Pruning (General)",
+"Compensatory-Grazing-Style Pruning",
+"Surface Mulching (General)"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Plants"
+],
+"pqnkPrinciples":[
+"No Soil Disturbance",
+"Permanent Biological Cover"
+],
+"productionStages":[
+"Establishment",
+"Vegetative Growth"
+],
+"evidenceType":"Scientific Mechanism",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/plants",
+"why":"how apical dominance decides which buds become branches, tillers and flowers"
+},
+{
+"page":"/science/production-architecture",
+"why":"how a timed check reshapes the plant into a more productive structure"
+}
+]
 }
 
 ]
