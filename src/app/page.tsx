@@ -58,7 +58,8 @@ type NewArrivalGroup = {
 function getNewArrivalGroups(): NewArrivalGroup[] {
   const groups: NewArrivalGroup[] = [];
 
-  const latestPapers = papers.slice(-2).reverse().map((p) => ({
+  // Highest KP numbers, not the last two entries: a paper can be added out of number order (KP-217 after KP-218).
+  const latestPapers = [...papers].sort((a, b) => b.kpNumber - a.kpNumber).slice(0, 2).map((p) => ({
     key: `kp-${p.kpNumber}`,
     badge: formatKpNumber(p.kpNumber),
     title: p.title,
