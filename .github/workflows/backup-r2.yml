@@ -31,7 +31,9 @@ jobs:
       # only send/verify them when actually required, or uploads 400.
       AWS_REQUEST_CHECKSUM_CALCULATION: WHEN_REQUIRED
       AWS_RESPONSE_CHECKSUM_VALIDATION: WHEN_REQUIRED
-      ENDPOINT: https://${{ secrets.R2_ACCOUNT_ID }}.r2.cloudflarestorage.com
+      # Accepts either the bare account id or the full endpoint URL — the
+      # "Resolve R2 endpoint" step normalizes it into $ENDPOINT.
+      R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
       BUCKET: ${{ secrets.R2_BUCKET }}
       KEEP: "6" # how many recent backups to retain in R2
     steps:
@@ -39,6 +41,16 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      - name: Resolve R2 endpoint
+        run: |
+          set -euo pipefail
+          acct="$R2_ACCOUNT_ID"
+          acct="${acct#http://}"; acct="${acct#https://}"   # drop any scheme
+          acct="${acct%%.r2.cloudflarestorage.com*}"        # drop the host suffix
+          acct="${acct%%/*}"                                # drop any trailing path
+          echo "ENDPOINT=https://${acct}.r2.cloudflarestorage.com" >> "$GITHUB_ENV"
+          echo "Using R2 endpoint: https://${acct}.r2.cloudflarestorage.com"
 
       - name: Create full-repo bundle
         run: |
