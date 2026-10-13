@@ -58,7 +58,7 @@ automatically inherits or replaces an existing KP identity.
 10. Run `npx tsc --noEmit`, then `npm run build`. Both must be clean.
 11. Review `git status`/`git diff --stat` before staging. Stage only the files that belong to this paper (the PDF, `papers.ts`, `metadata.json`) by exact path — never `git add -A`. Confirm no unrelated working-tree changes (in particular, no paused Ask PQNK files) got swept in.
 12. Commit, push to `main`.
-13. The existing GitHub Actions workflow (`.github/workflows/deploy.yml`) builds and FTP-deploys to cPanel automatically on push — no manual server step. A failed build stops the job before the deploy step runs, so a broken build can't reach production.
+13. The existing GitHub Actions workflow (`.github/workflows/deploy.yml`) builds and deploys to cPanel (via the cPanel API) automatically on push — no manual server step. A failed build stops the job before the deploy step runs, so a broken build can't reach production.
 14. After deployment lands, verify on production: paper page returns 200; PDF returns 200 (if locally hosted); the page shows the correct `KP-XXX`; title/summary/abstract match; the taxonomy box and science cross-links render; the hero image (if any) loads; the paper appears in the Knowledge Papers listing and in a representative search; the URL is present in `sitemap.xml`.
 15. IndexNow (optional): submit the new URL(s) with the existing `scripts/indexnow-submit.ts` (`npm run indexnow:submit`, or `--dry-run` first to check). One deliberate submission per publish — don't resubmit repeatedly just because indexing hasn't shown up yet.
 

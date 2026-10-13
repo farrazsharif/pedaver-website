@@ -21,9 +21,11 @@ contact/newsletter forms use `mailto:`.
 ## Build & deploy
 - `npm run dev` — local preview.
 - `npm run build` — regenerates the static site into `out/`.
-- Deploy = copy the `.htaccess` from `docs/htaccess.txt` into `out/`, zip the
-  **contents** of `out/` (forward-slash paths), and extract into cPanel
-  `public_html`. See README section 6.
+- Deploy is automatic: pushing to `main` runs `.github/workflows/deploy.yml`,
+  which builds and publishes to pedaver.com via the **cPanel API**
+  (`scripts/deploy-cpanel.sh`, incremental — small set every run + changed
+  media only). No manual upload step. (The docroot is the add-on domain path
+  `/home/caremidc/pedaver.com/`, not `public_html`.)
 
 ## Style
 - Fonts: Bitter (headings) + Hanken Grotesk (body). Palette: green `#2f5233`,

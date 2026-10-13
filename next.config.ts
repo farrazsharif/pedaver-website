@@ -12,11 +12,9 @@ const nextConfig: NextConfig = {
   // `_next/<buildId>/` folder name on every deploy. Since this is a fully
   // static export (no server-side revalidation depends on buildId uniqueness,
   // and individual chunk filenames are already content-hashed for correct
-  // cache invalidation), a stable ID lets the FTP deploy action diff `_next/`
-  // incrementally instead of re-uploading the whole framework bundle every
-  // time — this was also intermittently causing FTP 550 errors when the
-  // upload action raced to create a brand-new nested `_next/<buildId>/`
-  // folder mid-deploy.
+  // cache invalidation), a stable ID keeps the `_next/` paths steady so the
+  // incremental deploy only re-uploads chunks that actually changed instead of
+  // the whole framework bundle every time.
   generateBuildId: async () => "pedaver-static-build",
 };
 

@@ -1,7 +1,7 @@
 # Pedaver.com — SEO Refinement & Knowledge Papers Publishing Guide
 
 **For:** Claude Code, working directly in the `pedaver-website` repo
-**Prepared by:** Cowork, after inspecting the live codebase (Next.js 16.2, App Router, static export, GitHub Actions → cPanel FTP)
+**Prepared by:** Cowork, after inspecting the live codebase (Next.js 16.2, App Router, static export, GitHub Actions → cPanel API deploy)
 **Goal:** (1) make every page on pedaver.com correctly discoverable and described in search results, and (2) stand up a `/papers` section so PQNK Knowledge Papers can be published on a regular cadence and indexed by Google individually — not just linked as bare PDFs.
 
 This is one combined brief covering both. Hand it to Claude Code as-is, or paste sections in as you work through them. Everything below was checked against the actual repo, not written generically — file paths, component names and existing conventions are real.
@@ -13,7 +13,7 @@ This is one combined brief covering both. Hand it to Claude Code as-is, or paste
 Confirmed directly from the repo before writing this:
 
 - **Stack:** Next.js 16.2 App Router, exported as a fully static site (`output: "export"` in `next.config.ts`), hosted on cPanel shared hosting. No backend — the contact form uses `mailto:`.
-- **Deploy is already automated.** `.github/workflows/deploy.yml` builds and FTP-deploys to cPanel on every push to `main`. This matters a lot for the papers workflow below: publishing a new paper is a `git push`, not a manual re-upload.
+- **Deploy is already automated.** `.github/workflows/deploy.yml` builds and deploys to cPanel (via the cPanel API) on every push to `main`. This matters a lot for the papers workflow below: publishing a new paper is a `git push`, not a manual re-upload.
 - **Content is data-driven**, not hardcoded in components. Existing pattern: `src/lib/content/crops.ts` holds an array of `Crop` objects; `src/app/crops/[slug]/page.tsx` uses `generateStaticParams()` to pre-render one static page per crop. `src/app/crops/page.tsx` is the index/listing page. This is the exact pattern the new `/papers` section should follow.
 - **Copy/labels live in `src/lib/dictionaries/en.ts`** (a single English strings object — the site is English-only, there's no real i18n despite the "dictionary" name).
 - **The SEO problem is confirmed and not yet fixed.** `src/app/layout.tsx` exports one `metadata` object at the root and nothing else — no route currently overrides it, including `crops/[slug]/page.tsx`, which has no `generateMetadata()` at all. Every page on the live site returns the identical title (`Pedaver — PQNK`) and description. There is no `robots.txt` or `sitemap.xml` anywhere in the project.
@@ -468,7 +468,7 @@ Because this site has no CMS or backend, "publish a new paper" is a repo change,
 2. **Add the PDF** to `public/papers/<slug>.pdf`.
 3. **Add one object** to the `papers` array in `src/lib/content/papers.ts` — slug, title, date, author, topics, summary, abstract, key takeaways, `pdfFile` path, and `relatedCropSlugs` if relevant.
 4. **Build locally to catch errors:** `npm run build`.
-5. **Commit and push to `main`.** The existing GitHub Action handles the rest — build, add `.htaccess`, FTP-deploy to cPanel. No manual zip/upload step needed once this is wired up.
+5. **Commit and push to `main`.** The existing GitHub Action handles the rest — build, add `.htaccess`, deploy to cPanel via the cPanel API. No manual zip/upload step needed once this is wired up.
 6. **After it's live**, submit the new URL in Google Search Console (`URL Inspection` → `Request Indexing`) — the one manual step outside the repo that meaningfully speeds up discovery versus waiting for the next crawl. The sitemap update itself (automatic, from Part 1.3) is what lets Google find it at all; requesting indexing just skips the queue.
 
 This turns "publish a knowledge paper" into a five-minute, mostly-copy-paste task once the section exists — no redesign, no redeploy process to relearn each time.

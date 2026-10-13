@@ -62,7 +62,8 @@ jobs:
           CPANEL_TOKEN: ${{ secrets.CPANEL_TOKEN }}
           DOCROOT_REL: pedaver.com
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # Last successful FTP deploy (run #336) — baseline for the first
-          # API run so it doesn't try to re-upload the whole 1.1 GB site.
+          # Last successful deploy before the cPanel-API migration (run #336)
+          # — baseline for the first API run so it doesn't re-upload the whole
+          # 1.1 GB site.
           FALLBACK_BASE: 87b24491a3de53315209bce9ba79bfef928b65a8
         run: bash scripts/deploy-cpanel.sh
