@@ -1,0 +1,74 @@
+name: Backup repo to Cloudflare R2
+
+# Weekly off-site backup of the ENTIRE repo (full history + all content) as a
+# single git bundle, uploaded to a Cloudflare R2 bucket. This is independent of
+# both GitHub and SkyHost, so the whole website survives losing either.
+#
+# Runs automatically every week, and can be run on demand from the Actions tab
+# ("Run workflow"). It never runs on push, so it won't interfere with deploys.
+#
+# Required repo secrets (create them after making an R2 bucket + API token):
+#   R2_ACCOUNT_ID         Cloudflare account id (used to build the S3 endpoint)
+#   R2_ACCESS_KEY_ID      R2 API token's Access Key ID
+#   R2_SECRET_ACCESS_KEY  R2 API token's Secret Access Key
+#   R2_BUCKET             the bucket name, e.g. pedaver-backups
+on:
+  schedule:
+    - cron: "0 3 * * 0" # Sundays 03:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+      AWS_DEFAULT_REGION: auto
+      # R2 doesn't support the AWS CLI's newer default integrity checksums;
+      # only send/verify them when actually required, or uploads 400.
+      AWS_REQUEST_CHECKSUM_CALCULATION: WHEN_REQUIRED
+      AWS_RESPONSE_CHECKSUM_VALIDATION: WHEN_REQUIRED
+      ENDPOINT: https://${{ secrets.R2_ACCOUNT_ID }}.r2.cloudflarestorage.com
+      BUCKET: ${{ secrets.R2_BUCKET }}
+      KEEP: "6" # how many recent backups to retain in R2
+    steps:
+      - name: Checkout (full history)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Create full-repo bundle
+        run: |
+          set -euo pipefail
+          stamp="$(date -u +%Y-%m-%d_%H%M%S)"
+          file="pedaver-${stamp}.bundle"
+          git bundle create "$file" --all
+          git bundle verify "$file" >/dev/null
+          echo "BUNDLE=$file" >> "$GITHUB_ENV"
+          echo "Created $file ($(du -h "$file" | cut -f1))"
+
+      - name: Upload to R2
+        run: |
+          set -euo pipefail
+          aws s3 cp "$BUNDLE" "s3://${BUCKET}/backups/${BUNDLE}" --endpoint-url "$ENDPOINT"
+          echo "Uploaded s3://${BUCKET}/backups/${BUNDLE}"
+
+      - name: Prune old backups (keep newest $KEEP)
+        run: |
+          set -euo pipefail
+          keys="$(aws s3 ls "s3://${BUCKET}/backups/" --endpoint-url "$ENDPOINT" \
+                  | awk '{print $4}' | grep '\.bundle$' | sort || true)"
+          total="$(printf '%s\n' "$keys" | grep -c . || true)"
+          remove=$(( total - KEEP ))
+          if [ "$remove" -gt 0 ]; then
+            printf '%s\n' "$keys" | head -n "$remove" | while read -r k; do
+              [ -n "$k" ] || continue
+              echo "pruning old backup: $k"
+              aws s3 rm "s3://${BUCKET}/backups/$k" --endpoint-url "$ENDPOINT"
+            done
+          else
+            echo "nothing to prune ($total backups, keeping $KEEP)"
+          fi
