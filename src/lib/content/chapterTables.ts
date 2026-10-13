@@ -352,4 +352,25 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["Sugarcane", "32,000", "4.86", "9.73", "55.59"],
     ["Rice", "1,400", "0.21", "0.43", "3.89"],
   ] },
+  "kp217-table-01.png": { headers: ["One application, one acre", "Litres", "Share of one flood"], rows: [
+    ["Flood irrigation, 4 acre-inches", "411,161", "100%"],
+    ["PQNK furrow flow, 4-inch (10 cm) head", "71,953", "17.5%"],
+    ["Water saved per application", "339,208", "82.5%"],
+  ] },
+  "kp217-table-02.png": { headers: ["Crop", "Flood (L per kg)", "Drip (L per kg)", "PQNK in transition (L per kg)"], rows: [
+    ["Wheat", "1,175", "587", "154"],
+    ["Cotton", "2,827", "1,413", "450"],
+    ["Corn, autumn", "557", "278", "90"],
+    ["Corn, spring", "642", "321", "90"],
+    ["Potato", "111", "56", "18"],
+    ["Sugarcane", "206", "103", "18"],
+    ["Rice", "4,699", "2,349", "257"],
+  ] },
+  "kp217-table-03.png": { headers: ["Step", "What PQNK does", "Result"], rows: [
+    ["Receive", "One subsoiler pass to about 22 in (56 cm); deep water wash (sulfuric acid at pH 8+); permanent 42-in (107 cm) beds; traffic in the furrows only", "Rain enters the soil instead of standing on it: 13 in (330 mm) in 8 h taken in"],
+    ["Retain", "Permanent organic mulch; living roots and soil life; Jantar cover", "Soil under mulch 30–33 °C when bare soil passes 70 °C; dew and humidity captured"],
+    ["Use", "Water to the furrow only, by the soil-ball test, never above a 4-in (10 cm) head", "71,953 L per application against 411,161 L for a flood"],
+    ["Season", "A few furrow flows in transition, fewer as the bed matures", "77 to 92 percent less irrigation water than flood"],
+    ["Mature bed", "Rain, dew, humidity and capillary rise", "No irrigation where annual rainfall is 400 mm (16 inches) or more"],
+  ] },
 };

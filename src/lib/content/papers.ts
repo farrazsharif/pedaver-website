@@ -5795,6 +5795,29 @@ export const papers: Paper[] = [
       "Roots in cool, moist, living soil drive bud release; the shape of the stool and the colour of the soil are two views of the same thing.",
     ],
   },
+  {
+    slug: "the-pqnk-water-system",
+    kpNumber: 217,
+    libraryDate: "2026-10-13",
+    category: "Water & Climate",
+    title: "The PQNK Water System: Receive, Retain, Use",
+    summary:
+      "The PQNK water work in one account: break the hardpan once so the field receives the rain where it falls, retain it under permanent mulch in a living soil that also gathers dew and humidity, and use that water before adding any. Irrigation becomes a small furrow supplement, given only on the soil-ball test and never above a 4-inch (10 cm) head; a kilogram of wheat takes 154 litres of irrigation water under PQNK in transition against 1,175 under flood, and mature beds at 400 mm (16 inches) or more of rain need none.",
+    publishedDate: "2026-10-13",
+    pdfPath: "/papers/the-pqnk-water-system.pdf",
+    abstract: [
+      "This paper brings together the PQNK water work published on pedaver.com into one account. Conventional farming has broken the field’s water cycle: tillage and machinery create a hardpan that stops rain from entering the soil, bare soil loses what does enter to the sun, and flood irrigation fills the shallow layer above the hardpan, drowns the soil life and evaporates from the whole surface.",
+      "PQNK restores the cycle in three steps. It receives the rain, by breaking the hardpan once and never rebuilding it, so that water enters the soil instead of standing on it: 13 inches (330 mm) of rain in eight hours soaked into a PQNK orchard while its neighbours stood under water. It retains the water, under permanent organic mulch and in a living soil that also draws in dew and humidity, as a PQNK grower’s dawn photographs of dew-laden sugarcane and moist soil beneath the mulch show. And it uses that water before adding any.",
+      "Irrigation becomes a small supplement, given only when the soil-ball test shows a need, run through the furrow and never above a 4-inch (10 cm) head. One furrow application holds 71,953 litres per acre against 411,161 litres for a flood; per kilogram of produce, wheat takes 154 litres of irrigation water under PQNK in transition, 587 under drip and 1,175 under flood. PQNK fields use 77 to 92 percent less irrigation water than local flood irrigation, and mature beds where annual rainfall is 400 mm (16 inches) or more need no irrigation at all.",
+    ],
+    keyTakeaways: [
+      "Receive: break the hardpan once (about 22 inches, 56 cm) and never rebuild it, so rain enters the soil where it falls.",
+      "Retain: permanent organic mulch keeps the soil at 30 to 33 °C when bare soil passes 70 °C, and a living, covered soil gathers dew and humidity every night.",
+      "Use: water only to the furrow, only on the soil-ball test, never above a 4-inch (10 cm) head: 71,953 litres per acre against 411,161 for a flood.",
+      "Litres of irrigation water per kg of wheat: 154 under PQNK in transition, 587 under drip, 1,175 under flood; on mature beds, none.",
+      "Mature PQNK beds where annual rainfall is 400 mm (16 inches) or more need no irrigation; water demand is a sign of soil still maturing.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {

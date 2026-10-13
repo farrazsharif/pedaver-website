@@ -16350,6 +16350,87 @@
 "why":"why roots in living, covered soil drive strong, uniform tillering"
 }
 ]
+},
+{
+"slug":"the-pqnk-water-system",
+"primarySubject":"The PQNK water system in one account: receive the rain (hardpan broken once), retain it (mulch, living soil, dew and humidity), use it before irrigating (soil-ball test, furrow only, 4-inch head), with litres of irrigation water per kg of produce under flood, drip and PQNK",
+"questionsAnswered":[
+"What is the PQNK water system?",
+"How does PQNK save irrigation water?",
+"How many litres of water does a kilogram of wheat need under flood, drip and PQNK?",
+"Why does rain not soak into conventional fields?",
+"How does mulch help soil hold water?",
+"Can dew and humidity water a crop?",
+"When do PQNK fields need no irrigation?"
+],
+"keywords":[
+"water cycle",
+"hardpan",
+"infiltration",
+"mulch",
+"dew",
+"humidity",
+"soil moisture",
+"flood irrigation",
+"drip irrigation",
+"furrow irrigation",
+"soil-ball test",
+"litres per kg",
+"water use efficiency",
+"aquifer recharge",
+"400 mm rainfall"
+],
+"geography":null,
+"crops":[],
+"fieldProblems":[
+"High Irrigation Cost / Dependency",
+"High Crop Water Demand",
+"Drought / Water Scarcity",
+"Hardpan",
+"Bare / Exposed Soil",
+"Soil Temperature Extremes"
+],
+"problemFamily":[
+"Water & Drainage",
+"Soil & Roots"
+],
+"fieldPractices":[
+"Mechanical Hardpan Breaking (Subsoiling)",
+"Permanent Raised Bed Formation",
+"Controlled Traffic (Furrow-Confined)",
+"Surface Mulching (General)",
+"Soil Moisture Management (SMM)",
+"Soil Moisture Ball/Field Test",
+"Furrow Irrigation"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Water",
+"Soil",
+"Climate"
+],
+"pqnkPrinciples":[
+"No Inundation",
+"Permanent Biological Cover",
+"No Soil Disturbance"
+],
+"productionStages":[
+"Transition/Conversion",
+"Vegetative Growth"
+],
+"evidenceType":"Scientific Mechanism",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/water",
+"why":"how a living, covered soil receives, retains and uses rain, dew and humidity"
+},
+{
+"page":"/science/soil",
+"why":"why breaking the hardpan once lets rain enter the soil where it falls"
+}
+]
 }
 
 ]
