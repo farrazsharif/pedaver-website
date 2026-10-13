@@ -151,6 +151,8 @@ A KP page shows a **Full Paper** section (book-style blocks + Listen + screen-re
 "Read Online". Backfill of older papers: newest first, in batches between chapters, each checked against its PDF. Safety check used for
 the pilot (KP-216): every paper/chapter page's visible markup compared before/after the build; only the paper given a body changed.
 
+**KP book-style backfill — batch 1 (2026-10-13, commit `d55837d`):** KP-215, 214, 213, 212, 210, 209, 208, 206, 205, 203 (FINAL or Published Papers Word files; `kp_body.py` now also accepts Word "Heading" styles). Every web sentence of 6+ words checked against the live PDF (all found except PDF line-break splits); 10 picture descriptions added; before/after build: exactly these 10 pages changed. KP-207 HELD: its only Word file (Published Papers, 09-29 07:54) is an earlier draft than its live PDF (60/40 water-air vs 30/70 rule, "95.917%" wording, half-depth line) — needs the source matching the PDF or a PDF-based conversion. Flag for the author: KP-210 Figure 4 caption ("Proposed research comparison… treatment concepts for future work") conflicts with the never-propose-research rule (published as-is). First deploy run of d55837d failed at "Build static site" after 5 s on GitHub while a clean clone builds locally (same transient as 2026-10-04); re-triggered.
+
 ## 4. Chapter status
 
 | # | chapterId | Title | Status | Notes |
