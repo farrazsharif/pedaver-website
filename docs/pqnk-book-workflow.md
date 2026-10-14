@@ -42,6 +42,22 @@ recoverable.
 
 ---
 
+## 0b. Originals rule — BINDING (added 2026-10-14)
+
+Asif: "all published work should have originals both in Word and PDF formats both on Mac as well as SSD."
+- Every published Knowledge Paper and chapter keeps a **Word (.docx) file and the exact live PDF** in
+  `PQNK_Claude_Work/Published Papers/` and `PQNK Book/Published Chapters/` on the Mac; the nightly SSD copy carries both.
+- `Claude tools/build_published_papers.py` picks each paper's Word file by **content match to the live PDF** (not by
+  name; Pages exported to Word). Where no editable original exists (mostly KP-003…161, loaded 2026-08-04, and
+  KP-171/177-180/182/183/194), it makes "… (Word made from published PDF).docx" and keeps any older Word/Pages copy.
+- `Claude tools/published_check.py` verifies all of it on Mac and SSD; it runs after every SSD copy (`ssd_daily.sh`
+  notifies Asif if anything is missing). **Run both after every publish**, and the check must say "all have Word + live PDF".
+- **Clean-ups:** never move or delete a file that is the best content match to a live PDF, whatever its name
+  (2 Oct 2026 the KP-207 final was archived as a "draft"; recovered from the SSD). Run `Claude tools/archive_audit.py`
+  after any archive move.
+
+---
+
 ## 1. What the PQNK books are
 
 Four planned books. Book one is in active chapter-by-chapter publication:
