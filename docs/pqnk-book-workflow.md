@@ -55,6 +55,15 @@ Asif: "all published work should have originals both in Word and PDF formats bot
 - **Clean-ups:** never move or delete a file that is the best content match to a live PDF, whatever its name
   (2 Oct 2026 the KP-207 final was archived as a "draft"; recovered from the SSD). Run `Claude tools/archive_audit.py`
   after any archive move.
+- **Recovered from the ADATA HD680 disk (2026-10-14):** `Claude tools/hd_recover.py` searched the disk's dated copies
+  (Documents / Local files upto 29.7, 11.9, 25.9.26) for the 111 papers that had only a PDF-made Word file. **69 originals
+  recovered** (≥85% sentence match to the live PDF, mostly from "Documents upto 11.9.26"), copied to
+  `PQNK_Claude_Work/Recovered originals from ADATA HD (2026-10-14)/` (`_MANIFEST.txt`; disk unchanged) and recorded in
+  `chapter_builds/recovered_sources.json`, which the builder reads. 42 papers still have no editable original on the disk;
+  7 of them have earlier drafts (70–85%) kept for reference in that folder's "Close drafts" subfolder.
+  After the rebuild: 219 papers, 219 Word, 156 Pages; PDF-made Word files down from 111 to 42 (KP-006, 007, 009, 013,
+  014, 016, 017, 026, 028, 050–052, 068, 071, 073, 078, 081, 082, 086, 116, 121, 122, 124, 126, 130, 132, 133, 139, 140,
+  145, 147–149, 152–154, 158, 160, 161, 171, 177, 194). SSD copied; check: "258 published items … all have Word + live PDF".
 
 ---
 
