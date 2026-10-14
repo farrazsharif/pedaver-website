@@ -3,7 +3,7 @@ import dict from "@/lib/dictionaries";
 import { videos, officialChannel, founderChannel, workshopVideos } from "@/lib/content/videos";
 import { fieldEvidence, formatFeNumber } from "@/lib/content/fieldEvidence";
 import Section from "@/components/Section";
-import VideoEmbed from "@/components/VideoEmbed";
+import VideoBrowser, { type BrowserVideo } from "@/components/VideoBrowser";
 import { buildMetadata } from "@/lib/seo";
 
 // A handful of the most recently added Field Evidence records, as a light
@@ -20,40 +20,35 @@ export const metadata = buildMetadata({
 });
 
 export default function VideosPage() {
-  const officialVideos = videos.filter((v) => v.channel === "official");
-  const founderVideos = videos.filter((v) => v.channel === "founder");
-
-  const renderChannel = (
-    title: string,
-    channel: typeof officialChannel,
-    channelVideos: typeof videos
-  ) => (
-    <div>
-      <div className="flex flex-wrap items-baseline justify-between gap-2">
-        <h3 className="text-xl font-bold text-primary-dark">{title}</h3>
-        <a
-          href={channel.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-sm font-semibold text-accent underline underline-offset-4"
-        >
-          {dict.videos.visitChannelButton} →
-        </a>
-      </div>
-      <p className="mt-1 text-sm text-ink-soft">
-        {channel.subscribers} {dict.videos.subscribers} · {channel.videoCount} {dict.videos.videosCount}
-      </p>
-      <div className="mt-6 grid gap-6 md:grid-cols-3">
-        {channelVideos.map((video) => (
-          <div key={video.videoId}>
-            <VideoEmbed videoId={video.videoId} title={video.title} context="video-library" contextId={video.videoId} />
-            <p className="mt-3 text-sm font-medium text-ink">{video.title}</p>
-            {video.description && <p className="mt-1 text-sm text-ink-soft">{video.description}</p>}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
+  // Search + sort (2026-10-14): one browser over both channels and the workshop videos; "By channel" keeps the
+  // original channel grouping, "Recent" (default) puts the newest video first.
+  const browserVideos: BrowserVideo[] = [
+    ...videos.map((v) => ({
+      videoId: v.videoId,
+      title: v.title,
+      description: v.description,
+      group: v.channel === "official" ? dict.videos.officialChannelTitle : dict.videos.founderChannelTitle,
+    })),
+    ...workshopVideos.map((v) => ({
+      videoId: v.videoId,
+      title: v.title,
+      description: v.description,
+      group: dict.videos.workshopsTitle,
+      sourceName: v.sourceName,
+      sourceUrl: v.sourceUrl,
+    })),
+  ];
+  const channelGroup = (title: string, channel: typeof officialChannel) => ({
+    title,
+    note: `${channel.subscribers} ${dict.videos.subscribers} · ${channel.videoCount} ${dict.videos.videosCount}`,
+    linkLabel: dict.videos.visitChannelButton,
+    linkHref: channel.url,
+  });
+  const browserGroups = [
+    channelGroup(dict.videos.officialChannelTitle, officialChannel),
+    channelGroup(dict.videos.founderChannelTitle, founderChannel),
+    { title: dict.videos.workshopsTitle, note: dict.videos.workshopsSubtitle },
+  ];
 
   return (
     <div>
@@ -104,35 +99,16 @@ export default function VideosPage() {
 
       <Section>
         <h2 className="text-2xl font-bold text-primary-dark">{dict.videos.lecturesTitle}</h2>
-        <div className="mt-8 flex flex-col gap-12">
-          {renderChannel(dict.videos.officialChannelTitle, officialChannel, officialVideos)}
-          {renderChannel(dict.videos.founderChannelTitle, founderChannel, founderVideos)}
+        <div className="mt-8">
+          <VideoBrowser
+            videos={browserVideos}
+            groups={browserGroups}
+            groupedLabel="By channel"
+            defaultMode="recent"
+            searchId="videos-search"
+          />
         </div>
       </Section>
-
-      {workshopVideos.length > 0 && (
-        <Section muted className="scroll-mt-24" id="workshops">
-          <h2 className="text-2xl font-bold text-primary-dark">{dict.videos.workshopsTitle}</h2>
-          <p className="mt-1 text-ink-soft">{dict.videos.workshopsSubtitle}</p>
-          <div className="mt-8 grid gap-6 md:grid-cols-3">
-            {workshopVideos.map((video) => (
-              <div key={video.videoId}>
-                <VideoEmbed videoId={video.videoId} title={video.title} context="video-library" contextId={video.videoId} />
-                <p className="mt-3 text-sm font-medium text-ink">{video.title}</p>
-                {video.description && <p className="mt-1 text-sm text-ink-soft">{video.description}</p>}
-                <a
-                  href={video.sourceUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-1 inline-block text-xs font-semibold text-accent hover:text-accent-light"
-                >
-                  {dict.videos.watchOn} {video.sourceName} →
-                </a>
-              </div>
-            ))}
-          </div>
-        </Section>
-      )}
 
       <Section>
         <div className="flex flex-wrap items-end justify-between gap-3">

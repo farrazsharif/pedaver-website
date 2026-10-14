@@ -1,7 +1,7 @@
 import dict from "@/lib/dictionaries";
 import { videoLibrary } from "@/lib/content/videoLibrary";
 import Section from "@/components/Section";
-import VideoEmbed from "@/components/VideoEmbed";
+import VideoBrowser from "@/components/VideoBrowser";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
@@ -12,6 +12,16 @@ export const metadata = buildMetadata({
 });
 
 export default function VideoLibraryPage() {
+  // Search + sort (2026-10-14): "By topic" keeps the PQNK learning-path order of videoLibrary.ts.
+  const videos = videoLibrary.flatMap((category) =>
+    category.videos.map((v) => ({
+      videoId: v.videoId,
+      title: v.title,
+      group: category.title,
+      sourceName: v.sourceName,
+      sourceUrl: v.sourceUrl,
+    }))
+  );
   return (
     <div>
       <section className="border-b border-border bg-primary-light/10">
@@ -21,27 +31,15 @@ export default function VideoLibraryPage() {
         </div>
       </section>
 
-      {videoLibrary.map((category, i) => (
-        <Section key={category.slug} muted={i % 2 === 1} className="scroll-mt-24" id={category.slug}>
-          <h2 className="text-2xl font-bold text-primary-dark">{category.title}</h2>
-          <div className="mt-8 grid gap-6 md:grid-cols-3">
-            {category.videos.map((video) => (
-              <div key={video.videoId}>
-                <VideoEmbed videoId={video.videoId} title={video.title} context="video-library" contextId={video.videoId} />
-                <p className="mt-3 text-sm font-medium text-ink">{video.title}</p>
-                <a
-                  href={video.sourceUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-1 inline-block text-xs font-semibold text-accent hover:text-accent-light"
-                >
-                  {dict.videoLibrary.watchOn} {video.sourceName} →
-                </a>
-              </div>
-            ))}
-          </div>
-        </Section>
-      ))}
+      <Section>
+        <VideoBrowser
+          videos={videos}
+          groups={videoLibrary.map((c) => ({ title: c.title }))}
+          groupedLabel="By topic"
+          defaultMode="grouped"
+          searchId="video-library-search"
+        />
+      </Section>
     </div>
   );
 }

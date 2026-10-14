@@ -209,6 +209,40 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
+            {/* Videos (2026-10-14, author: the videos page should be reached from a button "prominently placed just below
+                New on Pedaver"; it is not in the main menu). */}
+            <div className="mt-6 grid gap-3 sm:grid-cols-2">
+              <Link
+                href="/videos"
+                className="group flex items-center justify-between gap-3 rounded-xl bg-accent px-5 py-4 text-cream shadow-sm transition hover:-translate-y-0.5 hover:bg-primary-dark hover:shadow-md"
+              >
+                <span className="flex items-center gap-3">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" className="flex-none">
+                    <path d="M23 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.7-1.7C19.4 5.2 12 5.2 12 5.2s-7.4 0-8.9.4A2.5 2.5 0 0 0 1.4 7.3C1 8.8 1 12 1 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.7 1.7c1.5.4 8.9.4 8.9.4s7.4 0 8.9-.4a2.5 2.5 0 0 0 1.7-1.7C23 15.2 23 12 23 12zM9.8 15.3V8.7l5.7 3.3-5.7 3.3z" />
+                  </svg>
+                  <span>
+                    <span className="block text-base font-bold leading-snug">Videos: Lectures & Testimonials</span>
+                    <span className="block text-sm text-cream/85">Knowledge videos, machines and farmer stories</span>
+                  </span>
+                </span>
+                <span className="flex-none text-lg font-bold" aria-hidden="true">→</span>
+              </Link>
+              <Link
+                href="/video-library"
+                className="group flex items-center justify-between gap-3 rounded-xl bg-accent px-5 py-4 text-cream shadow-sm transition hover:-translate-y-0.5 hover:bg-primary-dark hover:shadow-md"
+              >
+                <span className="flex items-center gap-3">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" className="flex-none">
+                    <path d="M23 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.7-1.7C19.4 5.2 12 5.2 12 5.2s-7.4 0-8.9.4A2.5 2.5 0 0 0 1.4 7.3C1 8.8 1 12 1 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.7 1.7c1.5.4 8.9.4 8.9.4s7.4 0 8.9-.4a2.5 2.5 0 0 0 1.7-1.7C23 15.2 23 12 23 12zM9.8 15.3V8.7l5.7 3.3-5.7 3.3z" />
+                  </svg>
+                  <span>
+                    <span className="block text-base font-bold leading-snug">Video Library (Urdu)</span>
+                    <span className="block text-sm text-cream/85">Lectures and field guidance by topic</span>
+                  </span>
+                </span>
+                <span className="flex-none text-lg font-bold" aria-hidden="true">→</span>
+              </Link>
+            </div>
           </div>
         </Section>
       )}
