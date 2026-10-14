@@ -57,6 +57,8 @@ function writeStateToURL(filters: Filters, sort: SortMode) {
 // CDN (img.youtube.com) whenever a record has a specific videoId, and
 // clippingImage is a locally-hosted photo of a print clipping that has no
 // online original to point to at all — see fieldEvidence.ts.
+// A record whose source is a document hosted here (sourceUrl ending in .pdf, e.g. FE-039)
+// links to it as "Read the full exchange (PDF)" instead of "Watch Video".
 function youTubeThumbnail(fe: FieldEvidence): string | null {
   if (fe.sourcePlatform === "YouTube" && fe.videoId) {
     return `https://img.youtube.com/vi/${fe.videoId}/hqdefault.jpg`;
@@ -77,7 +79,7 @@ function EvidenceCard({ fe }: { fe: FieldEvidence }) {
         // eslint-disable-next-line @next/next/no-img-element
         <img
           src={fe.clippingImage}
-          alt={`Print clipping: ${fe.title}`}
+          alt={`${fe.sourceUrl?.endsWith(".pdf") ? "Photo" : "Print clipping"}: ${fe.title}`}
           className="mt-3 w-full rounded-lg border border-border object-cover"
         />
       )}
@@ -106,7 +108,7 @@ function EvidenceCard({ fe }: { fe: FieldEvidence }) {
           rel="noopener noreferrer"
           className="mt-3 inline-block text-sm font-semibold text-accent underline underline-offset-4 hover:text-accent-light"
         >
-          Watch Video →
+          {fe.sourceUrl.endsWith(".pdf") ? "Read the full exchange (PDF) →" : "Watch Video →"}
         </a>
       )}
     </div>

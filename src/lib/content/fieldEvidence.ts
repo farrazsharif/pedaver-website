@@ -21,6 +21,10 @@
  * This is not a general photo/gallery field — it exists only for this
  * "no online original exists" case. Video/social evidence keeps pointing
  * outward via sourceUrl as before.
+ * The same case covers a farmer's own photos shared privately (WhatsApp),
+ * with no online original: FE-039 (2026-10-14) carries Vasudha Sardar's
+ * photo as its picture and its approved Knowledge Exchange PDF, hosted
+ * under /field-evidence/, as its sourceUrl.
  *
  * Author policy (2026-09-13, forward-looking only): every NEW record from
  * this point on must carry a picture — either a real photo (clippingImage,
@@ -619,6 +623,21 @@ export const fieldEvidence: FieldEvidence[] = [
     sourceUrl: "https://youtu.be/QXq8cEaFrzw",
     videoId: "QXq8cEaFrzw",
     tags: ["canola", "rapeseed", "no-till", "precision planter", "permanent raised beds", "mulcher", "Jantar", "cover crop", "residue mulch", "mango orchard", "intercropping", "rain-fed sowing", "Haroonabad", "KP-215"],
+  },
+  {
+    feNumber: 39,
+    title: "Behind the Obvious: Reading a Living Agricultural Ecosystem",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
+    cropOrTopic: "Biodiversity in a PQNK field",
+    year: 2026,
+    date: "2026-10-14",
+    farmer: "Vasudha Sardar",
+    summary:
+      "Vasudha Sardar photographed a small bird perched on a crop plant in her PQNK field and shared it as \u201cA bird watching.\u201d Her friend Madhuri Paranjape, of Vasudha\u2019s PQNK Training group, looked \u201cbehind the obvious\u201d: the deep green leaves are making sugars, and send 20 to 40 percent of their carbon below ground to feed the soil life that makes minerals available to the roots; the bird, which she identified as a shrike (khatik in Marathi), is a small predator that lives only where a whole food chain is at work. On PQNK beds, never tilled and never left bare, that chain is whole again, and pests are held in balance by their natural enemies and by healthy plants, without sprays. A field is more than its harvest: it is a living system, and its biological relationships produce the harvest.",
+    sourcePlatform: "Other",
+    sourceUrl: "/field-evidence/fe-039-behind-the-obvious.pdf",
+    clippingImage: "/field-evidence/fe-039-behind-the-obvious.jpg",
+    tags: ["biodiversity", "birds", "shrike", "food web", "natural pest control", "soil biology", "photosynthesis", "living soil", "Vasudha Sardar", "Madhuri Paranjape"],
   },
 ];
 
