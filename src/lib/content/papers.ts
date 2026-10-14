@@ -5530,6 +5530,7 @@ export const papers: Paper[] = [
     summary:
       "An evidence-qualified review of the article \u201cChemical Fertilizer Industry\u201d. It keeps the article's warning about soil degradation, nutrient pollution and biological decline, disciplines its headline numbers, and argues that fertiliser dependency is a symptom of a damaged production system (tillage, flooding, bare soil and simplified biology) that PQNK removes by restoring aerated, covered, living soil, reaching zero purchased fertiliser and pesticide at maturity.",
     publishedDate: "2026-09-29",
+    modifiedDate: "2026-10-14",
     pdfPath: "/papers/chemical-fertiliser-dependency-pqnk.pdf",
     abstract: [
       "The article Chemical Fertilizer Industry assembles an important warning about soil degradation, nutrient pollution, biological decline, water demand, greenhouse-gas emissions and human exposure. Its central concern is justified: agriculture cannot indefinitely compensate for a deteriorating soil ecosystem by increasing soluble nutrient inputs. However, several headline figures are presented without sufficient boundaries, and several global problems are attributed too directly to fertiliser alone. Soil erosion, salinity, aquatic dead zones and chronic disease have multiple interacting causes. A scientifically defensible response must preserve the warning while separating established evidence, association, extrapolation and advocacy.",
@@ -5606,12 +5607,13 @@ export const papers: Paper[] = [
     summary:
       "New 3D synchrotron imaging (Braunmiller et al., New Phytologist 2026) shows mycorrhizal hyphae spanning air-filled pores, bridging soil particles and growing along roots in intact soil. This paper separates what the research shows from what it means for PQNK: soil architecture is part of the root-fungal partnership, conventional farming dismantles it after every harvest, and a moist but aerated, undisturbed root zone protects it.",
     publishedDate: "2026-10-04",
+    modifiedDate: "2026-10-14",
     pdfPath: "/papers/the-underground-network-we-have-been-farming-against.pdf",
     abstract: [
       "A 2026 New Phytologist methods paper by Braunmiller and colleagues, reported in Eos, used synchrotron-based X-ray micro-computed tomography to image arbuscular mycorrhizal fungi, roots, soil particles and pore space together in three dimensions in intact soil. Hyphae were seen spanning air-filled pores, forming branching networks, connecting soil particles and growing toward and along roots. The method detects hyphae best in air-filled pores, because water in fine pores obscures them.",
       "The study did not test PQNK, rice, flooding or Alternate Wetting and Drying. Its significance for PQNK is that it makes visible the living architecture that the four governing rules are meant to protect: no inundation, no soil disturbance after conversion, permanent organic cover and encouraged biodiversity. Soil structure is not merely a container for roots; it is part of the operating environment of the root-fungal partnership.",
       "Conventional production rebuilds the field after every harvest: residue is burnt or removed and the soil is ploughed, rotavated, levelled and re-ridged, tearing hyphal networks and collapsing the pores they occupy. The same holds for SRI as commonly practised, which still ploughs and usually puddles before each transplanting. PQNK, which began in 2009 as a mechanised SRI trial on raised beds, added permanence, so the network can accumulate from crop to crop.",
-      "PQNK Soil Moisture Management keeps the root zone moist but aerated, at roughly 30 percent water to 70 percent air in the pore space. Field photographs from PQNK beds show central rows standing taller and denser than the rows beside the furrows. The paper proposes a rice study comparing continuous flooding, AWD and a moist, aerated PQNK root zone, combining micro-CT with oxygen, redox, moisture, root and yield measurements.",
+      "PQNK Soil Moisture Management keeps the root zone moist but aerated, at roughly 30 percent water to 70 percent air in the pore space. Field photographs from PQNK beds show central rows standing taller and denser than the rows beside the furrows. For rice, flooding fills the pores and starves the network of air, AWD drowns it again at every flooding, and PQNK keeps the root zone moist and aerated throughout, so the network stays in place, crop after crop.",
     ],
     keyTakeaways: [
       "Synchrotron micro-CT (Braunmiller et al., 2026) images mycorrhizal hyphae, roots, soil particles and pores together in intact soil for the first time.",
@@ -5619,7 +5621,7 @@ export const papers: Paper[] = [
       "The study did not test PQNK, rice, flooding or AWD; it makes visible the architecture PQNK’s four rules protect.",
       "Conventional farming, and SRI as commonly practised, rebuild the field after every harvest and dismantle the underground network each crop.",
       "PQNK keeps the root zone moist but aerated at roughly 30 percent water to 70 percent air, with beds, roots and residues carried forward from crop to crop.",
-      "A three-way rice comparison of continuous flooding, AWD and PQNK moisture management is proposed to document the effect on root-zone architecture.",
+      "For rice, PQNK keeps the root zone moist and aerated, never inundated: water only on the soil-ball test, never above a 4-inch (10 cm) head, so the root-fungal network is never drowned.",
     ],
   },
   {
