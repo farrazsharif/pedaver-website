@@ -111,6 +111,15 @@ function EvidenceCard({ fe }: { fe: FieldEvidence }) {
           {fe.sourceUrl.endsWith(".pdf") ? "Read the full exchange (PDF) →" : "Watch Video →"}
         </a>
       )}
+      {fe.sourceUrl?.endsWith(".pdf") && (
+        <a
+          href={fe.sourceUrl}
+          download
+          className="mt-2 inline-block text-sm font-semibold text-accent underline underline-offset-4 hover:text-accent-light"
+        >
+          Download PDF ↓
+        </a>
+      )}
     </div>
   );
 }
