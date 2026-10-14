@@ -157,6 +157,8 @@ the pilot (KP-216): every paper/chapter page's visible markup compared before/af
 
 **KP book-style backfill — batch 2 (2026-10-13, commit `21e9179`, all 10 verified live):** KP-204, 200, 199, 198, 197, 196, 195, 193, 192, 190. Source per paper = the candidate (FINAL, Published Papers Word/Pages via Pages export, SSD publish-ready) whose sentences best match the live PDF (97-100%). `kp_body.py` now: KPH2 style; bold/large headings only in papers without heading styles (keeps published output identical - all 15 earlier papers re-verified byte-identical); repeated page-header tables and tagline lines skipped; line breaks kept as spaces; "[ INSERT … ]" placeholders stripped; the round PQNK logo skipped. 4 infographic descriptions. Deferred to a PDF-based batch (no source matching the live PDF): KP-201, 202, 194; also KP-191. KP-207 and KP-210 wait for v1.1 approval.
 
+**ARCHIVE AUDIT (2026-10-14):** all 265 documents moved to the SSD Archive on 1-2 Oct were matched to the live papers/chapters (`Claude tools/archive_audit.py`): for every published item they cover (36 chapters, 7 KPs) the Mac still holds an equal-or-better source. One mistake found and already fixed: KP-207's live source had been archived as a "draft" (no "- FINAL" in its name). KP originals often sit in ~/Documents under the author's own titles; `kp_batch.py` now searches by content (Spotlight). KP-171, 177-180, 182, 183: only the author's PDFs exist (no editable file during the backup period) - book-style text for these needs a PDF-based conversion.
+
 ## 4. Chapter status
 
 | # | chapterId | Title | Status | Notes |
