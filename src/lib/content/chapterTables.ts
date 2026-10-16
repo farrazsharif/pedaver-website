@@ -420,30 +420,6 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["Ethylene gas (commercial)", "Controlled room", "❌ No (not pristine)", "Uniform but flavor less"],
     ["Carbide (CaC₂)", "Illegal, toxic", "❌ Absolutely not", "Dangerous, uneven, ruins soil ethics"],
   ] },
-  "kp173-table-01.png": { headers: ["Aspect", "PQNK (Pristine Organic)", "Chemical-Farmed"], rows: [
-    ["Root density", "Dense, fibrous, highly branched", "Sparse, thick, fewer laterals"],
-    ["Root length", "Deeper + wider exploration", "Shallow, fertilizer-zone bound"],
-    ["Root tips", "Numerous, active, soft", "Burnt, blunt, or swollen"],
-    ["Root breakage", "Minimal", "Frequent, brittle"],
-  ] },
-  "kp173-table-02.png": { headers: ["Factor", "PQNK Wheat", "Chemical Wheat"], rows: [
-    ["Tillers", "Natural, proportional", "Excessive or very few"],
-    ["Crown health", "Thick, resilient", "Soft, watery"],
-    ["Lodging risk", "Low", "High"],
-  ] },
-  "kp173-table-03.png": { headers: ["Parameter", "PQNK", "Chemical"], rows: [
-    ["Brix stability", "Stable", "Unstable"],
-    ["Free amino acids", "Low", "High"],
-    ["Simple sugars", "Balanced", "Excessive"],
-    ["Cell wall strength", "Strong", "Weak"],
-  ] },
-  "kp173-table-04.png": { headers: ["Pest Type", "Pressure Prediction", "Reason"], rows: [
-    ["Aphids", "❌ Very Low", "No free amino acids"],
-    ["Armyworm", "❌ Low", "Strong silica & lignin"],
-    ["Termites", "❌ Very Low", "Moist, fungal soil"],
-    ["Shoot fly", "❌ Low", "Balanced nitrogen"],
-    ["Rust diseases", "❌ Low", "Stable sap & immunity"],
-  ] },
   "kp201-table-01.png": { headers: ["2009-2011 MSRI", "Mature PQNK Rice", "What Changed"], rows: [
     ["Young seedlings transplanted", "Direct seeding", "Nursery and transplanting eliminated"],
     ["Newly formed raised beds", "Mature permanent raised beds", "Soil architecture preserved crop after crop"],
@@ -588,7 +564,7 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
   "kp142-img-03.jpg": { title: "Four Steps from Degenerative to Sustained State", headers: ["Step", "Action", "Purpose", "What It Achieves"], rows: [
     ["1", "Break the Hardpan", "Restore deep movement of water, air, and roots", "Enables deep root systems; crops become resistant to parasites that attack weak, shallow roots"],
     ["2", "Correct Soil Chemistry with Water + Acid", "Leach accumulated salts; lower pH if above 8", "Liberates locked-up minerals; creates environment hostile to parasitic weeds; favorable to crops"],
-    ["3", "Build Permanent Raised Beds + Plant Jantar", "Create traffic-controlled growing zones, apply water through furrows for soil moisture management (SMM) and drainage; plant deep-rooted cover crop.", "Jantar taproots fracture subsoil naturally; create channels; pull nutrients from below; regenerate structure from within"],
+    ["3", "Build Permanent Raised Beds + Plant Jantar", "Create traffic-controlled growing zones, apply water through furrows for soil moisture management (SMM); plant deep-rooted cover crop.", "Jantar taproots fracture subsoil naturally; create channels; pull nutrients from below; regenerate structure from within"],
     ["4", "Retain, Mulch, and Plant with No-Till", "Leave roots; chop biomass as mulch; plant directly", "Roots feed soil life; mulch protects moisture and adds organic matter; no-till preserves restored ecosystem"],
   ] },
   "kp142-img-04.jpg": { headers: ["Step", "Degenerative State", "Regenerative Phase", "Sustained State Entry"], rows: [
@@ -733,5 +709,29 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["14", "Cost of production", "High", "High", "Medium", "Medium", "Low", "Low", "ACI highest, PQNK lowest"],
     ["15", "Yield Potential on precision", "Medium", "Medium", "Medium", "Medium", "Medium", "High", "PQNK yields more as soil recovers"],
     ["16", "Nutrition density, eating quality", "Low", "Low", "Low", "Medium", "Medium", "High", "PQNK is Organic Plus, best taste and flavor"],
+  ] },
+  "kp173-table-01.png": { headers: ["Aspect", "PQNK (Pristine Organic)", "Chemical-Farmed"], rows: [
+    ["Root density", "Dense, fibrous, highly branched", "Sparse, thick, fewer laterals"],
+    ["Root length", "Deeper + wider exploration", "Shallow, fertilizer-zone bound"],
+    ["Root tips", "Numerous, active, soft", "Burnt, blunt, or swollen"],
+    ["Root breakage", "Minimal", "Frequent, brittle"],
+  ] },
+  "kp173-table-02.png": { headers: ["Factor", "PQNK Wheat", "Chemical Wheat"], rows: [
+    ["Tillers", "Natural, proportional", "Excessive or very few"],
+    ["Crown health", "Thick, resilient", "Soft, watery"],
+    ["Lodging risk", "Low", "High"],
+  ] },
+  "kp173-table-03.png": { headers: ["Parameter", "PQNK", "Chemical"], rows: [
+    ["Brix stability", "Stable", "Unstable"],
+    ["Free amino acids", "Low", "High"],
+    ["Simple sugars", "Balanced", "Excessive"],
+    ["Cell wall strength", "Strong", "Weak"],
+  ] },
+  "kp173-table-04.png": { headers: ["Pest Type", "Pressure Prediction", "Reason"], rows: [
+    ["Aphids", "❌ Very Low", "No free amino acids"],
+    ["Armyworm", "❌ Low", "Strong silica & lignin"],
+    ["Termites", "❌ Very Low", "Moist, fungal soil"],
+    ["Shoot fly", "❌ Low", "Balanced nitrogen"],
+    ["Rust diseases", "❌ Low", "Stable sap & immunity"],
   ] },
 };

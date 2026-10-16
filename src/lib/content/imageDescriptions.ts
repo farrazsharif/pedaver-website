@@ -51,6 +51,8 @@ export const IMAGE_DESCRIPTIONS: Record<string, string> = {
     "Chart: two rising lines, healthcare expansion climbing more steeply than population growth, while a wave of vegetables, fruit and grain labelled PQNK regenerative farming rises from below as the counterweight of nutrient density.",
   "kp111-img-02.jpg":
     "Illustration of four stages of farming. Ancient: people working the soil by hand with a digging stick and hoe. Conventional: a farmer ploughing with a single ox. Together these sustained farming till 1958, with fallow land and animal grazing. Transition to industrial: a pair of oxen pulling an iron plough, the groundbreaker for devastation, tillage and agrochemicals. Industrial: a tractor with a plough, the augmentation of tillage to space and agrochemicals.",
+  "kp173-img-01.jpg":
+    "Four photographs of PQNK wheat plants lifted from the field with their roots. In each, a dense, fibrous, much-branched root system holds a large clump of dark, crumbly soil that clings to the roots, the sign of living soil biology.",
   // KP-216, How Much Water Does One Irrigation Use?
   "kp216-img-01.jpg":
     "Scale diagram of the PQNK permanent bed and furrow. The bed is 42 inches across the top and 52 inches at the base, covered with organic mulch: a permanent bed of living, covered soil. Each furrow is 18 inches wide at the top, 8 inches at the bottom and 8 inches deep, and beds repeat every 60 inches, centre to centre. Water stands 4 inches deep in the furrows. Water at a 4-inch head fills 42 square inches of each furrow: 71,953 litres per acre, against 411,161 litres for one 4-inch flood.",

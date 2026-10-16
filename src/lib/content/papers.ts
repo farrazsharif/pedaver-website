@@ -3805,6 +3805,7 @@ export const papers: Paper[] = [
     title: "Knowledge Paper: Returning Dairy Waste to the Land, A PQNK Perspective for Dairy Farmers",
     summary:
       "Addressed directly to dairy farmers who assume manure and biogas slurry are automatically 'valuable fertilizer,' this paper argues the same waste can help, stall, or actively poison a field depending entirely on which soil state within PQNK's transition, degenerative, regenerative (following the initial Corrective Intervention), or the Sustained Closed Loop State, it's applied to, and sets out a decision framework for matching waste form to soil condition.",
+    modifiedDate: "2026-10-16",
     publishedDate: "2026-08-04",
     pdfPath: "/papers/returning-dairy-waste-to-the-land.pdf",
     heroImage: "/images/beds-prepared.jpg",
@@ -4549,20 +4550,21 @@ export const papers: Paper[] = [
     title: "The Hidden Crisis: How Industrial Agriculture Has Broken Earth's Water Cycle",
     summary:
       "A quantified case that industrial agriculture has driven global groundwater tables from 20-30 feet to over 300 feet deep, creating a roughly $200 billion annual crisis addressable through a costed $15 billion, 24-month PQNK rollout plan.",
+    modifiedDate: "2026-10-16",
     publishedDate: "2026-08-04",
     pdfPath: "/papers/the-hidden-crisis-industrial-agriculture-and-the-water-cycle.pdf",
     heroImage: "/images/beds-wet-skyline.jpg",
     abstract: [
-      "The paper opens with a single headline figure: groundwater that sat 20-30 feet below the surface for billions of years has fallen to over 300 feet in many agricultural regions today, a loss of roughly 280 feet of water storage displaced from the ground into atmospheric instability. It attributes this to three compounding industrial practices: bare soil exposed to direct sun regularly reaches 70°C (158°F), driving explosive upward air movement that displaces moisture far from where it fell; heavy machinery compacts soil into hardpan layers that block infiltration entirely, turning rainfall into fast runoff; and the combination displaces trillions of tonnes of water from stable underground storage into unpredictable atmospheric circulation.",
+      "The paper opens with a single headline figure: groundwater that stood 20-30 feet below the surface for generations has fallen to over 300 feet in many agricultural regions today, a loss of roughly 280 feet of water storage displaced from the ground into atmospheric instability. It attributes this to three compounding industrial practices: bare soil exposed to direct sun regularly reaches 70°C (158°F), driving explosive upward air movement that displaces moisture far from where it fell; heavy machinery compacts soil into hardpan layers that block infiltration entirely, turning rainfall into fast runoff; and the combination displaces trillions of tonnes of water from stable underground storage into unpredictable atmospheric circulation.",
       "The stated annual cost of this disruption is over $200 billion: more than $50 billion in flood damage to infrastructure and crops, over $30 billion in drought-related agricultural losses, over $20 billion in progressively deeper well-drilling and expanded water treatment, and over $100 billion in emergency response and disaster recovery, framed as an accelerating, compounding cost rather than a stable baseline.",
-      "The proposed remedy is the same four-step PQNK sequence scaled to national policy: subsoilers cutting 18-24 inches deep to break hardpan; permanent raised beds preventing future inundation and compaction; a fast-growing cover crop (Jantar) grown to roughly six feet and then mulched in place, root system intact, using a specialized mulcher; and continuous no-till planting into the same beds using SIPP or VIPP precision planters. A complete machine set (subsoiler, raised-bed maker, mulcher, and SIPP/VIPP planter) is costed at approximately $10,000 per 200-acre unit.",
-      "The paper's economic argument rests on a stated 13-to-1 return: a one-time $15 billion investment, broken into roughly $3 billion for hardpan-breaking, $4 billion for raised-bed construction, $2 billion for initial cover-crop establishment, $5 billion for machine-set distribution, and $1 billion for monitoring, against $200 billion in current annual losses. It lays out a 24-month, four-phase emergency rollout: crisis declaration and mapping (months 1-6), machinery and cover-crop distribution (months 7-12), completion of hardpan-breaking and bed construction with cash-crop planting beginning (months 13-18), and performance assessment with policy formalization (months 19-24).",
+      "The remedy is the four-step PQNK sequence scaled to national policy: subsoilers cutting 18-24 inches deep break the hardpan; one deep irrigation washes salts and residues out of the root zone; permanent raised beds prevent future inundation and compaction; and roots are retained, mulch is kept and crops are planted without tillage: a fast-growing Jantar cover crop is grown to about six feet and mulched in place with its roots intact, then crop after crop is planted into the same beds with SIPP or VIPP precision planters. A complete machine set (subsoiler, raised-bed maker, mulcher, and SIPP/VIPP planter) is costed at approximately $10,000 per 200-acre unit.",
+      "The paper's economic argument rests on a stated 13-to-1 return: a one-time $15 billion investment, broken into roughly $3 billion for hardpan-breaking, $4 billion for raised-bed construction, $2 billion for initial cover-crop establishment, $5 billion for machine-set distribution, and $1 billion for farmer training and field support, against $200 billion in current annual losses. It lays out a 24-month, four-phase emergency rollout: crisis declaration and mapping (months 1-6), machinery and cover-crop distribution (months 7-12), completion of hardpan-breaking and bed construction with cash-crop planting beginning (months 13-18), and the remaining machinery, farmer training and permanent policy (months 19-24).",
     ],
     keyTakeaways: [
       "Groundwater depth in heavily farmed regions has fallen from a historical 20-30 feet to over 300 feet, a loss of roughly 280 feet of underground water storage displaced into atmospheric instability.",
       "Current industrial-agriculture water-cycle disruption is costed at over $200 billion annually: $50B+ flood damage, $30B+ drought losses, $20B+ deepening wells/water treatment, $100B+ emergency response.",
       "Bare agricultural soil regularly reaches 70°C (158°F) under direct sun, hot enough to burn skin, driving explosive upward air movement that displaces water vapour far from where it fell.",
-      "The proposed fix is the four-step PQNK sequence (subsoiling 18-24 inches deep, permanent raised beds, six-foot Jantar cover crop mulched in place, continuous no-till SIPP/VIPP planting), costed at about $10,000 per 200-acre machine set.",
+      "The fix is the four-step PQNK sequence (subsoiling 18-24 inches deep, one deep water wash, permanent raised beds, roots and mulch kept with continuous no-till SIPP/VIPP planting after a six-foot Jantar cover crop), costed at about $10,000 per 200-acre machine set.",
       "The paper proposes a one-time $15 billion national investment against $200 billion in current annual losses, a stated 13-to-1 return, deployed over a costed 24-month, four-phase rollout plan.",
     ],
   },
@@ -4601,6 +4603,7 @@ export const papers: Paper[] = [
     title: "Reading Roots, Sap, and Pest Risk: A Field Diagnostic Guide Through the PQNK Lens",
     summary:
       "A no-tools field guide for comparing PQNK-grown wheat roots against chemical-farmed roots, and for reading that difference forward into a pest-pressure forecast, on the premise that pests are scavengers of weak plants rather than indiscriminate attackers.",
+    modifiedDate: "2026-10-16",
     publishedDate: "2026-08-04",
     pdfPath: "/papers/field-diagnostic-guide-roots-sap-and-pests.pdf",
     heroImage: "/images/young-crop-beds.jpg",
