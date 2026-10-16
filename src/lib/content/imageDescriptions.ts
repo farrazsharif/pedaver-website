@@ -32,6 +32,17 @@ export const IMAGE_DESCRIPTIONS: Record<string, string> = {
   // KP-179, The Nutritional Roots of Healthcare Expansion
   "kp179-img-01.jpg":
     "Illustration in two halves: on the left a depleted industrial farm, a row of withered plants on cracked, dry soil with a hospital and a skull sign behind; an arrow labelled PQNK solution points to the right half, a thriving field of vegetables, fruit trees and sunflowers on rich soil.",
+  // Batch 5 (2026-10-16)
+  "kp159-img-01.jpg":
+    "Cover infographic: PQNK production guide, Balangu and basil seed production, a complete farmer's guide for Punjab, Pakistan. Nature based, zero till, permanent beds, organic mulch, low water, high value. A field of flowering plants on mulched raised beds, with balangu seeds and basil seeds shown in circles. Water-efficient furrow irrigation, healthy soil with living organisms, deep roots for better nutrition, high-quality seed with better market value. Restore nature, reduce cost, increase yield, ensure future.",
+  "kp155-img-01.jpg":
+    "Diagram: why extra irrigation fails in cold weather, understanding water movement versus temperature. A plant stands in cold, waterlogged soil. Evaporation from the leaves is very low, so there is no vacuum pull and no water moves upward; the water stays stagnant in the soil and root uptake stops.",
+  "kp151-img-01.jpg":
+    "Cross-section of a PQNK tomato bed: tomato plants in fruit on a bed under organic mulch, beside a water furrow. Water seeps sideways from the furrow into the bed; below the mulch a wide tomato root system spreads through the soil with earthworms and beneficial microbes, Bacillus thuringiensis among them.",
+  "kp143-img-01.jpg":
+    "Diagram of a PQNK rooftop planter, 4 by 5 feet, with mixed crops: tomato, leafy greens and herbs grow under an insulating mulch layer above a diverse root zone. A soil-life conduit, a pipe filled with fungal network material, runs from the planter down the outside wall into the native soil 1.2 feet below ground, where its perforated end connects the planter to the living soil: a mycorrhizal highway.",
+  "kp143-img-02.jpg":
+    "Layout sketch: three PQNK planters, each 4 by 5 feet, set side by side and joined by short pipe connections below a common pipe running along the top.",
   // KP-216, How Much Water Does One Irrigation Use?
   "kp216-img-01.jpg":
     "Scale diagram of the PQNK permanent bed and furrow. The bed is 42 inches across the top and 52 inches at the base, covered with organic mulch: a permanent bed of living, covered soil. Each furrow is 18 inches wide at the top, 8 inches at the bottom and 8 inches deep, and beds repeat every 60 inches, centre to centre. Water stands 4 inches deep in the furrows. Water at a 4-inch head fills 42 square inches of each furrow: 71,953 litres per acre, against 411,161 litres for one 4-inch flood.",
