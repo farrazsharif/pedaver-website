@@ -136,6 +136,7 @@ export const papers: Paper[] = [
     title: "Modern (Green Revolution) Semi-Dwarf Wheat vs. Heirloom and Ancient Wheat Varieties",
     summary:
       "A critical review of the popular claim that Green Revolution semi-dwarf wheat is inherently more harmful than heirloom varieties. Applying the PQNK lens, the paper argues the farming system, not just the genetics, is the overlooked variable driving gluten-related health concerns, and that soil biology can meaningfully change a grain's nutritional and digestive profile regardless of variety.",
+    modifiedDate: "2026-10-16",
     publishedDate: "2026-07-25",
     pdfPath: "/papers/modern-semi-dwarf-wheat-vs-heirloom-and-ancient-varieties.pdf",
     heroImage: "/images/cereal-green.jpg",
@@ -144,15 +145,15 @@ export const papers: Paper[] = [
       "The paper contrasts heirloom and ancient wheat, historically grown in lower-input, more biologically balanced soils, with modern semi-dwarf wheat, typically bred and grown for responsiveness to synthetic NPK inputs in ways that can produce mineral imbalance in the grain. Into that contrast it introduces PQNK as a third axis entirely independent of genotype: a regenerative system built on soil biome health, mineral balance and density, and carbon-driven ecosystem resilience, on the premise that a farm's soil 'terroir' is as determinative of final food quality as the seed's genetics.",
       "On composition, the paper is careful not to overstate what farming system can change: it cannot remove the specific gluten epitopes that trigger celiac disease, and total gluten content remains primarily driven by genotype and environment. But it argues that soil nitrogen form and mineral balance can shape protein synthesis and quality, and that plants grown in mineral-rich, biologically active soil may express fewer stress-induced compounds (such as certain ATIs) while showing higher bioavailable concentrations of zinc, iron, selenium, magnesium, and polyphenols, independent of whether the variety is modern or heirloom.",
       "Applied to human health, the paper draws a sharp line: celiac disease is unaffected by farming system, and no wheat from any system is safe for celiac patients. But it proposes that non-celiac wheat sensitivity may be aggravated not only by wheat proteins but by consumption of grain grown in depleted, mineral-imbalanced soils lacking cofactors the body needs for digestion, and that nutrient-dense, PQNK-grown wheat could be better tolerated by some individuals and could lower postprandial inflammation relative to the same variety grown conventionally.",
-      "The paper frames wheat quality as governed by a triad of Genetics × Environment × Management, positions PQNK as a deliberate optimization of the Management term, and closes by calling the 'modern vs. ancient' debate incomplete without accounting for agricultural practice, then lays out a research agenda: paired-variety trials comparing PQNK and conventional management, human feeding trials on bread from matched flour, and correlation studies linking soil health to grain nutrient density.",
+      "The paper frames wheat quality as governed by a triad of Genetics × Environment × Management, positions PQNK as a deliberate optimization of the Management term, and closes by calling the 'modern vs. ancient' debate incomplete without accounting for agricultural practice, then sets out the PQNK position: the same variety, modern or heirloom, behaves differently on PQNK, where deep roots and vigorous plants produce fuller grain, validated for the market by laboratory tests comparing PQNK and conventionally grown wheat for nutrition density and diversity.",
     ],
     keyTakeaways: [
       "The paper challenges the popular claim that Green Revolution wheat genetics alone explain rising gluten-related health concerns.",
       "It introduces farming system (specifically PQNK) as a third variable alongside genotype and environment in determining a grain's nutritional and health profile.",
       "PQNK cannot alter celiac-triggering gluten epitopes; celiac patients must avoid all wheat regardless of how it was grown.",
-      "PQNK-grown wheat, modern or heirloom, is hypothesized to carry higher bioavailable zinc, iron, selenium, magnesium, and polyphenols due to soil mineral balance.",
+      "PQNK-grown wheat, modern or heirloom, carries higher bioavailable zinc, iron, selenium, magnesium, and polyphenols due to soil mineral balance.",
       "Non-celiac wheat sensitivity may be partly a function of depleted, imbalanced soils rather than wheat genetics alone.",
-      "The paper calls for controlled trials comparing identical wheat varieties under PQNK versus conventional management, including human feeding studies.",
+      "The same wheat variety grows a different plant on PQNK: deep roots and vigorous plants give fuller, more nutritious grain.",
     ],
   },
   {
