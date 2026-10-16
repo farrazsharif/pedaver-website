@@ -681,7 +681,7 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["Cold spell", "Exposed soil loses heat quickly; chilling slows growth and weakens the crop.", "Mulch insulates the root zone and holds soil temperature. A 2% ethanol foliar spray relieves ambient cold stress."],
     ["Dry interval", "Shallow roots and weak structure provide little stored moisture.", "Permanent pores, retained roots, organic matter and Soil Moisture Management improve usable moisture and rooting depth."],
     ["Intense rainfall", "Sealed or compacted soil sheds water as runoff.", "Aggregates, root channels and undisturbed pores improve infiltration; furrows receive and distribute supplementary flow."],
-    ["Excess water", "Flooded root zones lose air and biological function.", "Raised beds keep the productive root zone aerated while furrows provide drainage and controlled water movement."],
+    ["Excess water", "Flooded root zones lose air and biological function.", "Raised beds keep the productive root zone aerated while furrows provide controlled water movement."],
     ["Weather-driven pests", "Uniform stressed crops are vulnerable and often trigger routine spraying.", "Biodiversity, balanced plant nutrition and predator habitat strengthen biological regulation."],
     ["One crop fails", "A single crop and harvest window concentrate risk.", "Crop-in-crop, crop-after-crop and functional diversity spread climatic and economic exposure."],
   ] },
