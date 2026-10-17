@@ -1034,6 +1034,15 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["6. Weed, Pest & Disease Management", "Reactive. Reliance on chemical herbicides, pesticides, fungicides. Leads to resistance and residue.", "Integrated (IPM). Monitoring, biocontrols, targeted chemical use as a last resort.", "Proactive & Systemic. PQNK fosters two natural systems: 1) Provision: supplies all plant needs for maximum health. 2) Protection: healthy plants are resistant; mulch suppresses weeds; a balanced ecosystem of beneficial insects, birds, and organisms (e.g., Bt) provides natural control."],
     ["7. Microclimate & Season Management", "Exposed. Bare soil causes extreme temperatures (>35°C at planting, <10°C later). Late planting shortens season. High vulnerability to frost.", "Moderated. Use of mulches or row covers to buffer temperature and extend the growing window.", "Buffered. Mulch acts as an insulating blanket. Enables early planting (avoids heat/cold stress). Protects from early frost, extending the productive season to 90+ days, ensuring proper tuber bulking."],
   ] },
+  "kp166-img-01.jpg": { title: "Critical Analysis: PQNK Perspective", headers: ["Aspect", "PNAS Article Focus", "PQNK Critique & Holistic Approach"], rows: [
+    ["Scope of “No-Till”", "Defines NT as minimal soil disturbance, but ignores traffic-induced compaction.", "NT alone is insufficient. Without permanent raised beds and regulated traffic, compaction persists."],
+    ["Root Cause of Compaction", "Heavy machinery on unprotected soil.", "Compaction is a symptom of disrupted soil structure and lack of biological resilience."],
+    ["Solution Approach", "Technical fixes: lighter machines, controlled traffic.", "Systemic regeneration: Break hardpan → correct chemistry → build raised beds → mulch & no-till."],
+    ["Role of Soil Life", "Briefly mentions biological recovery, but not as a primary solution.", "Soil life is central: roots, fungi, and organic mulch regenerate structure, prevent compaction, and enhance infiltration."],
+    ["Traffic Management", "Suggests permanent tramlines (controlled traffic).", "PQNK uses furrows between raised beds to isolate traffic, preserving bed integrity and soil life."],
+    ["Water & Nutrient Dynamics", "Not addressed in depth.", "PQNK uses deep irrigation + acid leaching to correct pH and unlock nutrients, creating a hostile environment for weeds."],
+    ["Long-Term Sustainability", "Focuses on mitigating compaction within NT.", "Aims at closed-loop regeneration: no external inputs, resilient soil, self-sustaining ecology."],
+  ] },
   "kp2-table-01.png": { headers: ["Cost Component", "Conventional System (PKR)", "PQNK System (PKR)", "Saving with PQNK (PKR)"], rows: [
     ["Tillage & Sowing", "8,000", "2,500 (Direct Seeding)", "5,500"],
     ["Seed", "6,000 (60kg)", "1,000 (10kg)", "5,000"],
@@ -1069,12 +1078,17 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["Goal of Pruning", "Corrective action to remove non- viable sinks caused by system-induced stress.", "Supportive practice to optimize resource allocation in an already healthy system."],
     ["Long-term Strategy", "Reactive: Requires repeated intervention to address the symptom.", "Proactive: The system design prevents the cause, minimizing the need for intervention."],
   ] },
-  "kp165-table-01.png": { headers: ["Mechanism", "Oxygen Relationship", "Crop Applicability"], rows: [
-    ["Nitrogenase / rhizobial nodulation", "Requires protection from oxygen (microaerobic)", "Legumes and free-living diazotrophs (“The Underground Air”)"],
-    ["Phosphorus & potassium solubilization", "Requires oxygen-dependent respiration to drive organic- acid metabolism", "All crops"],
-    ["Bioturbation & mycorrhizal networks", "Aerobic organisms; channels enable gas exchange", "All crops (AMF benefit uneven across families)"],
-    ["Soil pH stability", "Waterlogging drives destabilizing redox pH swings", "All crops"],
-    ["Root aquaporin function", "Closes under low-oxygen- triggered cytosolic acidosis", "All crops"],
+  "kp175-table-01.png": { headers: ["Protective Feature", "Role in PQNK Regenerative System"], rows: [
+    ["Seed coat (testa)", "Lignin, cellulose, or suberin layers resist acid and enzymes."],
+    ["Endosperm dormancy", "Metabolic inactivity prevents premature breakdown."],
+    ["Enzyme inhibitors", "Natural compounds (e.g., tannins) block protease activity in the gut."],
+    ["Size & shape", "Small, smooth seeds (e.g., berries, grasses) pass quickly through the gut."],
+  ] },
+  "kp175-table-02.png": { headers: ["Practice", "Mimics Nature’s Seed-Dispersal System"], rows: [
+    ["Silvopasture", "Let animals graze in tree-planted zones; seeds disperse naturally."],
+    ["Seed balls + livestock", "Rolling animals over seed balls embeds them into soil with dung."],
+    ["Buffer strips with fruit hedges", "Attract birds → natural seed spread to fallow land."],
+    ["No till + manure integration", "Protects seed bank in soil; mimics gut passage with mild abrasion."],
   ] },
   "kp169-table-01.png": { headers: ["Environment", "Analogy", "What Happens?"], rows: [
     ["Flooded Field", "Like a city submerged under water for days", "All houses (soil pores) fill with water. No air supply. Residents (aerobic microbes) cannot breathe"],
@@ -1095,25 +1109,16 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["5", "Do not flood the field", "Use furrows"],
     ["6", "Feed the soil continuously", "Maintain organic matter for microbes to live in"],
   ] },
-  "kp175-table-01.png": { headers: ["Protective Feature", "Role in PQNK Regenerative System"], rows: [
-    ["Seed coat (testa)", "Lignin, cellulose, or suberin layers resist acid and enzymes."],
-    ["Endosperm dormancy", "Metabolic inactivity prevents premature breakdown."],
-    ["Enzyme inhibitors", "Natural compounds (e.g., tannins) block protease activity in the gut."],
-    ["Size & shape", "Small, smooth seeds (e.g., berries, grasses) pass quickly through the gut."],
+  "kp165-table-01.png": { headers: ["Mechanism", "Oxygen Relationship", "Crop Applicability"], rows: [
+    ["Nitrogenase / rhizobial nodulation", "Requires protection from oxygen (microaerobic)", "Legumes and free-living diazotrophs (“The Underground Air”)"],
+    ["Phosphorus & potassium solubilization", "Requires oxygen-dependent respiration to drive organic- acid metabolism", "All crops"],
+    ["Bioturbation & mycorrhizal networks", "Aerobic organisms; channels enable gas exchange", "All crops (AMF benefit uneven across families)"],
+    ["Soil pH stability", "Waterlogging drives destabilizing redox pH swings", "All crops"],
+    ["Root aquaporin function", "Closes under low-oxygen- triggered cytosolic acidosis", "All crops"],
   ] },
-  "kp175-table-02.png": { headers: ["Practice", "Mimics Nature’s Seed-Dispersal System"], rows: [
-    ["Silvopasture", "Let animals graze in tree-planted zones; seeds disperse naturally."],
-    ["Seed balls + livestock", "Rolling animals over seed balls embeds them into soil with dung."],
-    ["Buffer strips with fruit hedges", "Attract birds → natural seed spread to fallow land."],
-    ["No till + manure integration", "Protects seed bank in soil; mimics gut passage with mild abrasion."],
-  ] },
-  "kp166-img-01.jpg": { title: "Critical Analysis: PQNK Perspective", headers: ["Aspect", "PNAS Article Focus", "PQNK Critique & Holistic Approach"], rows: [
-    ["Scope of “No-Till”", "Defines NT as minimal soil disturbance, but ignores traffic-induced compaction.", "NT alone is insufficient. Without permanent raised beds and regulated traffic, compaction persists."],
-    ["Root Cause of Compaction", "Heavy machinery on unprotected soil.", "Compaction is a symptom of disrupted soil structure and lack of biological resilience."],
-    ["Solution Approach", "Technical fixes: lighter machines, controlled traffic.", "Systemic regeneration: Break hardpan → correct chemistry → build raised beds → mulch & no-till."],
-    ["Role of Soil Life", "Briefly mentions biological recovery, but not as a primary solution.", "Soil life is central: roots, fungi, and organic mulch regenerate structure, prevent compaction, and enhance infiltration."],
-    ["Traffic Management", "Suggests permanent tramlines (controlled traffic).", "PQNK uses furrows between raised beds to isolate traffic, preserving bed integrity and soil life."],
-    ["Water & Nutrient Dynamics", "Not addressed in depth.", "PQNK uses deep irrigation + acid leaching to correct pH and unlock nutrients, creating a hostile environment for weeds."],
-    ["Long-Term Sustainability", "Focuses on mitigating compaction within NT.", "Aims at closed-loop regeneration: no external inputs, resilient soil, self-sustaining ecology."],
+  "kp147-table-01.png": { headers: ["Residue Management", "Dominant Microbes", "Decomposition Speed", "Humus Formation", "Soil Health Impact"], rows: [
+    ["Surface Mulch", "Fungi + Actinomycetes", "Slow-Moderate", "High", "Long-term fertility, stable carbon"],
+    ["Incorporated via Rotavator", "Bacteria", "Fast", "Low-Medium", "Quick nutrients, but less humus"],
+    ["Uprooted & Removed", "Minimal", "Very Slow", "None", "Soil degradation"],
   ] },
 };
