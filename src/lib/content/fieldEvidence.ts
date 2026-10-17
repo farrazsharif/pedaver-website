@@ -668,6 +668,21 @@ export const fieldEvidence: FieldEvidence[] = [
     videoId: "jPlpn3Y3NH8",
     tags: ["canola", "rapeseed", "no-till", "no-till planter", "orange orchard", "citrus", "intercropping", "rain-fed sowing", "germination", "Haroonabad", "KP-215"],
   },
+  {
+    feNumber: 42,
+    title: "VIPP: Sowing Alfalfa Straight Through the Cover",
+    evidenceTypes: ["Field Evidence"],
+    cropOrTopic: "Alfalfa sown with the VIPP on permanent beds",
+    year: 2026,
+    date: "2026-10-17",
+    location: "Haroonabad (Rehmat Bibi Farm)",
+    summary:
+      "At Rehmat Bibi Farm in Haroonabad, the tractor-mounted VIPP (Vertical Insertion Precision Planter) is sowing alfalfa on PQNK permanent beds. The beds carry a cover of grass, weeds and older alfalfa plants, and nothing is ploughed, burnt or cleared before sowing. The earlier alfalfa germination was not satisfactory, so new seed is being planted in between the old plants without disturbing the soil. Each unit presses the seed straight down into the bed at one point and lifts out again, so the cover stays on the bed, keeping the soil cool and moist, feeding the soil life and holding back new weeds while the crop comes up. One pass, no tillage, no bare soil and no purchased input.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/lPzOH5devsQ",
+    videoId: "lPzOH5devsQ",
+    tags: ["alfalfa", "VIPP", "Vertical Insertion Precision Planter", "no-till", "sowing through cover", "reseeding", "permanent raised beds", "cover", "Haroonabad"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
