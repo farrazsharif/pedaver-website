@@ -639,6 +639,35 @@ export const fieldEvidence: FieldEvidence[] = [
     clippingImage: "/field-evidence/fe-039-behind-the-obvious.jpg",
     tags: ["biodiversity", "birds", "shrike", "food web", "natural pest control", "soil biology", "photosynthesis", "living soil", "Vasudha Sardar", "Madhuri Paranjape"],
   },
+  {
+    feNumber: 40,
+    title: "Sugarcane Tillering Strongly Beside Weeds on PQNK",
+    evidenceTypes: ["Field Evidence"],
+    cropOrTopic: "Sugarcane",
+    year: 2026,
+    date: "2026-10-16",
+    summary:
+      "A PQNK sugarcane field filmed on 16 October 2026 is tillering strongly: new shoots are coming up in large numbers, and they are thick and uniform. A few plants stand out, taller and more vigorous with every shoot thicker, like a sturdy boy in a class, and can be picked out even from a distance; the rest of the field gradually comes up alongside them. The field is covered with weeds at this stage, and the narration is clear that this is no cause for worry at all.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/Ax62H0_dqVs",
+    videoId: "Ax62H0_dqVs",
+    tags: ["sugarcane", "tillering", "shoots", "weeds", "uniform crop", "permanent raised beds", "pristine organic"],
+  },
+  {
+    feNumber: 41,
+    title: "No-Till Canola Germinating on Rain Moisture in a PQNK Orange Orchard",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
+    cropOrTopic: "Canola (rapeseed) sown without tillage in an orange orchard",
+    year: 2026,
+    date: "2026-10-17",
+    location: "Haroonabad (Rehmat Bibi Farm)",
+    summary:
+      "At Rehmat Bibi Farm in Haroonabad, the orange block is planted 10 by 10 feet. Canola was sown on the middle bed with a no-till planter, and the germination has come up beautifully. Rain provided the moisture needed to trigger germination; no water was run through the furrows. The farm thanks PQNK for its guidance. The sowing window and care of PQNK canola are covered in Knowledge Paper KP-215.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/jPlpn3Y3NH8",
+    videoId: "jPlpn3Y3NH8",
+    tags: ["canola", "rapeseed", "no-till", "no-till planter", "orange orchard", "citrus", "intercropping", "rain-fed sowing", "germination", "Haroonabad", "KP-215"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
