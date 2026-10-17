@@ -127,4 +127,15 @@ export const IMAGE_DESCRIPTIONS: Record<string, string> = {
     "Illustration: a hand prunes a lower leaf from a maize plant with secateurs while a ripening cob hangs on the stalk. Below the soil surface, the roots spread out in a glowing network, showing how pruning above ground directs the plant's energy below and into the grain.",
   "kp80-img-01.jpg":
     "Flow diagram: the PQNK foundation, healthy soil with mineral and microbe balance, leads to a healthy plant with high Brix that is nutrient-dense. That gives superior feed and fodder, highly digestible and nutrient-rich, which leads to animal and aquatic health, branching to poultry, livestock, aquaculture and apiculture. All of these lead to the universal outcomes: reduced feed costs, lower mortality, enhanced productivity and premium quality products.",
+  // Knowledge Papers, book-style batch 10
+  "kp69-img-01.jpg":
+    "Illustration titled Eucalyptus Plantation on PQNK Raised Beds, Ecological Agroforestry System: rows of young eucalyptus trees growing on permanent raised beds covered with thick straw mulch, with the furrows between the beds left open.",
+  "kp59-img-01.jpg":
+    "Illustration split diagonally. On the left, a dry, cracked, bare field with a tractor spraying in the haze and a single weak wheat plant. On the right, a hand with secateurs prunes a lush tomato plant heavy with red fruit, on dark mulched soil with potatoes and other crops, under a warm sunrise. A beam of light runs from the weak plant to the pruned one, showing energy directed into the fruit.",
+  "kp59-img-02.jpg":
+    "Diagram of two maize plants. Left, the un-topped plant: energy goes to the tassel, the energy sink, and to vegetative growth, while the developing ear is the primary sink. Right, the topped plant: the tassel is removed at the correct cut line above the ear, a red cross marks the wrong cut lower down, and an arrow shows the energy redirected to grain fill.",
+  "kp61-img-01.jpg":
+    "Cover illustration titled The Living Plant, A Primer on Physiology and Processes: a young plant under the sun, with its roots spreading through the soil among coloured dots of nutrients and microbes, and a close-up circle of a leaf showing the stomata through which it breathes.",
+  "kp60-img-01.jpg":
+    "Illustration in two halves. Left, The Force-Feeding: a giant syringe labelled NPK is pushed into dry, cracked, lifeless soil beside a wilting plant, with factory smoke behind. Right, The Sacred Symbiosis: a healthy tomato plant with ripe fruit grows from dark, living soil full of roots, fungal threads, mushrooms, earthworms and microbes, under a clear sky.",
 };

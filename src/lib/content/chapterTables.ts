@@ -882,4 +882,19 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["Resilience & Sustainability", "Inherently Sustainable & Resilient. Designed by nature to withstand and adapt to local conditions. It builds ecological capital over time.", "Inherently Fragile & Depletive. Prone to economic shocks, resource scarcity, and obsolescence. It depletes natural capital.", "For Pakistan, with its abundant sun, land, and young population, PQNK offers a path to long-term food sovereignty and ecological security that industry cannot guarantee."],
     ["Alignment with Basic Needs", "Directly Aligned. It is the primary, most efficient system for meeting the fundamental needs of Food and providing for Shelter and Clothing.", "Indirectly Aligned. It processes, preserves, and transports the outputs of agriculture but does not create the core sustenance itself.", "One cannot eat a smartphone or wear a stock certificate. Industry adds convenience and variety but does not create the foundational biomass essential for life."],
   ] },
+  "kp69-table-01.png": { headers: ["Perspective", "What They Observe", "Why"], rows: [
+    ["Environmentalists", "Water stress, poor understory", "Eucalyptus planted on dead soils at large scale"],
+    ["Farmers", "Fast growth, income", "Tree exploits available geology"],
+    ["PQNK", "Neutral behavior", "Soil biology regulates plant demand"],
+  ] },
+  "kp58-table-01.png": { headers: ["Parameter", "500 ft", "580 ft", "Change"], rows: [
+    ["Electrical Conductivity (EC)", "2578 µS/cm", "1682 µS/cm", "Improved by about 35%"],
+    ["Calcium + Magnesium", "3.36", "5.46", "Increased"],
+    ["Sodium (Na)", "22.42", "11.36", "Reduced by about 49%"],
+    ["Carbonate", "Nil", "Nil", "No change"],
+    ["Bicarbonate (HCO₃)", "7.84", "8.78", "Slight increase"],
+    ["Chloride", "9.32", "6.19", "Reduced"],
+    ["Residual Sodium Carbonate (RSC)", "4.49", "3.20", "Improved"],
+    ["Sodium Adsorption Ratio (SAR)", "17.30", "6.88", "Improved dramatically"],
+  ] },
 };
