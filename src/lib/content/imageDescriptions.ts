@@ -175,4 +175,19 @@ export const IMAGE_DESCRIPTIONS: Record<string, string> = {
     "Illustration of a high-density amla orchard: two long rows of trees heavy with pale green fruit, with the bed between them covered in low green growth, under a clear blue sky.",
   "kp27-img-01.jpg":
     "Infographic, Sugarcane: The Bamboo Principle, the PQNK perennial regenerative sugarcane system, perennial by nature, regenerative by design, productive for years. A farmer selectively cuts mature, harvest-ready canes from a clump that also holds medium canes and young shoots, with bamboo growing alongside. Labels: sugarcane is biologically like bamboo; organic mulch returns to the soil; deep roots explore minerals, water and life; earthworms improve soil structure; mycorrhizal fungi extend nutrient and water uptake; old roots remain and nurture soil life; water moves laterally from the furrows toward the bed centre. Plant once, harvest for years.",
+  // Knowledge Papers, book-style batch 14
+  "kp10-img-01.jpg":
+    "Illustration of a high-density kinnow orchard: two rows of fruit-laden citrus trees on permanent raised beds, shown in cross-section with their roots spreading through the soil, where blue sparkles mark the moisture held around the roots.",
+  "kp3-img-01.jpg":
+    "Illustration contrasting two wheat fields in cross-section at sunset. On the left, wheat on dark, living soil with deep, branching roots and earthworms; on the right, shorter wheat on pale, dry, compacted soil with shallow roots.",
+  "kp4-img-01.jpg":
+    "Illustration split in two behind a single wheat grain marked Zn, Fe and Mg. Left: a grey field of modern wheat on dry, cracked soil. Right, labelled PQNK: a golden field of tall wheat mixed with wildflowers, with deep roots in dark soil.",
+  "kp4-img-02.jpg":
+    "Illustration of two wheat grains on a dark background. Left, a hard, metallic grain made of jigsaw pieces labelled gliadin and glutenin. Right, a warm, glowing grain surrounded by small symbols of minerals and nutrients.",
+  "kp8-img-01.jpg":
+    "Slide with the Pedaver and PQNK logos, titled Kinnow at Nilem Farm Vehari, January 2021: a row of kinnow trees heavy with orange fruit beside a straw-mulched bed.",
+  "kp8-img-04.jpg":
+    "Slide with the Pedaver and PQNK logos: Mango orchard on death row, recovered within just nine months with PQNK, Mango Research Station Sujjahabad reports. Two photos of the same mango tree: September 2019, a sparse, brown, dying tree; July 2020, a dense, green, healthy tree. Credited to Abdul Qadir, mango grower, 3.8.23, and the President, Mango Association.",
+  "kp1-img-01.jpg":
+    "Two photos of PQNK planters working in tall green cover: left, the SIPP No-Till Planter; right, the VIPP, Vertical Insertion Precision Planter.",
 };
