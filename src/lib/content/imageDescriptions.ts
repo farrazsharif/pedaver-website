@@ -222,4 +222,31 @@ export const IMAGE_DESCRIPTIONS: Record<string, string> = {
     "Slide: agriculture services are still stuck with the Bana-Kiarri irrigation method as against the most efficient mulched raised-bed system. Photos compare flood-irrigated Bana-Kiarri basins with raised beds, and mulched raised beds labelled over 90 percent water saving. Caption: raised-bed irrigation systems save over 70 percent of water, and if properly covered with organic mulch, the water saving is 100 percent; rain, dew and humidity in the air are more than sufficient to meet this requirement, and mycorrhizal fungi buffer every deficiency.",
   "kp137-img-05.jpg":
     "Photo labelled HD Citrus: a row of high-density citrus trees heavy with orange fruit beside a straw-mulched bed.",
+  // Knowledge Papers, book style from the PDF (batch 19)
+  "kp86-img-01.jpg":
+    "Illustration: a young green seedling growing out of a round mound of rich soil shaped like a stack of coins, set inside a circular emblem, symbolising soil as living capital.",
+  "kp85-img-01.jpg":
+    "Illustration: a young green seedling growing out of a round mound of rich soil shaped like a stack of coins, set inside a circular emblem, symbolising soil as living capital.",
+  "kp117-img-01.jpg":
+    "Infographic, PQNK, Nature's Algorithm for Abundant Food: from a failing industrial model to a permanent natural system. 1, what went wrong in agriculture: we tried to control nature instead of working with it; tillage destroyed soil structure and life, bare soil lost organic matter, the water cycle became imbalanced, farming depended on synthetic fertilizers and chemicals, pests, weeds and diseases became chronic, costs rose, the climate degraded and small farmers were left behind. The result: degraded soil, wasted water, higher costs, stagnant yields, poorer food quality, higher risks and dependent farmers. The problem is not the farmer; it is the system we inherited. 2, PQNK, the natural system: nature's algorithm has sustained life on Earth for over 400 million years, with no tillage, permanent soil cover, living roots all year, biodiversity, water conserved and cycled naturally, and soil life building fertility; nature's design builds soil, stores water, recycles nutrients, protects biodiversity, regulates climate and produces three times or more biomass per unit of land. 3, how PQNK is implemented, a one-time transition to a permanent system: step 1, break the hardpan by deep ripping, 7 to 17 inches; step 2, if soil pH is above 8, apply 8 kg of sulfuric acid per acre in furrow water through deep irrigation; step 3, make permanent beds and plant Jantar (Sesbania) for biomass and soil building; step 4, no-till planting through mulch with SIPP or VIPP planters. Continuous practice: irrigate only when needed, keep soil covered, no synthetic chemicals, encourage biodiversity, observe and improve. 4, benefits from the farmer's perspective: lower cost of production, higher yield and stability, lower risks and more resilience, and the highest quality produce.",
+  "kp81-img-01.jpg":
+    "Illustration: a cross-section of dark, living soil under a field, with a dense web of golden roots and glowing white fungal threads branching through it, linking roots and soil minerals.",
+  "kp82-img-01.jpg":
+    "Cover illustration titled Restoring Earth's Operating System, the PQNK framework for regenerative agriculture: a single seedling on dry, cracked earth on the left gives way to lush green crops and trees on the right.",
+  "kp75-img-01.jpg":
+    "Infographic, Rethinking Agricultural Systems: the PQNK framework, from extraction to ecosystem. Left, the crisis, the anti-ecosystem model: four fractures, fractured structure (hardpan, erosion), fractured cycle (chemistry replaces biology), fractured hydrology (inundation, aquifer depletion) and fractured immunity (monoculture, pesticide dependence); the broken linear system runs from tillage and external inputs to a fragile crop and to runoff and waste. Centre: the paradigm shift. Right, the framework, the PQNK pristine Nizam: a closed-loop ecosystem around healthy soil, correct chemistry, build structure with mulch, plant with no disturbance, harvest nutrient-dense food, and biomass recycled in place; and the four PQNK axioms illustrated beside it. The PQNK framework shifts the role of the farmer from input manager to ecosystem orchestrator.",
+  "kp96-img-01.jpg":
+    "Illustration titled The Choice. Left, PQNK, cultivating life: a farmer kneels among healthy vegetable plants on a thickly mulched bed. Right, conventional, managing symptoms: a farmer in protective gear sprays chemicals over plants on bare, plastic-covered rows.",
+  "kp88-img-01.jpg":
+    "Illustration: a block of living soil with a green leaf feeding energy into a display that reads P.A.Y. 94 and FSCS 88, with a price tag of 6.82 dollars for a PQNK tomato. Caption: valuing the octane, not the volume.",
+  "kp88-img-02.jpg":
+    "Illustration of a phone app scanning a plant: dials show a P.A.Y. score of 94, ATP and other energy readings and a value of 6.82 dollars, with roots and a glowing leaf linked to the readings.",
+  "kp88-img-03.jpg":
+    "Mock-up of a PQNK bio-energetic standard label for an heirloom tomato: a P.A.Y. score of 91, a farm soil carbon score (FSCS) of 88, a list of ecosystem services provided, and a code to scan for the full report.",
+  "kp91-img-01.jpg":
+    "Illustration: a tomato plant heavy with ripe red fruit in a field at sunset, with a hand picking a tomato at its peak.",
+  "kp121-img-01.jpg":
+    "Photo of a ripe wheat field stretching to the horizon under an open sky.",
+  "kp101-img-01.jpg":
+    "Infographic, PQNK: The Principle of Permanent Confinement, the mechanical-synchrony foundation of PQNK bed geometry. Top: soil collapse, the hidden context, and the PQNK establishment sequence, break the hardpan, water-wash the soil, wait for workable moisture, form the beds, and plant. Main picture: a tractor drives only in the furrows, the permanent traffic corridors, while the crop grows on the protected biological zone of the bed, with a gradient of moisture moving laterally from the furrows toward the bed centre. One-time tillage, permanent beds, a lifetime of protection: engineering soil, protecting life.",
 };
