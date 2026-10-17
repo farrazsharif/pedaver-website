@@ -278,4 +278,23 @@ export const IMAGE_DESCRIPTIONS: Record<string, string> = {
     "Illustration in two halves joined by a circular emblem: on the left, chemical pest control on degraded soil linked to harm in the human body; on the right, a healthy plant on living soil with beneficial insects and soil life, linked to human vitality.",
   "kp50-img-01.jpg":
     "Video thumbnail with an Urdu headline: six consecutive years of drought in Iran, and the Iranian president has announced that Tehran is to be evacuated. A presenter appears beside a box labelled Untold Story.",
+  // Knowledge Papers, book style from the PDF (batch 21)
+  "kp18-img-01.jpg":
+    "Cover illustration titled Pomegranate Paradise, circular production on live mulch beds: rows of pomegranate trees heavy with red fruit growing on mulched raised beds.",
+  "kp38-img-01.jpg":
+    "Illustration of a deep subsoil cross-section: water seeping down from the surface through opened channels and roots reaching deep into the subsoil once the hardpan has been broken.",
+  "kp38-img-02.jpg":
+    "Slide, Major Reasons for Hardpan: spring-loaded cultivator tines, designed for soils with stones; a cultivator is not a plough; 8 to 12 passes; soil compaction by tractor tyres; and wasted energy and time. A diagram shows the tine being pushed backward by soil pressure, a smearing action that causes the hardpan, so plant roots cannot penetrate it and the plant can use only the upper 2-inch layer of soil.",
+  "kp38-img-03.jpg":
+    "Slide: water absorption capacity depends on pulverized soil enriched with organic matter. The hardpan has plugged our fields; water is absorbed only in the upper 4 to 6 inch layer, and roots are confined. A diagram shows excess water on top, a restricted root zone, then the hardpan with no water and no roots below it; the plant suffocates, and over 70 percent of the water evaporates. Water and roots cannot penetrate the hardpan, so we only crop the upper layer of soil.",
+  "kp38-img-05.jpg":
+    "Two maize plants compared: on the left, deeper root growth straight down into the soil; on the right, roots growing sideways over a compacted layer.",
+  "kp29-img-01.jpg":
+    "Illustration, Motha Grass Dominance in Disturbed Agricultural Soil, a PQNK knowledge paper on diagnosis, detoxification and restoration, converting from ancient conventional industrial to pristine organic farming. Left: Motha grass with its tubers spreading over cracked soil above a hardpan. Right: restored soil with healthy crops on raised beds. Four steps along the bottom: break the hardpan; correct soil chemistry; build raised beds; retain, mulch and plant no-till.",
+  "kp23-img-01.jpg":
+    "Cover of the PQNK Advisory Paper: Tomato (Solanum lycopersicum), with a ripe tomato and a cut half on a dark background.",
+  "kp33-img-01.jpg":
+    "Illustration titled The Root-Soil Partnership: a maize plant with its root system reaching down through a layer of deep topsoil, showing roots and soil building each other.",
+  "kp7-img-05.jpg":
+    "Photo of a garlic crop on raised beds, labelled Garlic on PQNK.",
 };

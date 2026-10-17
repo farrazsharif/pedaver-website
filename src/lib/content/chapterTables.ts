@@ -1306,4 +1306,91 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["Legend: 1 Acre Inch = 102.80 Cubic Meters = 102,800 Liters; furrow length 104,544 inches (8,712 feet); a furrow 10 inches wide at the top, 6 inches deep, 60 cubic inches of water per inch of length, 6,272,640 cubic inches = 102,790 litres per irrigation; 1 cubic inch = 0.01638705 litres.", "", "", "", "", "", "", "", "", "", ""],
     ["This is hypothetical calculation. Rain & Dew water absorption and increase in the yield is not taken into account. In all cases crop plants use same amount of water. Water saving comes from reduction in evaporation losses.", "", "", "", "", "", "", "", "", "", ""],
   ] },
+  "kp23-table-01.png": { headers: ["Type", "Growth Habit", "PQNK Suitability", "Remarks"], rows: [
+    ["Determinate", "Compact, limited height, flowers and fruits once", "Can be managed perennially for 2–3 cycles", "Retains bush form; ideal for rotational systems"],
+    ["Indeterminate", "Continuous vine growth, flowers successively", "Most suitable for perennial PQNK setup", "Long-lived; compatible with staking, trellising, or natural climbing on companion plants"],
+  ] },
+  "kp23-table-02.png": { headers: ["Aspect", "PQNK Perspective"], rows: [
+    ["Nature", "Tomato is perennial by origin; treated as annual due to environmental stress."],
+    ["Suitability", "Excellent under PQNK, both determinate and indeterminate types."],
+    ["Temperature Stress", "Mitigated through mulch, canopy, moisture balance, and ethanol spray."],
+    ["Ethanol Use", "1–2% solution acts as a natural stress shield."],
+    ["Outcome", "Extended life, continuous fruiting, improved soil ecology, and resilient production."],
+  ] },
+  "kp21-table-01.png": { headers: ["Parameter", "Optimal Range for Maximum Anthocyanin"], rows: [
+    ["Day air temperature", "20–25°C (supports photosynthesis & sugar production)"],
+    ["Night air temperature", "4–10°C (powerfully triggers anthocyanin synthesis)"],
+    ["Diurnal difference", "10–15°C (greater difference = stronger signal)"],
+    ["Soil temperature (your PQNK advantage)", "13–26°C year-round – roots remain active even when air is cool"],
+  ] },
+  "kp21-table-02.png": { headers: ["Nutrient", "Role in Anthocyanin", "PQNK Management"], rows: [
+    ["Nitrogen (soil- available)", "Low N = higher pigment", "Avoid fresh organic matter that releases N rapidly. Use mature mulch."],
+    ["Potassium (soil- available)", "Activates stress signaling", "Roots access K from deeper/wetter gradient zones."],
+    ["Phosphorus (soil- available)", "Provides energy for pigment synthesis", "Available in stable soil system; no intervention needed."],
+    ["Boron, Zinc (soil- available)", "Sugar transport, enzyme cofactors", "Soil gradient supplies naturally."],
+  ] },
+  "kp21-table-03.png": { headers: ["Practice", "Specification", "Why It Works"], rows: [
+    ["Spacing", "10–15 cm between plants", "Reduces leaf shading; ensures uniform access to gradients"],
+    ["Irrigation (PQNK method)", "Furrow with ≤4” head in 8” furrow; remove syphon tube when water reaches ¾ length", "Creates horizontal moisture gradient; roots self-select"],
+    ["Moisture testing", "Soil from 8” from edge → ball holds = sufficient. Soil from centre → ball does not hold tightly = correct gradient", "Ensures 70% aeration / 30% water- filled pores"],
+    ["Soil structure", "Thick organic mulch", "Maintains 13–26°C year-round; supports gradient movement"],
+  ] },
+  "kp21-table-04.png": { headers: ["Stress Type", "Method", "Timing"], rows: [
+    ["Thermal (air)", "Expose plants to cool night air (remove any shade)", "Entire maturation phase"],
+    ["Water", "Extend interval between furrow irrigations", "Last 25–30 days before harvest"],
+    ["Light", "Ensure full sun on canopy; no weed shade", "Entire growth"],
+  ] },
+  "kp21-table-05.png": { headers: ["Trait", "Why"], rows: [
+    ["Solid black/purple core (no white/ orange center)", "High pigment density"],
+    ["High acylated anthocyanins", "Stable for extraction, high bioavailability"],
+    ["Genetic purity (F1 hybrid or stable OP)", "Uniform response to your PQNK system"],
+  ] },
+  "kp21-table-06.png": { headers: ["Method", "Practicality"], rows: [
+    ["Lab test (best)", "Sample weekly before harvest; coordinate with buyer"],
+    ["Visual", "Root skin deep jet-black with waxy sheen; internal cut uniformly purple"],
+    ["Field indicator", "Harvest as late as possible before air temperatures rise above 10°C at night (for winter crop)"],
+  ] },
+  "kp21-table-07.png": { headers: ["Method", "Who Does It", "Recommendation"], rows: [
+    ["Certified seed purchase", "Seed company (isolated steppe environment)", "Primary method – buy fresh each season"],
+    ["Farm-saved seed (advanced)", "Farmer, with isolation >1 mile from any wild or other carrot varieties", "Only for developing your own adapted line over 2–3 years"],
+  ] },
+  "kp21-table-08.png": { headers: ["Use Category", "Specific Applications", "Key Advantage"], rows: [
+    ["Health & Medicine", "Cardiovascular disease prevention; diabetes management; neuroprotection; cancer chemoprevention (colorectal, breast); antimicrobial; gut health (prebiotic); anti-inflammatory", "Potent antioxidant and gut microbiome- modulating properties; no known harmful effects"],
+  ] },
+  "kp21-table-09.png": { headers: ["Natural Food Colorant", "Beverages, yogurts, candies, jams, jellies, fresh sausages, processed meats, functional foods", "Safe, natural alternative to synthetic dyes (Red 40 prohibited in Japan, Australia, EU)"], rows: [
+    ["Smart Packaging", "pH-sensitive freshness indicators for protein- rich foods; color changes as food spoils", "Real-time visual monitoring; extends shelf life; reduces synthetic preservatives"],
+    ["Pharmaceutical & Nutraceutical", "Dietary supplements; functional food ingredients; cosmetics", "Bioactive health benefits; high-value market"],
+  ] },
+  "kp21-table-10.png": { headers: ["Parameter", "Winter Crop", "Summer Crop"], rows: [
+    ["Typical Growing Season in Punjab", "Sown Sep–Oct, Harvested Jan–Feb (cold & dry conditions)", "Sown Feb–Mar, Harvested May–Jun (hot & dry conditions)"],
+  ] },
+  "kp21-table-11.png": { headers: ["Key Scientific Principle", "Cold stress strongly upregulates anthocyanin synthesis genes (MYB, PAL, DFR) as a protective “antifreeze” mechanism", "Heat stress degrades existing anthocyanins and shifts metabolism toward rapid growth, diluting pigment"], rows: [
+    ["Peak Anthocyanin Content (Reference)", "High (approx. 180–520 mg/100g fresh weight) Punjab Black Beauty (PAU): ~182 mg/100g Pusa Asita (Amritsar): up to 519 mg/100g", "Low (estimated below 100 mg/100g fresh weight) Extraction efficiency drops drastically at higher temperatures"],
+    ["Extraction Efficiency at Room Temperature (20– 25°C)", "High (70–80% of total) Anthocyanins are stable at this ambient temperature", "Medium (50–60%) Requires careful temperature control to prevent loss"],
+    ["Extraction Efficiency at Industrial Scale (50– 70°C)", "Very High (85–95% of total) Heat increases diffusion rate; high initial concentration means even minor percentage losses yield more total pigment per kg", "Low (30–45% of total) High temperatures accelerate degradation of already low anthocyanin content, causing browning and polymerization"],
+    ["Estimated Overall Recovery per kg of Roots", "Excellent High starting content + high extraction yield = Maximum total pigment recovery. Ideal for nutraceutical-grade production.", "Poor Low starting content + significant degradation = Low total pigment recovery. May not meet nutraceutical-grade requirements."],
+  ] },
+  "kp21-table-12.png": { headers: ["Component", "Action"], rows: [
+    ["Soil", "Stable 13–26°C, thick mulch, no external inputs"],
+    ["Irrigation", "Furrow with gradient, test by soil ball method, ¾ length rule"],
+    ["Spacing", "10–15 cm"],
+    ["Sowing", "Daily (e.g., 2 acres/day) for continuous harvest"],
+    ["Stress levers", "Cool night air + extended irrigation interval (late stage)"],
+    ["Ethanol spray", "1–2% at 60 & 75 days for heat tolerance + immunity"],
+    ["Harvest", "Fixed duration (e.g., 90 days), year-round"],
+    ["Quality", "Winter crop = highest (nutraceutical grade); summer crop = lower (food grade). Annual average acceptable to buyer if priced accordingly."],
+    ["Target market", "Nutraceutical (health supplements), natural colorant, or smart packaging industries"],
+  ] },
+  "kp20-table-01.png": { headers: ["Parameter", "Measurement"], rows: [
+    ["Distance from bed edge to first row", "10 inches (both sides)"],
+    ["Distance between the two rows on the bed", "24 inches (center to center)"],
+    ["Plant-to-plant distance within each row", "24 inches"],
+  ] },
+  "kp6-table-01.png": { headers: ["Challenge", "Conventional Rice", "PQNK Solution", "Outcome"], rows: [
+    ["Water Scarcity", "~5,000 L/kg of rice", "Moist soil, mulch, DSR on beds", "Saves over 90% of water (e.g., ~321 L/kg)"],
+    ["Export Quality", "Herbicide and agrochemicals use; Aflatoxin risk", "Organic mulch; no herbicides, pesticides and fertilizers; aerated soil", "Eliminates chemical residues; reduces fungal risk; meets international standards"],
+    ["Methane Emissions", "Anaerobic flooded fields", "Aerated, moist soil (non-flooded)", "Eliminates methane production without creating N₂O"],
+    ["Profitability", "High input cost (water, labor, chemicals)", "Drastically reduced inputs; higher efficiency", "Increases farmer margins; secures premium export markets"],
+    ["Soil Health", "Compacted, degraded soil", "Living soil, no-till, organic matter", "Builds long-term resilience and fertility"],
+  ] },
 };
