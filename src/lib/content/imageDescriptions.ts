@@ -138,4 +138,21 @@ export const IMAGE_DESCRIPTIONS: Record<string, string> = {
     "Cover illustration titled The Living Plant, A Primer on Physiology and Processes: a young plant under the sun, with its roots spreading through the soil among coloured dots of nutrients and microbes, and a close-up circle of a leaf showing the stomata through which it breathes.",
   "kp60-img-01.jpg":
     "Illustration in two halves. Left, The Force-Feeding: a giant syringe labelled NPK is pushed into dry, cracked, lifeless soil beside a wilting plant, with factory smoke behind. Right, The Sacred Symbiosis: a healthy tomato plant with ripe fruit grows from dark, living soil full of roots, fungal threads, mushrooms, earthworms and microbes, under a clear sky.",
+  // Knowledge Papers, book-style batch 11
+  "kp56-img-01.jpg":
+    "Photo: an infrared thermometer held over bare soil reads a surface temperature of 66.0 °C.",
+  "kp56-img-02.jpg":
+    "Photo: the same infrared thermometer held over dry straw mulch reads 32.6 °C.",
+  "kp56-img-03.jpg":
+    "Photo: the infrared thermometer held over a live green mulch reads 31.5 °C.",
+  "kp55-img-01.jpg":
+    "Illustration in two halves joined by a thermometer: on the left, a bare, leafless orchard on dry, cracked ground; on the right, a green orchard full of fruit, growing on mulched beds with water in the furrow.",
+  "kp55-img-02.jpg":
+    "Photo, early March 2026: a citrus tree in fresh, healthy green leaf and new growth.",
+  "kp55-img-03.jpg":
+    "Photo, early April 2026: a citrus tree that has dropped most of its leaves, flowers and young fruit, with bare branches showing.",
+  "kp47-img-01.jpg":
+    "Cover infographic, PQNK Knowledge Paper, The Underground Air: how underground air serves every crop in the PQNK system. One balance, many benefits, every crop. A crop on a raised bed has water flowing in from the furrows on both sides while air in the soil, the hidden engine, rises through the bed. The natural balance of water and air powers soil life and serves every crop. Benefits listed: phosphorus and potassium solubilization, unlocking bound nutrients for all crops; bioporosity and air channels, pathways for air, water and roots; soil pH stability, as waterlogging and drying cycles stabilize soil pH; and root membrane function, maintaining aquaporins and efficient water uptake. The PQNK balance, water to air, comes from no tillage, permanent organic mulch, water infiltration and storage, and healthy biology, giving higher yields, lower inputs and a stronger future. It restores the water cycle, builds living soil, nourishes every crop, and stabilizes the climate and secures the future. Author: PQNK Team. Date: July 2026.",
+  "kp47-img-02.jpg":
+    "Infographic, Water-Air-Nutrient Gradient Within a PQNK Bed, drawn over a photo of beds with water in the furrows. Water flows laterally from the furrow into the bed. On each side is a moisture zone, with higher moisture near the furrow and decreasing moisture toward the bed centre. The root zone in the centre receives water, nutrients and oxygen, with air rising out of the bed. The root zone remains aerated while receiving continuous water, dissolved nutrients and oxygen. Results: efficient water use, stored where roots need it; enhanced nutrient access, concentrated in the root zone; adequate oxygen, maintaining root health; and stronger plants with higher yield potential.",
 };
