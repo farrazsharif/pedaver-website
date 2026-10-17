@@ -112,4 +112,19 @@ export const IMAGE_DESCRIPTIONS: Record<string, string> = {
     "Illustration of PQNK permanent raised beds at sunrise. In the foreground a young seedling grows straight up through a thick layer of crop-residue mulch on the bed; below the surface its white root spreads through dark, crumbly soil with fine root hairs and earthworms. Behind it, beds stretch to the horizon: one with a flowering crop, one with cut stems laid down as mulch, and others with young plants coming up in rows.",
   "kp89-img-01.jpg":
     "Illustration contrasting two farming paths. On the left, cracked, dry, bare ground with an old abandoned plough under a grey sky, with falling charts labelled Stagnation and Loss. In the middle, glowing roots spread through the soil and carry the scene to the right, where rows of vegetables, flowers and fruit trees grow on living soil with earthworms and soil microbes, under a bright sky, with rising charts labelled Soil Health, Generation and Abundance.",
+  // Knowledge Papers, book-style batch 9
+  "kp76-img-01.jpg":
+    "Illustration titled The PQNK Revolution, Harvest the Future: a long field in golden light with rows of ripe wheat in the middle, cotton with open white bolls on the left and green sugarcane on the right, all growing on mulched beds.",
+  "kp77-img-01.jpg":
+    "Illustration: a great tree whose branches carry small factories, workshops and a solar panel, while its deep roots draw water and minerals from the soil beside a stream, with crops and flowers growing around its base. Industry rests on agriculture, as the branches rest on the roots.",
+  "kp77-img-04.jpg":
+    "Illustration: a tree standing in a field of wheat and vegetables, with a factory and a solar panel held in its branches, and golden roots spreading deep through the soil below. Agriculture is the root that carries industry.",
+  "kp79-img-01.jpg":
+    "Photo-style illustration: a farmer's weathered hands hold a handful of dark soil at sunrise in a wheat field. Young seedlings grow out of it, and glowing roots and small mineral crystals can be seen inside the soil.",
+  "kp79-img-02.jpg":
+    "Illustration in the style of an old emblem: a sun at the centre, with roots and mycelial threads branching out to mineral crystals in a ring around it, framed by wheat ears. The labels around the circle read Phosphate, Mineral, Mycelial Networks, Solar Energy, Mineral Cycling and Plant Roots, showing the sun, roots, fungi and minerals working as one cycle.",
+  "kp72-img-01.jpg":
+    "Illustration: a hand prunes a lower leaf from a maize plant with secateurs while a ripening cob hangs on the stalk. Below the soil surface, the roots spread out in a glowing network, showing how pruning above ground directs the plant's energy below and into the grain.",
+  "kp80-img-01.jpg":
+    "Flow diagram: the PQNK foundation, healthy soil with mineral and microbe balance, leads to a healthy plant with high Brix that is nutrient-dense. That gives superior feed and fodder, highly digestible and nutrient-rich, which leads to animal and aquatic health, branching to poultry, livestock, aquaculture and apiculture. All of these lead to the universal outcomes: reduced feed costs, lower mortality, enhanced productivity and premium quality products.",
 };
