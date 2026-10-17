@@ -1393,4 +1393,12 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["Profitability", "High input cost (water, labor, chemicals)", "Drastically reduced inputs; higher efficiency", "Increases farmer margins; secures premium export markets"],
     ["Soil Health", "Compacted, degraded soil", "Living soil, no-till, organic matter", "Builds long-term resilience and fertility"],
   ] },
+  "kp133-table-01.png": { headers: ["Feature", "Seeds", "Large Bulbs (Sets)", "Small Bulbs (Offsets)"], rows: [
+    ["Growth Time", "4-6 months", "2-3 months", "2-3 months"],
+    ["Uniformity", "Variable", "Good", "Excellent"],
+    ["Genetic Diversity", "High", "Low", "None (clone)"],
+    ["Cost", "Higher initial seed cost", "Moderate", "Low"],
+    ["Best Use", "Breeding, new varieties", "Quick commercial crop", "Uniform production"],
+    ["Yield Timeline", "Longer term", "Medium term", "Short term"],
+  ] },
 };

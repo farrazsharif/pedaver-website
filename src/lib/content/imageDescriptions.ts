@@ -297,4 +297,27 @@ export const IMAGE_DESCRIPTIONS: Record<string, string> = {
     "Illustration titled The Root-Soil Partnership: a maize plant with its root system reaching down through a layer of deep topsoil, showing roots and soil building each other.",
   "kp7-img-05.jpg":
     "Photo of a garlic crop on raised beds, labelled Garlic on PQNK.",
+  // Knowledge Papers, book style from the PDF (KP-14, 133)
+  "kp14-img-01.jpg":
+    "Illustration of a tall stand of Rhodes grass beside a field, with a farmer walking along the edge.",
+  "kp133-img-02.jpg":
+    "Illustration of the three ways to start onions, each shown in the soil: seeds, bulbs and offsets.",
+  "kp133-img-03.jpg":
+    "Glass jars on a table labelled seeds, bulbs and offsets, holding each type of onion planting material.",
+  "kp133-img-04.jpg":
+    "Picture titled Overview of Planting Materials: hands holding onion seeds, a bowl of small bulbs, and offsets.",
+  "kp133-img-07.jpg":
+    "Red, white and yellow onions with roots above three hands holding seeds, bulbs and offsets.",
+  "kp133-img-11.jpg":
+    "Photo of farmers planting on 42-inch-wide raised beds, with 9 lines of onion offsets per bed.",
+  "kp133-img-12.jpg":
+    "Illustration titled Onion Offset Advantages: at harvest time, offset-grown onions are larger and more uniform than seed-grown onions.",
+  "kp133-img-13.jpg":
+    "Four photos showing how to take offsets from an onion plant: 1, grasp the offsets; 2, pull them away; 3, detach them; 4, collect the offsets.",
+  "kp133-img-15.jpg":
+    "Diagram titled Onion Offset Planting: plant each offset 1 inch deep, pointed end up, and 4 inches apart.",
+  "kp133-img-16.jpg":
+    "Photo of onion rows on beds labelled seed, offsets and bulbs, comparing the three planting materials in the field.",
+  "kp133-img-18.jpg":
+    "Cover illustration: a green globe with leaves and animals, titled PQNK, cultivating a sustainable tomorrow through regenerative agriculture.",
 };
