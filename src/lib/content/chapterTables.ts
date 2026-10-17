@@ -314,10 +314,6 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["4 × 4 inches: 9 rows on a 42-inch bed top", "235,224", "20", "50", "4,704", "118", "100", "470,448"],
     ["4 × 4 inches: 9 rows on a 42-inch bed top", "235,224", "50", "20", "11,761", "294", "100", "1,176,120"],
   ] },
-  "kp129-table-01.png": { headers: ["Row × Plant Spacing", "Plants / Acre"], rows: [
-    ["30” × 18 in", "≈ 11,616 (Eltra high density)"],
-    ["30” × 24 in", "≈ 8,712 (High density)"],
-  ] },
   "kp142-img-01.jpg": { title: "Understanding the Three States of Soil", headers: ["State", "Characteristic", "What Happens Here"], rows: [
     ["Degenerative", "Soil is collapsing or already collapsed. Hardpan present. Biology dead or dormant. Crops dependent on inputs.", "Ancient Conventional Industrial agriculture has brought the soil to this state. Every intervention from outside makes it worse or creates temporary green-up without true healing."],
     ["Regenerative", "Soil is in transition. Structure improving. Biology returning. The farmer is actively healing the land.", "This is the phase between collapse and recovery. The farmer is following a protocol to restore function. The soil is not yet self-sustaining but is moving in that direction."],
@@ -1120,5 +1116,35 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["Surface Mulch", "Fungi + Actinomycetes", "Slow-Moderate", "High", "Long-term fertility, stable carbon"],
     ["Incorporated via Rotavator", "Bacteria", "Fast", "Low-Medium", "Quick nutrients, but less humus"],
     ["Uprooted & Removed", "Minimal", "Very Slow", "None", "Soil degradation"],
+  ] },
+  "kp134-table-01.png": { headers: ["Tree Age (Years)", "Growth Stage", "Expected Fruit Yield per Tree (Kg)", "Key Management Focus"], rows: [
+    ["1-2", "Establishment", "0 - 5 kg", "System Integration & Formative Training. The PQNK soil provides abundant energy for simultaneous root and canopy development. Light, formative pruning is used to establish a strong branch framework. The tree may naturally set a small, non-detrimental fruit load, which is a sign of its vitality."],
+    ["3-4", "First Production", "10 - 20 kg", "Canopy Management & Yield Ramp-Up. The tree's energy is efficiently partitioned between growth and fruiting. Pruning focuses on maintaining an open canopy structure for light penetration and air circulation to support the increasing fruit load."],
+    ["5-7", "Increasing Yield", "25 - 40 kg", "Sustained Productivity. The tree, now well-established in the resilient PQNK soil system, focuses energy on high-quality fruit production. Pruning alongside the harvest maintains the ideal structure for consistent, high yields."],
+    ["8-15+", "Sustained High Production", "45 - 60+ kg", "Consistent Harvest. The tree operates at its full genetic potential, supported by the fully mature soil ecosystem. Management is minimal, focused on efficient harvesting and light, annual pruning to maintain canopy health and productivity."],
+  ] },
+  "kp132-table-01.png": { headers: ["Quality Parameter", "PQNK Result", "Conventional / Organic Comparison"], rows: [
+    ["Nutrition", "True Density & Diversity from native soil minerals.", "Variable; organic often relies on approved bulk nutrient inputs (composts, meals) without the same mineral diversity."],
+    ["Dry Matter", "Higher. Lower water content, more solids.", "Lower dry matter, higher water content."],
+  ] },
+  "kp132-table-02.png": { headers: ["Row to row & Plant to plant Dist.", "Plants/ Ac", "Gram Weight", "Bulbs in 1 Kg", "Kg/Ac", "Mound/ Ac", "Prc per Kg", "Income Rs./Ac"], rows: [
+    ["4” x 4” : 9 rows on a 42” bed top", "235,000", "40", "25", "9,400", "235", "100", "940,000"],
+    ["", "", "80", "12.5", "18,800", "470", "", "1,880,000"],
+  ] },
+  "kp128-img-02.jpg": { title: "Accumulation of dissolved solids at various TDS level on Conventional and PQNK methods of crop production", headers: ["TDS of water (ppm)", "Solids (g per litre)", "Wheat conventional", "Wheat PQNK", "Cotton conventional", "Cotton PQNK", "Corn Autumn conventional", "Corn Autumn PQNK", "Corn Spring conventional", "Corn Spring PQNK", "Potato conventional", "Potato PQNK", "Sugarcane conventional", "Sugarcane PQNK", "Rice conventional", "Rice PQNK"], rows: [
+    ["Water used (litres per acre)", "", "1,644,800", "308,370", "2,261,600", "513,950", "1,336,400", "308,370", "2,056,000", "411,160", "1,336,400", "308,370", "6,579,200", "822,321", "6,579,200", "513,950"],
+    ["500", "0.50", "822", "154", "1,131", "257", "668", "154", "1,028", "206", "668", "154", "3,290", "411", "3,290", "257"],
+    ["1,000", "1.00", "1,645", "308", "2,262", "514", "1,336", "308", "2,056", "411", "1,336", "308", "6,579", "822", "6,579", "514"],
+    ["1,500", "1.50", "2,467", "463", "3,392", "771", "2,005", "463", "3,084", "617", "2,005", "463", "9,869", "1,233", "9,869", "771"],
+    ["2,000", "2.00", "3,290", "617", "4,523", "1,028", "2,673", "617", "4,112", "822", "2,673", "617", "13,158", "1,645", "13,158", "1,028"],
+    ["2,500", "2.50", "4,112", "771", "5,654", "1,285", "3,341", "771", "5,140", "1,028", "3,341", "771", "16,448", "2,056", "16,448", "1,285"],
+    ["3,000", "3.00", "4,934", "925", "6,785", "1,542", "4,009", "925", "6,168", "1,233", "4,009", "925", "19,738", "2,467", "19,738", "1,542"],
+    ["3,500", "3.50", "5,757", "1,079", "7,916", "1,799", "4,677", "1,079", "7,196", "1,439", "4,677", "1,079", "23,027", "2,878", "23,027", "1,799"],
+    ["4,000", "4.00", "6,579", "1,233", "9,046", "2,056", "5,346", "1,233", "8,224", "1,645", "5,346", "1,233", "26,317", "3,289", "26,317", "2,056"],
+    ["4,500", "4.50", "7,402", "1,388", "10,177", "2,313", "6,014", "1,388", "9,252", "1,850", "6,014", "1,388", "29,606", "3,700", "29,606", "2,313"],
+    ["5,000", "5.00", "8,224", "1,542", "11,308", "2,570", "6,682", "1,542", "10,280", "2,056", "6,682", "1,542", "32,896", "4,112", "32,896", "2,570"],
+    ["5,500", "5.50", "9,046", "1,696", "12,439", "2,827", "7,350", "1,696", "11,308", "2,261", "7,350", "1,696", "36,186", "4,523", "36,186", "2,827"],
+    ["6,000", "6.00", "9,869", "1,850", "13,570", "3,084", "8,018", "1,850", "12,336", "2,467", "8,018", "1,850", "39,475", "4,934", "39,475", "3,084"],
+    ["Note: formula used is Weight of TDS (in grams) = TDS concentration (in ppm) x volume of water (in liters) / 1,000. Figures represent kg of dissolved solids carried by water to the field at various levels", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
   ] },
 };
