@@ -249,4 +249,33 @@ export const IMAGE_DESCRIPTIONS: Record<string, string> = {
     "Photo of a ripe wheat field stretching to the horizon under an open sky.",
   "kp101-img-01.jpg":
     "Infographic, PQNK: The Principle of Permanent Confinement, the mechanical-synchrony foundation of PQNK bed geometry. Top: soil collapse, the hidden context, and the PQNK establishment sequence, break the hardpan, water-wash the soil, wait for workable moisture, form the beds, and plant. Main picture: a tractor drives only in the furrows, the permanent traffic corridors, while the crop grows on the protected biological zone of the bed, with a gradient of moisture moving laterally from the furrows toward the bed centre. One-time tillage, permanent beds, a lifetime of protection: engineering soil, protecting life.",
+  // Knowledge Papers, book style from the PDF (batch 20)
+  "kp62-img-01.jpg":
+    "Infographic, The Self-Regulating Plant Ecosystem: a plant at the centre surrounded by numbered groups of organisms that provide for and protect it, such as pollinators, predator insects and birds, and the soil workforce of roots, microbes and earthworms, showing multi-layered provisioning and protection from soil to canopy in a PQNK system.",
+  "kp48-img-01.jpg":
+    "Infographic, Breaking Hardpan Naturally, the PQNK way: biology builds what machinery can't. A cross-section of a raised bed shows deep roots and soil life opening the compacted layer, with labelled panels on root channels, soil organisms and the steps of permanent raised beds, mulch and no-till.",
+  "kp68-img-01.jpg":
+    "Title illustration, Contour Line Farming through PQNK, the regenerative and sustainable pristine organic farming system: a farmer on gently sloping land where green crops follow curved contour lines across the hillside.",
+  "kp52-img-01.jpg":
+    "Illustration of the on-farm micro water cycle: a small cloud rains onto a young plant growing from a mound of mulched soil, with water rising back from the soil and leaves as vapour.",
+  "kp65-img-01.jpg":
+    "Diagram of a raised bed in cross-section showing its moisture zones: controlled dilution zones at the edges near the furrows, a dynamic balanced zone of water, nutrients and oxygen in the centre where the roots are, and lateral capillary movement of water from the furrows toward the bed centre.",
+  "kp65-img-02.jpg":
+    "Diagram, How Water and Nutrients Move in a Raised Bed, the key to vigorous crops, based on the principles of the PQNK raised-bed system: water flows from the furrows on both sides into the bed, creating moist zones near the furrows and a concentrated, well-aerated nutrient zone in the centre where the main roots feed.",
+  "kp65-img-03.jpg":
+    "Photo of a raised-bed field with captions noting that pictures from the field showcase the vitality of plants in the central rows.",
+  "kp65-img-04.jpg":
+    "Photo of raised beds with water in the furrows, labelled higher moisture zone near each furrow and a high-nutrient, well-aerated zone in the centre of the bed.",
+  "kp54-img-01.jpg":
+    "Illustration titled Addressing Salinity with Regenerative Agriculture: on the left, white salt-crusted, cracked soil with sodium marked in it; on the right, a farmer stands in a green field where a plant grows from healthy soil, with calcium marked, and water flowing between the two.",
+  "kp40-img-01.jpg":
+    "Infographic, PQNK Foundational Document, Topic 9: Managing Soil EC and Redox Potential in a No-Chemical System. It contrasts EC dynamics, the bio-electric balance of the soil solution, with redox potential, the electron economy, linked through a closed-loop system of the rhizosphere, roots, mulch and soil life, with legacy intervention shown as an exception rather than the rule.",
+  "kp46-img-01.jpg":
+    "Infographic, Role of Soil Colloids in Determining the Physical and Chemical Properties of Soil: a magnified soil aggregate showing clay and humus colloids, with panels on nutrient retention, adsorption and exchange of cations, cation exchange capacity, soil structure and aggregate stability, and soil pH buffering.",
+  "kp44-img-01.jpg":
+    "Slide, Conventional to PQNK, 4 easy steps, with a photo for each: prepare the field for the type of irrigation; break the hardpan; make permanent raised beds; and plant crop after crop on the permanent beds.",
+  "kp63-img-01.jpg":
+    "Illustration in two halves joined by a circular emblem: on the left, chemical pest control on degraded soil linked to harm in the human body; on the right, a healthy plant on living soil with beneficial insects and soil life, linked to human vitality.",
+  "kp50-img-01.jpg":
+    "Video thumbnail with an Urdu headline: six consecutive years of drought in Iran, and the Iranian president has announced that Tehran is to be evacuated. A presenter appears beside a box labelled Untold Story.",
 };
