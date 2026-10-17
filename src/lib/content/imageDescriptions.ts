@@ -107,4 +107,9 @@ export const IMAGE_DESCRIPTIONS: Record<string, string> = {
     "Two photos sent by a farmer of soil clods from the furrows of his khapli wheat plot, covered in a white and green growth. His message: after the second irrigation the furrows looked saffron, and yesterday he found this white and green growth on them; please explain it.",
   "kp186-img-01.jpg":
     "Photo of a dense, healthy PQNK crop growing on permanent raised beds, the furrows between the beds visible as straight lines into the distance.",
+  // Knowledge Papers, book-style batch 8
+  "kp90-img-01.jpg":
+    "Illustration of PQNK permanent raised beds at sunrise. In the foreground a young seedling grows straight up through a thick layer of crop-residue mulch on the bed; below the surface its white root spreads through dark, crumbly soil with fine root hairs and earthworms. Behind it, beds stretch to the horizon: one with a flowering crop, one with cut stems laid down as mulch, and others with young plants coming up in rows.",
+  "kp89-img-01.jpg":
+    "Illustration contrasting two farming paths. On the left, cracked, dry, bare ground with an old abandoned plough under a grey sky, with falling charts labelled Stagnation and Loss. In the middle, glowing roots spread through the soil and carry the scene to the right, where rows of vegetables, flowers and fruit trees grow on living soil with earthworms and soil microbes, under a bright sky, with rising charts labelled Soil Health, Generation and Abundance.",
 };
