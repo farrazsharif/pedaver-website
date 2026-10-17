@@ -190,4 +190,7 @@ export const IMAGE_DESCRIPTIONS: Record<string, string> = {
     "Slide with the Pedaver and PQNK logos: Mango orchard on death row, recovered within just nine months with PQNK, Mango Research Station Sujjahabad reports. Two photos of the same mango tree: September 2019, a sparse, brown, dying tree; July 2020, a dense, green, healthy tree. Credited to Abdul Qadir, mango grower, 3.8.23, and the President, Mango Association.",
   "kp1-img-01.jpg":
     "Two photos of PQNK planters working in tall green cover: left, the SIPP No-Till Planter; right, the VIPP, Vertical Insertion Precision Planter.",
+  // Knowledge Papers, book style from the PDF (batch 15)
+  "kp2-img-01.jpg":
+    "Photo: a field of ripe wheat with long awns, labelled Wheat on PQNK, no fertilizer applied.",
 };
