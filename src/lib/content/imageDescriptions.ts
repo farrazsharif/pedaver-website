@@ -168,4 +168,11 @@ export const IMAGE_DESCRIPTIONS: Record<string, string> = {
     "Diagram, The PQNK Nutrient Cycle, a circle of four stages with arrows: The Sun and Plant, where solar energy becomes plant sugars; the Root Zone, with passive absorption as an effortless flow and active absorption as a symbiotic exchange; The Living Soil, the Paedar Qudratti Nizam; and Regenerative Inputs, building the system with leaves and organic matter, which returns to the sun and plant.",
   "kp34-img-03.jpg":
     "Illustration in two panels. Left, Conventional: forced feeding in a sterile medium, a funnel pours blue chemical granules onto a yellowing plant on cracked, scorched soil. Right, PQNK: absorption through symbiosis and soil health, a lush green plant with a deep, glowing root network in dark soil full of earthworms and soil life, with leaf litter falling onto the surface.",
+  // Knowledge Papers, book-style batch 13
+  "kp15-img-01.jpg":
+    "Pencil-and-watercolour drawing of a clump of green bamboo: several thick, jointed culms of different heights rise from one base, with thinner leafy shoots around them and grass at the foot.",
+  "kp19-img-01.jpg":
+    "Illustration of a high-density amla orchard: two long rows of trees heavy with pale green fruit, with the bed between them covered in low green growth, under a clear blue sky.",
+  "kp27-img-01.jpg":
+    "Infographic, Sugarcane: The Bamboo Principle, the PQNK perennial regenerative sugarcane system, perennial by nature, regenerative by design, productive for years. A farmer selectively cuts mature, harvest-ready canes from a clump that also holds medium canes and young shoots, with bamboo growing alongside. Labels: sugarcane is biologically like bamboo; organic mulch returns to the soil; deep roots explore minerals, water and life; earthworms improve soil structure; mycorrhizal fungi extend nutrient and water uptake; old roots remain and nurture soil life; water moves laterally from the furrows toward the bed centre. Plant once, harvest for years.",
 };

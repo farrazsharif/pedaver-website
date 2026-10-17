@@ -931,4 +931,35 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["10. Bhakhra (Eclipta prostrata)", "Character: Fibrous, shallow roots. Function: Stabilizes topsoil in moist conditions.", "Character: Spreading habit with broad leaves. Function: Thrives in moist, compacted soils, indicating where water sits and the soil is airless.", "Problem: Poor drainage, compaction in the top layer, and waterlogging. Prescription: Address drainage issues. Plant crops like Dhan (Paddy) in designated areas, or use Raya to break up the compaction in raised beds."],
     ["11. Piazi (Asphodelus tenuifolius)", "Character: Bulbous root system. Function: The bulb acts as a storage organ, allowing it to survive in highly disturbed, low-fertility soils.", "Character: A cluster of slender, onion-like leaves. Function: Minimal soil cover. It is a colonizer of the most barren, over-tilled land.", "Problem: Extreme biological degradation, very low organic matter, and frequent soil disturbance. Prescription: Stop tilling. Focus on restoring soil life with heavy applications of compost, mulch, and diverse cover crop mixes."],
   ] },
+  "kp19-table-01.png": { headers: ["Season", "Intercrop", "PQNK Function"], rows: [
+    ["Kharif (Monsoon)", "Jantar, Moong, Guar", "Jantar is the primary soil regenerator. Moong and guar, add biomass."],
+    ["Rabi (Winter)", "Gram (Chickpea), Lentil (Masoor), Barseem", "Their roots are left in soil after harvest. Barseem provides mulch biomass."],
+  ] },
+  "kp19-table-02.png": { headers: ["Year", "Expected Yield (kg/acre)", "Notes"], rows: [
+    ["Year 2–3", "1.5 – 2.5 tons", "Focus on soil building, Jantar cycles, intercrops."],
+    ["Year 3-4", "6 – 8 tons", "First meaningful harvest."],
+    ["Year 5", "10 – 14 tons", "Sustained yield; soil organic matter continues to rise."],
+  ] },
+  "kp22-img-01.jpg": { title: "The PQNK Bed: An Optimal Signaling System for Fruit Set", headers: ["PQNK Provision", "Optimal Condition in a Mature Bed", "Signal to the Plant"], rows: [
+    ["Water-Nutrients Solution", "A stable, balanced concentration of nutrients dissolved in soil water, continuously cycled by microbial life. No dilution or spikes.", "Resource Abundance: The plant senses a consistent and reliable food supply, encouraging it to invest in converting all its perfect flowers into fruit."],
+    ["Soil Temperature", "Regulated by a thick layer of organic mulch, the root zone remains cool and stable, buffered from air temperature fluctuations.", "Environmental Stability: Stable temperature allows for optimal root function and uninterrupted hormone flow, signaling a secure, low-stress environment."],
+    ["Soil Aeration", "A porous soil structure, maintained by no-till methods and biological activity, ensures an ideal balance of water and air in the pore spaces.", "Root Health: Adequate oxygen supports robust root respiration and nutrient uptake, reinforcing the signal of a system capable of supporting a full fruit load."],
+    ["Protection System", "A layered defense of predatory insects and, crucially, Bacillus thuringiensis (Bt) bacteria, which thrive in the stable, mulched environment and provide natural pest control.", "Absence of Threat: The plant does not waste energy on chemical defense against pests. All its resources can be directed toward reproduction."],
+  ] },
+  "kp19-img-02.jpg": { headers: ["Time", "Growth Stage", "PQNK Action", "Purpose"], rows: [
+    ["March – April", "Post-Harvest", "Hard Pruning. Cut back 20–30% of canopy. Remove old wood.", "Stimulates new shoots that will flower in June–July. All biomass returned as mulch."],
+    ["May", "New Flush Emerges", "Pinching of excessive vertical shoots.", "Maintains manageable height. Encourages lateral branching."],
+    ["June – July", "Flowering", "No pruning.", "Protect flowers."],
+    ["August – September", "Fruit Set / Development", "No pruning. Light thinning of water sprouts only if excessive.", "Energy goes to fruit."],
+    ["October – November", "Fruit Maturation", "Light maintenance only. Remove dead wood, diseased branches.", "Improve airflow. Do not cut fruiting branches."],
+    ["December – February", "Harvest", "No pruning.", "Harvest only."],
+  ] },
+  "kp19-img-03.jpg": { headers: ["Stage", "Time", "Action in PQNK"], rows: [
+    ["Hard Pruning", "March – April", "Main pruning event. Stimulates flowering wood."],
+    ["Flowering", "June – July", "Do not disturb."],
+    ["Fruit Development", "August – November", "Light maintenance only."],
+    ["Harvest", "December – February", "Harvest only."],
+    ["New Cycle", "March", "Hard pruning begins again."],
+    ["Note: Water management as per PQNK rules is essential for the sustained success.", "", ""],
+  ] },
 };
