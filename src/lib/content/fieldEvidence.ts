@@ -682,6 +682,20 @@ export const fieldEvidence: FieldEvidence[] = [
     sourceUrl: "https://youtu.be/lPzOH5devsQ",
     videoId: "lPzOH5devsQ",
     tags: ["alfalfa", "VIPP", "Vertical Insertion Precision Planter", "no-till", "sowing through cover", "crop-in-crop", "reseeding", "permanent raised beds", "cover", "Haroonabad"],
+  },  {
+    feNumber: 43,
+    title: "Raya (Mustard) Sown with SIPP Straight into Mature PQNK Beds",
+    evidenceTypes: ["Field Evidence"],
+    cropOrTopic: "Raya (mustard) sown with the SIPP on mature permanent beds",
+    year: 2026,
+    date: "2026-10-17",
+    location: "Sangla Hill, Faisalabad",
+    summary:
+      "At Sangla Hill, Faisalabad, Raya (mustard) is being sown on mature PQNK permanent beds. The beds carry a cover of grass, and nothing is ploughed or cleared before sowing. The tractor-mounted SIPP, the Slit Insertion Precision Planter, places the seed through the cover in one pass. No tillage, no bare soil.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/eMyo0NQZhRE",
+    videoId: "eMyo0NQZhRE",
+    tags: ["raya", "mustard", "SIPP", "Slit Insertion Precision Planter", "no-till", "sowing through cover", "permanent raised beds", "mature beds", "Faisalabad", "Sangla Hill"],
   },
 ];
 
