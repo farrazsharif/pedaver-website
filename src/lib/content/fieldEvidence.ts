@@ -696,6 +696,20 @@ export const fieldEvidence: FieldEvidence[] = [
     sourceUrl: "https://youtu.be/eMyo0NQZhRE",
     videoId: "eMyo0NQZhRE",
     tags: ["raya", "mustard", "SIPP", "Slit Insertion Precision Planter", "no-till", "sowing through cover", "permanent raised beds", "mature beds", "Faisalabad", "Sangla Hill"],
+  },  {
+    feNumber: 44,
+    title: "200 Acres of Mango on PQNK: Eight Years Without Chemical Fertiliser",
+    evidenceTypes: ["Farmer Testimony"],
+    cropOrTopic: "Mango orchard, 200 acres, on PQNK beds since 2018",
+    year: 2026,
+    date: "2026-10-18",
+    location: "Jalalpur Pirwala, District Multan",
+    summary:
+      "In an interview with Mian Arfan Khalid, Ghulam Qadir Bhutta, who grows mango on 200 acres at Jalalpur Pirwala, District Multan, explains that he came across PQNK on social media in 2018, studied it for two to three months and moved his entire orchard onto beds that same year. Eight years on, he reports at least fifty percent less water, weeds now treated as friends with the cost of weedicides and weed control saved, and not a single ounce of chemical fertiliser bought or applied since 2018, with no year of problems in fruit quality, size or colour. He reads the mango leaf: when its size, colour and number are right, the yield follows. For a new orchard he advises PQNK's basic steps, levelling the land and breaking the hardpan before planting, then Jantar and beds, and he finds mango suits PQNK better than field crops, because falling leaves and flowers mulch the beds on their own once the trees are grown.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/yWPqa9US-u0",
+    videoId: "yWPqa9US-u0",
+    tags: ["mango", "orchard", "farmer testimony", "no chemical fertiliser", "water saving", "weeds", "permanent raised beds", "Jantar", "hardpan", "Jalalpur Pirwala", "Multan", "Ghulam Qadir Bhutta"],
   },
 ];
 
