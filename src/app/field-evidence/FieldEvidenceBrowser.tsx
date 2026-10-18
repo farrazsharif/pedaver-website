@@ -60,6 +60,7 @@ function writeStateToURL(filters: Filters, sort: SortMode) {
 // A record whose source is a document hosted here (sourceUrl ending in .pdf, e.g. FE-039)
 // links to it as "Read the full exchange (PDF)" instead of "Watch Video".
 function youTubeThumbnail(fe: FieldEvidence): string | null {
+  if (fe.thumbnail) return fe.thumbnail; // a saved copy, when YouTube's own thumbnail CDN serves a broken image (KE-043)
   if (fe.sourcePlatform === "YouTube" && fe.videoId) {
     return `https://img.youtube.com/vi/${fe.videoId}/hqdefault.jpg`;
   }

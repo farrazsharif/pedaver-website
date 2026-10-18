@@ -108,6 +108,8 @@ export interface FieldEvidence {
   location?: string;
   /** Path under /public to a locally-hosted photo of a print clipping with no online original — see the exception note above. Not for general use. */
   clippingImage?: string;
+  /** A saved copy of the video's own thumbnail, used instead of YouTube's when its CDN keeps serving a broken image (2026-10-18, KE-043). */
+  thumbnail?: string;
   /** Capability only for now — not yet rendered as a cross-link anywhere (see project note, 2026-08-25). */
   relatedKpSlug?: string;
   /** Capability only for now — not yet rendered as a cross-link anywhere. */
@@ -695,6 +697,7 @@ export const fieldEvidence: FieldEvidence[] = [
     sourcePlatform: "YouTube",
     sourceUrl: "https://youtu.be/eMyo0NQZhRE",
     videoId: "eMyo0NQZhRE",
+    thumbnail: "/field-evidence/ke-043-thumbnail.jpg",
     tags: ["raya", "mustard", "SIPP", "Slit Insertion Precision Planter", "no-till", "sowing through cover", "permanent raised beds", "mature beds", "Faisalabad", "Sangla Hill"],
   },  {
     feNumber: 44,
