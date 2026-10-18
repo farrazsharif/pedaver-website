@@ -1,0 +1,27 @@
+# HTTP headers for Cloudflare Pages. Pages does NOT read .htaccess, so the
+# security headers that used to live in docs/htaccess.txt are set here instead.
+# Files in public/ are copied to the build root, where Pages reads this file.
+# Keep in sync with docs/htaccess.txt (kept as the historical reference).
+
+/*
+  # Only trust HTTPS for a year. No includeSubDomains/preload yet — add once
+  # every subdomain (webmail, cpanel, …) is confirmed HTTPS.
+  Strict-Transport-Security: max-age=31536000
+  # Stop browsers guessing content types (blocks a class of sniffing XSS).
+  X-Content-Type-Options: nosniff
+  # Don't let other sites frame pedaver.com (clickjacking). Our own YouTube
+  # embeds are unaffected.
+  X-Frame-Options: SAMEORIGIN
+  # Trim the Referer sent to other origins.
+  Referrer-Policy: strict-origin-when-cross-origin
+  # Disable browser features the site doesn't use.
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
+  # CSP in REPORT-ONLY mode: logs violations to the console but blocks nothing,
+  # so it can't break the live site. Covers Google Analytics/Tag Manager,
+  # Microsoft Clarity and YouTube embeds. Once the console is clean in normal
+  # use, rename to "Content-Security-Policy" (drop "-Report-Only") to enforce.
+  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://www.clarity.ms https://*.clarity.ms; frame-src https://www.youtube.com https://www.youtube-nocookie.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:
+
+# Content-hashed Next.js assets never change — cache them hard.
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable

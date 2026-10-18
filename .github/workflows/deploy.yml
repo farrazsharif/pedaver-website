@@ -1,10 +1,11 @@
-name: Build and deploy to cPanel
+name: Build and deploy to cPanel (RETIRED)
 
-# Runs on every push to the main branch, and can also be run manually
-# from the Actions tab (workflow_dispatch).
+# RETIRED 2026-10-18: the website now deploys to Cloudflare Pages automatically
+# on every push (and PDFs mirror to R2 via sync-media-r2.yml). SkyHost's web
+# server is no longer used for the site — only for email. This workflow is kept
+# for reference and no longer runs on push; trigger it manually from the Actions
+# tab only if you ever need to push the build back to the SkyHost docroot.
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 # Only one deploy at a time; a newer push cancels an in-progress one.

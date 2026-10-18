@@ -20,12 +20,23 @@ contact/newsletter forms use `mailto:`.
 
 ## Build & deploy
 - `npm run dev` — local preview.
-- `npm run build` — regenerates the static site into `out/`.
-- Deploy is automatic: pushing to `main` runs `.github/workflows/deploy.yml`,
-  which builds and publishes to pedaver.com via the **cPanel API**
-  (`scripts/deploy-cpanel.sh`, incremental — small set every run + changed
-  media only). No manual upload step. (The docroot is the add-on domain path
-  `/home/caremidc/pedaver.com/`, not `public_html`.)
+- `npm run build` — regenerates the static site into `out/` (PDFs included).
+- `npm run build:pages` — the Cloudflare Pages build command: runs `build` then
+  strips PDFs from `out/` (`scripts/strip-media-from-out.mjs`); PDFs are served
+  from R2, not Pages (which has a 25 MiB/file limit).
+- Deploy is automatic: pushing to `main` triggers a **Cloudflare Pages** build
+  (Pages is connected to this repo) that publishes to pedaver.com. No GitHub
+  Action, no manual upload. Pages env var: `NEXT_PUBLIC_MEDIA_BASE=https://files.pedaver.com`.
+- **PDFs live on Cloudflare R2**, served at `https://files.pedaver.com`. They
+  stay in `public/`; `.github/workflows/sync-media-r2.yml` mirrors
+  `public/**/*.pdf` to the `pedaver-media` bucket on push — drop a PDF in
+  `public/` and push and it syncs automatically. Links resolve via `mediaUrl()`
+  (`src/lib/mediaUrl.ts`) + `NEXT_PUBLIC_MEDIA_BASE`.
+- Headers & redirects: `public/_headers` and `public/_redirects` (Pages does not
+  read `.htaccess`; `docs/htaccess.txt` is kept only as the historical reference).
+- **Email stays on SkyHost cPanel** (`mail.pedaver.com`) — the Oct 2026 migration
+  moved only the website. The old SkyHost deploy (`deploy.yml`,
+  `scripts/deploy-cpanel.sh`) is retired (manual-only) but kept for reference.
 
 ## Style
 - Fonts: Bitter (headings) + Hanken Grotesk (body). Palette: green `#2f5233`,

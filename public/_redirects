@@ -1,0 +1,14 @@
+# 301 redirects for Cloudflare Pages (Pages does not read .htaccess).
+# Ported from docs/htaccess.txt. First match wins. Files in public/ are copied
+# to the build root, where Pages reads this file.
+
+# Canonical host: send www.pedaver.com to the bare apex, once, over HTTPS.
+https://www.pedaver.com/*  https://pedaver.com/:splat  301!
+
+# Legacy URLs still in search indexes — preserve them with real 301s.
+# (Exact paths only, so /advisory/manifest.json for the mobile app is untouched.)
+/farmer-stories                              /videos/           301
+/advisory                                    /field-evidence/   301
+/certification                               /validation/       301
+/sample-page                                 /founder/          301
+/pqnk-paedar-qudratti-nizam-e-kashatqari     /science/          301
