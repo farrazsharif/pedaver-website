@@ -713,6 +713,19 @@ export const fieldEvidence: FieldEvidence[] = [
     sourceUrl: "https://youtu.be/yWPqa9US-u0",
     videoId: "yWPqa9US-u0",
     tags: ["mango", "orchard", "farmer testimony", "no chemical fertiliser", "water saving", "weeds", "permanent raised beds", "Jantar", "hardpan", "Jalalpur Pirwala", "Multan", "Ghulam Qadir Bhutta"],
+  },  {
+    feNumber: 45,
+    title: "Mixed Orchard on PQNK",
+    evidenceTypes: ["Field Evidence"],
+    cropOrTopic: "Mixed fruit orchard on permanent beds",
+    year: 2026,
+    date: "2026-10-18",
+    summary:
+      "A walk through a mixed fruit orchard on PQNK. The trees stand in rows on permanent raised beds, healthy and in full leaf. Fallen leaves lie as a natural mulch on the beds, and a living cover of grass and weeds grows in the furrows between them. Nothing is cleared or tilled: the orchard's own leaf fall and ground cover protect the soil.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/5vJ3jEigiho",
+    videoId: "5vJ3jEigiho",
+    tags: ["orchard", "mixed orchard", "fruit trees", "permanent raised beds", "leaf mulch", "ground cover", "no-till"],
   },
 ];
 
