@@ -44,7 +44,7 @@ jobs:
       BUCKET: pedaver-media
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Resolve R2 endpoint
         run: |
