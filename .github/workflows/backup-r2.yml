@@ -38,7 +38,7 @@ jobs:
       KEEP: "6" # how many recent backups to retain in R2
     steps:
       - name: Checkout (full history)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
