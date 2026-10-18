@@ -1,0 +1,73 @@
+name: Sync media to Cloudflare R2
+
+# Mirrors the site's PDFs from public/ to the pedaver-media R2 bucket, which
+# serves them in production at https://files.pedaver.com. The website build
+# (Cloudflare Pages) excludes these PDFs (see scripts/strip-media-from-out.mjs),
+# so this workflow is how they reach visitors.
+#
+# Your normal workflow is unchanged: drop a PDF into public/ and push to main —
+# this runs automatically and the file appears on R2. It never deletes from R2
+# (no --delete), so a file removed from the repo just lingers in storage; that's
+# deliberate, to avoid ever losing media by mistake.
+#
+# Run it manually from the Actions tab ("Run workflow") for the first full upload.
+#
+# Required repo secrets (same R2 account as the backup workflow; the API token
+# must have Object Read & Write that includes the pedaver-media bucket):
+#   R2_ACCOUNT_ID, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY
+on:
+  push:
+    branches: [main]
+    paths:
+      - "public/**/*.pdf"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sync-media-r2
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+      AWS_DEFAULT_REGION: auto
+      # R2 rejects the AWS CLI's newer default integrity checksums; only
+      # send/verify them when actually required.
+      AWS_REQUEST_CHECKSUM_CALCULATION: WHEN_REQUIRED
+      AWS_RESPONSE_CHECKSUM_VALIDATION: WHEN_REQUIRED
+      R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+      BUCKET: pedaver-media
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Resolve R2 endpoint
+        run: |
+          set -euo pipefail
+          acct="$R2_ACCOUNT_ID"
+          acct="${acct#http://}"; acct="${acct#https://}"   # drop any scheme
+          acct="${acct%%.r2.cloudflarestorage.com*}"        # drop the host suffix
+          acct="${acct%%/*}"                                # drop any trailing path
+          echo "ENDPOINT=https://${acct}.r2.cloudflarestorage.com" >> "$GITHUB_ENV"
+          echo "Using R2 endpoint: https://${acct}.r2.cloudflarestorage.com"
+
+      - name: Sync PDFs to R2
+        run: |
+          set -euo pipefail
+          aws s3 sync public "s3://${BUCKET}" \
+            --endpoint-url "$ENDPOINT" \
+            --exclude "*" --include "*.pdf" \
+            --content-type application/pdf \
+            --no-progress
+          echo "Synced all public/**/*.pdf to s3://${BUCKET}"
+
+      - name: Report bucket size
+        run: |
+          set -euo pipefail
+          aws s3 ls "s3://${BUCKET}" --recursive --endpoint-url "$ENDPOINT" --summarize \
+            | tail -n 3

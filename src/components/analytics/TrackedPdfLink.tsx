@@ -1,6 +1,7 @@
 "use client";
 
 import { trackPdfDownload } from "@/lib/analytics";
+import { mediaUrl } from "@/lib/mediaUrl";
 
 export default function TrackedPdfLink({
   href,
@@ -18,7 +19,7 @@ export default function TrackedPdfLink({
   const file = href.split("/").pop() ?? href;
   return (
     <a
-      href={href}
+      href={mediaUrl(href)}
       target="_blank"
       rel="noopener noreferrer"
       className={className}
