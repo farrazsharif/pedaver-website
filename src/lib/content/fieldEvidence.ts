@@ -738,6 +738,7 @@ export const fieldEvidence: FieldEvidence[] = [
     sourcePlatform: "YouTube",
     sourceUrl: "https://youtu.be/rT3ySxaNGoA",
     videoId: "rT3ySxaNGoA",
+    thumbnail: "/field-evidence/ke-046-thumbnail.jpg",
     tags: ["peanut", "groundnut", "permanent raised beds", "no fertiliser", "no pesticide", "pegging", "harvest by hand", "degraded land", "farmer testimony"],
   },
 ];
