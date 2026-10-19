@@ -726,6 +726,19 @@ export const fieldEvidence: FieldEvidence[] = [
     sourceUrl: "https://youtu.be/5vJ3jEigiho",
     videoId: "5vJ3jEigiho",
     tags: ["orchard", "mixed orchard", "fruit trees", "permanent raised beds", "leaf mulch", "ground cover", "no-till"],
+  },  {
+    feNumber: 46,
+    title: "Peanut on PQNK Beds: A Full Crop Where Nothing Would Grow",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
+    cropOrTopic: "Peanut on permanent beds, no fertiliser or pesticide",
+    year: 2026,
+    date: "2026-10-19",
+    summary:
+      "Peanut was sown on PQNK permanent beds with no fertiliser and no pesticide. The plants grew large and carried many pods, and the kernels are hard, mature and well filled. The farmer says it is the first time he has harvested a crop like this on that land, which agriculture department staff had said could grow nothing. For the next crop, Asif Sharif advises keeping the full plant population, rolling a light drum over the plants when pegging begins so they lie down a little and the pegs reach the soil easily, and pulling the plants by hand at harvest: as the beds mature the soil stays soft and the plants come out with all their pods, with no blade needed. Wheat follows on the same beds, sown through mulch.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/rT3ySxaNGoA",
+    videoId: "rT3ySxaNGoA",
+    tags: ["peanut", "groundnut", "permanent raised beds", "no fertiliser", "no pesticide", "pegging", "harvest by hand", "degraded land", "farmer testimony"],
   },
 ];
 
