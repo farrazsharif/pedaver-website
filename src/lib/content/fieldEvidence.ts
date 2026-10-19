@@ -741,6 +741,21 @@ export const fieldEvidence: FieldEvidence[] = [
     thumbnail: "/field-evidence/ke-046-thumbnail.jpg",
     tags: ["peanut", "groundnut", "permanent raised beds", "no fertiliser", "no pesticide", "pegging", "harvest by hand", "degraded land", "farmer testimony"],
   },
+  {
+    feNumber: 47,
+    title: "Garlic on PQNK, Multan",
+    evidenceTypes: ["Field Evidence"],
+    cropOrTopic: "Garlic on permanent beds",
+    year: 2026,
+    date: "2026-10-19",
+    location: "Multan",
+    summary:
+      "A walk through a PQNK garlic field in Multan. The crop stands dense and green on permanent beds, with mulch and a living ground cover between the plants. Bulbs pulled by hand from the soft bed come out whole, with their full root mass, and are large, firm and clean, with no tillage, no fertiliser and no spray behind them.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/tlF3J4Gzigc",
+    videoId: "tlF3J4Gzigc",
+    tags: ["garlic", "Multan", "permanent raised beds", "mulch", "harvest by hand", "no fertiliser", "no pesticide"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
