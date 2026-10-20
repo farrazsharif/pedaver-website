@@ -760,17 +760,17 @@ export const fieldEvidence: FieldEvidence[] = [
     feNumber: 48,
     title: "Citrus on PQNK, Bhakkar: Less Water, Fewer Sprays, Better Fruit",
     evidenceTypes: ["Farmer Testimony", "Field Evidence"],
-    cropOrTopic: "Citrus orchard on permanent beds with Jantar between the rows",
+    cropOrTopic: "Citrus orchard on permanent beds, with Jantar and then chickpea and canola between the rows",
     year: 2026,
     date: "2026-10-20",
     location: "Bhakkar",
     summary:
-      "Sardar Iftikhar Alam grows citrus at Bhakkar. Following Asif Sharif's instructions, he broke the hardpan, made permanent beds and grew Jantar between the rows of citrus trees. In his own message he writes that the orchard has not only saved water and sprays, but the quality of the fruit is visibly better too. The video walks between the tree rows, where the beds and furrows run under a cover of mulch.",
+      "Sardar Iftikhar Alam grows citrus at Bhakkar. Following Asif Sharif's instructions, he broke the hardpan, made permanent beds and grew Jantar between the rows of citrus trees. In his own message he writes that the orchard has not only saved water and sprays, but the quality of the fruit is visibly better too. On 9 October he shows the next step: two beds between every two rows of trees, with water travelling in the furrows and chickpea on the beds, and a plank dragged behind the bed maker so the seed is covered with soil. Asif Sharif replies that not one inch of land should be left bare for even a minute: sow wheat, toria or mustard on the open ground, so it earns an income and the soil keeps improving. The farmer answers that the Jantar crop has just finished, the tall Jantar was cut and laid between the trees, and canola and chickpea are now sown, so no inch of the orchard is left bare.",
     sourcePlatform: "YouTube",
-    sourceUrl: "https://youtu.be/8slNgVaXIQI",
-    videoId: "8slNgVaXIQI",
-    thumbnail: "/field-evidence/ke-048-thumbnail.jpg",
-    tags: ["citrus", "orchard", "farmer testimony", "hardpan", "permanent raised beds", "Jantar", "water saving", "fewer sprays", "fruit quality", "Bhakkar", "Sardar Iftikhar Alam"],
+    sourceUrl: "https://youtu.be/ylUTsMrVqUM",
+    videoId: "ylUTsMrVqUM",
+    thumbnail: "/field-evidence/ke-048-thumbnail-v2.jpg",
+    tags: ["citrus", "orchard", "farmer testimony", "hardpan", "permanent raised beds", "Jantar", "chickpea", "canola", "no bare soil", "water saving", "fewer sprays", "fruit quality", "Bhakkar", "Sardar Iftikhar Alam"],
   },
 ];
 
