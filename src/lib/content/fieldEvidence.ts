@@ -756,6 +756,22 @@ export const fieldEvidence: FieldEvidence[] = [
     videoId: "tlF3J4Gzigc",
     tags: ["garlic", "Multan", "permanent raised beds", "mulch", "harvest by hand", "no fertiliser", "no pesticide"],
   },
+  {
+    feNumber: 48,
+    title: "Citrus on PQNK, Bhakkar: Less Water, Fewer Sprays, Better Fruit",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
+    cropOrTopic: "Citrus orchard on permanent beds with Jantar between the rows",
+    year: 2026,
+    date: "2026-10-20",
+    location: "Bhakkar",
+    summary:
+      "Sardar Iftikhar Alam grows citrus at Bhakkar. Following Asif Sharif's instructions, he broke the hardpan, made permanent beds and grew Jantar between the rows of citrus trees. In his own message he writes that the orchard has not only saved water and sprays, but the quality of the fruit is visibly better too. The video walks between the tree rows, where the beds and furrows run under a cover of mulch.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/8slNgVaXIQI",
+    videoId: "8slNgVaXIQI",
+    thumbnail: "/field-evidence/ke-048-thumbnail.jpg",
+    tags: ["citrus", "orchard", "farmer testimony", "hardpan", "permanent raised beds", "Jantar", "water saving", "fewer sprays", "fruit quality", "Bhakkar", "Sardar Iftikhar Alam"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
