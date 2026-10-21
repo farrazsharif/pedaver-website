@@ -772,6 +772,21 @@ export const fieldEvidence: FieldEvidence[] = [
     thumbnail: "/field-evidence/ke-048-thumbnail-v2.jpg",
     tags: ["citrus", "orchard", "farmer testimony", "hardpan", "permanent raised beds", "Jantar", "chickpea", "canola", "no bare soil", "water saving", "fewer sprays", "fruit quality", "Bhakkar", "Sardar Iftikhar Alam"],
   },
+  {
+    feNumber: 49,
+    title: "Wheat Sown with the SIPP Straight into a Harvested Rice Field",
+    evidenceTypes: ["Field Evidence"],
+    cropOrTopic: "Wheat sown with the SIPP through rice stubble, no tillage",
+    year: 2026,
+    date: "2026-10-21",
+    summary:
+      "Wheat is being sown on PQNK straight into a field where rice has just been harvested. The rice stubble and straw are left standing and lying on the ground as mulch, and nothing is ploughed, burnt or cleared. The tractor-mounted SIPP, the Slit Insertion Precision Planter, with its five seed boxes, places the wheat seed through the straw cover in a single pass. The rice residue stays on the field to protect the soil and feed it, and the wheat follows the rice without a gap.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/jEgCt1pjPxU",
+    videoId: "jEgCt1pjPxU",
+    thumbnail: "/field-evidence/ke-049-thumbnail.jpg",
+    tags: ["wheat", "rice", "rice-wheat", "SIPP", "Slit Insertion Precision Planter", "no-till", "sowing through mulch", "rice straw", "no burning"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
