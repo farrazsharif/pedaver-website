@@ -787,6 +787,22 @@ export const fieldEvidence: FieldEvidence[] = [
     thumbnail: "/field-evidence/ke-049-thumbnail.jpg",
     tags: ["wheat", "rice", "rice-wheat", "SIPP", "Slit Insertion Precision Planter", "no-till", "sowing through mulch", "rice straw", "no burning"],
   },
+  {
+    feNumber: 50,
+    title: "Kinnow on PQNK, Bhakkar: No Spray All Year, 90% Less Chemical Fertiliser",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
+    cropOrTopic: "Kinnow orchard on PQNK, moving off chemical fertiliser",
+    year: 2026,
+    date: "2026-10-22",
+    location: "Bhakkar",
+    summary:
+      "A Kinnow orchard on PQNK in Bhakkar, with the trees heavily loaded with fruit and the ground under them covered with dry mulch. In his own statement the farmer writes that the orchard was not given a single chemical spray all year, that 90 percent less chemical fertiliser was used than the year before, and that next year the plan, God willing, is to give no chemical fertiliser at all.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/6fX2GR_UxkU",
+    videoId: "6fX2GR_UxkU",
+    thumbnail: "/field-evidence/ke-050-thumbnail.jpg",
+    tags: ["kinnow", "citrus", "orchard", "farmer testimony", "no spray", "chemical fertiliser reduced", "transition", "mulch", "Bhakkar"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
