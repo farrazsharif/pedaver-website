@@ -10,6 +10,8 @@ contact/newsletter forms use `mailto:`.
 - **Hosting:** read `docs/handoff-cloudflare.md` — the site runs on Cloudflare
   Pages + R2 (migrated off SkyHost on 2026-10-18); email stays on SkyHost. It
   lists what not to touch (nameservers, email DNS, the retired cPanel deploy).
+- **New session / different Claude account?** `docs/pedaver-onboarding.md` is the
+  full orientation (architecture, where everything lives, a memory seed).
 - **PQNK book chapters:** before any work on the books, read
   `docs/pqnk-book-workflow.md` — it is the living status of that workstream,
   and its Decisions log is binding (do not re-raise a settled call). Update it
