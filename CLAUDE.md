@@ -2,8 +2,8 @@
 
 Marketing website for **Pedaver** and its regenerative-farming system **PQNK**.
 Next.js 16, exported as a **fully static** site (`output: "export"` in
-`next.config.ts`) and hosted on cPanel shared hosting. There is no backend:
-contact/newsletter forms use `mailto:`.
+`next.config.ts`) and hosted on **Cloudflare Pages**, with the PDFs served from
+**Cloudflare R2**. There is no backend: contact/newsletter forms use `mailto:`.
 
 ## Working on this project
 - Read `README.md` for the human workflow and `AGENTS.md` for Next.js 16 caveats.
