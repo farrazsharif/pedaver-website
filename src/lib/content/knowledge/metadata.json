@@ -16505,6 +16505,89 @@
 "why":"how a timed check reshapes the plant into a more productive structure"
 }
 ]
+},
+{
+"slug":"planting-sugarcane-setts-in-the-centre-of-the-bed",
+"primarySubject":"How to prepare and plant sugarcane setts in the centre of the permanent 42-inch PQNK bed so the stored juice feeds the bud: two-node setts with a whole internode, both cut ends sealed with cement, planting in a shallow slit at wattar under mulch, with the Haroonabad (dry, powdery soil) and Shorkot (crumbly soil) germination cases and the nursery-transplant recommendation",
+"questionsAnswered":[
+"Where should sugarcane setts be planted on a PQNK bed?",
+"Why do sugarcane setts fail to germinate in dry soil?",
+"How should a sugarcane sett be cut?",
+"Why seal the cut ends of a sugarcane sett with cement?",
+"How much seed cane does PQNK use per acre?",
+"Why does sett cutting not matter in conventional sugarcane planting?",
+"Should sugarcane be planted from setts or nursery transplants?",
+"What can be grown on the sides of a sugarcane bed?"
+],
+"keywords":[
+"sugarcane",
+"sett",
+"seed cane",
+"node",
+"internode",
+"bud",
+"germination",
+"cement",
+"wattar",
+"ball test",
+"raised bed",
+"centre of the bed",
+"mulch",
+"nursery",
+"transplant",
+"canola intercrop",
+"Haroonabad",
+"Shorkot"
+],
+"geography":"Punjab, Pakistan",
+"crops":[
+"Sugarcane"
+],
+"fieldProblems":[
+"Poor Germination / Emergence",
+"Evaporation / Moisture Loss",
+"Suboptimal Planting Density",
+"Poor Soil Structure / Aggregation"
+],
+"problemFamily":[
+"Plant Growth & Nutrition",
+"Soil & Roots"
+],
+"fieldPractices":[
+"Vegetative Propagation (Sugarcane-specific)",
+"Transplanting",
+"Soil Moisture Ball/Field Test",
+"Surface Mulching (General)",
+"Intercropping / Companion Planting",
+"No-Till / Minimal-Disturbance Planting"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Plants",
+"Soil"
+],
+"pqnkPrinciples":[
+"No Soil Disturbance",
+"No Inundation",
+"Permanent Biological Cover"
+],
+"productionStages":[
+"Planting",
+"Establishment"
+],
+"evidenceType":"Field Observation",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/plants",
+"why":"how the sett’s stored juice carries the bud until its roots and leaves take over"
+},
+{
+"page":"/science/water",
+"why":"why soil at wattar, not water given afterwards, keeps the sett alive"
+}
+]
 }
 
 ]

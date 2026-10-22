@@ -5901,6 +5901,29 @@ export const papers: Paper[] = [
       "Golden rule: never remove more than 30 percent of the living foliage at one time, oldest and lowest leaves first; the response is strong only in a living soil.",
     ],
   },
+  {
+    slug: "planting-sugarcane-setts-in-the-centre-of-the-bed",
+    kpNumber: 220,
+    libraryDate: "2026-10-22",
+    category: "Crop-Specific Guides",
+    title: "Planting Sugarcane Setts in the Centre of the 42-Inch Bed",
+    summary:
+      "A sugarcane sett is a stored packet of juice that feeds the bud until the young plant has roots and leaves of its own. PQNK plants the cane once in the centre of the permanent 42-inch bed, with less than 5 maunds of seed cane per acre against nearly 150 in conventional planting, so every sett matters: two nodes with a whole internode between them, both cut ends sealed with cement, laid in a shallow slit in soil at wattar, covered with soil and mulch. A sett laid in dry soil loses its juice before the water arrives, as a planting at Haroonabad showed. The strongest recommendation is to raise a nursery and transplant.",
+    publishedDate: "2026-10-22",
+    pdfPath: "/papers/planting-sugarcane-setts-in-the-centre-of-the-bed.pdf",
+    abstract: [
+      "PQNK plants sugarcane once, in the centre of the permanent 42-inch bed, and never earths it up. The sett is the young plant’s only food until its roots and leaves take over: of the whole plant’s dry weight, more than 95 percent is built from carbon dioxide and water, with nitrogen also from the air through soil microbes, but none of that is possible until the first leaves are working.",
+      "Sugarcane holds its juice in the internodes, sealed by the skin and the nodes. A cut face loses that juice to a dry soil, so a single-node sett open on both sides can dry within hours. Two nodes with a whole internode between them, and cement on both cut ends, are the safety factor. The sett is laid lengthwise about two inches deep in a shallow slit along the centre of the bed while the soil is at wattar, then covered with soil and mulch. Conventional planting hides careless cutting with saturated soil and nearly 150 maunds of seed cane per acre; PQNK uses less than 5 maunds, so every sett must be prepared and placed with care.",
+      "At Haroonabad in September and October 2026, setts laid in dry, powdery soil and watered afterwards lost their juice before the water reached them, and germination failed. At Shorkot, Jhang, crumbly soil took in the water quickly and germination was 100 percent. The rule holds for every soil: plant at wattar, and never let the sett wait in dry soil. The strongest recommendation is to raise a nursery and transplant, and to treat sugarcane as an orchard, not a seasonal crop.",
+    ],
+    keyTakeaways: [
+      "Plant sugarcane in the centre of the permanent 42-inch bed; the centre stays moist and aerated, and the bed sides carry crop-in-crop such as two lines of canola.",
+      "The sett’s juice feeds the bud until roots and leaves form; a sett laid in dry soil loses that juice through its cut ends before the water arrives.",
+      "Cut setts with two nodes and a whole internode between them, and seal both cut ends with cement.",
+      "Lay setts lengthwise about two inches deep in a shallow slit, only when the soil is at wattar (ball test); cover with soil, then mulch.",
+      "Less than 5 maunds of seed cane per acre in PQNK, against nearly 150 in conventional planting; best of all, raise a nursery and transplant.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {

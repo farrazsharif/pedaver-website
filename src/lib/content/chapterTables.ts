@@ -1434,4 +1434,13 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["4\" × 4\": 9 rows on a 42\" bed top", "235,224", "20", "50", "4,704", "118", "100", "470,448"],
     ["4\" × 4\": 9 rows on a 42\" bed top", "235,224", "50", "20", "11,761", "294", "100", "1,176,120"],
   ] },
+  "kp220-table-01.png": { headers: ["Step", "What to do", "Why"], rows: [
+    ["Best option", "Raise the cane in a nursery and transplant it", "Sugarcane lasts for years like bamboo; plant it as an orchard is planted"],
+    ["Seed cane", "Use good, healthy seed cane: less than 5 maunds per acre, against nearly 150 maunds in conventional planting", "The sett is the young plant’s only food until roots and leaves form"],
+    ["Cutting", "Keep the juice in whole internodes closed by nodes; cut about 2 inches beyond the node; seal both cut ends with cement", "Skin and nodes hold the juice in; cement closes the cut faces, which otherwise lose it to dry soil (Pictures 1 and 2)"],
+    ["Soil moisture", "Plant only when the bed is at wattar (ball test)", "A dry soil draws the juice out of the sett before the water arrives"],
+    ["Placement", "A shallow slit along the centre of the 42-inch bed; setts laid lengthwise about two inches deep", "The centre stays moist and aerated; no earthing up is needed"],
+    ["Cover", "Cover with soil, then lay mulch over the bed", "Mulch keeps the soil from drying and heating"],
+    ["Bed sides", "Two lines of canola, 12 to 16 inches apart in the line; top the leader at about 12 inches", "Crop-in-crop: the bed earns while the cane establishes"],
+  ] },
 };
