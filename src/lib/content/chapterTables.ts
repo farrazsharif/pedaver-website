@@ -1430,4 +1430,8 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["Acre measured as 220 × 198 ft. “Seed drop per hill” of 2 is used for small or oil seeds and for grasses such as wheat and rice, which normally have a lower germination rate.", "", "", "", "", "", "", ""],
     ["Seed germination should be tested before planting and should not be less than 80%. Figures are PQNK planting recommendations, not comparisons to any other system.", "", "", "", "", "", "", ""],
   ] },
+  "ch44-table-00.png": { title: "Onion & Garlic plants and yield", headers: ["Row to row & plant to plant distance", "Plants/acre", "Bulb weight (g)", "Bulbs in 1 kg", "Kg/acre", "Maunds/acre", "Price per kg (Rs.)", "Income Rs./acre"], rows: [
+    ["4\" × 4\": 9 rows on a 42\" bed top", "235,224", "20", "50", "4,704", "118", "100", "470,448"],
+    ["4\" × 4\": 9 rows on a 42\" bed top", "235,224", "50", "20", "11,761", "294", "100", "1,176,120"],
+  ] },
 };

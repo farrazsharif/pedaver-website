@@ -178,6 +178,7 @@ export const SPEECH_NORMALISATIONS: SpeechNormalisation[] = [
   { label: "PQNK", find: /\bPQNK\b/g, replace: "picnic", note: "spoken-only: read as the ordinary English word; visible spelling is unchanged" },
   { label: "ACI", find: /\bACI\b/g, replace: "A C I" },
   { label: "SMM", find: /\bSMM\b/g, replace: "S M M", note: "Soil Moisture Management, spoken as letters" },
+  { label: "OAP", find: /\bOAP\b/g, replace: "O A P", note: "One Acre Prosperity, spoken as letters" },
   { label: "NPK", find: /\bNPK\b/g, replace: "N P K" },
   { label: "NP", find: /\bNP\b/g, replace: "N P", note: "the transitional nitrogen-phosphorus dose, spoken as letters" },
   { label: "GMO", find: /\bGMO\b/g, replace: "G M O", note: "genetically modified organism, spoken as letters" },
