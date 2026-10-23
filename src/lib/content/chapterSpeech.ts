@@ -162,6 +162,10 @@ export type SpeechNormalisation = {
 export const SPEECH_NORMALISATIONS: SpeechNormalisation[] = [
   { label: "kg/acre", find: /\bkg\s*\/\s*acre\b/g, replace: "kilograms per acre" },
   { label: "kg/ha", find: /\bkg\s*\/\s*ha\b/g, replace: "kilograms per hectare" },
+  { label: "CO2e / CO₂e", find: /CO(?:2|₂)e\b/g, replace: "carbon dioxide equivalent" },
+  { label: "t C/ha/year", find: /\bt C\s*\/\s*ha\s*\/\s*year\b/g, replace: "tonnes of carbon per hectare per year" },
+  { label: "Gt", find: /\bGt\b/g, replace: "billion tonnes" },
+  { label: "bn ha", find: /\bbn ha\b/g, replace: "billion hectares" },
   { label: "N2O / N₂O", find: /N(?:2|₂)O/g, replace: "nitrous oxide" },
   { label: "CO2 / CO₂", find: /CO(?:2|₂)/g, replace: "carbon dioxide" },
   {
