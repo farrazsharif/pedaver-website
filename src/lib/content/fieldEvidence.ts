@@ -803,6 +803,23 @@ export const fieldEvidence: FieldEvidence[] = [
     thumbnail: "/field-evidence/ke-050-thumbnail.jpg",
     tags: ["kinnow", "citrus", "orchard", "farmer testimony", "no spray", "chemical fertiliser reduced", "transition", "mulch", "Bhakkar"],
   },
+  {
+    feNumber: 51,
+    title: "Citrus on PQNK Beds, Layyah: Never Leave an Inch of Soil Bare",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
+    cropOrTopic: "Citrus (mosambi) orchard on raised beds, ground cover cut and kept as mulch",
+    year: 2026,
+    date: "2026-10-24",
+    location: "Chaubara, Layyah",
+    farmer: "Mohammad Ismail",
+    summary:
+      "Mohammad Ismail shows his citrus orchard at tehsil Chaubara, district Layyah, grown on raised beds under PQNK. The trees are healthy and well loaded, and he points to the size and health of the fruit. Following Asif Sharif’s advice that not one inch of soil should be left bare, because direct sunlight burns the soil’s organic matter, he keeps the ground under the trees covered. After the monsoon the grass and weeds grow quickly, so he shows how they are cut low with a grass trimmer: the roots stay in the ground and the cut growth stays on the soil as cover. In his next video he plans to show the regrowth of the lucerne (alfalfa) sown in the orchard.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/IVN2MW_8buo",
+    videoId: "IVN2MW_8buo",
+    thumbnail: "/field-evidence/ke-051-thumbnail.jpg",
+    tags: ["citrus", "mosambi", "orchard", "farmer testimony", "raised beds", "ground cover", "no bare soil", "mulch", "grass trimming", "roots retained", "lucerne", "alfalfa", "Layyah", "Chaubara", "Mohammad Ismail"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
