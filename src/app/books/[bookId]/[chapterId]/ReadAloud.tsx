@@ -19,6 +19,12 @@
  *    re-speaking the current sentence, which also lets a speed change take
  *    effect immediately.
  *  - Everything is cancelled on Stop, on unmount, and on pagehide.
+ *  - iPhone (2026-10-25): with the Silent switch on, Safari spoke every sentence
+ *    with no sound (progress moved, nothing heard). Inside the Listen tap we now
+ *    ask for a "playback" audio session (Safari 17+) and play a short silent
+ *    file, which moves the page into media playback that ignores the switch.
+ *    A specific voice is only forced when it is the device default; otherwise
+ *    only the language is set, so iOS uses its own installed English voice.
  */
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
@@ -155,12 +161,9 @@ export default function ReadAloud({
         setChunkIndex(i);
 
         const u = new SpeechSynthesisUtterance(chunks[i].text);
-        if (voiceRef.current) {
-          u.voice = voiceRef.current;
-          u.lang = voiceRef.current.lang;
-        } else {
-          u.lang = "en-US";
-        }
+        const v = voiceRef.current;
+        if (v?.default) u.voice = v; // a non-default pick may be a voice the phone has not downloaded
+        u.lang = v?.lang ?? "en-US";
         u.rate = rateRef.current;
         startedRateRef.current = rateRef.current;
         u.onend = () => {
@@ -183,14 +186,32 @@ export default function ReadAloud({
     [chunks, total, stopKeepAlive]
   );
 
+  /* ---- iPhone: speak through the media channel, not the ringer ---- */
+  const primeAudio = useCallback(() => {
+    try {
+      const session = (navigator as Navigator & { audioSession?: { type: string } }).audioSession;
+      if (session && session.type !== "playback") session.type = "playback";
+    } catch {
+      /* no-op */
+    }
+    try {
+      const a = new Audio("/audio/silence.wav");
+      a.setAttribute("playsinline", "");
+      void a.play().catch(() => {});
+    } catch {
+      /* no-op */
+    }
+  }, []);
+
   /* ---- controls ---- */
   const play = useCallback(() => {
+    primeAudio(); // inside the tap, before the first .speak()
     startedRef.current = true;
     setStatus("playing");
     setLive("Playing");
     startKeepAlive();
     speakFrom(0); // synchronous .speak() inside the gesture — required by Safari/iOS
-  }, [speakFrom, startKeepAlive]);
+  }, [primeAudio, speakFrom, startKeepAlive]);
 
   const pause = useCallback(() => {
     pausedAtRef.current = idxRef.current;
