@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex">
+<title>Listen test</title>
+<style>body{font:17px Arial,sans-serif;padding:16px;background:#faf8f2;color:#1e3722}button{display:block;width:100%;margin:10px 0;padding:14px;font:600 17px Arial;border:1px solid #2f5233;border-radius:8px;background:#fff;color:#1e3722}#log{font:13px monospace;white-space:pre-wrap;background:#fff;padding:8px;border-radius:6px}</style></head>
+<body>
+<h2>Listen test (temporary)</h2>
+<p>Tap each button and wait a moment. Note which ones you <b>hear</b>.</p>
+<button id="b1">1. Beep sound (no speech)</button>
+<button id="b2">2. Speech, plain</button>
+<button id="b3">3. Speech, English language only</button>
+<button id="b4">4. Speech, Samantha voice</button>
+<button id="b5">5. Speech after a beep</button>
+<div id="log"></div>
+<script>
+var L=document.getElementById('log');function log(t){L.textContent+=t+'\n';}
+var S=window.speechSynthesis;
+function say(n,opt){S.cancel();var u=new SpeechSynthesisUtterance('Test number '+n+'. This is the Pedaver listen test.');
+ if(opt==='lang')u.lang='en-US';
+ if(opt==='voice'){var v=S.getVoices().find(function(x){return x.name==='Samantha'})||S.getVoices().find(function(x){return /^en/i.test(x.lang)});if(v){u.voice=v;u.lang=v.lang;}}
+ var t0=Date.now();u.onstart=function(){log(n+': started')};u.onend=function(){log(n+': ended after '+(Date.now()-t0)+' ms')};u.onerror=function(e){log(n+': error '+e.error)};
+ S.speak(u);}
+function beep(){var a=new Audio('/audio/beep-test.wav');a.play().then(function(){log('beep: playing')}).catch(function(e){log('beep: blocked '+e.name)});return a;}
+document.getElementById('b1').onclick=function(){beep()};
+document.getElementById('b2').onclick=function(){say(2)};
+document.getElementById('b3').onclick=function(){say(3,'lang')};
+document.getElementById('b4').onclick=function(){say(4,'voice')};
+document.getElementById('b5').onclick=function(){beep();say(5,'lang')};
+log('voices: '+S.getVoices().length+'; '+navigator.userAgent.replace(/.*\((.*?)\).*Version\/([\d.]+).*/,'$1 · Safari $2'));
+S.onvoiceschanged=function(){log('voices now: '+S.getVoices().length)};
+</script></body></html>
