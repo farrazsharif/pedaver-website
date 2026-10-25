@@ -145,7 +145,10 @@ export default function ReadAloud({
       if (!s || total === 0) return;
       genRef.current += 1;
       const myGen = genRef.current;
-      s.cancel();
+      // Safari 27 cancels an utterance spoken right after cancel(), so only cancel
+      // when something is actually queued, and then speak a moment later.
+      const busy = s.speaking || s.pending;
+      if (busy) s.cancel();
 
       const run = (i: number) => {
         if (myGen !== genRef.current) return;
@@ -181,7 +184,8 @@ export default function ReadAloud({
         s.speak(u);
       };
 
-      run(start);
+      if (busy) window.setTimeout(() => run(start), 150);
+      else run(start); // first play: synchronous, inside the tap
     },
     [chunks, total, stopKeepAlive]
   );
