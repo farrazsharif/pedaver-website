@@ -820,6 +820,21 @@ export const fieldEvidence: FieldEvidence[] = [
     thumbnail: "/field-evidence/ke-051-thumbnail.jpg",
     tags: ["citrus", "mosambi", "orchard", "farmer testimony", "raised beds", "ground cover", "no bare soil", "mulch", "grass trimming", "roots retained", "lucerne", "alfalfa", "Layyah", "Chaubara", "Mohammad Ismail"],
   },
+  {
+    feNumber: 52,
+    title: "Horse-Drawn Furrow Cleaning on a PQNK Mango Farm",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
+    cropOrTopic: "Mango orchard with 5,000 new plants; furrows cleaned with a horse-drawn plough",
+    year: 2026,
+    date: "2026-10-25",
+    summary:
+      "A farmer shows how he keeps the furrows of his PQNK farm open with a horse that had no other work. Following the small plough he had seen used under PQNK, he built one of his own and hitched it behind the horse: two passes along the same furrow leave it almost clean, and he expects the little grass that remains to die back once water runs in the furrow. The farm covers about 10 acres of mango orchard and has had no poison or chemical fertiliser for the past two years; an earlier video of his showed the mango bug that had infested it disappearing. Under PQNK guidance he has since planted 5,000 new plants on four to five acres, and the grass grew thick, so the furrows between so many plants needed a practical way to be cleaned. The horse now does the work, the horse is content and nothing is spent. Since almost every farming household keeps an animal, he shares the idea so that others can use it too.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/_Tx5Favy340",
+    videoId: "_Tx5Favy340",
+    thumbnail: "/field-evidence/ke-052-thumbnail.jpg",
+    tags: ["mango", "orchard", "farmer testimony", "furrow cleaning", "horse-drawn plough", "animal draught", "raised beds", "grass", "no chemical inputs", "mango bug", "new plantation", "low cost"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
