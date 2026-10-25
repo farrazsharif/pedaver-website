@@ -199,6 +199,8 @@ export const SPEECH_NORMALISATIONS: SpeechNormalisation[] = [
   { label: "km", find: /\bkm\b/g, replace: "kilometres" },
   { label: "C4", find: /\bC4\b/g, replace: "C four", note: "the C4 photosynthesis pathway" },
   { label: "× -> times", find: /\s*×\s*/g, replace: " times " },
+  { label: "RPM", find: /\bRPM\b/g, replace: "R P M" },
+  { label: "pH", find: /\bpH\b/g, replace: "P H" },
   { label: "kg", find: /\bkg\b/g, replace: "kilograms" },
   { label: "N% -> N percent", find: /(\d)\s*%/g, replace: "$1 percent" },
   { label: "em / en dash -> pause", find: /\s*[—–]\s*/g, replace: ", " },
