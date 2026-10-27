@@ -7,7 +7,7 @@ import { cropImages } from "@/lib/content/cropImages";
 import { videos } from "@/lib/content/videos";
 import { papers, formatKpNumber } from "@/lib/content/papers";
 import { fieldEvidence, formatFeNumber } from "@/lib/content/fieldEvidence";
-import { books, getPublishedChapters, getChapterDisplayNumber } from "@/lib/content/books";
+import { books, getPublishedChapters, getChapterDisplayLabel } from "@/lib/content/books";
 import Section from "@/components/Section";
 import VideoEmbed from "@/components/VideoEmbed";
 import TrackedExternalChannelLink from "@/components/analytics/TrackedExternalChannelLink";
@@ -92,10 +92,9 @@ function getNewArrivalGroups(): NewArrivalGroup[] {
   if (chapterEntries.length > 0) {
     const book = chapterEntries[0].book;
     const latestChapters = chapterEntries.map(({ chapter }) => {
-      const chapterNumber = getChapterDisplayNumber(book, chapter.chapterId);
       return {
         key: `chapter-${chapter.chapterId}`,
-        badge: chapterNumber ? `Chapter ${chapterNumber}` : "Book Chapter",
+        badge: getChapterDisplayLabel(book, chapter.chapterId) ?? "Book Chapter",
         title: chapter.title,
         href: `/books/${book.bookId}/${chapter.chapterId}`,
       };

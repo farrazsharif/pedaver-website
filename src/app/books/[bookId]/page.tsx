@@ -124,9 +124,13 @@ export default async function BookLandingPage({
                   <ol className="mt-3 flex flex-col gap-2">
                     {chapters.map((chapter) => {
                       const number = getChapterDisplayNumber(book, chapter.chapterId);
+                      // Unnumbered entries: "App. A" for an appendix, nothing for Acknowledgements.
+                      const short = chapter.label
+                        ? chapter.label.replace(/^Appendix /, "App. ").replace(/^Acknowledgements$/, "")
+                        : `Ch. ${number}`;
                       return (
                         <li key={chapter.chapterId} className="flex items-baseline gap-3 text-sm">
-                          <span className="w-14 flex-none text-ink-soft/60">Ch. {number}</span>
+                          <span className="w-14 flex-none text-ink-soft/60">{short}</span>
                           <Link
                             href={`/books/${book.bookId}/${chapter.chapterId}`}
                             className="font-semibold text-primary-dark hover:text-primary"

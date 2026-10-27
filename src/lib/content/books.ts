@@ -62,7 +62,9 @@ export type ChapterBlock =
   | { type: "caption"; text: string }
   | { type: "qaPanel"; heading: string; items: ChapterQAItem[] }
   | { type: "closingHeading"; text: string }
-  | { type: "transition"; text: string };
+  | { type: "transition"; text: string }
+  /** The author's closing signature at the end of the book's last chapter (Ch65): left-aligned, styled as in the author's draft. */
+  | { type: "signature"; mark: string; expansion: string; tagline: string; name: string; role: string; closing: string };
 
 export interface BookPart {
   /** Stable id for this Part within its book. Grouping key only — never appears in a URL, so a chapter can move to a different Part without touching its permanent address. */
@@ -79,6 +81,11 @@ export interface BookChapter {
   title: string;
   subtitle?: string;
   status: ChapterStatus;
+  /**
+   * Set only for an entry that is not a numbered chapter (e.g. "Acknowledgements", "Appendix A"). It is shown in place
+   * of "Chapter N", and the entry is skipped when chapters are counted, so it never shifts or takes a chapter number.
+   */
+  label?: string;
   /** One or two lines for the book's contents list and the chapter page's own header — set only once a chapter is far enough along to describe. */
   summary?: string;
   /** Full chapter content as an ordered sequence of typed blocks (see ChapterBlock). Present only once status is "published"; this is what the chapter page renders under "Read Chapter". */
@@ -162,6 +169,7 @@ export const books: Book[] = [
       { partId: "part-six", title: "The Transformation", subtitle: "From Farm to Future" },
       { partId: "part-seven", title: "Extended Knowledge" },
       { partId: "part-eight", title: "Policy and the Future" },
+      { partId: "back-matter", title: "Acknowledgements and Appendices" },
     ],
     chapters: [
       {
@@ -4955,16 +4963,16 @@ export const books: Book[] = [
         subtitle: "For Farmers, Consumers, Youth, Environmentalists, and Scientists",
         status: "published",
         summary:
-          "Chapter 65 is the book's closing call. It asks for a decision, not another argument, and gives five groups a first step: the farmer converts one acre through the eight PQNK steps, from subsoiler and permanent beds to a Jantar cover crop and planting through its mulch; the consumer asks how food was grown and buys from the PQNK farmer; the young person studies soil biology or chooses to farm; the environmentalist puts farming at the center of the agenda; and the scientist teaches what farmers already know. The soil is ready. Are we?",
+          "Chapter 65 is the book's last chapter. It asks for a decision, not another argument, and gives five groups a first step: the farmer converts one acre through the eight PQNK steps, from subsoiler and permanent beds to a Jantar cover crop and planting through its mulch; the consumer asks how food was grown and buys from the PQNK farmer; the young person studies soil biology or chooses to farm; the environmentalist puts farming at the center of the agenda; and the scientist teaches what farmers already know. The soil is ready. Are we?",
         publishedDate: "2026-10-27",
-        version: "1.0",
+        version: "1.1",
         pdfPath: "/books/natural-ecosystem-science/a-call-to-action.pdf",
         body: [
   { type: "imageGroup", files: ["ch65-img-01.png"] },
   { type: "caption", text: "A Call to Action: farmers, consumers, youth, environmentalists, and scientists, each with a first step to take today." },
   { type: "openingQuote", text: "“The soil does not ask for permission. It does not wait for consensus or for the institution to catch up or for the policy to arrive. Put the biology back and the soil recovers. This is the most reliable thing I know about the natural world: it wants to heal. Our only job is to stop preventing it.”" },
   { type: "attribution", text: "Asif Sharif, Lahore, 2024" },
-  { type: "paragraph", runs: [{ text: "This chapter is the closing call of this book, and it is addressed differently from every other. The preceding sixty-four chapters have made arguments: biological, historical, economic, hydrological, climatic, nutritional. Each argument has been supported with evidence, data, and the documented outcomes of real farms, real seasons, real results. This chapter does not add another argument. It asks for a decision." }] },
+  { type: "paragraph", runs: [{ text: "This is the last chapter of this book and it is addressed differently from every other. The preceding sixty-four chapters have made arguments: biological, historical, economic, hydrological, climatic, nutritional. Each argument has been supported with evidence, data, and the documented outcomes of real farms, real seasons, real results. This chapter does not add another argument. It asks for a decision." }] },
   { type: "paragraph", runs: [{ text: "The decision is not complicated. It is not expensive. It does not require technology that does not yet exist or money that is not yet available or science that has not yet been done. Everything needed to begin is already present: the knowledge, the protocol, the evidence, the machines, the biological system waiting in the soil to recover the moment the conditions that prevent it are removed. The decision required is the decision to begin." }] },
   { type: "heading", text: "VOICES OF ACTION" },
   { type: "paragraph", runs: [{ text: "This chapter addresses five groups whose decisions, taken together, constitute the agricultural transformation that this book has described. Each group has a specific role and a specific first step. None of them needs to wait for the others to begin." }] },
@@ -4999,16 +5007,12 @@ export const books: Book[] = [
   { type: "paragraph", runs: [{ text: "This is not a utopian claim. It is a documented, peer-reviewed, farmer-verified, institutionally tested biological reality that is already happening on farms across Pakistan and beyond. The question is not whether it works. The question is how quickly the world will decide that it should happen at scale." }] },
   { type: "paragraph", runs: [{ text: "The answer to that question is determined by the farmer who tries one acre, the consumer who asks where their food came from, the young person who chooses biology over banking, the environmentalist who adds agriculture to the top of the agenda, the scientist who takes PQNK into the classroom and the textbook, the government official who moves the subsidy from fertilizer to subsoiler, and the development banker who prices the risk of a zero-input farm at what it actually is. All of these are decisions that can be made today. All of them are being made, by some people, right now. The only question is how many more will make them before it is too late to matter." }] },
   { type: "paragraph", runs: [{ text: "The soil is patient. It has been waiting for this for sixty years. It will wait a little longer. But the species that depends on it does not have sixty more years to decide. The biology is ready. The evidence is ready. The protocol is ready. The only thing that needs to be ready is us." }] },
-  { type: "paragraph", runs: [{ text: "PQNK", bold: true }] },
-  { type: "paragraph", runs: [{ text: "Paedar Qudratti Nizam Kashatqari" }] },
-  { type: "paragraph", runs: [{ text: "The Natural Ecosystem Science of Production Agriculture" }] },
-  { type: "paragraph", runs: [{ text: "Asif Sharif", bold: true }] },
-  { type: "paragraph", runs: [{ text: "Founder, Pedaver | Inventor, PQNK | Lahore, Pakistan" }] },
-  { type: "pullParagraph", text: "The soil is ready. Are we?" },
-  { type: "transition", text: "Chapter Sixty-Six: The Field Record" },
+  { type: "signature", mark: "PQNK", expansion: "Paedar Qudratti Nizam Kashatqari", tagline: "The Natural Ecosystem Science of Production Agriculture", name: "Asif Sharif", role: "Founder, Pedaver | Inventor, PQNK | Lahore, Pakistan", closing: "The soil is ready. Are we?" },
         ],
       },
-      { chapterId: "the-field-record", partId: "part-eight", title: "The Field Record", subtitle: "Production Economics of the PQNK System, Crop by Crop", status: "in-preparation" },
+      // The book's chapters end at Ch65 (author, 2026-10-27); what follows is unnumbered (see `label`).
+      { chapterId: "acknowledgements", partId: "back-matter", label: "Acknowledgements", title: "Acknowledgements", status: "in-preparation" },
+      { chapterId: "the-field-record", partId: "back-matter", label: "Appendix A", title: "The Field Record", subtitle: "Production Economics of the PQNK System, Crop by Crop", status: "in-preparation" },
     ],
   },
   // Architecture supports additional books as records in this array — see file header.
@@ -5031,14 +5035,25 @@ export function getPartById(book: Book, partId: string): BookPart | undefined {
 }
 
 /**
- * Displayed chapter number = 1-based position in `book.chapters`. Never
- * stored, always recalculated — inserting, removing, or reordering an
- * entry in that array is the only edit needed anywhere for numbering
- * (and Part grouping, and Prev/Next) to update everywhere it's shown.
+ * Displayed chapter number = 1-based position in `book.chapters`, counting
+ * numbered chapters only (entries with a `label`, such as Acknowledgements
+ * or an appendix, are skipped and have no number). Never stored, always
+ * recalculated — inserting, removing, or reordering an entry in that array
+ * is the only edit needed anywhere for numbering (and Part grouping, and
+ * Prev/Next) to update everywhere it's shown.
  */
 export function getChapterDisplayNumber(book: Book, chapterId: string): number | undefined {
   const idx = book.chapters.findIndex((c) => c.chapterId === chapterId);
-  return idx === -1 ? undefined : idx + 1;
+  if (idx === -1 || book.chapters[idx].label) return undefined;
+  return book.chapters.slice(0, idx + 1).filter((c) => !c.label).length;
+}
+
+/** "Chapter N", or the entry's own label ("Appendix A", "Acknowledgements") when it is not a numbered chapter. */
+export function getChapterDisplayLabel(book: Book, chapterId: string): string | undefined {
+  const chapter = getChapterByChapterId(book, chapterId);
+  if (chapter?.label) return chapter.label;
+  const number = getChapterDisplayNumber(book, chapterId);
+  return number === undefined ? undefined : `Chapter ${number}`;
 }
 
 export function getPublishedChapters(book: Book): BookChapter[] {

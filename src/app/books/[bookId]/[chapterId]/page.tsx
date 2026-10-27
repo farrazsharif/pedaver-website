@@ -6,6 +6,7 @@ import {
   books,
   getBookById,
   getChapterByChapterId,
+  getChapterDisplayLabel,
   getChapterDisplayNumber,
   getPartById,
   getAdjacentPublishedChapters,
@@ -64,6 +65,7 @@ export default async function ChapterPage({
   if (!chapter || chapter.status !== "published") notFound();
 
   const number = getChapterDisplayNumber(book, chapterId);
+  const label = getChapterDisplayLabel(book, chapterId);
   const part = getPartById(book, chapter.partId);
   const { prev, next } = getAdjacentPublishedChapters(book, chapterId);
 
@@ -78,7 +80,7 @@ export default async function ChapterPage({
     "@type": "Chapter",
     name: chapter.title,
     isPartOf: { "@type": "Book", name: book.title, url: `${SITE_URL}/books/${book.bookId}` },
-    position: number,
+    ...(number !== undefined ? { position: number } : {}),
     url: `${SITE_URL}/books/${book.bookId}/${chapterId}`,
     author: { "@id": `${SITE_URL}/founder#person` },
     publisher: { "@id": `${SITE_URL}/#organization` },
@@ -108,7 +110,7 @@ export default async function ChapterPage({
             style={{ fontFamily: "Arial, sans-serif", color: "#52B788" }}
           >
             {part?.title}
-            {number !== undefined ? ` · Chapter ${number}` : ""}
+            {label ? ` · ${label}` : ""}
           </p>
           <h1
             className="mt-2 text-4xl font-bold sm:text-5xl"

@@ -189,6 +189,33 @@ export default function ChapterBody({
                 {block.text}
               </h2>
             );
+          case "signature":
+            // The author's closing signature, styled as in the author's draft: left-aligned, letter-spaced mark.
+            return (
+              <div key={i} className="mt-8" style={{ fontFamily: "Georgia, serif" }}>
+                <p className="text-lg leading-none" style={{ color: "#52B788" }} aria-hidden="true">
+                  ⁂
+                </p>
+                <p className="mt-2 text-3xl font-bold tracking-[0.35em]" style={{ color: COLOR.deepGreen }}>
+                  {block.mark}
+                </p>
+                <p className="text-lg italic" style={{ color: COLOR.accentGreen }}>
+                  {block.expansion}
+                </p>
+                <p className="text-lg" style={{ color: COLOR.transitionGray }}>
+                  {block.tagline}
+                </p>
+                <p className="mt-5 text-xl font-bold" style={{ color: COLOR.deepGreen }}>
+                  {block.name}
+                </p>
+                <p className="text-base" style={{ fontFamily: "Arial, sans-serif", color: COLOR.transitionGray }}>
+                  {block.role}
+                </p>
+                <p className="mt-5 text-xl italic" style={{ color: COLOR.accentGreen }}>
+                  {block.closing}
+                </p>
+              </div>
+            );
           case "transition":
             return (
               <p

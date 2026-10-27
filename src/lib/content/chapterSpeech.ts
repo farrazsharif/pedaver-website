@@ -127,6 +127,10 @@ export function buildChapterSpeech(chapter: {
         segments.push({ kind: "paragraph", text: pictureRead ? block.text : `Picture: ${block.text}` });
         pictureRead = false;
         break;
+      case "signature":
+        for (const line of [block.mark, block.expansion, block.tagline, block.name, block.role, block.closing])
+          segments.push({ kind: "paragraph", text: line });
+        break;
       case "transition":
         // Intentionally not read — see the file header.
         break;
