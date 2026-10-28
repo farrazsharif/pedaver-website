@@ -104,4 +104,11 @@ export const videos: VideoEntry[] = [
     description:
       "A 21-minute walk through PQNK's two no-till planters, built for soil that is never bare. Every planter must place seed at a consistent depth through a living crop, dead mulch or both. SIPP, the Slit Insertion Precision Planter, cuts one continuous slit 2 inches wide and 2 inches deep and meters one seed at a time into it; it is the simpler, faster choice where residue is light or brittle. VIPP, the Vertical Insertion Precision Planter, pokes a single cone-shaped hole per seed, under half an inch wide at the bottom, an inch at the top and an inch and a half deep, so tough corn, sugarcane and cotton stalks and rice straw cannot drag or skip it. Both keep the bed profile as it is, never disturb the soil life beneath, and plant 5 rows in a first pass and 4 more in a second on a 42-inch bed.",
   },
+  {
+    videoId: "0njmBrIGDGY",
+    title: "Not Just Another Book: PQNK, The Natural Ecosystem Science of Production Agriculture",
+    channel: "founder",
+    description:
+      "A short introduction to Asif Sharif's book. Most farming books tell farmers what to add; PQNK asks how nature grows a forest with no one feeding it. The book is a complete, field-proven system in which the soil comes alive again, crops feed themselves through the life around their roots, pests settle on their own, and costs fall while yields hold or rise. All 65 chapters are free to read, listen to or download on pedaver.com.",
+  },
 ];
