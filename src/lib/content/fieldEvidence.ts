@@ -835,6 +835,21 @@ export const fieldEvidence: FieldEvidence[] = [
     thumbnail: "/field-evidence/ke-052-thumbnail.jpg",
     tags: ["mango", "orchard", "farmer testimony", "furrow cleaning", "horse-drawn plough", "animal draught", "raised beds", "grass", "no chemical inputs", "mango bug", "new plantation", "low cost"],
   },
+  {
+    feNumber: 53,
+    title: "Ginger Production on PQNK",
+    evidenceTypes: ["Advisory", "Field Evidence"],
+    cropOrTopic: "Ginger on permanent beds, from planting to harvest",
+    year: 2026,
+    date: "2026-10-28",
+    location: "Lahore",
+    summary:
+      "Ginger is a spice and medicinal crop that countries like Pakistan have long imported, and PQNK has grown it successfully for about a decade. The first part of the video sets out the method. The field is levelled, the hardpan is broken, permanent raised beds are made and Jantar is grown on them; at 4 to 5 feet the Jantar is cut with a mulcher and spread over the beds. Ginger does best when the soil stays at about 25 degrees Celsius, so mulch is added regularly, and where summers are harsh it is grown with maize, Jantar or vegetable vines trained upward, or under an established orchard, for midday shade. Healthy, disease-free seed rhizomes are planted 3 to 4 inches deep with the bud facing up, in four rows on the 42-inch bed (9, 12, 12 and 9 inches apart) and 12 inches between plants. Where Jantar has not been grown first, a thick mulch goes on soon after planting. The crop is ready in 8 to 10 months, when the lower leaves turn yellow; the rhizomes are lifted with care, washed, dried in the shade and packed in ventilated bags or crates. The second part, filmed at harvest in February, shows the ginger Asif Sharif grows every year at his home in Lahore, in ordinary soil, with no fertiliser and no other inputs and very little water, through Lahore's heat and humidity. The rhizomes come out whole, large and healthy, of full commercial size, and part of the harvest is kept as seed for the next crop.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/BeZrd4rzzlk",
+    videoId: "BeZrd4rzzlk",
+    tags: ["ginger", "spice crop", "rhizome", "seed rhizome", "Lahore", "hardpan", "permanent raised beds", "Jantar", "mulch", "soil temperature", "intercropping", "shade", "no fertiliser", "harvest", "import substitution"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
