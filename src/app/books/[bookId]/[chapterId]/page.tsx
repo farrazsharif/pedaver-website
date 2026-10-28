@@ -158,6 +158,16 @@ export default async function ChapterPage({
               >
                 {dict.books.downloadChapterPdf}
               </TrackedPdfLink>
+              {chapter.slidesPdfPath && (
+                <TrackedPdfLink
+                  href={chapter.slidesPdfPath}
+                  contentId={`${bookId}/${chapterId}/slides`}
+                  contentTitle={`${chapter.title} (slides)`}
+                  className="mt-3 inline-block w-full rounded-full border border-primary px-6 py-3 text-center text-sm font-semibold text-primary transition hover:bg-primary/10"
+                >
+                  {dict.books.downloadSlidesPdf}
+                </TrackedPdfLink>
+              )}
               <ShareButton title={chapter.title} path={`/books/${bookId}/${chapterId}/`} className="mt-3 inline-block w-full rounded-full border border-primary px-6 py-3 text-center text-sm font-semibold text-primary transition hover:bg-primary/10" />
             </div>
           )}

@@ -543,6 +543,7 @@ const en = {
     inPreparation: "In Preparation",
     readChapter: "Read Chapter",
     downloadChapterPdf: "Download Chapter PDF (English)",
+    downloadSlidesPdf: "Visual Summary (Slides PDF)",
     downloadCompleteBook: "Download Complete Book",
     backToBook: "Back to Book Contents",
     backToBooks: "All PQNK Books",
