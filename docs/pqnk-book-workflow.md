@@ -12,6 +12,32 @@ decisions already made with the author. That lives here now.
 
 ---
 
+## ACTION PLAN — agreed with the author 2026-10-29 (work in this order)
+
+Author: "1st we will finish the book, make it publish ready ... After this
+stage, we will also publish hard copy. Later we do slide videos."
+
+1. **Finish the content.** Appendix A (The Field Record; waiting on the
+   author's figure answers) and Appendix B (Extended Essays), plus any other
+   additions the author names.
+2. **One house format for the whole book.** Every chapter in the same fonts
+   and styles (the §6 house format of 2026-09-28; early chapters still need
+   the final-review fixes: em dashes, ACI expansion, epigraphs, title
+   infographics, international framing).
+3. **Page numbering and a clickable Contents.** Page numbers throughout, and
+   a Contents page (plus PDF bookmarks) whose entries jump straight to each
+   chapter and appendix, so nobody has to scroll the whole book.
+4. **Final whole-book review, then LOCK.** After the lock, no changes
+   without a new version.
+5. **Publish the complete book**: on pedaver.com, then on the online book
+   stores (eBook).
+6. **Hard copy (print).**
+7. **Chapter slide videos, later.** Corrected slide deck in Keynote, the
+   author's voiceover in English and Urdu, then video to YouTube and the chapter page.
+   **No more slide-PDF uploads after Ch1 to Ch3** (those three stay live).
+
+---
+
 ## 0. Site backup rule — BINDING (added 2026-09-10)
 
 **Never push to `main` (i.e. never trigger a deploy) without a fresh local
