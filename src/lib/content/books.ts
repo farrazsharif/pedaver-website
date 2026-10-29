@@ -357,6 +357,7 @@ export const books: Book[] = [
         modifiedDate: "2026-09-29",
         version: "1.1",
         pdfPath: "/books/natural-ecosystem-science/the-0-083-paradox.pdf",
+        slidesPdfPath: "/books/natural-ecosystem-science/the-0-083-paradox-slides.pdf",
         body: [
   { type: "imageGroup", files: ["ch3-img-01.png"] },
   { type: "openingQuote", text: "“The fertiliser salesman has built his entire business on one lie: that the soil is empty. It is not empty. It has never been empty. What is empty is the biological system that accesses what is there. And he emptied it.”" },
