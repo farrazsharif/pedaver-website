@@ -262,6 +262,7 @@ export const books: Book[] = [
         publishedDate: "2026-08-29",
         version: "1.0",
         pdfPath: "/books/natural-ecosystem-science/rock-dirt-soil-life.pdf",
+        slidesPdfPath: "/books/natural-ecosystem-science/rock-dirt-soil-life-slides.pdf",
         body: [
   { type: "openingQuote", text: "“The farmer who has never seen his soil alive does not know what farming is. He has only seen what farming has done to soil that was once alive.”" },
   { type: "attribution", text: "Asif Sharif, Lahore, 2017" },
