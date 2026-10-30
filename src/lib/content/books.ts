@@ -5082,7 +5082,7 @@ export const books: Book[] = [
         version: "1.0",
         pdfPath: "/books/natural-ecosystem-science/pqnk-and-agricultural-swaraj.pdf",
         body: [
-  { type: "imageGroup", files: ["appb-swaraj-img-01.png"] },
+  { type: "imageGroup", files: ["appb-swaraj-img-01.jpg"] },
   { type: "caption", text: "PQNK and Agricultural Swaraj: from dependency to the farmer’s freedom." },
   { type: "openingQuote", text: "“The farmer should not have to buy, season after season, what a living soil gives for free.”" },
   { type: "attribution", text: "Asif Sharif, Lahore, 2026" },
