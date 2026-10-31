@@ -124,9 +124,9 @@ export default async function BookLandingPage({
                   <ol className="mt-3 flex flex-col gap-2">
                     {chapters.map((chapter) => {
                       const number = getChapterDisplayNumber(book, chapter.chapterId);
-                      // Unnumbered entries: "App. A" for an appendix, nothing for Acknowledgements.
+                      // Unnumbered entries: "App." for the appendix, nothing for Acknowledgements.
                       const short = chapter.label
-                        ? chapter.label.replace(/^Appendix /, "App. ").replace(/^Acknowledgements$/, "")
+                        ? chapter.label.replace(/^Appendix\b/, "App.").replace(/^Acknowledgements$/, "")
                         : `Ch. ${number}`;
                       return (
                         <li key={chapter.chapterId} className="flex items-baseline gap-3 text-sm">

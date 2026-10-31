@@ -82,7 +82,7 @@ export interface BookChapter {
   subtitle?: string;
   status: ChapterStatus;
   /**
-   * Set only for an entry that is not a numbered chapter (e.g. "Acknowledgements", "Appendix A"). It is shown in place
+   * Set only for an entry that is not a numbered chapter (e.g. "Acknowledgements", "Appendix"). It is shown in place
    * of "Chapter N", and the entry is skipped when chapters are counted, so it never shifts or takes a chapter number.
    */
   label?: string;
@@ -171,7 +171,7 @@ export const books: Book[] = [
       { partId: "part-six", title: "The Transformation", subtitle: "From Farm to Future" },
       { partId: "part-seven", title: "Extended Knowledge" },
       { partId: "part-eight", title: "Policy and the Future" },
-      { partId: "back-matter", title: "Acknowledgements and Appendices" },
+      { partId: "back-matter", title: "Acknowledgements and Appendix" },
     ],
     chapters: [
       {
@@ -5068,18 +5068,17 @@ export const books: Book[] = [
   { type: "attribution", text: "Asif Sharif, Lahore, 2026" },
         ],
       },
-      { chapterId: "the-field-record", partId: "back-matter", label: "Appendix A", title: "The Field Record", subtitle: "Production Economics of the PQNK System, Crop by Crop", status: "in-preparation" },
       {
         chapterId: "pqnk-and-agricultural-swaraj",
         partId: "back-matter",
-        label: "Appendix B",
+        label: "Appendix",
         title: "PQNK and Agricultural Swaraj: Restoring the Farmer’s Freedom",
         subtitle: "From agricultural dependency to ecological independence, village prosperity, and human dignity",
         status: "published",
         summary:
           "An essay on the farmer’s freedom. Drawing on Gandhi’s Gram Swaraj and Gramodyog, it argues that the farmer should not have to buy, season after season, what a living soil gives for free: PQNK moves the farmer from a financially vulnerable purchaser of inputs to the independent manager of a living ecosystem, and lays the foundation for village enterprise, work for women, and prosperity without dependence.",
         publishedDate: "2026-10-30",
-        version: "1.0",
+        version: "1.1",
         pdfPath: "/books/natural-ecosystem-science/pqnk-and-agricultural-swaraj.pdf",
         body: [
   { type: "imageGroup", files: ["appb-swaraj-img-01.jpg"] },
@@ -5135,7 +5134,7 @@ export const books: Book[] = [
   { type: "paragraph", runs: [{ text: "One begins with the social and economic organization of rural life. The other begins with the biological organization of agricultural production." }] },
   { type: "paragraph", runs: [{ text: "Both invite us to reconsider systems in which those who perform essential productive work remain dependent upon institutions and resources beyond their control." }] },
   { type: "paragraph", runs: [{ text: "The significance of PQNK, therefore, should not be judged solely by its potential to conserve water, reduce purchased inputs, improve soil conditions, or support crop production. Its wider promise lies in the possibility of combining these outcomes with a more independent, prosperous, and dignified rural life." }] },
-  { type: "paragraph", runs: [{ text: "That promise is already visible in PQNK fields, in the field record set out in Appendix A, and in the farmers who have made the transition. A philosophy acquires enduring value when its principles are translated into demonstrable improvements in human lives, and PQNK’s field record shows that this translation is possible." }] },
+  { type: "paragraph", runs: [{ text: "That promise is already visible in PQNK fields, in the field record set out across the chapters of this book, and in the farmers who have made the transition. A philosophy acquires enduring value when its principles are translated into demonstrable improvements in human lives, and PQNK’s field record shows that this translation is possible." }] },
   { type: "paragraph", runs: [{ text: "For the marginal farmer, the ultimate meaning of agricultural Swaraj is neither political rhetoric nor romantic attachment to the village. It is the practical freedom to produce food, earn a secure livelihood, maintain the productive capacity of the land, and participate in economic life without unnecessary dependence." }] },
   { type: "paragraph", runs: [{ text: "The farmer should not merely be the producer of society’s food. The farmer should also be an independent beneficiary of the prosperity that food production creates." }] },
   { type: "paragraph", runs: [{ text: "That is the larger human purpose toward which PQNK aspires." }] },
@@ -5176,7 +5175,7 @@ export function getChapterDisplayNumber(book: Book, chapterId: string): number |
   return book.chapters.slice(0, idx + 1).filter((c) => !c.label).length;
 }
 
-/** "Chapter N", or the entry's own label ("Appendix A", "Acknowledgements") when it is not a numbered chapter. */
+/** "Chapter N", or the entry's own label ("Appendix", "Acknowledgements") when it is not a numbered chapter. */
 export function getChapterDisplayLabel(book: Book, chapterId: string): string | undefined {
   const chapter = getChapterByChapterId(book, chapterId);
   if (chapter?.label) return chapter.label;
