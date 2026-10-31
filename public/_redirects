@@ -12,3 +12,7 @@ https://www.pedaver.com/*  https://pedaver.com/:splat  301!
 /certification                               /validation/       301
 /sample-page                                 /founder/          301
 /pqnk-paedar-qudratti-nizam-e-kashatqari     /science/          301
+
+# The Swaraj essay left the book (its vision now opens the book's Author's Note) and became KP-221 (2026-10-31).
+/books/natural-ecosystem-science/pqnk-and-agricultural-swaraj   /papers/pqnk-and-agricultural-swaraj/   301
+/books/natural-ecosystem-science/pqnk-and-agricultural-swaraj/  /papers/pqnk-and-agricultural-swaraj/   301

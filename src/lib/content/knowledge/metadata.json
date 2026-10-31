@@ -16588,6 +16588,80 @@
 "why":"why soil at wattar, not water given afterwards, keeps the sett alive"
 }
 ]
+},
+{
+"slug":"pqnk-and-agricultural-swaraj",
+"primarySubject":"The farmer’s freedom: how PQNK, by restoring the biological functions of a living soil, moves the farmer from dependence on purchased inputs to the independent management of a living ecosystem, read alongside Gandhi’s Gram Swaraj (village self-rule) and Gramodyog (village industry), with village enterprise, work for women, and prosperity measured by the value that stays with the farming household",
+"questionsAnswered":[
+"What is agricultural Swaraj?",
+"How does PQNK reduce a farmer’s dependence on purchased inputs?",
+"How does PQNK relate to Gandhi’s Gram Swaraj and Gramodyog?",
+"Why are small and marginal farmers most exposed to input costs?",
+"Can PQNK support village enterprises and work for women?",
+"How should agricultural success be measured beyond yield?"
+],
+"keywords":[
+"Swaraj",
+"agricultural Swaraj",
+"Gram Swaraj",
+"Gramodyog",
+"Gandhi",
+"farmer’s freedom",
+"economic independence",
+"input dependency",
+"marginal farmers",
+"smallholders",
+"village enterprise",
+"women",
+"Circular Production",
+"net farm income",
+"rural prosperity"
+],
+"geography":null,
+"crops":[],
+"fieldProblems":[
+"External Input Dependency",
+"High Input / Production Cost",
+"Macro / Policy-Level Externalities"
+],
+"problemFamily":[
+"Cost, Profit & Markets",
+"Transition / Conversion"
+],
+"fieldPractices":[
+"Permanent Raised Bed Formation",
+"No-Till / Minimal-Disturbance Planting",
+"Surface Mulching (General)",
+"Reduced/Eliminated Chemical Input",
+"Biological Nutrient Cycling"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Soil",
+"Transition"
+],
+"pqnkPrinciples":[
+"No Inundation",
+"No Soil Disturbance",
+"Permanent Biological Cover",
+"Maximum Biodiversity"
+],
+"productionStages":[
+"Transition/Conversion"
+],
+"evidenceType":"Philosophical/Framework Argument",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/soil",
+"why":"how a living, covered, undisturbed soil performs the work the farmer used to buy"
+},
+{
+"page":"/science/transition",
+"why":"how purchased inputs fall step by step as the soil matures"
+}
+]
 }
 
 ]

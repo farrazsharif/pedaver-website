@@ -5925,6 +5925,29 @@ export const papers: Paper[] = [
       "Less than 5 maunds of seed cane per acre in PQNK, against nearly 150 in conventional planting; best of all, bud chips raised in nursery trays and transplanted as healthy seedlings, with the whole cane sold to the mill.",
     ],
   },
+  {
+    slug: "pqnk-and-agricultural-swaraj",
+    kpNumber: 221,
+    libraryDate: "2026-10-31",
+    category: "PQNK Philosophy, Framework & Economics",
+    title: "PQNK and Agricultural Swaraj: Restoring the Farmer’s Freedom",
+    summary:
+      "An essay on the farmer’s freedom. Drawing on Gandhi’s Gram Swaraj and Gramodyog, it argues that the farmer should not have to buy, season after season, what a living soil gives for free: PQNK moves the farmer from a financially vulnerable purchaser of inputs to the independent manager of a living ecosystem, and lays the foundation for village enterprise, work for women, and prosperity without dependence.",
+    publishedDate: "2026-10-31",
+    pdfPath: "/papers/pqnk-and-agricultural-swaraj.pdf",
+    abstract: [
+      "Political independence does not necessarily bring economic independence. A nation may govern itself, yet millions of its farmers may remain dependent upon external institutions, commercial suppliers, financial lenders, and markets over which they exercise little control. PQNK approaches the question of rural independence through the biological foundations of agriculture, beginning with a simple proposition: the farmer should not have to purchase, season after season, the biological functions that a healthy natural ecosystem can perform.",
+      "The purpose of agricultural Swaraj is therefore not simply to make farming cheaper. It is to change the farmer’s position from that of a financially vulnerable purchaser of production inputs to that of an increasingly independent manager of a living productive ecosystem.",
+      "The farmer should not merely be the producer of society’s food. The farmer should also be an independent beneficiary of the prosperity that food production creates. That is the larger human purpose toward which PQNK aspires.",
+    ],
+    keyTakeaways: [
+      "The farmer should not have to buy, season after season, what a living soil gives for free.",
+      "PQNK changes the production relationship itself: the hardpan is broken once with a subsoiler, permanent raised beds replace the yearly rebuilding of the field, seed goes in through the mulch, and purchased inputs fall step by step during conversion.",
+      "Agricultural Swaraj is the farmer’s practical freedom to manage production with increasing independence, using machinery that strengthens that independence rather than arrangements that make the farmer perpetually dependent.",
+      "Lower costs and continuous harvests under Circular Production open room for village enterprise (Gramodyog), with fair pay, ownership and decision-making for women.",
+      "Success is measured not only by yield but by how much of the value created stays with the farming household.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {
