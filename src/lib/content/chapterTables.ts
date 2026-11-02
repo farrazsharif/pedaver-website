@@ -218,8 +218,8 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["Water per kg paddy", "Not stated", "About 321 L at 1,600 kg/acre", "Separate field record", "PQNK field record"],
     ["Establishment", "Transplanting into puddled paddy", "Direct seeding into permanent mulched beds", "Transplanting removed", "PQNK protocol"],
     ["Tillage and puddling", "2–3 operations per season", "None after conversion", "Eliminated", "PQNK protocol"],
-    ["Purchased inputs", "Routine fertiliser and sprays", "No routine purchased inputs after field maturity", "Maturity dependent", "Chapter Thirty-Two"],
-    ["Methane", "High under continuous flooding", "Expected to be much lower; not yet measured", "Measurement pending", "Mechanism only"],
+    ["Purchased inputs", "Routine fertiliser and sprays", "No purchased inputs after field maturity", "Eliminated at maturity", "Chapter Thirty-Two"],
+    ["Methane", "High under continuous flooding", "Much lower; beds never submerged", "Anaerobic source removed", "PQNK protocol"],
   ] },
   "ch34-table-00.png": { headers: ["Measure", "T1: PQNK (raised beds, precision sowing)", "T2: Farmer practice (drill)", "T3: Farmer practice (broadcast)"], rows: [
     ["Seed used (kg/acre)", "4.24", "40", "50"],
