@@ -2830,7 +2830,7 @@ export const books: Book[] = [
         publishedDate: "2026-09-27",
         modifiedDate: "2026-11-02",
         version: "1.2",
-        pdfPath: "/books/natural-ecosystem-science/rice.pdf",
+        pdfPath: "/books/natural-ecosystem-science/rice.pdf?v=1.2", // ?v= makes browsers fetch the replaced PDF, not a cached copy
         body: [
   { type: "openingQuote", text: "“Rice is one of agriculture’s most water-intensive staple crops. The 2009 raised-bed trial, with a hybrid coarse rice, produced 12.84 tonnes per hectare, compared with a regional average of about 4 tonnes. Later mature PQNK field records of Basmati used about 8 percent of the water of the flooded-rice reference. The two results are separate, but together they make rice the system’s most demanding proof of concept.”" },
   { type: "attribution", text: "Asif Sharif, Lahore, 2026" },
