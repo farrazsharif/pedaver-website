@@ -850,6 +850,20 @@ export const fieldEvidence: FieldEvidence[] = [
     videoId: "BeZrd4rzzlk",
     tags: ["ginger", "spice crop", "rhizome", "seed rhizome", "Lahore", "hardpan", "permanent raised beds", "Jantar", "mulch", "soil temperature", "intercropping", "shade", "no fertiliser", "harvest", "import substitution"],
   },
+  {
+    feNumber: 54,
+    title: "Sugarcane on PQNK: Gurr at 12% Recovery",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
+    cropOrTopic: "Sugarcane grown with no inputs, made into gurr (jaggery) at the farmer's own crusher",
+    year: 2026,
+    date: "2026-11-06",
+    summary:
+      "In a voice exchange on the PQNK group, a farmer who grows sugarcane under PQNK answers three questions from another member: the variety, how the gurr is made, and its recovery. The variety is US-133, also known as CPF-253, and the cane was grown on PQNK with nothing purchased and no inputs of any kind. He measures recovery with the ordinary canister used for juice: each holds 16 to 17 litres of juice and is filled from 33 to 35 kg of cane, and a batch of six canisters gives 24 to 25 kg of gurr, about 4 kg from each canister, a recovery of about 12%. The member says he had never heard of more than 10% from conventionally grown cane. The gurr is cleaned in the traditional way with sukhlai, a slimy plant like okra, so only about a quarter teaspoon of baking soda goes into a whole 24 to 25 kg batch, sometimes none, with about as little of the clearing agent. A cane crusher has been set up in his village for the first time in about 30 years; cane brought from nearby villages, often lodged and damaged by rats, needs a great deal of soda and colour agent and still gives gurr of poor colour, taste and shine. His gurr sells at Rs. 250 per kg straight from the crusher, in any quantity from half a kilo to a maund, and customers come back for more; he thinks it would still sell easily at Rs. 220 to 230 in bulk. The member notes that conventional gurr sells for about Rs. 7,000 per maund wholesale and about Rs. 220 per kg retail, so the farmer gets more at the crusher than gurr fetches in the shops. In a written message the farmer explains that he does not send his cane to the mill because it does not pay farmers a fair rate or recognise the quality of his cane, and that his ratoon crop will be ready at about the end of August, for sale to juice stalls, which he expects to pay as well as gurr or better. The video shows his tall canes, tied in bundles and standing upright.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/ZArdaJ7kXbs",
+    videoId: "ZArdaJ7kXbs",
+    tags: ["sugarcane", "gurr", "jaggery", "recovery", "US-133", "CPF-253", "farmer testimony", "no inputs", "sukhlai", "ratoon", "cane crusher", "juice", "Sahiwal"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
