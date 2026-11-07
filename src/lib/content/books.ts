@@ -146,7 +146,7 @@ export const books: Book[] = [
     subtitle: "Industrial Devastation To Natural Abundance",
     coverImage: {
       src: "/books/natural-ecosystem-science/cover.jpg",
-      alt: "Cover of PQNK: The Natural Ecosystem Science of Production Agriculture — Industrial Devastation To Natural Abundance, showing a split landscape: an industrial field with a smokestack and bare, cracked soil on the left, and a thriving orchard with visible healthy root and mycorrhizal networks on the right. By Asif Sharif, Agricultural Researcher and PQNK Founder.",
+      alt: "Cover of PQNK: The Natural Ecosystem Science of Production Agriculture — Industrial Devastation To Natural Abundance, showing a split landscape: an industrial field with a smokestack and bare, cracked soil on the left, and a thriving orchard with visible healthy root and mycorrhizal networks on the right. By Asif Sharif, Researcher and Developer of PQNK.",
       width: 700,
       height: 991,
     },

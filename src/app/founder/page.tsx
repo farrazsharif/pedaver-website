@@ -5,9 +5,9 @@ import FounderGallery from "@/components/FounderGallery";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Asif Sharif — Founder Chairman of Pedaver and Architect of PQNK",
+  title: "Asif Sharif, Researcher and Developer of PQNK and Founder Chairman of Pedaver",
   description:
-    "Meet Asif Sharif, agricultural researcher, production-system designer and founder of PQNK — Founder Chairman of Pedaver, and designer of the VIPP and SIPP no-till planters.",
+    "Meet Asif Sharif, Researcher and Developer of PQNK, Founder Chairman of Pedaver, production-system designer and designer of the VIPP and SIPP no-till planters.",
   path: "/founder",
   image: "https://pedaver.com/images/asif-sharif.png",
 });
@@ -19,9 +19,9 @@ const personJsonLd = {
   name: "Asif Sharif",
   url: `${SITE_URL}/founder`,
   image: `${SITE_URL}/images/asif-sharif.png`,
-  jobTitle: "Founder Chairman of Pedaver",
+  jobTitle: "Researcher and Developer of PQNK; Founder Chairman of Pedaver",
   description:
-    "Agricultural researcher, production-system designer and machinery innovator; founder of PQNK and Founder Chairman of Pedaver.",
+    "Researcher and Developer of PQNK and Founder Chairman of Pedaver; production-system designer and machinery innovator.",
   worksFor: { "@id": `${SITE_URL}/#organization` },
   sameAs: ["https://www.youtube.com/@aasifsharif"],
 };
@@ -51,7 +51,7 @@ function withInlineLinks(text: string, terms: InlineLinkTerm[]) {
 }
 
 const INTRO_LINKS: InlineLinkTerm[] = [
-  { match: "founder of PQNK", href: "/" },
+  { match: "Researcher and Developer of PQNK", href: "/" },
   { match: "Pedaver", href: "/about" },
 ];
 

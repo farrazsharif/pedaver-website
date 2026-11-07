@@ -303,9 +303,9 @@ const en = {
   },
   founder: {
     pageTitle: "Asif Sharif",
-    pageSubtitle: "Founder of PQNK and Founder Chairman of Pedaver",
+    pageSubtitle: "Researcher and Developer of PQNK and Founder Chairman of Pedaver",
     intro:
-      "Asif Sharif is an agricultural researcher, production-system designer and machinery innovator: the founder of PQNK and Founder Chairman of Pedaver. He began his agricultural career within modern industrial agriculture, gaining direct experience in mechanisation, precision planting, irrigation, harvesting, crop production and machinery, and came to understand that system from inside it rather than criticising it from outside. That same field experience exposed agriculture's chemical-intensive model trading long-term soil health for short-term yield, a trade he concluded could not hold. Rather than refine that model, he set out to design a different one, grounded in how natural ecosystems have built fertility for hundreds of millions of years. PQNK has emerged from more than five decades of agricultural practice, observation, experimentation and engineering.",
+      "Asif Sharif is the Researcher and Developer of PQNK and Founder Chairman of Pedaver, a production-system designer and machinery innovator. He began his agricultural career within modern industrial agriculture, gaining direct experience in mechanisation, precision planting, irrigation, harvesting, crop production and machinery, and came to understand that system from inside it rather than criticising it from outside. That same field experience exposed agriculture's chemical-intensive model trading long-term soil health for short-term yield, a trade he concluded could not hold. Rather than refine that model, he set out to design a different one, grounded in how natural ecosystems have built fertility for hundreds of millions of years. PQNK has emerged from more than five decades of agricultural practice, observation, experimentation and engineering.",
     sections: [
       {
         title: "Five Decades in the Field",
@@ -316,7 +316,7 @@ const en = {
         body: "Before PQNK could work at field scale, the machinery to apply it didn't exist, so Sharif designed it himself. His engineering work includes soil scrapers, fine laser levelers, ridgers and ditchers for land preparation without damage; raised bed shapers, compost banders and precision seeders that form a regenerative farm's physical infrastructure; and the VIPP (Vertical Insertion Precision Planter) and SIPP (Slit Insertion Precision Planter), which plant seed directly through thick mulch without disturbing the soil beneath it.",
       },
       {
-        title: "The Architect of PQNK",
+        title: "Researcher and Developer of PQNK",
         body: "PQNK rests on a small set of non-negotiable principles: a strict no-till commitment that leaves roots and fungal networks undisturbed; permanent raised beds that stay free of machinery compaction, with furrows carrying water and traffic instead of the bed itself and irrigation managed to avoid the inundation that drowns soil life; a thick organic mulch layer that holds soil temperature in the 13–26°C range soil microbial life needs; and the living soil that results, where microbial activity converts the soil's own mineral reserves into nutrition, crop by crop. Documented results include an approximately 70–90% reduction in externally supplied irrigation water, the elimination of agrochemical inputs, and lower production costs alongside higher-quality output.",
       },
       {
