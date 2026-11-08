@@ -356,7 +356,7 @@ export const books: Book[] = [
         publishedDate: "2026-08-31",
         modifiedDate: "2026-09-29",
         version: "1.1",
-        pdfPath: "/books/natural-ecosystem-science/the-0-083-paradox.pdf?v=2",
+        pdfPath: "/books/natural-ecosystem-science/the-0-083-paradox.pdf?v=3",
         slidesPdfPath: "/books/natural-ecosystem-science/the-0-083-paradox-slides.pdf",
         body: [
   { type: "imageGroup", files: ["ch3-img-01.png"] },
