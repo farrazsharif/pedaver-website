@@ -544,7 +544,9 @@ const en = {
     readChapter: "Read Chapter",
     downloadChapterPdf: "Download Chapter PDF (English)",
     downloadSlidesPdf: "Visual Summary (Slides PDF)",
-    downloadCompleteBook: "Download Complete Book",
+    downloadCompleteBook: "Download the Complete Book (PDF)",
+    completeBookNote:
+      "The whole First Edition in one file: 601 pages, about 75 MB. Free to read, print and share without charge, unaltered and credited to the book and its author.",
     backToBook: "Back to Book Contents",
     backToBooks: "All PQNK Books",
     bookContents: "Book Contents",

@@ -10,6 +10,7 @@ import {
 } from "@/lib/content/books";
 import Section from "@/components/Section";
 import BookCoverImage from "@/components/books/BookCoverImage";
+import TrackedPdfLink from "@/components/analytics/TrackedPdfLink";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
 
 export async function generateStaticParams() {
@@ -94,12 +95,15 @@ export default async function BookLandingPage({
       {book.completeBookPdfPath && (
         <Section>
           <div className="mx-auto max-w-2xl text-center">
-            <a
+            <TrackedPdfLink
               href={book.completeBookPdfPath}
+              contentId={`${book.bookId}/complete-book`}
+              contentTitle={book.title}
               className="inline-block rounded-full bg-primary px-6 py-3 text-sm font-semibold text-cream shadow-sm transition hover:bg-primary-dark"
             >
               {dict.books.downloadCompleteBook}
-            </a>
+            </TrackedPdfLink>
+            <p className="mt-3 text-sm text-ink-soft">{dict.books.completeBookNote}</p>
           </div>
         </Section>
       )}
@@ -124,10 +128,8 @@ export default async function BookLandingPage({
                   <ol className="mt-3 flex flex-col gap-2">
                     {chapters.map((chapter) => {
                       const number = getChapterDisplayNumber(book, chapter.chapterId);
-                      // Unnumbered entries: "App." for the appendix, nothing for Acknowledgements.
-                      const short = chapter.label
-                        ? chapter.label.replace(/^Appendix\b/, "App.").replace(/^Acknowledgements$/, "")
-                        : `Ch. ${number}`;
+                      // Unnumbered entries (front matter, Acknowledgements, back matter) show no number; "App." for an appendix.
+                      const short = chapter.label ? (/^Appendix\b/.test(chapter.label) ? "App." : "") : `Ch. ${number}`;
                       return (
                         <li key={chapter.chapterId} className="flex items-baseline gap-3 text-sm">
                           <span className="w-14 flex-none text-ink-soft/60">{short}</span>
@@ -145,7 +147,7 @@ export default async function BookLandingPage({
               </div>
             ))}
           </div>
-          {hasAnyPublishedChapter ? (
+          {book.status === "complete" ? null : hasAnyPublishedChapter ? (
             <>
               <p className="mt-6 text-sm text-ink-soft">{dict.books.moreChaptersComingNote}</p>
               <p className="mt-2 text-xs text-ink-soft">{dict.books.chapterNumbersProvisionalNote}</p>
