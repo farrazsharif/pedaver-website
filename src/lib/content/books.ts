@@ -145,7 +145,7 @@ export const books: Book[] = [
     title: "PQNK: The Natural Ecosystem Science of Production Agriculture",
     subtitle: "Industrial Devastation To Natural Abundance",
     coverImage: {
-      src: "/books/natural-ecosystem-science/cover.jpg",
+      src: "/books/natural-ecosystem-science/cover.jpg?v=2",
       alt: "Cover of PQNK: The Natural Ecosystem Science of Production Agriculture — Industrial Devastation To Natural Abundance, showing a split landscape: an industrial field with a smokestack and bare, cracked soil on the left, and a thriving orchard with visible healthy root and mycorrhizal networks on the right. By Asif Sharif, Researcher and Developer of PQNK.",
       width: 700,
       height: 991,
@@ -154,7 +154,7 @@ export const books: Book[] = [
       "The first of Pedaver's four PQNK books: the complete natural-ecosystem science behind PQNK, drawn from fifty-three years of field research. The complete First Edition (2026) is published here in full, free to read, listen to and download, chapter by chapter or as one book.",
     status: "complete",
     edition: "First Edition 2026",
-    completeBookPdfPath: "/books/natural-ecosystem-science/pqnk-complete-book.pdf?v=1",
+    completeBookPdfPath: "/books/natural-ecosystem-science/pqnk-complete-book.pdf?v=2",
     // Editorial contents structure below is synced to the locked V60 manuscript's Table
     // of Contents (as of 2026-08-30): 8 Parts, 66 chapters. Chapter titles/subtitles here
     // reproduce V60's chapter names exactly; where V60's TOC gives a short bare title and
