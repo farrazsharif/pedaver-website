@@ -67,7 +67,7 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["Maximum water head", "4 inches", "Supplementary flow without inundating the bed."],
   ] },
   "ch31-table-04.png": { headers: ["DESIGN ELEMENT", "PQNK DECISION RULE"], rows: [
-    ["Tree row", "Select species and spacing by mature managed canopy, root behaviour, harvest method and market—not nursery size."],
+    ["Tree row", "Select species and spacing by mature managed canopy, root behaviour, harvest method and market, not nursery size."],
     ["Crop alley", "Keep sufficient seasonal sunlight and working width for annual crops throughout the planned life of the system."],
     ["Bed continuity", "Maintain permanent 42-inch mulched beds; do not cultivate the alley after each harvest."],
     ["Traffic", "Keep people, carts and wheels in furrows or designated lanes."],
@@ -96,7 +96,7 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["4. Tree and shrub harvest", "Harvest long-duration components as their windows arrive.", "Larger seasonal receipts and household fruit.", "Prune for future light and return safe biomass."],
     ["5. Immediate renewal", "Replace completed annuals at designated points without rebuilding the bed.", "Begin the next cycle before cash flow stalls.", "Keep a living root and surface cover throughout."],
   ] },
-  "ch31-table-08.png": { headers: ["CROP ROLE", "SELECTION CRITERIA", "EXAMPLES—LOCALISE"], rows: [
+  "ch31-table-08.png": { headers: ["CROP ROLE", "SELECTION CRITERIA", "EXAMPLES: LOCALISE"], rows: [
     ["Frequent harvest", "Repeat picking, reliable demand, manageable daily volume", "Okra, tomato, cucumber, gourds, beans, herbs"],
     ["Quick cash or food", "Short maturity, staggerable sowing, low handling loss", "Radish, coriander, leafy greens, selected roots"],
     ["Household staples", "Meaningful food saving and cultural importance", "Locally preferred grains, pulses, oilseeds"],
@@ -105,7 +105,7 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["System support", "Biomass, nitrogen fixation, pollinator habitat, fodder", "Locally adapted legumes, flowers, fodders and biomass plants"],
   ] },
   "ch31-table-09.png": { headers: ["PHASE", "BIOLOGICAL PRIORITY", "ECONOMIC PRIORITY", "DECISION GATE"], rows: [
-    ["0. Diagnose", "Map compaction, drainage, soil cover, water and existing biology.", "Record current yield, input, labour and market baseline.", "Is the field layout and livelihood goal realistic?"],
+    ["0. Diagnose", "Map compaction, waterlogging, soil cover, water and existing biology.", "Record current yield, input, labour and market baseline.", "Is the field layout and livelihood goal realistic?"],
     ["1. Establish", "Create permanent geometry; cover soil; retain roots and residues; begin diversity.", "Protect household food and avoid excessive capital exposure.", "Can the household manage the new beds accurately?"],
     ["2. Diversify", "Add compatible crop windows, support species and carefully placed trees.", "Build several small revenue streams and buyers.", "Are labour, quality and sales keeping pace?"],
     ["3. Overlap", "Use proven crop-after-crop and crop-in-crop sequences.", "Reduce idle weeks and smooth cash flow.", "Does overlap improve total performance without crop penalty?"],
@@ -150,7 +150,7 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
   ] },
   "ch31-table-15.png": { headers: ["FIELD AND WATER", "CURRENT FACT", "DESIGN RESPONSE"], rows: [
     ["Secure area and tenure", "________________", "________________"],
-    ["Slope, drainage and compacted layer", "________________", "________________"],
+    ["Slope, waterlogging and compacted layer", "________________", "________________"],
     ["Water source, timing and cost", "________________", "________________"],
     ["Existing trees and seasonal shade", "________________", "________________"],
     ["Bed or furrow modules possible", "________________", "________________"],
@@ -165,7 +165,7 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["What evidence will trigger expansion?", "________________________________________"],
   ] },
   "ch32-table-00.png": { title: "THE CENTRAL QUESTION", rows: [
-    ["Does the farming system restore the soil as a living production system—and can that restoration be demonstrated through crop performance, water behaviour, biodiversity, declining intervention and farmer control?"],
+    ["Does the farming system restore the soil as a living production system, and can that restoration be demonstrated through crop performance, water behaviour, biodiversity, declining intervention and farmer control?"],
   ] },
   "ch32-table-01.png": { headers: ["Question", "PQNK requirement", "What other frameworks may require"], rows: [
     ["Breaking the Hardpan", "It is a fundamental PQNK requirement.", "No other system makes it mandatory."],
@@ -174,7 +174,7 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["Water", "Nature maintains soil moisture; furrow flow is supplementary and field-triggered.", "Requirements vary. Most standards do not prescribe a single water architecture."],
     ["Purchased inputs", "At maturity, routine crop production is designed to operate without purchased fertiliser or pesticide inputs.", "Organic, conservation and regenerative systems may still use permitted or reduced external inputs."],
     ["Plant establishment", "Precision insertion with SIPP or VIPP, through mulch, with minimal disturbance.", "Direct seeding may be used, but equipment and disturbance thresholds vary."],
-    ["Maturity", "Declared from field evidence: soil function, crop stability and cessation of routine purchased crop inputs—not from a calendar promise.", "Most frameworks define practices or certification status rather than a PQNK-style maturity state."],
+    ["Maturity", "Declared from field evidence: soil function, crop stability and cessation of routine purchased crop inputs, not from a calendar promise.", "Most frameworks define practices or certification status rather than a PQNK-style maturity state."],
     ["Management standard", "A reproducible field architecture, operating sequence and evidence record.", "Some systems have formal standards; others are principle-led and locally interpreted."],
   ] },
   "ch32-table-02.png": { title: "EVIDENCE OF PQNK MATURITY", rows: [
@@ -253,7 +253,7 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["Seed and stand", "Local rate and established population recorded", "Precision placement; verify emergence", "Adjust from measured stand and yield", "About 40,000 plants per acre for erect-leaf varieties; set by seed count"],
     ["Purchased fertility", "Full local programme recorded", "Correct only an observed deficiency", "Declining correction as biology recovers", "Zero purchased fertiliser is the maturity target"],
     ["Water management", "Local irrigations and volume recorded", "Ball test; furrow flow only", "Furrow flow whenever the ball test fails", "Furrow flow on a failed ball test, most often in the pre-monsoon summer heat"],
-    ["Pest management", "Local spray programme recorded", "Frequent observation; intervene if damage approaches 10%", "Habitat and biological regulation strengthening", "Zero routine pesticide is the mature standard; continue monitoring"],
+    ["Pest management", "Local spray programme recorded", "Frequent observation; below 2% where every step is followed", "Habitat and biological regulation strengthening", "Zero routine pesticide is the mature standard; continue monitoring"],
     ["Yield evidence", "Harvested area, grain moisture and saleable weight", "Measure crop 1 separately", "Measure crop 2 separately", "Measure every cycle; do not substitute projections"],
     ["Economic evidence", "Full annual rotation costs and net return", "Transition costs visible", "All additional-cycle costs included", "Net annual return after labour, losses, drying, storage and marketing"],
   ] },
