@@ -125,6 +125,8 @@ export interface Book {
   };
   /** Set only once the manuscript is frozen — see the file note on the Complete First Edition. */
   edition?: string;
+  /** 1200x630 picture shown when the book's page link is shared (WhatsApp, Facebook, X). Path under /public. */
+  shareImage?: string;
   parts: BookPart[];
   /**
    * The CURRENT chapter sequence, in order. This is the single authoritative
@@ -154,6 +156,7 @@ export const books: Book[] = [
       "The first of Pedaver's four PQNK books: the complete natural-ecosystem science behind PQNK, drawn from fifty-three years of field research. The complete First Edition (2026) is published here in full, free to read, listen to and download, chapter by chapter or as one book.",
     status: "complete",
     edition: "First Edition 2026",
+    shareImage: "/books/natural-ecosystem-science/og-book.jpg?v=1",
     completeBookPdfPath: "/books/natural-ecosystem-science/pqnk-complete-book.pdf?v=2",
     // Editorial contents structure below is synced to the locked V60 manuscript's Table
     // of Contents (as of 2026-08-30): 8 Parts, 66 chapters. Chapter titles/subtitles here

@@ -16,3 +16,7 @@ https://www.pedaver.com/*  https://pedaver.com/:splat  301!
 # The Swaraj essay left the book (its vision now opens the book's Author's Note) and became KP-221 (2026-10-31).
 /books/natural-ecosystem-science/pqnk-and-agricultural-swaraj   /papers/pqnk-and-agricultural-swaraj/   301
 /books/natural-ecosystem-science/pqnk-and-agricultural-swaraj/  /papers/pqnk-and-agricultural-swaraj/   301
+
+# Short share link for the complete PQNK book (2026-11-08): the book page carries the cover as its link preview.
+/book     /books/natural-ecosystem-science/   301
+/book/    /books/natural-ecosystem-science/   301

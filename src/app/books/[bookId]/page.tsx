@@ -30,6 +30,7 @@ export async function generateMetadata({
     title: `${book.title} | Pedaver`,
     description: book.description,
     path: `/books/${bookId}`,
+    ...(book.shareImage ? { image: `${SITE_URL}${book.shareImage}` } : {}),
   });
 }
 
