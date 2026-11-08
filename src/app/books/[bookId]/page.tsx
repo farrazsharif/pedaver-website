@@ -10,7 +10,6 @@ import {
 } from "@/lib/content/books";
 import Section from "@/components/Section";
 import BookCoverImage from "@/components/books/BookCoverImage";
-import TrackedPdfLink from "@/components/analytics/TrackedPdfLink";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
 
 export async function generateStaticParams() {
@@ -96,14 +95,13 @@ export default async function BookLandingPage({
       {book.completeBookPdfPath && (
         <Section>
           <div className="mx-auto max-w-2xl text-center">
-            <TrackedPdfLink
-              href={book.completeBookPdfPath}
-              contentId={`${book.bookId}/complete-book`}
-              contentTitle={book.title}
+            {/* Goes through /book/download (cover link preview when the link is shared; it opens the PDF at once). */}
+            <Link
+              href="/book/download"
               className="inline-block rounded-full bg-primary px-6 py-3 text-sm font-semibold text-cream shadow-sm transition hover:bg-primary-dark"
             >
               {dict.books.downloadCompleteBook}
-            </TrackedPdfLink>
+            </Link>
             <p className="mt-3 text-sm text-ink-soft">{dict.books.completeBookNote}</p>
           </div>
         </Section>
