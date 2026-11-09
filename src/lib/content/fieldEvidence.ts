@@ -864,6 +864,22 @@ export const fieldEvidence: FieldEvidence[] = [
     videoId: "ZArdaJ7kXbs",
     tags: ["sugarcane", "gurr", "jaggery", "recovery", "US-133", "CPF-253", "farmer testimony", "no inputs", "sukhlai", "ratoon", "cane crusher", "juice", "Sahiwal"],
   },
+  {
+    feNumber: 55,
+    title: "Citrus Orchard on PQNK, Kabirwala: Four Years Without Inputs",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
+    cropOrTopic: "Citrus orchard (Feutrell's Early, Kinnow, lemon) revived on PQNK after the trees had declined",
+    year: 2026,
+    date: "2026-11-09",
+    location: "Kabirwala, Khanewal",
+    farmer: "Irshad Ali Bhatti",
+    summary:
+      "Irshad Ali Bhatti walks through his citrus orchard at tehsil Kabirwala, district Khanewal, at sunset, four years after it moved to PQNK. In that time it has had no fertiliser, no spray and no hoeing, and the ground under the trees is covered with mulch. Before PQNK his Feutrell's Early trees had declined so badly that the family had come close to cutting the orchard down. Instead the worn-out trees were cut back near the trunk and the orchard was shifted to PQNK; they have grown new branches and recovered, and now stand heavily loaded with fruit that is colouring well, with only some fruit drop. He shows Feutrell's Early, Kinnow and lemon trees in full fruit, along with young Kinnow plants and new grafted plants he ordered, and he does the light pruning of small branches himself when he visits every Sunday. He credits the recovery to Asif Sharif's guidance, saying the orchard had reached a stress the family could no longer bear.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/TupAPEEk06E",
+    videoId: "TupAPEEk06E",
+    tags: ["citrus", "Feutrell's Early", "Kinnow", "lemon", "orchard", "farmer testimony", "orchard revival", "cut back", "no inputs", "no fertiliser", "no spray", "no hoeing", "mulch", "Kabirwala", "Khanewal", "Irshad Ali Bhatti"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
