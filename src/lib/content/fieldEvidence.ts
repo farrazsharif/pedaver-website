@@ -880,6 +880,20 @@ export const fieldEvidence: FieldEvidence[] = [
     videoId: "TupAPEEk06E",
     tags: ["citrus", "Feutrell's Early", "Kinnow", "lemon", "orchard", "farmer testimony", "orchard revival", "cut back", "no inputs", "no fertiliser", "no spray", "no hoeing", "mulch", "Kabirwala", "Khanewal", "Irshad Ali Bhatti"],
   },
+  {
+    feNumber: 56,
+    title: "Orchard on PQNK: A Farmer Reports from India",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence", "Advisory"],
+    cropOrTopic: "Mango and citrus orchard after tillage stopped; water kept away from the trunk, trees on raised beds",
+    year: 2026,
+    date: "2026-11-09",
+    summary:
+      "A farmer from India, speaking in Punjabi to Asif Sharif and the PQNK group, shows his orchard after he stopped tilling it. He had brought at least 60 mango plants from nurseries, and none of them would grow; they only began to grow once the ploughing stopped. Now, about two years on, every plant is putting out healthy new leaves, including one that had dried to a stump a hand-span high and has grown back strongly. In the citrus he is running the mulcher through for the fourth time instead of ploughing; when the ground was ploughed there was always some problem, and this year the trees carry very good fruit. Asif Sharif's reply in the video praises the work but points to one serious mistake: the new plants sit in dug-out basins, so the ground around them is low and water reaches the trunk, when water should never touch the plant. He tells the farmer to fill every pit and raise the ground along the plant rows into beds, then leave them; whoever controls water succeeds with the orchard and the crop. For the mango, he advises pruning the top at the end of December, cutting back the upward-growing branches to leave two to three inches, so that new branches come and fruit in the coming season. The farmer explains that he made his beds in 2018 and 2019 on Asif Sharif's advice, including their direction, but the pits of the newer plants ended up low, and he will now add soil to raise them.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/84cfH_kuKko",
+    videoId: "84cfH_kuKko",
+    tags: ["mango", "citrus", "malta", "orchard", "India", "Punjab", "farmer testimony", "advisory", "no tillage", "mulcher", "raised beds", "planting basins", "water away from trunk", "water management", "pruning", "orchard revival", "nursery plants"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
