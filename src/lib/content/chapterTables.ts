@@ -1471,4 +1471,14 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["Radius of a circle of that area", "about 5.4 km", "about 3.4 km"],
     ["Practical sourcing radius, with room for roads, villages and other crops", "about 10 km", "about 6 km"],
   ] },
+  "kp222-table-01.png": { headers: ["Step", "What the farmer does", "What it gives the soil’s life"], rows: [
+    ["1. Design the field", "Level the field and plan the beds and water", "Even moisture, no standing water on the beds"],
+    ["2. Break the hardpan", "Once, with a subsoiler", "Roots and water can go deep; air reaches the root zone"],
+    ["3. Wash the soil", "Where the pH is above 8", "A soil the microbes can live in"],
+    ["4. Form the permanent raised beds", "Once; the beds are never rebuilt", "The soil is never inverted again; fungal networks can grow"],
+    ["5. Grow the first cover crop", "Jantar or an equivalent, cut and laid as mulch", "Living roots reopen the soil and feed the first microbes"],
+    ["6. Crop-after-crop and crop-in-crop", "Seed into the mulch; grow diverse crops together", "Living roots all year; a diverse community below ground"],
+    ["7. Manage soil moisture", "Water by the ball test, never by calendar or flooding", "Moist, aerated soil where the microbes work"],
+    ["8. Harvest without resetting", "Residue stays as mulch; no tillage, no chemicals", "The life of the soil grows season after season"],
+  ] },
 };

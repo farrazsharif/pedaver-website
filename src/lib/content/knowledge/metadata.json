@@ -16662,6 +16662,83 @@
 "why":"how purchased inputs fall step by step as the soil matures"
 }
 ]
+},
+{
+"slug":"whole-food-from-a-living-soil",
+"primarySubject":"How soil microbes working at full scale let the plant produce whole food, and how whole food builds an able body and a clear, conscious mind that helps build character in a people; prompted by an Indian farmer’s question linking the life of the soil to the health and character of a society",
+"questionsAnswered":[
+"What is whole food?",
+"How do soil microbes affect the nutritional quality of food?",
+"How does food from living soil affect human health?",
+"Can soil health affect brain development and the mind?",
+"Is the health and character of a people linked to the soil it eats from?",
+"How does a farmer grow whole food?"
+],
+"keywords":[
+"whole food",
+"nutrition-dense food",
+"soil microbes",
+"mycorrhizal fungi",
+"bio-potentiation",
+"gut microbiome",
+"brain development",
+"clear mind",
+"character",
+"honesty",
+"compassion",
+"empathy",
+"human health",
+"food quality",
+"living soil"
+],
+"geography":null,
+"crops":[],
+"fieldProblems":[
+"Declining Nutrient Density in Food",
+"Soil Biology / Microbiome Decline",
+"Diet-Related Health / Food Security Concern",
+"Contamination / Residue / Food Safety Risk",
+"Tillage Damage to Soil Biology / Structure"
+],
+"problemFamily":[
+"Yield & Produce Quality",
+"Soil & Roots"
+],
+"fieldPractices":[
+"Soil Biology Restoration (General)",
+"Biological Nutrient Cycling",
+"Reduced/Eliminated Chemical Input",
+"No-Till / Minimal-Disturbance Planting",
+"PQNK Transition Protocol (Staged)"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Nutrition",
+"Food Quality",
+"Soil"
+],
+"pqnkPrinciples":[
+"No Soil Disturbance",
+"No Inundation",
+"Permanent Biological Cover",
+"Maximum Biodiversity"
+],
+"productionStages":[
+"Transition/Conversion"
+],
+"evidenceType":"Scientific Mechanism",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/nutrition",
+"why":"how a living soil carries the full mineral spectrum into food"
+},
+{
+"page":"/science/food-quality",
+"why":"why food from living soil is whole, not merely heavy"
+}
+]
 }
 
 ]

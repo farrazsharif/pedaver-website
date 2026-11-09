@@ -5948,6 +5948,29 @@ export const papers: Paper[] = [
       "Success is measured not only by yield but by how much of the value created stays with the farming household.",
     ],
   },
+  {
+    slug: "whole-food-from-a-living-soil",
+    kpNumber: 222,
+    libraryDate: "2026-11-09",
+    category: "Nutrition & Food Quality",
+    title: "Whole Food from a Living Soil: Able Bodies and Clear, Conscious Minds",
+    summary:
+      "A farmer from India asked whether the health of a people begins in the soil. This paper answers him, link by link: soil microbes working at full scale help the plant produce whole food, carrying the full spectrum of minerals and protective compounds with no chemical residue; whole food builds an able body and a clear, conscious mind; and such a mind helps build character in a people, from honesty and respect for all to compassion, empathy and cheerfulness. When the life of the soil is broken, every link after it weakens.",
+    publishedDate: "2026-11-09",
+    pdfPath: "/papers/whole-food-from-a-living-soil.pdf",
+    abstract: [
+      "A farmer from India who follows PQNK sent Asif Sharif a voice note with a question. He feels, from his time in the field, that where the microbes of a region’s soil are fully alive, its people are strong, clear-minded and of good character, and that when the microbial cycle of nature was broken, the cycle of society broke with it. He asked whether he is right.",
+      "This paper answers him. It sets out what whole food is, how the soil’s microbes make it possible, how whole food builds an able body and a clear, conscious mind, and why a farming system that kills the soil’s life also weakens the people who eat from it.",
+      "The farmer’s insight stands on the same chain PQNK calls bio-potentiation: soil, plant, food, body and mind are one continuous living system, and it is restored from the soil upward.",
+    ],
+    keyTakeaways: [
+      "Soil microbes, when they function at full scale, help plants produce whole food; whole food develops able bodies and clear, conscious minds.",
+      "Whole food carries the full spectrum of minerals, the vitamins and protective compounds built from them, and no chemical residue; ACI food is heavy but fragmented.",
+      "The plant feeds the microbes with 20 to 40 percent of its carbon sent below ground, and the microbes deliver the minerals and nitrogen it cannot reach alone.",
+      "Healthy soil microbes, through the wholeness of food, support brain development and a healthy mind, which helps build honesty, respect for all, compassion, empathy and cheerfulness in a people.",
+      "Whole food is grown, not bought: follow the eight steps of the PQNK conversion in order, then leave the soil’s life undisturbed.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {
