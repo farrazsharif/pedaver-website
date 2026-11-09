@@ -894,6 +894,20 @@ export const fieldEvidence: FieldEvidence[] = [
     videoId: "84cfH_kuKko",
     tags: ["mango", "citrus", "malta", "orchard", "India", "Punjab", "farmer testimony", "advisory", "no tillage", "mulcher", "raised beds", "planting basins", "water away from trunk", "water management", "pruning", "orchard revival", "nursery plants"],
   },
+  {
+    feNumber: 57,
+    title: "Onion on PQNK: Growing Through the Mulch",
+    evidenceTypes: ["Field Evidence"],
+    cropOrTopic: "Young onion crop in several lines along the bed, under a full cover of straw mulch",
+    year: 2026,
+    date: "2026-11-09",
+    summary:
+      "A short walk through a young onion crop grown under PQNK. The onions stand in several straight lines along the bed, upright and green, and grow up through a thick layer of straw mulch that covers the soil completely, with no bare ground between the lines. A close look at the surface shows the depth of the mulch the plants have come through. The video carries no commentary; the field speaks for itself: a crop established into permanent cover rather than into bare, tilled soil.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/VfjToocFZ2I",
+    videoId: "VfjToocFZ2I",
+    tags: ["onion", "vegetables", "field evidence", "mulch", "straw mulch", "permanent cover", "no bare soil", "raised beds", "crop establishment"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
