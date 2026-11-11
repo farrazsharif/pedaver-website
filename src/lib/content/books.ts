@@ -100,6 +100,8 @@ export interface BookChapter {
   pdfPath?: string;
   /** Optional visual summary of the chapter as a slide-deck PDF, offered beside the chapter PDF. Path under /public like pdfPath. */
   slidesPdfPath?: string;
+  /** Optional YouTube video ID of the chapter's narrated farmer video (English), shown above the chapter text. */
+  videoId?: string;
 }
 
 export interface Book {
@@ -265,6 +267,7 @@ export const books: Book[] = [
         version: "1.0",
         pdfPath: "/books/natural-ecosystem-science/earths-original-design.pdf?v=2",
         slidesPdfPath: "/books/natural-ecosystem-science/earths-original-design-slides.pdf",
+        videoId: "MdbXdcgHkLU",
         body: [
   { type: "imageGroup", files: ["ch1-img-01.jpg", "ch1-img-02.jpg"] },
   { type: "caption", text: "Left: nature's original design. Every layer occupied, every niche filled, no bare soil, no chemical input. Right: the bare, exposed earth of conventional tillage. The same design, dismantled. This is the contrast PQNK restores." },

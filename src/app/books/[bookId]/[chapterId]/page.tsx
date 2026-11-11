@@ -19,6 +19,7 @@ import ShareButton from "@/components/ShareButton";
 import TranslatedPageDownload from "@/components/TranslatedPageDownload";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
 import { buildChapterSpeech } from "@/lib/content/chapterSpeech";
+import VideoEmbed from "@/components/VideoEmbed";
 import ChapterBody from "./ChapterBody";
 import ReadAloud from "./ReadAloud";
 
@@ -133,6 +134,20 @@ export default async function ChapterPage({
 
       <Section>
         <TranslatedPageDownload />
+        {chapter.videoId && (
+          <div className="no-print mx-auto mb-8 max-w-4xl">
+            <h2 className="mb-1 text-xl font-semibold text-primary-dark" style={{ fontFamily: "Georgia, serif" }}>
+              {dict.books.chapterVideoHeading}
+            </h2>
+            <p className="mb-3 text-sm text-ink-soft">{dict.books.chapterVideoNote}</p>
+            <VideoEmbed
+              videoId={chapter.videoId}
+              title={`${chapter.title}: narrated video`}
+              context="chapter"
+              contextId={`${bookId}/${chapterId}`}
+            />
+          </div>
+        )}
         {speechSegments.length > 0 && (
           <div className="no-print mx-auto mb-8 max-w-4xl">
             <ReadAloud segments={speechSegments} />

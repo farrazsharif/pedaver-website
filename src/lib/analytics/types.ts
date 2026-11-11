@@ -2,7 +2,7 @@ export type ContentType = "paper" | "crop" | "machine" | "resource" | "science" 
 
 export type VideoSource = "youtube_embed" | "self_hosted";
 
-export type VideoContextType = "paper" | "crop" | "machine" | "video-library" | "field-evidence";
+export type VideoContextType = "paper" | "crop" | "machine" | "video-library" | "field-evidence" | "chapter";
 
 export type ScrollDepthMilestone = 25 | 50 | 75 | 90;
 

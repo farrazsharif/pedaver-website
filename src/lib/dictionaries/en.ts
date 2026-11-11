@@ -544,6 +544,8 @@ const en = {
     readChapter: "Read Chapter",
     downloadChapterPdf: "Download Chapter PDF (English)",
     downloadSlidesPdf: "Visual Summary (Slides PDF)",
+    chapterVideoHeading: "Watch this chapter",
+    chapterVideoNote: "A narrated slide video of this chapter for farmers, in English, by Asif Sharif.",
     downloadCompleteBook: "Download the Complete Book (PDF)",
     completeBookNote:
       "The whole First Edition in one file: 601 pages, about 75 MB. Free to read, print and share without charge, unaltered and credited to the book and its author.",
