@@ -16739,6 +16739,83 @@
 "why":"why food from living soil is whole, not merely heavy"
 }
 ]
+},
+{
+"slug":"from-philosophy-to-form-vandana-shiva-and-pqnk",
+"primarySubject":"How PQNK differs from and complements Vandana Shiva’s Navdanya movement: a movement for seed, food sovereignty and policy change versus a precise natural-ecosystem production protocol for the field; why organic farming that still ploughs, floods or leaves soil bare does not meet the PQNK test",
+"questionsAnswered":[
+"How is PQNK different from Vandana Shiva’s movement?",
+"Is PQNK the same as organic farming?",
+"What do PQNK and Navdanya have in common?",
+"What test must a farming system pass to count as natural ecosystem science?",
+"Why is removing chemicals not enough to restore the soil?",
+"How is PQNK funded and how does it spread?"
+],
+"keywords":[
+"Vandana Shiva",
+"Navdanya",
+"food sovereignty",
+"seed sovereignty",
+"organic farming",
+"agroecology",
+"Agricultural Swaraj",
+"farmer’s freedom",
+"input dependency",
+"natural ecosystem science",
+"no tillage",
+"permanent mulch",
+"permanent raised beds",
+"regenerative agriculture",
+"PQNK distinction"
+],
+"geography":null,
+"crops":[],
+"fieldProblems":[
+"External Input Dependency",
+"High Input / Production Cost",
+"Macro / Policy-Level Externalities",
+"Seed Sourcing / Genetic Vulnerability"
+],
+"problemFamily":[
+"Cost, Profit & Markets",
+"Transition / Conversion"
+],
+"fieldPractices":[
+"Mechanical Hardpan Breaking (Subsoiling)",
+"Permanent Raised Bed Formation",
+"Surface Mulching (General)",
+"No-Till / Minimal-Disturbance Planting",
+"Soil Moisture Management (SMM)",
+"Seed Saving / Isolation",
+"PQNK Transition Protocol (Staged)"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Transition",
+"Soil"
+],
+"pqnkPrinciples":[
+"No Soil Disturbance",
+"No Inundation",
+"Permanent Biological Cover",
+"Maximum Biodiversity"
+],
+"productionStages":[
+"Transition/Conversion"
+],
+"evidenceType":"Philosophical/Framework Argument",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/transition",
+"why":"the ordered steps that turn a philosophy of natural farming into a working field"
+},
+{
+"page":"/science/soil",
+"why":"why tillage, flooding and bare soil break the natural soil system"
+}
+]
 }
 
 ]

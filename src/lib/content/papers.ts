@@ -5971,6 +5971,29 @@ export const papers: Paper[] = [
       "Whole food is grown, not bought: follow the eight steps of the PQNK conversion in order, then leave the soil’s life undisturbed.",
     ],
   },
+  {
+    slug: "from-philosophy-to-form-vandana-shiva-and-pqnk",
+    kpNumber: 223,
+    libraryDate: "2026-11-12",
+    category: "PQNK Philosophy, Framework & Economics",
+    title: "From Philosophy to Form: Vandana Shiva’s Movement and the PQNK Pristine Organic System",
+    summary:
+      "Vandana Shiva’s movement asks who controls agriculture; PQNK asks how a field must be worked so that nature can produce again. This paper sets out what the two share, against input dependency and for the farmer’s own seed and freedom, and where they differ: one works at the level of policy, law and culture, the other defines in the soil the exact, ordered steps that return a degraded field to natural ecosystem function. By PQNK’s test, organic farming that still ploughs, floods or leaves soil bare is a step away from chemicals but not yet the natural system.",
+    publishedDate: "2026-11-12",
+    pdfPath: "/papers/from-philosophy-to-form-vandana-shiva-and-pqnk.pdf",
+    abstract: [
+      "Readers who meet PQNK for the first time often place it beside the best-known voice for ecological farming in South Asia: Dr Vandana Shiva and the Navdanya movement she founded in India in 1987. Both stand against the dependency that ACI (Ancient Conventional Industrial) agriculture creates, both defend the farmer’s own seed, and both speak of the farmer’s freedom.",
+      "Yet they work at different levels and answer different questions. Vandana Shiva’s movement works at the level of power, policy and culture: who owns seed, knowledge and land, and who decides how food is grown. PQNK works at the level of the field: a fixed, eight-step protocol of subsoiling once, washing high-pH soil, permanent raised beds, permanent mulch and soil moisture management that returns a degraded soil to the way natural ecosystems produce.",
+      "The paper states the distinction clearly and respectfully. One is a philosophy and a movement; the other is the form that philosophy takes in the soil. They are not rivals, and a farmer is best served by understanding both.",
+    ],
+    keyTakeaways: [
+      "Vandana Shiva’s movement asks who controls seed, knowledge, land and food; PQNK asks how a field must be worked so that nature can produce again.",
+      "Both oppose input dependency and defend the farmer’s own seed and freedom: food sovereignty in her words, Agricultural Swaraj in PQNK’s.",
+      "Any production process that inundates soil, disturbs it through tillage or leaves it bare without organic mulch does not qualify as natural ecosystem science for production agriculture.",
+      "Organic farming as commonly practised, which still ploughs, floods and leaves soil bare, is a step away from chemicals but not yet a return to the natural system.",
+      "PQNK is self-funded and gives its knowledge free, so no sponsor shapes its rules; it spreads farmer to farmer through results visible in the field.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {

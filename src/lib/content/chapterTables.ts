@@ -1481,4 +1481,12 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["7. Manage soil moisture", "Water by the ball test, never by calendar or flooding", "Moist, aerated soil where the microbes work"],
     ["8. Harvest without resetting", "Residue stays as mulch; no tillage, no chemicals", "The life of the soil grows season after season"],
   ] },
+  "kp223-table-01.png": { headers: ["", "Vandana Shiva’s movement", "PQNK"], rows: [
+    ["The question it asks", "Who controls seed, knowledge, land and food?", "How must a field be worked so that nature can produce again?"],
+    ["Where it works", "Policy, law, markets, culture and public opinion", "The root zone: soil structure, water, air, mulch and the soil’s life"],
+    ["Its method", "Principles adapted to each community: diversity, organic inputs, seed saving, advocacy", "A fixed, ordered protocol of eight steps, with defined machines and bed design"],
+    ["How it grows", "A network of partners, seed banks and campaigns", "Farmer to farmer, through results that neighbours can see in the field"],
+    ["How it is funded", "An institution supported by grants, donations and publications", "Self-funded by its developer; the knowledge is given free"],
+    ["What it delivers", "Protected rights, policy change and a powerful public argument", "A living, self-sustaining soil producing nutrition-dense food without purchased inputs"],
+  ] },
 };
