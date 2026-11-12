@@ -1489,4 +1489,11 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["How it is funded", "An institution supported by grants, donations and publications", "Self-funded by its developer; the knowledge is given free"],
     ["What it delivers", "Protected rights, policy change and a powerful public argument", "A living, self-sustaining soil producing nutrition-dense food without purchased inputs"],
   ] },
+  "kp224-table-01.png": { headers: ["The pressure", "ACI agriculture", "PQNK"], rows: [
+    ["Heavy rain and floods", "Ploughed soil sealed by a hardpan cannot take the water in; fields stand under water and crops drown", "Broken hardpan, permanent beds and mulch take the rain into the soil, where it is stored"],
+    ["Heat and drought", "Bare soil bakes, loses its moisture and needs more irrigation", "Mulch keeps the soil cool and moist; the living soil holds water through dry spells"],
+    ["Degraded soil", "Each season of ploughing and chemicals leaves the soil poorer, so yields fall for the same cost", "The soil gains life and structure every season; the same crop grows season after season"],
+    ["Scarce water", "Depends on flooding and repeated irrigation", "No irrigation on mature beds where rainfall is about 16 inches (400 mm) or more"],
+    ["Costly or scarce inputs", "No fertiliser or spray means no crop", "No fertiliser or spray to buy; pests stay below 2 percent where every step is followed"],
+  ] },
 };

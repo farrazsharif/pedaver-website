@@ -16816,6 +16816,99 @@
 "why":"why tillage, flooding and bare soil break the natural soil system"
 }
 ]
+},
+{
+"slug":"grain-first-pqnk-and-the-coming-food-crisis",
+"primarySubject":"Food security and grain strategy for farmers facing erratic weather, soil degradation and water scarcity: why PQNK answers each pressure where ACI agriculture fails, why staple grains should come first, why every farming household should keep a grain reserve, and a ten-year conversion strategy",
+"questionsAnswered":[
+"Will grains become more important and valuable in the coming years?",
+"Should farmers grow grain or vegetables and fruit?",
+"What is the best strategy for a farmer over the next ten years?",
+"How does PQNK protect a farm against erratic weather, floods and drought?",
+"Why is ACI agriculture fragile in a food crisis?",
+"How much grain should a farming household keep in reserve?"
+],
+"keywords":[
+"food security",
+"food crisis",
+"grain",
+"grain reserve",
+"staple grains",
+"wheat",
+"rice",
+"maize",
+"climate change",
+"erratic weather",
+"soil degradation",
+"water scarcity",
+"input costs",
+"export restrictions",
+"farmer strategy",
+"resilience"
+],
+"geography":null,
+"crops":[
+"Wheat",
+"Rice",
+"Maize (Corn)",
+"Grains (crop group)"
+],
+"fieldProblems":[
+"Diet-Related Health / Food Security Concern",
+"Erratic / Unpredictable Weather Patterns",
+"Drought / Water Scarcity",
+"Flooding",
+"General Soil Fertility / Land Degradation",
+"High Input / Production Cost",
+"External Input Dependency",
+"Price Volatility / Market Glut",
+"Groundwater / Aquifer Depletion",
+"Heat Stress on Crop"
+],
+"problemFamily":[
+"Heat, Weather & Climate",
+"Water & Drainage",
+"Cost, Profit & Markets",
+"Transition / Conversion"
+],
+"fieldPractices":[
+"PQNK Transition Protocol (Staged)",
+"Mechanical Hardpan Breaking (Subsoiling)",
+"Permanent Raised Bed Formation",
+"Surface Mulching (General)",
+"Soil Moisture Management (SMM)",
+"Reduced/Eliminated Chemical Input",
+"Jantar (Sesbania) Cover Cropping"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Climate",
+"Water",
+"Soil",
+"Transition"
+],
+"pqnkPrinciples":[
+"No Soil Disturbance",
+"No Inundation",
+"Permanent Biological Cover"
+],
+"productionStages":[
+"Transition/Conversion",
+"Post-Harvest"
+],
+"evidenceType":"Philosophical/Framework Argument",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/climate",
+"why":"how a living, mulched soil carries a crop through heat, floods and drought"
+},
+{
+"page":"/science/water",
+"why":"why mature PQNK beds need little or no irrigation"
+}
+]
 }
 
 ]

@@ -5994,6 +5994,30 @@ export const papers: Paper[] = [
       "PQNK is self-funded and gives its knowledge free, so no sponsor shapes its rules; it spreads farmer to farmer through results visible in the field.",
     ],
   },
+  {
+    slug: "grain-first-pqnk-and-the-coming-food-crisis",
+    kpNumber: 224,
+    libraryDate: "2026-11-12",
+    category: "Water & Climate",
+    title: "Grain First: PQNK and the Coming Food Crisis",
+    summary:
+      "A practising PQNK farmer asked whether staple grains will matter more in the years ahead, and whether farmers should favour wheat, maize and rice or vegetables and fruit. Erratic weather, degraded soil and scarce water are squeezing the world’s food supply, and ACI agriculture depends on exactly what is failing. PQNK soil takes in heavy rain, holds moisture through heat and drought and grows without purchased inputs. The strategy for the next ten years: convert the land to PQNK, grow grain first, and keep a reserve of grain in your own store.",
+    publishedDate: "2026-11-12",
+    pdfPath: "/papers/grain-first-pqnk-and-the-coming-food-crisis.pdf",
+    abstract: [
+      "A practising PQNK farmer asked how the future of food security and the grain market should be seen, whether staple grains will gain in importance and value in the years ahead, and whether farmers should give more attention to wheat, maize and rice or to vegetables and fruit.",
+      "The world’s population is still growing while the three foundations of farming, a stable climate, a living soil and enough water, are all weakening, and the cost and supply of fertiliser and spray have become uncertain. ACI (Ancient Conventional Industrial) agriculture depends on exactly the things that are failing.",
+      "PQNK does not: its soil takes in heavy rain, holds moisture through heat and drought, grows the same crop season after season without purchased inputs, and keeps pests below 2 percent where every step is followed. The farmer’s best strategy for the next ten years is therefore clear: convert the land to PQNK, grow grain first, and keep a reserve of grain in his own store.",
+    ],
+    keyTakeaways: [
+      "No one can predict exact grain prices, but as weather, soil and water weaken, staple grain will matter more in the years ahead, not less.",
+      "The strongest farmer in a crisis is the one with the lowest cost of production, a crop that does not fail when the weather turns, and his own grain in store.",
+      "ACI agriculture depends on the plough, purchased inputs and heavy irrigation, so it grows more fragile exactly as the pressures grow stronger.",
+      "PQNK soil took in 13 inches of rain in eight hours, needs no irrigation on mature beds where rainfall is about 16 inches (400 mm) or more, and grows without fertiliser or spray.",
+      "Grain first: give most of the land to staple grains, keep at least one year’s grain for the household and livestock, and grow vegetables and fruit on part of the land.",
+      "Over ten years: convert all the land through the eight PQNK steps in order, never plough again, never leave the soil bare, and keep costs as low as possible.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {
