@@ -70,7 +70,7 @@ export default function Header({ dict }: { dict: Dictionary }) {
           library (Knowledge Papers, Knowledge Exchange) provides its own
           contextual search on its own page instead. */}
       <div className="border-b-4 border-[#7cbf3f] bg-[#1c1c1e]">
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 min-[900px]:py-1.5">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-1 px-3 py-3 min-[400px]:gap-2 min-[400px]:px-4 sm:gap-4 sm:px-6 min-[900px]:py-1.5">
           <div className="flex min-w-0 items-center gap-2 sm:gap-4">
             <Link href="/" className="flex flex-none items-center" aria-label={`${dict.meta.siteName} home`}>
               <img
@@ -89,30 +89,46 @@ export default function Header({ dict }: { dict: Dictionary }) {
             </Link>
           </div>
 
-          <div className="flex flex-none items-center gap-1 sm:gap-3">
+          <div className="flex flex-none items-center gap-2 sm:gap-3">
             <TranslateWidget />
 
-            {/* Ask PQNK: the PQNK Bot logo in place of the text link (author 2026-11-12), shown at every width */}
+            {/* Ask PQNK: the PQNK Bot logo with a label, in the Translate style (author 2026-11-12, option B) */}
             <Link
               href="/ask"
               aria-label={dict.nav.ask}
               title={dict.nav.ask}
-              className="flex flex-none items-center rounded-full transition hover:scale-105 hover:brightness-110"
+              className="group flex w-10 flex-none flex-col items-center justify-center"
             >
-              <img
-                src="/images/pqnk-bot-logo-128.png"
-                alt={dict.nav.ask}
-                width={64}
-                height={64}
-                className="h-10 w-10 sm:h-12 sm:w-12 min-[900px]:h-14 min-[900px]:w-14"
-              />
+              <span className="flex h-10 w-10 items-center justify-center rounded-full transition group-hover:bg-white/10">
+                <img
+                  src="/images/pqnk-bot-logo-128.png"
+                  alt=""
+                  width={32}
+                  height={32}
+                  className="h-8 w-8 rounded-full transition group-hover:brightness-110"
+                />
+              </span>
+              <span aria-hidden="true" className="-mt-1 whitespace-nowrap text-[10px] font-medium text-cream/70 group-hover:text-cream">
+                {dict.nav.ask}
+              </span>
             </Link>
 
+            {/* Contact: envelope icon with a label, in the Translate style (author 2026-11-12) */}
             <Link
               href="/contact"
-              className="hidden text-sm font-medium text-cream/80 transition hover:text-cream sm:block"
+              aria-label={dict.nav.contact}
+              title={dict.nav.contact}
+              className="group hidden flex-none flex-col items-center justify-center sm:flex"
             >
-              {dict.nav.contact}
+              <span className="flex h-10 w-10 items-center justify-center rounded-full text-cream/80 transition group-hover:bg-white/10 group-hover:text-cream">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <rect x="3" y="5" width="18" height="14" rx="2" />
+                  <path d="m3.5 6.5 8.5 6.5 8.5-6.5" />
+                </svg>
+              </span>
+              <span aria-hidden="true" className="-mt-1 whitespace-nowrap text-[10px] font-medium text-cream/70 group-hover:text-cream">
+                {dict.nav.contact}
+              </span>
             </Link>
 
             <button
