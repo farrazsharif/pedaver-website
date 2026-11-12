@@ -1,37 +1,55 @@
 import Link from "next/link";
 import dict from "@/lib/dictionaries";
 import Section from "@/components/Section";
-import ContactForm from "@/components/ContactForm";
+import AskPqnkChat from "@/components/AskPqnkChat";
+import { askPqnk } from "@/lib/content/askPqnk";
 import { buildMetadata } from "@/lib/seo";
 
-// Human advisory, not an AI/chatbot system: this form opens the visitor's
-// own email client (see ContactForm) — a person on Pedaver's team reads
-// and answers. Reuses the same mailto mechanism as /contact, just framed
-// as a direct question rather than a general inquiry.
+// Ask PQNK: the PQNK assistant (developer's n8n workflow, answering only from pedaver.com), built into
+// the page (no floating chat button on other pages, author's decision), plus WhatsApp and a link to
+// write to a person. Endpoint and WhatsApp link live in src/lib/content/askPqnk.ts.
 export const metadata = buildMetadata({
-  title: "Ask Pedaver — Send Us Your PQNK Question",
+  title: "Ask PQNK — Questions Answered from the PQNK Knowledge",
   description:
-    "Have a specific question about PQNK for your crop, region or farm? Write to us — a real person on our team reads and answers every question personally.",
+    "Ask any question about PQNK for your crop, soil, water or farm. Answers come from the PQNK book, Knowledge Papers and field evidence published on pedaver.com.",
   path: "/ask",
 });
 
 export default function AskPage() {
+  const a = dict.ask;
   return (
     <div>
       <section className="border-b border-border bg-primary-light/10">
-        <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6">
-          <h1 className="text-4xl font-extrabold text-primary-dark">{dict.ask.pageTitle}</h1>
-          <p className="mx-auto mt-5 max-w-2xl text-lg text-ink-soft">{dict.ask.pageSubtitle}</p>
+        <div className="mx-auto max-w-4xl px-4 py-14 text-center sm:px-6">
+          <h1 className="text-4xl font-extrabold text-primary-dark">{a.pageTitle}</h1>
+          <p className="mx-auto mt-5 max-w-2xl text-lg text-ink-soft">{a.pageSubtitle}</p>
         </div>
       </section>
 
       <Section>
-        <div className="mx-auto max-w-xl">
-          <ContactForm dict={dict.ask} subjectPrefix="Question via Ask" trackingId="ask_form" />
+        <div className="mx-auto max-w-3xl">
+          <AskPqnkChat labels={a} />
+          <p className="mt-3 text-xs text-ink-soft">{a.privacyNote}</p>
+
+          <div className="mt-8 flex flex-col items-center gap-3 rounded-2xl border border-border bg-card p-6 text-center sm:flex-row sm:justify-between sm:text-left">
+            <div>
+              <p className="font-semibold text-primary-dark">{a.whatsappTitle}</p>
+              <p className="text-sm text-ink-soft">{a.whatsappText}</p>
+            </div>
+            <a
+              href={askPqnk.whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-full bg-[#25D366] px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:brightness-95"
+            >
+              {a.whatsappButton}
+            </a>
+          </div>
+
           <p className="mt-6 text-center text-sm text-ink-soft">
-            Looking for general contact details instead?{" "}
+            {a.emailPrompt}{" "}
             <Link href="/contact" className="font-semibold text-primary underline underline-offset-4">
-              Visit Contact →
+              {a.emailLink} →
             </Link>
           </p>
         </div>

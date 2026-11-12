@@ -15,7 +15,7 @@ const en = {
     papers: "Knowledge Papers",
     fieldEvidence: "Knowledge Exchange",
     books: "PQNK Books",
-    ask: "Ask",
+    ask: "Ask PQNK",
     advisory: "Farmer Advisory",
     services: "Services",
     machines: "PQNK Machines",
@@ -512,9 +512,24 @@ const en = {
     submitButton: "Compose Email",
   },
   ask: {
-    pageTitle: "Ask Pedaver",
+    pageTitle: "Ask PQNK",
     pageSubtitle:
-      "Have a specific question about PQNK for your crop, region or farm? Write to us — a real person on our team reads and answers every question personally.",
+      "Ask any question about PQNK for your crop, soil, water or farm. Answers come from the PQNK knowledge published on pedaver.com: the book, the Knowledge Papers and farmers' field evidence.",
+    chatWelcome:
+      "Welcome. Ask me anything about PQNK, for example how to break the hardpan, how to form permanent beds, or how to grow a particular crop without purchased inputs.",
+    chatPlaceholder: "Type your question…",
+    chatSend: "Send",
+    chatThinking: "Looking through the PQNK knowledge… (this can take up to half a minute)",
+    chatError:
+      "Sorry, the answer could not be fetched just now. Please try again in a moment, or ask on WhatsApp below.",
+    chatNewConversation: "Start a new conversation",
+    whatsappTitle: "Prefer WhatsApp?",
+    whatsappText: "Ask the same PQNK assistant on WhatsApp.",
+    whatsappButton: "Continue on WhatsApp",
+    privacyNote:
+      "Your questions are sent to the Ask PQNK assistant's server to be answered. Please do not share personal or financial details. Answers are generated automatically from pedaver.com; for important decisions, read the linked source.",
+    emailPrompt: "Prefer to write to a person?",
+    emailLink: "Email us",
     formTitle: "Ask Your Question",
     formNote:
       "This form opens your email app with your message pre-filled. Nothing is sent through this website directly.",
