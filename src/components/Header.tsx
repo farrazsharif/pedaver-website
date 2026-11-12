@@ -92,11 +92,20 @@ export default function Header({ dict }: { dict: Dictionary }) {
           <div className="flex flex-none items-center gap-1 sm:gap-3">
             <TranslateWidget />
 
+            {/* Ask PQNK: the PQNK Bot logo in place of the text link (author 2026-11-12), shown at every width */}
             <Link
               href="/ask"
-              className="hidden text-sm font-medium text-cream/80 transition hover:text-cream sm:block"
+              aria-label={dict.nav.ask}
+              title={dict.nav.ask}
+              className="flex flex-none items-center rounded-full transition hover:scale-105 hover:brightness-110"
             >
-              {dict.nav.ask}
+              <img
+                src="/images/pqnk-bot-logo-128.png"
+                alt={dict.nav.ask}
+                width={64}
+                height={64}
+                className="h-10 w-10 sm:h-12 sm:w-12 min-[900px]:h-14 min-[900px]:w-14"
+              />
             </Link>
 
             <Link

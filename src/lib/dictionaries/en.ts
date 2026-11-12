@@ -530,6 +530,10 @@ const en = {
       "Your questions are sent to the Ask PQNK assistant's server to be answered. Please do not share personal or financial details. Answers are generated automatically from pedaver.com; for important decisions, read the linked source.",
     emailPrompt: "Prefer to write to a person?",
     emailLink: "Email us",
+    homeTitle: "Ask PQNK, in your language",
+    homeText:
+      "Have a question about your crop, soil, water or farm? Ask the PQNK assistant. Its answers come from the PQNK book, Knowledge Papers and farmers' field evidence on pedaver.com, with the source linked.",
+    homeButton: "Ask your question",
     formTitle: "Ask Your Question",
     formNote:
       "This form opens your email app with your message pre-filled. Nothing is sent through this website directly.",

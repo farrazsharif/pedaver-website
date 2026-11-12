@@ -166,6 +166,25 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ASK PQNK — the PQNK Bot, right after the hero (author 2026-11-12). Links to /ask; no chat widget on the home page itself. */}
+      <section id="ask-pqnk" className="border-b-4 border-[#7cbf3f] bg-[#1c1c1e] text-cream">
+        <div className="mx-auto flex max-w-4xl flex-col items-center gap-6 px-4 py-10 text-center sm:flex-row sm:gap-8 sm:px-6 sm:text-left">
+          <Link href="/ask" className="flex-none" aria-label={dict.nav.ask}>
+            <img src="/images/pqnk-bot-logo-320.png" alt="PQNK Bot" width={160} height={160} className="h-32 w-32 sm:h-40 sm:w-40" />
+          </Link>
+          <div>
+            <h2 className="text-2xl font-bold text-[#a8e06a] sm:text-3xl">{dict.ask.homeTitle}</h2>
+            <p className="mt-3 text-base text-cream/90">{dict.ask.homeText}</p>
+            <Link
+              href="/ask"
+              className="mt-5 inline-block rounded-full bg-[#7cbf3f] px-7 py-3 text-base font-semibold text-[#1c1c1e] shadow-sm transition hover:brightness-110"
+            >
+              {dict.ask.homeButton} →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* NEW ARRIVALS — small, glanceable panel for a returning visitor to spot
           recently published content without digging through each listing.
           Grouped under a banner per category (Knowledge Papers, Knowledge
