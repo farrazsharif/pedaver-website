@@ -306,7 +306,7 @@ export default function ScienceCropProtectionPage() {
         </div>
       </Section>
 
-      {/* 10% THRESHOLD */}
+      {/* 10% IS ACI, NOT PQNK (2% rule, 2026-11-13) */}
       <Section muted>
         <div className="mx-auto max-w-3xl">
           <h2 className="text-2xl font-bold text-primary-dark sm:text-3xl">{tenPercentThreshold.title}</h2>

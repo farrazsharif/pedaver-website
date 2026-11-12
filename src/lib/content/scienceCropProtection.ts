@@ -110,31 +110,31 @@ export const btSection = {
 };
 
 export const fieldExperienceTwoPercent = {
-  title: "PQNK Field Experience — Approximately 2%",
-  body: "Where the complete PQNK conversion protocol has been followed properly, PQNK field experience has normally observed very low pest incidence/damage even in the first crop — commonly around 2% or below. At that level, intervention is normally unnecessary.",
-  labelNote: "This is an observed PQNK field-performance statement, not a scientifically guaranteed constant and not a universal biological threshold.",
+  title: "Below 2%: The PQNK Field Record",
+  body: "In ten years of field reports from many farmers, covering cotton and other field crops and orchards, pest infestation has never been seen above 2% in fields where every PQNK step was followed, even in the first crop after conversion. Even that 2% is gone within days, controlled by the field's own biology.",
+  labelNote: "No intervention is needed at this level. The record depends on every step being followed: the hardpan broken, permanent beds, continuous mulch, soil moisture management and accurate planting.",
 };
 
 export const tenPercentThreshold = {
-  title: "The 10% Transitional Threshold",
-  body: "Approximately 10% pest incidence/damage can serve as a practical field decision point during transition, subject to crop, pest, growth stage, actual damage, plant condition and field conditions.",
-  statement: "10% is not a spraying instruction.",
-  clarification: "It is the point at which intervention may need to be justified through investigation.",
+  title: "The 10% Spray Threshold Belongs to ACI",
+  body: "ACI (Ancient Conventional Industrial) agriculture sprays when pest pressure or damage reaches about 10%. PQNK has no such threshold, not even during transition.",
+  statement: "Heavier pressure is a signal, never a reason to spray.",
+  clarification: "Pressure above 2% points to a missed step. The answer is to find that step and put it right.",
   sequence: [
-    { label: "Observation", body: "Pest or damage level is noticed." },
-    { label: "Investigation", body: "The relevant condition is examined." },
-    { label: "Diagnosis", body: "Actual economic significance is established." },
-    { label: "Management Decision", body: "Intervention follows only once justified." },
+    { label: "Observation", body: "Pest pressure above 2% is noticed." },
+    { label: "Investigation", body: "The missed step is found: hardpan, beds, mulch, moisture or planting." },
+    { label: "Correction", body: "That step is put right." },
+    { label: "Recovery", body: "The field's own biology brings pressure back below 2% within days." },
   ],
-  experienceNote: "In established PQNK field experience, properly converted fields have not normally approached this threshold.",
+  experienceNote: "Where every PQNK step is followed, fields do not reach this point.",
 };
 
 export const chemicalException = {
-  title: "Chemical Intervention — Exception, Not Foundation",
-  body: "PQNK is not built around calendar spraying. A pesticide is not applied merely because an insect is seen.",
-  transitionNote: "During transition, if economically meaningful damaging pressure develops and diagnosis establishes that intervention is justified, a targeted intervention may be considered.",
+  title: "Chemical Intervention Is Not Part of PQNK",
+  body: "PQNK is not built around spraying. A pesticide is not applied because an insect is seen, or because pressure rises.",
+  transitionNote: "This holds during transition too: heavier pressure points to a missed step to put right, not to a spray.",
   goal: "The goal is to protect the developing biological system while avoiding unnecessary disruption of predators, parasitoids, soil organisms, pollinators, microbial communities and food-web relationships.",
-  guardrail: "Chemical intervention is not a routine component of mature PQNK.",
+  guardrail: "No pesticide is part of PQNK, in transition or at maturity.",
 };
 
 export const weedsEnemyToSignal = {

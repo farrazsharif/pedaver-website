@@ -697,7 +697,7 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["Soil preparation", "Use a deep water wash; where soil pH exceeds 8, the established PQNK transition protocol may use 8 kg sulphuric acid per acre under trained supervision."],
     ["Biological establishment", "Grow a deep-rooted cover crop such as Jantar, retain roots and place biomass on the bed surface."],
     ["Nutrient safeguard", "If the crop shows a verified deficiency during transition, apply only 4 kg NP with furrow water; repeat two or three times only when observation justifies it."],
-    ["Pest safeguard", "Allow the biological predator system to establish. A pesticide intervention remains available only if damage crosses the 10% transition threshold."],
+    ["Pest safeguard", "Allow the biological predator system to establish. Where every step is followed, pests stay below 2% and are gone within days; heavier pressure points to a missed step to put right, not a reason to spray."],
     ["Weed safeguard", "Heavy summer weeds may require a transitional weedicide intervention; this is not the maturity standard."],
     ["Maturity", "Purchased fertiliser and pesticide reach zero because field biology and permanent architecture perform the required functions."],
   ] },
