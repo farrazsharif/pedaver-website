@@ -909,7 +909,8 @@ export const papers: Paper[] = [
     summary:
       "The engineering side of PQNK conversion, hardpan breaking, bed formation, cover cropping, can be finished in weeks, but the soil biology that actually runs the system takes longer to rebuild. This paper explains why the first few crops need closer monitoring, and lays out the minimal, symptom-triggered temporary support (never a return to routine chemical use) that carries a farmer through that gap without abandoning PQNK.",
     publishedDate: "2026-07-30",
-    pdfPath: "/papers/managing-the-biological-transition.pdf",
+    modifiedDate: "2026-11-13",
+    pdfPath: "/papers/managing-the-biological-transition.pdf?v=pest1113",
     abstract: [
       "Most attempts to introduce natural farming fail, the paper argues, because they attempt an immediate substitution of conventional inputs without first rebuilding the biological engine that performs those functions naturally. Conventional agriculture runs on soil system substitution: chemical fertilizer substitutes for biological nutrient cycling, pesticides substitute for natural predator populations, herbicides substitute for ecological weed regulation, and repeated tillage substitutes for biological soil structuring. PQNK's objective is not to substitute a different external input, but to restore the natural processes those inputs replaced, and that restoration takes time.",
       "The transition is therefore framed as a gradual movement from substitution toward supplementation, and finally toward a fully self-regulating biological ecosystem. Hardpan can be broken in a single operation, permanent raised beds built immediately, and cover crops established within weeks, but millions of microorganisms, fungi, predators, and beneficial insects still need time to recolonize the restored habitat, which is why the first few crops demand closer observation than any later stage.",
@@ -2350,7 +2351,8 @@ export const papers: Paper[] = [
     summary:
       "This paper places PQNK at the top of a five-level hierarchy of farming methodologies and argues its defining break from every level below it is philosophical: replacing fear-based, preventive input application with observation-based, responsive management, a shift it says most practitioners complete within two crop cycles.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/embracing-pqnk-a-regenerative-paradigm.pdf",
+    modifiedDate: "2026-11-13",
+    pdfPath: "/papers/embracing-pqnk-a-regenerative-paradigm.pdf?v=pest1113",
     abstract: [
       "The paper opens by situating PQNK within a five-level comparative table of farming methodologies, culminating in what it calls 'Level 5: Natural/PQNK,' a system that transcends input dependency entirely. Levels below it, spanning Ancient Conventional/Industrial through Conventional/Industrial and Organic/Industrial, are characterized as sharing a common flaw regardless of their input source: a preventive, fear-based model that assumes future deficiencies, pests, or disease without evidence and applies inputs pre-emptively to guard against imagined loss.",
       "Against this, the paper defines the PQNK principle of observation over presumption across three domains. In nutrient management, it argues plants require only minute amounts of soil-bound nutrients once microbial activity is functioning, and that applying fertilizer only when deficiency symptoms actually appear, as little as 4 kg per acre via irrigation, can cut fertilizer use by over 70%. In pest and disease response, it replaces preventive spraying with observation: where every PQNK step is followed, pest pressure stays below 2% and is gone within days, preserving beneficial insects and leaving no room for resistance to develop. In water management, irrigation is triggered only by visible plant stress or dry root-zone soil, encouraging deeper root growth and drought resilience.",
@@ -3864,9 +3866,9 @@ export const papers: Paper[] = [
     title: "The PQNK Kitchen Garden: A Regenerative Ecosystem for Household Abundance and Sovereignty",
     summary:
       "A compact guidebook applying PQNK principles to household-scale food production, showing how a single 4-foot by 20-foot bed, planned like a household budget around daily, weekly, and seasonal produce needs, can supply the bulk of fresh vegetables for a family of ten, with a parallel rooftop/container method built around a novel underground 'soil life conduit.'",
-    modifiedDate: "2026-10-16",
+    modifiedDate: "2026-11-13",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/the-pqnk-kitchen-garden.pdf",
+    pdfPath: "/papers/the-pqnk-kitchen-garden.pdf?v=pest1113",
     heroImage: "/images/seedlings-beds.jpg",
     abstract: [
       "The guide's central claim is that a strategically managed 4-foot by 20-foot plot (80 sq ft) can serve as the primary source of fresh produce for a family of ten, turning a household kitchen garden from a hobby vegetable patch into what the paper calls a 'household bio-system.' It sets out two parallel pathways: grounded soil-based growing for households with yard space, and rooftop or window planter production for households without it, treating both as capable of the same underlying regenerative logic.",
@@ -5586,8 +5588,8 @@ export const papers: Paper[] = [
     summary:
       "An evidence-qualified review of the article \u201cChemical Fertilizer Industry\u201d. It keeps the article's warning about soil degradation, nutrient pollution and biological decline, disciplines its headline numbers, and argues that fertiliser dependency is a symptom of a damaged production system (tillage, flooding, bare soil and simplified biology) that PQNK removes by restoring aerated, covered, living soil, reaching zero purchased fertiliser and pesticide at maturity.",
     publishedDate: "2026-09-29",
-    modifiedDate: "2026-10-14",
-    pdfPath: "/papers/chemical-fertiliser-dependency-pqnk.pdf",
+    modifiedDate: "2026-11-13",
+    pdfPath: "/papers/chemical-fertiliser-dependency-pqnk.pdf?v=pest1113",
     abstract: [
       "The article Chemical Fertilizer Industry assembles an important warning about soil degradation, nutrient pollution, biological decline, water demand, greenhouse-gas emissions and human exposure. Its central concern is justified: agriculture cannot indefinitely compensate for a deteriorating soil ecosystem by increasing soluble nutrient inputs. However, several headline figures are presented without sufficient boundaries, and several global problems are attributed too directly to fertiliser alone. Soil erosion, salinity, aquatic dead zones and chronic disease have multiple interacting causes. A scientifically defensible response must preserve the warning while separating established evidence, association, extrapolation and advocacy.",
       "Through the PQNK lens, the deeper problem is not the fertiliser bag by itself. Fertiliser dependency develops when tillage destroys structure and fungal continuity, flooding displaces soil air, bare soil overheats and loses moisture, crop residue is removed, roots are terminated and biodiversity is simplified. Chemical nutrients then substitute for biological functions that the production system has disabled. Removing the bag without rebuilding those functions can reduce yield; keeping the bag while leaving the damaged architecture unchanged preserves dependency.",
@@ -5613,11 +5615,12 @@ export const papers: Paper[] = [
     summary:
       "A farmer noticed that soil with white grubs looked more porous and full of small dark aggregates. This paper explains why finding an insect is not the same as having a pest problem, how white grubs take part in the soil food web, and the PQNK field protocol: observe first, compare roots, and intervene only when measurable damage shows the biological balance is failing.",
     publishedDate: "2026-10-02",
-    pdfPath: "/papers/white-grub-friend-foe-or-part-of-the-living-soil.pdf",
+    modifiedDate: "2026-11-13",
+    pdfPath: "/papers/white-grub-friend-foe-or-part-of-the-living-soil.pdf?v=pest1113",
     abstract: [
       "A farmer observed white grubs in pots and noticed that wherever they were present the soil looked more porous, with very small dark aggregates forming. His question was whether the white grub should be treated as an enemy, a friend, or left alone. The PQNK answer is that no label should be applied merely because an organism has been found; the first question is what is actually happening to the plant and to the soil ecosystem.",
       "White grub is a general name for the larvae of many scarab beetles. Species and developmental stages differ: some feed heavily on living roots, others on mixtures of roots, organic matter and soil. Their burrowing, feeding and frass can influence aeration, aggregation, microbial activity and nutrient cycling, but an observation in pots is not proof that the grub alone created the aggregates or that they are beneficial.",
-      "Treatment thresholds vary with species, crop, soil, climate and plant condition, so PQNK does not import a threshold from another crop or country. Its general rule still applies: where every PQNK step is followed, pest pressure stays below 2% and is gone within days; the 10% spray threshold belongs to the ACI system, and heavier pressure points to a missed step to put right, not a reason to spray. For white grub, that damage is read in the roots and the stand of the crop, not in the number of larvae found.",
+      "Treatment thresholds vary with species, crop, soil, climate and plant condition, so PQNK does not import a threshold from another crop or country. Its general rule still applies: where every PQNK step is followed, pest pressure stays below 2% and is gone within days; the 10% spray threshold belongs to the ACI system, and heavier pressure points to a missed step to put right, not a reason to spray. For white grub, pest pressure is read in the roots and the stand of the crop, not in the number of larvae found.",
       "The paper sets out a five-step PQNK field protocol: observe the crop; examine and compare the roots of healthy and affected plants; look for a consistent link between root damage and unusually high grub numbers; observe natural regulation by birds, predators and diseased or parasitised grubs; and intervene only when measurable damage shows the balance is failing, favouring the narrowest, least disruptive response.",
     ],
     keyTakeaways: [
@@ -5637,9 +5640,9 @@ export const papers: Paper[] = [
     title: "Why the World Needs PQNK",
     summary:
       "A case for large-scale PQNK adoption addressed to five constituencies: farmers, governments, environmentalists, health professionals and poverty-alleviation institutions. Because agriculture sits where soil, water, biodiversity, food, farm economics and human health meet, restoring the farm as a living ecosystem benefits all of them at once.",
-    modifiedDate: "2026-10-16",
+    modifiedDate: "2026-11-13",
     publishedDate: "2026-10-02",
-    pdfPath: "/papers/why-the-world-needs-pqnk.pdf",
+    pdfPath: "/papers/why-the-world-needs-pqnk.pdf?v=pest1113",
     abstract: [
       "Production agriculture sits at the meeting point of soil, plants, microorganisms, insects, animals, water, atmosphere and human society. When it is managed against the natural ecosystem the damage spreads far beyond the crop; brought back into alignment, the benefits spread as widely. PQNK restores those conditions through its four governing rules: no inundation, no soil disturbance, permanent organic cover and encouraged biodiversity.",
       "For farmers, PQNK replaces repeated field reconstruction and recurring purchased inputs with permanent beds, retained roots and residues, Soil Moisture Management and biological function; its field experience is higher and more stable yields once the system matures, recorded farm by farm. For governments, PQNK is not a laboratory concept awaiting proof: it began in 2009 with rice on raised beds and has since moved into farmer practice, so the task is large-scale adaptation and adoption, with measurement as a record of implementation rather than a test of nature.",
