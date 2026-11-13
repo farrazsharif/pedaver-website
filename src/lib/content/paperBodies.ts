@@ -14011,7 +14011,6 @@ export const PAPER_BODIES: Record<string, ChapterBlock[]> = {
   // END can-high-tds-water-be-used-to-rehabilitate-saline-soils
   // BEGIN managing-the-biological-transition
   "managing-the-biological-transition": [
-    { type: "imageGroup", files: ["kp127-img-01.jpg"] },
     { type: "heading", text: "The Transition Is from Substitution to Supplementation" },
     { type: "paragraph", runs: [{ text: "Most attempts to introduce natural farming fail because they attempt an immediate substitution of conventional inputs without first rebuilding the biological engine that naturally performs those functions." }] },
     { type: "paragraph", runs: [{ text: "Conventional agriculture operates largely through " }, { text: "soil system substitution", bold: true }, { text: ". Whenever a natural soil function declines, an external input is introduced to replace it. Chemical fertilizers substitute for biological nutrient cycling. Pesticides substitute for natural predator populations. Herbicides substitute for ecological weed regulation. Repeated tillage substitutes for biological soil structuring." }] },
