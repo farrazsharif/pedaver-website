@@ -5627,7 +5627,7 @@ export const papers: Paper[] = [
       "Presence is not damage: an organism is not a pest merely because it can become one.",
       "\"White grub\" covers many scarab species with different feeding habits; identification matters before any conclusion.",
       "Grub burrowing and frass can change soil structure and microbial activity, but a pot observation is not proof of benefit.",
-      "PQNK does not import foreign thresholds; its about-10-percent transition rule is judged from root damage and crop stand, not larva counts.",
+      "PQNK does not import foreign thresholds: where every PQNK step is followed, pest pressure stays below 2% and is gone within days, and white grub pressure is read from root damage and crop stand, not larva counts.",
       "Predators, parasitoids, entomopathogenic nematodes, fungi, bacteria and birds help regulate grubs; indiscriminate soil treatment can weaken that regulation.",
       "Field protocol: observe, compare roots, look for a relationship, watch natural regulation, and only then intervene with the narrowest response.",
     ],
