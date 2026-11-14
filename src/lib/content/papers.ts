@@ -6021,6 +6021,30 @@ export const papers: Paper[] = [
       "Over ten years: convert all the land through the eight PQNK steps in order, never plough again, never leave the soil bare, and keep costs as low as possible.",
     ],
   },
+  {
+    slug: "the-chain-of-devastation",
+    kpNumber: 225,
+    libraryDate: "2026-11-14",
+    category: "Nutrition & Food Quality",
+    title: "The Chain of Devastation: From the Seed Bag to the Hospital Bed, and Where PQNK Breaks It",
+    summary:
+      "A short podcast clip names a trap in eight links: seed that needs NPK and urea, a fertilised plant whose own resistance falls, insects, pesticide, a family that eats the crop and falls ill, then medicines, hospital and insurance, and back to the seed. In ACI agriculture each link is a purchase that makes the next one necessary. PQNK breaks the chain at the soil: a living soil feeds the crop without fertiliser, the plant keeps its resistance, pests stay below 2 percent where every step is followed, nothing is sprayed, and the family eats whole food.",
+    publishedDate: "2026-11-14",
+    pdfPath: "/papers/the-chain-of-devastation.pdf",
+    abstract: [
+      "A short video clip from an Indian podcast, shared under the heading \u201cWe Are in an Invisible Trap\u201d, describes in forty seconds a chain that every farming family will recognise. First the farmer is given seed. To grow it he must add NPK and urea. Fertilised this way, the plant’s own resistance falls and insects arrive. For the insects he is sold a pesticide. The family eats the crop and falls ill. Then come medicines, then the hospital, and for the hospital, insurance.",
+      "This paper sets out that chain link by link, explains why in ACI (Ancient Conventional Industrial) agriculture each link makes the next one necessary, and shows where PQNK breaks it.",
+      "The break comes at the first link that matters: the soil. A living PQNK soil feeds the crop without purchased fertiliser, so the plant keeps its own resistance, pests stay below 2 percent where every step is followed, no spray is needed, and the family eats whole food. Remove the first links and the rest of the chain has nothing left to hold.",
+    ],
+    keyTakeaways: [
+      "The chain has eight links: seed, fertiliser, a weakened plant, insects, pesticide, the family’s food, illness and medicine, hospital and insurance; then it starts again with seed.",
+      "Each link is a purchase that creates the need for the next one, and the farm family pays at every link but is paid only once, at harvest.",
+      "Urea and other soluble nitrogen push the plant into soft, watery growth; pests are scavengers of weak plants, and spraying breeds resistance, so the treadmill turns faster each year.",
+      "The chain does not need a single owner to work; as long as the soil is dead, every link stays necessary, so changing brands or buying organic inputs does not end it.",
+      "PQNK breaks the chain in the soil: no fertiliser, a plant that keeps its own resistance, pests below 2 percent and gone within days where every step is followed, no spray, and whole food for the family.",
+      "A farmer leaves the chain by restoring his soil through the eight steps of Chapter 23 in order, then never ploughing again and never leaving the soil bare.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {

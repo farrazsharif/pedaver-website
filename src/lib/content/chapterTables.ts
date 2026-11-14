@@ -1496,4 +1496,13 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["Scarce water", "Depends on flooding and repeated irrigation", "No irrigation on mature beds where rainfall is about 16 inches (400 mm) or more"],
     ["Costly or scarce inputs", "No fertiliser or spray means no crop", "No fertiliser or spray to buy; pests stay below 2 percent where every step is followed"],
   ] },
+  "kp225-table-01.png": { headers: ["Link", "ACI agriculture", "PQNK"], rows: [
+    ["Seed", "Bought every season, bred to need fertiliser", "Seed kept by the farmer from healthy, fully matured plants; seed sovereignty is food sovereignty (Chapter 30)"],
+    ["Fertiliser", "NPK and urea every season, or no crop", "None. The living soil feeds the crop: mulch, roots left in the soil, free-living nitrogen-fixing microbes and fungal networks"],
+    ["The plant’s resistance", "Falls: soft, lush, weak tissue", "Kept: firm, balanced growth from a living soil"],
+    ["Insects", "Arrive and multiply", "Stay below 2 percent where every step is followed, and are gone within days by natural biological control"],
+    ["Pesticide", "Sprayed, then sprayed again as resistance builds", "Never needed"],
+    ["The family’s food", "Carries residues and less nourishment", "Whole food from a living soil (KP-222)"],
+    ["Medicine and hospital", "The bill the chain sends to the family", "Health built at the source, in the soil and on the plate"],
+  ] },
 };

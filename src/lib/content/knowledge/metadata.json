@@ -16909,6 +16909,99 @@
 "why":"why mature PQNK beds need little or no irrigation"
 }
 ]
+},
+{
+"slug":"the-chain-of-devastation",
+"primarySubject":"The chain of input dependency in ACI agriculture, from purchased seed and fertiliser through weakened plants, pests and pesticides to residues, illness, medicines and hospital costs, and how PQNK breaks it at the soil so that no fertiliser or spray is needed and the family eats whole food",
+"questionsAnswered":[
+"Why does chemical fertiliser make crops attract pests?",
+"How does one purchased input lead to the next in conventional farming?",
+"How is farm chemical use linked to illness and medical costs?",
+"Do the same companies sell seed, pesticides and medicines?",
+"Where does PQNK break the chain of input dependency?",
+"How can a farmer leave the input treadmill?"
+],
+"keywords":[
+"chain of devastation",
+"input dependency",
+"input treadmill",
+"invisible trap",
+"seed",
+"urea",
+"NPK",
+"fertiliser",
+"pesticide",
+"pesticide resistance",
+"residues",
+"illness",
+"pharmaceuticals",
+"health insurance",
+"seed sovereignty",
+"whole food",
+"living soil"
+],
+"geography":null,
+"crops":[],
+"fieldProblems":[
+"External Input Dependency",
+"High Input / Production Cost",
+"Preventive/Prophylactic Over-Application of Inputs (Fertilizer/Nitrogen)",
+"General Pest Pressure",
+"Pesticide Resistance",
+"Contamination / Residue / Food Safety Risk",
+"Declining Nutrient Density in Food",
+"Diet-Related Health / Food Security Concern",
+"Seed Sourcing / Genetic Vulnerability",
+"General Soil Fertility / Land Degradation"
+],
+"problemFamily":[
+"Pests, Diseases & Weeds",
+"Yield & Produce Quality",
+"Cost, Profit & Markets",
+"Transition / Conversion"
+],
+"fieldPractices":[
+"PQNK Transition Protocol (Staged)",
+"Mechanical Hardpan Breaking (Subsoiling)",
+"Sulfuric Acid Water-Wash (pH Correction)",
+"Permanent Raised Bed Formation",
+"Jantar (Sesbania) Cover Cropping",
+"Surface Mulching (General)",
+"Soil Moisture Ball/Field Test",
+"Reduced/Eliminated Chemical Input",
+"Biological Pest Suppression",
+"Biological Nutrient Cycling",
+"Seed Saving / Isolation"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Crop Protection",
+"Nutrition",
+"Food Quality",
+"Soil",
+"Transition"
+],
+"pqnkPrinciples":[
+"No Soil Disturbance",
+"No Inundation",
+"Permanent Biological Cover"
+],
+"productionStages":[
+"Transition/Conversion"
+],
+"evidenceType":"Philosophical/Framework Argument",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/crop-protection",
+"why":"why a plant fed by a living soil keeps its own resistance and needs no spray"
+},
+{
+"page":"/science/food-quality",
+"why":"why food from a living soil carries more nourishment and no residues"
+}
+]
 }
 
 ]
