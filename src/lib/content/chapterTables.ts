@@ -1505,4 +1505,14 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["The family’s food", "Carries residues and less nourishment", "Whole food from a living soil (KP-222)"],
     ["Medicine and hospital", "The bill the chain sends to the family", "Health built at the source, in the soil and on the plate"],
   ] },
+  "kp226-table-01.png": { headers: ["Operation", "Cost per acre"], rows: [
+    ["Subsoiling (breaking the hardpan)", "Rs 4,000 on average"],
+    ["Washing the soil with water", "Rs 2,000"],
+    ["Shaping the permanent beds", "Rs 4,000"],
+    ["Seed of the Jantar cover crop", "Rs 1,000"],
+    ["Planting Jantar as cover crop", "Rs 4,000"],
+    ["Two irrigations through the furrows", "Rs 2,000"],
+    ["Ending the cover crop, mulching it on the beds with its roots left in the soil, and planting the next cash crop with the SIPP or VIPP", "Rs 4,000"],
+    ["Total", "About Rs 21,000 per acre"],
+  ] },
 };

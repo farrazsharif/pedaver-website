@@ -6045,6 +6045,32 @@ export const papers: Paper[] = [
       "A farmer leaves the chain by restoring his soil through the eight steps of Chapter 23 in order, then never ploughing again and never leaving the soil bare.",
     ],
   },
+  {
+    slug: "ask-pqnk-field-answers-1",
+    kpNumber: 226,
+    libraryDate: "2026-11-14",
+    category: "Workforce & Practice Advisories",
+    title: "Ask PQNK Field Answers 1: What Farmers Asked in November 2026",
+    summary:
+      "Answers from Asif Sharif to the questions the Ask PQNK assistant could not yet answer in its first days: cotton cut back and left to regrow, planting old beds by hand without the SIPP or VIPP, turmeric and peas spacing on 42 inch beds, fruit trees on rain-fed heavy clay, worm towers and vertical farming, where to get the VIPP planter, and the cost of converting a field to PQNK (about Rs 21,000 per acre at 2026 prices in Pakistan).",
+    publishedDate: "2026-11-14",
+    pdfPath: "/papers/ask-pqnk-field-answers-1.pdf",
+    abstract: [
+      "Ask PQNK, the PQNK assistant on WhatsApp and at pedaver.com/ask, was launched on 12 November 2026. In its first three days it received 205 questions and answered 189 of them from the PQNK library. For the rest it did not guess: it said that the answer was not yet on pedaver.com.",
+      "Those questions were passed to Asif Sharif, Researcher and Developer of PQNK, and his answers are published in this paper: cotton regrowth, planting by hand, turmeric, peas, rain-fed fruit trees, worm towers and vertical farming, the VIPP planter, and the cost of conversion.",
+      "Ask PQNK reads pedaver.com, so from now on it can answer these questions directly. Further papers in this series will follow as new questions come in.",
+    ],
+    keyTakeaways: [
+      "Cotton is genetically a perennial plant: cut back and left to regrow on a properly maintained PQNK soil, the ratoon crop should yield in line with a fresh planting, if not higher, whatever the variety.",
+      "Without the SIPP or VIPP, seed can be planted by hand with a dibbler; on mulched PQNK beds this is far easier than transplanting rice into standing water.",
+      "Turmeric is planted in March or April and harvested in October or November: three to four lines on 42 inch (107 cm) beds, 12 inches (30 cm) apart, seed 4 inches (10 cm) deep under 3 inches (7.5 cm) of mulch, 26,000 to 35,000 plants per acre.",
+      "Peas: the single-flush kind is planted in four lines on a 42 inch bed at 8 inches (20 cm), about 52,000 plants per acre; the vine kind in three lines at 8 inches, about 40,000 plants per acre.",
+      "A PQNK bed needs no worm tower, because its continuous mulch feeds earthworms along the whole bed; PQNK recommends open field vertical farming for creepers, climbers and vines (KP-174).",
+      "Where the average rainfall is 16 inches (400 mm) a year or more, every crop and orchard plant can be grown, provided every drop is absorbed where it falls (KP-068, contour line farming).",
+      "The VIPP is supplied by FarmMore Productivity Enhancement (Private) Limited, contact Mr. Naseer Ahmad, +92 301 0046333; prices from the vendor.",
+      "Converting a field to PQNK costs about Rs 21,000 per acre once, at 2026 prices in Pakistan: subsoiling, washing, bed shaping, Jantar seed and planting, two furrow irrigations, and ending the cover crop as mulch while planting the cash crop.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {

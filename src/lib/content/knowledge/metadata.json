@@ -17002,6 +17002,120 @@
 "why":"why food from a living soil carries more nourishment and no residues"
 }
 ]
+},
+{
+"slug":"ask-pqnk-field-answers-1",
+"primarySubject":"Answers from the Researcher and Developer of PQNK to farmers’ questions the Ask PQNK assistant could not yet answer: cotton ratoon, hand planting without SIPP or VIPP, turmeric and pea spacing on PQNK beds, rain-fed fruit trees, worm towers and vertical farming, the VIPP vendor, and the per-acre cost of conversion",
+"questionsAnswered":[
+"If cotton FH-1148 is cut back to 6 inches, how much will it yield the next season?",
+"How do I plant old PQNK beds without a SIPP or VIPP?",
+"How and when should turmeric be planted on mature PQNK beds?",
+"What spacing should peas (matar) have on a PQNK bed?",
+"Should I add a worm tower to my bed?",
+"Which fruit trees can grow on rain-fed heavy clay?",
+"Where can I buy the VIPP planter and what does it cost?",
+"How much does it cost to convert two acres to PQNK?",
+"Is Ask PQNK an AI tool?",
+"Can I ask Ask PQNK by voice?"
+],
+"keywords":[
+"Ask PQNK",
+"field answers",
+"cotton ratoon",
+"FH-1148",
+"perennial cotton",
+"hand planting",
+"dibbler",
+"turmeric",
+"haldi",
+"peas",
+"matar",
+"plant spacing",
+"worm tower",
+"vertical farming",
+"rain-fed",
+"heavy clay",
+"fruit trees",
+"VIPP vendor",
+"FarmMore",
+"conversion cost",
+"cost per acre",
+"voice questions"
+],
+"geography":null,
+"crops":[
+"Cotton",
+"Turmeric",
+"Pea",
+"Banana",
+"Apple",
+"Pomegranate",
+"Papaya",
+"Fruit Trees (crop group)"
+],
+"fieldProblems":[
+"High Input / Production Cost",
+"Suboptimal Planting Density",
+"Machinery / Field-Operation Decision Difficulty",
+"Space / Infrastructure Constraint",
+"Drought / Water Scarcity",
+"Regional Rainfall / Microclimate Variability"
+],
+"problemFamily":[
+"Cost, Profit & Markets",
+"Machinery & Field Operations",
+"Transition / Conversion",
+"Water & Drainage",
+"Yield & Produce Quality"
+],
+"fieldPractices":[
+"PQNK Transition Protocol (Staged)",
+"Mechanical Hardpan Breaking (Subsoiling)",
+"Sulfuric Acid Water-Wash (pH Correction)",
+"Permanent Raised Bed Formation",
+"Jantar (Sesbania) Cover Cropping",
+"Surface Mulching (General)",
+"Root Retention (Standing Roots After Harvest)",
+"Precision Seed Placement (SIPP/VIPP-style)",
+"Direct Seeding",
+"Canopy / Vine Training (Trellising)",
+"Contour Alignment / Land Leveling",
+"Furrow Irrigation"
+],
+"machineryTools":[
+"VIPP (PQNK machine)",
+"SIPP (PQNK machine)",
+"Dribble Board / Hand Dribbler",
+"Subsoiler / Hardpan Breaker"
+],
+"climateType":[],
+"scientificDomains":[
+"Production Architecture",
+"Transition",
+"Water",
+"Plants"
+],
+"pqnkPrinciples":[
+"No Soil Disturbance",
+"Permanent Biological Cover"
+],
+"productionStages":[
+"Transition/Conversion",
+"Planting",
+"Harvest"
+],
+"evidenceType":"Field Observation",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/production-architecture",
+"why":"how plant spacing and lines on the 42 inch bed set the plant population"
+},
+{
+"page":"/science/transition",
+"why":"the one-time operations of conversion that the cost per acre covers"
+}
+]
 }
 
 ]
