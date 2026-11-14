@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "prebuild": "tsx scripts/generate-advisory-manifest.ts",
-    "build": "next build && node scripts/inject-translate-guard.mjs",
+    "build": "next build && node scripts/inject-translate-guard.mjs && node scripts/content-index.mjs",
     "build:pages": "npm run build && node scripts/strip-media-from-out.mjs",
     "start": "next start",
     "lint": "eslint",

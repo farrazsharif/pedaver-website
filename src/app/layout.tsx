@@ -82,7 +82,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pqnkJsonLd) }} />
         <Header dict={dict} />
         <InstallBanner dict={dict} />
-        <main className="flex-1">{children}</main>
+        <main id="main-content" className="flex-1">{children}</main>
         <Footer dict={dict} />
         <GoogleAnalyticsScripts gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
         <ClarityScript projectId={process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID} />
