@@ -2372,3 +2372,9 @@ this session.
 - Published as a Knowledge Paper (existing KP pipeline, no new site structure) so the bot learns from pedaver.com. Builder `Claude tools/chapter_builds/kp226_build_draft.py` + `kp226_content.py`; draft `New Knowledge paper for upload/KP-226_Ask_PQNK_Field_Answers_1 - Claude Draft.docx` (4 pp.), slug `ask-pqnk-field-answers-1`. Author's slide (open field vertical farming) used untouched.
 - Open for the author: turmeric harvest month (Sep/Oct vs the usual 7-9 months), the "Planting Rs 4,000" row label, two highlighted additions (worm tower line, costs abroad). Then save Pages/Word/PDF and approve; then kp226_web.py + kp_body.py as for KP-225.
 - Future unanswered lists: same route, "Ask PQNK Field Answers 2", 3, ...
+
+### 2026-11-14 · KP-226 Ask PQNK Field Answers 1 (published)
+- Author saved the corrected draft as Pages in `PQNK_Claude_Work/Ask PQNK/` and said "Use and publish". FINAL Pages/Word/PDF made from it in `New Knowledge paper for upload/` (Word + PDF exported from a copy; author's file untouched).
+- Author's changes: turmeric harvest October-November; cost row "Planting Jantar as cover crop"; both questions removed; worm-tower and costs-abroad lines kept.
+- Live at https://pedaver.com/papers/ask-pqnk-field-answers-1/ (commit 7957077), category Workforce & Practice Advisories. kp226_web.py + kp_body.py 226; picture text twin in imageDescriptions.ts, table twin in chapterTables.ts.
+- Route for future unanswered lists: Pages answer sheet -> "Ask PQNK Field Answers N" KP -> developer re-indexes pedaver.com.
