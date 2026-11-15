@@ -514,7 +514,7 @@ const en = {
   ask: {
     pageTitle: "Ask PQNK",
     pageSubtitle:
-      "Ask any question about PQNK for your crop, soil, water or farm. Answers come from the PQNK knowledge published on pedaver.com: the book, the Knowledge Papers and farmers' field evidence.",
+      "Ask any question about PQNK for your crop, soil, water or farm. Answers come from the PQNK knowledge published on pedaver.com: the book, the Knowledge Papers and farmers' field evidence. When the assistant cannot answer a question, it goes to Asif Sharif, and his answer is published in the Ask PQNK Field Answers papers.",
     chatWelcome:
       "Welcome. Ask me anything about PQNK, for example how to break the hardpan, how to form permanent beds, or how to grow a particular crop without purchased inputs.",
     chatPlaceholder: "Type your question…",
