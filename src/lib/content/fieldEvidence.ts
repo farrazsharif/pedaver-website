@@ -908,6 +908,20 @@ export const fieldEvidence: FieldEvidence[] = [
     videoId: "VfjToocFZ2I",
     tags: ["onion", "vegetables", "field evidence", "mulch", "straw mulch", "permanent cover", "no bare soil", "raised beds", "crop establishment"],
   },
+  {
+    feNumber: 58,
+    title: "Dew Is the Second Best Source of Water: Dew on PQNK Sugarcane Leaves",
+    evidenceTypes: ["Field Evidence"],
+    cropOrTopic: "Dew beading on sugarcane leaves at dawn; a single clump with many tillers",
+    year: 2026,
+    date: "2026-11-15",
+    summary:
+      "A short narrated look at PQNK sugarcane early in the morning. The first picture shows a single clump with many tillers growing from its base; each clump is expected to produce more than 20 millable canes. The second picture comes in close on the leaves, covered from end to end in tiny beads of dew. As the leaves cool overnight, water vapour in the air condenses on them. Some droplets run down the leaf towards the base of the plant, and others return to the air as the morning warms: a small part of nature's water cycle, seen on a single sugarcane leaf. In PQNK the soil is kept covered and undisturbed and the crop is given room to grow, and this is the water a living field receives freely every night. Dew, after rain, is the second best source of water. The PQNK water cycle of receiving, retaining and using this water is explained in Knowledge Papers KP-214 and KP-217, and dew on mulched PQNK sugarcane is also shown in KE-037.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/CBHVMPS2MEs",
+    videoId: "CBHVMPS2MEs",
+    tags: ["dew", "sugarcane", "water cycle", "humidity", "condensation", "tillering", "millable canes", "permanent cover", "no tillage", "harvesting without irrigation", "KP-214", "KP-217", "KE-037"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
