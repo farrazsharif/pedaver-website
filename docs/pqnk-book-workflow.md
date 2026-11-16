@@ -2378,3 +2378,9 @@ this session.
 - Author's changes: turmeric harvest October-November; cost row "Planting Jantar as cover crop"; both questions removed; worm-tower and costs-abroad lines kept.
 - Live at https://pedaver.com/papers/ask-pqnk-field-answers-1/ (commit 7957077), category Workforce & Practice Advisories. kp226_web.py + kp_body.py 226; picture text twin in imageDescriptions.ts, table twin in chapterTables.ts.
 - Route for future unanswered lists: Pages answer sheet -> "Ask PQNK Field Answers N" KP -> developer re-indexes pedaver.com.
+
+### 2026-11-16 · KP-227 Ask PQNK Field Answers 2 (drafted)
+- Source: the author's answers in `PQNK_Claude_Work/Ask PQNK - unanswered questions 2026-11-16.pages` (+ .pdf; saved in PQNK_Claude_Work, not the Ask PQNK subfolder). Author said "Publish". His farm-design slide is used untouched (`New Knowledge paper for upload/KP-227 picture - Farm design, long fields and syphon tubes (author slide).png`).
+- Builder `Claude tools/chapter_builds/kp227_build_draft.py` + `kp227_content.py`; draft `New Knowledge paper for upload/KP-227_Ask_PQNK_Field_Answers_2 - Claude Draft.docx` (5 pp.), slug `ask-pqnk-field-answers-2`. The author's headland answer was typed in row 7; it is used for the tractor question (section 6).
+- Plant numbers per acre assume 5 ft centre-to-centre (42 in. bed + furrow); this matches the author's figures for peas, moong, soybean, sunflower.
+- Open for the author: strawberry "grass" and "Ever-berries" wording; whether to add a line on dry grass / light rain (rats question); highlighted additions (plant-number note, Ch23 pointer, laser levellers, SIPP pay-back sentence, D.G. Khan contact line, "see Question 8").
