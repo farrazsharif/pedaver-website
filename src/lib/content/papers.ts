@@ -6071,6 +6071,34 @@ export const papers: Paper[] = [
       "Converting a field to PQNK costs about Rs 21,000 per acre once, at 2026 prices in Pakistan: subsoiling, washing, bed shaping, Jantar seed and planting, two furrow irrigations, and ending the cover crop as mulch while planting the cash crop.",
     ],
   },
+  {
+    slug: "ask-pqnk-field-answers-2",
+    kpNumber: 227,
+    libraryDate: "2026-11-16",
+    category: "Workforce & Practice Advisories",
+    title: "Ask PQNK Field Answers 2: Spacing, Sunflower, Strawberry, Farm Design and Machine Services",
+    summary:
+      "The second set of answers from Asif Sharif to questions the Ask PQNK assistant could not yet answer: plant spacing for moong, soybean and sunflower on 42 inch beds, sunflower planting times, strawberry in the heat, climbers on beds, farm design with long fields for machines, rats in the furrows, checking soil moisture by hand, how machine services reach the farmer, and PQNK farmers in Dera Ghazi Khan.",
+    publishedDate: "2026-11-16",
+    pdfPath: "/papers/ask-pqnk-field-answers-2.pdf",
+    abstract: [
+      "By 15 November 2026 Ask PQNK, the PQNK assistant on WhatsApp and at pedaver.com/ask, had received 375 questions from 83 farmers and answered 337 of them from the PQNK library. The questions it could not answer were passed to Asif Sharif, Researcher and Developer of PQNK, and his answers are published in this paper.",
+      "The answers cover plant spacing for moong, soybean and sunflower, sunflower planting times and the conversion steps, strawberry, climbers on beds, farm design for machines, rats in the furrows, checking soil moisture by hand, machine services and the SIPP pay-back, Ch. Ihsan ul Haq, PQNK farmers in Dera Ghazi Khan, and three questions about Ask PQNK itself.",
+      "Nature has one production system for every plant; only the space each plant needs changes. The first set of answers is in KP-226.",
+    ],
+    keyTakeaways: [
+      "Moong: 4 lines on a 42 inch (107 cm) bed, 8 inches (20 cm) from plant to plant, 52,000 plants per acre.",
+      "Soybean: ideally 100,000 plants per acre, 5 rows on a 42 inch bed at 5 inches (13 cm) from seed to seed.",
+      "Sunflower: 3 rows on a 42 inch bed at 8 inches (20 cm), 40,000 plants per acre; plant in late February or early March, or in July, avoiding rainy periods that crust the soil and restrict germination.",
+      "The conversion is the same for every crop: subsoil the hardpan to 22 inches, water-wash the soil (8 kg of sulphuric acid per acre if pH is above 8), grow Jantar on the beds, then end it with its roots left in the soil and its tops as mulch, and plant the cash crop.",
+      "Strawberry does not withstand excessive heat; under a proper organic mulch the soil stays close to 30 °C when the air is near 50 °C, and in PQNK replanting is not necessary.",
+      "Plants in the centre of the bed show the most vigour; keep plants as far from the water as possible, and design climbing structures for each crop.",
+      "Make the longest fields possible while moving the least soil: a watercourse with syphon tubes on one side, an access road for turning on the other.",
+      "Rats are part of the ecosystem; give them a space, and to make them move away spray an emulsion of castor oil and soap.",
+      "Judge moisture in the root zone, not at the surface: dig 4 to 6 inches deep in the middle of the bed; if a squeezed handful stays together like a moist ball, the moisture is enough.",
+      "Pedaver designs the machines and shares the drawings with vendors; service providers offer subsoiling, bed shaping, mulching and planting, and a SIPP at about Rs 700,000 pays for itself after planting about 35 acres.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {

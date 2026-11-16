@@ -17116,6 +17116,112 @@
 "why":"the one-time operations of conversion that the cost per acre covers"
 }
 ]
+},
+{
+"slug":"ask-pqnk-field-answers-2",
+"primarySubject":"Answers from the Researcher and Developer of PQNK to farmers’ questions the Ask PQNK assistant could not yet answer: moong, soybean and sunflower spacing on PQNK beds, sunflower planting times, strawberry in the heat, climbers on beds, farm design for machines, rats, checking soil moisture by hand, and machine service providers",
+"questionsAnswered":[
+"What spacing should moong have on PQNK beds?",
+"What is the soybean seed rate and spacing on PQNK beds?",
+"Can sunflower be planted in July on PQNK mulched beds, and at what spacing?",
+"When can strawberry be planted, and does it need replanting?",
+"How far from the bed edge should trellis poles and climbing plants be?",
+"Where does the tractor start and turn on a field of beds?",
+"What should I do about rats digging in the furrows?",
+"How do I check whether my beds have enough moisture after light rain?",
+"Who provides PQNK machine services such as subsoiling, bed shaping and planting?",
+"Does Ch. Ihsan ul Haq have a role in PQNK?",
+"Are there PQNK farmers in Dera Ghazi Khan?",
+"Can Ask PQNK translate its answer into Urdu or remember my details?"
+],
+"keywords":[
+"Ask PQNK",
+"field answers",
+"moong",
+"mung bean",
+"soybean",
+"seed rate",
+"sunflower",
+"planting time",
+"strawberry",
+"everbearing",
+"trellis",
+"climbers",
+"farm design",
+"long fields",
+"syphon tubes",
+"headland",
+"tractor turning",
+"rats",
+"castor oil",
+"soil moisture",
+"ball test",
+"service providers",
+"SIPP pay-back",
+"Ihsan ul Haq",
+"Dera Ghazi Khan"
+],
+"geography":null,
+"crops":[
+"Mung Bean",
+"Soybean",
+"Sunflower",
+"Strawberry"
+],
+"fieldProblems":[
+"High Input / Production Cost",
+"Suboptimal Planting Density",
+"Machinery / Field-Operation Decision Difficulty",
+"Space / Infrastructure Constraint"
+],
+"problemFamily":[
+"Cost, Profit & Markets",
+"Machinery & Field Operations",
+"Transition / Conversion"
+],
+"fieldPractices":[
+"PQNK Transition Protocol (Staged)",
+"Mechanical Hardpan Breaking (Subsoiling)",
+"Sulfuric Acid Water-Wash (pH Correction)",
+"Permanent Raised Bed Formation",
+"Jantar (Sesbania) Cover Cropping",
+"Surface Mulching (General)",
+"Root Retention (Standing Roots After Harvest)",
+"Precision Seed Placement (SIPP/VIPP-style)",
+"Canopy / Vine Training (Trellising)",
+"Furrow Irrigation"
+],
+"machineryTools":[
+"SIPP (PQNK machine)",
+"Subsoiler / Hardpan Breaker"
+],
+"climateType":[],
+"scientificDomains":[
+"Production Architecture",
+"Transition",
+"Water",
+"Plants"
+],
+"pqnkPrinciples":[
+"No Soil Disturbance",
+"Permanent Biological Cover"
+],
+"productionStages":[
+"Transition/Conversion",
+"Planting"
+],
+"evidenceType":"Field Observation",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/production-architecture",
+"why":"how lines and spacing on the 42 inch bed set the plant population for each crop"
+},
+{
+"page":"/science/water",
+"why":"judging moisture in the root zone, and why rain can only infiltrate, evaporate or run off"
+}
+]
 }
 
 ]
