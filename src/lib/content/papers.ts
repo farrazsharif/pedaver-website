@@ -6099,6 +6099,32 @@ export const papers: Paper[] = [
       "Pedaver designs the machines and shares the drawings with vendors; service providers offer subsoiling, bed shaping, mulching and planting, and a SIPP at about Rs 700,000 pays for itself after planting about 35 acres.",
     ],
   },
+  {
+    slug: "ask-pqnk-field-answers-3",
+    kpNumber: 228,
+    libraryDate: "2026-11-18",
+    category: "Workforce & Practice Advisories",
+    title: "Ask PQNK Field Answers 3: The Mulcher, Crop Yields, Moisture from the Air, Grow Bags and Clay Slurry",
+    summary:
+      "The third set of answers from Asif Sharif to questions the Ask PQNK assistant could not yet answer: what the mulcher does, why PQNK is reluctant to quote crop yields and what to expect instead, whether plants can live on moisture from the air, holes in grow bags, and clay slurry.",
+    publishedDate: "2026-11-18",
+    pdfPath: "/papers/ask-pqnk-field-answers-3.pdf",
+    abstract: [
+      "On 16 and 17 November 2026 farmers asked Ask PQNK, the PQNK assistant on WhatsApp and at pedaver.com/ask, questions it could not answer from the PQNK library. They were passed to Asif Sharif, Researcher and Developer of PQNK, and his answers are published in this paper.",
+      "The answers cover the mulcher, crop yields for maize, chilli, cotton, sugar beet and beetroot, moisture from the air, holes in grow bags, and clay slurry.",
+      "Yield depends on how well every PQNK step is followed; as a rule of thumb at least 40% more can be expected without inputs, and a PQNK crop is more profitable from the first crop because its costs are far lower. The earlier answers are in KP-226 and KP-227.",
+    ],
+    keyTakeaways: [
+      "The mulcher slashes the mature Jantar cover crop and spreads it evenly on the beds as mulch, leaving the whole root system in the soil; it also spreads crop residue evenly.",
+      "Yield depends on eight factors: how the transition steps are followed, soil maturity, soil type, variety, planting time, plants per acre and spacing, mulch cover, and water management.",
+      "As a rule of thumb, if all the PQNK steps are properly followed, at least 40% higher yield can be expected without the use of inputs.",
+      "Even before yields rise, a PQNK crop is more profitable: no tillage, no seedbed preparation, one-pass planting, no fertilizer, weedicides, pesticides or fungicides, at least 80% less irrigation water, and a quality premium.",
+      "The same yield answer applies to every crop and variety in every district, including maize, chilli, cotton, sugar beet and beetroot.",
+      "With roots retained from previous crops and a thick organic mulch, rain is absorbed and held, the mulch adds dew and air moisture, and with SMM no irrigation is needed where rainfall is 16 inches (400 mm) a year or more.",
+      "In a grow bag the holes are at the bottom; apply only as much water as the plants need, water only when the leaves begin to wilt, and keep the soil mulched.",
+      "A clay slurry has several uses (enlarging seed for singulation, sealing sandy soil, helping water flow in sandy furrows); ask a detailed question in the PQNK learning groups on WhatsApp.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {

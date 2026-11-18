@@ -17222,6 +17222,101 @@
 "why":"judging moisture in the root zone, and why rain can only infiltrate, evaporate or run off"
 }
 ]
+},
+{
+"slug":"ask-pqnk-field-answers-3",
+"primarySubject":"Answers from the Researcher and Developer of PQNK to farmers’ questions the Ask PQNK assistant could not yet answer: the mulcher, crop yields under PQNK and the factors that decide them, moisture from the air, holes in grow bags, and clay slurry",
+"questionsAnswered":[
+"What does the mulcher do in PQNK?",
+"What is the maize yield with PQNK?",
+"How much chilli yield is there on PQNK?",
+"What is the cotton yield per acre with PQNK?",
+"What is the yield of sugar beet or beetroot on PQNK?",
+"Does PQNK work for the Tata Diggaj cotton variety in Agra?",
+"Can plants survive on moisture from the air without irrigation?",
+"Where should the holes be made in a grow bag?",
+"How do I make a clay and water slurry?"
+],
+"keywords":[
+"Ask PQNK",
+"field answers",
+"mulcher",
+"residue management",
+"crop yield",
+"yield factors",
+"40% higher yield",
+"maize",
+"chilli",
+"cotton",
+"sugar beet",
+"beetroot",
+"Tata Diggaj",
+"Agra",
+"cost of production",
+"dew",
+"air moisture",
+"no irrigation",
+"SMM",
+"grow bag",
+"clay slurry",
+"seed singulation"
+],
+"geography":null,
+"crops":[
+"Maize (Corn)",
+"Chilli",
+"Cotton"
+],
+"fieldProblems":[
+"High Input / Production Cost",
+"Yield Stagnation / Decline",
+"Farmer Uncertainty / Diagnostic Skill Gap",
+"Drought / Water Scarcity",
+"Residue Mismanagement"
+],
+"problemFamily":[
+"Yield & Produce Quality",
+"Cost, Profit & Markets",
+"Machinery & Field Operations"
+],
+"fieldPractices":[
+"PQNK Transition Protocol (Staged)",
+"Jantar (Sesbania) Cover Cropping",
+"Chop-and-Drop Mulching",
+"Root Retention (Standing Roots After Harvest)",
+"Soil Moisture Management (SMM)",
+"Irrigation Reduction / Timing Restraint",
+"Reduced/Eliminated Chemical Input"
+],
+"machineryTools":[
+"Mulcher & Bed Renovator (PQNK machine)"
+],
+"climateType":[],
+"scientificDomains":[
+"Water",
+"Production Architecture",
+"Transition"
+],
+"pqnkPrinciples":[
+"Permanent Biological Cover",
+"No Soil Disturbance"
+],
+"productionStages":[
+"Transition/Conversion",
+"Harvest"
+],
+"evidenceType":"Field Observation",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/water",
+"why":"how retained roots and organic mulch hold rain and add dew, so mature beds need no irrigation"
+},
+{
+"page":"/science/transition",
+"why":"why yield depends on how fully the transition steps are followed and on soil maturity"
+}
+]
 }
 
 ]
