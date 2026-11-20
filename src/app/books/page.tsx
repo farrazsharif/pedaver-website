@@ -51,7 +51,9 @@ export default function BooksPage() {
                     {book.subtitle && <p className="mt-1 text-sm italic text-ink-soft">{book.subtitle}</p>}
                     <p className="mt-3 leading-relaxed text-ink-soft">{book.description}</p>
                     <p className="mt-4 text-sm font-semibold text-primary">
-                      {publishedCount > 0
+                      {book.status === "complete"
+                        ? "Read the complete book →"
+                        : publishedCount > 0
                         ? `${publishedCount} chapter${publishedCount === 1 ? "" : "s"} published →`
                         : "View book contents →"}
                     </p>

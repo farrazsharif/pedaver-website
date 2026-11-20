@@ -214,7 +214,7 @@ const en = {
         {
           audience: "Read the Science in Depth",
           label: "PQNK Books",
-          body: "The Natural Ecosystem Science of Production Agriculture, published chapter by chapter as each is written and reviewed.",
+          body: "The Natural Ecosystem Science of Production Agriculture: the complete First Edition, free to read, listen to and download.",
           href: "/books",
           cta: "Browse the PQNK Books",
         },
