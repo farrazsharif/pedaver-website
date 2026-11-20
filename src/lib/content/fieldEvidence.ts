@@ -923,6 +923,20 @@ export const fieldEvidence: FieldEvidence[] = [
     videoId: "CBHVMPS2MEs",
     tags: ["dew", "sugarcane", "water cycle", "humidity", "condensation", "tillering", "millable canes", "permanent cover", "no tillage", "harvesting without irrigation", "KP-214", "KP-217", "KE-037", "Vasudha Sardar"],
   },
+  {
+    feNumber: 59,
+    title: "Fodder and Ratoon Cotton on PQNK: Two Years Without Fertiliser, and No Tractor in the Field",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
+    cropOrTopic: "A fodder crop on PQNK for more than two years, and about 10 to 12 acres of ratoon cotton kept by tenant farmers",
+    year: 2026,
+    date: "2026-11-20",
+    summary:
+      "A farmer reports to Asif Sharif in Urdu from his fields. First he shows a tall, dense fodder crop that has been on PQNK for more than two years without any fertiliser or foliar spray. It is still growing strongly in November, he says, and will keep giving cuttings through November and December on very little water. Then he walks through about 10 to 12 acres where his tenant farmers, after seeing the PQNK method, have kept last season's cotton standing as a ratoon crop instead of ploughing it out. Bermuda grass (khabal) is plentiful in the field, but they have decided that no tractor will come in. Without PQNK machines they could not break the hardpan, so they are doing everything else by hand: where the grass gets in the way they cut it from the top with hand tools and lay it on the beds as mulch. In many places they have also sown wheat or mustard between the cotton rows. He says it took much effort to explain the PQNK message to them, but they have understood it to a good extent, and the result is better.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/_xDEQOb_xro",
+    videoId: "_xDEQOb_xro",
+    tags: ["fodder", "cotton", "ratoon cotton", "mundhi kapas", "tenant farmers", "farmer testimony", "no fertiliser", "no foliar spray", "less water", "no tractor", "no tillage", "Bermuda grass", "khabal", "weeds as mulch", "hand tools", "wheat", "mustard", "intercropping", "hardpan"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
