@@ -937,6 +937,22 @@ export const fieldEvidence: FieldEvidence[] = [
     videoId: "_xDEQOb_xro",
     tags: ["fodder", "cotton", "ratoon cotton", "mundhi kapas", "tenant farmers", "farmer testimony", "no fertiliser", "no foliar spray", "less water", "no tractor", "no tillage", "Bermuda grass", "khabal", "weeds as mulch", "hand tools", "wheat", "mustard", "intercropping", "hardpan"],
   },
+  {
+    feNumber: 60,
+    title: "Lemon on PQNK, Sialkot: Loaded with Fruit, Zero Inputs",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
+    cropOrTopic: "Three home lemon plants on PQNK, fruiting and flowering at the same time",
+    year: 2026,
+    date: "2026-11-20",
+    location: "Sialkot",
+    farmer: "Mian Ahmad Raza",
+    summary:
+      "Mian Ahmad Raza of Sialkot shows Asif Sharif his three lemon plants, grown beside a brick wall at home. Each is loaded with fruit from top to bottom, with green lemons hanging right down to the ground, and new flowering is still coming on alongside the fruit. The plants get zero inputs: no fertiliser and no spray of any kind, and, he says, they are not even watered; the plants were simply planted and left. They give fruit three to four times a year. This year the family did not buy a single lemon from the market; even when lemons were in the shops, they made their sikanjvi (lemonade) from their own plants. He notes an occasional small spot on a leaf, which he puts down to moisture and does not regard as a problem. He says he has never seen fruiting like this before, and thanks Asif Sharif for the guidance that showed farmers like him the way.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/Tqj6hZQKppk",
+    videoId: "Tqj6hZQKppk",
+    tags: ["lemon", "citrus", "home garden", "farmer testimony", "zero input", "no fertiliser", "no spray", "no irrigation", "fruiting and flowering together", "three to four crops a year", "sikanjvi", "Sialkot", "Mian Ahmad Raza"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
