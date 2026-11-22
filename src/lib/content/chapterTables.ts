@@ -1515,4 +1515,13 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["Ending the cover crop, mulching it on the beds with its roots left in the soil, and planting the next cash crop with the SIPP or VIPP", "Rs 4,000"],
     ["Total", "About Rs 21,000 per acre"],
   ] },
+  "kp229-table-01.png": { headers: ["", "Naked, ploughed ACI field", "Covered, unploughed PQNK field"], rows: [
+    ["Soil surface at 50°C air", "Passes 70°C (158°F)", "Close to 30°C (86°F)"],
+    ["Effect on the air above", "A hot plate: adds heat, strengthens heatwaves", "A cool island: leaves release water and cool the air"],
+    ["Heavy rain", "Runs off over the hardpan, feeds the flood", "Soaks in: 13 inches in eight hours on PQNK beds"],
+    ["After the rain", "Dries and heats within days", "Holds moisture for the crop through the dry weeks"],
+    ["Water from underground", "Pumped up and lost to the air", "Mature beds need no irrigation where rain is 16 inches (400 mm) a year or more"],
+    ["Soil carbon", "Burnt off by ploughing as carbon dioxide", "Built up by roots and mulch, and kept"],
+    ["The weather it feeds", "Short, violent water cycle: drought, then flood", "Slow, steady water cycle: dew, humidity and local rain"],
+  ] },
 };

@@ -17317,6 +17317,105 @@
 "why":"why yield depends on how fully the transition steps are followed and on soil maturity"
 }
 ]
+},
+{
+"slug":"the-hot-field-naked-soil-hardpan-and-erratic-weather",
+"primarySubject":"How naked, ploughed soil and the tillage hardpan feed erratic, stuck weather (heat islands, a short violent water cycle, pumped groundwater and carbon dioxide from the plough), and how covered, unploughed PQNK soil reverses them",
+"questionsAnswered":[
+"Why is the weather becoming erratic and stuck?",
+"How hot does bare soil get compared with mulched soil?",
+"How does farming affect the weather?",
+"How does the hardpan cause floods and droughts?",
+"Does irrigation with groundwater add water vapour to the air?",
+"Is carbon dioxide part of the PQNK climate story?",
+"How does PQNK help against heatwaves and erratic weather?"
+],
+"keywords":[
+"erratic weather",
+"stuck weather",
+"heat island",
+"bare soil",
+"soil temperature",
+"70°C",
+"mulch",
+"hardpan",
+"infiltration",
+"runoff",
+"flood",
+"water cycle",
+"small water cycle",
+"water vapour",
+"groundwater",
+"carbon dioxide",
+"soil carbon",
+"tillage",
+"jet stream",
+"heatwave",
+"heat dome",
+"climate"
+],
+"geography":"Punjab (Pakistan and India) as the case; global",
+"crops":[],
+"fieldProblems":[
+"Erratic / Unpredictable Weather Patterns",
+"Bare / Exposed Soil",
+"Soil Temperature Extremes",
+"Hardpan",
+"Poor Water Infiltration",
+"Runoff",
+"Flooding",
+"Drought / Water Scarcity",
+"Groundwater / Aquifer Depletion",
+"Soil Organic Matter / Carbon Loss",
+"Tillage Damage to Soil Biology / Structure",
+"Heat Stress on Crop",
+"Evaporation / Moisture Loss"
+],
+"problemFamily":[
+"Heat, Weather & Climate",
+"Water & Drainage",
+"Soil & Roots"
+],
+"fieldPractices":[
+"PQNK Transition Protocol (Staged)",
+"Mechanical Hardpan Breaking (Subsoiling)",
+"Permanent Raised Bed Formation",
+"Jantar (Sesbania) Cover Cropping",
+"Surface Mulching (General)",
+"Root Retention (Standing Roots After Harvest)",
+"No-Till / Minimal-Disturbance Planting",
+"Soil Moisture Management (SMM)"
+],
+"machineryTools":[
+"Subsoiler / Hardpan Breaker"
+],
+"climateType":[
+"Global / Systemic (not climate-specific)"
+],
+"scientificDomains":[
+"Climate",
+"Water",
+"Soil"
+],
+"pqnkPrinciples":[
+"No Soil Disturbance",
+"Permanent Biological Cover"
+],
+"productionStages":[
+"Transition/Conversion"
+],
+"evidenceType":"Scientific Mechanism",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/climate",
+"why":"how naked soil, the hardpan, pumped groundwater and the plough feed erratic weather, and how covered soil reverses it"
+},
+{
+"page":"/science/water",
+"why":"why rain runs off a hardpan-sealed soil and soaks into a living, covered one"
+}
+]
 }
 
 ]

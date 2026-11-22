@@ -6125,6 +6125,33 @@ export const papers: Paper[] = [
       "A clay slurry has several uses (enlarging seed for singulation, sealing sandy soil, helping water flow in sandy furrows); ask a detailed question in the PQNK learning groups on WhatsApp.",
     ],
   },
+  {
+    slug: "the-hot-field-naked-soil-hardpan-and-erratic-weather",
+    kpNumber: 229,
+    libraryDate: "2026-11-22",
+    category: "Water & Climate",
+    title: "The Hot Field: How Naked Soil and Hardpan Break the Weather, and How Covered Soil Mends It",
+    summary:
+      "The weather is not only getting hotter; it is losing its rhythm. This paper shows how naked, ploughed soil becomes a heat island (above 70°C when the air is 50°C, against about 30°C under mulch), how the hardpan shuts out rain and turns the water cycle short and violent, how pumped groundwater and the plough add water and carbon dioxide to the air, and how covered, unploughed PQNK soil reverses all of them.",
+    publishedDate: "2026-11-22",
+    pdfPath: "/papers/the-hot-field-naked-soil-hardpan-and-erratic-weather.pdf",
+    abstract: [
+      "Floods in deserts, fires in wet forests, heatwaves that stay for weeks and sudden cold: the weather has lost its rhythm. The usual explanation looks to the sky and the poles; this paper looks at the ground.",
+      "In hot regions such as Punjab, when the air reaches 50°C (122°F), naked soil passes 70°C (158°F), while soil under organic mulch stays close to 30°C (86°F), about 40°C cooler. Ploughed, uncovered farmland is one of the largest man-made heat surfaces on Earth, and it strengthens heatwaves from below.",
+      "A plough and tillage hardpan stops rain from soaking in, so water runs off to the flood or is lost from the hot crust, and the land dries and heats again within days. Pumped groundwater adds water to the air that had been locked underground, and ploughing sends soil carbon into the air as carbon dioxide.",
+      "The carbon story and the water story belong together: both come from the plough and the naked field, and both are reversed by an unploughed, covered, living soil, which the farmer can start on from the next crop.",
+    ],
+    keyTakeaways: [
+      "Weather is not only getting hotter but getting stuck; uneven heating and water carried in the air drive it, and both are shaped by how farmland is treated.",
+      "When the air is 50°C, naked soil passes 70°C while soil under organic mulch stays close to 30°C, about 40°C cooler (PQNK field readings, Punjab).",
+      "A region of ploughed, dry farmland acts like a hot plate that strengthens heat domes; a covered field with a living crop is a cool island.",
+      "The hardpan shuts out rain: water runs off to the flood, the land dries and heats within days, and the small water cycle is broken.",
+      "On one PQNK orchard 13 inches (330 mm) of rain soaked in within eight hours while the conventional land beside it stood under water.",
+      "Water vapour is the largest contributor to the greenhouse effect; pumped groundwater and hot fields add to the air’s load of vapour and heat.",
+      "Ploughing has sent about 116 billion tonnes of soil carbon into the air; PQNK sends 20 to 40 percent of the plant’s carbon below ground and keeps it there.",
+      "The eight PQNK conversion steps, then never ploughing and never leaving the soil bare, turn a hot field into a cool one.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {
