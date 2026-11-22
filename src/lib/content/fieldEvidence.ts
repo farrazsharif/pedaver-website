@@ -953,6 +953,23 @@ export const fieldEvidence: FieldEvidence[] = [
     videoId: "Tqj6hZQKppk",
     tags: ["lemon", "citrus", "home garden", "farmer testimony", "zero input", "no fertiliser", "no spray", "no irrigation", "fruiting and flowering together", "three to four crops a year", "sikanjvi", "Sialkot", "Mian Ahmad Raza"],
   },
+  {
+    feNumber: 61,
+    title: "Kinnow on PQNK Since Eight Years, Chak No. 343: Six Acres Sold for Rs 28 Lakh, Without Inputs",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
+    cropOrTopic: "Six-acre Kinnow orchard under rice straw mulch, without inputs",
+    year: 2026,
+    date: "2026-11-22",
+    location: "Chak No. 343",
+    farmer: "Imran Malhi (orchard owner)",
+    summary:
+      "A neighbouring farmer, Pola, walks through the Kinnow orchard of Imran Malhi at Chak No. 343 and shows what years of PQNK care have done. The owner has worked on this orchard for years without inputs: every year he spreads rice straw (parali) under the trees, so the soil beneath them stays covered, and the trees are watered through furrows (khaal) cut beside them. The trees are healthy and loaded with fruit from top to bottom, every tree bearing, with Kinnow hanging in bunches \"like grapes\". The fruit of the six-acre orchard has been sold for Rs 28 lakh this season. People used to say the orchard was finished; now, he says, it is one of the most beautiful orchards in the area. He invites anyone who wants to see an old orchard brought back to life to visit Chak No. 343 and ask for Imran Malhi's orchard, and closes with a prayer for the health and prosperity of its owners.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/Z7u0OyKl3cU",
+    videoId: "Z7u0OyKl3cU",
+    relatedCropSlug: "citrus-kinnow",
+    tags: ["citrus", "kinnow", "orchard", "orchard recovery", "farmer testimony", "zero input", "no fertiliser", "no spray", "rice straw mulch", "parali", "Rs 28 lakh", "six acres", "Chak No. 343", "Imran Malhi"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
