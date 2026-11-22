@@ -6152,6 +6152,32 @@ export const papers: Paper[] = [
       "The eight PQNK conversion steps, then never ploughing and never leaving the soil bare, turn a hot field into a cool one.",
     ],
   },
+  {
+    slug: "how-much-water-does-mulch-catch-from-the-night-air",
+    kpNumber: 230,
+    libraryDate: "2026-11-22",
+    category: "Water & Climate",
+    title: "How Much Water Does Mulch Catch from the Night Air? Dew on a PQNK Bed Covered with Rice Straw",
+    summary:
+      "A worked example on one square metre of rice straw mulch shows how much water a PQNK bed catches from the night air: a typical dew night gives about 0.25 mm, about 1,000 litres on a fully mulched acre. The mulch keeps this water and passes it slowly to the soil, while bare soil loses it within hours of sunrise.",
+    publishedDate: "2026-11-22",
+    pdfPath: "/papers/how-much-water-does-mulch-catch-from-the-night-air.pdf",
+    abstract: [
+      "On clear, calm nights the ground cools and moisture from the air settles on every cold surface as dew. On a PQNK bed that surface is the mulch.",
+      "A worked example: one square metre of rice straw mulch, six inches (15 cm) thick, that is 0.250 kg heavier at dawn than at dusk has caught 250 millilitres of water, equal to 0.25 mm of rain. Across an acre fully under mulch that is about 1,000 litres in one night, or about 700 litres where only the bed tops are mulched. The figures are an example of how the arithmetic works, using a typical dew night.",
+      "Over a season of dew nights this adds up to a gentle, steady rain without clouds. Mulch keeps the water and passes it slowly to the soil, catches moisture rising from the soil beneath, and holds humidity; bare soil loses its night moisture by morning.",
+    ],
+    keyTakeaways: [
+      "Dew forms when surfaces lose heat to the clear night sky; loose rice straw offers millions of cold surfaces on every square metre.",
+      "Example: a gain of 0.250 kg on one square metre of straw is 250 ml of water, the same as 0.25 mm of rain.",
+      "One acre is about 4,047 square metres, so a typical dew night gives about 1,000 litres on a fully mulched acre, or about 700 litres where only the bed tops are mulched.",
+      "Dew nights vary: about 400 litres an acre on a light night, 1,000 on a typical night and 2,000 on a heavy one.",
+      "Sixty typical dew nights in a dry season add up to about 0.6 inch (15 mm), roughly 60,000 litres an acre, with no runoff.",
+      "Bare soil loses its dew by mid-morning; under mulch the water stays and soaks down slowly.",
+      "Mulch also catches moisture rising from the soil at night and holds humidity, so the soil can gain more than the weighing shows.",
+      "Dew is one reason mature PQNK beds need no irrigation where rainfall is 16 inches (400 mm) a year or more.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {

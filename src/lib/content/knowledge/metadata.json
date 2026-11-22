@@ -17416,6 +17416,80 @@
 "why":"why rain runs off a hardpan-sealed soil and soaks into a living, covered one"
 }
 ]
+},
+{
+"slug":"how-much-water-does-mulch-catch-from-the-night-air",
+"primarySubject":"How much water a rice straw mulch on a PQNK bed catches from the night air as dew, worked through one square metre and one acre, and why mulch keeps that water while bare soil loses it",
+"questionsAnswered":[
+"How much water does mulch catch from dew?",
+"How much dew falls on an acre in one night?",
+"Can dew supply water to crops?",
+"Why does mulched soil stay moist while bare soil dries?",
+"How does dew reduce irrigation under PQNK?"
+],
+"keywords":[
+"dew",
+"night air",
+"air moisture",
+"humidity",
+"rice straw",
+"mulch",
+"0.25 mm",
+"1,000 litres per acre",
+"soil moisture",
+"condensation",
+"bare soil",
+"no irrigation",
+"SMM",
+"Vasudha Sardar",
+"water cycle"
+],
+"geography":null,
+"crops":[
+"Rice",
+"Sugarcane"
+],
+"fieldProblems":[
+"Evaporation / Moisture Loss",
+"Bare / Exposed Soil",
+"Drought / Water Scarcity",
+"High Irrigation Cost / Dependency",
+"Low Soil Water-Holding Capacity (Field Capacity)"
+],
+"problemFamily":[
+"Water & Drainage",
+"Heat, Weather & Climate"
+],
+"fieldPractices":[
+"Surface Mulching (General)",
+"Crop Residue Retention",
+"Soil Moisture Management (SMM)",
+"Irrigation Reduction / Timing Restraint",
+"Permanent Raised Bed Formation"
+],
+"machineryTools":[],
+"climateType":[
+"Global / Systemic (not climate-specific)"
+],
+"scientificDomains":[
+"Water",
+"Soil",
+"Climate"
+],
+"pqnkPrinciples":[
+"Permanent Biological Cover"
+],
+"productionStages":[
+"Vegetative Growth"
+],
+"evidenceType":"Scientific Mechanism",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/water",
+"why":"how mulch catches dew and air moisture and passes it slowly to the soil"
+}
+]
 }
 
 ]

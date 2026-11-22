@@ -1524,4 +1524,9 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["Soil carbon", "Burnt off by ploughing as carbon dioxide", "Built up by roots and mulch, and kept"],
     ["The weather it feeds", "Short, violent water cycle: drought, then flood", "Slow, steady water cycle: dew, humidity and local rain"],
   ] },
+  "kp230-table-01.png": { headers: ["Dew on the mulch", "Per square metre", "Per acre, in one night"], rows: [
+    ["A light dew night", "0.10 litre (0.10 mm)", "about 400 litres"],
+    ["A typical dew night", "0.25 litre (0.25 mm)", "about 1,000 litres"],
+    ["A heavy dew night", "0.50 litre (0.50 mm)", "about 2,000 litres"],
+  ] },
 };
