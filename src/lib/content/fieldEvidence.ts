@@ -1001,6 +1001,22 @@ export const fieldEvidence: FieldEvidence[] = [
     videoId: "7Daxo4ezOzg",
     tags: ["wheat", "raised beds", "new beds", "bed making", "planter", "sowing", "line sowing", "furrows", "no tillage", "conversion", "November sowing"],
   },
+  {
+    feNumber: 64,
+    title: "Kinnow on PQNK: 700 Young Trees Pruned Round, About Two Crates a Tree, Water Every 15 Days in Winter",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
+    cropOrTopic: "Young Kinnow orchard of six to seven acres under straw mulch, pruned to a normal size",
+    year: 2026,
+    date: "2026-11-23",
+    farmer: "Imran (orchard owner)",
+    summary:
+      "A walk through a young Kinnow orchard of six to seven acres on PQNK, with straw mulch along the tree rows and water running in furrows beside them. The owner, Imran, shows new plants set in the gaps between the older trees, which he expects to reach the size of their neighbours quickly. The older trees are cut round and kept at a normal size, opened up a little in the middle, rather than being allowed to grow into large trees. They are bearing well, with good, heavy fruit on every tree, and no weeds are standing in the rows. With about 700 trees, the owner expects about two crates (peti) of Kinnow from each tree, about 1,400 crates in all. A visitor mentions that a larger orchard they were shown earlier was taken by a contractor, Haji Shabbir, for Rs 45 lakh. Asked about water, the owner says that in winter he waters only once every 15 days and gives the rest of his water to his relatives.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/oVFS-b3S6n0",
+    videoId: "oVFS-b3S6n0",
+    relatedCropSlug: "citrus-kinnow",
+    tags: ["citrus", "kinnow", "orchard", "young orchard", "farmer testimony", "pruning", "round pruning", "gap filling", "straw mulch", "furrows", "winter irrigation", "1,400 crates", "Rs 45 lakh", "Imran"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
