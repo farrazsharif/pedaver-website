@@ -987,6 +987,20 @@ export const fieldEvidence: FieldEvidence[] = [
     relatedCropSlug: "citrus-kinnow",
     tags: ["citrus", "kinnow", "young orchard", "sand dunes", "first fruit", "farmer testimony", "zero input", "no fertiliser", "no spray", "rice straw mulch", "alley crop", "Muzaffargarh", "Razia Saeed PQNK Farm"],
   },
+  {
+    feNumber: 63,
+    title: "Wheat on PQNK: Planting on New Beds",
+    evidenceTypes: ["Field Evidence"],
+    cropOrTopic: "Wheat sown on newly made PQNK raised beds",
+    year: 2026,
+    date: "2026-11-23",
+    summary:
+      "A short field video from the wheat sowing season of November 2026. A tractor forms new raised beds with furrows between them, and a multi-row planter then sows wheat in lines along the top of each bed in a single pass. The camera walks along the freshly sown beds to show the straight seed lines on the bed tops and the open furrows between the beds. The wheat goes straight onto the new beds, the starting point of a field that will not be ploughed again.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/7Daxo4ezOzg",
+    videoId: "7Daxo4ezOzg",
+    tags: ["wheat", "raised beds", "new beds", "bed making", "planter", "sowing", "line sowing", "furrows", "no tillage", "conversion", "November sowing"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
