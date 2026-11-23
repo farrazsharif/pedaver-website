@@ -970,6 +970,23 @@ export const fieldEvidence: FieldEvidence[] = [
     relatedCropSlug: "citrus-kinnow",
     tags: ["citrus", "kinnow", "orchard", "orchard recovery", "farmer testimony", "zero input", "no fertiliser", "no spray", "rice straw mulch", "parali", "Rs 28 lakh", "six acres", "Chak No. 343", "Imran Malhi"],
   },
+  {
+    feNumber: 62,
+    title: "Kinnow on PQNK on Sand Dunes, Muzaffargarh: First Fruit at 2 Years 8 Months, No Inputs",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
+    cropOrTopic: "Young Kinnow orchard on sand dunes, 2 years 8 months old, no inputs",
+    year: 2026,
+    date: "2026-11-23",
+    location: "Muzaffargarh",
+    farmer: "Razia Saeed PQNK Farm",
+    summary:
+      "Recorded on 23 November 2026 at the Razia Saeed PQNK Farm in Muzaffargarh, this video walks through a young Kinnow orchard planted on sand dunes. The trees are about 2 years and 8 months old and will complete three years in March. No input of any kind has been applied, and the plants show no shortage of anything: they stand full, green and healthy. This season about 10 percent of the trees have already set their first fruit, ahead of the third year. The orchard was not mulched at first; the farm has now begun mulching the beds with its own rice straw, laying it along the rows of trees, on ground that was open sand dune. The alleys between the rows are sown with a crop of their own so that the land gives an income while the trees grow.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/fUfksKSdFi4",
+    videoId: "fUfksKSdFi4",
+    relatedCropSlug: "citrus-kinnow",
+    tags: ["citrus", "kinnow", "young orchard", "sand dunes", "first fruit", "farmer testimony", "zero input", "no fertiliser", "no spray", "rice straw mulch", "alley crop", "Muzaffargarh", "Razia Saeed PQNK Farm"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
