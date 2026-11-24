@@ -1032,6 +1032,21 @@ export const fieldEvidence: FieldEvidence[] = [
     videoId: "F30Bd38fYeg",
     tags: ["orchard", "young orchard", "fruit trees", "saplings", "raised beds", "straw mulch", "furrows", "Sindh", "new planting"],
   },
+  {
+    feNumber: 66,
+    title: "Citrus on PQNK: Where Trees Failed for Three Years, Planted Last December and Now Bearing",
+    evidenceTypes: ["Farmer Testimony", "Field Evidence"],
+    cropOrTopic: "Young citrus plants on PQNK, under straw mulch, bearing within a year",
+    year: 2026,
+    date: "2026-11-24",
+    summary:
+      "A farmer shares two photographs of young citrus plants with a voice message. For three years he had tried to grow citrus on this same spot, planting again and again, but the plants never took hold. Last winter, in December, he planted them on PQNK. The photographs show them now: bushy young trees standing in a thick straw mulch, carrying fruit, among them lemons. He has also grown vegetables for the household in the same place, and they are doing well too. \"This is the benefit of PQNK,\" he says.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/gD7Xe87E1Ls",
+    videoId: "gD7Xe87E1Ls",
+    relatedCropSlug: "citrus-kinnow",
+    tags: ["citrus", "lemon", "young orchard", "farmer testimony", "straw mulch", "first fruit", "orchard establishment", "vegetables", "December planting"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
