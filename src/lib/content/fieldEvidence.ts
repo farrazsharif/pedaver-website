@@ -1017,6 +1017,21 @@ export const fieldEvidence: FieldEvidence[] = [
     relatedCropSlug: "citrus-kinnow",
     tags: ["citrus", "kinnow", "orchard", "young orchard", "farmer testimony", "pruning", "round pruning", "gap filling", "straw mulch", "furrows", "winter irrigation", "1,400 crates", "Rs 45 lakh", "Imran"],
   },
+  {
+    feNumber: 65,
+    title: "A Young Orchard on PQNK in Sindh: Saplings on Mulched Raised Beds",
+    evidenceTypes: ["Field Evidence"],
+    cropOrTopic: "Newly planted orchard on PQNK raised beds under straw mulch",
+    year: 2026,
+    date: "2026-11-24",
+    location: "Sindh",
+    summary:
+      "A short field video, without narration, of a newly planted orchard on PQNK in Sindh. Young fruit tree saplings stand in lines along the tops of raised beds, and each bed is covered with a thick layer of straw mulch, with open furrows between the beds. The camera walks along the rows to show the saplings growing in leaf through the mulch, the covered beds stretching across the field, and a standing sugarcane crop next to the orchard.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/F30Bd38fYeg",
+    videoId: "F30Bd38fYeg",
+    tags: ["orchard", "young orchard", "fruit trees", "saplings", "raised beds", "straw mulch", "furrows", "Sindh", "new planting"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
