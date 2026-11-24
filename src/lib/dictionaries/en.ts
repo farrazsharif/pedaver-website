@@ -340,7 +340,7 @@ const en = {
     recordButton: "Read the Paper & Watch the Videos",
     publicRecordTitle: "Public Record",
     publicRecordBody:
-      "Publications, recognition by universities and international institutions, lectures, policy forums, press coverage in English, Urdu and French, and video, from 2009 to 2026, each with a link to the original source.",
+      "Publications, recognition by universities and international institutions, lectures, policy forums, press coverage in English, Urdu and French, and video, from 1991 to 2026, each with a link to the original source.",
     publicRecordButton: "Open the Public Record (PDF)",
     closingPathwayTitle: "Explore the Work",
     closingPathwayBody: "You have read about the person; the work itself is documented in full across the site.",

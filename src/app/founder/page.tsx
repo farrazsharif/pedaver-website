@@ -125,7 +125,7 @@ export default function FounderPage() {
                     <p className="mt-1 text-sm text-ink-soft">{dict.founder.publicRecordBody}</p>
                   </div>
                   <a
-                    href={mediaUrl("/docs/asif-sharif-public-record.pdf")}
+                    href={mediaUrl("/docs/asif-sharif-public-record.pdf?v=2")}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block flex-shrink-0 rounded-full bg-primary px-5 py-2.5 text-center text-sm font-semibold text-cream shadow-sm transition hover:bg-primary-dark"
