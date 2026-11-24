@@ -338,6 +338,10 @@ const en = {
     recordBody:
       "Five Decades of Agricultural Innovation is Sharif's own year-by-year account of the interventions above, from 1973 to today, documented in his own words, photographs and field data, available as a downloadable PDF and as a six-part narrated video series.",
     recordButton: "Read the Paper & Watch the Videos",
+    publicRecordTitle: "Public Record",
+    publicRecordBody:
+      "Publications, recognition by universities and international institutions, lectures, policy forums, press coverage in English, Urdu and French, and video, from 2009 to 2026, each with a link to the original source.",
+    publicRecordButton: "Open the Public Record (PDF)",
     closingPathwayTitle: "Explore the Work",
     closingPathwayBody: "You have read about the person; the work itself is documented in full across the site.",
     closingPathwayLinks: [

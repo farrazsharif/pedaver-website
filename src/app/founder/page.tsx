@@ -3,6 +3,7 @@ import dict from "@/lib/dictionaries";
 import Section from "@/components/Section";
 import FounderGallery from "@/components/FounderGallery";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
+import { mediaUrl } from "@/lib/mediaUrl";
 
 export const metadata = buildMetadata({
   title: "Asif Sharif, Researcher and Developer of PQNK and Founder Chairman of Pedaver",
@@ -115,6 +116,22 @@ export default function FounderPage() {
                   >
                     {dict.founder.recordButton}
                   </Link>
+                </div>
+              )}
+              {i === 0 && (
+                <div className="mt-4 flex flex-col items-start gap-3 rounded-2xl border border-border bg-card p-6 sm:flex-row sm:items-center sm:justify-between">
+                  <div>
+                    <h3 className="text-lg font-bold text-primary-dark">{dict.founder.publicRecordTitle}</h3>
+                    <p className="mt-1 text-sm text-ink-soft">{dict.founder.publicRecordBody}</p>
+                  </div>
+                  <a
+                    href={mediaUrl("/docs/asif-sharif-public-record.pdf")}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block flex-shrink-0 rounded-full bg-primary px-5 py-2.5 text-center text-sm font-semibold text-cream shadow-sm transition hover:bg-primary-dark"
+                  >
+                    {dict.founder.publicRecordButton}
+                  </a>
                 </div>
               )}
             </div>
