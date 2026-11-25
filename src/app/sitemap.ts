@@ -1,3 +1,4 @@
+import { fieldEvidence, formatFeNumber } from "@/lib/content/fieldEvidence";
 import type { MetadataRoute } from "next";
 import { crops } from "@/lib/content/crops";
 import { papers } from "@/lib/content/papers";
@@ -71,6 +72,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: toUrl(`/papers/${paper.slug}`),
       lastModified: paper.externalUrl ? now : new Date(paper.modifiedDate ?? paper.publishedDate),
     })),
+    ...fieldEvidence.map((fe) => ({ url: toUrl(`/field-evidence/${formatFeNumber(fe.feNumber).toLowerCase()}`), lastModified: now })),
     ...machines.map((machine) => ({ url: toUrl(`/machines/${machine.slug}`), lastModified: now })),
     ...resources.map((resource) => ({ url: toUrl(`/resources/${resource.slug}`), lastModified: now })),
     // Every book's landing page is always indexed, regardless of how many of

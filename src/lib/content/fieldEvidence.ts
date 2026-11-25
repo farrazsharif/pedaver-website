@@ -1078,3 +1078,12 @@ export function parseFeQuery(query: string): number | null {
   const m = query.trim().match(/^(?:ke|fe)-?0*(\d+)$/i);
   return m ? Number(m[1]) : null;
 }
+
+/** The picture shown for a record: its saved thumbnail, else YouTube's own thumbnail for its video (used on the cards and for shared-link previews). */
+export function youTubeThumbnail(fe: FieldEvidence): string | null {
+  if (fe.thumbnail) return fe.thumbnail; // a saved copy, when YouTube's own thumbnail CDN serves a broken image (KE-043)
+  if (fe.sourcePlatform === "YouTube" && fe.videoId) {
+    return `https://img.youtube.com/vi/${fe.videoId}/hqdefault.jpg`;
+  }
+  return null;
+}

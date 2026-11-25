@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { FieldEvidence, EvidenceType } from "@/lib/content/fieldEvidence";
-import { formatFeNumber } from "@/lib/content/fieldEvidence";
+import { formatFeNumber, youTubeThumbnail } from "@/lib/content/fieldEvidence";
 import { searchFieldEvidence } from "@/lib/content/fieldEvidenceSearch";
 
 interface Filters {
@@ -59,15 +59,8 @@ function writeStateToURL(filters: Filters, sort: SortMode) {
 // online original to point to at all — see fieldEvidence.ts.
 // A record whose source is a document hosted here (sourceUrl ending in .pdf, e.g. FE-039)
 // links to it as "Read the full exchange (PDF)" instead of "Watch Video".
-function youTubeThumbnail(fe: FieldEvidence): string | null {
-  if (fe.thumbnail) return fe.thumbnail; // a saved copy, when YouTube's own thumbnail CDN serves a broken image (KE-043)
-  if (fe.sourcePlatform === "YouTube" && fe.videoId) {
-    return `https://img.youtube.com/vi/${fe.videoId}/hqdefault.jpg`;
-  }
-  return null;
-}
 
-function EvidenceCard({ fe }: { fe: FieldEvidence }) {
+export function EvidenceCard({ fe, recordLink = true }: { fe: FieldEvidence; recordLink?: boolean }) {
   const thumbnail = youTubeThumbnail(fe);
   return (
     <div className="flex flex-col rounded-2xl border border-border bg-card p-6 shadow-sm">
@@ -119,6 +112,15 @@ function EvidenceCard({ fe }: { fe: FieldEvidence }) {
           className="mt-2 inline-block text-sm font-semibold text-accent underline underline-offset-4 hover:text-accent-light"
         >
           Download PDF ↓
+        </a>
+      )}
+      {recordLink && (
+        // Each record has its own page (2026-11-25) so a shared link previews with the record's own title on WhatsApp.
+        <a
+          href={`/field-evidence/${formatFeNumber(fe.feNumber).toLowerCase()}/`}
+          className="mt-2 inline-block text-sm font-semibold text-primary underline underline-offset-4 hover:text-primary-dark"
+        >
+          Share this record →
         </a>
       )}
     </div>
