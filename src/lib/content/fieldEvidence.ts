@@ -1062,6 +1062,21 @@ export const fieldEvidence: FieldEvidence[] = [
     relatedCropSlug: "wheat",
     tags: ["wheat", "pruning", "tillering", "leader tiller", "before straw formation", "mulcher", "tractor", "raised beds", "furrows", "crop management", "winter"],
   },
+  {
+    feNumber: 68,
+    title: "PQNK Garlic Thriving on Two-Year-Old Raised Beds, with No Inputs",
+    evidenceTypes: ["Field Evidence"],
+    cropOrTopic: "Young garlic on two-year-old PQNK raised beds, sown 20 September 2026, with no inputs applied",
+    year: 2026,
+    date: "2026-11-25",
+    summary:
+      "A short field video, without narration, of garlic sown on 20 September 2026 on PQNK raised beds that are two years old. About two months after sowing, the crop stands green and even in lines along the beds, with a thick layer of straw mulch covering the soil between the plants and the furrows on either side. Close-ups show the young garlic plants coming up strongly through the mulch. No input of any kind has been applied to this crop: no fertiliser, no spray and no tillage.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/JRL85k0H4NY",
+    videoId: "JRL85k0H4NY",
+    relatedCropSlug: "onion-garlic",
+    tags: ["garlic", "permanent raised beds", "two-year-old beds", "mulch", "rice straw", "no inputs", "no fertiliser", "no pesticide", "no tillage", "winter"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
