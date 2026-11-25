@@ -1047,6 +1047,21 @@ export const fieldEvidence: FieldEvidence[] = [
     relatedCropSlug: "citrus-kinnow",
     tags: ["citrus", "lemon", "young orchard", "farmer testimony", "straw mulch", "first fruit", "orchard establishment", "vegetables", "December planting"],
   },
+  {
+    feNumber: 67,
+    title: "Pruning Wheat Before Straw Formation: A PQNK Step for More Tillering",
+    evidenceTypes: ["Field Evidence"],
+    cropOrTopic: "Young wheat on PQNK raised beds pruned by a tractor-mounted mulcher before the straw forms",
+    year: 2026,
+    date: "2026-11-25",
+    summary:
+      "A short field video, without narration, of a PQNK step in wheat: pruning the crop before the straw (stem) forms. On a misty winter morning, a tractor drives along the furrows of a field of young wheat growing in lines on permanent raised beds, with a green, tractor-mounted mulcher running over the bed tops. The mulcher trims the tops of the young wheat plants, and the cut leaves fall back onto the bed as mulch. A man walks beside the machine, and the camera shows the trimmed beds behind it stretching across the field. In PQNK, wheat is pruned at this stage so that each plant puts out more tillers instead of a single leading stem (see KP-073).",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/UwmfKs4XnPM",
+    videoId: "UwmfKs4XnPM",
+    relatedCropSlug: "wheat",
+    tags: ["wheat", "pruning", "tillering", "leader tiller", "before straw formation", "mulcher", "tractor", "raised beds", "furrows", "crop management", "winter"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
