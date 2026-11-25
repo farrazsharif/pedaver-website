@@ -3,7 +3,9 @@
 Marketing website for **Pedaver** and its regenerative-farming system **PQNK**.
 Next.js 16, exported as a **fully static** site (`output: "export"` in
 `next.config.ts`) and hosted on **Cloudflare Pages**, with the PDFs served from
-**Cloudflare R2**. There is no backend: contact/newsletter forms use `mailto:`.
+**Cloudflare R2**. No app backend: contact/newsletter forms use `mailto:`. A few small Cloudflare
+Pages Functions live in `functions/` (indexer API for the Ask PQNK bot; `/api/crop-prices`, the amis.pk proxy
+for the Crop Prices tool at `/crop-prices/`, a footer/Resources/Ask link only, not the header menu).
 
 ## Working on this project
 - Read `README.md` for the human workflow and `AGENTS.md` for Next.js 16 caveats.
