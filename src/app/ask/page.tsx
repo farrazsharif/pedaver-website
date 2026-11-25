@@ -52,6 +52,12 @@ export default function AskPage() {
               {a.emailLink} →
             </Link>
           </p>
+          <p className="mt-3 text-center text-sm text-ink-soft">
+            Looking for today&apos;s mandi rates?{" "}
+            <Link href="/crop-prices" className="font-semibold text-primary underline underline-offset-4">
+              Crop Prices →
+            </Link>
+          </p>
         </div>
       </Section>
     </div>

@@ -42,6 +42,7 @@ const staticPages = [
   "/machines",
   "/field-evidence",
   "/books",
+  "/crop-prices",
   "/validation",
   "/videos",
   "/video-library",

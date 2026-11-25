@@ -47,6 +47,25 @@ function ResourceCard({ resource }: { resource: Resource }) {
   );
 }
 
+function CropPricesCard() {
+  return (
+    <div className="flex flex-col items-start gap-3 rounded-2xl border border-border bg-card p-6 sm:flex-row sm:items-center sm:justify-between">
+      <div>
+        <h3 className="text-lg font-bold text-primary-dark">Crop Prices</h3>
+        <p className="mt-1 text-sm text-ink-soft">
+          Today&apos;s mandi and official retail rates in Punjab markets, five-year price trends and the year&apos;s top 10, in English and Urdu.
+        </p>
+      </div>
+      <Link
+        href="/crop-prices"
+        className="inline-block flex-shrink-0 rounded-full bg-primary px-5 py-2.5 text-center text-sm font-semibold text-cream shadow-sm transition hover:bg-primary-dark"
+      >
+        Check prices
+      </Link>
+    </div>
+  );
+}
+
 export default function ResourcesPage() {
   return (
     <div>
@@ -81,6 +100,15 @@ export default function ResourcesPage() {
           </Section>
         );
       })}
+
+      <Section>
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-2xl font-bold text-primary-dark">Farmer Tools</h2>
+          <div className="mt-6">
+            <CropPricesCard />
+          </div>
+        </div>
+      </Section>
     </div>
   );
 }

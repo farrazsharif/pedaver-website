@@ -1,0 +1,15 @@
+/* Crop Prices on pedaver.com: the site already has its own header, so inside the page's frame the
+   app's green title bar is replaced by a compact language switch on the tab row. */
+html.embed .topbar { display: none; }
+html.embed .tabs { top: 0; }
+html.embed .tabs .lang { flex: none; align-self: center; margin: 0 8px; border-color: var(--line); color: var(--green); background: #fff; }
+html.embed main { padding-top: 10px; }
+html.embed body { background: #F4F6F3; }
+@media (min-width: 900px) {
+  html.embed .tabs { justify-content: center; }
+  html.embed .tabs .tab { flex: 0 1 220px; }
+}
+@media (max-width: 430px) {
+  html.embed .tabs .tab { font-size: 13px; padding: 12px 2px; }
+  html.embed .tabs .lang { margin: 0 6px; padding: 3px 10px; font-size: 13px; }
+}

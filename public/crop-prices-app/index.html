@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Crop Prices | Pedaver</title>
+<meta name="crop-prices-api" content="/api/crop-prices">
+<meta name="robots" content="noindex">
+<script>if (window.self !== window.top || /[?&]embed=1/.test(location.search)) document.documentElement.classList.add("embed");</script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="embed.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <div class="logo" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><path d="M4 20V13h3v7zM10.5 20V9h3v11zM17 20V5h3v15z" fill="#fff"/><path d="M3 11c3-5 6-5 9-2s5 1 9-5" stroke="#F2C14E" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>
+    </div>
+    <div>
+      <div class="title" data-i18n="appTitle"></div>
+      <div class="subtitle" data-i18n="appSub"></div>
+    </div>
+  </div>
+  <button id="langBtn" class="lang"></button>
+</header>
+
+<nav class="tabs">
+  <button class="tab active" data-tab="today" data-i18n="tabToday"></button>
+  <button class="tab" data-tab="trend" data-i18n="tabTrend"></button>
+  <button class="tab" data-tab="top" data-i18n="tabTop"></button>
+</nav>
+
+<main>
+  <!-- ============ TODAY'S PRICES ============ -->
+  <section id="tab-today" class="pane active">
+    <div class="card form">
+      <label class="field">
+        <span data-i18n="location"></span>
+        <button class="picker" id="todayCityBtn" type="button"><span class="pv"></span><i class="chev"></i></button>
+      </label>
+      <label class="field">
+        <span data-i18n="itemLabel"></span>
+        <button class="picker" id="todayItemBtn" type="button"><span class="pv"></span><i class="chev"></i></button>
+      </label>
+      <div class="field">
+        <span data-i18n="dateLabel"></span>
+        <div class="daterow"><input type="date" id="todayDate"><button type="button" class="chip hidden" id="todayDateReset" data-i18n="backToToday"></button></div>
+      </div>
+      <div class="field" id="todayCatRow">
+        <span data-i18n="category"></span>
+        <div class="chips" id="todayCat"></div>
+      </div>
+      <button class="primary" id="todayBtn" data-i18n="showToday"></button>
+    </div>
+
+    <div id="todayStatus"></div>
+
+    <div id="todayResult" class="hidden">
+      <div class="card">
+        <div class="res-title" id="todayTitle"></div>
+        <div class="tsub" id="todaySub"></div>
+        <div class="qtyrow"><span data-i18n="showFor"></span><div class="chips" id="todayQty"></div></div>
+        <div id="todaySingle"></div>
+        <div class="card-h" style="margin:8px 0 0"><span></span><span class="muted" id="todayCount"></span></div>
+        <ul class="tlist" id="todayList"></ul>
+      </div>
+      <div class="note" data-i18n="todayNote"></div>
+      <div class="card export" id="todayExport">
+        <button class="secondary" id="todayCsvBtn"><b>CSV</b> <span data-i18n="exportData"></span></button>
+        <button class="secondary" id="todayPdfBtn"><b>PDF</b> <span data-i18n="exportReport"></span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICE TREND ============ -->
+  <section id="tab-trend" class="pane">
+    <div class="card form">
+      <label class="field">
+        <span data-i18n="crop"></span>
+        <button class="picker" id="cropBtn" type="button"><span class="pv"></span><i class="chev"></i></button>
+      </label>
+      <label class="field">
+        <span data-i18n="location"></span>
+        <button class="picker" id="cityBtn" type="button"><span class="pv"></span><i class="chev"></i></button>
+      </label>
+      <div class="field">
+        <span data-i18n="period"></span>
+        <div class="chips" id="periodChips"></div>
+      </div>
+      <div class="custom hidden" id="customRange">
+        <label class="field half"><span data-i18n="from"></span><input type="date" id="fromDate"></label>
+        <label class="field half"><span data-i18n="to"></span><input type="date" id="toDate"></label>
+      </div>
+      <button class="primary" id="showBtn" data-i18n="show"></button>
+    </div>
+
+    <div id="trendStatus"></div>
+
+    <div id="trendResult" class="hidden">
+      <div class="card">
+        <div class="res-head">
+          <div>
+            <div class="res-title" id="resTitle"></div>
+            <div class="res-sub" id="resSub"></div>
+          </div>
+        </div>
+        <div class="qtyrow" id="qtyRow"><span data-i18n="showFor"></span><div class="chips" id="qtyChips"></div></div>
+        <div id="todayBox"></div>
+        <div id="retailStatus" class="rstatus"></div>
+        <div class="stats-title hidden" id="statsTitle"></div>
+        <div class="stats" id="stats"></div>
+        <div class="fixnote hidden" id="fixNote"></div>
+      </div>
+
+      <div class="card">
+        <div class="card-h">
+          <h3 data-i18n="chartTitle"></h3>
+          <button class="ghost sm" id="resetZoom" data-i18n="reset"></button>
+        </div>
+        <div class="ranges" id="rangeBtns"></div>
+        <div class="legend"><span class="lw"><i></i><b data-i18n="wholesale"></b></span><span class="lr hidden" id="legendRetail"><i></i><b data-i18n="retailRange"></b></span></div>
+        <div class="readout" id="readout"></div>
+        <div class="chart-wrap"><canvas id="chart"></canvas></div>
+        <div class="hint" data-i18n="zoomHint"></div>
+      </div>
+
+      <div class="card export">
+        <button class="secondary" id="csvBtn"><b>CSV</b> <span data-i18n="exportData"></span></button>
+        <button class="secondary" id="pdfBtn"><b>PDF</b> <span data-i18n="exportReport"></span></button>
+      </div>
+
+      <div class="card">
+        <div class="card-h"><h3 data-i18n="table"></h3><span class="muted" id="rowCount"></span></div>
+        <table class="data"><thead><tr><th data-i18n="date"></th><th id="thW"></th><th id="thR"></th><th data-i18n="dayChange"></th></tr></thead><tbody id="rows"></tbody></table>
+        <button class="ghost wide hidden" id="moreRows" data-i18n="showAll"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TOP 10 ============ -->
+  <section id="tab-top" class="pane">
+    <div class="card form">
+      <label class="field">
+        <span data-i18n="location"></span>
+        <button class="picker" id="topCityBtn" type="button"><span class="pv"></span><i class="chev"></i></button>
+      </label>
+      <div class="field">
+        <span data-i18n="year"></span>
+        <div class="chips" id="yearChips"></div>
+      </div>
+      <div class="field">
+        <span data-i18n="category"></span>
+        <div class="chips" id="catChips"></div>
+      </div>
+      <div class="field">
+        <span data-i18n="rankBy"></span>
+        <div class="chips" id="metricChips"></div>
+      </div>
+      <label class="check"><input type="checkbox" id="sameUnit" checked> <span data-i18n="sameUnit"></span></label>
+      <button class="primary" id="topBtn" data-i18n="loadTop"></button>
+    </div>
+
+    <div id="topStatus"></div>
+
+    <div id="topResult" class="hidden">
+      <div class="card">
+        <div class="card-h"><h3 class="up" data-i18n="highest"></h3><span class="muted" id="topMeta1"></span></div>
+        <ol class="rank" id="topHigh"></ol>
+      </div>
+      <div class="card">
+        <div class="card-h"><h3 class="down" data-i18n="lowest"></h3><span class="muted" id="topMeta2"></span></div>
+        <ol class="rank" id="topLow"></ol>
+      </div>
+      <div class="note" id="topNote"></div>
+      <div class="card export">
+        <button class="secondary" id="topCsvBtn"><b>CSV</b> <span data-i18n="exportData"></span></button>
+        <button class="secondary" id="topPdfBtn"><b>PDF</b> <span data-i18n="exportReport"></span></button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="src" data-i18n="source"></footer>
+</main>
+
+<!-- searchable list picker -->
+<div class="overlay hidden" id="pickerOv">
+  <div class="sheet">
+    <div class="sheet-h">
+      <b id="pickerTitle"></b>
+      <button class="x" id="pickerClose" aria-label="close">✕</button>
+    </div>
+    <input type="search" id="pickerSearch" autocomplete="off">
+    <div class="pfilter chips" id="pickerFilter"></div>
+    <ul id="pickerList"></ul>
+  </div>
+</div>
+
+<script>if (document.documentElement.classList.contains("embed")) document.querySelector(".tabs").appendChild(document.getElementById("langBtn"));</script>
+<script src="web-bridge.js"></script>
+<script src="lib/hammer.min.js"></script>
+<script src="lib/chart.umd.min.js"></script>
+<script src="lib/chartjs-plugin-zoom.min.js"></script>
+<script src="clean.js"></script>
+<script src="data.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
