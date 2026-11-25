@@ -17490,6 +17490,177 @@
 "why":"how mulch catches dew and air moisture and passes it slowly to the soil"
 }
 ]
+},
+{
+"slug":"why-a-plant-needs-water",
+"primarySubject":"Why a plant needs water (minerals and nutrients, cooling, hydrogen, firmness), and how root water from the soil and dew on the leaves each serve the plant on a covered PQNK field",
+"questionsAnswered":[
+"Why does a plant need water?",
+"Can leaves absorb water from dew?",
+"What does a plant do with the water it takes up?",
+"Is dew on leaves useful to the crop?",
+"Why do plants wilt?"
+],
+"keywords":[
+"plant water use",
+"dew",
+"leaf water",
+"foliar water uptake",
+"transpiration",
+"cooling",
+"photosynthesis",
+"hydrogen",
+"turgor",
+"wilting",
+"root water",
+"minerals",
+"mulch",
+"canopy",
+"Vasudha Sardar"
+],
+"geography":null,
+"crops":[
+"Sugarcane"
+],
+"fieldProblems":[
+"Evaporation / Moisture Loss",
+"Bare / Exposed Soil",
+"Drought / Water Scarcity",
+"High Irrigation Cost / Dependency"
+],
+"problemFamily":[
+"Water & Drainage",
+"Heat, Weather & Climate"
+],
+"fieldPractices":[
+"Surface Mulching (General)",
+"Crop Residue Retention",
+"Soil Moisture Management (SMM)",
+"Irrigation Reduction / Timing Restraint"
+],
+"machineryTools":[],
+"climateType":[
+"Global / Systemic (not climate-specific)"
+],
+"scientificDomains":[
+"Water",
+"Plants"
+],
+"pqnkPrinciples":[
+"Permanent Biological Cover"
+],
+"productionStages":[
+"Vegetative Growth"
+],
+"evidenceType":"Scientific Mechanism",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/water",
+"why":"how a plant uses root water and dew on its leaves"
+}
+]
+},
+{
+"slug":"ask-pqnk-field-answers-4",
+"primarySubject":"Answers from the Researcher and Developer of PQNK to farmers’ questions the Ask PQNK assistant could not yet answer: cumin spacing, date palm pruning, suckers and spacing, canola pruning, Jantar seeds per kilogram, countries practising PQNK, when PQNK began, the PQNK GAP, PQNK farmers nearby, and fish pond feed",
+"questionsAnswered":[
+"Is there a video or article on growing cumin (zeera) on PQNK?",
+"What plant spacing should cumin have on PQNK?",
+"Is pruning necessary for the Dhaki date palm?",
+"When should date palm suckers (offshoots) be moved?",
+"What is the plant-to-plant and row-to-row distance for date palms?",
+"How should canola be pruned?",
+"How many seeds of Jantar are in 8 kg?",
+"How many Jantar seeds are there per kilogram?",
+"How many countries practise PQNK?",
+"When did PQNK begin?",
+"What is the PQNK GAP?",
+"Is there a PQNK farmer near me?",
+"Is duckweed or Azolla better for fish feed?",
+"How can I make tilapia feed myself?"
+],
+"keywords":[
+"Ask PQNK",
+"field answers",
+"cumin",
+"zeera",
+"Khanewal",
+"plant spacing",
+"plants per acre",
+"date palm",
+"Dhaki",
+"suckers",
+"offshoots",
+"canola",
+"rapeseed",
+"pruning",
+"leader shoot",
+"Jantar",
+"seeds per kg",
+"seed count",
+"PQNK history",
+"Amazon",
+"GAP",
+"Good Agricultural Practices",
+"Fateh Jang",
+"Lodhran",
+"privacy",
+"duckweed",
+"Azolla",
+"tilapia"
+],
+"geography":null,
+"crops":[
+"Cumin",
+"Date Palm",
+"Rapeseed",
+"Jantar (Sesbania)"
+],
+"fieldProblems":[
+"Suboptimal Planting Density",
+"Farmer Uncertainty / Diagnostic Skill Gap",
+"Terminology / Framework Confusion"
+],
+"problemFamily":[
+"Plant Growth & Nutrition",
+"Transition / Conversion"
+],
+"fieldPractices":[
+"Pruning (General)",
+"PQNK Transition Protocol (Staged)",
+"Jantar (Sesbania) Cover Cropping",
+"Permanent Raised Bed Formation",
+"Precision Seed Placement (SIPP/VIPP-style)"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Plants",
+"Production Architecture",
+"Transition"
+],
+"pqnkPrinciples":[
+"No Soil Disturbance",
+"Permanent Biological Cover"
+],
+"productionStages":[
+"Planting",
+"Pruning/Dormancy",
+"Transition/Conversion"
+],
+"evidenceType":"Field Observation",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/production-architecture",
+"why":"why plants on PQNK compete only for sunlight, so spacing per plant is the main planting decision"
+},
+{
+"page":"/science/transition",
+"why":"the conversion steps that come before any crop is planted on PQNK"
+}
+]
 }
 
 ]

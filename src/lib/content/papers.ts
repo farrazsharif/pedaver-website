@@ -6178,6 +6178,59 @@ export const papers: Paper[] = [
       "Dew is one reason mature PQNK beds need no irrigation where rainfall is 16 inches (400 mm) a year or more.",
     ],
   },
+  {
+    slug: "why-a-plant-needs-water",
+    kpNumber: 231,
+    libraryDate: "2026-11-25",
+    category: "Water & Climate",
+    title: "Why a Plant Needs Water: Four Uses, and What the Leaves Do with the Night’s Dew",
+    summary:
+      "A plant needs water for four things: minerals and nutrients, cooling, hydrogen for building sugar, and firmness. Root water from the soil serves all four and is the only water that brings minerals; dew on the leaves serves mainly hydrogen and cooling. A covered PQNK field with a standing crop receives water from both directions every clear night.",
+    publishedDate: "2026-11-25",
+    pdfPath: "/papers/why-a-plant-needs-water.pdf",
+    abstract: [
+      "A plant needs water for four things: to bring minerals and nutrients up from the soil, to keep itself cool, to supply the hydrogen it builds into sugar, and to keep its cells firm.",
+      "Water reaches the plant from two directions. Root water comes up from the soil and is the only water that carries minerals. Leaf water settles on the leaves as dew on clear nights; it brings no minerals, but serves the plant mainly for hydrogen and cooling, and keeps the leaf cells full through the early hours of the day.",
+      "A PQNK field, with its soil covered and its crop standing, receives water from both directions every clear night. The paper follows KP-229, on how bare soil heats the land, and KP-230, on how much dew the mulch catches.",
+    ],
+    keyTakeaways: [
+      "The four uses of water in a plant: minerals and nutrients, cooling, hydrogen and firmness.",
+      "Well over nine-tenths of the water a plant takes up leaves again through its leaves as vapour, cooling the plant.",
+      "In the leaf, sunlight splits water: the oxygen goes into the air, and the hydrogen joins carbon from the air to build sugar.",
+      "Water keeps the cells firm; a plant short of water wilts, and new growth needs full cells.",
+      "Root water serves all four uses and is the only water that brings minerals, so a living, covered soil remains the main supply.",
+      "Dew on the leaves slows the morning’s water loss, cools the leaf as it evaporates, and is partly taken in through the leaf surface.",
+      "A full crop adds several square metres of leaf for every square metre of ground, a vertical surface for the night’s dew.",
+      "What the leaves do not use drips onto the mulch and joins the soil’s share; nothing is wasted.",
+    ],
+  },
+  {
+    slug: "ask-pqnk-field-answers-4",
+    kpNumber: 232,
+    libraryDate: "2026-11-25",
+    category: "Workforce & Practice Advisories",
+    title: "Ask PQNK Field Answers 4: Cumin, Date Palms, Canola, Jantar Seed and When PQNK Began",
+    summary:
+      "The fourth set of answers from Asif Sharif to questions the Ask PQNK assistant could not yet answer: cumin spacing, date palm pruning, suckers and spacing, canola pruning, Jantar seeds per kilogram, how many countries practise PQNK, when PQNK began, the PQNK GAP, PQNK farmers nearby, and fish pond feed.",
+    publishedDate: "2026-11-25",
+    pdfPath: "/papers/ask-pqnk-field-answers-4.pdf",
+    abstract: [
+      "On 20 and 21 November 2026 farmers asked Ask PQNK, the PQNK assistant on WhatsApp and at pedaver.com/ask, questions it could not answer from the PQNK library. They were passed to Asif Sharif, Researcher and Developer of PQNK, and his answers are published in this paper.",
+      "The answers cover cumin, date palms, canola, Jantar seed, how many countries practise PQNK, when PQNK began, the PQNK GAP, PQNK farmers nearby, and fish pond feed.",
+      "PQNK is one natural design for every crop and every region: once the land is converted, the main decision is how much space to give each plant. The earlier answers are in KP-226, KP-227 and KP-228.",
+    ],
+    keyTakeaways: [
+      "PQNK is a universal design, so there is no need for a separate article on each crop; after conversion, give each plant enough space, because on PQNK plants compete only for sunlight, not underground.",
+      "Cumin: 4 lines on a 42-inch (107 cm) bed, 8 to 12 inches (20 to 30 cm) from plant to plant, about 35,000 to 52,000 plants per acre (about 50,000 at 8 inches).",
+      "Date palms need no pruning; only lower hanging or dry fronds may be removed. Move suckers (offshoots) in mild weather, in spring or autumn.",
+      "High-density date plantation: 10 feet by 10 feet (3 m by 3 m), 436 plants per acre.",
+      "Canola and all rapeseed varieties: when plants reach about 12 inches (30 cm) or flowering starts, cut off the leader shoot 2 inches (5 cm) below the top.",
+      "Jantar seed: 45,000 to 62,000 seeds per kilogram, so 8 kg holds about 360,000 to 500,000 seeds.",
+      "PQNK began some 400 million years ago with the first plants; its principles were understood in the Amazon forests in 2008, first applied on 44 acres of rice in moist soil, and extended to most crops, regions and machines over the next 8 years.",
+      "Chapters 22 and 23 of the PQNK book serve as the PQNK GAP (Good Agricultural Practices); Chapter 31 shows how to reach a sustained closed-loop farm.",
+      "As a policy, PQNK farmers are not registered and their contact details are not shared, for their privacy and safety.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {

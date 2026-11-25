@@ -1529,4 +1529,10 @@ export const CHAPTER_TABLES: Record<string, ChapterTable> = {
     ["A typical dew night", "0.25 litre (0.25 mm)", "about 1,000 litres"],
     ["A heavy dew night", "0.50 litre (0.50 mm)", "about 2,000 litres"],
   ] },
+  "kp231-table-01.png": { headers: ["Use of water", "Root water (from the soil)", "Leaf water (dew)"], rows: [
+    ["Minerals and nutrients", "Yes: carries them up from the soil", "No: brings no minerals"],
+    ["Cooling", "Yes: evaporates through the leaves by day", "Yes: evaporates from the leaf in the first sun"],
+    ["Hydrogen", "Yes", "Yes: the part taken in by the leaf"],
+    ["Firmness", "Yes", "Yes: keeps leaf cells full at dawn"],
+  ] },
 };
