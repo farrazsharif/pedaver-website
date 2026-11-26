@@ -260,6 +260,27 @@ export default function HomePage() {
                 </span>
                 <span className="flex-none text-lg font-bold" aria-hidden="true">→</span>
               </Link>
+              {/* Crop Prices (2026-11-26, author: a tool, never in the header menu; given a prominent button here
+                  instead, below New on Pedaver, as the videos are). */}
+              <Link
+                href="/crop-prices"
+                className="group flex items-center justify-between gap-3 rounded-xl bg-primary px-5 py-4 text-cream shadow-sm transition hover:-translate-y-0.5 hover:bg-primary-dark hover:shadow-md sm:col-span-2"
+              >
+                <span className="flex items-center gap-3">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="flex-none">
+                    <path d="M3 3v18h18" />
+                    <path d="M7 15l4-4 3 3 6-6" />
+                    <path d="M15 8h5v5" />
+                  </svg>
+                  <span>
+                    <span className="block text-base font-bold leading-snug">Crop Prices: Today&apos;s Mandi Rates</span>
+                    <span className="block text-sm text-cream/85">
+                      Wholesale and retail rates in Punjab markets, price trends and the year&apos;s top 10, in English and Urdu
+                    </span>
+                  </span>
+                </span>
+                <span className="flex-none text-lg font-bold" aria-hidden="true">→</span>
+              </Link>
             </div>
           </div>
         </Section>
