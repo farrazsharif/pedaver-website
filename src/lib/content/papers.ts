@@ -3546,7 +3546,7 @@ export const papers: Paper[] = [
     summary:
       "A field Q&A on mango harvesting and ripening under PQNK, built around the principle that post-harvest waste is as regenerative a loss as poor soil management, with specific cut, temperature, humidity, and stacking parameters for each stage from pre-harvest maturity checks through final ripeness.",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/mango-sop-under-pqnk.pdf",
+    pdfPath: "/papers/mango-sop-under-pqnk.pdf?v=nd1127",
     heroImage: "/images/crops/mango-orchard.jpg",
     abstract: [
       "This SOP treats post-harvest mango loss as equivalent to a regenerative failure: wasting a mature mango wastes all the water, carbon, and biological energy invested in producing it. Structured as a direct response to a grower question raised in a PQNK WhatsApp learning group, it walks through 19 numbered decision points from pre-harvest maturity checks to final ripeness assessment, each stated as a yes/no field question with the reasoning behind the answer.",
@@ -3572,7 +3572,7 @@ export const papers: Paper[] = [
     summary:
       "A factsheet on producing commercial True Onion Seed under PQNK, covering optimal planting density, the economics of mother-bulb size, and a head-to-head quality and post-harvest comparison against conventional and organic onion production.",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/onion-seed-production-under-pqnk.pdf",
+    pdfPath: "/papers/onion-seed-production-under-pqnk.pdf?v=nd1127",
     heroImage: "/images/crops/garlic-harvest.jpg",
     abstract: [
       "This factsheet positions PQNK as organic-plus for commercial onion seed production: a functioning soil ecosystem maintained by a permanent organic mulch is treated as self-sufficient, eliminating the input substitution that defines conventional organic systems. The thick mulch layer performs two jobs at once, feeding the soil food web (bacteria, fungi, protozoa, nematodes) and acting as the biochemical catalyst that unlocks mineral reserves already present in the soil substrate, so the mulch is fuel for a microbial engine rather than the nutrient source itself.",
@@ -3598,7 +3598,7 @@ export const papers: Paper[] = [
       "A propagation-focused guide to onion and garlic under PQNK, comparing seeds, large bulbs, and offsets as planting material before laying out the full 10-step PQNK transition sequence, from hardpan-breaking through raised-bed formation to harvest timed by leaf yellowing.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/pqnk-onion-garlic-production-system.pdf",
+    pdfPath: "/papers/pqnk-onion-garlic-production-system.pdf?v=nd1127",
     heroImage: "/images/garlic-beds.jpg",
     abstract: [
       "This guide is distinct from PQNK's yield-and-economics literature on garlic and onion in that its focus is propagation method and system transition rather than cost modeling. It opens by comparing the three planting materials available for alliums: seeds, which take 4-6 months to mature but offer the broadest genetic base and let growers select for traits like disease resistance; large bulbs planted as 'sets,' which establish in 2-3 months with good uniformity but can carry disease if not properly selected or stored; and small bulbs or offsets, genetic clones of the parent plant that combine the speed of bulb propagation with the highest uniformity of the three methods.",
@@ -3624,7 +3624,7 @@ export const papers: Paper[] = [
       "A practical planting guide for olive growers in Mediterranean-equivalent climates, laying out two distinct PQNK establishment paths, high-density irrigated beds versus a low-cost curved-furrow-and-borehole system for rain-fed sloping land, plus a year-by-year yield projection showing how consistent soil biology breaks the crop's typical biennial-bearing cycle.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/a-farmers-guide-to-olive-orchards.pdf",
+    pdfPath: "/papers/a-farmers-guide-to-olive-orchards.pdf?v=nd1127",
     heroImage: "/images/crops/olive-orchard.jpg",
     abstract: [
       "Olive trees are naturally suited to Mediterranean-equivalent climates, hot dry summers and mild rainy winters, and this guide sets out two PQNK establishment paths depending on whether a farm has an existing irrigation source. For irrigated land, the sequence follows the standard PQNK conversion: level the ground, break the hardpan, wash down accumulated salts with a heavy irrigation, then form permanent 42-inch raised beds with 18-inch furrows sized to the local tractor track, and grow a cover crop on the beds before transplanting. Trees are spaced 10 feet between rows and 8 feet within the row, a high-density layout giving roughly 545 plants per acre, with irrigation applied sparingly through the furrows since a tree only needs water equal to what it loses through transpiration.",
@@ -3729,7 +3729,7 @@ export const papers: Paper[] = [
       "A farmer Q&A collection addressing a delayed, compressed winter season (monsoon arriving early, winter delayed 1-1.5 months) and its effect on wheat, alongside related questions on why weeds outperform crops under drought stress; the wheat section lays out a biology-based, soil-temperature-triggered sowing and pruning protocol built specifically to recover the lost growing time.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/adapting-to-erratic-weather-using-pqnk-principles.pdf",
+    pdfPath: "/papers/adapting-to-erratic-weather-using-pqnk-principles.pdf?v=nd1127",
     heroImage: "/images/wheat-misty.jpg",
     abstract: [
       "The paper opens with a farmer's direct climate observation: monsoon now arrives earlier, winter is delayed by 1 to 1.5 months, and the intermediate season is nearly skipped, compressing wheat's already-short 4-5 month maturation window (versus 9-10 months in temperate countries) even further, and forcing grain-filling into the rapidly warming days of March-April, which produces shriveled grain and low tillering. PQNK's answer is a full shift from calendar-based to biology-based sowing: sow when soil temperature at seeding depth is consistently 22-24°C, not by waiting for a 'feels cold enough' calendar cue, with thick organic mulch doing the work of lowering soil temperature, conserving residual monsoon moisture, and buffering the root zone against extremes so that this target can be reached weeks earlier than a bare, unmulched field would allow.",
@@ -3812,7 +3812,7 @@ export const papers: Paper[] = [
       "A full production system for open-field commercial strawberries under PQNK, covering ultra-high-density planting (19,600 plants/acre, nearly double the conventional standard), a mulch-hydration system that eliminates irrigation, a three-layer pest defense, and a post-harvest cold-chain protocol, plus a winter-crop rotation that keeps the same permanent bed productive year-round.",
     publishedDate: "2026-08-04",
     modifiedDate: "2026-09-28",
-    pdfPath: "/papers/the-pqnk-strawberry-production-system.pdf",
+    pdfPath: "/papers/the-pqnk-strawberry-production-system.pdf?v=nd1127",
     heroImage: "/images/seedlings-beds.jpg",
     abstract: [
       "The paper frames conventional strawberry farming, plastic mulch, tillage, and chemical dependency, as creating an 'electrically positive' root zone: tillage burns off the soil organic matter that gives soil its negative-charge cation exchange capacity (CEC), while plastic mulch's anaerobic conditions force microbes to strip oxygen from soil minerals, flooding the soil with positively charged ions that displace the nutrient cations plants actually need. The result is a dead, imbalanced soil that forces continuous chemical intervention and caps conventional density around 10,000 plants/acre.",
@@ -3841,7 +3841,7 @@ export const papers: Paper[] = [
       "Addressed directly to dairy farmers who assume manure and biogas slurry are automatically 'valuable fertilizer,' this paper argues the same waste can help, stall, or actively poison a field depending entirely on which soil state within PQNK's transition, degenerative, regenerative (following the initial Corrective Intervention), or the Sustained Closed Loop State, it's applied to, and sets out a decision framework for matching waste form to soil condition.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/returning-dairy-waste-to-the-land.pdf",
+    pdfPath: "/papers/returning-dairy-waste-to-the-land.pdf?v=nd1127",
     heroImage: "/images/beds-prepared.jpg",
     abstract: [
       "The paper opens by naming a common dairy-farmer experience directly: waste is applied as 'valuable fertilizer' as advised, yet the soil doesn't feel the same as it once did and crops stop responding the way they should. Its explanation rests on matching waste to soil state within PQNK's transition, degenerative, regenerative (after Corrective Intervention), or the Sustained Closed Loop State, and the central claim that a farmer cannot simply 'apply waste' and expect improvement without first knowing which state the land is actually in, since the same material produces entirely different outcomes depending on the soil's condition.",
@@ -3868,7 +3868,7 @@ export const papers: Paper[] = [
       "A compact guidebook applying PQNK principles to household-scale food production, showing how a single 4-foot by 20-foot bed, planned like a household budget around daily, weekly, and seasonal produce needs, can supply the bulk of fresh vegetables for a family of ten, with a parallel rooftop/container method built around a novel underground 'soil life conduit.'",
     modifiedDate: "2026-11-13",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/the-pqnk-kitchen-garden.pdf?v=pest1113",
+    pdfPath: "/papers/the-pqnk-kitchen-garden.pdf?v=nd1127",
     heroImage: "/images/seedlings-beds.jpg",
     abstract: [
       "The guide's central claim is that a strategically managed 4-foot by 20-foot plot (80 sq ft) can serve as the primary source of fresh produce for a family of ten, turning a household kitchen garden from a hobby vegetable patch into what the paper calls a 'household bio-system.' It sets out two parallel pathways: grounded soil-based growing for households with yard space, and rooftop or window planter production for households without it, treating both as capable of the same underlying regenerative logic.",
@@ -3946,7 +3946,7 @@ export const papers: Paper[] = [
       "Answers a practicing farmer's question on whether specific microbes target specific nutrients and whether plant diversity affects food quality, reframing the soil microbiome as a specialized geochemical mining workforce rather than a passive recycling system.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/how-microbial-biodiversity-mines-geological-abundance.pdf",
+    pdfPath: "/papers/how-microbial-biodiversity-mines-geological-abundance.pdf?v=nd1127",
     heroImage: "/images/seedlings-beds.jpg",
     abstract: [
       "Responding directly to a farmer's question about nutrient-specific microbes and the food-quality effect of plant diversity, this paper argues that the soil microbiome's primary function is not waste recycling but the active liberation of nutrient wealth already locked in soil's geological parent material. It documents four specialist microbial groups by element: mycorrhizal fungi and phosphate-solubilizing bacteria (Pseudomonas, Bacillus) that secrete organic acids to dissolve calcium phosphates, with mycorrhizal hyphal networks increasing the soil volume mined for phosphorus by several hundredfold; potassium-solubilizing bacteria such as Bacillus mucilaginosus that bioleach feldspar, mica, and illite, releasing potassium alongside iron, zinc, manganese, and silicon; siderophore-producing bacteria and fungi that chelate insoluble ferric iron oxide into a plant-absorbable complex; and nitrogen-fixing Rhizobia and free-living diazotrophs such as Azotobacter, the only organisms capable of breaking atmospheric N2's triple bond, which the paper distinguishes as primary production from an infinite atmospheric source rather than recycling.",
@@ -3972,7 +3972,7 @@ export const papers: Paper[] = [
     summary:
       "A side-by-side comparison of three ways crop residue is commonly handled, surface mulch, rotavator incorporation, and full removal, and how each one shifts the soil's dominant microbial population, decomposition speed, and long-term fertility.",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/how-residue-management-affects-microbial-activity.pdf",
+    pdfPath: "/papers/how-residue-management-affects-microbial-activity.pdf?v=nd1127",
     heroImage: "/images/young-crop-beds.jpg",
     abstract: [
       "This paper walks through three residue-management scenarios and their distinct microbial consequences. Surface mulching favors fungi, actinomycetes, and surface decomposers under slow-to-moderate, mostly aerobic decomposition, producing more carbon retention and stable humus formation; it improves topsoil structure, increases fungal biomass, encourages mycorrhizal association, and prevents rapid nitrogen loss.",
@@ -4125,7 +4125,7 @@ export const papers: Paper[] = [
       "Answers a chili farmer's specific dead-mulch irrigation plan by explaining why a living root system, not mulch alone, is what activates the soil's microbial nutrient-delivery machinery, and reconciles the 'sugar-in-water' dilution concern with how a functioning PQNK system actually regulates nutrient concentration.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/the-soil-biome-and-water-nutrient-dynamics-in-pqnk.pdf",
+    pdfPath: "/papers/the-soil-biome-and-water-nutrient-dynamics-in-pqnk.pdf?v=nd1127",
     heroImage: "/images/seedlings-beds.jpg",
     abstract: [
       "Written as a direct response to a practicing farmer's mulch and irrigation plan, this paper frames fertile soil as a factory that stays in standby mode until activated by a living plant root, its 'primary manager and power source.' Roots are cast in three simultaneous roles: civil engineers that physically structure macropores and micropores, employers that feed the microbial workforce through both root exudates and decomposing organic matter, and CEOs that transmit species-specific biochemical demand signals into the rhizosphere, which microbes then decode and fulfill.",
@@ -4151,7 +4151,7 @@ export const papers: Paper[] = [
     summary:
       "Answers a farmer's question about why pests develop resistance to sprays while humans grow more susceptible to residues, identifying a second, dosage-driven resistance pathway alongside classic genetic selection, and drawing a direct parallel to chronic low-dose human toxin exposure.",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/two-pathways-to-pest-resistance.pdf",
+    pdfPath: "/papers/two-pathways-to-pest-resistance.pdf?v=nd1127",
     heroImage: "/images/cereal-green.jpg",
     abstract: [
       "Responding to a farmer's question about pest immunity and human susceptibility to toxic residues, this paper identifies two distinct mechanisms behind pesticide resistance. The first is classic genetic selection: a rare, pre-existing gene for detoxification or a modified target site lets a small fraction of a pest population survive a spray, and those survivors become the next generation's parents.",
@@ -4207,7 +4207,7 @@ export const papers: Paper[] = [
       "Reframes both frost and heat damage as failures of hydraulic continuity in a plant's xylem rather than temperature alone, explaining the physics of freezing-induced embolism and heat-induced cavitation, and detailing PQNK's 1-2% ethanol foliar spray as a biologically compatible corrective signal.",
     publishedDate: "2026-08-04",
     modifiedDate: "2026-09-28",
-    pdfPath: "/papers/cold-and-heat-induced-vascular-stress-in-plants.pdf",
+    pdfPath: "/papers/cold-and-heat-induced-vascular-stress-in-plants.pdf?v=nd1127",
     heroImage: "/images/wheat-misty.jpg",
     abstract: [
       "This paper's central reframe is that plant death under temperature extremes is rarely caused by temperature itself but by vascular failure, the collapse of the plant's internal water-transport system. It describes plants as living hydraulic networks, with xylem vessels operating as continuous water columns under negative pressure; any physical disruption to that column, from freezing expansion or heat-induced cavitation, produces embolism, rupture, or dehydration.",
@@ -4235,7 +4235,7 @@ export const papers: Paper[] = [
       "Challenges the common '3 to 5 year transition' claim in regenerative farming, arguing that soil biology responds to correct conditions within hours, and that a farmer should track functional benchmarks like inundation resistance rather than counting calendar years.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/beyond-the-timeline-reframing-the-transition.pdf",
+    pdfPath: "/papers/beyond-the-timeline-reframing-the-transition.pdf?v=nd1127",
     heroImage: "/images/young-crop-beds.jpg",
     abstract: [
       "This paper directly challenges the common regenerative-farming axiom that a system takes three to five years to establish, arguing the framing is well-intentioned but fundamentally misleading because it portrays soil as an inert substance that slowly improves, which the paper says can lead farmers to misdiagnose an early struggling crop as simply 'too young' and default back to input-based fixes.",
@@ -4416,7 +4416,7 @@ export const papers: Paper[] = [
     summary:
       "A 15-question exchange on why farmland, not just forestry, should be treated as a primary national climate lever, covering the biology of soil carbon storage, the four PQNK principles, and how Pakistan should balance forest protection against agricultural transformation.",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/cropland-as-a-carbon-sink-qa.pdf",
+    pdfPath: "/papers/cropland-as-a-carbon-sink-qa.pdf?v=nd1127",
     heroImage: "/images/young-crop-beds.jpg",
     abstract: [
       "The paper's opening argument is that climate policy has wrongly separated land into two categories, forests that store carbon and farms that produce food, when every green plant, crop or tree, performs identical photosynthesis. The real difference is post-capture soil management: forest soil stays covered, rooted, and undisturbed so carbon remains in stable organic matter, while agricultural soil is routinely ploughed, left bare, or flooded, exposing captured carbon to oxygen and accelerating its return to the atmosphere as CO2.",
@@ -4443,7 +4443,7 @@ export const papers: Paper[] = [
       "A technical follow-up paper, prompted by a direct response from Cornell's Professor Norman Uphoff, showing that the water:air soil balance central to nitrogen fixation governs four further services, phosphorus and potassium solubilization, soil bioporosity, pH stability, and root aquaporin function, that benefit every crop, not only legumes.",
     modifiedDate: "2026-10-17",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/beyond-the-nodule-soil-aeration-for-non-legumes.pdf",
+    pdfPath: "/papers/beyond-the-nodule-soil-aeration-for-non-legumes.pdf?v=nd1127",
     heroImage: "/images/beds-wet-skyline.jpg",
     abstract: [
       "This paper is a direct response to Professor Norman Uphoff of Cornell, the researcher most responsible for the System of Rice Intensification's international recognition, who read the companion paper 'The Underground Air' and noted that its argument for legume nodulation left non-leguminous crops unaddressed, even though soil aeration builds a more diverse soil community serving phosphorus solubilization, pore-network construction, pH regulation, and root permeability across every crop. The paper takes up that request mechanism by mechanism.",
@@ -4544,7 +4544,7 @@ export const papers: Paper[] = [
     summary:
       "A farmer's question on the apparent contradiction between PQNK's warning against flooding fields and organic-farming advice to multiply microbes in jaggery water, resolved by distinguishing permanent soil microbes from temporary liquid-culture microbes.",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/flood-irrigation-and-jaggery-water-microbes-qa.pdf",
+    pdfPath: "/papers/flood-irrigation-and-jaggery-water-microbes-qa.pdf?v=nd1127",
     heroImage: "/images/beds-wet-skyline.jpg",
     abstract: [
       "The farmer's question captures a real tension: PQNK teaches that flooding a field drowns aerobic soil microbes within 24-48 hours by cutting off oxygen, yet organic-farming trainers and universities recommend multiplying microbial cultures in jaggery water. The answer resolves this by distinguishing two entirely different environments rather than treating the practices as contradictory: soil pores as a permanent home versus a jaggery-water tank as a temporary, actively aerated vessel.",
@@ -4702,7 +4702,7 @@ export const papers: Paper[] = [
     summary:
       "Reframes seeds surviving intact through an animal's digestive tract, endozoochory, not as a digestive anomaly but as a deliberate regenerative design, and draws out farm practices (silvopasture, seed balls, buffer hedges) that consciously imitate this natural planting mechanism.",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/seed-resistance-in-the-stomach-endozoochory.pdf",
+    pdfPath: "/papers/seed-resistance-in-the-stomach-endozoochory.pdf?v=nd1127",
     heroImage: "/images/seedlings-beds.jpg",
     abstract: [
       "The paper starts from a simple observation: in the stomach of most animals, including humans, pepsin and hydrochloric acid break down proteins, carbohydrates, and fats, yet seeds routinely pass through the gastrointestinal tract intact. Where the conventional view treats this as an exception to digestion, the PQNK lens treats it as a feature engineered for regeneration, the seed as a capsule built to survive one system, digestion, precisely in order to initiate another, germination.",
@@ -5212,7 +5212,7 @@ export const papers: Paper[] = [
       "Pakistan is weighing whether to commercialize GM maize while its domestic hybrid-seed industry warns that pollen-mediated gene flow could compromise non-GM seed stocks. This paper argues the debate is incomplete: before comparing GM maize against non-GM maize, Pakistan should test both against the same hybrid grown under a fully restored PQNK biological production system, since Bt itself began as a naturally occurring soil bacterium and no genetic trait can substitute for repairing the degraded ecosystem in which the plant must function.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-08-25",
-    pdfPath: "/papers/gmo-maize-and-the-question-pakistan-has-not-yet-asked.pdf?v=2",
+    pdfPath: "/papers/gmo-maize-and-the-question-pakistan-has-not-yet-asked.pdf?v=nd1127",
     abstract: [
       "Pakistan is weighing whether to commercialise genetically modified maize while its emerging domestic hybrid-seed industry warns that pollen-mediated gene flow, maize is cross-pollinated, could compromise non-GM seed stocks and create difficult-to-reverse consequences; the Prime Minister's Committee on Genetically Modified Corn began an evidence-based review of the question in July 2026. The paper treats that concern as legitimate and worth formal biosafety and coexistence analysis, but argues the debate as currently framed is incomplete, because it asks only whether Pakistan should grow GM maize or continue with non-GM hybrids, leaving one large variable, the agricultural production system itself, unexamined and unchanged in either comparison.",
       "Its case study is Bt, the insecticidal trait behind most commercial GM maize and cotton. Bacillus thuringiensis is, in the US EPA's own description, a naturally occurring soil bacterium whose different strains produce proteins active against particular insect groups; genetic engineering identified the genes responsible and inserted them so the plant itself expresses the protein, extracting one function from a much larger biological world rather than reconstructing it. The paper is explicit that PQNK does not claim restoring soil biology reproduces Bt-transgenic-level pest control, natural Bt's abundance, strain composition and persistence in soil remain only partly understood, and states directly that this overclaim would weaken rather than strengthen its own case. What it argues instead is narrower: Bt is one component of a much larger ecological pest-regulation network, predators, parasitoids, entomopathogens and more, and a Bt crop's single-gene defence stays target-specific even while the surrounding soil remains compacted, hardpan-locked, tilled and predator-depleted. Pink bollworm resistance to Bt cotton is cited as documented precedent that a genetic trait is not permanent ecological protection, which is exactly why resistance-management requirements exist.",
