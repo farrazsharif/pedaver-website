@@ -1716,7 +1716,7 @@ export const papers: Paper[] = [
     summary:
       "Answering a practitioner's question about active versus passive nutrient absorption, this paper contrasts PQNK's living root-microbe dialogue with the 'intravenous drip' of soluble chemical fertilizer, and asks how the Amazon has sustained itself for 40 crore years while chemical farming has exhausted soils worldwide in barely 200.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/the-sacred-symbiosis-why-pqnk-feeds-plants.pdf",
+    pdfPath: "/papers/the-sacred-symbiosis-why-pqnk-feeds-plants.pdf?v=nd1127",
     abstract: [
       "The paper is structured as a direct answer to an Indian PQNK practitioner's question about how nutrient absorption actually works, and why chemical and biological systems produce such different long-term outcomes despite both ultimately delivering nutrients to a plant's roots. Its central distinction is between nutrient absorption as a 'living dialogue' under PQNK and as a 'chemical monologue' under conventional fertilization.",
       "Under PQNK, the plant is described as pumping carbon-rich sugar exudates from its roots to feed a specific microbial community in the rhizosphere, effectively paying bacteria and fungi to weather parent rock and soil particles, unlocking the full mineral spectrum and presenting it back to the plant in balanced, bioavailable form. Under chemical fertilization, water-soluble NPK salts are forced directly into the soil solution and absorbed passively with water, bypassing this microbial digestive system entirely; the paper likens this to an intravenous sugar drip, technically nutrition, but incomplete, unbalanced, and requiring no living relationship at all.",
@@ -1742,7 +1742,7 @@ export const papers: Paper[] = [
     summary:
       "This primer reframes the plant not as something to be fed but as a sovereign organism that builds its own body from sunlight, air, and water, then hires and pays soil microbes to mine the minerals it cannot make itself. It walks through photosynthesis, rhizosphere partnership, the plant's internal circulatory system, and its immune response as four interlocking processes the PQNK farmer exists to protect.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/the-living-plant-a-primer-on-physiology-and-processes.pdf",
+    pdfPath: "/papers/the-living-plant-a-primer-on-physiology-and-processes.pdf?v=nd1127",
     abstract: [
       "The paper opens by rejecting the metaphor of soil as a 'food bowl' and roots as 'mouths,' arguing instead that a plant is a self-sufficient chemical factory carrying the complete genetic code to build its body, defend itself, and reproduce using only sunlight, air, and water, with soil serving as foundation and gut rather than feeding trough. It divides the plant's life into two coordinated worlds: the above-ground shoots, which capture light and CO2 to manufacture food through photosynthesis (the plant's 'source'), and the below-ground roots, which secure water and manage microbial partnerships (the realm of community and synergy).",
       "Photosynthesis is presented as the foundation of the PQNK claim that 'the solid matter of a plant is condensed air and water': chlorophyll captures sunlight and uses that energy to split water and recombine its hydrogen with carbon from atmospheric CO2 into sugars, releasing oxygen as a byproduct. The paper's stated implication is that the bulk mass of any crop, wheat grain, cotton boll, cabbage head, is built by the plant itself from free and abundant air and water, not supplied by the farmer.",
@@ -1769,7 +1769,7 @@ export const papers: Paper[] = [
     summary:
       "Extending PQNK's below-soil 'plants as employers' framework above ground, this paper argues plants deliberately recruit and regulate pollinators, predators, and even sap-sucking insects like aphids, using them as tools to shift energy from vegetative growth into reproduction. It reframes pre-flowering aphid activity as an invited pruning mechanism rather than an infestation.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/above-soil-ecosystems-in-pqnk.pdf",
+    pdfPath: "/papers/above-soil-ecosystems-in-pqnk.pdf?v=nd1127",
     abstract: [
       "The paper opens by establishing preconditions: a functional above-soil ecosystem can only operate once the below-soil PQNK ecosystem, broken hardpan, mature permanent raised beds, continuous and retained roots, and stable moisture and temperature from mulch, is already established. Without these foundations, it argues, recycling organisms dominate above ground instead of the provisioning and protection organisms a healthy system depends on.",
       "Its central reframing is that plants are active coordinators, not passive victims, both below and above soil. Below, they hire microbes through root exudates; above, they recruit pollinators, predators, parasitoids, browsers, and recyclers through volatile organic compounds, flower color and structure, nectar composition, and sap chemistry, signals the paper describes as intentional biological invitations rather than accidental vulnerabilities. Pollinators are drawn by fragrance, visual cues, and nectar as reproductive provisioners, while predators (lady beetles, lacewings, spiders, predatory wasps) arrive to protect pollinators and regulate scavengers, becoming dominant specifically when plants are healthy and signaling stability.",
@@ -1795,7 +1795,7 @@ export const papers: Paper[] = [
     summary:
       "A farmer asked why pests evolve immunity to pesticides while human diseases from the same chemicals keep rising. This paper explains both outcomes through the same mechanism operating at different biological scales, rapid population-level genetic selection in short-lived pests versus slow, cumulative, individual-level degeneration in humans, and argues PQNK escapes the trap entirely by removing the toxic pressure driving both.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/the-paradox-of-resistance-pests-adapt-humans-degrade.pdf",
+    pdfPath: "/papers/the-paradox-of-resistance-pests-adapt-humans-degrade.pdf?v=nd1127",
     abstract: [
       "The paper is framed as a direct response to a practitioner's question: how do pests develop resistance to lethal sprays while humans grow more susceptible to the same class of toxic residues, with disease rates rising rather than falling? It treats this as a systems-level insight rather than a simple curiosity, arguing the apparent paradox resolves once the different scale and timeframe of pest versus human exposure is accounted for.",
       "Pest resistance is explained through two reinforcing pathways: rare pre-existing genetic traits (a detoxifying enzyme, a modified nerve receptor) that let a small fraction of the population survive a lethal dose and pass the advantage to offspring, and sub-lethal exposure, where a much larger cohort survives an incomplete dose due to imperfect spray coverage or hiding, and that survival itself acts as a 'training stress' that upregulates detoxification pathways and selects for general tolerance. Each spray cycle, the paper argues, compounds both pathways, rapidly driving population-wide resistance, a narrow, desperate biochemical arms race rather than genuine health.",
@@ -1849,7 +1849,7 @@ export const papers: Paper[] = [
       "Rather than fighting soil heterogeneity with uniform irrigation and fertilizer, this technical paper argues PQNK's trapezoidal raised beds deliberately engineer three concentration zones, dilute, gradient, and accumulation, that trigger specific, well-documented root and transporter adaptations. It's the most mechanistic of the PQNK papers, citing root-hair proliferation timelines, transporter upregulation factors, and mycorrhizal recruitment data.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/cultivating-plant-intelligence-through-engineered-soil-gradients.pdf",
+    pdfPath: "/papers/cultivating-plant-intelligence-through-engineered-soil-gradients.pdf?v=nd1127",
     heroImage: "/images/beds-wet-skyline.jpg",
     abstract: [
       "The paper's opening claim is a paradigm shift: rather than treating soil heterogeneity as a problem to overcome with uniform inputs, PQNK treats it as a biological trigger to be engineered deliberately. It rests on four non-negotiable pillars, absolute no-till, permanent organic mulch armor, engineered raised beds, and biological nutrient management, and on what it calls the 'geological abundance premise': that most agricultural soils already contain sufficient mineral reserves for perpetual production once biological weathering, not fertilizer, is allowed to liberate them.",
@@ -1877,7 +1877,7 @@ export const papers: Paper[] = [
     summary:
       "Reading a 2018 transcriptomic study that found rhizobia activate over 2,400 rice genes, this paper argues the standard framing has the causality backwards: the plant is not colonized, it is informed, and it makes the decision. It develops a full 'plant as CEO' recruitment-interview analogy for how legumes and rice actively select, test, and hire their bacterial partners.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/the-plant-as-ceo-biological-agency-in-rhizobial-partnerships.pdf",
+    pdfPath: "/papers/the-plant-as-ceo-biological-agency-in-rhizobial-partnerships.pdf?v=nd1127",
     abstract: [
       "The paper takes as its evidentiary base Jing et al. (2018), which documented that inoculating rice roots with Sinorhizobium meliloti 1021 differentially expressed 2,414 rice genes across 26 functional categories, alongside increased shoot height, dry weight, and cell enlargement. It argues the conventional interpretive language surrounding such findings, 'colonization,' 'infection,' 'regulation by rhizobia,' 'growth-promoting bacteria,' quietly casts the microbe as the active agent and the plant as a passive recipient, and sets out to invert that reading using the study's own data.",
       "Its central device is the 'Plant as CEO' analogy, developed as a five-step recruitment process: the plant posts a 'job description' by secreting a specific flavonoid blend under nitrogen-limited conditions; compatible rhizobia respond with a chemical 'application,' Nod factor signals produced via their NodD receptors; the plant 'interviews' candidates through LysM-domain receptor kinases that bind Nod factors only with precise structural compatibility; the plant makes a 'hiring decision' by activating its own symbiotic signaling pathway, triggering nodule formation and infection thread development; and it conducts 'ongoing performance management' by housing rhizobia in plant-derived symbiosomes, controlling their oxygen supply, paying them in carbon, and terminating the relationship if performance is unsatisfactory.",
@@ -1903,7 +1903,7 @@ export const papers: Paper[] = [
     summary:
       "A single stray wheat plant, pulled from the ground and photographed, becomes a full diagnostic reading of soil health in this short field note. Root structure, tillering, leaf color, and soil cling are each read as evidence the plant is in energy surplus rather than survival mode.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/what-this-uprooted-wheat-plant-is-telling-us.pdf",
+    pdfPath: "/papers/what-this-uprooted-wheat-plant-is-telling-us.pdf?v=nd1127",
     heroImage: "/images/wheat-misty.jpg",
     abstract: [
       "The paper is built around a single photographed specimen, a stray wheat plant sown on 4 December 2025 and later pulled up for inspection, treated as a diagnostic instrument for the soil it grew in rather than simply as a crop sample. Its framing device is that PQNK reads plants this way as a matter of method: 'one honest plant tells more truth than 100 soil tests.'",
@@ -1930,7 +1930,7 @@ export const papers: Paper[] = [
     summary:
       "Large tracts of sloping, rainfed farmland already receive twice the water crops need, yet fail from runoff and erosion rather than drought. This paper applies PQNK's hardpan-breaking and mulch principles specifically to undulating terrain, using contour-aligned furrows as micro check-dams and citing practitioners who have farmed 7-8 consecutive years on rainfall alone.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/contour-line-farming-through-the-pqnk-lens.pdf",
+    pdfPath: "/papers/contour-line-farming-through-the-pqnk-lens.pdf?v=nd1127",
     abstract: [
       "The paper targets a specific, globally common category of marginal land: sloped or undulating, rainfed, and prone to runoff and erosion. Its opening claim is that many such landscapes receive over 400mm of annual rainfall, roughly twice the biological water requirement of PQNK's year-round crop cycle, meaning the failure is rainfall mismanagement, not rainfall scarcity, a soil that cannot receive, store, or regulate the water that already falls on it.",
       "The first and non-negotiable intervention is identical to PQNK's flat-land protocol, fracturing the hardpan with a subsoiler without inverting soil layers, restoring the macropores that let rain infiltrate rather than run off a compacted, restrictive layer. What is specific to sloped terrain is the second step: furrows cut strictly along contour lines, perpendicular to the slope, functioning as a continuous series of micro check-dams across the whole field, dropping surface runoff velocity to near zero so water is trapped exactly where it falls rather than carrying topsoil downhill.",
@@ -1956,7 +1956,7 @@ export const papers: Paper[] = [
     summary:
       "Asked why environmentalists condemn Eucalyptus as a water-guzzling, soil-degrading species while farmers keep planting it anyway, this note argues both camps are observing an effect of dead soil, not a property of the tree. It contends that under PQNK's restored soil biology, Eucalyptus behaves like any other well-nourished plant.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/agroforestry-species-selection-under-the-pqnk-model.pdf",
+    pdfPath: "/papers/agroforestry-species-selection-under-the-pqnk-model.pdf?v=nd1127",
     abstract: [
       "The note opens with a farmer's pointed question: environmentalists widely discourage Eucalyptus for excessive water use and soil degradation, yet farmers keep planting it anyway for its fast growth and income. Its answer starts from a first principle it says is commonly misunderstood, plants do not fix nitrogen or create nutrients themselves; all nitrogen fixation is done by soil microbes, and all minerals already exist in the soil's geological reserves, so plant behavior is a response to biological soil condition, not an inherent property of the species.",
       "Applied to Eucalyptus specifically, the paper reframes the accusations against it as effects rather than causes: in degraded, saline, high-pH soils where nutrients are chemically present but biologically locked up and microbial activity is low, any fast-growing, nutrient-demanding species, Eucalyptus included, must transpire more water to pull in the diffuse, weakly available nutrients it needs, a response commonly misread as inherent 'water greed' rather than as a symptom of the soil it was planted into.",
@@ -1982,7 +1982,7 @@ export const papers: Paper[] = [
     summary:
       "A farmer choosing between two tractors and two tyre widths for a precision planter on 42-inch permanent beds gets a precise engineering answer here: 45-55 HP, with approximately 9 inches the ideal tyre width for this furrow geometry (9-13 inches the practical range, not exceeding 13 inches), and compaction strictly limited to the lower third of the furrow slope. The paper treats correct tractor setup as inseparable from PQNK soil-health outcomes, not a separate mechanical concern.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/optimizing-tractor-setup-for-precision-planting.pdf",
+    pdfPath: "/papers/optimizing-tractor-setup-for-precision-planting.pdf?v=nd1127",
     abstract: [
       "The paper answers a specific farmer question: which of two tractors, a 58HP Massey Ferguson and a 52HP Mahindra, both currently on 16-inch tyres, should be adapted with a 13-inch tyre for precision planting on a defined bed-furrow profile (42-inch bed top, 18-inch furrow top, 8-inch bed height, 8-inch furrow bottom). Its answer is that precision planters need steadiness and controlled traction, not raw horsepower, so a 45-55HP tractor with correctly matched tyre width is ideal, meaning either tractor can work once tyre size and weight are properly matched to the bed geometry.",
       "The paper's central technical point concerns the relationship between tyre width and the bed-furrow profile: with an 18-inch furrow top and slanted sides, approximately 9 inches is the ideal tyre width, tracking only the lower part of the furrow slant, and compaction must be limited to roughly the lower third of the bed height to preserve water infiltration into the bed. Because suitable narrow tyres are not always readily available, and changing tyre size can also require changing rims, 9-13 inches is treated as the practical operating range, with 13 inches the maximum. A 16-inch tyre is judged too wide, compacting too much of the furrow sidewall, while an 11 to 13-inch tyre fits within the furrow and concentrates weight on a narrower path, reducing sidewall compaction if properly tracked.",
