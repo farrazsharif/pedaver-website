@@ -1042,7 +1042,7 @@ export const papers: Paper[] = [
     summary:
       "This foundational document argues that 'managing' fungal-to-bacterial ratios or inoculating soil with chosen species is a category error, and lays out the four PQNK steps that create the physical habitat fungal networks assemble themselves into, without any human direction of which species goes where.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/the-autonomous-biome-self-assembling-fungal-networks.pdf",
+    pdfPath: "/papers/the-autonomous-biome-self-assembling-fungal-networks.pdf?v=nd1127",
     abstract: [
       "The paper's core tenet, stated in its preamble, is that a truly regenerative ecosystem is self-organizing, self-regulating, and self-sufficient, and that human intervention beyond establishing foundational conditions disrupts a micro-intelligence evolved over millennia. It reframes the 'fungal highway' not as a system to be manipulated but as an emergent property of a correctly functioning closed-loop ecosystem.",
       "Section one names what it calls 'the fallacy of management': conventional regenerative literature speaks of managing fungal-to-bacterial ratios, inoculating with chosen species, and creating specific compost types, which the paper treats as a fundamental misunderstanding that assumes humans can improve on nature's design. It states that parent rock and mineral material already contains every element life needs in abundance; the limitation is biological availability, not presence, and that availability is the exclusive domain of the native soil microbiome, which solubilizes minerals in proportions demanded by root exudates. Inserting specific fungal species or dictating ratios is treated as an external interruption that can override the soil's own intelligence.",
@@ -1068,7 +1068,7 @@ export const papers: Paper[] = [
     summary:
       "Responding to a farmer's question about using weeds as nutrient-deficiency indicators, this dialogue explains that in PQNK the goal isn't to manage weeds as permanent indicator crops, but to run a four-step protocol that resolves the soil problems they signal so the weeds voluntarily depart.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/the-healers-dialogue-from-weed-signal-to-soil-silence.pdf",
+    pdfPath: "/papers/the-healers-dialogue-from-weed-signal-to-soil-silence.pdf?v=nd1127",
     abstract: [
       "A farmer asks whether, since weeds compensate for specific soil deficiencies (nitrogen-fixing weeds where nitrogen is low, erosion-preventing weeds where erosion is severe), PQNK farmers can deliberately use indicator plants to manage nutrition in early crops. The answer affirms the diagnosis but redirects the strategy: weeds are read as the soil's own healing response to a collapsed system, and the PQNK role is not to add inputs or manage intercrops but to remove obstacles so the soil's own intelligence completes the healing, after which the need for weeds-as-medicine disappears entirely.",
       "The paper reads dominant native weeds as precise diagnostic tools: Dheet (Field Bindweed) and Kundi (Purple Nut Sedge) signal hardpan, severe compaction, and waterlogging; Jangli Jai (Wild Oat) and Maina (Wild Mustard) indicate a crusted surface and poor structure; Kulfa (Purslane) indicates compaction coupled with high salinity; broadleaf Chulai (Amaranth) signals disturbed, lifeless, low-organic-matter soil; and Leh (Cogon Grass) and Kans (Saccharum spontaneum) mark the final stage of severely degraded, acidic, exhausted soils.",
@@ -1094,7 +1094,7 @@ export const papers: Paper[] = [
     summary:
       "This paper lays out PQNK's two-track response to hardpan: a preferred one-time mechanical subsoiling where machinery is available, and a patient, plant-and-fungi-driven biological pathway for farms where it isn't, with mycorrhizal fungi cast as the ecosystem's 'stone breaker.'",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/deep-subsoil-remediation-and-activation.pdf",
+    pdfPath: "/papers/deep-subsoil-remediation-and-activation.pdf?v=nd1127",
     abstract: [
       "The paper's executive summary identifies the subsoil hardpan, a dense, concrete-like layer formed by pneumatic tire compaction and the smearing action of spring-tine cultivators, discs, and moldboard ploughs, as one of the most severe constraints in conventional agriculture. Typically beginning at 6 inches and extending to 20 inches deep, it severs the soil's hydraulic function, restricts root exploration, and imprisons biological life. PQNK's response is a hierarchy of solutions based on context and capacity rather than a single prescribed fix.",
       "The problem section is explicit that this hardpan is not a natural geological feature but a human-engineered barrier: concentrated pneumatic tire weight and repeated implement passes at a consistent depth polish and compress soil particles into a layer with the consistency of weak concrete, root-proof, water-proof, and life-proof, breaking the earth's natural water and nutrient cycles.",
@@ -1120,7 +1120,7 @@ export const papers: Paper[] = [
     summary:
       "This foundational document takes direct aim at the practice of applying rock dust, basalt, or other mineral amendments, even under the banner of 'accelerated weathering,' arguing that any felt need for such inputs is a diagnostic signal that a farm's PQNK conversion is incomplete, not a legitimate prescription.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/the-self-liberating-mineral-cycle.pdf",
+    pdfPath: "/papers/the-self-liberating-mineral-cycle.pdf?v=nd1127",
     abstract: [
       "The paper opens by naming what it calls a foundational contradiction: applying rock dust, basalt, or any external mineral amendment, even when framed as 'accelerated weathering' using specific plants or microbes, is fundamentally at odds with PQNK philosophy, which treats any input from outside the field boundary as an imposition on nature's self-sufficient logic. In PQNK, 'parent material' is not an external resource to be accessed but an internal reserve to be unlocked by the system's own restored processes; the felt need for a mineral input is treated as a diagnostic signal that the conversion is incomplete, not a guide for action.",
       "The full PQNK conversion, breaking hardpan, forming permanent raised beds, establishing a perpetual cover crop and mulch cycle, and committing to no-till precision planting, is presented as activating an innate, perpetual mineral liberation engine with three integrated components: the root-mycorrhizal miner, where diverse, deep, successive roots and their fungal partners interact with minerals at all depths and release nutrients through in-situ decomposition; the liberation of the 'Legacy Load,' the vast reservoir of minerals locked in the subsoil by prior conventional (ACI) farming, unlocked by PQNK's deep biological activity and improved hydration; and atmospheric integration, where a pristine system's permanent mulch and surface biology efficiently capture the continuous natural mineral input from dust and rainfall.",
@@ -1148,7 +1148,7 @@ export const papers: Paper[] = [
       "This paper reframes two conventionally input-driving soil metrics, electrical conductivity and redox potential, as emergent properties of root-microbe communication rather than parameters to correct with salts or drainage, and lays out what a PQNK farmer should, and should not, do in response to them.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/managing-soil-electrical-conductivity-and-redox-potential.pdf",
+    pdfPath: "/papers/managing-soil-electrical-conductivity-and-redox-potential.pdf?v=nd1127",
     abstract: [
       "The paper's core principle, stated up front, is that 'biology dictates chemistry; the plant, through its microbial allies, designs its own ideal rhizosphere.' After the standard PQNK conversion steps, breaking hardpan, forming permanent raised beds, growing and retaining cover-crop roots, and maintaining no-till precision planting, the soil is said to regain an innate ability to self-regulate electrical conductivity (EC) and redox potential (Eh) at the rhizosphere level to meet plant needs precisely, rather than these being parameters a farmer forcibly adjusts with inputs.",
       "On EC, the paper contrasts the conventional use of EC as a proxy for soluble salts and fertilizer need with a PQNK view of EC as a bio-electric signature of root-microbe communication: slightly elevated EC near roots reflects a dense, biologically generated, plant-specific 'nutrient soup' rather than excess salts, self-regulated via a steady carbon flow from mulch and retained roots that fuels microbes to mobilize and retain ions on soil colloids. Permanent mulch is described as an EC buffer, moderating moisture so evaporation doesn't drive surface salt accumulation even where irrigation water carries some salt load.",
@@ -1174,7 +1174,7 @@ export const papers: Paper[] = [
     summary:
       "This foundational document asks farmers to stop seeing their fields as a collection of managed parts and instead see a self-executing, closed-loop organism, then works through what that lens means diagnostically when poor germination, insect presence, or start-up nutrient deficiency shows up in a converted PQNK field.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/the-qudratti-nizam-as-a-holistic-organism.pdf",
+    pdfPath: "/papers/the-qudratti-nizam-as-a-holistic-organism.pdf?v=nd1127",
     abstract: [
       "The paper frames PQNK as the recognition and reactivation of a 400-million-year-old operating system, not a method of adding inputs but the removal of disturbances that let that system resume. Its central law is that the whole farm is the only valid unit of management; external inputs of any kind, compost, inoculants, or even conceptually borrowed plants, are treated as disturbances, and conventional (ACI) farming is characterized as a series of such disturbances predicated on the fallacy that a deficit can be filled from outside, which creates dependency and atrophies the system's own capacity.",
       "Against this, the paper defines the PQNK 'law of internal completion': a sealed, holistic organism where nothing is brought in and nothing is taken out that isn't food, running a metabolic cycle (water, minerals, gases cycling within boundaries, powered by sunlight), an immune cycle (robust plant physiology, native Bt proteins, and repellent plant health excluding pests and disease), and a structural cycle (soil architecture built and maintained by the system's own living and decaying roots, with no tillage and no imported mulch).",
@@ -1200,7 +1200,7 @@ export const papers: Paper[] = [
     summary:
       "Field observation shows plants in the center of PQNK raised beds are consistently more vigorous than those on the shoulders; this paper traces that gradient to a 'nutrient harvesting' concentrating-flow mechanism in furrow-irrigated water, then extends the same soil physics to argue that hardpan-breaking can meaningfully influence local rainfall patterns.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/soil-water-dynamics-microclimate-feedback-and-plant-vigor.pdf",
+    pdfPath: "/papers/soil-water-dynamics-microclimate-feedback-and-plant-vigor.pdf?v=nd1127",
     heroImage: "/images/beds-wet-skyline.jpg",
     abstract: [
       "The paper opens from a consistent field observation: plants in the center of PQNK raised beds are typically more vigorous and taller than those on the bed shoulders. It sets out to explain this through established soil physics and ecohydrological principles, and to show how it connects to regional water cycling, arguing water in soil moves under two driving forces, gravity pulling it downward, and matric potential (capillary action), pulling it from wetter toward drier soil through the pores. When furrow water infiltrates, it saturates the adjacent soil and then redistributes both downward and laterally toward the drier bed center.",
@@ -1254,7 +1254,7 @@ export const papers: Paper[] = [
     summary:
       "This knowledge paper gives PQNK's soil-density protocol precise numbers: a target bulk density of 1.0-1.3 g/cm³ for loamy field soil, with compaction onset flagged above 1.4 and severe compaction above 1.6, then walks through the same four-step transition sequence used to hit and hold that range without any external soil amendment.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/the-management-of-soil-density.pdf",
+    pdfPath: "/papers/the-management-of-soil-density.pdf?v=nd1127",
     abstract: [
       "The paper's preamble restates PQNK's closed-loop philosophy, nothing added from outside the farm boundary after the initial transition, and applies it specifically to soil density, the physical property that determines the compactness or porosity of the living soil matrix and, through that, its capacity to support root growth, water dynamics, and overall resilience.",
       "It distinguishes two measures. Particle density, the density of solid mineral and stable organic particles alone excluding pore space, typically runs 2.6-2.75 g/cm³, is relatively stable, and is not something PQNK tries to alter directly, only to ensure it reflects a biologically-cycled blend of minerals and humus built entirely on-farm. Bulk density, the mass of dry soil including its pore spaces per unit volume, is the operationally critical measure and the primary focus of PQNK management, since it directly indicates compaction, root-zone aeration, and water movement.",
