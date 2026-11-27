@@ -4048,7 +4048,7 @@ export const papers: Paper[] = [
     summary:
       "Argues that industrial agriculture's foundational error is a deliberate break from the perennial, self-renewing design that soil systems have run on for 400 million years, and traces that break through tillage, bare soil, flood irrigation, and chemical substitution to its production consequences.",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/the-perenniality-of-the-soil-system.pdf",
+    pdfPath: "/papers/the-perenniality-of-the-soil-system.pdf?v=nd1127",
     heroImage: "/images/beds-prepared.jpg",
     abstract: [
       "The paper opens by framing terrestrial soil systems as operating, for over 400 million years, on a perennial design: a continuous cycle of life, death, and rebirth in which soil functions as a living biological engine rather than a passive growing medium. It argues that Ancient Conventional Industrial (ACI) agriculture's core failure was not a technical misstep but a wholesale rejection of that design, substituting a linear, extractive process for a circular, self-fertilizing one.",
@@ -4073,7 +4073,7 @@ export const papers: Paper[] = [
     summary:
       "A knowledge paper arguing that a properly implemented PQNK system leaves crops 98-99% free of pest and disease pressure through native Bt bacteria and a conserved predator population, and that the system's single greatest failure point is not input scarcity but over-irrigation.",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/the-pest-free-revolution.pdf",
+    pdfPath: "/papers/the-pest-free-revolution.pdf?v=nd1127",
     heroImage: "/images/cereal-green.jpg",
     abstract: [
       "This paper presents PQNK as a shift from symptomatic, 'find and destroy' pest control toward Ecological Pest Management, reporting that a properly implemented system achieves 98-99% freedom from pest and disease pressure without chemical pesticides or GMO seed. It documents two core protective mechanisms: native, soil-resident Bacillus thuringiensis (Bt), whose Cry and Cyt protein crystals disrupt a susceptible larva's gut lining after ingestion, and a conserved predator population the paper describes with the field metaphor 'against every pest there are 1,700 predators,' citing examples such as lady beetle larvae consuming 300-400 aphids each and Trichogramma wasps parasitizing pest eggs directly.",
@@ -4178,7 +4178,7 @@ export const papers: Paper[] = [
       "Directly answers a farmer's question about whether irrigation should be increased during frost and cold spells, explaining why added water cannot protect plants from cold stress and can actively harm soil biology, with a supplementary protocol for mild-weather transitional-season crops.",
     publishedDate: "2026-08-04",
     modifiedDate: "2026-09-28",
-    pdfPath: "/papers/pqnk-advisory-frost-cold-weather-irrigation.pdf",
+    pdfPath: "/papers/pqnk-advisory-frost-cold-weather-irrigation.pdf?v=nd1127",
     heroImage: "/images/wheat-misty.jpg",
     abstract: [
       "Answering a farmer's question about whether irrigation, especially warm tube-well water applied at midnight, protects crops from frost, this advisory's short answer is no: increasing irrigation during cold or frost conditions does not protect plants and can actively harm soil life, aeration, and plant vigor. It explains cold stress as primarily an air-temperature and leaf-surface phenomenon rather than a soil-water problem, since frost damages plants by forming ice crystals on or inside leaf tissue that block gas exchange, a process water applied to roots cannot reverse.",
@@ -4288,7 +4288,7 @@ export const papers: Paper[] = [
       "A complete Punjab-focused production guide showing how Balangu (Lallemantia royleana) and Basil seed crops are grown on PQNK's permanent raised-bed system, from hardpan-breaking through harvest and storage.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/balangu-and-basil-seed-production-under-pqnk.pdf",
+    pdfPath: "/papers/balangu-and-basil-seed-production-under-pqnk.pdf?v=nd1127",
     heroImage: "/images/young-crop-beds.jpg",
     abstract: [
       "Balangu and Basil are high-value medicinal and aromatic seed crops with growing food, pharmaceutical, and cosmetic demand, yet this guide treats their production not as a fertilizer-and-spray schedule but as an application of the same four-step PQNK sequence used for any crop: breaking the hardpan where present, correcting soil pH above roughly 8.0 with the sulfuric acid protocol, constructing permanent 42-inch raised beds with 18-inch furrows and 8-inch furrow depth, and never disturbing the bed again once established.",
@@ -4366,7 +4366,7 @@ export const papers: Paper[] = [
     summary:
       "An analysis of why the popular Sahara-dust-feeds-the-Amazon explanation is scientifically overstated, and why the Amazon's 400-million-year phosphorus supply actually rests on undisturbed soil microbiology rather than imported dust.",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/phosphate-from-sahara-desert-to-amazon.pdf",
+    pdfPath: "/papers/phosphate-from-sahara-desert-to-amazon.pdf?v=nd1127",
     heroImage: "/images/beds-prepared.jpg",
     abstract: [
       "NASA satellite tracking confirms that Saharan dust deposits roughly 22,000 tonnes of phosphorus per year into the Amazon basin, a real and measured phenomenon. This paper argues the figure is nonetheless a poor explanation for the Amazon's long-term fertility: the dust falls mainly over the western basin near the Andes, yet the eastern and southern Amazon, which never receive it, are equally lush and biodiverse, and the quantity delivered is a small fraction of what the forest's biomass actually requires.",
