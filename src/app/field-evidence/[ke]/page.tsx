@@ -6,6 +6,7 @@ import Section from "@/components/Section";
 import ShareButton from "@/components/ShareButton";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
 import { EvidenceCard } from "../FieldEvidenceBrowser";
+import PageReadAloud from "@/components/PageReadAloud";
 
 // One page per Knowledge Exchange record (2026-11-25), e.g. /field-evidence/ke-067/.
 // Its reason to exist is the shared link: WhatsApp and other apps show the record's own
@@ -52,6 +53,7 @@ export default async function KnowledgeExchangeRecordPage({ params }: { params: 
             ← Knowledge Exchange
           </Link>
         </p>
+        <PageReadAloud align="start" />
         <div className="mt-6">
           <EvidenceCard fe={fe} recordLink={false} />
         </div>

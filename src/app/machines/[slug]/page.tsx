@@ -10,6 +10,7 @@ import ContentViewTracker from "@/components/analytics/ContentViewTracker";
 import TrackedRelatedLink from "@/components/analytics/TrackedRelatedLink";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
 
+import PageReadAloud from "@/components/PageReadAloud";
 export async function generateStaticParams() {
   return machines.map((machine) => ({ slug: machine.slug }));
 }
@@ -75,6 +76,7 @@ export default async function MachineDetailPage({
             {CATEGORY_LABEL[machine.category]}
           </p>
           <h1 className="mt-2 text-4xl font-extrabold text-primary-dark">{machine.title}</h1>
+          <PageReadAloud />
           {machine.fullName && !machine.title.includes(machine.fullName) && (
             <p className="mt-2 text-lg font-medium text-accent">
               {machine.shortName} — {machine.fullName}

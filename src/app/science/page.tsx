@@ -4,6 +4,7 @@ import LivingSystemDiagram from "@/components/science/LivingSystemDiagram";
 import ScienceApplicationNote from "@/components/science/ScienceApplicationNote";
 import FutureTopicCard from "@/components/science/FutureTopicCard";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
+import PageReadAloud from "@/components/PageReadAloud";
 import {
   hero,
   inheritedSystem,
@@ -70,6 +71,7 @@ export default function SciencePage() {
         <div className="mx-auto max-w-3xl px-4 py-16 text-center sm:px-6 sm:py-20">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent">{hero.eyebrow}</p>
           <h1 className="mt-3 text-3xl font-extrabold text-primary-dark sm:text-4xl">{hero.title}</h1>
+          <PageReadAloud />
           <div className="mx-auto mt-6 flex max-w-2xl flex-col gap-4 text-start text-lg leading-relaxed text-ink-soft sm:text-center">
             {hero.body.map((p, i) => (
               <p key={i}>{p}</p>

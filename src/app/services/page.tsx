@@ -6,6 +6,7 @@ import Section from "@/components/Section";
 import TrackedExternalChannelLink from "@/components/analytics/TrackedExternalChannelLink";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
 
+import PageReadAloud from "@/components/PageReadAloud";
 const PAGE_TITLE = "PQNK Support Services — Soil, Water & Climate Restoration, Farmer Prosperity";
 const PAGE_DESCRIPTION =
   "How Pedaver supports farmers, governments, NGOs and institutions applying PQNK to restore degraded soil, reduce irrigation water use, build climate resilience, cut input costs and improve farmer livelihoods — through free open knowledge, paid advisory services and institutional partnership.";
@@ -59,6 +60,7 @@ export default function ServicesPage() {
       <section className="border-b border-border bg-primary-light/10">
         <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6">
           <h1 className="text-4xl font-extrabold text-primary-dark">{dict.services.pageTitle}</h1>
+          <PageReadAloud />
           <p className="mx-auto mt-5 max-w-2xl text-lg text-ink-soft">{dict.services.pageSubtitle}</p>
         </div>
       </section>

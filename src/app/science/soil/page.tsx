@@ -8,6 +8,7 @@ import LivingSystemDiagram from "@/components/science/LivingSystemDiagram";
 import RelatedKnowledgeModule from "@/components/science/RelatedKnowledgeModule";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
 import { coreComponents } from "@/lib/content/science";
+import PageReadAloud from "@/components/PageReadAloud";
 import {
   hero,
   soilSystemChain,
@@ -103,6 +104,7 @@ export default function ScienceSoilPage() {
           </Link>
           <p className="mt-4 text-xs font-bold uppercase tracking-[0.2em] text-accent">{hero.eyebrow}</p>
           <h1 className="mt-3 text-3xl font-extrabold text-primary-dark sm:text-4xl">{hero.title}</h1>
+          <PageReadAloud />
           <div className="mx-auto mt-6 flex max-w-2xl flex-col gap-4 text-start text-lg leading-relaxed text-ink-soft">
             {hero.body.map((p, i) => (
               <p key={i}>{p}</p>

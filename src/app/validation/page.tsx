@@ -2,6 +2,7 @@ import Link from "next/link";
 import dict from "@/lib/dictionaries";
 import Section from "@/components/Section";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
+import PageReadAloud from "@/components/PageReadAloud";
 import {
   validationInfographic,
   validationPageTitle,
@@ -41,6 +42,7 @@ export default function ValidationPage() {
       <section className="border-b border-border bg-primary-light/10">
         <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6">
           <h1 className="text-4xl font-extrabold text-primary-dark">{validationPageTitle}</h1>
+          <PageReadAloud />
           <p className="mx-auto mt-5 max-w-2xl text-lg text-ink-soft">{validationPageSubtitle}</p>
         </div>
       </section>

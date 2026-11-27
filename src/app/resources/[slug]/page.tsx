@@ -7,6 +7,7 @@ import ContentViewTracker from "@/components/analytics/ContentViewTracker";
 import TrackedRelatedLink from "@/components/analytics/TrackedRelatedLink";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
 
+import PageReadAloud from "@/components/PageReadAloud";
 export async function generateStaticParams() {
   return resources.map((resource) => ({ slug: resource.slug }));
 }
@@ -82,6 +83,7 @@ export default async function ResourceDetailPage({
             {CATEGORY_LABEL[resource.category]}
           </p>
           <h1 className="mt-2 text-4xl font-extrabold text-primary-dark">{resource.title}</h1>
+          <PageReadAloud />
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-ink-soft">
             {resource.oneSentenceDefinition}
           </p>

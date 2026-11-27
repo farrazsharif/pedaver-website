@@ -12,6 +12,7 @@ import ContentViewTracker from "@/components/analytics/ContentViewTracker";
 import TrackedRelatedLink from "@/components/analytics/TrackedRelatedLink";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
 
+import PageReadAloud from "@/components/PageReadAloud";
 export async function generateStaticParams() {
   return crops.map((crop) => ({ slug: crop.slug }));
 }
@@ -129,6 +130,7 @@ export default async function CropDetailPage({
           </Link>
           <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-accent">{crop.category}</p>
           <h1 className="mt-1 text-4xl font-extrabold text-primary-dark">{crop.name}</h1>
+          <PageReadAloud align="start" />
           <p className="mt-4 max-w-2xl text-lg text-ink-soft">{crop.blurb}</p>
         </div>
       </section>

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Section from "@/components/Section";
 import RelatedKnowledgeModule from "@/components/science/RelatedKnowledgeModule";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
+import PageReadAloud from "@/components/PageReadAloud";
 import {
   hero,
   openingChain,
@@ -93,6 +94,7 @@ export default function ScienceFoodQualityPage() {
           </Link>
           <p className="mt-4 text-xs font-bold uppercase tracking-[0.2em] text-accent">{hero.eyebrow}</p>
           <h1 className="mt-3 text-3xl font-extrabold text-primary-dark sm:text-4xl">{hero.title}</h1>
+          <PageReadAloud />
           <p className="mt-2 text-lg font-medium italic text-ink-soft">{hero.subtitle}</p>
           <div className="mx-auto mt-6 flex max-w-2xl flex-col gap-4 text-start text-lg leading-relaxed text-ink-soft">
             {hero.body.map((p, i) => (

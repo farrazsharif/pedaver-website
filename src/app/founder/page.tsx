@@ -5,6 +5,7 @@ import FounderGallery from "@/components/FounderGallery";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
 import { mediaUrl } from "@/lib/mediaUrl";
 
+import PageReadAloud from "@/components/PageReadAloud";
 export const metadata = buildMetadata({
   title: "Asif Sharif, Researcher and Developer of PQNK and Founder Chairman of Pedaver",
   description:
@@ -88,6 +89,7 @@ export default function FounderPage() {
           </div>
           <div className="text-center lg:text-left">
             <h1 className="text-4xl font-extrabold text-primary-dark">{dict.founder.pageTitle}</h1>
+            <PageReadAloud />
             <p className="mt-2 text-lg font-medium text-accent">{dict.founder.pageSubtitle}</p>
             <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-ink-soft lg:mx-0">
               {withInlineLinks(dict.founder.intro, INTRO_LINKS)}

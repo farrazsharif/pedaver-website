@@ -7,6 +7,7 @@ import ScienceApplicationNote from "@/components/science/ScienceApplicationNote"
 import FutureTopicCard from "@/components/science/FutureTopicCard";
 import ProductionLoop from "@/components/science/ProductionLoop";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
+import PageReadAloud from "@/components/PageReadAloud";
 import {
   hero,
   biologicalProcess,
@@ -116,6 +117,7 @@ export default function ScienceNutritionPage() {
           </Link>
           <p className="mt-4 text-xs font-bold uppercase tracking-[0.2em] text-accent">{hero.eyebrow}</p>
           <h1 className="mt-3 text-3xl font-extrabold text-primary-dark sm:text-4xl">{hero.title}</h1>
+          <PageReadAloud />
           <div className="mx-auto mt-6 flex max-w-2xl flex-col gap-4 text-start text-lg leading-relaxed text-ink-soft">
             {hero.body.map((p, i) => (
               <p key={i}>{p}</p>
