@@ -260,6 +260,26 @@ export default function HomePage() {
                 </span>
                 <span className="flex-none text-lg font-bold" aria-hidden="true">→</span>
               </Link>
+              {/* Farmers Training (2026-11-27, author: "Yes, add it"; its own section, not in the header menu). */}
+              <Link
+                href="/farmers-training"
+                className="group flex items-center justify-between gap-3 rounded-xl bg-primary-dark px-5 py-4 text-cream shadow-sm transition hover:-translate-y-0.5 hover:bg-primary hover:shadow-md sm:col-span-2"
+              >
+                <span className="flex items-center gap-3">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="flex-none">
+                    <path d="M2 9l10-5 10 5-10 5-10-5z" />
+                    <path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5" />
+                    <path d="M22 9v6" />
+                  </svg>
+                  <span>
+                    <span className="block text-base font-bold leading-snug">PQNK Farmers Training</span>
+                    <span className="block text-sm text-cream/85">
+                      Asif Sharif&apos;s training sessions in the language of the field, with English transcripts
+                    </span>
+                  </span>
+                </span>
+                <span className="flex-none text-lg font-bold" aria-hidden="true">→</span>
+              </Link>
               {/* Crop Prices (2026-11-26, author: a tool, never in the header menu; given a prominent button here
                   instead, below New on Pedaver, as the videos are). */}
               <Link
