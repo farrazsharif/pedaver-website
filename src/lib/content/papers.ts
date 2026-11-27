@@ -1336,7 +1336,7 @@ export const papers: Paper[] = [
       "Sparked by a farmer's hunch that nitrogen-fixing microbes must be breathing 'underground air' rather than atmospheric oxygen, this heavily-referenced paper explains that insight through the biochemistry of nitrogenase, then, at a Cornell researcher's prompting, extends the same governing principle to phosphorus and potassium solubilization, soil bioporosity, pH stability, and root water uptake in non-leguminous crops.",
     modifiedDate: "2026-10-17",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/the-underground-air-water-air-balance-and-nitrogen-fixation.pdf",
+    pdfPath: "/papers/the-underground-air-water-air-balance-and-nitrogen-fixation.pdf?v=nd1127",
     abstract: [
       "The paper's origin is a PQNK farmer's field observation: nodules on Jantar (Sesbania) roots grown on raised beds appeared bigger and more numerous than in conventional flat-bed cultivation, leading to the hunch that nitrogen-fixing microbes must be using 'underground air' rather than atmospheric oxygen, making a Water:Air balance in the soil paramount. The paper is structured in two parts, Part One explains that observation scientifically, with the PQNK position that Jantar is grown for its roots and the nitrogen of a PQNK field comes from free-living nitrogen-fixing bacteria; Part Two, written after Professor Norman Uphoff of Cornell University (the researcher most responsible for the System of Rice Intensification) posed a follow-up question, extends the same governing variable to crops that form no nodule at all.",
       "Part One works through the 'oxygen paradox' of nitrogen fixation: the nitrogenase enzyme is irreversibly inactivated by oxygen, yet fixing one molecule of N2 requires 16 ATP generated only through oxygen-dependent respiration. Rhizobia solve this with an oxygen diffusion barrier in the nodule cortex, the oxygen-binding protein leghemoglobin holding free oxygen at roughly 10-50 nanomolar (about 10,000 times below atmospheric levels), and spatial organization of bacteroids within plant cells. Free-living nitrogen fixers that form no nodule at all solve the identical paradox differently: Azotobacter uses extremely high respiration to consume oxygen locally plus a redox-sensitive protein that locks nitrogenase into an inactive, oxygen-tolerant state under stress, while heterocyst-forming cyanobacteria differentiate specialized, oxygen-excluding cells entirely.",
@@ -1363,7 +1363,7 @@ export const papers: Paper[] = [
       "Written for small farmers without access to subsoiling equipment, this SOP treats hardpan as a symptom of interrupted biological function rather than a purely physical barrier, and lays out a six-step, machinery-free protocol, plus specific transitional expectations for wheat, pulses, and cotton, for repairing it entirely through roots, mulch, and time.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/breaking-hardpan-without-machinery.pdf",
+    pdfPath: "/papers/breaking-hardpan-without-machinery.pdf?v=nd1127",
     abstract: [
       "The paper opens by reframing hardpan as the physical expression of long-term biological collapse, caused by repeated tillage, machinery pressure, flood irrigation, oxygen deprivation, salt accumulation, and the destruction of continuous root systems, rather than merely a compacted layer to attack mechanically. Its central claim is that forests and grasslands built deep, porous soils for millions of years with no machinery at all, continuously fracturing soil biologically through roots, microbes, fungi, insects, and moisture cycles, so the real question is not whether biology can break hardpan, but whether agricultural management allows biology to function continuously.",
       "Understood this way, hardpan develops as tillage destroys aggregates and fungal networks, machinery compresses particles, flood irrigation strips root-zone oxygen, salts accumulate, and roots stay shallow, producing a cascade of weak roots, collapsed microbial populations, slowed nutrient cycling, reduced infiltration, rising pest pressure, and growing dependence on external inputs. PQNK's recovery principle is that nature continuously repairs soil biologically wherever agriculture doesn't repeatedly interrupt that process through tillage, root destruction, residue burning, bare soil, compaction, excess irrigation, or chemical disturbance.",
@@ -1418,7 +1418,7 @@ export const papers: Paper[] = [
     summary:
       "Iran's collapsing rivers, sinking cities, and vanishing aquifers are presented as a preview of what awaits any nation that keeps farming on hardpan-sealed, bare soil. This paper argues the crisis is not a rainfall shortage but a blocked water cycle, and lays out PQNK's four-step protocol for reopening it.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/the-wholesale-four-step-system-to-end-water-scarcity.pdf",
+    pdfPath: "/papers/the-wholesale-four-step-system-to-end-water-scarcity.pdf?v=nd1127",
     heroImage: "/images/beds-wet-skyline.jpg",
     abstract: [
       "The paper opens with a detailed account of Iran's water emergency: rivers reduced to dead trenches, fifteen of thirty-one provinces without a drop of rain for months, the Karaj and Latian dams near Tehran at record lows, and researchers estimating the country is losing roughly sixteen cubic kilometers of water a year, some 370 cubic kilometers over the past two decades. Land around Tehran is documented sinking several centimeters annually as groundwater is mined faster than it can recharge. The paper is explicit that this is framed as a warning, not a foreign curiosity: 'what Iran is facing today, tomorrow it could be us.'",
@@ -1473,7 +1473,7 @@ export const papers: Paper[] = [
     summary:
       "This foundational document argues that irrigation dependency is a design failure, not a water-supply problem, and backs the claim with per-crop data: PQNK sugarcane and rice show an 88-93% reduction in externally supplied irrigation water compared to conventional production. It lays out the landscape design, contour work, and mulch management that let a farm meet its own water needs from rainfall, dew, and humidity alone.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/creating-on-farm-micro-water-cycles.pdf",
+    pdfPath: "/papers/creating-on-farm-micro-water-cycles.pdf?v=nd1127",
     abstract: [
       "The paper frames millennia of tillage-based agriculture as a slow-motion fracturing of the local water cycle: disrupted soil structure, removed organic cover, and impaired natural moisture-capture mechanisms have produced a deep dependency on irrigation, aquifer depletion, and drought vulnerability. Its central claim is that nature already provides all the water resilient plant growth needs, through rainfall, daily dew, humidity held in soil-feeding organic mulch, and capillary and biological distribution networks, and that PQNK's job is simply to remove the obstacles (chiefly tillage and bare soil) that industrial farming has placed in front of these mechanisms.",
       "On method, the paper is specific: hardpan must be completely broken so rain infiltrates instantly where it falls rather than running off, and beds, mulched zones, and plantings must follow the land's natural contour so the farm becomes a series of level water-harvesting terraces with zero field-scale water loss. Organic crop-residue mulch is identified as the single most important technology in the system, functioning simultaneously as an evaporation barrier and as a hygroscopic buffer that condenses and absorbs dew and atmospheric humidity overnight, releasing it gradually to soil and roots.",
@@ -1527,7 +1527,7 @@ export const papers: Paper[] = [
       "Faced with 6,000 ppm groundwater and pH 8 alkaline soil, a common combination across arid regions, this advisory paper walks through when acid-and-water leaching helps versus when it simply adds more salt to the soil. It sets out a decision framework by water TDS and soil pH, then a step-by-step biological reclamation protocol built around the salt-tolerant cover crop Jantar.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/managing-saline-irrigation-water-and-soil-reclamation.pdf",
+    pdfPath: "/papers/managing-saline-irrigation-water-and-soil-reclamation.pdf?v=nd1127",
     abstract: [
       "The paper addresses a specific, common dilemma in arid-region agriculture: whether to use high-TDS groundwater (in this case 6,000 ppm) to leach salts from alkaline soil (pH above 8) using sulfuric acid and heavy water volumes, the standard PQNK approach when water is below 2,000 ppm, or whether that intervention would add more salt than it removes. It builds a decision table cross-referencing water TDS and soil pH against recommended action, ranging from 'leaching possible' at low TDS to 'do not use for leaching' above 6,000 ppm, where net salt addition is judged almost certain.",
       "For the specific case posed, 6,000 ppm water and pH 8 soil, the paper's conclusion is that water washing is not recommended unless excellent subsurface drainage exists and enormous water volumes can be applied, and that even then the net salt balance remains risky. It recommends skipping the water wash entirely and proceeding directly to biological reclamation using Jantar (Sesbania aculeata), a salt-tolerant cover crop, as the first-season planting.",
@@ -1554,7 +1554,7 @@ export const papers: Paper[] = [
     summary:
       "When Punjab and Mardan citrus orchards broke dormancy in an early-spring 2026 warm spell only to be hit by an abrupt cold snap, trees turned autumn-yellow and dropped every flower with zero fruit set. This paper traces the failure to a destabilized water cycle scrambling the temperature signals plants depend on, and argues PQNK's hardpan-breaking and mulch practices restore the stable thermal rhythm that a functioning biological clock requires.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/the-silenced-clock-temperature-cued-plant-development.pdf",
+    pdfPath: "/papers/the-silenced-clock-temperature-cued-plant-development.pdf?v=nd1127",
     heroImage: "/images/seedlings-beds.jpg",
     abstract: [
       "The paper documents a specific spring 2026 event in Punjab and Mardan, Khyber Pakhtunkhwa: a sharp early-March warm spell triggered premature citrus bud break, sprouting, and flowering, followed by an abrupt temperature drop of 8-10°C below normal that caused flowers and young leaves to abscise en masse. Orchards turned yellow-brown, resembling autumn rather than spring, with zero fruit set. The paper frames this as a case study in what happens when plants' 'biological clock,' governed primarily by accumulated temperature cues (thermoperiodicity), receives a 'start' signal immediately followed by a 'kill' signal.",
@@ -1581,7 +1581,7 @@ export const papers: Paper[] = [
     summary:
       "March heat spikes above 38°C during citrus flowering have caused widespread pollen sterility, flower drop, and yield collapse severe enough to push farmers toward pruning or removing whole orchards. This paper uses infrared soil-temperature data to show bare soil hitting 60-66°C versus 31°C under mulch, and argues pollination failure is a soil-management outcome, not an unavoidable climate fate.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/heatwaves-pollination-failure-and-the-pqnk-buffer.pdf",
+    pdfPath: "/papers/heatwaves-pollination-failure-and-the-pqnk-buffer.pdf?v=nd1127",
     heroImage: "/images/wheat-heads.jpg",
     abstract: [
       "The paper opens by quantifying a recurring crisis: sudden March heat spikes exceeding 38°C during citrus flowering cause rapid pollen dehydration and viability loss, poor stigma receptivity, failed fertilization, and massive flower and fruitlet drop, distress severe enough that farmers resort to heavy pruning or outright orchard removal. Field measurements cited in the paper show bare soil surface temperatures reaching 60-66°C during these events, root-zone temperatures exceeding biological tolerance limits, and over 80% of soil moisture evaporating, compounding plant stress.",
@@ -1610,7 +1610,7 @@ export const papers: Paper[] = [
       "PQNK-prepared fields are documented absorbing rainfall events of 600mm in a day without runoff, a figure the paper says farmers initially found impossible to believe. It explains the soil physics behind that claim, from macroporosity gains to deep-rooted 'biological drills,' and positions PQNK farms as recharge basins rather than flood risks.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/the-hydrological-transformation-of-agricultural-landscapes.pdf",
+    pdfPath: "/papers/the-hydrological-transformation-of-agricultural-landscapes.pdf?v=nd1127",
     abstract: [
       "The paper begins by naming hardpan, a dense, impermeable layer typically 6-17 inches below the surface created by conventional tillage and compaction, as the root cause of farmers' 'long experience' of flooding and waterlogging. Hardpan limits root penetration and aeration, causes ponding and runoff during heavy rain, and disconnects topsoil from subsoil, breaking the natural hydrological cycle at the field level.",
       "Its structural argument is an appeal to the forest analogy: undisturbed forest soils have no hardpan because of continuous root, fungal, and earthworm activity, so infiltration rates exceed even intense rainfall and the soil behaves as a living sponge that stores water in depth and releases it slowly. PQNK's stated aim is to recreate this forest-level soil function on farmland, not merely to grow crops on top of degraded ground.",
@@ -1636,7 +1636,7 @@ export const papers: Paper[] = [
     summary:
       "A government laboratory classified both a 500-foot and a 580-foot tube-well sample as unsuitable for irrigation, even though deepening the bore cut salinity by a third and sodium hazard by half. This technical assessment argues that under PQNK's raised-bed, mulch-covered management, the 580-foot water becomes usable, because the soil the water enters, not just the water's chemistry, determines the outcome.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/evaluation-of-tube-well-water-quality-for-irrigation.pdf",
+    pdfPath: "/papers/evaluation-of-tube-well-water-quality-for-irrigation.pdf?v=nd1127",
     abstract: [
       "The paper works from real laboratory data supplied by the Soil & Water Testing Laboratory, Government of the Punjab, comparing two samples from the same site: one from 500 feet and one after the bore was deepened to 580 feet. The deeper water shows meaningful improvement across every parameter measured, electrical conductivity down about 35%, sodium down roughly 49%, sodium adsorption ratio (SAR) falling from 17.30 to 6.88, and residual sodium carbonate improving from 4.49 to 3.20, yet the laboratory classified both samples as unsuitable for conventional flood irrigation.",
       "The paper accepts the conventional interpretation on its own terms: under repeated cultivation, bare exposed soil, flood irrigation, and high evaporation, water carrying high salinity, sodium hazard, and residual sodium carbonate will progressively degrade soil structure, reduce infiltration, and increase sodicity, exactly as the lab's classification implies for the 500-foot sample, and as a real if smaller concern for the improved 580-foot sample.",
@@ -1689,7 +1689,7 @@ export const papers: Paper[] = [
     summary:
       "With no grazing animals left to signal plants that their surplus foliage is being used, PQNK farmers must manually replicate that missing pressure. This guide sets out four directives, stamping, grazing, pruning and pinching, and bruising, with a crop-by-crop protocol for redirecting a plant's vegetative surplus into reproductive yield.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/channeling-plant-energy-managing-vegetative-growth.pdf",
+    pdfPath: "/papers/channeling-plant-energy-managing-vegetative-growth.pdf?v=nd1127",
     abstract: [
       "The paper's starting premise is that nature designs plants to overproduce vegetative growth deliberately, to feed soil life through root exudates, to feed insects and animals through foliage, and to ensure propagation through fruit and seed, a system-wide role that isolates plants from the grazing and browsing animals that once provided constant feedback. Conventional farming, by removing animals and applying chemical stress instead, works against this design; PQNK's response is not to suppress vegetative vigor but to consciously manage it by reintroducing the missing signals.",
       "Four directives are defined precisely. Stamping (treading) is controlled soil compression and mild root disturbance applied during tuber or bulb initiation, functioning as a form of root pruning that shifts the plant's priority from leaves to storage organs; it is explicitly unsuitable for legumes, whose nitrogen-fixing roots it would damage. Grazing is the removal of above-ground biomass, timed strictly to developmental stage rather than height, since a cereal tiller that has begun stem elongation will not regrow if grazed, with intensity capped at 50% biomass removal. Pruning and pinching remove apical dominance to redirect energy into lateral growth, with pinching singled out as a minimally invasive technique well suited to basil, mint, chili peppers, indeterminate tomatoes, marigolds, and rapeseed. Bruising is superficial, non-breaking injury applied to vegetatively vigorous but flowering-reluctant plants to trigger a stress-driven reproductive response.",
