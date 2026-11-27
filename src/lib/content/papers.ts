@@ -4391,7 +4391,7 @@ export const papers: Paper[] = [
     summary:
       "A Nigerian farmer's questions on subsoiler line spacing, converting gravelly land, integrating cocoa into an alley system, and diagnosing nitrogen lock-up, answered with the PQNK conversion protocol step by step.",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/subsoiler-line-spacing-farmer-qa.pdf",
+    pdfPath: "/papers/subsoiler-line-spacing-farmer-qa.pdf?v=nd1127",
     heroImage: "/images/beds-prepared.jpg",
     abstract: [
       "The PQNK guideline for parallel subsoiling lines is 2 to 2.5 feet (roughly 24 to 30 inches), a spacing chosen so the fracture zone from each tine overlaps the next line and shatters the hardpan across the whole field rather than leaving unbroken bands between passes; this spacing also aligns directly with the width of the permanent beds built afterward.",
@@ -4519,7 +4519,7 @@ export const papers: Paper[] = [
     summary:
       "A knowledge paper separating ecological fact from belief-driven practice around cow dung and urine as farm inputs, explaining why the same material functions as recycling in a forest but as import-dependency on a conventional farm, and setting PQNK's boundaries on animal integration.",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/science-behind-the-myth-of-cow-dung-and-urine.pdf",
+    pdfPath: "/papers/science-behind-the-myth-of-cow-dung-and-urine.pdf?v=nd1127",
     heroImage: "/images/beds-prepared.jpg",
     abstract: [
       "The paper starts from a foundational PQNK principle: nothing enters the system unless the system itself produced it, since nature cycles existing carbon and minerals rather than importing fertility. Against this standard, cow dung and urine are argued to be neither nutrient sources nor fertility generators; they contain only recycled carbon, trace nitrogen, and temporary microbial populations that die rapidly without correct soil habitat, meaning structure, oxygen, and moisture balance already in place.",
@@ -4569,7 +4569,7 @@ export const papers: Paper[] = [
     summary:
       "An argument that Super El Niño's increasingly destructive impacts stem not from the oscillation itself, a natural pattern spanning millennia, but from industrial agriculture's prior destruction of Earth's land-based water storage and cooling capacity.",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/when-a-natural-climate-cycle-meets-a-broken-planet.pdf",
+    pdfPath: "/papers/when-a-natural-climate-cycle-meets-a-broken-planet.pdf?v=nd1127",
     heroImage: "/images/wheat-misty.jpg",
     abstract: [
       "El Niño is described as a natural Pacific Ocean-atmosphere oscillation that has repeated for thousands of years without human intervention: trade winds weaken, warm water accumulates in the eastern Pacific, and weather systems shift globally, producing floods in some regions and drought in others. The paper's starting question is not why El Niño occurs but why its modern consequences have become so much more destructive than in the past.",
@@ -4595,7 +4595,7 @@ export const papers: Paper[] = [
       "A quantified case that industrial agriculture has driven global groundwater tables from 20-30 feet to over 300 feet deep, creating a roughly $200 billion annual crisis addressable through a costed $15 billion, 24-month PQNK rollout plan.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/the-hidden-crisis-industrial-agriculture-and-the-water-cycle.pdf",
+    pdfPath: "/papers/the-hidden-crisis-industrial-agriculture-and-the-water-cycle.pdf?v=nd1127",
     heroImage: "/images/beds-wet-skyline.jpg",
     abstract: [
       "The paper opens with a single headline figure: groundwater that stood 20-30 feet below the surface for generations has fallen to over 300 feet in many agricultural regions today, a loss of roughly 280 feet of water storage displaced from the ground into atmospheric instability. It attributes this to three compounding industrial practices: bare soil exposed to direct sun regularly reaches 70°C (158°F), driving explosive upward air movement that displaces moisture far from where it fell; heavy machinery compacts soil into hardpan layers that block infiltration entirely, turning rainfall into fast runoff; and the combination displaces trillions of tonnes of water from stable underground storage into unpredictable atmospheric circulation.",
@@ -4620,7 +4620,7 @@ export const papers: Paper[] = [
     summary:
       "A PQNK knowledge paper arguing that because crop photosynthesis is biochemically identical to forest photosynthesis, agricultural soil management, not tree planting, is the larger lever for national carbon storage, backed by published meta-analyses on tillage and cover cropping.",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/the-greatest-climate-solution.pdf",
+    pdfPath: "/papers/the-greatest-climate-solution.pdf?v=nd1127",
     heroImage: "/images/wheat-misty.jpg",
     abstract: [
       "The paper opens from Pakistan's own record, the Khyber Pakhtunkhwa Billion Tree Tsunami programme, which planted over a billion trees, restored roughly 350,000 hectares, and became the first Bonn Challenge pledge to reach its restoration goal, to ask a pointed question: what is the value of planting millions of trees while hundreds of millions of agricultural acres continue losing soil carbon every year? Its answer is that every green plant, wheat, maize, or forest tree, runs the identical photosynthetic algorithm, so the atmosphere draws no distinction between crop carbon and tree carbon; the difference lies entirely in soil management after the plant grows.",
@@ -4648,7 +4648,7 @@ export const papers: Paper[] = [
       "A no-tools field guide for comparing PQNK-grown wheat roots against chemical-farmed roots, and for reading that difference forward into a pest-pressure forecast, on the premise that pests are scavengers of weak plants rather than indiscriminate attackers.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/field-diagnostic-guide-roots-sap-and-pests.pdf",
+    pdfPath: "/papers/field-diagnostic-guide-roots-sap-and-pests.pdf?v=nd1127",
     heroImage: "/images/young-crop-beds.jpg",
     abstract: [
       "This guide sets out a comparative root architecture test a farmer can run in the field without equipment. PQNK wheat roots are described as dense, fibrous, and highly branched, exploring deeper and wider than chemical-farmed roots, which are sparse, thick, and largely confined to the fertilizer zone. The root tips themselves differ: numerous, active, and soft in PQNK roots versus burnt, blunt, or swollen tips where roots have waited passively for placed salts rather than searched the soil.",
