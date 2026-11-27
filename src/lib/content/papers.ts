@@ -165,7 +165,7 @@ export const papers: Paper[] = [
     summary:
       "Pakistan's sugar sector runs on a decades-old cycle of farmer exploitation, long-haul cane transport, and volatile supply. This paper proposes concentrating high-yield PQNK sugarcane cultivation within a 10-15 km radius of each mill, and models the profit, sugar-recovery, and crushing-season gains that follow.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/transforming-pakistans-sugar-industry-through-pqnk.pdf",
+    pdfPath: "/papers/transforming-pakistans-sugar-industry-through-pqnk.pdf?v=nd1127",
     abstract: [
       "Pakistan's sugar industry has run the same operational model for over four decades: an annual cycle of overproduction that depresses farmer prices, followed by underproduction that leaves mills scrambling for cane. Farmers face delayed payments, under-weighed produce, and disrespectful treatment, discouraging cultivation; mills then pay high costs to truck cane in from hundreds of miles away, degrading quality en route and inflating operating expenses. The end-consumer absorbs the cost through inflated sugar prices. The paper identifies the root failure as mills neglecting their immediate agricultural geography.",
       "PQNK is proposed as a structural fix rather than an efficiency tweak: concentrated, high-yield, organic sugarcane cultivation within a 10-15 km radius of the mill, turning farmers from supplicants into economic partners. A head-to-head comparison shows PQNK cutting soil preparation cost in half, seed requirement from 150 to 5 maunds, and eliminating fertilizer and weedicide spend entirely, while lifting maximum yield from 1,000 to 3,000 maunds per acre and sugar content from 9% to 11-13%. Critically, PQNK also extends the harvesting window from five months (November-March) to eight months (October-May).",
@@ -383,7 +383,7 @@ export const papers: Paper[] = [
       "'Batoor', the stunted, non-productive mango inflorescences that worry farmers every spring, are traced in this advisory to hormonal imbalance and resource-stress abortion under conventional management. It contrasts the corrective pruning conventional orchards need with the rare, largely preventive role the same practice plays inside a mature PQNK ecosystem.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/batoor-flower-management-in-mango-under-pqnk.pdf",
+    pdfPath: "/papers/batoor-flower-management-in-mango-under-pqnk.pdf?v=nd1127",
     heroImage: "/images/crops/mango-orchard.jpg",
     abstract: [
       "This advisory, issued by Jamil Shahzad and Asif Sharif, addresses a common source of farmer anxiety in mango cultivation: 'Batoor', stunted, crowded, or leaf-smothered inflorescences that appear in early spring but never progress to fruit set. It examines the phenomenon from two angles, conventional systems reliant on synthetic inputs and the PQNK ecosystem-based approach, and establishes upfront that while pruning these non-productive sprouts remains valid management in both systems, the frequency and underlying cause of Batoor formation differ dramatically between them.",
@@ -718,7 +718,7 @@ export const papers: Paper[] = [
       "Chilli is biologically perennial and can remain productive for over a decade, but conventional short-cycle, urea-dependent management collapses that potential into a pest-prone annual grind. This paper shows how PQNK's soil-conversion framework and a single apical-pinching intervention restore chilli to a low-cost, high-density perennial crop, validated on a Hafizabad farm.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/chilli-production-under-pqnk.pdf",
+    pdfPath: "/papers/chilli-production-under-pqnk.pdf?v=nd1127",
     heroImage: "/images/crops/chilli-closeup.jpg",
     abstract: [
       "The paper opens by recovering what it calls a forgotten reality: chilli (Capsicum spp.) is biologically perennial, similar in this respect to cotton, and can remain productive for many years, sometimes exceeding a decade, where severe cold stress is absent or properly managed. Yield decline, it argues, is not inherent to the plant but is induced by cold stress, soil ecosystem collapse, and repeated chemical and mechanical disturbance, so PQNK grows chilli with an explicit intention of longevity.",
@@ -802,7 +802,7 @@ export const papers: Paper[] = [
       "This companion knowledge paper turns the bamboo-principle reframe into an operating system: selective, year-round harvesting from overlapping generations of cane within the same clump, with rising density treated as a soil-health signal rather than a problem to be thinned.",
     publishedDate: "2026-07-25",
     modifiedDate: "2026-10-16",
-    pdfPath: "/papers/sugarcane-cultivation-on-pqnk.pdf",
+    pdfPath: "/papers/sugarcane-cultivation-on-pqnk.pdf?v=nd1127",
     abstract: [
       "The paper reframes sugarcane as a perennial, rhizome-based, clump-forming crop biologically comparable to bamboo rather than to wheat or maize, arguing that misunderstanding sugarcane as an annual is the root cause of low yields and high costs across the region. Just as bamboo is planted once and harvested for decades, strengthening with each cut, sugarcane under PQNK strengthens with each harvest, increasing stalk thickness and sweetness while producing continuously without replanting.",
       "Sugarcane cannot express this perennial nature until the soil is corrected first, so the paper repeats the four mandatory, non-negotiable ACI-to-PQNK conversion steps: one-time hardpan breaking for root penetration, oxygen, and drainage; a deep soil-detoxification irrigation to flush salts and chemical residues; permanent bed and traffic discipline so growing zones are never re-compacted; and roots retained with mulch maintained under a strict no-till regime, converting the field into a living, regenerative system.",
@@ -1281,7 +1281,7 @@ export const papers: Paper[] = [
       "Answering a farmer's question about whether soil texture or structure matters more for production, this guide draws a sharp line between the two, texture is your soil's fixed 'DNA,' structure is a living condition biology builds, and shows in practical terms how PQNK transforms both sandy and hard clay soils into functional loam without changing the underlying texture at all.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/beyond-sand-silt-and-clay.pdf",
+    pdfPath: "/papers/beyond-sand-silt-and-clay.pdf?v=nd1127",
     abstract: [
       "Responding to a farmer's question about whether soil texture and structure affect production, the paper opens with foundational definitions: texture is the inherent, essentially permanent proportion of sand, silt, and clay a soil inherits from its parent rock, unchangeable on a human timescale without massive disruptive amendment, while structure is the dynamic arrangement of those same particles into aggregates or 'peds,' a living condition created and maintained by root exudates, fungal hyphae, and microbial secretions, and therefore highly changeable, destroyed by poor practice or built through intelligent management.",
       "Before building anything new, the paper insists on correcting the legacy of disturbance: the hardpan, a compacted, impermeable layer just below the tillage zone caused by mechanical pressure, not a textural issue. It states clearly that a hardpan must be broken once, as a foundational step, using a subsoiler, before permanent raised beds and the rest of PQNK can function, shattering compaction without inverting soil layers to open pathways for future roots and water.",
@@ -1308,7 +1308,7 @@ export const papers: Paper[] = [
       "Responding to a detailed farmer question about clay mineralogy, this paper explains why PQNK treats soil colloids, clay minerals and humus alike, as the soil's 'operating system,' and works through a PQNK-specific management approach for each major clay type from montmorillonite to vermiculite.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/role-of-soil-colloids-in-soil-properties.pdf",
+    pdfPath: "/papers/role-of-soil-colloids-in-soil-properties.pdf?v=nd1127",
     abstract: [
       "Answering a farmer's question about soil colloids and how PQNK balances them, the paper opens by defining colloids, the finest particles in soil, invisible to the eye but responsible for nutrient-holding capacity (CEC), water retention, aggregation, pH buffering, and biological activity, comprising both clay minerals and organic colloids like humus. It calls colloids the 'operating system' of soil: without balanced colloids, soil becomes either hard and compacted or loose but nutritionally empty.",
       "On physical properties, colloids are said to determine soil structure (aggregation versus compaction, porosity, pore continuity), water behavior (infiltration, retention, drainage), and root penetration (oxygen availability, mechanical resistance). On chemical properties, colloids control cation exchange capacity for retaining calcium, magnesium, potassium, and ammonium; pH buffering against sudden shifts; and gradual, demand-driven nutrient availability rather than forced release.",
@@ -2534,7 +2534,7 @@ export const papers: Paper[] = [
     summary:
       "This paper argues that a crop's flavor, aroma, and phytochemical richness are not additives but the automatic output of a fully expressed genetic blueprint, achievable only when an intact 'soil-plant covenant' lets the plant's microbial partners deliver nutrients on demand, and sets out three specific PQNK practices, light architecture, managed growth regulation, and cyclical harvest timing, that support that expression.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/the-expression-of-genetic-blueprint-phytochemical-density.pdf",
+    pdfPath: "/papers/the-expression-of-genetic-blueprint-phytochemical-density.pdf?v=nd1127",
     abstract: [
       "The paper's premise is that a plant's DNA is a complete blueprint specifying not just size and shape but the precise antioxidants, carotenoids, and flavonoids that define its quality, and that executing this blueprint requires a precise, on-demand nutrient supply delivered by soil life acting as the plant's 'professional chefs,' hired through root exudates. It reframes conventional agriculture's yield metric, tonnes per acre, as a measure of bulk biomass produced through survival stress, against a proposed PQNK metric of 'nutritional intelligence per gram,' arguing phytochemical density is not something added to food but something allowed to occur.",
       "It describes what happens on either side of an intact 'soil-plant covenant': in a broken system, tillage, flooding, bare soil, and chemical inputs demolish the microbial workforce, forcing the plant into a survival state that produces bulk tissue and simple sugars while its complex phytochemical synthesis pathways run at a fraction of capacity; in a restored PQNK system, the microbial kitchen is fully staffed and the plant's genetic demand is met precisely, letting it invest solar energy into terpenes, polyphenols, alkaloids, and vitamins, the compounds that define flavor, aroma, and medicinal value.",
@@ -2586,7 +2586,7 @@ export const papers: Paper[] = [
     summary:
       "Responding to a question about micronutrient research, this paper argues the entire concept of shopping for individual micronutrients is a category error inherited from industrial thinking, and redirects the farmer toward three concrete practices, root and residue retention, undisturbed permanent beds, and protecting soil life, as the only 'research' needed.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/the-pqnk-perspective-on-micronutrients.pdf",
+    pdfPath: "/papers/the-pqnk-perspective-on-micronutrients.pdf?v=nd1127",
     abstract: [
       "The paper opens by naming the framing behind a farmer's question, asking for research on 'micronutrients', as itself the problem: the term treats minerals as isolated items to be purchased and applied, a mental model the paper attributes to an industrial system that sees soil as dead, inert holding material to be topped up from a distant mine and a factory. Against this, it proposes that PQNK does not discuss 'micronutrients' at all, only 'the wholeness of the living soil.'",
       "It describes plant nutrient uptake not as isolated ion absorption but as a symbiotic exchange: the plant exudes root sugars to feed a vast bacterial and fungal community, and in return mycorrhizal fungi act as a living extension of the root system, unlocking the soil's complete mineral intelligence and delivering a constant, balanced stream of everything the plant needs. It then lists, somewhat provocatively, the standard textbook micronutrient set (iron, manganese, boron, zinc, copper, molybdenum, chlorine, nickel) only to instruct the reader to 'forget this list,' arguing each is simply a native, abundant citizen of healthy PQNK soil rather than something requiring separate sourcing.",
@@ -2664,7 +2664,7 @@ export const papers: Paper[] = [
     summary:
       "A rapid-fire Q&A that argues certified organic and conventional chemical farming are functionally the same input-dependent system wearing different labels, both producing produce that spoils faster and attracts more pests than PQNK, and works through eight specific farmer questions on the measurable biology behind shelf life, pest attraction, and seed lineage.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/scientific-parameters-behind-shelf-life-and-pest-attraction.pdf",
+    pdfPath: "/papers/scientific-parameters-behind-shelf-life-and-pest-attraction.pdf?v=nd1127",
     abstract: [
       "The paper opens with a deliberately sharp framing: Ancient Conventional Industrial (ACI) production and certified organic production are described as fundamentally similar systems, both input-dependent and human-managed in ways that disrupt the soil-plant-microbial continuum, differing only in whether the inputs are synthetic or 'organic' substitutes. PQNK is positioned as categorically different, a self-regulating, input-less system in which even irrigation is treated as an interruption to natural equilibrium.",
       "On shelf life specifically, the paper attributes PQNK produce's storage advantage to four measurable factors: pristine cell architecture from unstressed lignification and balanced dry matter, a protective native microbiome coating derived from undisturbed soil, natural Brix and antioxidant sufficiency from demand-driven microbial nutrient release rather than forced feeding, and a lower post-harvest respiration rate from growth without stress or excess nitrogen, concluding that PQNK produce has the longest shelf life because it is closest to wild, evolutionary design.",
@@ -2717,7 +2717,7 @@ export const papers: Paper[] = [
       "A practitioner's detailed field questions, on bed orientation, irrigation choice, land clearing, machine-hour budgets, and mulch selection, are answered directly, with the recurring caveat that most PQNK decisions are inherently site-specific and only become concrete once a farm's topography, water, climate, and objectives have been surveyed.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/pqnk-farming-in-practice-site-specific-solutions.pdf",
+    pdfPath: "/papers/pqnk-farming-in-practice-site-specific-solutions.pdf?v=nd1127",
     abstract: [
       "The paper opens by setting expectations for its own generality: before answering any specific question, it explains that most PQNK decisions are inherently site-specific, and that a proper project begins by finalizing production objectives, cataloguing land, water, financial, and human resources, and building a blueprint from topography surveys, rainfall and drought-period data, regional cropping norms, and locally serviceable machinery, with the answers that follow offered as generalized starting points rather than universal prescriptions.",
       "On infrastructure questions, raised-bed orientation is tied to slope and drainage (perpendicular beds on sloped land reduce erosion), sunlight and wind patterns, crop-rotation sequencing, and machinery working-width compatibility, while irrigation choice for large fields weighs lateral pivot systems (efficient but requiring low pressure and complementary mulch to avoid compaction) against furrow irrigation paired with mulch and cover crops, with the paper noting that in a well-managed, mature PQNK system irrigation may not be required at all. Water-head ditch construction specifies shallow, broad ditches following natural contours with an 8-12 inch water head for siphon-tube function.",
@@ -3199,7 +3199,7 @@ export const papers: Paper[] = [
     summary:
       "Countering the assumption that plants are built from soil nutrients, this paper traces a plant's physical bulk to photosynthesis, condensed carbon dioxide and water, and reframes soil minerals, typically just 1-10% of a plant's dry matter, as catalysts a restored microbial community makes available rather than bulk the farmer must supply.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/the-origin-of-plant-mass-and-the-role-of-the-soil-system.pdf",
+    pdfPath: "/papers/the-origin-of-plant-mass-and-the-role-of-the-soil-system.pdf?v=nd1127",
     abstract: [
       "The paper opens by naming a misconception it treats as foundational to conventional agriculture and the input industry: that plants require external soluble nutrients to grow. Under PQNK's 'perpetual abundance' framing, restored soil provides everything a plant needs in balanced proportion, and the farmer's job is to restore and maintain the soil's living conditions, not to feed the plant directly.",
       "Its central physical claim is that a plant's structural bulk, carbohydrates, cellulose, lignin, and protein, is synthesized from atmospheric carbon dioxide and water absorbed by the roots, through photosynthesis, so that the solid matter of a plant is, in the paper's own phrase, 'condensed air and water.' Soil's role in this process is not to provide bulk but to provide conditions and catalysts, specifically the soil biology that makes a small percentage of mineral elements available for the plant's metabolic processes.",
@@ -3250,7 +3250,7 @@ export const papers: Paper[] = [
     summary:
       "A narrated overview asking why a century of tool and input innovation left agriculture in crisis, answering that the industry improved the wrong system, and describing how PQNK studies the operating principles nature has run for four hundred million years and translates them into a four-step transition farmers can implement directly.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/natures-algorithm-for-abundant-food.pdf",
+    pdfPath: "/papers/natures-algorithm-for-abundant-food.pdf?v=nd1127",
     abstract: [
       "The presentation opens by naming what went wrong: repeated tillage destroys soil structure, bare soil overheats, organic matter disappears, rainwater runs off instead of infiltrating, groundwater falls deeper every year, and biological life declines, so that every new problem requires another purchased solution, squeezing small farmers first. It reframes the diagnostic question from whether industrial agriculture became more efficient to whether it remained biologically correct.",
       "Nature is presented as the model to study rather than copy literally: forests, grasslands, and wetlands have produced enormous biomass while improving their surroundings for over four hundred million years, without ploughing, bare soil, manufactured fertilizer, or pesticide. PQNK is described as studying the operating principles that make natural ecosystems successful and translating those principles into modern food production, working with nature rather than against it.",
@@ -3275,7 +3275,7 @@ export const papers: Paper[] = [
     summary:
       "A supplementary business case arguing PQNK's commercial edge comes not from yield or scale but from structurally low cost of production, quality-driven demand, and continuous harvest cash flow, walking through eleven distinct commercial mechanisms from certification-free trust to appreciating soil as a farm asset.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/commercial-advantages-of-pqnk-production.pdf",
+    pdfPath: "/papers/commercial-advantages-of-pqnk-production.pdf?v=nd1127",
     abstract: [
       "The paper opens by naming a blind spot in how modern agriculture measures success, yield, mechanization, and speed of turnover, arguing this framework ignores the commercial advantages that emerge specifically from biological correctness: structurally low cost of production, quality stability, harvest continuity, and market resilience, achieved without dependence on subsidies, debt, or forced market behavior.",
       "Low cost of production is presented as the primary, structural advantage: industrial systems reduce cost per unit temporarily through scale, while PQNK reduces cost permanently by removing dependency on chemical inputs, repeated tillage, frequent irrigation, and seed loss, an advantage the paper argues creates 'failure tolerance,' letting a farmer survive bad prices, weather variation, or partial crop loss. Quality is framed as commercial rather than cosmetic: higher mineral content, better sugar-acid balance, and residue-free produce drive repeat buying and lower wholesale rejection rates without added marketing spend, summarized as 'quality is the cheapest marketing strategy.'",
@@ -3702,7 +3702,7 @@ export const papers: Paper[] = [
     summary:
       "A farmer-question-and-answer paper on how PQNK relates to plant tropism, phototropism, hydrotropism, geotropism, and acoustic tropism, arguing that PQNK does not apply these natural response systems but removes the soil-level barriers (compaction, chemical damage, blocked water movement) that suppress them in conventional farming.",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/pqnk-and-plant-tropism.pdf",
+    pdfPath: "/papers/pqnk-and-plant-tropism.pdf?v=nd1127",
     heroImage: "/images/young-crop-beds.jpg",
     abstract: [
       "Responding to a farmer question about whether PQNK supports tropism theory, this paper's central position is that tropism, the directional growth response of plants to stimuli, is not a technique to be applied but a natural capacity that functions correctly only when soil, water, air, and biology are restored. PQNK's role, in this framing, is to remove the barriers, compacted soil, chemically burned roots, blocked water movement, dead biology, that suppress a plant's tropic responses in conventionally managed fields, rather than to engineer tropism directly.",
@@ -4469,7 +4469,7 @@ export const papers: Paper[] = [
     summary:
       "A critique of a PNAS article on subsoil compaction risk under no-till farming, arguing that its machinery-focused solutions treat a symptom of the Ancient Conventional Industrial framework rather than adopting the full four-step PQNK correction the article's own findings point toward.",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/subsoil-compaction-no-till-vs-pqnk-critical-analysis.pdf",
+    pdfPath: "/papers/subsoil-compaction-no-till-vs-pqnk-critical-analysis.pdf?v=nd1127",
     heroImage: "/images/beds-prepared.jpg",
     abstract: [
       "The PNAS article under review found that nearly 40 percent of global no-till land is at high risk of subsoil compaction from heavy machinery despite the absence of tillage, with recovery times running years to decades, longer than the typical interval between compaction events, and identified this as a driver of persistent yield losses in crops such as maize, worsened in wet climates and moist soils.",
@@ -4916,7 +4916,7 @@ export const papers: Paper[] = [
     summary:
       "The fifth document in PQNK's foundational topic series, framing the farm's closed-loop system as bearing inviolable 'rights', of soil, microbes, the predator pyramid, and matter itself, and casting the farmer's role as guardian of those rights rather than manager of the system.",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/the-ethics-of-the-closed-loop-system.pdf",
+    pdfPath: "/papers/the-ethics-of-the-closed-loop-system.pdf?v=nd1127",
     abstract: [
       "The document opens by describing PQNK as replicating Earth's own 400-million-year-old production model, a perfectly closed-loop, self-sufficient ecosystem governed by what it terms four immutable laws: the Provision Principle (soil microbes convert mineral particles into balanced, plant-available nutrients internally), the Protection Principle (pest and disease regulation achieved through the innate activity of Bacillus thuringiensis and a multi-layered predator pyramid), the Permanence Principle (cultivation only on undisturbed, permanently mulched raised beds), and an Ethical Imperative that recognizes every participant in the system, from microbial life to predators, as an indispensable component of the cycle. Human intervention, importing amendments, tilling, or applying chemicals, is framed not merely as inefficient but as an ethical violation of an already self-complete system.",
       "From these laws it derives five specific 'rights' the closed loop requires to function autonomously: the right of soil to remain undisturbed and shielded, upheld through permanent raised-bed architecture and continuous thick mulch; the right of microbes to govern nutrient provision, upheld through complete prohibition of external fertilizer; the right of the predator pyramid to govern pest protection, upheld through zero pesticide use of any kind, organic or synthetic, and cultivated predator habitat; the right of all matter to remain within the cycle, upheld through zero waste, no biomass export that creates depletion and no import that creates imbalance; and the right of the system to evolutionary autonomy, upheld by the farmer acting as observer and facilitator rather than controller.",
@@ -4994,7 +4994,7 @@ export const papers: Paper[] = [
     summary:
       "Argues that in a mature PQNK system, a farmer's trained senses, color, aroma, texture, and flavor, are more accurate diagnostic instruments than industrial soil or sap tests, and formalizes a 2% pest-pressure threshold as the system's own unforgiving feedback mechanism for detecting underlying failures.",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/the-pqnk-system-of-assessment.pdf",
+    pdfPath: "/papers/the-pqnk-system-of-assessment.pdf?v=nd1127",
     heroImage: "/images/seedlings-beds.jpg",
     abstract: [
       "The paper opens by rejecting what it calls the reductionist gauge underlying conventional agricultural testing: standard soil tests, sap analyses, and tissue reports measure primarily the soluble, immediately available forms of a few nutrients, chiefly NPK, creating a deliberate blind spot around the vast reservoir of unavailable minerals in soil parent material and organic matter that a thriving soil food web continuously converts into plant-available form. This 'available nutrient' paradigm, it argues, serves the input supplier rather than the ecosystem, diagnosing a deficiency correctable by purchased fertilizer and reducing the farmer to a consumer managing a soluble-nutrient inventory rather than cultivating a self-renewing mineral economy.",
