@@ -17661,6 +17661,109 @@
 "why":"the conversion steps that come before any crop is planted on PQNK"
 }
 ]
+},
+{
+"slug":"ask-pqnk-field-answers-5",
+"primarySubject":"Answers from the Researcher and Developer of PQNK to farmers’ questions the Ask PQNK assistant could not yet answer: seed sowing depth and why, lentil, Jantar and kalonji spacing, foliar spray on wheat, mustard straw as mulch, and sugarcane on leased land",
+"questionsAnswered":[
+"How deep should seed be sown for wheat and barley?",
+"What is the right sowing depth for winter grains, pulses and spices?",
+"Why is seed buried in the soil?",
+"Why must broadleaf seed be sown shallow?",
+"What is the plant-to-plant distance for lentil?",
+"What spacing should Jantar have?",
+"How should Jantar be sown as a cover crop?",
+"How should kalonji (black seed) be grown on PQNK?",
+"When should a foliar spray be given to wheat, and what should be used?",
+"Can mustard straw be used as dead mulch?",
+"What does it cost to grow sugarcane on PQNK on leased land?",
+"Is the sugarcane variety 202001 suitable?",
+"Does Pakistan get less rain than other areas?"
+],
+"keywords":[
+"Ask PQNK",
+"field answers",
+"seed depth",
+"sowing depth",
+"germination",
+"emergence",
+"narrow leaf",
+"broadleaf",
+"wheat",
+"barley",
+"SIPP",
+"VIPP",
+"lentil",
+"masoor",
+"plant spacing",
+"plants per acre",
+"Jantar",
+"cover crop",
+"broadcast",
+"kalonji",
+"black seed",
+"Nigella sativa",
+"foliar spray",
+"NP",
+"mustard straw",
+"mulch",
+"beetles",
+"sugarcane",
+"leased land",
+"conversion cost",
+"Uttar Pradesh",
+"rainfall"
+],
+"geography":null,
+"crops":[
+"Wheat",
+"Barley",
+"Pulses (crop group)",
+"Jantar (Sesbania)",
+"Mustard",
+"Sugarcane"
+],
+"fieldProblems":[
+"Suboptimal Planting Density",
+"Farmer Uncertainty / Diagnostic Skill Gap"
+],
+"problemFamily":[
+"Plant Growth & Nutrition",
+"Transition / Conversion"
+],
+"fieldPractices":[
+"Precision Seed Placement (SIPP/VIPP-style)",
+"Jantar (Sesbania) Cover Cropping",
+"Permanent Raised Bed Formation",
+"PQNK Transition Protocol (Staged)"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Plants",
+"Production Architecture",
+"Transition"
+],
+"pqnkPrinciples":[
+"No Soil Disturbance",
+"Permanent Biological Cover"
+],
+"productionStages":[
+"Planting",
+"Transition/Conversion"
+],
+"evidenceType":"Field Observation",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/production-architecture",
+"why":"why spacing per plant is the main planting decision on PQNK beds"
+},
+{
+"page":"/science/transition",
+"why":"foliar spray and NP belong only to the first crops of the transition"
+}
+]
 }
 
 ]

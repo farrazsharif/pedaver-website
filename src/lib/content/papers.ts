@@ -6231,6 +6231,33 @@ export const papers: Paper[] = [
       "As a policy, PQNK farmers are not registered and their contact details are not shared, for their privacy and safety.",
     ],
   },
+  {
+    slug: "ask-pqnk-field-answers-5",
+    kpNumber: 233,
+    libraryDate: "2026-11-27",
+    category: "Workforce & Practice Advisories",
+    title: "Ask PQNK Field Answers 5: Seed Depth, Lentil, Jantar and Kalonji Spacing, Foliar Spray and Mustard Mulch",
+    summary:
+      "The fifth set of answers from Asif Sharif to questions the Ask PQNK assistant could not yet answer: how deep to sow seed and why, lentil, Jantar and kalonji spacing, foliar spray on wheat, mustard straw as mulch, and sugarcane on leased land.",
+    publishedDate: "2026-11-27",
+    pdfPath: "/papers/ask-pqnk-field-answers-5.pdf",
+    abstract: [
+      "Between 21 and 24 November 2026 farmers asked Ask PQNK, the PQNK assistant on WhatsApp and at pedaver.com/ask, questions it could not answer from the PQNK library. They were passed to Asif Sharif, Researcher and Developer of PQNK, and his answers are published in this paper.",
+      "The answers cover seed sowing depth for the four groups of seed, lentil, Jantar and kalonji spacing, foliar spray on wheat, mustard straw as mulch, and the cost of growing sugarcane on PQNK on leased land.",
+      "A seed is buried for its moisture. Under a PQNK mulch the soil stays moist, so what matters is placing each seed at the right depth with room to emerge, which the SIPP and VIPP planters do. The earlier answers are in KP-226, KP-227, KP-228 and KP-232.",
+    ],
+    keyTakeaways: [
+      "Seed is buried to protect it from birds and ants and, above all, to give it moisture; narrow-leaf seedlings can emerge from depth, broadleaf seedlings come up as a hook and need shallow placement in loose soil.",
+      "In winter, when evaporation is low, seed can be planted within the top 2 inches (5 cm); under PQNK mulch the soil stays moist and SIPP/VIPP place the seed at the right depth with room to emerge.",
+      "A seedling must reach the sunlight on its limited store of energy; a plant takes less than 1 percent of its needs from the soil and the other 99 percent from the atmosphere through photosynthesis.",
+      "Lentil: the breeder's recommendation for each variety comes first; as a general rule, 8 inches (20 cm) from plant to plant, about 50,000 plants per acre.",
+      "Jantar cover crop: mainly broadcast during the transition, at 4 by 4 inches (10 by 10 cm) between plants, for a thick root net and foliage for mulch.",
+      "Kalonji: 5 lines on a 42-inch (107 cm) bed, 8 inches (20 cm) from plant to plant, about 65,000 plants per acre.",
+      "Foliar spray is not a standard recommendation: only for a visible deficiency in the first one or two crops of the transition, as fine mist on the leaves in the evening once the canopy has closed; otherwise at most 4 kg NP with irrigation, never on mature beds.",
+      "Mustard straw can be used as mulch, but watch for beetles that may eat young seedlings.",
+      "Sugarcane: conversion about Rs 20,000 per acre in Pakistan, then only seed (4,000 buds per acre) and labour.",
+    ],
+  },
 ];
 
 export function getPaperBySlug(slug: string) {
