@@ -4728,7 +4728,7 @@ export const papers: Paper[] = [
     summary:
       "Argues that soil health depends on oxygen, water movement, structure, and biological order, not on whether an input is labeled organic, and that common organic practices (plastic mulch, daily irrigation, sugar-based brews) push soil into an anaerobic state that can be more dangerous than chemical farming.",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/why-unscientific-organic-farming-can-be-dangerous.pdf",
+    pdfPath: "/papers/why-unscientific-organic-farming-can-be-dangerous.pdf?v=nd1127",
     heroImage: "/images/cereal-green.jpg",
     abstract: [
       "The advisory opens with a correction of a common assumption: organic does not automatically mean safe or healthy. Its key scientific principle is that nature runs on conditions, not labels, soil health depending on oxygen balance, water movement, soil structure, and biological order; when these conditions are violated, pathogenic biology dominates regardless of whether the inputs applied are organic or synthetic.",
@@ -4783,7 +4783,7 @@ export const papers: Paper[] = [
       "Introduces bio-potentiation as the inverse of biomagnification: where conventional agriculture concentrates toxins as they move up the food chain, a PQNK-managed living-soil system is argued to amplify nutritional value and potency at each successive trophic level, from soil to plant to animal to human.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/the-pqnk-food-chain-bio-potentiation.pdf",
+    pdfPath: "/papers/the-pqnk-food-chain-bio-potentiation.pdf?v=nd1127",
     heroImage: "/images/citrus-orchard.jpg",
     abstract: [
       "The paper opens by naming the conventional agricultural pattern it inverts: biomagnification of toxins, in which synthetic chemicals concentrate in a roughly geometric progression as they ascend the food chain, reaching peak toxicity at the human level. Against this 'Pyramid of Poison,' it proposes a 'Fountain of Life' model in which nutritional potency amplifies from the soil upward rather than degrading.",
@@ -4811,7 +4811,7 @@ export const papers: Paper[] = [
       "Argues that the healthcare sector's growth has outpaced population growth primarily because industrial agriculture has degraded nutrient density and dietary diversity, fueling preventable chronic disease, and proposes regenerative PQNK agriculture as the upstream intervention that reduces demand on the healthcare system itself.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/the-nutritional-roots-of-healthcare-expansion.pdf",
+    pdfPath: "/papers/the-nutritional-roots-of-healthcare-expansion.pdf?v=nd1127",
     heroImage: "/images/cereal-green.jpg",
     abstract: [
       "The paper opens with what it calls the paradox of expansion: global population has grown substantially over the past 50 to 70 years, but hospitals, clinics, specialized treatment, and healthcare costs have expanded at a rate that far outpaces that demographic growth. It argues the standard explanations, technology, aging populations, access, are incomplete, and that the real driver is the rise of non-communicable diseases (NCDs) whose etiology traces to environmental and lifestyle factors, nutrition foremost among them, and nutrition is shaped overwhelmingly by agricultural systems.",
@@ -4837,7 +4837,7 @@ export const papers: Paper[] = [
     summary:
       "Responds directly to a farmer's questions about why certified organic food has failed to earn consumer trust despite its price premium, arguing organic remains an input-substitution model that merely swaps synthetic inputs for approved natural ones, while PQNK eliminates purchased inputs entirely and lets taste serve as the market's proof.",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/pqnk-imperative-restoring-food-health-sovereignty.pdf",
+    pdfPath: "/papers/pqnk-imperative-restoring-food-health-sovereignty.pdf?v=nd1127",
     abstract: [
       "The paper is framed as a direct response to a farmer's questions about why truly nutritious food struggles commercially despite rising health consciousness. Its diagnosis is that certified organic farming has been co-opted into a marketing label rather than a fundamentally different production system, what it calls 'supplemental looting,' consumers paying a premium for food that is often not meaningfully different in nutritional density or taste from conventional produce.",
       "It locates the flaw in organic's continued reliance on an input-substitution model: soil is still treated as an inert growing medium requiring external inputs, whether rock phosphate, off-farm manure, or approved pesticides, which perpetuates dependency, cost, and soil disturbance even when every input used is nominally natural. Introducing any external input, the paper argues, disrupts a soil's own precise, location-specific mineral chemistry, producing forced rather than naturally regulated growth.",
@@ -4863,7 +4863,7 @@ export const papers: Paper[] = [
     summary:
       "A formal PQNK response to Pakistan's Federal Cabinet-approved National Agricultural Biotechnology Policy 2025, arguing the BT cotton experiment already proved that engineering the plant to compensate for a damaged environment fails within years, and that the real intervention point is restoring the soil biology and water systems the policy leaves untouched.",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/pqnk-response-to-national-agricultural-biotechnology-policy-2025.pdf",
+    pdfPath: "/papers/pqnk-response-to-national-agricultural-biotechnology-policy-2025.pdf?v=nd1127",
     heroImage: "/images/wheat-field.jpg",
     abstract: [
       "The paper opens by acknowledging the Federal Cabinet's genuine intent behind the National Agricultural Biotechnology Policy 2025, a framework for biotechnology research, product commercialization, and crop productivity, before turning to what it calls Pakistan's own uncontrolled precedent: BT cotton, engineered with a Bacillus thuringiensis gene, was introduced as a permanent solution to the cotton pest crisis, but within eight seasons the pink bollworm had adapted, and what replaced the collapsed technology was a more expensive, more chemically dependent version of the same broken model. The lesson drawn is that biotechnology treats the symptom while the underlying cause, decades of tillage, flooding, synthetic fertilizer, and pesticide destroying soil biology, remains untreated; a soil with intact biology already hosts Bacillus thuringiensis as a resident organism, which is why PQNK fields untreated with pesticide for three or more seasons show no economically significant pest pressure.",
@@ -4890,7 +4890,7 @@ export const papers: Paper[] = [
     summary:
       "Deconstructs the cotton-to-garment value chain stage by stage to argue that Pakistani policy misattributes value creation to industrial processing while sidelining the farm as the base of all value, and traces three historical cotton epochs, Deltapine-15, Bt cotton, and PQNK, to argue PQNK is the next necessary revolution.",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/recalibrating-pakistans-textile-value-chain.pdf",
+    pdfPath: "/papers/recalibrating-pakistans-textile-value-chain.pdf?v=nd1127",
     heroImage: "/images/crops/cotton-mulched-raised-beds.jpg",
     abstract: [
       "The paper's core argument is that Pakistan's textile policy misattributes value creation, crediting the industry's processing stages for the total value of the exported product while sidelining the farm-level production that establishes the entire chain's quality potential and carries its highest inherent risk. It sets out a stage-by-stage value attribution: farm production as the 100 percent base value, ginning adding roughly 15 to 20 percent, spinning 25 to 35 percent, weaving or knitting 15 to 20 percent, wet processing (calendaring, coloring, printing) 20 to 30 percent, and garment making 40 to 60 percent, the largest single marginal addition, credited to design, branding, and tailoring.",
@@ -4941,7 +4941,7 @@ export const papers: Paper[] = [
     summary:
       "Argues the least-discussed root cause of agricultural failure is that most farmers inherit land, tools, and habits rather than choosing farming after training, leaving a profession with no equivalent to a production manager, and proposes PQNK's One Acre Prosperity model as the structural fix for the compulsory-selling trap this creates.",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/failure-in-farm-management-inheritance-without-professionalization.pdf",
+    pdfPath: "/papers/failure-in-farm-management-inheritance-without-professionalization.pdf?v=nd1127",
     heroImage: "/images/beds-prepared.jpg",
     abstract: [
       "The paper's starting claim is that the vast majority of farmers enter farming by inheritance, not choice, inheriting land, tools, crops, production habits, beliefs, and degraded production systems, but not formal training, systems thinking, biological understanding, or production planning skills. The typical inherited mindset, it argues, is simply 'this is how our land has always been farmed,' with the only 'innovation' most farmers introduce being bigger tractors, heavier implements, and more automation, changes that accelerate degradation rather than altering the underlying production logic.",
@@ -4968,7 +4968,7 @@ export const papers: Paper[] = [
     summary:
       "Answers a farmer's question about white and green growth appearing on a Khapli wheat plot after a second irrigation, identifying it as beneficial fungal mycelium and early microbial/algal activity, not disease, and advising the farmer to leave it alone entirely.",
     publishedDate: "2026-08-04",
-    pdfPath: "/papers/white-and-green-growth-after-irrigation-qa.pdf",
+    pdfPath: "/papers/white-and-green-growth-after-irrigation-qa.pdf?v=nd1127",
     heroImage: "/images/beds-wet-skyline.jpg",
     abstract: [
       "The advisory answers a specific field question: after a second irrigation on a Khapli wheat plot, moist and cooled furrows produced white and green growth, and the farmer asked whether this signaled a problem. The short answer given is that this is beneficial biological activity, not disease, identified as fungal mycelium (the white threads) and beneficial algae or early microbial colonies (the green tint), organisms that appear only when moisture, oxygen, and organic residues or minerals are simultaneously present, meaning the soil is alive and responding, and that a saffron discoloration noted alongside it indicates iron or mineral exposure rather than damage.",
