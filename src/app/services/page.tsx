@@ -7,9 +7,9 @@ import TrackedExternalChannelLink from "@/components/analytics/TrackedExternalCh
 import { buildMetadata, SITE_URL } from "@/lib/seo";
 
 import PageReadAloud from "@/components/PageReadAloud";
-const PAGE_TITLE = "PQNK Support Services — Soil, Water & Climate Restoration, Farmer Prosperity";
+const PAGE_TITLE = "PQNK Support Services: Soil, Water & Climate Restoration, Farmer Prosperity";
 const PAGE_DESCRIPTION =
-  "How Pedaver supports farmers, governments, NGOs and institutions applying PQNK to restore degraded soil, reduce irrigation water use, build climate resilience, cut input costs and improve farmer livelihoods — through free open knowledge, paid advisory services and institutional partnership.";
+  "How Pedaver supports farmers, governments, NGOs and institutions applying PQNK to restore degraded soil, reduce irrigation water use, build climate resilience, cut input costs and improve farmer livelihoods, through free open knowledge, paid advisory services and institutional partnership.";
 
 export const metadata = buildMetadata({
   title: PAGE_TITLE,

@@ -201,8 +201,8 @@ export default function TranslateWidget() {
         ref={selectRef}
         defaultValue=""
         onChange={handleChange}
-        aria-label="Translate this page — opens in a new tab"
-        title="Translate this page — opens in a new tab"
+        aria-label="Translate this page: opens in a new tab"
+        title="Translate this page: opens in a new tab"
         className="absolute inset-0 h-full w-full cursor-pointer appearance-none opacity-0"
       >
         <option value="" disabled>

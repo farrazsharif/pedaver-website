@@ -11,9 +11,9 @@ import {
   validationSections,
 } from "@/lib/content/validationSystem";
 
-const PAGE_TITLE = "PQNK™ Validation — Validating Biological Excellence";
+const PAGE_TITLE = "PQNK™ Validation: Validating Biological Excellence";
 const PAGE_DESCRIPTION =
-  "PQNK™ Validation is a comprehensive framework for biological, environmental, and economic performance, organised around four pillars: System, Food Value, Environmental, and Economic Validation — including laboratory-confirmed freedom from agrochemical residues.";
+  "PQNK™ Validation is a comprehensive framework for biological, environmental, and economic performance, organised around four pillars: System, Food Value, Environmental, and Economic Validation, including laboratory-confirmed freedom from agrochemical residues.";
 
 export const metadata = buildMetadata({
   title: PAGE_TITLE,
@@ -52,7 +52,7 @@ export default function ValidationPage() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={validationInfographic}
-            alt="PQNK™ Validation — a comprehensive framework for biological, environmental, and economic performance, organised around four pillars"
+            alt="PQNK™ Validation: a comprehensive framework for biological, environmental, and economic performance, organised around four pillars"
             className="w-full"
           />
         </div>

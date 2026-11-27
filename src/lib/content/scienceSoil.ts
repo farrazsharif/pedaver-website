@@ -6,7 +6,7 @@
 
 export const hero = {
   eyebrow: "PQNK Science · Soil",
-  title: "Soil — The Living Production System",
+  title: "Soil: The Living Production System",
   body: [
     "Soil is not an inert growing medium. It is a living production system.",
     "Its productivity emerges through interaction among soil particles, aggregates, pore spaces, air, water, roots, microorganisms, fungi, mycorrhizae, organic matter and geological minerals.",
@@ -126,9 +126,9 @@ export const roots = {
 };
 
 export const rhizosphere = {
-  title: "The Rhizosphere — Where Plant and Soil Meet",
+  title: "The Rhizosphere, Where Plant and Soil Meet",
   intro:
-    "The rhizosphere is the biologically active interface between plant roots and soil. Plants do not simply wait for soluble fertilizer ions to arrive — through root exudates they release carbon compounds that support microbial communities around roots.",
+    "The rhizosphere is the biologically active interface between plant roots and soil. Plants do not simply wait for soluble fertilizer ions to arrive, through root exudates they release carbon compounds that support microbial communities around roots.",
   organismRoles: ["decomposition", "nutrient transformation", "biological interaction", "mineral mobilization", "nutrient cycling"],
   cycle: [
     "Plant supplies biological energy",
@@ -193,18 +193,18 @@ export const organicMatter = {
 };
 
 export const waterConservation = {
-  title: "Infiltration, Seepage, Absorption, Retention — and Restricting Evaporation",
+  title: "Infiltration, Seepage, Absorption, Retention, and Restricting Evaporation",
   formula: "Water conservation under PQNK = Better entry and storage + Restricted evaporative loss.",
   partOne: {
-    title: "Part One — Getting water into and retaining it within the soil system",
+    title: "Part One: Getting water into and retaining it within the soil system",
     body: [
-      "Rain falling on agricultural land can follow very different pathways. On structurally degraded, compacted or sealed soil, infiltration is restricted — water may run across the surface, collect in depressions, cause erosion or leave the field.",
+      "Rain falling on agricultural land can follow very different pathways. On structurally degraded, compacted or sealed soil, infiltration is restricted: water may run across the surface, collect in depressions, cause erosion or leave the field.",
       "A protected porous PQNK soil architecture promotes infiltration, seepage, absorption and retention. Water can move into and through the profile, contribute to stored soil moisture and, where hydrological conditions permit, move deeper toward groundwater reserves and aquifer recharge.",
     ],
     pathway: ["Infiltration", "Seepage", "Absorption", "Retention"],
   },
   partTwo: {
-    title: "Part Two — Preventing unnecessary return to the atmosphere",
+    title: "Part Two: Preventing unnecessary return to the atmosphere",
     body: "Water retained in the soil can still be lost rapidly if the soil remains bare. Bare soil exposed directly to solar radiation and wind develops an evaporative pathway from moist soil toward the atmosphere. Permanent organic mulch changes this.",
     mulchFunctions: [
       "shields the soil from direct solar radiation",
@@ -264,7 +264,7 @@ export const plantWaterUse = {
 };
 
 export const smmDiagnosis = {
-  title: "Soil Moisture Diagnosis Begins With Plant Observation — but Ends in the Soil",
+  title: "Soil Moisture Diagnosis Begins With Plant Observation, but Ends in the Soil",
   intro:
     "A Production Manager walking through a field may first observe wilting. That observation is valuable because it prompts investigation. But wilting alone does not prove that irrigation is required.",
   wiltingNote:
@@ -281,9 +281,9 @@ export const smmDiagnosis = {
 };
 
 export const biologicalCover = {
-  title: "Permanent Biological Cover — Including Weeds as Nature's Rescue Workers",
+  title: "Permanent Biological Cover, Including Weeds as Nature's Rescue Workers",
   intro:
-    "Permanent Biological Cover is a habitat rule, not merely the deliberate placement of crop residue. PQNK also changes how spontaneous vegetation — conventionally called weeds — is understood.",
+    "Permanent Biological Cover is a habitat rule, not merely the deliberate placement of crop residue. PQNK also changes how spontaneous vegetation, conventionally called weeds, is understood.",
   reframe:
     "In a disturbed ecosystem, spontaneous vegetation can function as part of nature's repair response. The type of vegetation appearing on degraded land can reflect the repair function being performed.",
   types: [
@@ -389,7 +389,7 @@ export const judgedByFunction = {
 };
 
 export const foundationalNotWhole = {
-  title: "Soil Is Foundational — but Not the Whole System",
+  title: "Soil Is Foundational, but Not the Whole System",
   points: [
     "Plants build soil.",
     "Soil receives, stores and transmits water.",

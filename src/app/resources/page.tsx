@@ -6,7 +6,7 @@ import SectionViewTracker from "@/components/analytics/SectionViewTracker";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "PQNK Core Techniques — Hardpan, Raised Beds, Jantar & Mulch",
+  title: "PQNK Core Techniques: Hardpan, Raised Beds, Jantar & Mulch",
   description:
     "The core operational techniques through which PQNK's principles are implemented in the field: breaking the hardpan, correcting soil chemistry, permanent raised beds, Jantar cover cropping, mulch and no-till planting, and soil moisture management.",
   path: "/resources",
@@ -16,7 +16,7 @@ const CATEGORIES: { key: Resource["category"]; title: string; note: string }[] =
   {
     key: "one-time",
     title: "One-Time Transition Operations",
-    note: "Applied once, to correct inherited damage and establish the permanent system — not repeated season after season.",
+    note: "Applied once, to correct inherited damage and establish the permanent system, not repeated season after season.",
   },
   {
     key: "permanent",

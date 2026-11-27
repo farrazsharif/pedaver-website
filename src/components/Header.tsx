@@ -66,7 +66,7 @@ export default function Header({ dict }: { dict: Dictionary }) {
   return (
     <header className="sticky top-0 z-50 bg-cream/95 shadow-sm backdrop-blur">
       {/* Tier 1 — utility bar: Translate | Ask | Contact. No generic
-          site-wide search here by design (2026-08-25) — each knowledge
+          site-wide search here by design (2026-08-25), each knowledge
           library (Knowledge Papers, Knowledge Exchange) provides its own
           contextual search on its own page instead. */}
       <div className="border-b-4 border-[#7cbf3f] bg-[#1c1c1e]">
@@ -75,15 +75,15 @@ export default function Header({ dict }: { dict: Dictionary }) {
             <Link href="/" className="flex flex-none items-center" aria-label={`${dict.meta.siteName} home`}>
               <img
                 src="/images/pedaver-logo-white.png"
-                alt={`${dict.meta.siteName} — The Transformative Producer`}
+                alt={`${dict.meta.siteName}: The Transformative Producer`}
                 className="h-8 w-auto sm:h-14 min-[900px]:h-16"
               />
             </Link>
             <span className="h-6 w-px flex-none bg-white/15 sm:h-12" aria-hidden="true" />
-            <Link href="/" className="flex flex-none items-center" aria-label="PQNK — The Science of Natural Farming">
+            <Link href="/" className="flex flex-none items-center" aria-label="PQNK: The Science of Natural Farming">
               <img
                 src="/images/pqnk-logo.png"
-                alt="PQNK — The Science of Natural Farming"
+                alt="PQNK: The Science of Natural Farming"
                 className="h-8 w-auto sm:h-14 min-[900px]:h-16"
               />
             </Link>

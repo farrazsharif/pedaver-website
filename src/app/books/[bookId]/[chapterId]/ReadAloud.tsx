@@ -274,7 +274,7 @@ export default function ReadAloud({
 
       {status === "unavailable" ? (
         <p className="text-xs text-ink-soft">
-          Listen is unavailable on this device — no English speech voice was found.
+          Listen is unavailable on this device: no English speech voice was found.
         </p>
       ) : (
         <div className="flex flex-col gap-2">

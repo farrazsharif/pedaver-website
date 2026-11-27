@@ -6,12 +6,12 @@
 
 export const hero = {
   eyebrow: "PQNK Science · Water",
-  title: "Water — Restoring the Natural Water Cycle",
+  title: "Water: Restoring the Natural Water Cycle",
   body: [
     "Agriculture commonly treats water as an input: something supplied to a crop in a measured quantity at a scheduled time.",
-    "PQNK Water Science treats water differently. Water is a connected biological and hydrological system that moves between atmosphere, soil and plant — and back to the atmosphere again.",
+    "PQNK Water Science treats water differently. Water is a connected biological and hydrological system that moves between atmosphere, soil and plant, and back to the atmosphere again.",
   ],
-  callout: "Atmosphere ↕ Soil ↕ Plants ↕ Atmosphere — restoring the connected movement of water, not simply reducing irrigation events.",
+  callout: "Atmosphere ↕ Soil ↕ Plants ↕ Atmosphere, restoring the connected movement of water, not simply reducing irrigation events.",
 };
 
 export const notInputAlone = {
@@ -19,7 +19,7 @@ export const notInputAlone = {
   body: [
     "In conventional agriculture, water is often treated as a single input: apply enough, at the right time, and the crop responds.",
     "PQNK Water Science asks a different question: what happens to water once it arrives? Water reaching a field can infiltrate and remain within the biological production system, or it can run off, evaporate, or drain away without ever becoming biologically useful.",
-    "The production system itself — its soil architecture, biological cover and root network — determines how much of that water actually becomes available to plants.",
+    "The production system itself (its soil architecture, biological cover and root network) determines how much of that water actually becomes available to plants.",
   ],
 };
 
@@ -50,7 +50,7 @@ export const firstRequirement = {
   title: "The First Requirement: Water Must Enter the Soil",
   body: [
     "Before water can be stored, absorbed by roots or transpired by plants, it must first enter the soil.",
-    "Water that cannot infiltrate is water the biological production system cannot use — regardless of how much rain fell or how much irrigation was applied.",
+    "Water that cannot infiltrate is water the biological production system cannot use: regardless of how much rain fell or how much irrigation was applied.",
   ],
   statement: "Infiltration is therefore the gateway to every other water function in the system.",
 };
@@ -79,7 +79,7 @@ export const twoSidedConservation = {
     pathway: ["Infiltration", "Seepage", "Absorption", "Retention"],
   },
   partTwo: {
-    title: "Part Two — Restrict Unnecessary:",
+    title: "Part Two: Restrict Unnecessary:",
     pathway: ["Soil Water", "Capillary Rise", "Surface Evaporation", "Atmosphere"],
   },
   cautionNote: "PQNK water conservation is not reducible merely to improved infiltration.",
@@ -100,7 +100,7 @@ export const mulchBoundary = {
 };
 
 export const evaporationHeating = {
-  title: "Evaporation Is Water Loss — and Energy Transfer",
+  title: "Evaporation Is Water Loss, and Energy Transfer",
   body: "When water evaporates from exposed soil, water is lost from the soil system and energy is exchanged with the atmosphere.",
   bareLandNote: "Bare, dry land also heats rapidly.",
   scaleNote:
@@ -125,7 +125,7 @@ export const evapVsTranspiration = {
 
 export const transpirationProduction = {
   title: "Transpiration Is Part of Production",
-  body: "Transpiration contributes importantly to leaf-temperature regulation and nutrient transport — it is a functioning part of the biological production process, not a loss to be eliminated.",
+  body: "Transpiration contributes importantly to leaf-temperature regulation and nutrient transport: it is a functioning part of the biological production process, not a loss to be eliminated.",
 };
 
 export const waterAirCoexist = {
@@ -133,12 +133,12 @@ export const waterAirCoexist = {
   intro: "A root does not require water alone. It requires a moist, aerated biological environment.",
   saturationNote:
     "Prolonged saturation restricts oxygen diffusion and affects root respiration, aerobic microbial processes, fungal relationships and other biological functions.",
-  objective: "The objective is functioning pore architecture containing both water and air — not maximum soil water content.",
+  objective: "The objective is functioning pore architecture containing both water and air, not maximum soil water content.",
 };
 
 export const thirtySeventy = {
   title: "The Meaning of the 30:70 Condition",
-  body: "The 30:70 condition describes a sustained biological soil condition previously established within PQNK Science — a description of a functioning state, not a field prescription.",
+  body: "The 30:70 condition describes a sustained biological soil condition previously established within PQNK Science, a description of a functioning state, not a field prescription.",
   notTarget: "It is not an irrigation target.",
   temporaryNote:
     "After irrigation, the local water–air relationship changes temporarily. Drainage, seepage, redistribution and plant uptake subsequently restore aerated conditions.",
@@ -226,7 +226,7 @@ export const rootReservoir = {
 export const biodiversityWater = {
   title: "Biodiversity Stabilizes Water Use",
   body: "Species differ in rooting depth, root diameter, root architecture, seasonal activity and soil biological relationships. Biological diversity therefore contributes to a more complex below-ground architecture.",
-  statement: "Diversity above ground creates diversity below ground — and diversity below ground creates more pathways for water.",
+  statement: "Diversity above ground creates diversity below ground, and diversity below ground creates more pathways for water.",
 };
 
 export const biologicalCoverArchitecture = {

@@ -79,7 +79,7 @@ export default async function MachineDetailPage({
           <PageReadAloud />
           {machine.fullName && !machine.title.includes(machine.fullName) && (
             <p className="mt-2 text-lg font-medium text-accent">
-              {machine.shortName} — {machine.fullName}
+              {machine.shortName}: {machine.fullName}
             </p>
           )}
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-ink-soft">{machine.summary}</p>
@@ -101,7 +101,7 @@ export default async function MachineDetailPage({
             <div className="max-w-md overflow-hidden rounded-xl border border-border shadow-sm">
               <VideoEmbed
                 videoId={machine.videoId}
-                title={`${machine.title} — video`}
+                title={`${machine.title}: video`}
                 context="machine"
                 contextId={machine.slug}
                 className="aspect-video w-full"
@@ -115,7 +115,7 @@ export default async function MachineDetailPage({
                 contextType="machine"
                 contextId={machine.slug}
                 className="h-full w-full"
-                ariaLabel={`${machine.title} — video`}
+                ariaLabel={`${machine.title}: video`}
               />
             </div>
           )}

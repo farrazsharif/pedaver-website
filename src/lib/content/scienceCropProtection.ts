@@ -6,10 +6,10 @@
 
 export const hero = {
   eyebrow: "PQNK Science · Crop Protection",
-  title: "Crop Protection — Biological Regulation Instead of Routine Suppression",
+  title: "Crop Protection: Biological Regulation Instead of Routine Suppression",
   body: [
     "Agriculture commonly treats crop protection as the act of killing pests: identify the organism, select the product, apply it.",
-    "PQNK treats crop protection as the consequence of building a biologically functional production ecosystem — one in which plants are physiologically supported, soil biology functions, biodiversity is protected, and ecological regulation operates.",
+    "PQNK treats crop protection as the consequence of building a biologically functional production ecosystem: one in which plants are physiologically supported, soil biology functions, biodiversity is protected, and ecological regulation operates.",
   ],
   callout: "Crop protection begins before the pest arrives.",
 };
@@ -17,7 +17,7 @@ export const hero = {
 export const centralProposition = {
   title: "Crop Protection Begins Before the Pest Arrives",
   body: [
-    "The production environment determines much of a crop's capacity to tolerate, compensate for, or biologically interact with pest and disease pressure. A field is not a blank surface awaiting attack — it is already a biological system, and the condition of that system shapes what happens next.",
+    "The production environment determines much of a crop's capacity to tolerate, compensate for, or biologically interact with pest and disease pressure. A field is not a blank surface awaiting attack: it is already a biological system, and the condition of that system shapes what happens next.",
     "PQNK therefore asks a different first question.",
   ],
   questionNot: "Not: \"What chemical should kill it?\"",
@@ -42,7 +42,7 @@ export const recyclingAndCondition = {
 };
 
 export const suckingInsects = {
-  title: "Sucking Insects — Presence Is Not Automatic Damage",
+  title: "Sucking Insects: Presence Is Not Automatic Damage",
   formulation: "PQNK field observation has identified another relationship that deserves attention rather than automatic suppression. Low populations of sap-sucking insects, particularly under vigorous rainy-season vegetative growth, may coincide with a change in plant growth allocation in which excessive vegetative expansion is moderated and reproductive development becomes relatively more prominent.",
   guardrail: "This does not mean sucking insects always increase yield.",
   dependsOn: ["insect species", "crop", "growth stage", "population pressure", "plant physiological condition", "weather/environment", "duration and intensity of feeding"],
@@ -52,7 +52,7 @@ export const suckingInsects = {
 export const nitrogenPestPressure = {
   title: "Nitrogen Fertilization Can Change Pest Pressure",
   intro: "PQNK recognizes another important connection between crop nutrition and crop protection.",
-  body: "In conventional production, heavy application of nitrogen — particularly readily available nitrogen supplied through urea and other soluble nitrogen fertilizers — can stimulate rapid, succulent vegetative growth and alter the nutritional composition of plant tissues. These changes can create more favorable feeding conditions for some herbivorous insects, particularly sap-sucking insects.",
+  body: "In conventional production, heavy application of nitrogen, particularly readily available nitrogen supplied through urea and other soluble nitrogen fertilizers, can stimulate rapid, succulent vegetative growth and alter the nutritional composition of plant tissues. These changes can create more favorable feeding conditions for some herbivorous insects, particularly sap-sucking insects.",
   chain: [
     "High Readily Available Nitrogen Supply",
     "Rapid Succulent Vegetative Growth",
@@ -74,9 +74,9 @@ export const nitrogenPestPressure = {
 };
 
 export const lundgrenCorrection = {
-  title: "One Pest Species, Many Others — Correcting a Common Simplification",
+  title: "One Pest Species, Many Others: Correcting a Common Simplification",
   wrongVersion: "\"Against every pest there are 1,700 predators.\"",
-  correction: "That figure has often been repeated inaccurately. Entomologist Jonathan Lundgren has used the estimate that for every pest insect species there may be hundreds — and in his formulation up to approximately 1,700 insect species — that are beneficial or whose ecological roles are not fully understood.",
+  correction: "That figure has often been repeated inaccurately. Entomologist Jonathan Lundgren has used the estimate that for every pest insect species there may be hundreds (and in his formulation up to approximately 1,700 insect species) that are beneficial or whose ecological roles are not fully understood.",
   keyDistinctionLeft: "1 pest species",
   keyDistinctionRight: "1,700 predators",
   keyDistinctionNote: "The number refers to species diversity surrounding a pest, not a predator-to-pest headcount.",
@@ -96,7 +96,7 @@ export const biologicalRegulation = {
 };
 
 export const btSection = {
-  title: "Bt — Nature Already Contains Insect-Control Mechanisms",
+  title: "Bt: Nature Already Contains Insect-Control Mechanisms",
   intro: "Bacillus thuringiensis (Bt) is a naturally occurring bacterium associated with soil and other environments. Different Bt strains can produce different insecticidal proteins active against particular susceptible insect groups.",
   mechanism: "For susceptible larvae, relevant Bt proteins generally must be ingested. They become active in the insect digestive system, interact with specific gut receptors and can damage the gut, resulting in cessation of feeding and death.",
   distinctions: [
@@ -138,7 +138,7 @@ export const chemicalException = {
 };
 
 export const weedsEnemyToSignal = {
-  title: "Weeds — From Enemy to Ecological Signal",
+  title: "Weeds, From Enemy to Ecological Signal",
   conventional: "In input-dependent conventional agriculture, weeds are commonly treated as direct competitors because they can acquire some of the same externally supplied resources intended for the cash crop, including soluble fertilizer, water and light.",
   pqnkPremise: "PQNK changes the nutrient premise. PQNK does not build crop nutrition around a finite dose of soluble fertilizer applied for exclusive capture by the crop.",
   connectedTo: ["the soil mineral reservoir", "biological transformation", "rhizosphere processes", "roots", "mycorrhizal relationships", "water movement", "microbial activity"],
@@ -148,14 +148,14 @@ export const weedsEnemyToSignal = {
 };
 
 export const rootsCoexistence = {
-  title: "Roots — Coexistence Rather Than a Competition-First Model",
+  title: "Roots: Coexistence Rather Than a Competition-First Model",
   statement: "PQNK does not design the production system around root competition. It designs it around biological coexistence, interaction and complementary occupation of the soil.",
   capabilities: ["occupy different soil depths", "create rhizosphere effects", "interact with microbial communities", "participate in mycorrhizal relationships", "modify soil structure", "contribute different residues/root exudates", "support biological complexity"],
   caveat: "Competition can occur when resources become limiting. PQNK seeks to remove the degraded conditions that unnecessarily intensify such competition.",
 };
 
 export const sunlightIssue = {
-  title: "The Critical Above-Ground Issue — Sunlight",
+  title: "The Critical Above-Ground Issue: Sunlight",
   intro: "In a functioning PQNK system, the practical management concern increasingly shifts from presumed below-ground nutrient theft to above-ground light interception.",
   problemConditions: ["overtops the crop", "shades young crop plants", "restricts photosynthetically useful light", "interferes physically with crop establishment or harvest"],
   statement: "Manage the light, not the biology.",
@@ -166,12 +166,12 @@ export const sunlightIssue = {
 export const rowOrientation = {
   title: "North–South Row Orientation",
   body: "PQNK generally prefers north–south crop/plant rows where field geometry, drainage, topography, irrigation architecture, machinery and other practical constraints permit.",
-  purpose: "The purpose is solar distribution. As the sun moves across the sky, north–south row orientation can distribute exposure between the sides of the crop row rather than creating persistent one-sided shading — helping plants receive sunlight during both earlier and later parts of the day.",
+  purpose: "The purpose is solar distribution. As the sun moves across the sky, north–south row orientation can distribute exposure between the sides of the crop row rather than creating persistent one-sided shading, helping plants receive sunlight during both earlier and later parts of the day.",
   guardrail: "This is a PQNK design preference intended to improve solar access where conditions permit, not a claim that north–south orientation universally maximizes yield in every crop or location.",
 };
 
 export const weedicideException = {
-  title: "Weedicide — A Very Narrow Transitional Exception",
+  title: "Weedicide: A Very Narrow Transitional Exception",
   scope: "PQNK recommends weedicide only as an exceptional tool during the first summer crop of conversion when necessary.",
   example: "Rice offers the clearest example: first summer crop, rice seedlings establishing, biological cover not yet fully developed, insufficient organic mulch on the soil surface, aggressive summer weeds emerging and beginning to overtop or shade the young seedlings.",
   reasonNot: "The reason for intervention is not: \"Weeds exist.\"",
@@ -184,7 +184,7 @@ export const agrochemicalEffects = {
   title: "Agrochemical Effects on the Protection System",
   intro: "Routine broad-spectrum chemical intervention can affect organisms beyond the target pest or weed.",
   consequences: ["beneficial insects", "predators", "parasitoids", "pollinators", "microbial communities", "fungal relationships", "food-web interactions", "soil biological processes"],
-  herbicideNote: "Herbicides deserve particular attention because repeated weed suppression also removes living plant diversity — altering root diversity, rhizosphere diversity, habitat, food sources, flowering resources and surface cover.",
+  herbicideNote: "Herbicides deserve particular attention because repeated weed suppression also removes living plant diversity, altering root diversity, rhizosphere diversity, habitat, food sources, flowering resources and surface cover.",
   guardrails: ["Not every pesticide kills every beneficial organism.", "Not every herbicide has identical microbiological effects."],
   variesWith: ["chemistry", "dose", "timing", "formulation", "organism", "soil", "environment", "frequency of exposure"],
   argument: "The PQNK argument is against routine dependence, not scientifically unsupported universal toxicity claims.",
@@ -195,7 +195,7 @@ export const agrochemicalEffects = {
 export const weedsRescueWorkers = {
   title: "Weeds as Rescue Workers",
   body: "Spontaneous vegetation can occupy exposed ecological space, provide living roots, cover soil and contribute biological material.",
-  linkLabel: "Continue with Biodiversity Science — Weeds as Nature's Rescue Workers",
+  linkLabel: "Continue with Biodiversity Science: Weeds as Nature's Rescue Workers",
   linkHref: "/science/biodiversity",
 };
 

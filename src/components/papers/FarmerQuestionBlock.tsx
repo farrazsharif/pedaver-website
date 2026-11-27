@@ -11,7 +11,7 @@ export default function FarmerQuestionBlock({ origin }: { origin: FarmerQuestion
         <p className="text-xs font-semibold uppercase tracking-wide text-accent">Farmer Question</p>
         <p className="mt-2 text-xl font-semibold text-primary-dark">&ldquo;{origin.question}&rdquo;</p>
         <p className="mt-2 text-sm text-ink-soft">
-          — {origin.attribution}. Preserved here as Pedaver&rsquo;s own account of the question, not a
+          ({origin.attribution}). Preserved here as Pedaver&rsquo;s own account of the question, not a
           verbatim quotation.
         </p>
         <p className="mt-5 text-xs font-semibold uppercase tracking-wide text-primary">Pedaver&rsquo;s Answer</p>

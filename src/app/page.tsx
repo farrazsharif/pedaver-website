@@ -116,7 +116,7 @@ export default function HomePage() {
   const websiteJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: `${SITE_NAME} — PQNK`,
+    name: `${SITE_NAME} | PQNK`,
     url: SITE_URL,
     description:
       "PQNK is the natural ecosystem science of production agriculture: four governing principles, a documented transition from degraded soil to a sustained closed loop, and field evidence across 20+ crops in Pakistan.",
@@ -641,7 +641,7 @@ export default function HomePage() {
             <p className="mx-auto mt-3 max-w-xl text-lg text-cream/95">{h.stayConnected.body}</p>
             <TrackedExternalChannelLink
               href="https://wa.me/923250064442"
-              label="WhatsApp — PQNK Learning Groups"
+              label="WhatsApp: PQNK Learning Groups"
               className="mt-6 inline-flex items-center gap-2 rounded-full bg-accent px-8 py-3 text-sm font-semibold text-ink transition hover:bg-accent-light"
             >
               {h.stayConnected.whatsappButton}

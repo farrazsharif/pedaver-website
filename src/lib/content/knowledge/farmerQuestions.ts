@@ -25,7 +25,7 @@ export const FARMER_QUESTION_ORIGINS: FarmerQuestionOrigin[] = [
   {
     slug: "the-breathing-soil-humidity-and-soil-structure",
     question: "Why does relative humidity matter around my crop in PQNK production?",
-    attribution: "Mr. Rakesh, a practicing PQNK farmer from Rajasthan — asked in a PQNK WhatsApp learning group",
+    attribution: "Mr. Rakesh, a practicing PQNK farmer from Rajasthan, asked in a PQNK WhatsApp learning group",
   },
   {
     slug: "why-is-oxygen-less-in-soil-air-why-is-co2-high",
@@ -43,18 +43,18 @@ export const FARMER_QUESTION_ORIGINS: FarmerQuestionOrigin[] = [
     question:
       "Why do pests develop resistance to sprays over time, while humans grow more susceptible to the same chemical residues?",
     attribution:
-      "Asked in a PQNK WhatsApp learning group — a second, deeper treatment of the same question answered in “The Paradox of Resistance”",
+      "Asked in a PQNK WhatsApp learning group: a second, deeper treatment of the same question answered in “The Paradox of Resistance”",
   },
   {
     slug: "mango-sop-under-pqnk",
     question: "What is the correct standard operating procedure for mango harvesting and post-harvest handling under PQNK?",
-    attribution: "Mr. Kaushil Patel Gaubharat — asked in PQNK WhatsApp learning group number 3",
+    attribution: "Mr. Kaushil Patel Gaubharat, asked in PQNK WhatsApp learning group number 3",
   },
   {
     slug: "white-and-green-growth-after-irrigation-qa",
     question:
-      "After a second irrigation, my furrows turned moist and cooled, and white and green growth appeared — is this a disease?",
-    attribution: "PQNK farmer question — field observation on a Khapli wheat plot",
+      "After a second irrigation, my furrows turned moist and cooled, and white and green growth appeared: is this a disease?",
+    attribution: "PQNK farmer question: field observation on a Khapli wheat plot",
   },
 ];
 

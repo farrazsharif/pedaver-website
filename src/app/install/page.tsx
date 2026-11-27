@@ -3,9 +3,9 @@ import Section from "@/components/Section";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Install Pedaver PQNK — Free, No App Store Needed",
+  title: "Install Pedaver PQNK: Free, No App Store Needed",
   description:
-    "Add Pedaver PQNK to your phone's home screen and use it like an app — no App Store, no Play Store, completely free.",
+    "Add Pedaver PQNK to your phone's home screen and use it like an app: no App Store, no Play Store, completely free.",
   path: "/install",
 });
 

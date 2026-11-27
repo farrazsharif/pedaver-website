@@ -17,7 +17,7 @@ import Section from "@/components/Section";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Farmer Advisory — Real PQNK Questions & Answers",
+  title: "Farmer Advisory: Real PQNK Questions & Answers",
   description:
     "Real questions from Pedaver's PQNK WhatsApp learning groups, and Asif Sharif's answers, organized by topic: adoption, planting, water management, and symptoms.",
   path: "/advisory",

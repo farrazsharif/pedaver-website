@@ -150,7 +150,7 @@ export const books: Book[] = [
     subtitle: "Industrial Devastation To Natural Abundance",
     coverImage: {
       src: "/books/natural-ecosystem-science/cover.jpg?v=2",
-      alt: "Cover of PQNK: The Natural Ecosystem Science of Production Agriculture — Industrial Devastation To Natural Abundance, showing a split landscape: an industrial field with a smokestack and bare, cracked soil on the left, and a thriving orchard with visible healthy root and mycorrhizal networks on the right. By Asif Sharif, Researcher and Developer of PQNK.",
+      alt: "Cover of PQNK: The Natural Ecosystem Science of Production Agriculture (Industrial Devastation To Natural Abundance, showing a split landscape: an industrial field with a smokestack and bare, cracked soil on the left, and a thriving orchard with visible healthy root and mycorrhizal networks on the right. By Asif Sharif, Researcher and Developer of PQNK.)",
       width: 700,
       height: 991,
     },
@@ -1836,7 +1836,7 @@ export const books: Book[] = [
         subtitle: "The Years That Forged the PQNK Knowledge System",
         status: "published",
         summary:
-          "A prolonged interruption to Asif Sharif's agricultural and commercial work, from the late 1990s through 2006, separated decades of accumulated field knowledge from the business structures through which it had previously been applied. From 2006, rebuilding began with FarmAll Technology, solar irrigation work that exposed the limits of cheaper pumping alone, and a growing written record — the Knowledge Papers — that let PQNK travel independently of its originator and reach farmers directly. The chapter closes Part Three by tracing how field experience, engineering and a self-funded, farmer-connected knowledge network converted decades of practice into a documented natural ecosystem science.",
+          "A prolonged interruption to Asif Sharif's agricultural and commercial work, from the late 1990s through 2006, separated decades of accumulated field knowledge from the business structures through which it had previously been applied. From 2006, rebuilding began with FarmAll Technology, solar irrigation work that exposed the limits of cheaper pumping alone, and a growing written record, the Knowledge Papers, that let PQNK travel independently of its originator and reach farmers directly. The chapter closes Part Three by tracing how field experience, engineering and a self-funded, farmer-connected knowledge network converted decades of practice into a documented natural ecosystem science.",
         publishedDate: "2026-09-17",
         version: "1.0",
         pdfPath: "/books/natural-ecosystem-science/adversity-as-laboratory.pdf?v=2",
@@ -2039,7 +2039,7 @@ export const books: Book[] = [
         subtitle: "From the Day of Transition to the Mature Ecosystem",
         status: "published",
         summary:
-          "Where Chapter Twenty-Three described the eight-step protocol as a procedure, this chapter describes it as a living progression: what changes beneath and above the surface through the early transition, the first production crops, succeeding crops, and the threshold into a mature, sustained ecosystem. Its governing point is explicit and repeated throughout — there is no universal crop-count clock or third-season threshold; the field, not the calendar, determines the speed of travel, and the timeline exists to show the direction of change and the evidence to watch for, not a promised date.",
+          "Where Chapter Twenty-Three described the eight-step protocol as a procedure, this chapter describes it as a living progression: what changes beneath and above the surface through the early transition, the first production crops, succeeding crops, and the threshold into a mature, sustained ecosystem. Its governing point is explicit and repeated throughout: there is no universal crop-count clock or third-season threshold; the field, not the calendar, determines the speed of travel, and the timeline exists to show the direction of change and the evidence to watch for, not a promised date.",
         publishedDate: "2026-09-18",
         version: "1.0",
         pdfPath: "/books/natural-ecosystem-science/the-complete-pqnk-system-timeline.pdf?v=2",
@@ -2096,7 +2096,7 @@ export const books: Book[] = [
         subtitle: "The Invisible Wall Beneath the Cultivated Layer",
         status: "published",
         summary:
-          "Hardpan, the dense compacted layer repeated tillage and machinery traffic create beneath the cultivated soil, is treated as a foundational conversion operation because it can restrict rooting, water movement, gas exchange and the volume of soil a crop can explore. The chapter traces how it forms, its cascade of consequences, how a farmer identifies it through combined field evidence rather than one universal number, the six-step PQNK correction (one-time 22-inch subsoiler fracture, conditional deep wash, permanent beds, first cover crop, permanent mulch, root retention), and the biological-only pathway where a subsoiler is unavailable. Throughout, claims about nutrition, pests, climate and recovery speed are explicitly hedged against overclaiming — hardpan is a major structural contributor, not the sole cause of every field problem.",
+          "Hardpan, the dense compacted layer repeated tillage and machinery traffic create beneath the cultivated soil, is treated as a foundational conversion operation because it can restrict rooting, water movement, gas exchange and the volume of soil a crop can explore. The chapter traces how it forms, its cascade of consequences, how a farmer identifies it through combined field evidence rather than one universal number, the six-step PQNK correction (one-time 22-inch subsoiler fracture, conditional deep wash, permanent beds, first cover crop, permanent mulch, root retention), and the biological-only pathway where a subsoiler is unavailable. Throughout, claims about nutrition, pests, climate and recovery speed are explicitly hedged against overclaiming: hardpan is a major structural contributor, not the sole cause of every field problem.",
         publishedDate: "2026-09-18",
         version: "1.0",
         pdfPath: "/books/natural-ecosystem-science/hardpan.pdf?v=2",
@@ -2316,7 +2316,7 @@ export const books: Book[] = [
         subtitle: "Nature’s Blanket: Thermostat, Food Source, Weed Suppressor, and Carbon Engine",
         status: "published",
         summary:
-          "Organic mulch is the visible surface layer of the PQNK system, grown first by a terminated cover crop and maintained thereafter by retained crop residues. The chapter sets out PQNK's two complementary forms of soil cover (living cover and dead organic mulch), the five simultaneous functions mulch performs (water management, temperature regulation, weed suppression, biological feeding and carbon return), how depth and texture are matched to residue type and seed rather than fixed to one universal number, the major on-farm residue sources in Pakistan, how the mulch layer develops through establishment stages rather than a fixed calendar, common mismanagement to avoid, and the economic logic of the system — including how the PQNK bed-and-furrow geometry itself produces an immediate water saving of more than 70 percent over flood or conventional furrow irrigation, which mulch then protects and extends toward the documented 77–92 percent range by lengthening the interval between irrigations.",
+          "Organic mulch is the visible surface layer of the PQNK system, grown first by a terminated cover crop and maintained thereafter by retained crop residues. The chapter sets out PQNK's two complementary forms of soil cover (living cover and dead organic mulch), the five simultaneous functions mulch performs (water management, temperature regulation, weed suppression, biological feeding and carbon return), how depth and texture are matched to residue type and seed rather than fixed to one universal number, the major on-farm residue sources in Pakistan, how the mulch layer develops through establishment stages rather than a fixed calendar, common mismanagement to avoid, and the economic logic of the system, including how the PQNK bed-and-furrow geometry itself produces an immediate water saving of more than 70 percent over flood or conventional furrow irrigation, which mulch then protects and extends toward the documented 77–92 percent range by lengthening the interval between irrigations.",
         publishedDate: "2026-09-18",
         version: "1.0",
         pdfPath: "/books/natural-ecosystem-science/organic-mulch.pdf?v=2",

@@ -128,7 +128,7 @@ export default async function PaperDetailPage({
         <div className="border-b border-slate-200 bg-slate-50">
           <div className="mx-auto max-w-4xl px-4 py-4 sm:px-6">
             <p className="text-sm text-slate-700">
-              <span className="font-semibold">External Knowledge —</span> this paper is sourced from
+              <span className="font-semibold">External Knowledge: </span> this paper is sourced from
               outside Pedaver/PQNK. It is presented as supporting evidence, not as PQNK's own approved
               doctrine.
             </p>
@@ -146,7 +146,7 @@ export default async function PaperDetailPage({
                 contextType="paper"
                 contextId={slug}
                 className="aspect-video w-full"
-                ariaLabel={`${paper.title} — video`}
+                ariaLabel={`${paper.title}: video`}
               />
             </div>
           </div>
@@ -167,7 +167,7 @@ export default async function PaperDetailPage({
                   <div key={videoId} className="overflow-hidden rounded-xl border border-border bg-card shadow-sm">
                     <VideoEmbed
                       videoId={videoId}
-                      title={`${paper.title} — Part ${i + 1}`}
+                      title={`${paper.title}: Part ${i + 1}`}
                       context="paper"
                       contextId={slug}
                       className="aspect-video w-full"

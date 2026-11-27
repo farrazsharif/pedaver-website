@@ -84,17 +84,17 @@ export default function Footer({ dict }: { dict: Dictionary }) {
           <ul className="mt-4 flex flex-col gap-2.5 text-sm">
             <li>
               <a href="https://www.facebook.com/Pedaver" target="_blank" rel="noopener noreferrer" className="text-cream/80 transition hover:text-cream">
-                Facebook — Pedaver
+                Facebook: Pedaver
               </a>
             </li>
             <li>
               <a href={officialChannel.url} target="_blank" rel="noopener noreferrer" className="text-cream/80 transition hover:text-cream">
-                YouTube — {officialChannel.name}
+                YouTube: {officialChannel.name}
               </a>
             </li>
             <li>
               <a href={founderChannel.url} target="_blank" rel="noopener noreferrer" className="text-cream/80 transition hover:text-cream">
-                YouTube — {founderChannel.name}
+                YouTube: {founderChannel.name}
               </a>
             </li>
             <li>

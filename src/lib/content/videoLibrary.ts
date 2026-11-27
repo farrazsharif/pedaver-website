@@ -57,7 +57,7 @@ export const videoLibrary: VideoLibraryCategory[] = [
   },
   {
     slug: "sipp",
-    title: "SIPP — Slit Insertion Precision Planter",
+    title: "SIPP: Slit Insertion Precision Planter",
     videos: [
       {
         videoId: "eZchOqfpMSM",
@@ -333,7 +333,7 @@ export const videoLibrary: VideoLibraryCategory[] = [
   },
   {
     slug: "oap-model",
-    title: "OAP — One Acre Prosperity Model",
+    title: "OAP: One Acre Prosperity Model",
     videos: [
       {
         videoId: "oc8hQYh1Nj8",

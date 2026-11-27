@@ -33,7 +33,7 @@ import {
 } from "@/lib/content/scienceClimate";
 
 export const metadata: Metadata = buildMetadata({
-  title: "PQNK Climate Science — Restoring the Climate Function of Living Land | Pedaver",
+  title: "PQNK Climate Science: Restoring the Climate Function of Living Land | Pedaver",
   description:
     "Why agricultural land is part of the Earth's climate-moderation system: land-surface energy partitioning, soil temperature, evaporation vs. transpiration, the water cycle as an energy cycle, and carbon capture vs. retention.",
   path: "/science/climate",
@@ -457,7 +457,7 @@ export default function ScienceClimatePage() {
       {/* FOUR PRINCIPLES + CONVERGENCE */}
       <Section muted>
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-2xl font-bold text-primary-dark sm:text-3xl">The Four Principles — One Climate System</h2>
+          <h2 className="text-2xl font-bold text-primary-dark sm:text-3xl">The Four Principles: One Climate System</h2>
           <div className="mx-auto mt-6 grid max-w-2xl gap-4 text-start sm:grid-cols-2">
             {habitatPrinciples.map((p) => (
               <div key={p.name}>
@@ -536,7 +536,7 @@ export default function ScienceClimatePage() {
       {/* SCIENCE VS APPLICATION */}
       <Section>
         <div className="mx-auto max-w-3xl">
-          <h2 className="text-center text-2xl font-bold text-primary-dark sm:text-3xl">Science Is Universal — Application Is Local</h2>
+          <h2 className="text-center text-2xl font-bold text-primary-dark sm:text-3xl">Science Is Universal: Application Is Local</h2>
           <div className="mt-8">
             <ScienceApplicationNote science={scienceApplication.science} application={scienceApplication.application} />
           </div>

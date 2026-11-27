@@ -32,7 +32,7 @@ export const twoZones = {
 };
 
 export const diagnoseFirst = {
-  title: "First Diagnose — Then Engineer",
+  title: "First Diagnose, Then Engineer",
   intro: "Production Architecture does not begin by prescribing a machinery depth. It begins with a soil pit.",
   statement: "Diagnose the restriction before prescribing the correction.",
   checklist: [
@@ -49,18 +49,18 @@ export const diagnoseFirst = {
 };
 
 export const hardpanCorrection = {
-  title: "Hardpan Correction — A Depth Refinement, Not a Number",
+  title: "Hardpan Correction: A Depth Refinement, Not a Number",
   chain: ["Soil Pit", "Identify Restrictive Layer", "Determine Depth + Thickness", "Set Implement Depth", "Penetrate Below Restriction", "Shatter the Layer"],
   referenceNote:
     "Under average field conditions where machinery traffic and repeated flood irrigation have produced the common restrictive layer encountered in PQNK conversion work, approximately 22 inches of penetration has generally been sufficient to pass beneath and shatter the compacted layer.",
-  boundedNote: "22 inches is not a universal depth prescription. Where diagnosis indicates a deeper restrictive layer, working depth may extend toward approximately 24 inches as a safety allowance — not as a fixed depth required on every field.",
+  boundedNote: "22 inches is not a universal depth prescription. Where diagnosis indicates a deeper restrictive layer, working depth may extend toward approximately 24 inches as a safety allowance, not as a fixed depth required on every field.",
   deeperNote: "If the restrictive layer extends deeper still, the implement must penetrate sufficiently below it to achieve effective shattering. If it is shallower, unnecessary excessive depth is not the objective.",
   objectiveStatement: "The objective is not a number. The objective is to shatter the restrictive hard layer.",
   transitionNote: "This is a corrective transition operation, not recurring tillage. Once corrected and the permanent architecture is protected, routine soil disturbance must stop.",
 };
 
 export const correctOnceProtect = {
-  title: "Correct Once — Protect Thereafter",
+  title: "Correct Once: Protect Thereafter",
   conventional: {
     label: "Conventional Loop",
     chain: ["Traffic / Flooding", "Compaction / Structural Damage", "Tillage", "Temporary Loosening", "Traffic / Flooding Again", "Compaction Again", "More Tillage"],
@@ -81,15 +81,15 @@ export const bedGeometry = {
     { label: "Furrow bottom", value: "approximately 8 inches" },
     { label: "Furrow depth", value: "approximately 8 inches" },
   ],
-  centralNote: "The central area between two tractor-wheel furrows is a 42-inch bed — not an 18-inch strip.",
+  centralNote: "The central area between two tractor-wheel furrows is a 42-inch bed, not an 18-inch strip.",
 };
 
 export const adaptiveDimensions = {
-  title: "Dimensions Are a Reference Architecture — Not a Universal Law",
+  title: "Dimensions Are a Reference Architecture, Not a Universal Law",
   intro: "The standard architecture was developed around commonly used tractors of approximately 55–75 HP, two-wheel-drive, with roughly a 60-inch rear wheel-centre spacing and approximately 13-inch tyre width.",
   purpose: "This geometry allows tractor tyres to remain in the permanent furrows while the biological bed remains protected.",
   guardrail: "42 inches and 18 inches are not universal dimensions for every machine or region. For tractors with different wheel tracks, tyre widths, implements or cropping requirements, bed and furrow dimensions must be recalculated.",
-  governingPrinciple: "Tractor tyres must travel in the permanent traffic corridors — not across the protected biological bed.",
+  governingPrinciple: "Tractor tyres must travel in the permanent traffic corridors, not across the protected biological bed.",
   closing: "Biological protection is the constant. Dimensions are adapted to achieve it.",
 };
 
@@ -113,8 +113,8 @@ export const waterWithoutInundation = {
   intro: "Water is supplied through the furrows. It must not flood across the bed.",
   pathways: ["infiltration", "capillary pathways", "pore networks", "root channels", "biologically developed structure"],
   objective: { moist: "Moist + aerated soil", not: "Saturated / inundated soil" },
-  ballTest: "The soil ball test is the operational field diagnostic: take a handful of soil from the root zone — if it forms a cohesive ball, moisture is sufficient; if it crumbles, external water may be needed.",
-  applicationNote: "Where appropriate, irrigation may be applied slowly to approximately half furrow height rather than flooding the beds — soil condition determines the irrigation decision, not a universal fixed prescription.",
+  ballTest: "The soil ball test is the operational field diagnostic: take a handful of soil from the root zone, if it forms a cohesive ball, moisture is sufficient; if it crumbles, external water may be needed.",
+  applicationNote: "Where appropriate, irrigation may be applied slowly to approximately half furrow height rather than flooding the beds: soil condition determines the irrigation decision, not a universal fixed prescription.",
   linkLabel: "Continue with Water Science",
   linkHref: "/science/water",
 };
@@ -122,12 +122,12 @@ export const waterWithoutInundation = {
 export const waterWashTransition = {
   title: "Water Wash During Transition",
   body: "Where inherited salinity, accumulated salts or previous chemical management require correction, PQNK conversion includes a water-wash step. Where soil pH exceeds approximately 8, sulfuric acid has historically been used at approximately 8 kg per acre, added with that same water wash.",
-  guardrails: ["This is a transition practice, not a recurring production input.", "It is context-dependent, applied only where field diagnosis indicates the need — not a universal prescription for every field."],
+  guardrails: ["This is a transition practice, not a recurring production input.", "It is context-dependent, applied only where field diagnosis indicates the need, not a universal prescription for every field."],
 };
 
 export const establishCover = {
   title: "Establish Biological Cover",
-  body: "After the physical architecture is established, biological protection begins — typically with a cover crop such as Jantar (Sesbania) or another suitable species.",
+  body: "After the physical architecture is established, biological protection begins: typically with a cover crop such as Jantar (Sesbania) or another suitable species.",
   purposeIntro: "The purpose is not merely to grow biomass. The cover crop helps:",
   purposes: ["establish roots", "occupy biological space", "create channels", "support microorganisms", "protect soil from solar heating", "reduce direct evaporation", "build organic surface cover"],
   terminationNote: { roots: "Roots stay in the soil.", top: "Top growth becomes mulch." },
@@ -135,7 +135,7 @@ export const establishCover = {
 };
 
 export const retainRootsmulch = {
-  title: "Retain Roots — Mulch the Top",
+  title: "Retain Roots: Mulch the Top",
   below: { label: "Below ground", body: "roots, root channels, exudate pathways, microbial associations" },
   above: { label: "Above ground", body: "crop residue that becomes protective organic cover" },
   statement: "PQNK harvest removes the economic product while preserving as much biological infrastructure as possible. The next crop inherits the architecture of the previous crop.",
@@ -157,7 +157,7 @@ export const harvestWithoutResetting = {
   title: "Harvest Without Resetting the System",
   intro: "Harvest is not the end of the production architecture. After harvest:",
   remains: ["permanent beds remain", "furrows remain", "roots remain", "residue remains or is appropriately managed as mulch", "controlled traffic remains", "soil structure remains", "biological continuity remains"],
-  closing: "The next crop is planted into the same protected architecture — crop after crop, and where agronomically appropriate, crop-in-crop, without rebuilding the soil each season.",
+  closing: "The next crop is planted into the same protected architecture: crop after crop, and where agronomically appropriate, crop-in-crop, without rebuilding the soil each season.",
 };
 
 export interface HabitatPrinciple {
@@ -196,7 +196,7 @@ export const operatorDiscipline = {
   intro: "Architecture alone cannot protect the system if operators ignore it.",
   responsibilities: ["permanent wheel lanes", "correct tractor alignment", "planter alignment", "hydraulic depth control", "avoiding unnecessary steering across beds", "residue handling", "maintaining permanent geometry"],
   terminology: "PQNK Production Architecture describes this responsibility directly: the operator is the gunman.",
-  explanation: "Precision machinery achieves nothing on its own. Its value is realized only through the precision of the person operating it — the same engineered geometry can be protected or destroyed depending on whether the operator holds the line, pass after pass.",
+  explanation: "Precision machinery achieves nothing on its own. Its value is realized only through the precision of the person operating it: the same engineered geometry can be protected or destroyed depending on whether the operator holds the line, pass after pass.",
 };
 
 export const productionManager = {
@@ -209,7 +209,7 @@ export const productionManager = {
 export const conversionSequence = [
   { step: "Farm Design", body: "Design fields for efficient operation and, where relevant, the longest practical runs." },
   { step: "Diagnose Hardpan", body: "Dig the soil pit and identify the restrictive layer." },
-  { step: "Shatter the Restriction", body: "Set depth according to the actual soil profile — approximately 22 inches is typical under average diagnosed conditions, deeper if required." },
+  { step: "Shatter the Restriction", body: "Set depth according to the actual soil profile: approximately 22 inches is typical under average diagnosed conditions, deeper if required." },
   { step: "Water Wash Where Required", body: "Address inherited salt/chemical conditions according to diagnosis." },
   { step: "Build Permanent Raised Beds and Furrows", body: "Separate the biological production zone from traffic and hydraulic corridors." },
   { step: "Establish Cover Crop", body: "Jantar/Sesbania or a suitable alternative." },

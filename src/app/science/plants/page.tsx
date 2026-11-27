@@ -40,7 +40,7 @@ import {
 } from "@/lib/content/sciencePlants";
 
 export const metadata: Metadata = buildMetadata({
-  title: "PQNK Plant Science — The Biological Production Engine | Pedaver",
+  title: "PQNK Plant Science: The Biological Production Engine | Pedaver",
   description:
     "Why the plant is an active biological engineer, not a passive recipient of inputs: photosynthesis, roots, the rhizosphere, mycorrhizae, nutrient acquisition and how plant metabolism connects production to food composition.",
   path: "/science/plants",

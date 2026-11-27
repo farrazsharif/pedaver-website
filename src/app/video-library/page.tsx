@@ -6,7 +6,7 @@ import VideoBrowser from "@/components/VideoBrowser";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Video Library — PQNK Farmer Lectures & Field Guidance",
+  title: "Video Library: PQNK Farmer Lectures & Field Guidance",
   description:
     "A topic-organized library of Urdu-language PQNK lectures and field guidance videos, covering land types, crops, machinery, and irrigation.",
   path: "/video-library",

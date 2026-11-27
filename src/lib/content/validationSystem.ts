@@ -37,10 +37,10 @@ export const validationSections: VSection[] = [
       {
         type: "bullets",
         items: [
-          "Beyond process certification — it evaluates outcome, not just adherence to a set of practices",
-          "Focused on measurable outcomes — every claim is backed by an indicator that can be recorded and checked",
-          "Science-based — evaluation methods are built on laboratory measurement, field observation, and peer-reviewed research",
-          "Holistic and integrated — the farm is assessed as one system, not a set of unrelated checklists",
+          "Beyond process certification: it evaluates outcome, not just adherence to a set of practices",
+          "Focused on measurable outcomes: every claim is backed by an indicator that can be recorded and checked",
+          "Science-based: evaluation methods are built on laboratory measurement, field observation, and peer-reviewed research",
+          "Holistic and integrated: the farm is assessed as one system, not a set of unrelated checklists",
           "Beneficial to farmers, consumers, the environment, and society together, not to any one of them at the expense of the others",
         ],
       },
@@ -75,7 +75,7 @@ export const validationSections: VSection[] = [
           "Controlled traffic and crop residue retention",
           "Soil biological activity and Soil Moisture Management (SMM)",
           "Machinery compliance and sound production management",
-          "Elimination of synthetic agrochemical inputs — no synthetic fertilizer, pesticide, or herbicide use",
+          "Elimination of synthetic agrochemical inputs: no synthetic fertilizer, pesticide, or herbicide use",
         ],
       },
       {

@@ -14,13 +14,13 @@ export interface FounderGalleryEra {
 export const founderGallery: FounderGalleryEra[] = [
   {
     era: "Origins",
-    note: "The founding decades — from imported machinery to the first PQNK field year.",
+    note: "The founding decades, from imported machinery to the first PQNK field year.",
     photos: [
       {
         slug: "sugarcane-1977",
         image: "/images/founder/sugarcane_1977.jpg",
         date: "1977",
-        caption: "Harvesting sugarcane with the operational team — the earliest record in Pedaver's archive.",
+        caption: "Harvesting sugarcane with the operational team: the earliest record in Pedaver's archive.",
       },
       {
         slug: "ford-tractors",

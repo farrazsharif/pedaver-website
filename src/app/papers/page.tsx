@@ -6,7 +6,7 @@ import { buildMetadata, SITE_URL } from "@/lib/seo";
 import PapersBrowser from "./PapersBrowser";
 
 export const metadata = buildMetadata({
-  title: "Knowledge Papers — The Research Behind PQNK",
+  title: "Knowledge Papers: The Research Behind PQNK",
   description:
     "In-depth research papers behind PQNK: the science, the engineering, and the field evidence, published regularly as our work develops.",
   path: "/papers",
@@ -20,7 +20,7 @@ export default function PapersPage() {
   const collectionJsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Knowledge Papers — The Research Behind PQNK",
+    name: "Knowledge Papers: The Research Behind PQNK",
     url: `${SITE_URL}/papers`,
     isPartOf: { "@id": `${SITE_URL}/#organization` },
     mainEntity: {

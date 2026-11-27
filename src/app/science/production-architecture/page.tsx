@@ -45,7 +45,7 @@ import {
 } from "@/lib/content/scienceProductionArchitecture";
 
 export const metadata: Metadata = buildMetadata({
-  title: "PQNK Production Architecture — Engineering the Permanent Biological Field | Pedaver",
+  title: "PQNK Production Architecture: Engineering the Permanent Biological Field | Pedaver",
   description:
     "How PQNK physically separates the protected biological production zone from permanent traffic and hydraulic corridors: soil-pit diagnosis, hardpan correction, permanent bed/furrow geometry, controlled traffic, and precision no-till planting.",
   path: "/science/production-architecture",
@@ -372,7 +372,7 @@ export default function ScienceProductionArchitecturePage() {
             {precisionPlanting.machines.map((m) => (
               <div key={m.name} className="rounded-xl border border-border bg-card p-5">
                 <p className="font-bold text-primary-dark">
-                  {m.name} — {m.full}
+                  {m.name}: {m.full}
                 </p>
                 <p className="mt-2 text-sm text-ink-soft">{m.body}</p>
               </div>

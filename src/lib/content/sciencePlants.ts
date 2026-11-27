@@ -7,7 +7,7 @@
 
 export const hero = {
   eyebrow: "PQNK Science · Plants",
-  title: "Plants — The Biological Production Engine",
+  title: "Plants: The Biological Production Engine",
   body: [
     "Agriculture commonly treats the plant as the final recipient of production inputs: seed is planted, fertilizer supplies nutrients, irrigation supplies water, and crop protection keeps the plant alive until harvest.",
     "PQNK sees the plant differently. The plant captures energy, carbon, water and nutrients, interacts with soil biology, and ultimately builds both the harvested produce and part of the biological infrastructure supporting future crops.",
@@ -29,7 +29,7 @@ export const plantMass = {
       { value: "~4%", label: "nitrogen" },
       { value: "~0.083%", label: "geological minerals" },
     ],
-    note: "These are PQNK's own working figures, not independently verified textbook constants — presented here as the established formulation, not as a universal law.",
+    note: "These are PQNK's own working figures, not independently verified textbook constants: presented here as the established formulation, not as a universal law.",
   },
   paperLinkLabel: "Unlocking the Secrets of the Soil: Deep Topsoil and Nature's Partnership",
   paperLinkHref: "/papers/unlocking-the-secrets-of-the-soil-deep-topsoil",
@@ -56,7 +56,7 @@ export const twoWorlds = {
 export const roots = {
   title: "Roots Are Not Drinking Straws",
   body: "Roots do much more than absorb water and fertilizer. They explore soil, penetrate pores, create channels, release organic compounds, interact with microorganisms and fungi, alter their immediate chemical environment, and influence the rhizosphere around them.",
-  retentionNote: "When roots die naturally and remain in the soil, their channels become part of the architecture available to subsequent crops — this is why PQNK retains roots after a crop's productive role is complete.",
+  retentionNote: "When roots die naturally and remain in the soil, their channels become part of the architecture available to subsequent crops: this is why PQNK retains roots after a crop's productive role is complete.",
   proposition: "PQNK retains roots because yesterday's root system becomes part of tomorrow's soil system.",
 };
 
@@ -69,7 +69,7 @@ export const exudates = {
 
 export const rhizosphere = {
   title: "The Rhizosphere",
-  body: "The rhizosphere is the biologically active interface influenced by living roots — a zone of interaction among roots, microorganisms, fungi, water, gases, organic compounds and mineral surfaces.",
+  body: "The rhizosphere is the biologically active interface influenced by living roots: a zone of interaction among roots, microorganisms, fungi, water, gases, organic compounds and mineral surfaces.",
   proposition: "The plant does not feed from soil alone. It feeds through a living soil–root system.",
 };
 
@@ -100,7 +100,7 @@ export const proportion = {
 
 export const nutrientDenseFood = {
   title: "From Nutrient Availability to Nutrient-Dense and Diverse Food",
-  intro: "Yield is only one outcome of plant metabolism. Plants manufacture complex compounds including carbohydrates, proteins, oils, pigments, vitamins, aromatic compounds, phenolics and other primary and secondary metabolites — food composition is not determined by nitrogen, phosphorus and potassium alone.",
+  intro: "Yield is only one outcome of plant metabolism. Plants manufacture complex compounds including carbohydrates, proteins, oils, pigments, vitamins, aromatic compounds, phenolics and other primary and secondary metabolites: food composition is not determined by nitrogen, phosphorus and potassium alone.",
   chain: [
     "Living Soil",
     "Biological Nutrient Cycling",
@@ -118,7 +118,7 @@ export const densityVsDiversity = {
   title: "Nutrient Density and Nutrient Diversity Are Different",
   density: { name: "Nutrient density", body: "The concentration of particular nutrients or beneficial compounds within harvested produce." },
   diversity: { name: "Nutrient diversity", body: "The breadth of nutrients and biochemical compounds represented in that food." },
-  body: "PQNK seeks a biological production environment capable of supporting both — but no PQNK crop should be assumed automatically superior on either measure without actual measurement.",
+  body: "PQNK seeks a biological production environment capable of supporting both, but no PQNK crop should be assumed automatically superior on either measure without actual measurement.",
   evidenceChain: ["Science explains the mechanism.", "Evidence demonstrates the field outcome.", "PQNK Validation measures the produce."],
   validationLinkLabel: "PQNK Validation",
   validationLinkHref: "/validation",
@@ -129,19 +129,19 @@ export const notFertilizer = {
   fertilization: { name: "Fertilization", body: "External application of selected nutrients." },
   plantNutrition: { name: "Plant nutrition", body: "The larger biological process through which plants acquire and use the elements required for metabolism." },
   proposition: "PQNK's objective is not simply fertilizer elimination. It is restoration of biological nutrient acquisition.",
-  closing: "Fertilizer dependence should disappear because biological function has recovered — not because nutrients have somehow ceased to be necessary.",
+  closing: "Fertilizer dependence should disappear because biological function has recovered, not because nutrients have somehow ceased to be necessary.",
 };
 
 export const nitrogen = {
   title: "Nitrogen: An Atmospheric Resource Entering Biology",
   body: "The atmosphere holds an enormous reservoir of nitrogen, but most plants cannot directly use atmospheric molecular nitrogen. It must enter biologically available pathways, including biological nitrogen fixation involving microorganisms.",
   approvedFormulation: "The atmosphere is the ultimate nitrogen reservoir; biology provides pathways through which atmospheric nitrogen can enter the soil–plant nutrient cycle.",
-  closing: "Living roots, biodiversity, biological cover and a protected habitat all support this cycling — without every nitrogen requirement being automatically met on every field.",
+  closing: "Living roots, biodiversity, biological cover and a protected habitat all support this cycling, without every nitrogen requirement being automatically met on every field.",
 };
 
 export const waterTransport = {
   title: "Water Is the Transport Medium",
-  body: "Nutrient acquisition cannot be separated from water: dissolved mineral ions move toward and into the root system through it. Roots require both water and air — flooding may provide abundant water while restricting oxygen, and dry soil may hold abundant mineral reserves while limiting the water that would carry them toward roots.",
+  body: "Nutrient acquisition cannot be separated from water: dissolved mineral ions move toward and into the root system through it. Roots require both water and air, flooding may provide abundant water while restricting oxygen, and dry soil may hold abundant mineral reserves while limiting the water that would carry them toward roots.",
   requirement: "A functioning water–air–root relationship is the requirement.",
   resourceLinkLabel: "Soil Moisture Management (SMM)",
   resourceLinkHref: "/resources/moisture-based-irrigation",
@@ -154,12 +154,12 @@ export const transpiration = {
     left: "Total plant water use",
     right: "Externally supplied irrigation water",
   },
-  precisionNote: "Where water-saving concepts are mentioned, the correct phrasing is a reduction in externally supplied irrigation water — not loose shorthand like \"90% less water,\" which conflates the two.",
+  precisionNote: "Where water-saving concepts are mentioned, the correct phrasing is a reduction in externally supplied irrigation water, not loose shorthand like \"90% less water,\" which conflates the two.",
 };
 
 export const waterCycleParticipation = {
   title: "Plants Participate in the Water Cycle",
-  body: "Productive vegetation is part of the land–atmosphere water system: plants move water into the atmosphere through transpiration, and vegetated, biologically covered surfaces interact with solar radiation differently from bare, overheated soil — affecting field microclimate and atmospheric moisture.",
+  body: "Productive vegetation is part of the land–atmosphere water system: plants move water into the atmosphere through transpiration, and vegetated, biologically covered surfaces interact with solar radiation differently from bare, overheated soil, affecting field microclimate and atmospheric moisture.",
   pointerNote: "The fuller mechanics of this belong to future Science treatments of Water and Climate.",
 };
 
@@ -173,12 +173,12 @@ export const residue = {
   title: "Crop Residue Is the Next Generation's Resource",
   body: "PQNK's harvest philosophy is consistent: harvest the desired produce, retain roots, retain appropriate above-ground biomass as mulch. That retained material protects soil, moderates temperature, restricts evaporation and feeds decomposition and biology.",
   flow: ["Crop", "Roots & Residue", "Soil Biology", "Next Crop"],
-  closedLoopNote: "This connects directly to the Sustained Closed Loop State — which, as established on the Transition page, does not mean nothing ever enters or leaves the system.",
+  closedLoopNote: "This connects directly to the Sustained Closed Loop State, which, as established on the Transition page, does not mean nothing ever enters or leaves the system.",
 };
 
 export const cropAfterCrop = {
   title: "Crop After Crop, Combinations and Crop-in-Crop",
-  body: "PQNK seeks continuing biological continuity: living roots, ongoing photosynthesis, carbon transfer, soil cover, biological habitat and biodiversity — through crop-after-crop production, crop combinations, and crop-in-crop arrangements where appropriate.",
+  body: "PQNK seeks continuing biological continuity: living roots, ongoing photosynthesis, carbon transfer, soil cover, biological habitat and biodiversity, through crop-after-crop production, crop combinations, and crop-in-crop arrangements where appropriate.",
   caveat: "This is not an instruction toward maximum plant crowding. Species, spacing, timing and combinations remain field adaptations.",
   closing: "Science is universal. Application is local.",
 };
@@ -191,7 +191,7 @@ export const biodiversityProtection = {
 
 export const plantHealth = {
   title: "Plant Health Is a System Outcome",
-  body: "Leaf colour, growth, rooting, flowering, fruit formation, disease expression, wilting and maturity all provide information about a plant — but observation alone is not automatically a diagnosis.",
+  body: "Leaf colour, growth, rooting, flowering, fruit formation, disease expression, wilting and maturity all provide information about a plant, but observation alone is not automatically a diagnosis.",
   wiltingIntro: "Wilting may be the first observation when the Production Manager walks through a plantation. That observation prompts investigation: root-zone soil moisture is then checked using the soil ball test.",
   wiltingCauses: "The test helps determine whether irrigation is actually required, or whether wilting may instead result from high temperature, low humidity, wind, temporary transpiration demand exceeding root water transfer, natural maturity, or another plant or system condition.",
   sequence: [
@@ -222,7 +222,7 @@ export const scienceApplication = {
 };
 
 export const soilPlantReciprocity = {
-  title: "Plants Do Not Replace Soil — And Soil Does Not Replace Plants",
+  title: "Plants Do Not Replace Soil, And Soil Does Not Replace Plants",
   body: "Without functioning soil, roots lose biological habitat. Without living plants, soil loses a major source of freshly fixed carbon, root activity and biological stimulation.",
   relationship: { left: "Soil builds the conditions for Plants.", right: "Plants build the conditions for Soil." },
   closing: "Neither can be restored independently for long.",

@@ -6,7 +6,7 @@ import SectionViewTracker from "@/components/analytics/SectionViewTracker";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "PQNK Machines — Hardpan Breaking, Permanent Raised Beds & SIPP/VIPP Planters",
+  title: "PQNK Machines: Hardpan Breaking, Permanent Raised Beds & SIPP/VIPP Planters",
   description:
     "The engineering behind PQNK: why breaking the hardpan matters, how permanent raised beds are built to last, and how the SIPP and VIPP planters plant directly through thick organic mulch.",
   path: "/machines",
@@ -16,7 +16,7 @@ const CATEGORIES: { key: Machine["category"]; title: string; note: string }[] = 
   {
     key: "transition",
     title: "One-Time / Transition Engineering",
-    note: "Used once, to correct inherited damage and establish permanent farm architecture — not repeated season after season.",
+    note: "Used once, to correct inherited damage and establish permanent farm architecture, not repeated season after season.",
   },
   {
     key: "periodic",
@@ -52,7 +52,7 @@ export default function MachinesPage() {
   const collectionJsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "PQNK Machines — Hardpan Breaking, Permanent Raised Beds & SIPP/VIPP Planters",
+    name: "PQNK Machines: Hardpan Breaking, Permanent Raised Beds & SIPP/VIPP Planters",
     url: `${SITE_URL}/machines`,
     isPartOf: { "@id": `${SITE_URL}/#organization` },
     mainEntity: {

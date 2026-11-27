@@ -9,7 +9,7 @@ import { buildMetadata } from "@/lib/seo";
 // the page (no floating chat button on other pages, author's decision), plus WhatsApp and a link to
 // write to a person. Endpoint and WhatsApp link live in src/lib/content/askPqnk.ts.
 export const metadata = buildMetadata({
-  title: "Ask PQNK — Questions Answered from the PQNK Knowledge",
+  title: "Ask PQNK: Questions Answered from the PQNK Knowledge",
   description:
     "Ask any question about PQNK for your crop, soil, water or farm. Answers come from the PQNK book, Knowledge Papers and field evidence published on pedaver.com.",
   path: "/ask",

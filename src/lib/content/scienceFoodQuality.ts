@@ -77,11 +77,11 @@ export const reproductiveDevelopment = {
   title: "Reproductive Development and Grain Filling",
   inputs: ["Healthy Root System", "Functional Leaves", "Adequate Water", "Balanced Nutrition", "Functional Biology"],
   chain: ["Photosynthesis and Assimilate Production", "Flowering / Pollination", "Grain Filling", "Mature Kernel"],
-  body: "Harvested grain represents the result of reproductive development and translocation of plant-produced compounds into the seed — the mechanism behind field observations such as better grain filling, without implying universal nutritional superiority.",
+  body: "Harvested grain represents the result of reproductive development and translocation of plant-produced compounds into the seed: the mechanism behind field observations such as better grain filling, without implying universal nutritional superiority.",
 };
 
 export const riceExample = {
-  title: "PQNK Rice — A Food-Quality Case Example",
+  title: "PQNK Rice: A Food-Quality Case Example",
   intro: "PQNK field experience has reported characteristics including better-filled grains, greater kernel proportion, lower breakage during processing, and improved aroma/taste observations.",
   guardrail: "These are not presented as universal guarantees.",
   levels: [
@@ -103,7 +103,7 @@ export const tasteAroma = {
 };
 
 export const colourShine = {
-  title: "Colour and Shine — Signals, Not Proof",
+  title: "Colour and Shine: Signals, Not Proof",
   body: "Colour, shine and visual integrity can be useful observable indicators of produce condition.",
   statement: "Appearance is not laboratory proof of nutrition.",
   guardrail: "Nutrient density is not inferred from colour or shine alone.",
@@ -116,7 +116,7 @@ export const weightDensity = {
 };
 
 export const shelfLife = {
-  title: "Shelf Life — A Measurable Post-Harvest Outcome",
+  title: "Shelf Life: A Measurable Post-Harvest Outcome",
   body: "Harvested produce remains biological material. Its deterioration can be influenced by respiration, water loss, microbial activity, tissue integrity, maturity, temperature, humidity, handling and storage conditions.",
   fieldNote: "PQNK field experience may report improved keeping quality in some crops, but comparative shelf-life claims require controlled comparison.",
   chain: ["Harvest", "Storage Under Defined Conditions", "Periodic Measurement", "Weight Loss / Firmness / Visual Deterioration / Spoilage", "Comparative Shelf-Life Result"],
@@ -124,7 +124,7 @@ export const shelfLife = {
 };
 
 export const residues = {
-  title: "Chemical Residues — Separate From Nutrition",
+  title: "Chemical Residues: Separate From Nutrition",
   statement: "Nutritional quality is not the same thing as residue status.",
   bodyOne: "A food can have strong nutritional composition while still containing an undesirable pesticide residue.",
   bodyTwo: "Absence of detectable pesticide residues does not itself prove superior nutritional composition.",
@@ -153,7 +153,7 @@ export const maturity = {
   title: "Biological and Physiological Maturity",
   body: "Food harvested at different physiological stages can differ in composition, moisture, flavour, texture, storage behaviour and processing performance.",
   statement: "Food quality depends not only on how a crop grows but also on when and how it is harvested.",
-  guardrail: "Later harvest is not always better — crop-specific appropriate maturity is the governing concept.",
+  guardrail: "Later harvest is not always better: crop-specific appropriate maturity is the governing concept.",
 };
 
 export const foodQualityChain = {
@@ -177,11 +177,11 @@ export const foodQualityChain = {
 };
 
 export const validationLevels = {
-  title: "PQNK Validation — Where Observation Becomes Evidence",
+  title: "PQNK Validation, Where Observation Becomes Evidence",
   levels: [
-    { name: "Level 1 — Observable Produce Characteristics", items: ["colour and shine", "aroma", "texture", "grain filling", "physical integrity", "visible deterioration"] },
-    { name: "Level 2 — Measurable Performance", items: ["unit weight", "shelf life", "weight loss", "milling recovery", "broken grain", "processing behaviour", "crop-specific physical measurements"] },
-    { name: "Level 3 — Laboratory Evidence", items: ["nutrient composition", "relevant phytochemical analysis where justified", "pesticide residues", "contaminants", "aflatoxin or other relevant food-safety parameters"] },
+    { name: "Level 1: Observable Produce Characteristics", items: ["colour and shine", "aroma", "texture", "grain filling", "physical integrity", "visible deterioration"] },
+    { name: "Level 2: Measurable Performance", items: ["unit weight", "shelf life", "weight loss", "milling recovery", "broken grain", "processing behaviour", "crop-specific physical measurements"] },
+    { name: "Level 3: Laboratory Evidence", items: ["nutrient composition", "relevant phytochemical analysis where justified", "pesticide residues", "contaminants", "aflatoxin or other relevant food-safety parameters"] },
   ],
   guardrail: "Level 1 observations do not prove Level 3 nutritional outcomes.",
   linkLabel: "Continue with PQNK Validation",

@@ -5,7 +5,7 @@ import TrackedExternalChannelLink from "@/components/analytics/TrackedExternalCh
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Contact Pedaver — Get in Touch About PQNK",
+  title: "Contact Pedaver: Get in Touch About PQNK",
   description:
     "Have a question about PQNK for your crop, region or farm size? Reach Pedaver by email or WhatsApp.",
   path: "/contact",
@@ -46,25 +46,25 @@ export default function ContactPage() {
                   label="Facebook"
                   className="hover:text-primary"
                 >
-                  Facebook — facebook.com/Pedaver
+                  Facebook: facebook.com/Pedaver
                 </TrackedExternalChannelLink>
               </li>
               <li>
                 <TrackedExternalChannelLink
                   href="https://www.youtube.com/@pedaverpqnk3167/videos"
-                  label="YouTube — PedaVer PQNK"
+                  label="YouTube: PedaVer PQNK"
                   className="hover:text-primary"
                 >
-                  YouTube — PedaVer PQNK
+                  YouTube: PedaVer PQNK
                 </TrackedExternalChannelLink>
               </li>
               <li>
                 <TrackedExternalChannelLink
                   href="https://www.youtube.com/@aasifsharif"
-                  label="YouTube — Asif Sharif"
+                  label="YouTube: Asif Sharif"
                   className="hover:text-primary"
                 >
-                  YouTube — Asif Sharif
+                  YouTube: Asif Sharif
                 </TrackedExternalChannelLink>
               </li>
             </ul>

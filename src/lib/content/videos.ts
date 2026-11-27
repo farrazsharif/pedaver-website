@@ -47,7 +47,7 @@ export const founderChannel = {
 export const workshopVideos: ExternalVideoEntry[] = [
   {
     videoId: "95R-Ah83lI0",
-    title: "Sahiwal Farmers Workshop — PQNK Old & New Farmers",
+    title: "Sahiwal Farmers Workshop: PQNK Old & New Farmers",
     sourceName: "YouTube",
     sourceUrl: "https://www.youtube.com/watch?v=95R-Ah83lI0",
     description:
@@ -58,7 +58,7 @@ export const workshopVideos: ExternalVideoEntry[] = [
 export const videos: VideoEntry[] = [
   {
     videoId: "T03n8FqZ-eg",
-    title: "PQNK — The Natural Ecosystem Science of Production Agriculture (Story Book, V2)",
+    title: "PQNK: The Natural Ecosystem Science of Production Agriculture (Story Book, V2)",
     channel: "official",
   },
   {
@@ -77,7 +77,7 @@ export const videos: VideoEntry[] = [
   },
   {
     videoId: "bpmGRdrccH4",
-    title: "PQNK — The Natural Ecosystem Science of Production Agriculture (Story Book)",
+    title: "PQNK: The Natural Ecosystem Science of Production Agriculture (Story Book)",
     channel: "founder",
   },
   {
@@ -85,7 +85,7 @@ export const videos: VideoEntry[] = [
     title: "Advanced Canopy Management: Plant \"Topping\" for Energy Diversion",
     channel: "founder",
     description:
-      "Part of PQNK's \"Four Directives\" for guiding a plant's own energy allocation — topping (removing the growing tip) releases apical dominance and redirects the plant's energy from vertical growth into branching, fruiting, and root development.",
+      "Part of PQNK's \"Four Directives\" for guiding a plant's own energy allocation, topping (removing the growing tip) releases apical dominance and redirects the plant's energy from vertical growth into branching, fruiting, and root development.",
   },
   {
     videoId: "Z6fKpGgyRuI",

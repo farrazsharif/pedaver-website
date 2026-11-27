@@ -8,7 +8,7 @@ const pageDescription =
   "Pedaver is the independent knowledge, research and validation institution behind PQNK, the natural ecosystem science of production agriculture, field-tested across Pakistan and built to apply across soils, climates, crops and scales.";
 
 export const metadata = buildMetadata({
-  title: "About Pedaver — The Institution Behind PQNK",
+  title: "About Pedaver: The Institution Behind PQNK",
   description: pageDescription,
   path: "/about",
 });

@@ -33,7 +33,7 @@ export default function ContactForm({
     e.preventDefault();
     trackEnquirySubmitIntent(trackingId);
     const subject = encodeURIComponent(`${subjectPrefix} from ${name || "a visitor"}`);
-    const body = encodeURIComponent(`${message}\n\n— ${name}\n${email}`);
+    const body = encodeURIComponent(`${message}\n\nFrom: ${name}\n${email}`);
     window.location.href = `mailto:pedaver@gmail.com?subject=${subject}&body=${body}`;
   }
 

@@ -7,7 +7,7 @@
 
 export const hero = {
   eyebrow: "PQNK Science · Nutrition",
-  title: "Nutrition — From Mineral Presence to Biological Availability",
+  title: "Nutrition, From Mineral Presence to Biological Availability",
   body: [
     "Agriculture commonly equates plant nutrition with fertilizer application: identify a deficiency, apply the corresponding product, repeat on a schedule.",
     "PQNK draws a sharper distinction. Plant nutrition is the full biological process through which nutrients become present, accessible, transported, absorbed and metabolically useful. Fertilizer is only one possible external means of supplying selected nutrients within that larger process.",
@@ -20,7 +20,7 @@ export const biologicalProcess = {
   title: "Plant Nutrition Is a Biological Process",
   body: [
     "Plant nutrition is not a delivery event. It is a continuous biological process spanning mineral presence in the soil, biological transformation, transport through water, root absorption, internal transport, and metabolic use within the plant.",
-    "Fertilizer application is one intervention within that process — a way of supplying selected nutrients externally. It is not a substitute for the process itself.",
+    "Fertilizer application is one intervention within that process: a way of supplying selected nutrients externally. It is not a substitute for the process itself.",
   ],
 };
 
@@ -46,7 +46,7 @@ export const presenceVsAvailability = {
 
 export const mineralReservoir = {
   title: "Soil Is a Mineral Reservoir, Not an Empty Container",
-  body: "Geological soil contains mineral reserves. Soil is not a simple empty nutrient container requiring permanent refilling — but nutrients do leave the field in harvested produce, and reserves are not infinite in every location.",
+  body: "Geological soil contains mineral reserves. Soil is not a simple empty nutrient container requiring permanent refilling, but nutrients do leave the field in harvested produce, and reserves are not infinite in every location.",
   statement: "The challenge is often access, not merely total quantity.",
   restoreList: ["roots", "microorganisms", "fungal networks", "water movement", "soil architecture", "biological cycling"],
   objective: "PQNK seeks to restore these so that geological reserves can become part of the plant's working environment.",
@@ -63,7 +63,7 @@ export const rootsAcquisition = {
   title: "Roots Are Active Nutrient-Acquisition Organs",
   intro: "The plant does not simply eat fertilizer placed in the soil. Roots actively explore soil, grow toward resources, branch, contact mineral surfaces, alter the rhizosphere, release exudates and form biological associations.",
   statement: "Root architecture determines how much of the soil's nutrient reservoir becomes part of the plant's working environment.",
-  restrictionNote: "Restricted roots mean reduced nutrient access — a consequence of compaction, hardpan, poor aeration, inundation or damaged soil structure, not only of low fertilizer supply.",
+  restrictionNote: "Restricted roots mean reduced nutrient access: a consequence of compaction, hardpan, poor aeration, inundation or damaged soil structure, not only of low fertilizer supply.",
 };
 
 export const rhizosphereExchange = {
@@ -101,7 +101,7 @@ export const microbialTransformation = {
   formulation: "Repeated agrochemical dependence can simplify or disrupt the biological habitat and relationships upon which nutrient cycling depends.",
   whyWeedsHeading: "Why Weedicides Matter Especially in PQNK's System View",
   whyWeedsBody: "Weeds and spontaneous vegetation are themselves part of biological occupation. When herbicide removes living vegetation, it can simultaneously remove photosynthesis, living roots, root exudation, rhizosphere habitat, surface cover, biodiversity and biological succession.",
-  biodiversityLinkLabel: "Continue with Biodiversity Science — Weeds as Nature's Rescue Workers",
+  biodiversityLinkLabel: "Continue with Biodiversity Science: Weeds as Nature's Rescue Workers",
   biodiversityLinkHref: "/science/biodiversity",
   questionContrast: {
     conventional: "What chemical controls the weed?",
@@ -176,7 +176,7 @@ export const proportionAndDemand = {
 };
 
 export const deficiencySymptom = {
-  title: "Nutritional Deficiency Is a Symptom — Not Automatically a Fertilizer Prescription",
+  title: "Nutritional Deficiency Is a Symptom, Not Automatically a Fertilizer Prescription",
   intro: "When deficiency is observed, the Production Manager investigates possible causes before prescribing a response.",
   causes: ["actual nutrient shortage", "restricted roots", "waterlogging", "dryness", "poor aeration", "weak biology", "incomplete cover-crop transition", "limited rooting volume", "environmental stress"],
   sequence: [
@@ -238,7 +238,7 @@ export const acquisitionToMetabolism = {
 };
 
 export const plantManufacturesFood = {
-  title: "The Plant Manufactures Food — Fertilizer Does Not",
+  title: "The Plant Manufactures Food: Fertilizer Does Not",
   body: "Fertilizer may supply selected mineral elements. The plant manufactures carbohydrates, proteins, oils, vitamins, pigments, phenolics, aromatic compounds and other metabolites.",
   environment: "Sunlight + Carbon + Water + Oxygen + Nutrient Elements + Biological Function",
 };
@@ -265,7 +265,7 @@ export const nutritionCausalChain = {
     "Nutrient-Dense & Diverse Produce",
   ],
   evidenceChain: ["Science", "Evidence", "Validation"],
-  boundaryNote: "This is a biological hypothesis and mechanism leading toward a measurable outcome — not an automatically proven result in every case.",
+  boundaryNote: "This is a biological hypothesis and mechanism leading toward a measurable outcome, not an automatically proven result in every case.",
 };
 
 export const scienceEvidenceValidation = {
@@ -382,7 +382,7 @@ export const livingNutritionLoop = {
 };
 
 export const closingProposition = {
-  intro: "Conventional agriculture answered a real biological need — nutrient supply — largely by treating fertilizer as the primary mechanism, rather than one supporting tool within a living system.",
+  intro: "Conventional agriculture answered a real biological need, nutrient supply, largely by treating fertilizer as the primary mechanism, rather than one supporting tool within a living system.",
   body: [
     "Roots explore and negotiate with soil biology.",
     "Microorganisms and fungi transform and transport what roots alone cannot reach.",
@@ -390,5 +390,5 @@ export const closingProposition = {
     "Biodiversity broadens the pathways available for acquisition.",
     "Photosynthesis funds the biological economy that makes all of this possible.",
   ],
-  finalProposition: "Plant nutrition is not a fertilizer problem. It is a living-system function — and PQNK's objective is to restore the system that performs it.",
+  finalProposition: "Plant nutrition is not a fertilizer problem. It is a living-system function, and PQNK's objective is to restore the system that performs it.",
 };

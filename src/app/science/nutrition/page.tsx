@@ -55,7 +55,7 @@ import {
 } from "@/lib/content/scienceNutrition";
 
 export const metadata: Metadata = buildMetadata({
-  title: "PQNK Nutrition Science — From Mineral Presence to Biological Availability | Pedaver",
+  title: "PQNK Nutrition Science, From Mineral Presence to Biological Availability | Pedaver",
   description:
     "Why plant nutrition is a biological process rather than a fertilizer program: nutrient presence vs. availability, roots and rhizosphere, microbial and fungal transformation, agrochemical effects on soil biology, and the causal chain from living soil to nutrient-dense produce.",
   path: "/science/nutrition",
@@ -664,7 +664,7 @@ export default function ScienceNutritionPage() {
       {/* SCIENCE VS APPLICATION */}
       <Section muted>
         <div className="mx-auto max-w-3xl">
-          <h2 className="text-center text-2xl font-bold text-primary-dark sm:text-3xl">Science Is Universal — Application Is Local</h2>
+          <h2 className="text-center text-2xl font-bold text-primary-dark sm:text-3xl">Science Is Universal: Application Is Local</h2>
           <div className="mt-8">
             <ScienceApplicationNote science={scienceApplication.science} application={scienceApplication.application} />
           </div>

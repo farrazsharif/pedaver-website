@@ -6,10 +6,10 @@
 
 export const hero = {
   eyebrow: "PQNK Science · Climate",
-  title: "Climate — Restoring the Climate Function of Living Land",
+  title: "Climate: Restoring the Climate Function of Living Land",
   body: [
     "Agricultural climate discussion commonly narrows to atmospheric carbon accounting: what farming emits, and how to offset it.",
-    "PQNK approaches climate differently. Agricultural land is part of the Earth's climate-moderation system — its surface partitions solar energy, moves water, cycles carbon and exchanges heat with the atmosphere every day, whether or not anyone is counting emissions.",
+    "PQNK approaches climate differently. Agricultural land is part of the Earth's climate-moderation system: its surface partitions solar energy, moves water, cycles carbon and exchanges heat with the atmosphere every day, whether or not anyone is counting emissions.",
   ],
   callout: "Agricultural land is part of the Earth's climate-moderation system.",
 };
@@ -44,14 +44,14 @@ export const landSurfaceOpening = {
       "Evaporative/Transpirational Cooling + Photosynthesis + Biological Function",
     ],
   } as ChainPair,
-  scopeNote: "Agricultural land alone does not control global climate — this comparison describes the land-surface energy pathway that PQNK changes.",
+  scopeNote: "Agricultural land alone does not control global climate: this comparison describes the land-surface energy pathway that PQNK changes.",
 };
 
 export const soilTemperature = {
-  title: "Soil Temperature — The First Climate Boundary",
+  title: "Soil Temperature: The First Climate Boundary",
   observation: "Under hot summer conditions where ambient air temperatures reach approximately 45–50°C, exposed bare agricultural soil can exceed 70°C.",
   reduction: "Maintaining the soil under adequate organic mulch can reduce soil-surface temperature by approximately 30°C relative to exposed bare soil under these conditions.",
-  labelNote: "This ~30°C figure is presented as the expected PQNK field-scale cooling magnitude under such extreme summer conditions — not a literal constant irrespective of conditions.",
+  labelNote: "This ~30°C figure is presented as the expected PQNK field-scale cooling magnitude under such extreme summer conditions, not a literal constant irrespective of conditions.",
   bare: {
     label: "Bare Soil",
     chain: ["Direct Solar Radiation", "Intense Surface Heating", "Extreme Soil Temperature", "Accelerated Direct Evaporation", "Biological Stress", "Greater Sensible-Heat Transfer"],
@@ -110,7 +110,7 @@ export const waterEnergyCycle = {
 };
 
 export const infiltrationUsableWater = {
-  title: "Infiltration — Rainfall Is Not the Same as Usable Water",
+  title: "Infiltration: Rainfall Is Not the Same as Usable Water",
   intro: "The amount of rain falling on a hectare does not tell us how much water becomes biologically useful.",
   pathways: ["infiltrate", "run off", "evaporate directly", "remain temporarily stored", "move deeper into the profile", "become available to roots", "return through transpiration"],
   supportFactors: ["organic mulch", "undisturbed soil structure", "root channels", "soil organisms", "aggregates and pores"],
@@ -118,7 +118,7 @@ export const infiltrationUsableWater = {
 };
 
 export const rainfallVolume = {
-  title: "Rainfall Volume — Making the Scale Understandable",
+  title: "Rainfall Volume: Making the Scale Understandable",
   reference: "1 mm of rainfall over 1 acre ≈ 4,047 litres of water.",
   formula: "Rainfall Water (litres) = Rainfall (mm) × Area (acres) × 4,047",
   guardrail: "Rainfall volume is not equivalent to plant-available water. What matters is what happens after the rain reaches the land surface.",
@@ -178,7 +178,7 @@ export const bareVsLiving = {
 };
 
 export const photosynthesisEntry = {
-  title: "Photosynthesis — The Solar-Energy Entry Point",
+  title: "Photosynthesis: The Solar-Energy Entry Point",
   chain: ["Atmospheric CO₂ + Water + Solar Energy", "Photosynthesis", "Plant Biomass", "Roots + Residues + Exudates", "Soil Organisms", "Soil Organic Matter / Biological Carbon Cycling"],
   functionsIntro: "Living vegetation therefore performs several functions simultaneously:",
   functions: ["captures carbon", "converts solar energy", "builds biomass", "feeds soil organisms", "supports soil structure", "drives transpiration", "shades/protects the soil", "participates in water cycling"],
@@ -198,7 +198,7 @@ export const carbonSystem = {
 };
 
 export const forestsAgriculture = {
-  title: "Forests and Agriculture — Correcting a Conceptual Error",
+  title: "Forests and Agriculture: Correcting a Conceptual Error",
   body: "Forests and crops both use photosynthesis. The biological carbon-capture mechanism is not exclusive to forests.",
   difference: "The major difference is how the ecosystem is managed after carbon enters biological material.",
   forestRetainsIntro: "A forest generally retains:",

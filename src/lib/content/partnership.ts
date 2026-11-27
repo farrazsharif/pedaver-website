@@ -41,7 +41,7 @@ export const partnershipSections: PartnershipSection[] = [
     heading: "PQNK: A Unified Response to Interconnected Challenges",
     blocks: [
       p(
-        "PQNK® — Paedar Qudratti Nizam Kashatkari — is the science of managing production agriculture as a functioning natural ecosystem."
+        "PQNK® (Paedar Qudratti Nizam Kashatkari) is the science of managing production agriculture as a functioning natural ecosystem."
       ),
       p(
         "Rather than treating degraded soil, water scarcity, climate stress, pest pressure, declining nutrition and farmer poverty as isolated issues, PQNK addresses their common biological and structural causes."

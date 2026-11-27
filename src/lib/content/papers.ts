@@ -121,7 +121,7 @@ export const papers: Paper[] = [
     ],
     keyTakeaways: [
       "Short, fast-warming subcontinental springs push conventional wheat into premature ripening and shriveled grain; PQNK is framed as a direct countermeasure to this specific climate stress.",
-      "Five interlocking soil conditions drive longer crop lifespan under PQNK: no hardpan, ~30% water-filled soil pores, organic mulch cover, active soil biology, and balanced nutrient supply — restoration outcomes of PQNK's four governing principles, not additional principles themselves.",
+      "Five interlocking soil conditions drive longer crop lifespan under PQNK: no hardpan, ~30% water-filled soil pores, organic mulch cover, active soil biology, and balanced nutrient supply, restoration outcomes of PQNK's four governing principles, not additional principles themselves.",
       "Mulch keeps soil temperature below roughly 30°C, preventing root-level heat stress during hot spells.",
       "A larger, deeper root network gives the plant the absorption capacity to meet spiking evaporation demand without wilting.",
       "Analogous regenerative systems show 15-25% yield gains under stress conditions, attributed to root health and water-use efficiency.",
@@ -169,9 +169,9 @@ export const papers: Paper[] = [
     abstract: [
       "Pakistan's sugar industry has run the same operational model for over four decades: an annual cycle of overproduction that depresses farmer prices, followed by underproduction that leaves mills scrambling for cane. Farmers face delayed payments, under-weighed produce, and disrespectful treatment, discouraging cultivation; mills then pay high costs to truck cane in from hundreds of miles away, degrading quality en route and inflating operating expenses. The end-consumer absorbs the cost through inflated sugar prices. The paper identifies the root failure as mills neglecting their immediate agricultural geography.",
       "PQNK is proposed as a structural fix rather than an efficiency tweak: concentrated, high-yield, organic sugarcane cultivation within a 10-15 km radius of the mill, turning farmers from supplicants into economic partners. A head-to-head comparison shows PQNK cutting soil preparation cost in half, seed requirement from 150 to 5 maunds, and eliminating fertilizer and weedicide spend entirely, while lifting maximum yield from 1,000 to 3,000 maunds per acre and sugar content from 9% to 11-13%. Critically, PQNK also extends the harvesting window from five months (November-March) to eight months (October-May).",
-      "The paper's per-acre economic model for a PQNK cane plot — 5,000 plants, 10 canes per plant, 2 kg average cane weight — yields 100,000 kg (2,500 maunds) per acre, generating gross income of roughly PKR 875,000 and net profit near PKR 745,000 after approximately PKR 130,000 in expenditure. For the mill, the benefits compound: an 8-10 month operating season instead of 6, sugar recovery rates up by as much as 40% thanks to fresher, higher-sucrose cane, and dramatically lower costs from eliminating long-distance transport.",
+      "The paper's per-acre economic model for a PQNK cane plot (5,000 plants, 10 canes per plant, 2 kg average cane weight) yields 100,000 kg (2,500 maunds) per acre, generating gross income of roughly PKR 875,000 and net profit near PKR 745,000 after approximately PKR 130,000 in expenditure. For the mill, the benefits compound: an 8-10 month operating season instead of 6, sugar recovery rates up by as much as 40% thanks to fresher, higher-sucrose cane, and dramatically lower costs from eliminating long-distance transport.",
       "At the national and consumer level, the paper argues concentrated PQNK sourcing zones would stabilize sugar prices through consistent supply, protect soil health and water tables by eliminating chemical fertilizer and pesticide use, cut irrigation water use by up to 80%, and stimulate rural economies through a thriving, profitable farming base tied directly to each mill.",
-      "The paper closes with a four-part call to action: pilot PQNK adoption within 10-15 km radii of participating mills, mill-led farmer education and facilitation, government policy support and regulatory incentives for mills that adopt regenerative sourcing, and a wider knowledge-dissemination campaign to bring stakeholders — government, mill boards, and farmer associations — to the table.",
+      "The paper closes with a four-part call to action: pilot PQNK adoption within 10-15 km radii of participating mills, mill-led farmer education and facilitation, government policy support and regulatory incentives for mills that adopt regenerative sourcing, and a wider knowledge-dissemination campaign to bring stakeholders (government, mill boards, and farmer associations) to the table.",
     ],
     keyTakeaways: [
       "PQNK sugarcane lifts maximum yield from 1,000 to 3,000 maunds/acre and sugar content from 9% to 11-13%.",
@@ -193,8 +193,8 @@ export const papers: Paper[] = [
     publishedDate: "2026-07-25",
     pdfPath: "/papers/pqnk-paradigm-shift-for-climate-resilient-rice-cultivation.pdf",
     abstract: [
-      "Pakistan's rice sector, and its Basmati export trade in particular, faces three compounding pressures. Importing countries are tightening limits on agrochemical residues and mycotoxins such as aflatoxins, and conventional flooded systems consistently fail to meet them, causing costly rejections and reputational damage. Conventional cultivation also uses roughly 5,000 liters of water per kilogram of rice produced, an unsustainable draw in a water-scarce country. And continuously flooded paddies are a major source of methane, a gas over 25 times more potent than CO2, estimated to account for around 12% of global methane emissions — with the common fix, Alternate Wetting and Drying, risking a swap into nitrous oxide, a gas roughly 300 times more potent than CO2.",
-      "PQNK's response is framed as a return to how rice actually grows in nature: no floodplain provides continuous standing water, only monsoons, dew, and groundwater moving through porous, root-bound, hardpan-free soil. Practically, this took the form of an evolving system — starting with a dry-soil transplanter placing seedlings into water-filled pits, then evolving to the current method: Direct Seeded Rice (DSR) on permanent raised beds covered in organic mulch carried over from the prior crop's residue, with five precise rows spaced 8 inches apart on 42-inch beds achieving a plant density of about 65,000 per acre.",
+      "Pakistan's rice sector, and its Basmati export trade in particular, faces three compounding pressures. Importing countries are tightening limits on agrochemical residues and mycotoxins such as aflatoxins, and conventional flooded systems consistently fail to meet them, causing costly rejections and reputational damage. Conventional cultivation also uses roughly 5,000 liters of water per kilogram of rice produced, an unsustainable draw in a water-scarce country. And continuously flooded paddies are a major source of methane, a gas over 25 times more potent than CO2, estimated to account for around 12% of global methane emissions, with the common fix, Alternate Wetting and Drying, risking a swap into nitrous oxide, a gas roughly 300 times more potent than CO2.",
+      "PQNK's response is framed as a return to how rice actually grows in nature: no floodplain provides continuous standing water, only monsoons, dew, and groundwater moving through porous, root-bound, hardpan-free soil. Practically, this took the form of an evolving system, starting with a dry-soil transplanter placing seedlings into water-filled pits, then evolving to the current method: Direct Seeded Rice (DSR) on permanent raised beds covered in organic mulch carried over from the prior crop's residue, with five precise rows spaced 8 inches apart on 42-inch beds achieving a plant density of about 65,000 per acre.",
       "The system layers four principles: observing and emulating nature's non-flooded hydrology; treating water as a precious input rather than a default weed-suppression tool; managing soil as a living system through aeration and organic matter rather than mechanical weeding or intensive tillage; and precision plant geometry over blanket application, so each plant gets calibrated access to light, air, and nutrients.",
       "Quantified against conventional flooded rice, PQNK is credited with cutting water use by over 90% (from roughly 5,000 L/kg to about 321 L/kg), eliminating herbicide, pesticide, and fertilizer residues that cause export rejections, eliminating methane production from anaerobic flooding without triggering a nitrous oxide trade-off, and reducing input costs enough to materially raise farmer margins. The paper also generalizes the underlying principle beyond rice, citing a reduction in sugarcane's water footprint from 2,284 L/kg of sugar to just 156 L/kg under the same logic.",
       "The paper closes by pointing to PQNK-style water-saving rice adoption already underway in agriculturally advanced nations such as Israel, Korea, and China, and calls on the Government of Pakistan, research institutions, exporters, and farmers to pursue a national transition strategy built on shifting subsidies from water and chemical inputs toward bed-formation and precision-planting equipment, farmer training and demonstration farms, and a certified 'PQNK Basmati' export brand.",
@@ -222,9 +222,9 @@ export const papers: Paper[] = [
     abstract: [
       "Garlic and onion cultivation has long been constrained by a cluster of interconnected problems: manual hoeing for weeding and bed formation runs into a chronic labour shortage, which in turn shrinks the viable cultivation area as labour becomes scarcer and more expensive; reliance on synthetic fertilizers, weedicides, fungicides, and pesticides drives up cost and environmental footprint; and conventionally grown bulbs carry higher water content, leading to significant weight loss and spoilage in storage. Together these have created a persistent supply-demand gap that many countries fill through imports.",
       "PQNK's intervention rests on four pillars. First, planting geometry shifts from flat fields to raised beds, a change the paper calls simple but revolutionary because it allows at least four times more cloves to be planted per acre. Second, a thick layer of organic mulch applied after planting suppresses weeds without hoeing or chemical weedicides, conserves soil moisture by cutting evaporation, and enriches the soil with organic matter as it decomposes. Third, water is applied precisely through furrows between the raised beds rather than broadcast, reaching the root zone efficiently with minimal waste. Fourth, and most striking, is a 'minimal intervention' philosophy: farmers are reported producing up to 300 maunds (12,000 kg) per acre of high-quality Dessi garlic without synthetic fertilizer, weedicides, fungicides, pesticides, or further hoeing.",
-      "The yield and quality outcomes follow directly from that model: 250-300 maunds per acre of superior, lower-water-content bulbs with minimal storage weight loss and significantly extended shelf life versus conventional produce. At a conservative 250 maunds (10,000 kg) per acre and a minimum wholesale price of Rs. 100/kg, gross revenue reaches roughly Rs. 1,000,000 per acre, with minimal input costs pushing net profit past a million rupees on some farms for a six-month crop — a scale of return the paper describes as fundamentally changing farmer livelihoods.",
+      "The yield and quality outcomes follow directly from that model: 250-300 maunds per acre of superior, lower-water-content bulbs with minimal storage weight loss and significantly extended shelf life versus conventional produce. At a conservative 250 maunds (10,000 kg) per acre and a minimum wholesale price of Rs. 100/kg, gross revenue reaches roughly Rs. 1,000,000 per acre, with minimal input costs pushing net profit past a million rupees on some farms for a six-month crop: a scale of return the paper describes as fundamentally changing farmer livelihoods.",
       "Beyond the farm gate, the paper frames PQNK garlic and onion as exceeding organic certification standards by virtue of its natural-production, agro-ecology-rebuilding approach, giving it a distinct premium market position. At the national level, it credits PQNK-driven domestic production increases with already reducing garlic import volumes within a few years, and positions consistent PQNK quality as a strong candidate for future export markets and foreign-exchange generation.",
-      "The paper closes by tying these threads together: PQNK increases production efficiency through optimized geometry and precise irrigation, restores agricultural sustainability by removing chemical dependence, boosts farmer profitability by collapsing costs while lifting output value, and strengthens national food security through import substitution with a path toward exports — contingent on continued policy support, farmer training, access to specialized PQNK machinery, and market linkage initiatives.",
+      "The paper closes by tying these threads together: PQNK increases production efficiency through optimized geometry and precise irrigation, restores agricultural sustainability by removing chemical dependence, boosts farmer profitability by collapsing costs while lifting output value, and strengthens national food security through import substitution with a path toward exports, contingent on continued policy support, farmer training, access to specialized PQNK machinery, and market linkage initiatives.",
     ],
     keyTakeaways: [
       "Switching from flat fields to PQNK raised beds allows at least four times more garlic cloves to be planted per acre.",
@@ -250,7 +250,7 @@ export const papers: Paper[] = [
       "Citrus and mango orchards have been in steady decline for over 30 years under industrial management. Input costs have risen sharply even as yields fall, nutrition density in key varieties such as Kinnow has declined by as much as 60%, affecting taste, market value, and health benefit, and mounting farmer distress has led to widespread orchard abandonment and uprooting. The paper traces this crisis to specific, identifiable practices: excessive irrigation that destroys soil structure and depletes oxygen, tillage implements such as spring tine cultivators that create a compacted hardpan restricting root growth and water infiltration, and bare, chemically dependent soil that erodes biodiversity and destroys the soil microbiome.",
       "PQNK is presented not as a theoretical alternative but as a field-validated recovery method, anchored by two documented cases. At the Sujjahabad Mango Research Station, an orchard facing imminent collapse was converted to PQNK management and showed remarkable recovery within a few months. A more systematic comparison from Toba Tek Singh set conventional and PQNK Kinnow orchards side by side, generating the paper's core quantitative evidence.",
       "That comparison shows PQNK orchards operating at significantly lower annual cost per acre than the conventional PKR 80,000-200,000 range, with markedly lower disease pressure requiring far less chemical intervention. A-grade fruit yield rises from 40-50% under conventional management to 70-80% under PQNK, and net return per acre climbs from PKR 300,000-400,000 conventionally to a substantially higher PKR 500,000-800,000 under PQNK. Fruit quality metrics follow the same pattern: longer shelf life, dark green and healthy canopies versus stressed, prematurely ripening ones, and more uniform fruit maturity with better internal seed development.",
-      "On pest and soil management, the Toba Tek Singh data show near-zero fruit fly damage under PQNK versus severe infestations conventionally, with mealybugs controlled by robust natural predator populations such as ants rather than costly, low-result chemical sprays. PQNK orchards also show visible mycorrhizal fungi activity — mushrooms appearing after rain — as a direct sign of the biological soil health driving nutrient cycling and disease resistance. Rehabilitated orchards are reported recovering fully, while 5-year-old high-density PQNK orchards are on track to outperform conventional orchards 'by several multiples' once they reach full production in year six.",
+      "On pest and soil management, the Toba Tek Singh data show near-zero fruit fly damage under PQNK versus severe infestations conventionally, with mealybugs controlled by robust natural predator populations such as ants rather than costly, low-result chemical sprays. PQNK orchards also show visible mycorrhizal fungi activity, mushrooms appearing after rain, as a direct sign of the biological soil health driving nutrient cycling and disease resistance. Rehabilitated orchards are reported recovering fully, while 5-year-old high-density PQNK orchards are on track to outperform conventional orchards 'by several multiples' once they reach full production in year six.",
       "The paper concludes that the citrus and mango crisis is a direct consequence of broken agricultural ecosystems, not an inevitable feature of the crops themselves, and that the Sujjahabad and Toba Tek Singh evidence together make the case for widespread PQNK adoption as the path to environmental sustainability, economic prosperity through drastically lower costs and higher-value yield, and market leadership through nutrition-dense, long-shelf-life produce that surpasses organic standards.",
     ],
     keyTakeaways: [
@@ -305,7 +305,7 @@ export const papers: Paper[] = [
       "High-density planting (HDP) is a critical lever for improving yield and land-use efficiency in Kinnow mandarin (Citrus reticulata x Citrus sinensis) orchards, but the paper argues its full potential is only realized when rootstock genetics and soil ecology are designed together. It opens by reframing grafting itself: because Kinnow was bred as a hybrid for fruit quality rather than root performance, its own root system is unselected and often lacks the vigor, efficiency, and disease resistance needed under cultivation. Grafting, then, is not a correction for a defective plant but a strategic selection process that lets the orchardist impose specific, desirable traits onto the tree's foundation.",
       "For a PQNK high-density system planted at 8 ft. by 10 ft. spacing (1,089 plants per acre), the paramount desired trait is controlled canopy size, and the paper's comparative rootstock analysis identifies Flying Dragon Trifoliata as the definitive choice. Its genetic dwarfing is presented not as a weakness to be managed but as the very trait selected for: it maintains orchard geometry with minimal pruning effort, freeing the tree's energy for fruiting rather than vegetative sprawl, and keeping orchard size control biological rather than mechanical.",
       "That genetically controlled canopy is paired with a purpose-built below-ground environment: the field is laser-leveled and the historical hardpan shattered with a subsoiler for deep drainage; permanent raised beds are formed at 42 inches top width, 18-inch furrows, and 8 inches height; a diverse cover crop is grown and returned as surface mulch to start the soil life cycle without tillage; and grafted plants are set without soil disturbance, with the graft union kept well above the soil surface. The resulting root zone holds roughly 30% water-filled to 70% air-filled pore space, with microbes extracting a balanced nutrient spectrum and a competitive microbiome providing built-in disease suppression.",
-      "Two management protocols get particular emphasis. Water shoots (suckers) emerging below the graft union must be cut flush to the trunk with sharp secateurs to prevent the tree reverting toward its own weak root system. And the graft union itself must sit at least 4-6 inches above final soil grade — burying it risks scion rooting, which bypasses the dwarfing rootstock entirely and also raises the risk of Phytophthora Foot Rot. The paper also covers advisory cases: where Flying Dragon isn't available and a more vigorous rootstock like Cleopatra Mandarin or Carrizo Citrange must be substituted, intensive structural and maintenance pruning becomes mandatory to hold the high-density geometry; and it notes that own-rooted, non-hybrid citrus varieties such as lemon, lime, and certain local mandarins can thrive on their own roots specifically because the PQNK soil environment removes the waterlogging, compaction, and biological imbalance that would otherwise stress them.",
+      "Two management protocols get particular emphasis. Water shoots (suckers) emerging below the graft union must be cut flush to the trunk with sharp secateurs to prevent the tree reverting toward its own weak root system. And the graft union itself must sit at least 4-6 inches above final soil grade, burying it risks scion rooting, which bypasses the dwarfing rootstock entirely and also raises the risk of Phytophthora Foot Rot. The paper also covers advisory cases: where Flying Dragon isn't available and a more vigorous rootstock like Cleopatra Mandarin or Carrizo Citrange must be substituted, intensive structural and maintenance pruning becomes mandatory to hold the high-density geometry; and it notes that own-rooted, non-hybrid citrus varieties such as lemon, lime, and certain local mandarins can thrive on their own roots specifically because the PQNK soil environment removes the waterlogging, compaction, and biological imbalance that would otherwise stress them.",
       "The paper's overall argument is one of synergy: the dwarfing rootstock supplies the biological form (a naturally small tree), while the PQNK raised-bed habitat supplies the function (effortless nutrient cycling, moisture regulation, and disease protection) that lets that form actually perform. Neither element alone, the paper argues, delivers the sustainability, resilience, profitability, and orchard longevity that the combination achieves.",
     ],
     keyTakeaways: [
@@ -330,15 +330,15 @@ export const papers: Paper[] = [
     pdfPath: "/papers/the-future-of-potato-cultivation-through-pqnk.pdf",
     heroImage: "/images/crops/potato-mulched-raised-beds.jpg",
     abstract: [
-      "The paper opens with a diagnostic image: soil that feels dead, lifeless, and inert in the hand is the signature of a collapsed system. Conventional 'Ancient Conventional Industrial' (ACI) potato farming produces exactly this, through compacted earth that repels water rather than absorbing it, plants left susceptible to disease, chemical runoff, and tubers that are often tasteless, less nutritious, carry chemical residues, and store poorly. PQNK's founding premise is the opposite: that soil is a living, breathing organism whose original design — teeming with microbial life, rich in organic matter, properly moist and aerated, buffered against temperature extremes — must be restored before the plant can reach its genetic potential.",
-      "The paper grounds its argument in potato physiology. Tuber initiation and bulking depend on soil temperature in the 13°C-26°C range, consistent moisture, and day length; under vigorous PQNK growth, farmers use a technique called 'vine pressing' 25-30 days after germination, gently pressing vines with a plank or roller to signal the plant to stop vegetative expansion and begin tuber bulking. Potatoes also need a well-aerated root zone for tuber expansion (compacted soil stunts growth) and a steady nutrient supply rather than the boom-and-bust dosing typical of synthetic fertilizer. The paper describes a healthy source-sink relationship, where photosynthesizing vines (the source) fuel tuber development (the sink), a flow easily disrupted by heat, frost, or drought stress. It also details the soil microbiology underpinning all of this: mycorrhizal fungi extending root uptake of water and phosphorus, and beneficial bacteria fixing nitrogen and solubilizing minerals — biology that ACI practices destroy and PQNK actively cultivates.",
+      "The paper opens with a diagnostic image: soil that feels dead, lifeless, and inert in the hand is the signature of a collapsed system. Conventional 'Ancient Conventional Industrial' (ACI) potato farming produces exactly this, through compacted earth that repels water rather than absorbing it, plants left susceptible to disease, chemical runoff, and tubers that are often tasteless, less nutritious, carry chemical residues, and store poorly. PQNK's founding premise is the opposite: that soil is a living, breathing organism whose original design (teeming with microbial life, rich in organic matter, properly moist and aerated, buffered against temperature extremes) must be restored before the plant can reach its genetic potential.",
+      "The paper grounds its argument in potato physiology. Tuber initiation and bulking depend on soil temperature in the 13°C-26°C range, consistent moisture, and day length; under vigorous PQNK growth, farmers use a technique called 'vine pressing' 25-30 days after germination, gently pressing vines with a plank or roller to signal the plant to stop vegetative expansion and begin tuber bulking. Potatoes also need a well-aerated root zone for tuber expansion (compacted soil stunts growth) and a steady nutrient supply rather than the boom-and-bust dosing typical of synthetic fertilizer. The paper describes a healthy source-sink relationship, where photosynthesizing vines (the source) fuel tuber development (the sink), a flow easily disrupted by heat, frost, or drought stress. It also details the soil microbiology underpinning all of this: mycorrhizal fungi extending root uptake of water and phosphorus, and beneficial bacteria fixing nitrogen and solubilizing minerals, biology that ACI practices destroy and PQNK actively cultivates.",
       "On economics, ACI potato production carries heavy recurring costs: roughly 1,500 kg of seed per acre, 3-6 bags of fertilizer, 10-15 cultivation passes, and ongoing chemical spend, capping yield near 14 tonnes per acre. PQNK shifts the cost structure toward one-time or periodic investment in organic mulch and bed establishment rather than annual chemical purchases, while a denser stand of roughly 50,000 healthier plants, a longer growing window, and better growing conditions push past the ACI yield ceiling with tubers that are more flavorful, chemical-residue-free, and longer-storing due to mineral density and stronger skins. The paper frames PQNK's biggest economic advantage as risk reduction: buffering against heat, cold, and drought de-risks farming from climate variability, and freedom from volatile fertilizer and pesticide markets further stabilizes farm income, while PQNK's stable soil environment even opens the door to near-perennial, staggered production that lets farmers sell fresh potatoes year-round at off-season premium prices.",
       "A year-by-year transition pathway is laid out for farmers moving off ACI. In year one: level the field with minimal disturbance while breaking the ACI-era hardpan for deep root growth and infiltration; form permanent 42-inch-wide raised beds; grow cover crops (legumes for nitrogen, deep-rooted species to break compaction) to restore organic matter and kickstart microbial life; plant the first potato crop under a thick organic mulch layer; and monitor closely, supplementing inputs only if an extreme situation demands it. From year one onward, the soil becomes a self-sustaining, largely closed-loop ecosystem, with management shifting to maintaining mulch, rotating crops on the permanent beds, and observing the natural balance as yields stabilize high and costs stay low.",
-      "The paper concludes that ACI agriculture is a high-risk, degenerative dead end, that Global Best Practices offer real but incomplete improvement while remaining input-dependent, and that PQNK represents the necessary evolution toward a resilient, profitable, ecologically sound system — a shift from dominating nature to collaborating with it. It urges farmers, extension officers, and policymakers to start the transition on a small portion of land and let the results speak for themselves.",
+      "The paper concludes that ACI agriculture is a high-risk, degenerative dead end, that Global Best Practices offer real but incomplete improvement while remaining input-dependent, and that PQNK represents the necessary evolution toward a resilient, profitable, ecologically sound system: a shift from dominating nature to collaborating with it. It urges farmers, extension officers, and policymakers to start the transition on a small portion of land and let the results speak for themselves.",
     ],
     keyTakeaways: [
       "ACI potato farming caps out near a 14 tonne/acre yield ceiling; PQNK is positioned to break through it via roughly 50,000 healthier plants per acre and a longer growing window.",
-      "'Vine pressing' 25-30 days after germination — gently pressing vines with a plank or roller — signals the plant to shift energy from vegetative growth into tuber bulking.",
+      "'Vine pressing' 25-30 days after germination, gently pressing vines with a plank or roller, signals the plant to shift energy from vegetative growth into tuber bulking.",
       "PQNK shifts costs from recurring annual chemical inputs (1,500 kg seed, 3-6 fertilizer bags, 10-15 cultivations under ACI) to one-time or periodic mulch and bed investment.",
       "PQNK's stable soil environment opens the door to near-perennial, staggered production, letting farmers sell fresh potatoes year-round at off-season premium prices.",
       "PQNK-grown tubers are described as more flavorful, chemical-residue-free, and longer-storing due to mineral density and stronger skins.",
@@ -919,11 +919,11 @@ export const papers: Paper[] = [
       "The paper is explicit that none of this contradicts PQNK: a damaged ecosystem needs rehabilitation before it can become self-regulating, and every intervention it describes is triggered by field observation, not a calendar, and is expected to shrink toward zero as the soil takes over. Its closing argument is that the biological transition period is not a weakness in PQNK but evidence that living systems recover through progressive ecological succession rather than instantaneous change, and that a farmer who receives careful, minimal support during that recovery is far more likely to stay with the system than one who suffers an avoidable yield loss and abandons it.",
     ],
     keyTakeaways: [
-      "Core distinction: PQNK moves a field from soil system substitution (conventional inputs replacing lost biological functions) toward supplementation, and finally to a self-regulating biological ecosystem — engineering steps take days, biological recovery takes seasons.",
+      "Core distinction: PQNK moves a field from soil system substitution (conventional inputs replacing lost biological functions) toward supplementation, and finally to a self-regulating biological ecosystem, engineering steps take days, biological recovery takes seasons.",
       "Most transition-period problems come from incomplete implementation, not from a failure of PQNK principles: incomplete hardpan breaking, a weak Jantar cover crop, insufficient residue retention, premature disturbance, or poor Soil Moisture Management are the usual causes.",
-      "Where a genuine deficiency is visible, roughly 4 kg of NP fertilizer dissolved into furrow irrigation is the recommended temporary correction — small because PQNK's low irrigation volume concentrates it directly at the root zone; often just one application is enough.",
+      "Where a genuine deficiency is visible, roughly 4 kg of NP fertilizer dissolved into furrow irrigation is the recommended temporary correction: small because PQNK's low irrigation volume concentrates it directly at the root zone; often just one application is enough.",
       "Temporary herbicide use only when weeds threaten crop establishment, as an emergency measure that should shrink with each successive crop. There is no PQNK pesticide threshold: where every step is followed, pests stay below 2% and are gone within days; the 10% spray threshold belongs to ACI.",
-      "Every intervention described is triggered by field observation of actual symptoms, never by a fixed calendar — inputs are applied because deficiency, pest, or weed pressure is confirmed, not because a schedule says to.",
+      "Every intervention described is triggered by field observation of actual symptoms, never by a fixed calendar: inputs are applied because deficiency, pest, or weed pressure is confirmed, not because a schedule says to.",
       "Frames the transition period itself as evidence PQNK works as intended (living systems recover through ecological succession, not overnight), and argues that giving a struggling farmer minimal, well-targeted support prevents the yield loss that would otherwise cause them to abandon the system entirely.",
     ],
   },
@@ -1064,7 +1064,7 @@ export const papers: Paper[] = [
     kpNumber: 37,
     libraryDate: "2026-07-25",
     category: "Soil Science & PQNK System",
-    title: "The Healer's Dialogue: From Weed Signal to Soil Silence — A PQNK Pathway to Self-Regulating Abundance",
+    title: "The Healer's Dialogue: From Weed Signal to Soil Silence (A PQNK Pathway to Self-Regulating Abundance)",
     summary:
       "Responding to a farmer's question about using weeds as nutrient-deficiency indicators, this dialogue explains that in PQNK the goal isn't to manage weeds as permanent indicator crops, but to run a four-step protocol that resolves the soil problems they signal so the weeds voluntarily depart.",
     publishedDate: "2026-07-25",
@@ -1321,7 +1321,7 @@ export const papers: Paper[] = [
       "Colloids are never added artificially; PQNK instead creates the conditions (hardpan breaking, salt-leaching detox irrigation, permanent beds, living roots, mulch) for existing colloids to function correctly.",
       "Each major clay mineral gets a distinct, function-based approach: montmorillonite is stabilized with organic matter and calcium dominance to control swelling, kaolinite's low CEC is compensated biologically with humus, and vermiculite's strong potassium fixation is managed by avoiding 'potassium shock' via living roots.",
       "Humus is named the 'supreme colloid,' ranked above all clay minerals for its CEC, pH buffering, and role bonding clay particles into stable aggregates.",
-      "Summary principle: 'clay gives capacity, humus gives stability, biology gives intelligence' — without biology, clay is inert and nutrients stay locked regardless of mineral type.",
+      "Summary principle: 'clay gives capacity, humus gives stability, biology gives intelligence', without biology, clay is inert and nutrients stay locked regardless of mineral type.",
       "Argues chemical agriculture fills exchange sites temporarily while collapsing colloidal structure over time, whereas PQNK builds colloidal capacity and maintains exchange equilibrium.",
     ],
   },
@@ -1459,7 +1459,7 @@ export const papers: Paper[] = [
       "Introduces 'Hydrospheric Dysregulation' as the paper's preferred term for the underlying crisis: land too degraded to absorb, store, and cyclically release water.",
       "Loss of the soil's organic carbon sponge is estimated to reduce water-holding capacity by over 90% in many industrial agricultural landscapes.",
       "Proposes a parallel vocabulary ('semantic sovereignty') replacing 'climate change' and 'carbon footprint' with hydrology-centered terms like 'hydrospheric dysregulation' and 'water cycle footprint.'",
-      "PQNK's five restoration mechanisms are continuous living roots, no soil disturbance, permanent mulch armor, biological diversity, and integrated livestock grazing — applications of PQNK's four governing principles, not additional principles.",
+      "PQNK's five restoration mechanisms are continuous living roots, no soil disturbance, permanent mulch armor, biological diversity, and integrated livestock grazing: applications of PQNK's four governing principles, not additional principles.",
       "Calls for redirecting climate research and policy resources from carbon-centric frameworks toward land-based hydrological restoration.",
     ],
   },
@@ -1873,7 +1873,7 @@ export const papers: Paper[] = [
     libraryDate: "2026-07-25",
     category: "Plant Physiology & Production Systems",
     title:
-      "Knowledge Paper: The Plant as CEO — A PQNK Perspective on Biological Agency in Rhizobial Partnerships",
+      "Knowledge Paper: The Plant as CEO (A PQNK Perspective on Biological Agency in Rhizobial Partnerships)",
     summary:
       "Reading a 2018 transcriptomic study that found rhizobia activate over 2,400 rice genes, this paper argues the standard framing has the causality backwards: the plant is not colonized, it is informed, and it makes the decision. It develops a full 'plant as CEO' recruitment-interview analogy for how legumes and rice actively select, test, and hire their bacterial partners.",
     publishedDate: "2026-07-25",
@@ -1899,7 +1899,7 @@ export const papers: Paper[] = [
     kpNumber: 67,
     libraryDate: "2026-07-25",
     category: "Plant Physiology & Production Systems",
-    title: "What This Uprooted Wheat Plant Is Telling Us — Through the PQNK (\"picnic\") Lens",
+    title: "What This Uprooted Wheat Plant Is Telling Us, Through the PQNK (\"picnic\") Lens",
     summary:
       "A single stray wheat plant, pulled from the ground and photographed, becomes a full diagnostic reading of soil health in this short field note. Root structure, tillering, leaf color, and soil cling are each read as evidence the plant is in energy surplus rather than survival mode.",
     publishedDate: "2026-07-25",
@@ -2083,7 +2083,7 @@ export const papers: Paper[] = [
     kpNumber: 74,
     libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
-    title: "Knowledge Paper: The PQNK Imperative — Re-Mothering Our Agriculture through the Pristine Organic System",
+    title: "Knowledge Paper: The PQNK Imperative (Re-Mothering Our Agriculture through the Pristine Organic System)",
     summary:
       "This paper reframes a century of input-intensive farming as a severed relationship between plant and soil, using the metaphor of 'Soil as Mother' to argue that the Green Revolution orphaned crops by feeding them directly rather than nurturing the system that was designed to feed them. It closes with a policy agenda for 're-mothering' agriculture through machinery subsidies, farmer training, and GMO safeguards.",
     publishedDate: "2026-07-25",
@@ -2135,7 +2135,7 @@ export const papers: Paper[] = [
     kpNumber: 76,
     libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
-    title: "Knowledge Paper: Liberating Pakistan's Economy — The Unforgivable Neglect of the PQNK Revolution",
+    title: "Knowledge Paper: Liberating Pakistan's Economy (The Unforgivable Neglect of the PQNK Revolution)",
     summary:
       "An economic manifesto arguing that four decades of IMF- and World Bank-prescribed austerity have failed Pakistan because they address fiscal symptoms while ignoring the one lever that actually creates new value: farm productivity. It positions PQNK as the productivity shock capable of turning Pakistan's underused agricultural workforce into its greatest economic asset.",
     publishedDate: "2026-07-25",
@@ -2242,7 +2242,7 @@ export const papers: Paper[] = [
     kpNumber: 80,
     libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
-    title: "PQNK Knowledge Paper: The Universal Application of the PQNK Model — From Soil to Supper",
+    title: "PQNK Knowledge Paper: The Universal Application of the PQNK Model, From Soil to Supper",
     summary:
       "Responding to a Nigerian farmer's question about whether PQNK applies outside crop farming, this paper argues that because every link in the food chain, honey, eggs, milk, meat, or fish, ultimately traces back to plant nutrition, restoring plant health under PQNK automatically improves outcomes across poultry, aquaculture, dairy, and apiculture.",
     publishedDate: "2026-07-25",
@@ -2320,7 +2320,7 @@ export const papers: Paper[] = [
     kpNumber: 83,
     libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
-    title: "Knowledge Paper: PQNK — The Natural Ecosystem Science for Production Agriculture (Reviving the Self-Regulating Agroecosystem through Regenerative Principles)",
+    title: "Knowledge Paper: PQNK (The Natural Ecosystem Science for Production Agriculture (Reviving the Self-Regulating Agroecosystem through Regenerative Principles))",
     summary:
       "This paper reframes pests and diseases as 'scavengers of the weak' rather than enemies, and sets out a four-tier plant protection system, repellent biochemistry, antixenosis, induced systemic resistance, and predator recruitment, that it argues emerges automatically once the same four-step PQNK soil process used across the knowledge library is correctly executed.",
     modifiedDate: "2026-10-16",
@@ -2347,7 +2347,7 @@ export const papers: Paper[] = [
     kpNumber: 84,
     libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
-    title: "Knowledge Paper: Embracing PQNK — A Regenerative Paradigm for Sustainable Agriculture",
+    title: "Knowledge Paper: Embracing PQNK (A Regenerative Paradigm for Sustainable Agriculture)",
     summary:
       "This paper places PQNK at the top of a five-level hierarchy of farming methodologies and argues its defining break from every level below it is philosophical: replacing fear-based, preventive input application with observation-based, responsive management, a shift it says most practitioners complete within two crop cycles.",
     publishedDate: "2026-07-25",
@@ -2426,7 +2426,7 @@ export const papers: Paper[] = [
     kpNumber: 87,
     libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
-    title: "PQNK Foundational Document, Topic 1: The Organismic Paradigm — Quantum-Reading the Farm as a Unified Biological Field",
+    title: "PQNK Foundational Document, Topic 1: The Organismic Paradigm (Quantum-Reading the Farm as a Unified Biological Field)",
     summary:
       "The first in a foundational PQNK topic series proposes reading a farm not as an assembly of parts but as a coherent biological field, and trains the farmer to diagnose that field's coherence through five specific observable expressions, from leaf light reflection to predator-prey response lag, rather than through conventional soil chemistry alone.",
     publishedDate: "2026-07-25",
@@ -2452,7 +2452,7 @@ export const papers: Paper[] = [
     kpNumber: 88,
     libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
-    title: "PQNK Foundational Document, Topic 2: The Bio-Energetic Valuation Framework — Replacing Commodity Mass with Metabolic Currency",
+    title: "PQNK Foundational Document, Topic 2: The Bio-Energetic Valuation Framework (Replacing Commodity Mass with Metabolic Currency)",
     summary:
       "This paper proposes replacing weight-based food pricing with a two-part scoring system, a P.A.Y. score measuring a food's net usable cellular energy and an FSCS score certifying the health of the field that grew it, arguing this is the first economically honest price mechanism in agricultural history.",
     publishedDate: "2026-07-25",
@@ -2478,7 +2478,7 @@ export const papers: Paper[] = [
     kpNumber: 89,
     libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
-    title: "PQNK Foundational Document, Topic 4: The Economics of Resilience — A Detailed Cost-Benefit Analysis over a 2-5 Year Horizon",
+    title: "PQNK Foundational Document, Topic 4: The Economics of Resilience (A Detailed Cost-Benefit Analysis over a 2-5 Year Horizon)",
     summary:
       "This paper builds a two-pillar economic model, avoided conventional costs plus valued ecosystem services, to show PQNK generating a $300 to $865-plus per acre annual advantage over conventional farming by year four or five, arguing the transition should be understood as an investment in biological capital rather than an expense.",
     publishedDate: "2026-07-25",
@@ -2504,7 +2504,7 @@ export const papers: Paper[] = [
     kpNumber: 90,
     libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
-    title: "PQNK Foundational Document, Topic 13: The Autonomous Cycle — Planting and Harvesting in the Perfected System",
+    title: "PQNK Foundational Document, Topic 13: The Autonomous Cycle (Planting and Harvesting in the Perfected System)",
     summary:
       "This paper describes the end-state of a matured PQNK farm as a one-time ecological engineering project rather than an ongoing method, in which the only permitted human interventions become planting and harvesting, and lists the specific evidence, including a claimed zero yield response to added fertilizer, that proves a farm has reached this autonomous state.",
     publishedDate: "2026-07-25",
@@ -2530,7 +2530,7 @@ export const papers: Paper[] = [
     kpNumber: 91,
     libraryDate: "2026-07-25",
     category: "Nutrition & Food Quality",
-    title: "PQNK Foundational Document, Topic 14: The Expression of Genetic Blueprint — How PQNK's Restored Covenant Maximizes Phytochemical Density in Produce",
+    title: "PQNK Foundational Document, Topic 14: The Expression of Genetic Blueprint (How PQNK's Restored Covenant Maximizes Phytochemical Density in Produce)",
     summary:
       "This paper argues that a crop's flavor, aroma, and phytochemical richness are not additives but the automatic output of a fully expressed genetic blueprint, achievable only when an intact 'soil-plant covenant' lets the plant's microbial partners deliver nutrients on demand, and sets out three specific PQNK practices, light architecture, managed growth regulation, and cyclical harvest timing, that support that expression.",
     publishedDate: "2026-07-25",
@@ -2660,7 +2660,7 @@ export const papers: Paper[] = [
     kpNumber: 96,
     libraryDate: "2026-07-25",
     category: "Nutrition & Food Quality",
-    title: "Scientific Parameters Behind Shelf Life, Pest Attraction & Deterioration — A Pristine PQNK Perspective",
+    title: "Scientific Parameters Behind Shelf Life, Pest Attraction & Deterioration: A Pristine PQNK Perspective",
     summary:
       "A rapid-fire Q&A that argues certified organic and conventional chemical farming are functionally the same input-dependent system wearing different labels, both producing produce that spoils faster and attracts more pests than PQNK, and works through eight specific farmer questions on the measurable biology behind shelf life, pest attraction, and seed lineage.",
     publishedDate: "2026-07-25",
@@ -2712,7 +2712,7 @@ export const papers: Paper[] = [
     kpNumber: 98,
     libraryDate: "2026-07-25",
     category: "Workforce & Practice Advisories",
-    title: "PQNK Farming in Practice: Site-Specific Solutions for Regenerative Agriculture — Questions & Detailed Answers",
+    title: "PQNK Farming in Practice: Site-Specific Solutions for Regenerative Agriculture (Questions & Detailed Answers)",
     summary:
       "A practitioner's detailed field questions, on bed orientation, irrigation choice, land clearing, machine-hour budgets, and mulch selection, are answered directly, with the recurring caveat that most PQNK decisions are inherently site-specific and only become concrete once a farm's topography, water, climate, and objectives have been surveyed.",
     modifiedDate: "2026-10-16",
@@ -3041,7 +3041,7 @@ export const papers: Paper[] = [
     pdfPath: "/papers/why-conventional-rice-keeps-failing.pdf",
     heroImage: "/images/papers/sri-organic-rice-poster.jpg",
     heroImageCaption:
-      "SRI Organic Rice — a Process for Commercial Production. Innovations developed by Asif Sharif, CEO, FarmAll Technology Pvt Ltd, Lahore, Pakistan.",
+      "SRI Organic Rice: a Process for Commercial Production. Innovations developed by Asif Sharif, CEO, FarmAll Technology Pvt Ltd, Lahore, Pakistan.",
     videoFile: "/videos/pqnk-raised-bed-mechanism-explainer.mp4",
     abstract: [
       "The paper is framed as a direct answer to a farmer's question: what actually changes when rice is grown under PQNK instead of conventional flooded paddy? It traces every visible difference a farmer notices at harvest and at the mill back to root-zone conditions no flooded field can offer, and grounds the whole argument in the system's founding trial, published in the peer-reviewed journal Paddy and Water Environment in 2011, which measured 12.84 tonnes per hectare against a regional conventional average of 4.2, using seventy percent less irrigation water, before the fuller hardpan-fracture and permanent-mulch protocol described in this paper was even added.",
@@ -3246,7 +3246,7 @@ export const papers: Paper[] = [
     kpNumber: 117,
     libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
-    title: "PQNK — Nature's Algorithm for Abundant Food: From a Failing Industrial Model to a Permanent Natural System",
+    title: "PQNK: Nature's Algorithm for Abundant Food: From a Failing Industrial Model to a Permanent Natural System",
     summary:
       "A narrated overview asking why a century of tool and input innovation left agriculture in crisis, answering that the industry improved the wrong system, and describing how PQNK studies the operating principles nature has run for four hundred million years and translates them into a four-step transition farmers can implement directly.",
     publishedDate: "2026-07-25",
@@ -3323,7 +3323,7 @@ export const papers: Paper[] = [
     kpNumber: 120,
     libraryDate: "2026-07-25",
     category: "Nutrition & Food Quality",
-    title: "How PQNK Delivers the Highest Nutrition at the Lowest Cost — and Why This Paradox Is Your Real Power",
+    title: "How PQNK Delivers the Highest Nutrition at the Lowest Cost, and Why This Paradox Is Your Real Power",
     summary:
       "Answering a farmer's question about whether PQNK should adopt lab testing and certification, this advisory explains why nutrition and low cost rise together under PQNK rather than trading off, and proposes an outcome-based validation label and lab scorecard as the alternative to paperwork-heavy organic certification.",
     publishedDate: "2026-07-25",
@@ -3350,7 +3350,7 @@ export const papers: Paper[] = [
     libraryDate: "2026-07-25",
     category: "PQNK Philosophy, Framework & Economics",
     title:
-      "Knowledge Paper: The Looming Convergence of Oil and Food Crises — The Imperative for a Paradigm Shift toward PQNK",
+      "Knowledge Paper: The Looming Convergence of Oil and Food Crises (The Imperative for a Paradigm Shift toward PQNK)",
     summary:
       "Written against the backdrop of an escalating Middle East conflict and its spillover into global oil markets, this paper maps how deeply Pakistan's and India's food systems are structurally dependent on fossil fuel, from Haber-Bosch fertilizer to diesel-pumped irrigation, and argues PQNK is the only de-risking strategy that breaks the link entirely rather than subsidizing around it.",
     publishedDate: "2026-07-25",
@@ -3418,7 +3418,7 @@ export const papers: Paper[] = [
     ],
     keyTakeaways: [
       "PQNK recognizes three mulch types: live mulch (a living cover crop like clover or pea), dead/organic mulch (crop residue like straw or leaves), and plastic mulch (a synthetic, transitional-only option).",
-      "PQNK's standard live mulch is Jantar (Sesbania): its canopy covers the soil while growing, its taproot forces open vertical channels for water and air infiltration, and its root zone develops and sustains the soil's microbial population — channels that remain in place as aeration pathways even after it's slashed into surface mulch.",
+      "PQNK's standard live mulch is Jantar (Sesbania): its canopy covers the soil while growing, its taproot forces open vertical channels for water and air infiltration, and its root zone develops and sustains the soil's microbial population, channels that remain in place as aeration pathways even after it's slashed into surface mulch.",
       "Mulch does four jobs at once regardless of type: retains soil moisture, regulates soil temperature, suppresses weeds, and protects soil structure.",
       "Selection priority order: live mulch first if it won't shade the cash crop, dead/organic mulch as the adaptable default, plastic mulch only as a last resort.",
       "Mulch texture and depth should match the seed: broadleaf vs narrowleaf seed types emerge differently, and small seeds (lettuce, carrot) need a finer, lighter layer than large seeds (corn, squash) can tolerate.",
@@ -3432,7 +3432,7 @@ export const papers: Paper[] = [
     kpNumber: 124,
     libraryDate: "2026-07-27",
     category: "Crop-Specific Guides",
-    title: "Knowledge Paper: Olive Under PQNK — Pakistan's Underdeveloped Potential",
+    title: "Knowledge Paper: Olive Under PQNK (Pakistan's Underdeveloped Potential)",
     summary:
       "Pakistan imports all of its olive oil, roughly 15,000–20,000 tonnes a year, despite holding climate-suitable land in the Potohar plateau, the KP hills, and the Balochistan highlands. This paper sets out PQNK's curved furrow and borehole system for rainfed olive establishment, and the biological management that growers report cuts establishment cost by 40–50% versus conventional orchards.",
     publishedDate: "2026-07-27",
@@ -4724,7 +4724,7 @@ export const papers: Paper[] = [
     kpNumber: 176,
     libraryDate: "2026-08-04",
     category: "Nutrition & Food Quality",
-    title: "Why Unscientific \"Organic\" Farming Can Be Dangerous — and How PQNK Prevents It",
+    title: "Why Unscientific \"Organic\" Farming Can Be Dangerous, and How PQNK Prevents It",
     summary:
       "Argues that soil health depends on oxygen, water movement, structure, and biological order, not on whether an input is labeled organic, and that common organic practices (plastic mulch, daily irrigation, sugar-based brews) push soil into an anaerobic state that can be more dangerous than chemical farming.",
     publishedDate: "2026-08-04",
@@ -4778,7 +4778,7 @@ export const papers: Paper[] = [
     kpNumber: 178,
     libraryDate: "2026-08-04",
     category: "Nutrition & Food Quality",
-    title: "The PQNK Food Chain: From Soil to Soul — The Principle of Bio-potentiation",
+    title: "The PQNK Food Chain: From Soil to Soul (The Principle of Bio-potentiation)",
     summary:
       "Introduces bio-potentiation as the inverse of biomagnification: where conventional agriculture concentrates toxins as they move up the food chain, a PQNK-managed living-soil system is argued to amplify nutritional value and potency at each successive trophic level, from soil to plant to animal to human.",
     modifiedDate: "2026-10-16",
@@ -4912,7 +4912,7 @@ export const papers: Paper[] = [
     kpNumber: 183,
     libraryDate: "2026-08-04",
     category: "PQNK Philosophy, Framework & Economics",
-    title: "PQNK Foundational Document, Topic 5: The PQNK Ethical Covenant — Rights Within the Self-Sustaining Loop",
+    title: "PQNK Foundational Document, Topic 5: The PQNK Ethical Covenant (Rights Within the Self-Sustaining Loop)",
     summary:
       "The fifth document in PQNK's foundational topic series, framing the farm's closed-loop system as bearing inviolable 'rights', of soil, microbes, the predator pyramid, and matter itself, and casting the farmer's role as guardian of those rights rather than manager of the system.",
     publishedDate: "2026-08-04",
@@ -5110,12 +5110,12 @@ export const papers: Paper[] = [
       "This physiology reframes the paper's treatment of nitrogen and the 4 kg NP dose itself. Nitrogen is a special case: plants can absorb it beyond immediate need in a pattern plant science calls luxury consumption, and nitrate itself acts as a signaling molecule affecting root architecture and leaf development, which is why excess soluble nitrogen tends to produce larger leaves, denser canopies, delayed maturity and, per PQNK field observation, greater susceptibility to sucking insects, even though root uptake remains physiologically regulated throughout. NPK correcting a macronutrient shortfall is also explicitly not the same as complete nutrition. Against that backdrop, the roughly 4 kg NP per acre dose is reaffirmed as a temporary, furrow-delivered corrective bridge, not a fertilizer programme, with the paper's real destination named directly: Soil Moisture Management, keeping the soil's continuous mineral-reserve-to-root continuum functioning so that routine fertilizer intervention becomes unnecessary.",
     ],
     keyTakeaways: [
-      "Nutrients reach roots mainly by mass flow (carried in moving soil water) and diffusion, so transpiration and soil-solution concentration jointly determine how much nutrient actually arrives at the root — not the kilograms of fertilizer applied to the field.",
+      "Nutrients reach roots mainly by mass flow (carried in moving soil water) and diffusion, so transpiration and soil-solution concentration jointly determine how much nutrient actually arrives at the root, not the kilograms of fertilizer applied to the field.",
       "Fertilizer applied is not the same as fertilizer available is not the same as nutrient absorbed: nitrogen losses (leaching, volatilization, immobilization), phosphorus fixation, and the plant's own regulated uptake all stand between a bag and the crop's actual nutrition.",
-      "Over-irrigation and waterlogging are explicitly not the same condition: over-irrigation can coexist with vigorous vegetative growth, while persistent waterlogging cuts root-zone oxygen and eventually suppresses growth — duration and drainage determine which one develops.",
+      "Over-irrigation and waterlogging are explicitly not the same condition: over-irrigation can coexist with vigorous vegetative growth, while persistent waterlogging cuts root-zone oxygen and eventually suppresses growth, duration and drainage determine which one develops.",
       "Nitrogen is a special case: plants can take up nitrogen beyond immediate need ('luxury consumption'), and nitrate itself acts as a signaling molecule affecting root architecture and leaf development, which is why excess soluble nitrogen tends to produce lush, delayed-maturity, insect-prone growth even though uptake stays physiologically regulated.",
       "NPK fertilizer is not complete plant nutrition: it can correct macronutrient shortfalls and drive biomass, but a large, green crop is not automatically a nutritionally balanced one.",
-      "The roughly 4 kg NP per acre transitional dose is a corrective bridge delivered through furrow water only when a crop shows genuine deficiency, never a calendar-driven programme; the actual destination is Soil Moisture Management — restoring the continuous soil-water-air-biology-root system so routine fertilizer intervention becomes unnecessary.",
+      "The roughly 4 kg NP per acre transitional dose is a corrective bridge delivered through furrow water only when a crop shows genuine deficiency, never a calendar-driven programme; the actual destination is Soil Moisture Management, restoring the continuous soil-water-air-biology-root system so routine fertilizer intervention becomes unnecessary.",
     ],
   },
   {
@@ -5130,19 +5130,19 @@ export const papers: Paper[] = [
     pdfPath: "/papers/from-chemistry-to-biology-what-pqnk-really-means.pdf",
     abstract: [
       "A practicing PQNK farmer raised a scientifically reasonable objection after repeatedly hearing that agriculture must move \"from chemistry to biology\": even in a completely natural soil, chemistry never stops. Minerals dissolve, ions move through soil water, acids and bases react, and roots ultimately absorb nutrients in chemical form. If all of this chemistry is still occurring, wouldn't \"soil biochemistry\" or \"soil bioscience\" be more scientifically accurate than claiming a shift away from chemistry altogether?",
-      "The paper's answer is that PQNK does not propose eliminating chemistry — it proposes changing who regulates it. Industrial agriculture treats the field as a system whose chemistry must be corrected from outside: if nitrogen appears insufficient, nitrogen fertilizer is supplied; if insects attack, an insecticide is introduced. The Production Manager becomes an external chemical dispenser, asking \"what chemical should I add?\" PQNK asks a different question: what natural biological function has weakened, and how do we restore the conditions under which that function regulates the system itself? The phosphorus example makes the distinction concrete: rather than importing more soluble phosphorus, root exudates feed bacteria, fungi and mycorrhizal networks that mobilize phosphorus already present in the soil. The final step is still chemical — phosphorus is still phosphorus — but the regulatory pathway that produced it has changed from external to biological.",
+      "The paper's answer is that PQNK does not propose eliminating chemistry: it proposes changing who regulates it. Industrial agriculture treats the field as a system whose chemistry must be corrected from outside: if nitrogen appears insufficient, nitrogen fertilizer is supplied; if insects attack, an insecticide is introduced. The Production Manager becomes an external chemical dispenser, asking \"what chemical should I add?\" PQNK asks a different question: what natural biological function has weakened, and how do we restore the conditions under which that function regulates the system itself? The phosphorus example makes the distinction concrete: rather than importing more soluble phosphorus, root exudates feed bacteria, fungi and mycorrhizal networks that mobilize phosphorus already present in the soil. The final step is still chemical, phosphorus is still phosphorus, but the regulatory pathway that produced it has changed from external to biological.",
       "This is why the farmer's own suggested terms, \"soil biochemistry\" and \"soil bioscience,\" are scientifically real but too narrow for PQNK. Both correctly describe chemical processes carried out by living organisms, but a functioning PQNK production ecosystem is larger than soil chemistry alone: it includes soil structure, aeration, water movement, the atmosphere, sunlight and biodiversity above and below ground, all interacting continuously. \"Natural Ecosystem Science\" remains the more accurate umbrella description, with soil biology as one of its central operating engines rather than its full extent.",
-      "KP-190's transitional recommendation of a small corrective NP dose is offered as the practical test of this distinction. If the same large chemical prescription is simply replaced with a smaller one, the transition from chemistry to biology has not actually occurred — the dose has merely been reduced. The real transition happens only when the living nutrient-conversion system increasingly resumes responsibility for cycling and delivering nutrients, which is why PQNK's four principles (no soil disturbance, no inundation, permanent biological cover, maximum biodiversity) must operate together: they reconstruct the habitat in which biology can again become the system's principal regulator, rather than functioning as four unrelated recommendations.",
-      "The paper closes by reframing what the farmer is actually being asked to do differently. Industrial agriculture trains a farmer to ask what chemical, what dose, what date. PQNK asks the Production Manager to read the system instead: what is the plant telling me, is the soil moist but aerated, is biodiversity functioning, what function should nature be performing here and why isn't it? A mature PQNK field will never be chemistry-free — carbon, sugars, minerals and nutrients will keep transforming continuously — but those reactions increasingly occur inside a self-regulating living ecosystem rather than being repeatedly forced from outside.",
+      "KP-190's transitional recommendation of a small corrective NP dose is offered as the practical test of this distinction. If the same large chemical prescription is simply replaced with a smaller one, the transition from chemistry to biology has not actually occurred: the dose has merely been reduced. The real transition happens only when the living nutrient-conversion system increasingly resumes responsibility for cycling and delivering nutrients, which is why PQNK's four principles (no soil disturbance, no inundation, permanent biological cover, maximum biodiversity) must operate together: they reconstruct the habitat in which biology can again become the system's principal regulator, rather than functioning as four unrelated recommendations.",
+      "The paper closes by reframing what the farmer is actually being asked to do differently. Industrial agriculture trains a farmer to ask what chemical, what dose, what date. PQNK asks the Production Manager to read the system instead: what is the plant telling me, is the soil moist but aerated, is biodiversity functioning, what function should nature be performing here and why isn't it? A mature PQNK field will never be chemistry-free (carbon, sugars, minerals and nutrients will keep transforming continuously) but those reactions increasingly occur inside a self-regulating living ecosystem rather than being repeatedly forced from outside.",
     ],
     keyTakeaways: [
-      "PQNK does not eliminate chemistry — every living system, PQNK included, depends on constant chemical reactions; the shift is in who regulates that chemistry, not whether it happens.",
+      "PQNK does not eliminate chemistry: every living system, PQNK included, depends on constant chemical reactions; the shift is in who regulates that chemistry, not whether it happens.",
       "Externally managed chemistry treats the farmer as an outside chemical dispenser correcting symptoms with inputs; biologically regulated chemistry lets living roots, microorganisms and fungi organize the same reactions from within the soil.",
-      "The phosphorus example shows the pattern: root exudates feed microbes and mycorrhizal fungi that mobilize phosphorus already present in the soil — the final chemical step is unchanged, but the pathway that produced it is now biological rather than imported.",
-      "\"Soil biochemistry\" and \"soil bioscience\" are scientifically accurate but too narrow for PQNK, since the functioning production ecosystem includes soil structure, aeration, water, atmosphere and biodiversity, not chemistry alone — \"Natural Ecosystem Science\" is the more complete term.",
-      "KP-190's small transitional NP dose illustrates the distinction: reducing a chemical dose is not the same as completing the transition — the real goal is restoring the living nutrient-conversion system until routine fertilizer intervention becomes unnecessary.",
-      "PQNK's four principles (no soil disturbance, no inundation, permanent biological cover, maximum biodiversity) must operate together because biology needs a habitat to regulate chemistry — removing fertilizer alone, without rebuilding that habitat, is not the PQNK transition.",
-      "The practical shift for the farmer is from input management (\"what chemical, what dose, what date\") to system management (\"what is the plant telling me, is the soil moist but aerated, is biodiversity functioning\") — a deeper change than substituting biological products for chemical ones.",
+      "The phosphorus example shows the pattern: root exudates feed microbes and mycorrhizal fungi that mobilize phosphorus already present in the soil, the final chemical step is unchanged, but the pathway that produced it is now biological rather than imported.",
+      "\"Soil biochemistry\" and \"soil bioscience\" are scientifically accurate but too narrow for PQNK, since the functioning production ecosystem includes soil structure, aeration, water, atmosphere and biodiversity, not chemistry alone: \"Natural Ecosystem Science\" is the more complete term.",
+      "KP-190's small transitional NP dose illustrates the distinction: reducing a chemical dose is not the same as completing the transition, the real goal is restoring the living nutrient-conversion system until routine fertilizer intervention becomes unnecessary.",
+      "PQNK's four principles (no soil disturbance, no inundation, permanent biological cover, maximum biodiversity) must operate together because biology needs a habitat to regulate chemistry, removing fertilizer alone, without rebuilding that habitat, is not the PQNK transition.",
+      "The practical shift for the farmer is from input management (\"what chemical, what dose, what date\") to system management (\"what is the plant telling me, is the soil moist but aerated, is biodiversity functioning\"): a deeper change than substituting biological products for chemical ones.",
     ],
   },
   {
@@ -5165,11 +5165,11 @@ export const papers: Paper[] = [
     ],
     keyTakeaways: [
       "The Purchased-Input Treadmill: a production architecture where functions the farm ecosystem once performed for itself, nutrient cycling, pest control, soil structure, are replaced by purchased inputs that must be bought again every season just to sustain the same output.",
-      "Yield measures biological output, not retained economic value — two farms producing identical yield can leave their farmers in entirely different financial positions depending on what it cost to get there.",
+      "Yield measures biological output, not retained economic value: two farms producing identical yield can leave their farmers in entirely different financial positions depending on what it cost to get there.",
       "The ratchet effect explains why farmers can't simply stop buying inputs: a biologically impaired soil doesn't recover the moment fertilizer stops, which is exactly why PQNK uses a staged transition rather than an instant switch-off.",
-      "PQNK is not cheap-input agriculture — swapping a chemical fertilizer for an organic one, or a synthetic pesticide for a botanical one, only changes the supplier and leaves the treadmill intact. The real shift is externally purchased function replaced by internally regenerated ecosystem function.",
-      "Subsidizing an input changes who pays for it, not why the farm still needs it — the paper distinguishes making an input cheaper from making the production system less dependent on it.",
-      "With roughly 91% of Punjab's farmers on holdings under 12.5 acres, reducing recurring input dependency isn't an environmental preference — for a smallholder with little capacity to absorb a cost shock, it can determine whether the next crop gets planted at all.",
+      "PQNK is not cheap-input agriculture, swapping a chemical fertilizer for an organic one, or a synthetic pesticide for a botanical one, only changes the supplier and leaves the treadmill intact. The real shift is externally purchased function replaced by internally regenerated ecosystem function.",
+      "Subsidizing an input changes who pays for it, not why the farm still needs it: the paper distinguishes making an input cheaper from making the production system less dependent on it.",
+      "With roughly 91% of Punjab's farmers on holdings under 12.5 acres, reducing recurring input dependency isn't an environmental preference: for a smallholder with little capacity to absorb a cost shock, it can determine whether the next crop gets planted at all.",
     ],
   },
   {
@@ -5193,10 +5193,10 @@ export const papers: Paper[] = [
     ],
     keyTakeaways: [
       "The paper names a fourth, under-discussed assumption beneath the usual wheat-crisis narrative (seamless trade, cheap energy, stable climate): that biological production can keep being propped up by ever-greater external inputs when the ecosystem's own function has been degraded.",
-      "Two fields receiving identical rainfall can face very different drought stress — a crop experiences the water that reaches its roots, not the millimetres that fell, so drought resilience is inseparable from soil structure and surface cover.",
-      "PQNK Soil Moisture Management targets a moist, aerated root zone through the permanent furrows rather than following an irrigation calendar — reducing irrigation demand becomes a consequence of correcting the production system, not just delivering water more efficiently.",
+      "Two fields receiving identical rainfall can face very different drought stress: a crop experiences the water that reaches its roots, not the millimetres that fell, so drought resilience is inseparable from soil structure and surface cover.",
+      "PQNK Soil Moisture Management targets a moist, aerated root zone through the permanent furrows rather than following an irrigation calendar, reducing irrigation demand becomes a consequence of correcting the production system, not just delivering water more efficiently.",
       "Fertiliser dependency is a food-security risk, not merely a farm-input cost: nitrogen supply tracks energy markets, while phosphorus and potassium depend on geographically concentrated, imported mineral reserves.",
-      "Agricultural productivity should be measured as nourishment per hectare, not tonnes per hectare — nutritionally denser food can meet the same nutritional need with less harvested weight, while more tonnes of diluted food can inflate output statistics without increasing what people are actually nourished by.",
+      "Agricultural productivity should be measured as nourishment per hectare, not tonnes per hectare: nutritionally denser food can meet the same nutritional need with less harvested weight, while more tonnes of diluted food can inflate output statistics without increasing what people are actually nourished by.",
       "Living soil is proposed as a renewable strategic reserve unlike a grain stockpile: a biologically functioning hectare can produce this year's harvest and next year's, improving rather than depleting with correct use.",
       "The paper's central policy reframe: not \"how do we make the crop yield more\" but \"how do we produce abundant, nutritious food with the least dependence on scarce water, energy and external inputs while leaving the land better for the next crop.\"",
     ],
@@ -5220,13 +5220,13 @@ export const papers: Paper[] = [
       "The paper also widens the definition of dependency at stake. Beyond the specific pollen-flow concern, it argues a farmer is dependent not only when seed originates elsewhere, but whenever an essential productive function, fertility, pest regulation, soil structure, has been externalised into a purchased input; PQNK's aim is to bring those functions back inside the farm so living soil, organic cover and biodiversity themselves become the farm's productive infrastructure. It closes by declining to take either side of the GMO-versus-non-GMO debate directly: the recommendation is neither to embrace GM maize because it is advanced technology nor to reject it because it is genetically engineered, but to demand the fuller experiment, restoring the biological system first, measuring what it can already do, and only then determining which technological interventions remain genuinely necessary.",
     ],
     keyTakeaways: [
-      "Bt is biological before it is biotechnological — a naturally occurring soil bacterium (per the US EPA's own description) whose insecticidal genes were identified and later inserted into crops; genetic engineering extracted one function from a much larger biological system rather than reconstructing it.",
-      "PQNK explicitly does not claim that restoring soil biology reproduces Bt-transgenic-level pest protection — natural Bt's abundance, strain composition and persistence in soil remain only partly understood, and the paper states this overclaim would weaken rather than strengthen its own argument.",
-      "A Bt crop's defence is target-specific and stays intact even while the surrounding soil remains compacted, hardpan-locked, tilled and predator-depleted — the plant gains a defence mechanism without the ecosystem necessarily being repaired.",
-      "Pink bollworm resistance to Bt cotton is cited as documented precedent that a single genetic trait is not permanent ecological protection — resistance-management requirements exist precisely because sustained exposure to one insecticidal trait creates selection pressure.",
+      "Bt is biological before it is biotechnological: a naturally occurring soil bacterium (per the US EPA's own description) whose insecticidal genes were identified and later inserted into crops; genetic engineering extracted one function from a much larger biological system rather than reconstructing it.",
+      "PQNK explicitly does not claim that restoring soil biology reproduces Bt-transgenic-level pest protection: natural Bt's abundance, strain composition and persistence in soil remain only partly understood, and the paper states this overclaim would weaken rather than strengthen its own argument.",
+      "A Bt crop's defence is target-specific and stays intact even while the surrounding soil remains compacted, hardpan-locked, tilled and predator-depleted: the plant gains a defence mechanism without the ecosystem necessarily being repaired.",
+      "Pink bollworm resistance to Bt cotton is cited as documented precedent that a single genetic trait is not permanent ecological protection: resistance-management requirements exist precisely because sustained exposure to one insecticidal trait creates selection pressure.",
       "The paper's core recommendation: add a third treatment to Pakistan's GM maize trials, the same top non-GM hybrid grown under complete PQNK management, ideally as a factorial design separating genetic effects from production-system effects rather than comparing GM and non-GM maize under identical, unrestored management.",
       "PQNK broadens \"seed sovereignty\" into production sovereignty generally: a farm is dependent whenever an essential function, fertility, pest regulation, soil structure, has been externalised into a purchased input, not only when its seed comes from elsewhere.",
-      "The paper takes neither side of the GMO-versus-non-GMO debate — its argument is that genetics, soil, water, biology, climate and management jointly determine crop performance, and Pakistan shouldn't assume the production environment is fixed while debating only the seed.",
+      "The paper takes neither side of the GMO-versus-non-GMO debate: its argument is that genetics, soil, water, biology, climate and management jointly determine crop performance, and Pakistan shouldn't assume the production environment is fixed while debating only the seed.",
     ],
   },
   {
@@ -5320,7 +5320,7 @@ export const papers: Paper[] = [
     title:
       "The Seed Is Potential, the Soil Is the Production System: Rethinking High-Yielding Varieties, Heirloom Seeds, Hybrids and GM Crops Through the PQNK Lens",
     summary:
-      "Why are Green Revolution varieties called 'fertiliser-responsive' — does that mean they require synthetic fertiliser? This paper argues genetics is potential, not the production system: a seed's inherited instructions, like a soil's inherited texture, determine what is possible, while the living environment around each, root ecology for the seed, biological structure for the soil, determines what is actually expressed. Extending that logic across open-pollinated, heirloom, hybrid, high-yielding and genetically modified seed alike, it separates three questions usually confused, the genetics of the seed, who controls its reproduction, and the production system it is grown in, and adds a distinct concern for cross-pollinated crops: in maize, pollen-mediated gene flow can carry an engineered trait into a farmer's own saved seed, generation after generation, which is why seed sovereignty requires not only access to seed but the practical ability to reproduce it with genetic purity.",
+      "Why are Green Revolution varieties called 'fertiliser-responsive': does that mean they require synthetic fertiliser? This paper argues genetics is potential, not the production system: a seed's inherited instructions, like a soil's inherited texture, determine what is possible, while the living environment around each, root ecology for the seed, biological structure for the soil, determines what is actually expressed. Extending that logic across open-pollinated, heirloom, hybrid, high-yielding and genetically modified seed alike, it separates three questions usually confused, the genetics of the seed, who controls its reproduction, and the production system it is grown in, and adds a distinct concern for cross-pollinated crops: in maize, pollen-mediated gene flow can carry an engineered trait into a farmer's own saved seed, generation after generation, which is why seed sovereignty requires not only access to seed but the practical ability to reproduce it with genetic purity.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-09-11",
     pdfPath: "/papers/the-seed-is-potential-the-soil-is-the-production-system.pdf",
@@ -5333,13 +5333,13 @@ export const papers: Paper[] = [
     ],
     keyTakeaways: [
       "Genetics is potential, not the production system: a seed's inherited instructions, like a soil's inherited texture, set what is possible; the living environment, root ecology for the seed, biological structure for the soil, determines what is actually expressed.",
-      "'Fertiliser-responsive' is not the same claim as 'fertiliser-dependent' — semi-dwarf Green Revolution genetics were bred for short stature and strong nutrient response inside the ACI environment; whether the same genetics can express high yield under a fully restored biological soil is a measurement question, not an assumption.",
+      "'Fertiliser-responsive' is not the same claim as 'fertiliser-dependent': semi-dwarf Green Revolution genetics were bred for short stature and strong nutrient response inside the ACI environment; whether the same genetics can express high yield under a fully restored biological soil is a measurement question, not an assumption.",
       "Every seed category, open-pollinated, heirloom, hybrid, high-yielding or genetically modified, remains a plant governed by the same biological laws; PQNK restores one production environment rather than building a separate feeding system for each category of seed.",
-      "GMO genetics should be separated from the ACI production package: it is not scientifically defensible to claim all GM crops inherently need heavy water and fertiliser, or that genetic engineering itself damages soil — the dependency and the degradation belong to the surrounding system, not to a single inserted gene.",
+      "GMO genetics should be separated from the ACI production package: it is not scientifically defensible to claim all GM crops inherently need heavy water and fertiliser, or that genetic engineering itself damages soil, the dependency and the degradation belong to the surrounding system, not to a single inserted gene.",
       "In maize, pollen-mediated gene flow is a generational risk, not a seasonal one: pollen from a GM plant can fertilise a non-GM neighbour's silks, and if the resulting kernels are saved and replanted, the engineered trait can enter the farmer's population and persist across generations.",
-      "Distance reduces gene flow but does not create a genetic wall — USDA APHIS reviews report most maize pollen settling within metres of the source, with low-level movement detected hundreds of metres away under some conditions; the paper deliberately avoids treating any single distance, including one mile, as a universal contamination radius.",
+      "Distance reduces gene flow but does not create a genetic wall: USDA APHIS reviews report most maize pollen settling within metres of the source, with low-level movement detected hundreds of metres away under some conditions; the paper deliberately avoids treating any single distance, including one mile, as a universal contamination radius.",
       "Seed sovereignty requires reproductive stewardship, not just seed access: conserving heirloom and open-pollinated varieties also means protecting them while flowering, through isolation distance, flowering-time separation, border management and, where genetic purity is critical, testing.",
-      "PQNK field reports of stronger taste and prolonged satiety deserve systematic measurement rather than inference — a claim like a lower glycaemic index is a specific physiological measurement that should be demonstrated directly, not assumed from anecdote.",
+      "PQNK field reports of stronger taste and prolonged satiety deserve systematic measurement rather than inference: a claim like a lower glycaemic index is a specific physiological measurement that should be demonstrated directly, not assumed from anecdote.",
     ],
   },
   {
@@ -5362,12 +5362,12 @@ export const papers: Paper[] = [
       "For a tree that is already bleeding gum, the paper is explicit that transition and ecosystem health are not the same thing as emergency care: an active, serious lesion may require direct diagnosis and intervention in addition to correcting the production environment, and PQNK transition should never be read as a reason to ignore an established infection. It sets out an eight-step diagnostic sequence, observe the symptom, locate its origin, examine the tissue, examine water and irrigation contact, examine soil structure and roots, examine the wider biological and physical environment, correct the production environment, and only then treat an established lesion where diagnosis and severity justify it, moving backward through the same causal chain the rest of the paper traces forward: gum, to tissue injury, to root and crown environment, to soil moisture and aeration, to soil structure, to the production system itself. The stated destination is a shift from plant protection organised around purchased rescue treatments to plant health grounded in a soil-root-water system that continuously supports the tree.",
     ],
     keyTakeaways: [
-      "Gummosis is a symptom, not a single disease — UC IPM is explicit that gumming alone is not sufficient for diagnosis; Phytophthora is an important and well-documented cause of citrus gummosis, but other trunk disorders and physical injuries can produce similar exudate.",
+      "Gummosis is a symptom, not a single disease: UC IPM is explicit that gumming alone is not sufficient for diagnosis; Phytophthora is an important and well-documented cause of citrus gummosis, but other trunk disorders and physical injuries can produce similar exudate.",
       "Gum is the plant's visible defensive response to tissue injury, not the injury itself, so the more useful agricultural question is not \"how do we stop the gum\" but \"why was the tissue damaged in the first place.\"",
       "Phytophthora species are water moulds whose motile zoospores spread under moist conditions; UC IPM and University of Florida IFAS extension guidance both link disease risk to overwatering, poor drainage and prolonged trunk wetting, and both treat correcting soil and water problems as essential to recovery.",
-      "Roots require both water and oxygen — when soil stays excessively saturated, air-filled pore space and root function decline, the same condition Phytophthora exploits, which is exactly what PQNK's Soil Moisture Management is built to prevent by maintaining moist, aerated soil rather than cycling between flooding and severe drying.",
+      "Roots require both water and oxygen, when soil stays excessively saturated, air-filled pore space and root function decline, the same condition Phytophthora exploits, which is exactly what PQNK's Soil Moisture Management is built to prevent by maintaining moist, aerated soil rather than cycling between flooding and severe drying.",
       "The presence of a pathogen is not identical to disease development: host condition and environment jointly determine the outcome, which is why a widely present organism does not produce severe disease in every tree.",
-      "The paper explicitly declines to claim that gummosis can never occur under PQNK — a mature system reduces predisposing stress, it does not make a tree immune to mechanical injury, graft damage or an aggressive pathogen; this narrower claim is presented as strengthening rather than weakening the argument.",
+      "The paper explicitly declines to claim that gummosis can never occur under PQNK: a mature system reduces predisposing stress, it does not make a tree immune to mechanical injury, graft damage or an aggressive pathogen; this narrower claim is presented as strengthening rather than weakening the argument.",
       "An already-diseased tree still needs direct diagnosis and, where justified, direct intervention: \"transition medicine and ecosystem health are not the same thing,\" so restoring the production system is not a reason to ignore an active, established lesion.",
       "The paper sets out a concrete eight-step diagnostic sequence, observe, locate, examine tissue, examine water, examine soil and roots, examine the wider environment, correct the production system, then treat an established lesion, moving backward through the same causal chain from gum to production system that the paper traces forward.",
     ],

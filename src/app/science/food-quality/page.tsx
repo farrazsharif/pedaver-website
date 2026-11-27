@@ -32,7 +32,7 @@ import {
 } from "@/lib/content/scienceFoodQuality";
 
 export const metadata: Metadata = buildMetadata({
-  title: "PQNK Food Quality Science — From Living Soil to the Food We Eat | Pedaver",
+  title: "PQNK Food Quality Science, From Living Soil to the Food We Eat | Pedaver",
   description:
     "Why food quality is the measurable biological outcome of how a plant was grown, not an automatic consequence of yield, appearance or a production label: nutrient density vs. diversity, taste, shelf life, residue status and the path from field observation to laboratory validation.",
   path: "/science/food-quality",

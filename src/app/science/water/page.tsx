@@ -41,7 +41,7 @@ import {
 } from "@/lib/content/scienceWater";
 
 export const metadata: Metadata = buildMetadata({
-  title: "PQNK Water Science — Restoring the Natural Water Cycle | Pedaver",
+  title: "PQNK Water Science: Restoring the Natural Water Cycle | Pedaver",
   description:
     "Why water in PQNK is a connected biological and hydrological system rather than an irrigation input alone: infiltration, seepage, mulch, transpiration, dew, rainfall capture and diagnosis-based irrigation.",
   path: "/science/water",
@@ -452,7 +452,7 @@ export default function ScienceWaterPage() {
       {/* SCIENCE VS APPLICATION */}
       <Section muted>
         <div className="mx-auto max-w-3xl">
-          <h2 className="text-center text-2xl font-bold text-primary-dark sm:text-3xl">Science Is Universal — Application Is Local</h2>
+          <h2 className="text-center text-2xl font-bold text-primary-dark sm:text-3xl">Science Is Universal: Application Is Local</h2>
           <div className="mt-8">
             <ScienceApplicationNote
               science={scienceApplication.scienceLines.join(" ")}

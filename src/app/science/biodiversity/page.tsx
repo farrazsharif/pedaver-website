@@ -46,7 +46,7 @@ import {
 } from "@/lib/content/scienceBiodiversity";
 
 export const metadata: Metadata = buildMetadata({
-  title: "PQNK Biodiversity Science — The Stability Engine of the Living Production System | Pedaver",
+  title: "PQNK Biodiversity Science: The Stability Engine of the Living Production System | Pedaver",
   description:
     "Why biodiversity is production infrastructure, not conservation around agriculture: root and microbial diversity, biological pest regulation, weeds as rescue workers, nutrient-acquisition pathways and the four-component living system.",
   path: "/science/biodiversity",
@@ -589,7 +589,7 @@ export default function ScienceBiodiversityPage() {
       {/* SCIENCE VS APPLICATION */}
       <Section>
         <div className="mx-auto max-w-3xl">
-          <h2 className="text-center text-2xl font-bold text-primary-dark sm:text-3xl">Science Is Universal — Application Is Local</h2>
+          <h2 className="text-center text-2xl font-bold text-primary-dark sm:text-3xl">Science Is Universal: Application Is Local</h2>
           <div className="mt-8">
             <ScienceApplicationNote science={scienceApplication.science} application={scienceApplication.application} />
           </div>

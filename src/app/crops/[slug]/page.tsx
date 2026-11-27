@@ -178,7 +178,7 @@ export default async function CropDetailPage({
                   <div className="rounded-xl border border-border bg-card p-5">
                     <h2 className="text-sm font-bold uppercase tracking-wide text-accent">
                       {crop.resultsLocation
-                        ? `${dict.crops.documentedResultLabel} — ${crop.resultsLocation}`
+                        ? `${dict.crops.documentedResultLabel}: ${crop.resultsLocation}`
                         : dict.cropDetail.resultsTitle}
                     </h2>
                     <p className="mt-2 italic text-ink-soft">{withCommonFoundationLinks(crop.results, "results")}</p>

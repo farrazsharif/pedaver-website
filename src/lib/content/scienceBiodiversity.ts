@@ -6,9 +6,9 @@
 
 export const hero = {
   eyebrow: "PQNK Science · Biodiversity",
-  title: "Biodiversity — The Stability Engine of the Living Production System",
+  title: "Biodiversity: The Stability Engine of the Living Production System",
   body: [
-    "Agriculture commonly treats biodiversity as something adjacent to production — a conservation goal pursued around the edges of a field.",
+    "Agriculture commonly treats biodiversity as something adjacent to production: a conservation goal pursued around the edges of a field.",
     "PQNK treats biodiversity differently. Biological complexity is part of the production machinery itself: it distributes agricultural functions across many organisms, relationships, habitats, spatial zones and time periods.",
   ],
   callout:
@@ -19,7 +19,7 @@ export const productionInfrastructure = {
   title: "Biodiversity Is Production Infrastructure",
   body: [
     "A production system built around a single crop, a single dominant organism, or a narrow set of biological relationships has few pathways available when conditions change.",
-    "A biologically complex system distributes the work of production — energy capture, decomposition, nutrient cycling, pest regulation, soil construction — across many organisms rather than concentrating it in one place.",
+    "A biologically complex system distributes the work of production (energy capture, decomposition, nutrient cycling, pest regulation, soil construction) across many organisms rather than concentrating it in one place.",
   ],
   statement: "Biodiversity is part of the production machinery itself.",
 };
@@ -71,7 +71,7 @@ export const rootDiversity = {
   ],
   engineeringStatement: "A diverse root community does not merely occupy soil. It helps engineer it.",
   retentionNote: "This connects directly to PQNK root retention: retained roots and their channels become part of the architecture available to the next crop.",
-  caveat: "Not every root can penetrate every compacted layer. Root diversity broadens the biological toolkit available to the field — it does not eliminate every physical restriction.",
+  caveat: "Not every root can penetrate every compacted layer. Root diversity broadens the biological toolkit available to the field: it does not eliminate every physical restriction.",
 };
 
 export const microbialFungal = {
@@ -91,7 +91,7 @@ export const functionalRedundancy = {
   title: "Biodiversity Creates Functional Redundancy",
   body: [
     "Multiple organisms can contribute to similar ecological functions through different pathways. This does not mean every organism is interchangeable.",
-    "It means a biologically diverse system can contain alternative pathways that help retain function when conditions change — reducing dependence on any single organism, and on external correction, remaining perfect at all times.",
+    "It means a biologically diverse system can contain alternative pathways that help retain function when conditions change, reducing dependence on any single organism, and on external correction, remaining perfect at all times.",
   ],
 };
 
@@ -141,12 +141,12 @@ export const weeds = {
   question: "Why is that particular plant appearing there?",
   body: "Disturbed, exposed, compacted, overheated or biologically weakened landscapes tend to be recolonized by spontaneous vegetation. From the PQNK perspective, weeds may therefore function as nature's rescue workers.",
   narrowLeaf: {
-    title: "Narrow-Leaf Rescue Workers — Opening the Soil",
+    title: "Narrow-Leaf Rescue Workers: Opening the Soil",
     body: "Grasses and other narrow-leaf plants commonly develop dense fibrous root systems.",
     functions: ["occupying compacted surface zones", "creating numerous small biological channels", "root-derived organic inputs", "rhizosphere activity", "soil aggregation", "progressive pore development"],
   },
   broadleaf: {
-    title: "Broadleaf Rescue Workers — Protecting the Surface",
+    title: "Broadleaf Rescue Workers: Protecting the Surface",
     body: "Broadleaf plants can rapidly create canopy and shading.",
     functions: ["intercepting solar radiation", "reducing direct heating of exposed soil", "reducing wind exposure", "protecting biological activity", "providing biomass"],
   },
@@ -165,7 +165,7 @@ export const bareSoil = {
 };
 
 export const diversityThroughTime = {
-  title: "Diversity Through Time — Crop-After-Crop and Crop-in-Crop",
+  title: "Diversity Through Time: Crop-After-Crop and Crop-in-Crop",
   intro: "Biodiversity is diversity through time as well as space.",
   sequence: ["Crop", "Crop", "Crop"],
   cropInCropNote: "Where agronomically appropriate, Crop-in-Crop arrangements can further reduce biological interruption between production cycles.",
@@ -231,7 +231,7 @@ export const nutrientDensityDiversity = {
   title: "Nutrient Density and Nutrient Diversity Are Different",
   intro:
     "Biologically complex soil systems can provide multiple interacting nutrient-acquisition pathways rather than a narrow externally supplied nutrient program. This may support more balanced plant nutrition through diverse roots, rhizosphere organisms, fungal associations, decomposition, soil mineral reserves, organic cycling, water movement and plant physiological demand.",
-  mechanismNote: "This creates a scientifically plausible mechanism for investigating whether PQNK produce develops greater nutrient density and nutrient diversity — the outcome is not automatically claimed.",
+  mechanismNote: "This creates a scientifically plausible mechanism for investigating whether PQNK produce develops greater nutrient density and nutrient diversity: the outcome is not automatically claimed.",
   density: { name: "Nutrient density", body: "The concentration of nutritionally relevant constituents in harvested produce." },
   diversity: { name: "Nutrient diversity", body: "The breadth and composition of those constituents." },
   evidenceBoundary: "Biological complexity provides the mechanism. Produce analysis provides the evidence. PQNK Validation determines the measured outcome.",
@@ -393,7 +393,7 @@ export const futurePathways: FutureTopic[] = [
 ];
 
 export const futurePathwaysNote =
-  "Nutrition, Crop Protection, Climate, Food Quality and Production Architecture are not additional PQNK principles. They are functions, outcomes and applications emerging from the four-component system — Soil, Plants, Water and Biodiversity.";
+  "Nutrition, Crop Protection, Climate, Food Quality and Production Architecture are not additional PQNK principles. They are functions, outcomes and applications emerging from the four-component system: Soil, Plants, Water and Biodiversity.";
 
 export const closingProposition = {
   intro:

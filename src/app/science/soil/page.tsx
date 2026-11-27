@@ -42,7 +42,7 @@ import {
 } from "@/lib/content/scienceSoil";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Soil — The Living Production System | PQNK Science | Pedaver",
+  title: "Soil: The Living Production System | PQNK Science | Pedaver",
   description:
     "Why soil is a living production system, not an inert growing medium: pore architecture, roots, microorganisms, fungi, mycorrhizae, water and air interacting to make production possible.",
   path: "/science/soil",
@@ -531,7 +531,7 @@ export default function ScienceSoilPage() {
       {/* SCIENCE VS APPLICATION */}
       <Section muted>
         <div className="mx-auto max-w-3xl">
-          <h2 className="text-center text-2xl font-bold text-primary-dark sm:text-3xl">Science Is Universal — Application Is Local</h2>
+          <h2 className="text-center text-2xl font-bold text-primary-dark sm:text-3xl">Science Is Universal: Application Is Local</h2>
           <p className="mx-auto mt-4 max-w-2xl text-center leading-relaxed text-ink-soft">{scienceApplication.intro}</p>
           <div className="mt-8">
             <ScienceApplicationNote science={scienceApplication.science} application={scienceApplication.application} />

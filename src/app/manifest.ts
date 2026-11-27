@@ -4,9 +4,9 @@ export const dynamic = "force-static";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Pedaver — PQNK",
+    name: "Pedaver | PQNK",
     short_name: "Pedaver",
-    description: "Farming the way nature already knows how — PQNK, the Natural Ecosystem Science of Production Agriculture.",
+    description: "Farming the way nature already knows how: PQNK, the Natural Ecosystem Science of Production Agriculture.",
     start_url: "/",
     display: "standalone",
     background_color: "#faf7f0",

@@ -89,7 +89,7 @@ function PaperCard({ paper, sortMode }: { paper: Paper; sortMode: SortMode }) {
           and paper detail pages) while they're reviewed paper-by-paper (see project
           memory). This accent bar replaces the image slot so cards read as
           intentionally text-first rather than as missing an image. paper.heroImage
-          itself is untouched — still set in data and still used for Open Graph/
+          itself is untouched: still set in data and still used for Open Graph/
           JSON-LD image metadata. */}
       <div className="h-1.5 w-full flex-none bg-accent" aria-hidden="true" />
       <div className="flex flex-1 flex-col p-6">
@@ -454,7 +454,7 @@ export default function PapersBrowser({ papers }: { papers: Paper[] }) {
           <div className="mx-auto max-w-md rounded-2xl border border-border bg-card p-8 text-center">
             <p className="font-semibold text-ink">No exact match for these filters.</p>
             <p className="mt-2 text-sm text-ink-soft">
-              Try clearing a filter, searching a different word, or browsing a Problem area above —
+              Try clearing a filter, searching a different word, or browsing a Problem area above:
               nearby knowledge is often still useful.
             </p>
             <button

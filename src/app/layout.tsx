@@ -23,13 +23,13 @@ const hanken = Hanken_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: `${dict.meta.siteName} — PQNK`,
+  title: `${dict.meta.siteName} | PQNK`,
   description: dict.meta.tagline,
   verification: process.env.NEXT_PUBLIC_GSC_VERIFICATION
     ? { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION }
     : undefined,
   appleWebApp: {
-    title: "Pedaver — PQNK",
+    title: "Pedaver | PQNK",
     statusBarStyle: "black-translucent",
   },
 };

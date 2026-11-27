@@ -120,7 +120,7 @@ export const productionFunctions: ScienceTopic[] = [
     name: "Natural Plant Nutrition",
     tagline: "Feeding the Plant by Restoring the Nutrient Cycle",
     summary:
-      "Plants require minerals, but the existence of minerals and their biological availability are not the same thing. PQNK examines the relationships among geological mineral reserves, microorganisms, fungi, roots, water and plant demand. During transition, limited supplementation may occasionally be required — but the objective is not permanent supplementation. It is restoration of nutrient cycling and biological access.",
+      "Plants require minerals, but the existence of minerals and their biological availability are not the same thing. PQNK examines the relationships among geological mineral reserves, microorganisms, fungi, roots, water and plant demand. During transition, limited supplementation may occasionally be required, but the objective is not permanent supplementation. It is restoration of nutrient cycling and biological access.",
     futureRoute: "/science/nutrition",
   },
   {
@@ -128,7 +128,7 @@ export const productionFunctions: ScienceTopic[] = [
     name: "Natural Crop Protection",
     tagline: "Restoring Biological Regulation",
     summary:
-      "Natural ecosystems are not free of insects, fungi or microorganisms. They remain productive because biological populations exist within relationships. PQNK approaches crop protection through biodiversity, plant condition, habitat and ecological regulation rather than assuming that the presence of an organism automatically requires eradication. Corrective intervention may still be necessary during transition — the direction of travel is toward biological regulation rather than routine chemical protection.",
+      "Natural ecosystems are not free of insects, fungi or microorganisms. They remain productive because biological populations exist within relationships. PQNK approaches crop protection through biodiversity, plant condition, habitat and ecological regulation rather than assuming that the presence of an organism automatically requires eradication. Corrective intervention may still be necessary during transition: the direction of travel is toward biological regulation rather than routine chemical protection.",
     futureRoute: "/science/crop-protection",
   },
 ];

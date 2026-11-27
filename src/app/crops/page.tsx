@@ -6,7 +6,7 @@ import Section from "@/components/Section";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Crops & Solutions — PQNK Field Guides by Crop",
+  title: "Crops & Solutions: PQNK Field Guides by Crop",
   description:
     "PQNK field-tested across 20+ crops, from wheat and cotton to bamboo and black carrot. Browse real results, crop by crop.",
   path: "/crops",
@@ -17,7 +17,7 @@ export default function CropsPage() {
   const collectionJsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Crops & Solutions — PQNK Field Guides by Crop",
+    name: "Crops & Solutions: PQNK Field Guides by Crop",
     url: `${SITE_URL}/crops`,
     isPartOf: { "@id": `${SITE_URL}/#organization` },
     mainEntity: {

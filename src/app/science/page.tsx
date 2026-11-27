@@ -19,7 +19,7 @@ import {
   closing,
 } from "@/lib/content/science";
 
-const PAGE_TITLE = "PQNK Science — The Natural Ecosystem Science of Production Agriculture | Pedaver";
+const PAGE_TITLE = "PQNK Science: The Natural Ecosystem Science of Production Agriculture | Pedaver";
 const PAGE_DESCRIPTION =
   "PQNK Science explains how soil, plants, water and biodiversity function together as one living production system, why agriculture disrupted it, and how PQNK restores it.";
 

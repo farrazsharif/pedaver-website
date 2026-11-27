@@ -39,7 +39,7 @@ const en = {
     story: {
       eyebrow: "Watch the Story",
       title: "PQNK, Told in Full",
-      body: "The complete PQNK story — the audio-visual version of the book, in concise form.",
+      body: "The complete PQNK story: the audio-visual version of the book, in concise form.",
     },
     whyNecessary: {
       eyebrow: "Why PQNK Was Necessary",
@@ -157,7 +157,7 @@ const en = {
       quantifiedValue: "20×",
       quantifiedLabel: "wheat tillers per seed under PQNK, against roughly 1.5 under conventional (ACI) management",
       quantifiedType: "Field Observation",
-      testimonyQuote: "“Wheat on PQNK — lowest cost of production, highest quality.”",
+      testimonyQuote: "“Wheat on PQNK: lowest cost of production, highest quality.”",
       testimonyAttribution: "Mian Arfan Khalid, PQNK wheat grower",
       testimonyType: "Farmer Testimony",
       featuredVideoTitle: "See the Planter in Action",
@@ -188,7 +188,7 @@ const en = {
         {
           audience: "Farmers & Field Practice",
           label: "Knowledge Exchange",
-          body: "What PQNK farms actually show — farmer questions and answers, advisory notes, testimony and field evidence, indexed and searchable.",
+          body: "What PQNK farms actually show: farmer questions and answers, advisory notes, testimony and field evidence, indexed and searchable.",
           href: "/field-evidence",
           cta: "Open the Knowledge Exchange",
         },
@@ -282,7 +282,7 @@ const en = {
       "PQNK has been developed through more than five decades of agricultural practice, observation, experimentation and engineering led by Asif Sharif.",
       "His work documents the biological and engineering foundations of PQNK: living soil, root–microbe relationships, soil moisture management, permanent biological cover, biodiversity, crop production and the machinery required to farm without disturbing the biological system.",
     ],
-    philosophyTitle: "Why Conventional Agriculture Is Failing — Ecologically, Economically and Nutritionally",
+    philosophyTitle: "Why Conventional Agriculture Is Failing: Ecologically, Economically and Nutritionally",
     philosophyBody: [
       "That is Pedaver's starting premise, and PQNK is offered as the way out: a mulched bed watered by soil moisture management rather than the calendar, a set of long-held farming myths retested, and outcomes measured in the field rather than in theory.",
       "PQNK moves every field through the same fixed sequence: out of ACI (Ancient Conventional Industrial) degradation, through a Corrective Intervention of hardpan-breaking and raised-bed formation, into a Regenerative Phase where mulch and cover crops build soil biology, and finally into a Sustained Closed Loop State where no external input is needed again.",
@@ -369,17 +369,17 @@ const en = {
     viewGuide: "View Guide",
     backToAll: "Back to all crops",
     principleNote:
-      "Like every PQNK crop, {crop} is governed by the same four principles: no soil disturbance, no inundation, permanent biological cover and maximum biodiversity. What follows is specific to {crop} — the engineering and management, not the underlying biology.",
+      "Like every PQNK crop, {crop} is governed by the same four principles: no soil disturbance, no inundation, permanent biological cover and maximum biodiversity. What follows is specific to {crop}: the engineering and management, not the underlying biology.",
     principleNoteLink: "the same four principles",
     documentedResultLabel: "Documented Field Result",
   },
   resources: {
     pageTitle: "Resources",
     pageSubtitle:
-      "The core operational techniques through which PQNK's principles are implemented in the field — explained once, in depth, so every crop guide can link back here instead of repeating them.",
+      "The core operational techniques through which PQNK's principles are implemented in the field: explained once, in depth, so every crop guide can link back here instead of repeating them.",
     philosophyTitle: "Principle, Requirement, Technique",
     philosophyBody:
-      "Nature sets the principle: no soil disturbance, no inundation, permanent biological cover, maximum biodiversity. Each technique below exists to satisfy one of those requirements at practical field scale — it is an implementation of a principle, not a principle in itself. Some are one-time transition corrections, undone as soon as they're complete; others are permanent practices maintained continuously throughout the production system. Both are shown clearly on each page, because mistaking a one-time correction for a routine practice is the single most common misunderstanding of how PQNK actually works.",
+      "Nature sets the principle: no soil disturbance, no inundation, permanent biological cover, maximum biodiversity. Each technique below exists to satisfy one of those requirements at practical field scale: it is an implementation of a principle, not a principle in itself. Some are one-time transition corrections, undone as soon as they're complete; others are permanent practices maintained continuously throughout the production system. Both are shown clearly on each page, because mistaking a one-time correction for a routine practice is the single most common misunderstanding of how PQNK actually works.",
     readMore: "Read the full page",
   },
   advisory: {
@@ -407,7 +407,7 @@ const en = {
       {
         slug: "symptoms-diagnosis",
         title: "Symptoms & Diagnosis",
-        body: "What a farmer is seeing in the field — leaf, root, or soil symptoms.",
+        body: "What a farmer is seeing in the field: leaf, root, or soil symptoms.",
       },
       {
         slug: "general",
@@ -427,9 +427,9 @@ const en = {
     ],
     freeChannelsTitle: "Free Learning Channels",
     freeChannels: [
-      { label: "YouTube — PedaVer PQNK (official)", href: "https://www.youtube.com/@pedaverpqnk3167/videos" },
-      { label: "YouTube — Asif Sharif (founder)", href: "https://www.youtube.com/@aasifsharif" },
-      { label: "Facebook — Pedaver", href: "https://www.facebook.com/Pedaver" },
+      { label: "YouTube: PedaVer PQNK (official)", href: "https://www.youtube.com/@pedaverpqnk3167/videos" },
+      { label: "YouTube: Asif Sharif (founder)", href: "https://www.youtube.com/@aasifsharif" },
+      { label: "Facebook: Pedaver", href: "https://www.facebook.com/Pedaver" },
       { label: "WhatsApp PQNK learning groups", href: "https://wa.me/923206776666" },
     ],
     paidTitle: "Direct Engagement Services",
@@ -473,7 +473,7 @@ const en = {
     pageSubtitle:
       "The founder's lectures and knowledge videos, and farmers documenting their own PQNK results, all in one place.",
     followTitle: "Follow & Watch",
-    facebookLabel: "Facebook — Pedaver",
+    facebookLabel: "Facebook: Pedaver",
     lecturesTitle: "Knowledge & Lecture Videos",
     workshopsTitle: "Farmer Workshops & Events",
     workshopsSubtitle: "Training sessions and field events with PQNK farmers, old and new.",
@@ -485,14 +485,14 @@ const en = {
     videosCount: "videos",
     testimonialsTitle: "Farmer Testimonials",
     testimonialsSubtitle:
-      "PQNK is proven acre by acre. Farmer testimony now lives in the searchable Field Evidence Library — find it by crop, farmer, or location.",
+      "PQNK is proven acre by acre. Farmer testimony now lives in the searchable Field Evidence Library: find it by crop, farmer, or location.",
     testimonialsCta: "Browse the Field Evidence Library",
     viewCrop: "View this crop",
   },
   videoLibrary: {
     pageTitle: "Video Library",
     pageSubtitle:
-      "Urdu-language PQNK lectures and field guidance videos, organized by topic — land types, crops, machinery, and irrigation.",
+      "Urdu-language PQNK lectures and field guidance videos, organized by topic: land types, crops, machinery, and irrigation.",
     watchOn: "Watch on",
   },
   validation: {
@@ -553,7 +553,7 @@ const en = {
     pageSubtitle:
       "A four-book series documenting the Natural Ecosystem Science of Production Agriculture, published progressively as each is completed.",
     libraryNote:
-      "Four books make up the complete PQNK series. Each is published here progressively, chapter by chapter, as it is written and reviewed — not held back until the whole book is finished.",
+      "Four books make up the complete PQNK series. Each is published here progressively, chapter by chapter, as it is written and reviewed, not held back until the whole book is finished.",
     statusInProgress: "Publication in Progress",
     statusComplete: "Complete First Edition",
     progressiveNote:
@@ -583,11 +583,11 @@ const en = {
   farmerVoices: {
     pageTitle: "Farmer Voices",
     pageSubtitle:
-      "Real messages from farmers practicing PQNK in Pedaver's WhatsApp learning groups — shared here as they were sent.",
+      "Real messages from farmers practicing PQNK in Pedaver's WhatsApp learning groups: shared here as they were sent.",
   },
   install: {
     navLabel: "Install the App",
-    bannerText: "Get Pedaver PQNK as an app on your phone — free, no store needed.",
+    bannerText: "Get Pedaver PQNK as an app on your phone: free, no store needed.",
     bannerCta: "Show me how",
     bannerDismiss: "Dismiss",
     pageTitle: "Get Pedaver PQNK on Your Phone",
@@ -595,7 +595,7 @@ const en = {
       "No App Store. No Play Store. No cost. Add this site to your home screen and it opens full-screen, just like any other app.",
     androidTitle: "On Android (Chrome)",
     androidSteps: [
-      "Tap the ⋮ (three dots) at the top right of Chrome — or wait for the \"Add to Home screen\" banner to appear on its own.",
+      "Tap the ⋮ (three dots) at the top right of Chrome, or wait for the \"Add to Home screen\" banner to appear on its own.",
       "Tap \"Add to Home screen\" (it may also say \"Install app\").",
       "Confirm by tapping \"Add\" or \"Install.\"",
     ],
@@ -607,7 +607,7 @@ const en = {
     ],
     resultTitle: "That's it",
     resultBody:
-      "The Pedaver PQNK icon appears on your home screen. Tap it anytime to open knowledge papers, crop guides, videos, and farmer advisory — full-screen, no browser bar.",
+      "The Pedaver PQNK icon appears on your home screen. Tap it anytime to open knowledge papers, crop guides, videos, and farmer advisory: full-screen, no browser bar.",
     translateNote: "Prefer to read this in Urdu, Hindi, or another language? Use the 🌐 translate icon at the top of this page.",
   },
   footer: {

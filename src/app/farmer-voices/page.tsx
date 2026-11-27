@@ -5,7 +5,7 @@ import Section from "@/components/Section";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Farmer Voices — Real Messages from PQNK Farmers",
+  title: "Farmer Voices: Real Messages from PQNK Farmers",
   description:
     "Real messages from farmers practicing PQNK in Pedaver's WhatsApp learning groups, shared as they were sent.",
   path: "/farmer-voices",

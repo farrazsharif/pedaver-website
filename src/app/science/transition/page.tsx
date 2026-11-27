@@ -35,7 +35,7 @@ import {
 } from "@/lib/content/scienceTransition";
 
 export const metadata: Metadata = buildMetadata({
-  title: "PQNK Transition — From Degraded Soil to a Sustained Closed Loop | Pedaver",
+  title: "PQNK Transition, From Degraded Soil to a Sustained Closed Loop | Pedaver",
   description:
     "The science of moving an agricultural field from a degraded production system through corrective intervention and biological regeneration toward a sustained closed-loop production ecosystem.",
   path: "/science/transition",

@@ -35,7 +35,7 @@ import {
 } from "@/lib/content/scienceCropProtection";
 
 export const metadata: Metadata = buildMetadata({
-  title: "PQNK Crop Protection Science — Biological Regulation Instead of Routine Suppression | Pedaver",
+  title: "PQNK Crop Protection Science: Biological Regulation Instead of Routine Suppression | Pedaver",
   description:
     "Why PQNK crop protection begins before the pest arrives: pest presence vs. economic damage, biological regulation, the Bt and 1,700-species corrections, weeds as an ecological signal, and the narrow transitional case for weedicide.",
   path: "/science/crop-protection",
@@ -523,7 +523,7 @@ export default function ScienceCropProtectionPage() {
       {/* SCIENCE VS APPLICATION */}
       <Section muted>
         <div className="mx-auto max-w-3xl">
-          <h2 className="text-center text-2xl font-bold text-primary-dark sm:text-3xl">Science Is Universal — Application Is Local</h2>
+          <h2 className="text-center text-2xl font-bold text-primary-dark sm:text-3xl">Science Is Universal: Application Is Local</h2>
           <div className="mt-8">
             <ScienceApplicationNote science={scienceApplication.science} application={scienceApplication.application} />
           </div>
