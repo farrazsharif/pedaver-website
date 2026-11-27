@@ -17764,6 +17764,81 @@
 "why":"foliar spray and NP belong only to the first crops of the transition"
 }
 ]
+},
+{
+"slug":"true-potato-seed-tps",
+"primarySubject":"True potato seed (TPS): how it differs from a seed tuber, raising it in a nursery and transplanting the seedlings to multiply seed tubers, its effect on seed cost, and the aeroponic method of seed tuber multiplication",
+"questionsAnswered":[
+"What is true potato seed (TPS)?",
+"How is true potato seed different from a seed tuber?",
+"How is true potato seed raised?",
+"Can TPS be sown directly in the field?",
+"How does TPS reduce the cost of potato seed?",
+"What is aeroponic seed potato production?",
+"How many tubers does a potato plant set in aeroponics compared with soil?",
+"Should a farmer produce their own potato seed from TPS?"
+],
+"keywords":[
+"true potato seed",
+"TPS",
+"potato",
+"seed potato",
+"seed tuber",
+"tuber",
+"cross-pollination",
+"berry",
+"nursery",
+"transplanting",
+"seed multiplication",
+"seed cost",
+"cut seed",
+"single-eye pieces",
+"aeroponics",
+"mini-tubers",
+"stolons",
+"Lahore",
+"Pakpattan",
+"sweet potato",
+"turmeric",
+"ginger"
+],
+"geography":null,
+"crops":[
+"Potato",
+"Sweet Potato",
+"Turmeric",
+"Ginger"
+],
+"fieldProblems":[
+"High Input / Production Cost",
+"External Input Dependency"
+],
+"problemFamily":[
+"Plant Growth & Nutrition",
+"Cost, Profit & Markets"
+],
+"fieldPractices":[
+"Transplanting",
+"Variety / Seed Selection",
+"Seed Saving / Isolation"
+],
+"machineryTools":[],
+"climateType":[],
+"scientificDomains":[
+"Plants"
+],
+"pqnkPrinciples":[],
+"productionStages":[
+"Planting"
+],
+"evidenceType":"Field Observation",
+"authorityStatus":"Current / Approved PQNK Knowledge",
+"scienceLinks":[
+{
+"page":"/science/plants",
+"why":"how a plant reproduces by true seed from the flower and by tubers from the soil"
+}
+]
 }
 
 ]

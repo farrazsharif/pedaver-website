@@ -3011,7 +3011,7 @@ export const papers: Paper[] = [
     summary:
       "PQNK's seed philosophy separates three routinely conflated categories, GMO, F1 hybrid, and induced seedlessness, and argues open-pollinated seed was never agriculture's weak link; degraded, tillage-hollowed soil was. This knowledge paper works from the biology of pollination through the Green Revolution's real achievement to a full crop-by-crop protocol for saving, isolating, and hand-pollinating open genetics on a PQNK farm.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/every-seed-is-a-promise.pdf",
+    pdfPath: "/papers/every-seed-is-a-promise.pdf?v=tps1127",
     abstract: [
       "The paper opens by defining what a seed actually is: the product of a reproductive event that functions, across generations of open pollination, as a running experiment re-run every season, in which the plants best suited to a specific field, climate, and pest pressure survive to pass their genetics forward. A landrace built this way becomes something close to a live, field-tested record of what has actually worked on that soil, under that sky, and it is this real biological mechanism, not sentiment, that the paper's title refers to. Against that backdrop, it sets out to separate three modern seed categories that public discussion routinely blurs into one undifferentiated worry, GMO, F1 hybrid, and induced seedlessness, and argues that treating them identically weakens the case against each.",
       "Genetically modified seed is distinguished as the only category that crosses a reproductive barrier no pollination event could ever cross on its own. Pakistan's own Bt cotton history is used to sharpen the point: unlike India, where Bt cotton is grown almost exclusively as hybrid seed requiring annual repurchase, Pakistan's approved lines (IUB-13, MNH-886, BS-15, NIAB-878, FH-142) are released as open-pollinated varieties, so PQNK's objection is to the transgenic trait itself, not to seed-saving as such; a technology-use agreement backed by patent litigation, not the seed's own biology, is what actually stops a farmer from replanting it. F1 hybrid seed is treated as a different problem entirely: real, well-documented hybrid vigour that is a one-generation event, so a farmer who replants F2 seed gets an unpredictable, segregated population, the specific genetic mechanism behind a commercial seed industry now valued at roughly $50-60 billion and 60-70% controlled by a handful of multinational firms. Induced seedlessness is shown to have two distinct mechanisms, chromosomal sterility (triploid watermelon) and parthenocarpy/stenospermocarpy (seedless grapes), with banana carved out as a genuine exception: its sterility traces to a spontaneous mutation farmers found and vegetatively propagated some seven thousand years ago, not a trait engineered against the plant's own reproductive interest.",
@@ -6256,6 +6256,31 @@ export const papers: Paper[] = [
       "Foliar spray is not a standard recommendation: only for a visible deficiency in the first one or two crops of the transition, as fine mist on the leaves in the evening once the canopy has closed; otherwise at most 4 kg NP with irrigation, never on mature beds.",
       "Mustard straw can be used as mulch, but watch for beetles that may eat young seedlings.",
       "Sugarcane: conversion about Rs 20,000 per acre in Pakistan, then only seed (4,000 buds per acre) and labour.",
+    ],
+  },
+  {
+    slug: "true-potato-seed-tps",
+    kpNumber: 234,
+    libraryDate: "2026-11-27",
+    category: "Crop-Specific Guides",
+    title: "True Potato Seed (TPS): Seed from the Flower, Not the Tuber",
+    summary:
+      "What true potato seed is and how it differs from a seed tuber, how Pedaver raised TPS in a nursery and transplanted the seedlings to multiply its own seed tubers, what TPS does for the cost of seed, and the aeroponic method of multiplying seed tubers.",
+    publishedDate: "2026-11-27",
+    pdfPath: "/papers/true-potato-seed-tps.pdf",
+    abstract: [
+      "Farmers plant potatoes from tubers, and so do almost all commercial growers. But the tuber is not the potato's seed: it is a swollen underground stem, a piece of the parent plant. The true seed of the potato forms above the ground, in a small fruit that follows cross-pollination of the flowers.",
+      "True potato seed (TPS) is very fine. Pedaver sowed it in a nursery and transplanted the seedlings to the field, near Lahore in 2013 and in Pakpattan from 2013 onwards, where they grew into a crop whose tubers became seed for the next crop. Planting TPS cuts the cost of seed sharply, and on PQNK beds the seed cost is already low because a seed tuber is cut into single-eye pieces.",
+      "A newer method, aeroponics, grows plants from the TPS nursery with their roots hanging in a dark, misted chamber, where one plant can set 70 to 100 small seed tubers against 7 or 8 in the soil. Pedaver did not use this method. Raising TPS is technical work that needs a deep understanding of the potato plant and the nursery.",
+    ],
+    keyTakeaways: [
+      "A tuber is a piece of the plant and grows into a copy of its parent; a true seed forms above the ground, in the fruit that follows cross-pollination, and grows into a new plant.",
+      "Potato, sweet potato, turmeric and ginger are planted from tubers, roots or rhizomes; their true seed comes only from the flower.",
+      "TPS is very fine, so it is sown in a nursery and the seedlings are transplanted to the field; the tubers of that crop become seed tubers for the next crop.",
+      "TPS cuts the cost of seed sharply, since a small packet of true seed replaces a trailer load of seed tubers (about 1,500 kg per acre conventionally).",
+      "On PQNK beds the seed cost is already low: mulch protects the planted seed, so an 80 g tuber can be cut into four single-eye pieces, cutting seed cost by about three-quarters (KP-135).",
+      "Aeroponics: 70 to 100 small seed tubers per plant against 7 or 8 in the soil; Pedaver's TPS work used nursery raising and transplanting, not aeroponics.",
+      "Raising TPS is technical work; a farmer or group that can do it is no longer tied to buying seed tubers every season.",
     ],
   },
 ];
