@@ -774,7 +774,7 @@ export const papers: Paper[] = [
       "Sugarcane is conventionally treated like wheat, sown, harvested, and replanted every few years, but this paper uses bamboo as an analogy for a rhizome-forming perennial that can be harvested repeatedly from a protected living base. It lays out the wide-spacing planting geometry and selective-cut discipline behind PQNK field cases of eight harvest cycles from one planting, with recorded yields of over two thousand maunds per acre, with documented fields reaching 2,800 maunds (about 112 tonnes) (revised R1, per the PQNK book).",
     publishedDate: "2026-07-25",
     modifiedDate: "2026-10-16",
-    pdfPath: "/papers/sugarcane-the-bamboo-principle.pdf",
+    pdfPath: "/papers/sugarcane-the-bamboo-principle.pdf?v=nd1127",
     abstract: [
       "The paper opens with a direct claim: sugarcane is the most misunderstood crop in South Asian agriculture, planted as though it were wheat, an annual sown, grown, harvested, and uprooted in a single season, when it is in fact biologically identical to bamboo. Like bamboo, it is planted once and harvested for decades, forms rhizomes at its base, grows in clumps, and tillers prolifically when given space, light, and undisturbed soil, responding to selective cutting not with decline but with vigour. Field observations across PQNK farms confirm this: when 10-12 mature canes are harvested from a clump, 10-15 new shoots are already emerging from the base with another generation following, so the plantation is never empty and growth and harvest happen simultaneously.",
       "Conventional sugarcane, by contrast, grows shoots from stubble buried 8-10 inches below the surface, structurally weak points far from surface solar energy and microbial richness. Each ratooning cycle produces progressively weaker plants, red rot colonizes the stressed root zones, and by the third or fourth ratoon yields have collapsed enough to force a costly, labour-intensive replanting that resets the clock without addressing the underlying cause: tillage, chemical fertilizer, and flood irrigation have eliminated the microbial community, compacted the subsoil, and salinized the root zone, leaving the plant unable to access the mineral nutrition the soil still contains.",
@@ -829,7 +829,7 @@ export const papers: Paper[] = [
     summary:
       "Conventional agronomy calls motha grass a 'cancer weed' to be eradicated with herbicide, but this paper reframes its aggressive spread as a diagnostic signal, an emergency-response species that colonizes exactly the compacted, oxygen-starved, biologically dead soils that herbicide and tillage create in the first place.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/motha-grass-dominance-a-pqnk-interpretation.pdf",
+    pdfPath: "/papers/motha-grass-dominance-a-pqnk-interpretation.pdf?v=nd1127",
     heroImage: "/images/crops/motha-grass-cyperus-rotundus.jpg",
     abstract: [
       "The paper opens against the grain of conventional agronomy, which labels motha grass (Cyperus rotundus) an invasive, parasitic weed due to its tuber-based propagation and its release of phenolic acids, flavonoids, and terpenoids that suppress crop roots, hormones, mycorrhizae, and beneficial microbes, prescribing chemical eradication as the standard response. PQNK fundamentally disagrees with this diagnosis, on the premise that in natural ecosystems no species dominates without function: dominance of any plant, insect, or microbe is always a response, never an accident, and motha's dominance reflects a soil system that has lost its internal order, depth, and biological coherence.",
@@ -857,7 +857,7 @@ export const papers: Paper[] = [
     summary:
       "Broken rice kernels sell for 30-50% less than whole grain, and this paper traces that breakage back to micro-cracks formed during the growing season itself, not the milling process, arguing that a PQNK-style controlled, consistent growing environment produces a structurally uniform grain that survives milling intact.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/mitigating-post-harvest-losses-in-rice-through-pqnk.pdf",
+    pdfPath: "/papers/mitigating-post-harvest-losses-in-rice-through-pqnk.pdf?v=nd1127",
     abstract: [
       "The paper opens from the rice value chain's persistent problem of broken kernels, or 'brokens,' which command a 30-50% lower market price than whole-grain rice and represent a substantial economic loss for farmers, millers, and the broader agricultural economy. Where conventional wisdom attributes this breakage to mechanical stress during milling, the paper argues the real root causes are agronomic and post-harvest handling practices that create internal structural weakness, specifically micro-cracks and fissures, long before the grain ever reaches the mill.",
       "This 'brittle grain syndrome' is traced through three compounding phases. In the field phase, inconsistent soil fertility and uneven fertilizer application cause asynchronous grain development, with potassium and silicon deficiency producing weaker cell walls; moisture fluctuation from drought or uneven irrigation triggers cycles of swelling and shrinking that create internal micro-fissures; and temperature extremes during grain-filling disrupt the orderly deposition of amylose and amylopectin starch, leaving a heterogeneous internal structure that concentrates stress. The cumulative effect is a grain that already carries a latent network of microscopic cracks at harvest.",
@@ -883,7 +883,7 @@ export const papers: Paper[] = [
     summary:
       "This farmer's guide sets out five simple, tool-free field tests for judging whether PQNK soil biology is actually taking hold: an earthworm census, a soil smell test, a water infiltration test, a mulch decomposition check, and a root architecture inspection. Each comes with concrete benchmarks separating degraded, good, and thriving soil, turning soil health from a guess into a measurement.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/monitoring-soil-life-in-the-pqnk-system.pdf",
+    pdfPath: "/papers/monitoring-soil-life-in-the-pqnk-system.pdf?v=nd1127",
     abstract: [
       "In the PQNK system, soil is treated as a living organism rather than a substrate, and this guide's premise is that the shift from sterile, conventional soil to a teeming, living one is measurable through simple, field-based observations any farmer can run without a lab. It lays out five tests, each with a clear tool, timing, method, and benchmark, so a farmer can move from guessing about soil health to knowing it.",
       "The first two tests are the quickest checks. The earthworm census digs a 1-foot cubic block of soil and counts every earthworm found: 0-5 per cubic foot signals conventional or degraded soil, 10-15 signals good PQNK soil, and 25 or more signals a thriving, high-functioning system. The soil smell test asks the farmer to simply smell soil a few inches below the surface after a light rain; a sterile soil smells metallic or sour, while a living PQNK soil carries a rich, sweet, earthy aroma from geosmin, a compound produced by beneficial bacteria like Streptomyces.",
@@ -937,7 +937,7 @@ export const papers: Paper[] = [
       "Responding to a Rajasthani PQNK farmer's questions, this dialogue explains why relative humidity around the crop canopy is a direct readout of raised-bed hydraulic function, and pins down the exact aggregate-size range, 1-10mm with roughly a fifth to a third in the 2-5mm band, that PQNK beds are engineered to build and hold.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/the-breathing-soil-humidity-and-soil-structure.pdf",
+    pdfPath: "/papers/the-breathing-soil-humidity-and-soil-structure.pdf?v=nd1127",
     abstract: [
       "Mr. Rakesh, a practicing PQNK farmer from Rajasthan, raised a set of questions in a PQNK WhatsApp learning group, and this paper works through them as a direct dialogue. The first question asks why relative humidity (RH) matters in PQNK crop production; the answer reframes RH not as an external weather condition but as a direct output of the engineered raised-bed root zone. A vigorously growing PQNK bed acts as a 'moisture battery,' storing capillary water in micropores while macropores drain freely, and a healthy plant in that environment transpires freely, creating a positive feedback loop: optimal soil moisture drives a vigorous plant, which drives high transpiration, which elevates local RH around the canopy, particularly in early morning hours.",
       "This elevated local RH is framed as a bio-indicator of a functioning 'hydraulic bridge' between soil and atmosphere, the raised bed's capacity to wick moisture upward via capillary action to match the plant's transpirational pull. If canopy-level RH stays consistently low even under dry atmospheric conditions, the paper reads that as a signal the bridge is broken, likely from poor aggregation or compromised microbial activity, rather than treating RH as an external challenge to counter with more irrigation, the conventional response.",
@@ -964,7 +964,7 @@ export const papers: Paper[] = [
       "Answering a farmer's questions about topsoil and the plant-air-soil nutrient split, this paper explains how PQNK builds 'deep topsoil' many inches below the surface through a plant-microbe carbon pump, and unpacks why nature evolved a system where over 95% of a plant's mass comes from air and water while a mere 0.083% mineral fraction from soil governs everything.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/unlocking-the-secrets-of-the-soil-deep-topsoil.pdf",
+    pdfPath: "/papers/unlocking-the-secrets-of-the-soil-deep-topsoil.pdf?v=nd1127",
     abstract: [
       "Responding to questions from a farmer named Vasudha Ji, this paper first redefines 'deep topsoil.' Where farmers typically know topsoil as the thin, dark, crumbly first few inches of a tired field, the paper argues that on a vibrant PQNK farm this life-filled layer is not confined to the surface but extends 12, 24, or more inches down, built not by deep ploughing but by the ongoing work of plant roots and soil life.",
       "The mechanism is described as a natural construction project: plants act as builders, sending sugary root exudates down through their roots to feed soil microbes, while bacteria and especially thread-like mycorrhizal fungi act as architects, gluing soil particles into stable aggregates, building porous sponge-like structure, and converting exudate carbon into stable humus. Season after season this partnership functions as a 'carbon pump,' pulling CO2 from the air and depositing it as solid carbon throughout the root zone, gradually transforming hard, compact subsoil into rich, fertile deep topsoil.",
@@ -990,7 +990,7 @@ export const papers: Paper[] = [
     summary:
       "This knowledge paper reframes the textbook mechanics of passive and active nutrient absorption as expressions of a plant's vitality within a living soil ecosystem, arguing that PQNK doesn't force uptake but removes the stressors that block it, primarily through mycorrhizal partnership and the rhizophagy cycle.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/the-mechanism-of-nutrient-absorption-in-pqnk-farming.pdf",
+    pdfPath: "/papers/the-mechanism-of-nutrient-absorption-in-pqnk-farming.pdf?v=nd1127",
     abstract: [
       "The paper's executive summary states its thesis directly: passive and active nutrient absorption are not mere mechanical or chemical events but dynamic expressions of a plant's vitality within a thriving ecosystem. PQNK posits that a 'Pristine' soil environment, teeming with biodiversity and balanced natural cycles, elevates the plant's innate absorption abilities to their natural optimal state; the system does not force uptake, it removes the stressors that impede it.",
       "The introduction frames this as a paradigm shift from treating soil as a substrate and the plant as a machine to be fed, toward treating the soil as a living organism (a Paedar Qudratti Nizam) and the plant as an active, intelligent partner. In this view, nutrient absorption is an ecosystem service provided by a healthy soil food web, which the plant orchestrates through its own root exudates and biological interactions.",
@@ -1016,7 +1016,7 @@ export const papers: Paper[] = [
       "Answering a farmer's direct question about soil gas chemistry, this short paper explains why soil air naturally runs lower in oxygen and higher in CO2 than the atmosphere, and details the three self-reinforcing mechanisms, root retention, surface mulch, and biologically built porosity, that let PQNK sustain a high oxygen diffusion rate without any external management.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/why-is-oxygen-less-in-soil-air-why-is-co2-high.pdf",
+    pdfPath: "/papers/why-is-oxygen-less-in-soil-air-why-is-co2-high.pdf?v=nd1127",
     abstract: [
       "The paper opens from a farmer's question posed in a WhatsApp learning group: why is soil air lower in oxygen and higher in CO2 than atmospheric air, and how does PQNK maintain the oxygen diffusion rate? The answer starts from basic soil biology: the multitude of microbes, fungi, earthworms, and roots living in soil constantly respire, consuming O2 and releasing CO2, which is why soil air composition naturally differs from the air above it. The critical factor for plant and microbial health, the paper stresses, is not the absolute amount of O2 present but the rate at which it can be replenished from the atmosphere.",
       "PQNK maintains that diffusion rate through in-situ generation of organic matter and structure rather than any imported input. After harvest, root systems are left in place to decompose, releasing organic compounds and, critically, leaving behind a network of stable bio-pores that become direct pathways for air and water to move deep into the soil profile. Above-ground crop residue is never removed or burned, but returned as a permanent surface mulch that protects the soil from forming a hard, gas-blocking crust under rain impact and sun.",
