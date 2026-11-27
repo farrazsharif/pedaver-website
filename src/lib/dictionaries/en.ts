@@ -16,6 +16,7 @@ const en = {
     fieldEvidence: "Knowledge Exchange",
     books: "PQNK Books",
     cropPrices: "Crop Prices",
+    farmersTraining: "Farmers Training",
     ask: "Ask PQNK",
     advisory: "Farmer Advisory",
     services: "Services",

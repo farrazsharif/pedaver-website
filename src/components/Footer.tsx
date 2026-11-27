@@ -15,6 +15,7 @@ export default function Footer({ dict }: { dict: Dictionary }) {
     { label: dict.nav.papers, href: "/papers" },
     { label: dict.nav.fieldEvidence, href: "/field-evidence" },
     { label: dict.nav.books, href: "/books" },
+    { label: dict.nav.farmersTraining, href: "/farmers-training" }, // own section, not the header menu (2026-11-27)
     { label: dict.nav.cropPrices, href: "/crop-prices" }, // a tool, footer only (not the header menu), author 2026-11-25
   ];
 

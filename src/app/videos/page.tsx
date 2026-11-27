@@ -56,6 +56,11 @@ export default function VideosPage() {
         <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6">
           <h1 className="text-4xl font-extrabold text-primary-dark">{dict.videos.pageTitle}</h1>
           <p className="mx-auto mt-5 max-w-2xl text-lg text-ink-soft">{dict.videos.pageSubtitle}</p>
+          <p className="mx-auto mt-4 max-w-2xl text-base">
+            <Link href="/farmers-training" className="font-semibold text-primary underline underline-offset-4">
+              PQNK Farmers Training: sessions with English transcripts →
+            </Link>
+          </p>
           <p className="mx-auto mt-6 text-xs font-semibold uppercase tracking-wide text-ink-soft">
             {dict.videos.followTitle}
           </p>

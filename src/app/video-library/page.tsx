@@ -1,3 +1,4 @@
+import Link from "next/link";
 import dict from "@/lib/dictionaries";
 import { videoLibrary } from "@/lib/content/videoLibrary";
 import Section from "@/components/Section";
@@ -28,6 +29,11 @@ export default function VideoLibraryPage() {
         <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6">
           <h1 className="text-4xl font-extrabold text-primary-dark">{dict.videoLibrary.pageTitle}</h1>
           <p className="mx-auto mt-5 max-w-2xl text-lg text-ink-soft">{dict.videoLibrary.pageSubtitle}</p>
+          <p className="mx-auto mt-4 max-w-2xl text-base">
+            <Link href="/farmers-training" className="font-semibold text-primary underline underline-offset-4">
+              PQNK Farmers Training: sessions with English transcripts →
+            </Link>
+          </p>
         </div>
       </section>
 

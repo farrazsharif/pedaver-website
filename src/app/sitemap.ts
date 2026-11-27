@@ -6,6 +6,7 @@ import { machines } from "@/lib/content/machines";
 import { resources } from "@/lib/content/resources";
 import { books, getPublishedChapters } from "@/lib/content/books";
 import { SITE_URL } from "@/lib/seo";
+import { trainingSessions } from "@/lib/content/farmersTraining";
 
 export const dynamic = "force-static";
 
@@ -43,6 +44,7 @@ const staticPages = [
   "/field-evidence",
   "/books",
   "/crop-prices",
+  "/farmers-training",
   "/validation",
   "/videos",
   "/video-library",
@@ -73,6 +75,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: toUrl(`/papers/${paper.slug}`),
       lastModified: paper.externalUrl ? now : new Date(paper.modifiedDate ?? paper.publishedDate),
     })),
+    ...trainingSessions.map((s) => ({ url: toUrl(`/farmers-training/${s.slug}`), lastModified: new Date(s.publishedDate) })),
     ...fieldEvidence.map((fe) => ({ url: toUrl(`/field-evidence/${formatFeNumber(fe.feNumber).toLowerCase()}`), lastModified: now })),
     ...machines.map((machine) => ({ url: toUrl(`/machines/${machine.slug}`), lastModified: now })),
     ...resources.map((resource) => ({ url: toUrl(`/resources/${resource.slug}`), lastModified: now })),
