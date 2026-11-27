@@ -110,7 +110,7 @@ export const papers: Paper[] = [
       "The short, rapidly warming spring of the Indian subcontinent forces wheat into premature ripening and shriveled grain under conventional management. This paper explains the soil-biology mechanisms by which PQNK extends the crop's productive lifespan, letting it fill grain longer and yield more even under heat stress.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/enhancing-wheat-crop-lifespan-through-pqnk.pdf",
+    pdfPath: "/papers/enhancing-wheat-crop-lifespan-through-pqnk.pdf?v=nd1127",
     heroImage: "/images/wheat-heads.jpg",
     abstract: [
       "The Indian subcontinent's short spring, with its rapid rise in temperature, routinely forces wheat into premature maturation. Conventional 'Ancient Conventional Industrial' (ACI) systems make this worse: repeated tillage and chemical-input dependence degrade soil structure and reduce its water-holding capacity, so as evaporation demand climbs, crops ripen early and grains shrivel before they fill out, costing yield at the exact moment the plant needs more time, not less.",
@@ -138,7 +138,7 @@ export const papers: Paper[] = [
       "A critical review of the popular claim that Green Revolution semi-dwarf wheat is inherently more harmful than heirloom varieties. Applying the PQNK lens, the paper argues the farming system, not just the genetics, is the overlooked variable driving gluten-related health concerns, and that soil biology can meaningfully change a grain's nutritional and digestive profile regardless of variety.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/modern-semi-dwarf-wheat-vs-heirloom-and-ancient-varieties.pdf",
+    pdfPath: "/papers/modern-semi-dwarf-wheat-vs-heirloom-and-ancient-varieties.pdf?v=nd1127",
     heroImage: "/images/cereal-green.jpg",
     abstract: [
       "Wheat feeds over 35% of the global population, and the semi-dwarf, high-yielding cultivars bred at CIMMYT during the 1960s Green Revolution now dominate world production. Their rise has coincided with growing rates of diagnosed celiac disease and self-reported non-celiac wheat sensitivity, fueling a popular narrative that modern wheat genetics are themselves the cause. This review synthesizes the agronomic, compositional, and clinical evidence and introduces a third, frequently ignored variable into the debate: the farming system the wheat was grown in.",
@@ -191,7 +191,7 @@ export const papers: Paper[] = [
     summary:
       "Pakistan's Basmati export sector faces a triple threat of quality rejections, water scarcity, and methane emissions from flooded paddies. This paper presents PQNK's move 'beyond flooded fields' to direct-seeded rice on permanent mulched beds, arguing it solves all three problems simultaneously rather than trading one for another.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/pqnk-paradigm-shift-for-climate-resilient-rice-cultivation.pdf",
+    pdfPath: "/papers/pqnk-paradigm-shift-for-climate-resilient-rice-cultivation.pdf?v=nd1127",
     abstract: [
       "Pakistan's rice sector, and its Basmati export trade in particular, faces three compounding pressures. Importing countries are tightening limits on agrochemical residues and mycotoxins such as aflatoxins, and conventional flooded systems consistently fail to meet them, causing costly rejections and reputational damage. Conventional cultivation also uses roughly 5,000 liters of water per kilogram of rice produced, an unsustainable draw in a water-scarce country. And continuously flooded paddies are a major source of methane, a gas over 25 times more potent than CO2, estimated to account for around 12% of global methane emissions, with the common fix, Alternate Wetting and Drying, risking a swap into nitrous oxide, a gas roughly 300 times more potent than CO2.",
       "PQNK's response is framed as a return to how rice actually grows in nature: no floodplain provides continuous standing water, only monsoons, dew, and groundwater moving through porous, root-bound, hardpan-free soil. Practically, this took the form of an evolving system, starting with a dry-soil transplanter placing seedlings into water-filled pits, then evolving to the current method: Direct Seeded Rice (DSR) on permanent raised beds covered in organic mulch carried over from the prior crop's residue, with five precise rows spaced 8 inches apart on 42-inch beds achieving a plant density of about 65,000 per acre.",
@@ -244,7 +244,7 @@ export const papers: Paper[] = [
     summary:
       "Decades of industrial orchard management have driven a 60% decline in Kinnow nutrition density and widespread orchard abandonment. This paper presents field data from a Toba Tek Singh comparison and the Sujjahabad Mango Research Station showing how PQNK reverses that decline, lifting A-grade fruit yield by up to 80%.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/restoring-prosperity-in-citrus-and-mango-orchards.pdf",
+    pdfPath: "/papers/restoring-prosperity-in-citrus-and-mango-orchards.pdf?v=nd1127",
     heroImage: "/images/citrus-orchard.jpg",
     abstract: [
       "Citrus and mango orchards have been in steady decline for over 30 years under industrial management. Input costs have risen sharply even as yields fall, nutrition density in key varieties such as Kinnow has declined by as much as 60%, affecting taste, market value, and health benefit, and mounting farmer distress has led to widespread orchard abandonment and uprooting. The paper traces this crisis to specific, identifiable practices: excessive irrigation that destroys soil structure and depletes oxygen, tillage implements such as spring tine cultivators that create a compacted hardpan restricting root growth and water infiltration, and bare, chemically dependent soil that erodes biodiversity and destroys the soil microbiome.",
@@ -299,7 +299,7 @@ export const papers: Paper[] = [
       "High-density Kinnow planting depends on getting two decisions right together: rootstock selection and soil environment. This paper argues that Flying Dragon Trifoliata's dwarfing trait is a deliberate design choice, not a compromise, and shows how it only delivers its full benefit inside a PQNK raised-bed root zone.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/achieving-high-density-kinnow-plantation-through-pqnk.pdf",
+    pdfPath: "/papers/achieving-high-density-kinnow-plantation-through-pqnk.pdf?v=nd1127",
     heroImage: "/images/crops/kinnow-orchard-rows.jpg",
     abstract: [
       "High-density planting (HDP) is a critical lever for improving yield and land-use efficiency in Kinnow mandarin (Citrus reticulata x Citrus sinensis) orchards, but the paper argues its full potential is only realized when rootstock genetics and soil ecology are designed together. It opens by reframing grafting itself: because Kinnow was bred as a hybrid for fruit quality rather than root performance, its own root system is unselected and often lacks the vigor, efficiency, and disease resistance needed under cultivation. Grafting, then, is not a correction for a defective plant but a strategic selection process that lets the orchardist impose specific, desirable traits onto the tree's foundation.",
@@ -327,7 +327,7 @@ export const papers: Paper[] = [
       "Conventional potato farming traps growers in a cycle of high input costs, a hard yield ceiling near 14 tonnes per acre, and boom-bust pricing. This paper compares conventional (ACI), Global Best Practice, and PQNK potato systems on plant physiology, economics, and risk, and lays out a year-by-year transition pathway for farmers.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/the-future-of-potato-cultivation-through-pqnk.pdf",
+    pdfPath: "/papers/the-future-of-potato-cultivation-through-pqnk.pdf?v=nd1127",
     heroImage: "/images/crops/potato-mulched-raised-beds.jpg",
     abstract: [
       "The paper opens with a diagnostic image: soil that feels dead, lifeless, and inert in the hand is the signature of a collapsed system. Conventional 'Ancient Conventional Industrial' (ACI) potato farming produces exactly this, through compacted earth that repels water rather than absorbing it, plants left susceptible to disease, chemical runoff, and tubers that are often tasteless, less nutritious, carry chemical residues, and store poorly. PQNK's founding premise is the opposite: that soil is a living, breathing organism whose original design (teeming with microbial life, rich in organic matter, properly moist and aerated, buffered against temperature extremes) must be restored before the plant can reach its genetic potential.",
@@ -355,7 +355,7 @@ export const papers: Paper[] = [
     summary:
       "PQNK watermelon takes 90-100 days to mature instead of 70 under chemical systems, not a delay but evidence of the plant building a real root-microbiome partnership first. This guideline works through frost protection, vine training, tip-cutting after fruit set, shade-based shrinkage prevention, and a cold-water field-heat removal protocol that holds fruit quality for 10-14 days.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/watermelon-cultivation-under-pqnk.pdf",
+    pdfPath: "/papers/watermelon-cultivation-under-pqnk.pdf?v=nd1127",
     abstract: [
       "PQNK is presented as a closed-loop system in which a living, microbially active soil fed by on-farm mulch and irrigation water supplies everything the crop needs from geological abundance. Applied to watermelon, the paper opens with an observation many farmers find counterintuitive: PQNK fruit takes 90-100 days to mature against 70 days under chemical management. This is reframed not as a systemic weakness but as a sign of health. The first 30-40 days are spent building a robust root system and recruiting a diverse, functional microbiome, an investment in resilience that chemical systems skip by force-feeding soluble nutrients. Because nutrients are released in response to root exudates, a synchronized 'plant pull' system, the plant develops denser cell structure, higher Brix, and longer shelf life than a forced, chemically accelerated crop.",
       "A significant share of the guideline addresses the practical challenge of early sowing for a December-to-February crop window, when frost and soil temperatures below 15°C can inhibit microbial activity and damage tissue. The protocol layers three defenses: a 3-4 inch insulating mulch of dry straw applied at the base of each plant, tall windbreak crops such as Napier grass or sugarcane established ahead of the cold season on the windward side, and light furrow irrigation before an expected frost, using moist soil's greater thermal mass to protect the root zone overnight. Where cold risk is high, seedlings are raised in a protected nursery in root trainers or decomposable pots and transplanted at the 3-4 leaf stage only once extreme cold subsides, conserving costly seed and ensuring a strong stand.",
@@ -412,7 +412,7 @@ export const papers: Paper[] = [
       "Rhodes grass (Chloris gayana) is a drought-tolerant fodder grass well suited to Punjab's erratic rainfall, and this factsheet lays out its PQNK production pathway from no-till establishment through 80-100 tonnes of chemical-free green fodder per acre per year, closing the loop with on-farm seed multiplication.",
     publishedDate: "2026-07-25",
     modifiedDate: "2026-10-16",
-    pdfPath: "/papers/commercial-rhodes-grass-production-under-pqnk.pdf",
+    pdfPath: "/papers/commercial-rhodes-grass-production-under-pqnk.pdf?v=nd1127",
     abstract: [
       "The factsheet frames Rhodes grass through PQNK's core philosophy of cultivating in harmony with natural rhythms rather than treating it as a purely extractive fodder commodity. For Punjab and adjacent semi-arid to arid areas, that means adapting to hot summers and mild, dormant winters below 15°C, and to erratic monsoon rainfall of 300-500mm, through rainwater harvesting via ponds and contour bunds, companion planting alongside nitrogen-fixing trees like Kikar or Shisham for shade and wind protection, and syncing sowing to February-March to capture spring warmth and monsoon rain.",
       "Land preparation avoids deep tillage in favor of surface scarification with a chisel plough, preserving soil architecture and microbial networks, while fertility is built through 2-3 tonnes/acre of composted farmyard manure or vermicompost inoculated with native microbial jivamrta, and a preceding sunhemp or dhaincha green-manure crop turned in to boost organic matter and nitrogen. Seed selection favors locally adapted, open-pollinated varieties over hybrids to support seed sovereignty, sown at 2-3 kg/acre and treated with cow-dung-based microbial inoculants rather than chemical fungicides; cowpea is intercropped during establishment to fix nitrogen and suppress weeds.",
@@ -439,7 +439,7 @@ export const papers: Paper[] = [
     summary:
       "Bamboo behaves as a 'soil engine' under PQNK: a no-till, hardpan-broken planting of 726 plants per acre that needs no synthetic inputs, sequesters carbon, and stays productive for 60-100 years once established. This factsheet lays out species selection, the four-phase establishment protocol, and the water, nutrient, and weed management rules that keep the system self-sustaining.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/commercial-bamboo-plantation-under-pqnk.pdf",
+    pdfPath: "/papers/commercial-bamboo-plantation-under-pqnk.pdf?v=nd1127",
     abstract: [
       "The factsheet opens by framing bamboo as the ideal regenerative crop through a PQNK lens: a fast-growing perennial grass that acts as a natural 'soil engine,' building humus and stabilizing land through deep, fibrous root systems while fixing large amounts of carbon in biomass and soil. Once established it is drought-tolerant and low-input, thriving through natural root-microbe ecology, and offers high economic return across poles, biomass, fodder, furniture, construction material, paper, fiber, and biochar, while forming the backbone of a diverse agroforestry system rather than a dependent monoculture.",
       "Climate suitability spans 700-3000mm of rainfall and -5°C to 45°C depending on species, and the factsheet recommends specific commercial species by end use: Dendrocalamus asper for construction, timber, and shoots; Bambusa balcooa for strong scaffolding poles; Guadua angustifolia for high-strength structural applications; Phyllostachys edulis (Moso) for timber and international markets; and Bambusa tulda for pulp and paper. A firm PQNK principle favors multi-species bamboo belts over single-species monocultures for resilience.",
@@ -520,7 +520,7 @@ export const papers: Paper[] = [
     summary:
       "This knowledge paper sets out the full methodology for a 544-plant-per-acre pomegranate orchard under PQNK: the four-step soil recovery protocol that converts degraded land into a closed-loop system, and the four management pillars, zero soil disturbance, natural irrigation, inherent pest management, and structural pruning, that keep it that way.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/achieving-high-density-pomegranate-production-through-pqnk.pdf",
+    pdfPath: "/papers/achieving-high-density-pomegranate-production-through-pqnk.pdf?v=nd1127",
     heroImage: "/images/pomegranate.jpg",
     abstract: [
       "The paper defines PQNK as a closed-loop, zero-external-input model in which 'Pristine' refers to restoring the soil's original, natural fertility and function, and 'Regenerative' to the system's capacity to improve soil health, biodiversity, and water retention year after year without external inputs once it reaches its sustained state. Pomegranate, with its deep root system and drought tolerance but marked intolerance for waterlogged conditions, is identified as an ideal candidate for this system when managed correctly.",
@@ -548,7 +548,7 @@ export const papers: Paper[] = [
       "Amla's naturally deep taproot makes it an ideal closed-loop PQNK crop, and this paper walks through the five-step protocol, hardpan breaking, pH correction, Jantar-built raised beds, no-till mulch planting, and phenology-timed pruning, that gets roughly 545 trees per acre to a sustained yield of 10-14 tonnes per acre by year five.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/high-density-amla-farming-under-pqnk.pdf",
+    pdfPath: "/papers/high-density-amla-farming-under-pqnk.pdf?v=nd1127",
     abstract: [
       "The paper reframes conventional high-density Amla (Emblica officinalis) planting, which typically relies on external fertilizers, synthetic hormones, and chemical pest control, within PQNK's closed-loop, no-external-input philosophy, where the field provides everything: fertility from biomass, pest management from biodiversity, and structure from roots and mulch. Amla is described as an ideal crop for this reframing, hardy, perennial, and exceptionally responsive to soil regeneration.",
       "Step one breaks the hardpan to a depth of 18-24 inches using a subsoiler, a one-time operation before first planting that lets Amla's taproot, which in a healthy system reaches 10-12 feet, access subsoil moisture and anchor the tree for decades. Step two corrects soil chemistry where pH exceeds 8 through deep leaching irrigation and a one-time application of 8kg of sulfuric acid per acre, bringing soil into the 6.5-7.5 range that unlocks fruit size, Vitamin C content, and juice content, since Amla grown in alkaline, salt-stressed soil produces small, hard, low-juice fruit.",
@@ -575,7 +575,7 @@ export const papers: Paper[] = [
       "Cut-flower rose production is reframed as a closed-loop perennial system under PQNK, reaching a striking 8,712 plants per acre on twin-row permanent beds, with weeds treated as mulch, alfalfa grown as living nitrogen-fixing ground cover, and strict soil-moisture management replacing scheduled irrigation.",
     modifiedDate: "2026-10-16",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/pqnk-rose-production.pdf",
+    pdfPath: "/papers/pqnk-rose-production.pdf?v=nd1127",
     heroImage: "/images/crops/rose-mulched-beds.jpg",
     abstract: [
       "The paper positions rose as an excellent PQNK crop: perennial, responsive to soil regeneration, and well suited to closed-loop management, in contrast to conventional rose farming's reliance on synthetic fertilizers, hormones, and chemical pest control. As with other PQNK crops, the field is expected to supply everything, fertility from biomass, pest management from biodiversity, and structure from roots and mulch.",
@@ -608,7 +608,7 @@ export const papers: Paper[] = [
       "Written for a farmer under contract to supply anthocyanin for nutraceutical extraction, this guide explains the cold-stress biochemistry behind pigment concentration in black carrot and how PQNK's stable 13-26°C root zone lets a farmer trigger that stress deliberately, through timed irrigation intervals, cool nights, and a low-dose ethanol spray, without ever starving the plant.",
     publishedDate: "2026-07-25",
     modifiedDate: "2026-10-16",
-    pdfPath: "/papers/high-anthocyanin-black-carrot-under-pqnk.pdf",
+    pdfPath: "/papers/high-anthocyanin-black-carrot-under-pqnk.pdf?v=nd1127",
     heroImage: "/images/crops/black-carrot-four-foot-root.jpg",
     abstract: [
       "Framed around a farmer with three years of experience growing black carrot under a buyer contract that prices output directly on anthocyanin content, the guide opens with the underlying biochemistry: anthocyanin functions as a plant's natural sunscreen and antifreeze, produced in response to cold, intense light, and mild drought through a MYB transcription-factor 'master switch' that activates the gene pathway converting sugars and phenylalanine into pigment. Because PQNK's closed-loop system uses no external NPK and holds soil temperature stable at 13-26°C year-round via mulch, the plant never faces starvation stress, leaving air temperature, light exposure, and controlled water stress as the primary levers for boosting pigment.",
@@ -637,7 +637,7 @@ export const papers: Paper[] = [
     summary:
       "Citrus flowers are bisexual and fully self-pollinating, meaning every bloom is a potential fruit, so this paper argues that flower drop is not natural sexual sorting but a stress response, and that the single most damaging intervention a farmer can make in a mature PQNK bed is watering it.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/citrus-flowering-and-fruiting-within-the-pqnk-ecosystem.pdf",
+    pdfPath: "/papers/citrus-flowering-and-fruiting-within-the-pqnk-ecosystem.pdf?v=nd1127",
     heroImage: "/images/citrus-orchard.jpg",
     abstract: [
       "The paper's central thesis is that consistent, high-quality flowering year after year is the primary indicator of a fully established PQNK ecosystem, and that in a mature setup the plant, soil, and microbial life reach a dynamic equilibrium governing water, aeration, nutrients, and protection. Building on prior PQNK work such as 'Returning Dairy Waste to the Land,' it argues that any external intervention, particularly watering, fundamentally disrupts the delicate balance of the soil solution the plant depends on.",
@@ -664,7 +664,7 @@ export const papers: Paper[] = [
     summary:
       "Tomato is naturally perennial in its tropical highland origin, and this advisory shows how PQNK's stable microclimate, mulch, living companion canopy, and a low-dose ethanol spray, can restore that perennial behavior in open-field cultivation, alongside a full sucker-pruning and harvest protocol.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/tomato-cultivation-under-pqnk.pdf",
+    pdfPath: "/papers/tomato-cultivation-under-pqnk.pdf?v=nd1127",
     abstract: [
       "The advisory opens by noting that tomato is a perennial plant by nature, originating in the mild, year-round climate of South America's tropical highlands, where it can live and fruit continuously for years. It is grown as an annual in most regions not because of its biology but due to temperature extremes, pest buildup, and management convenience, and the paper's premise is that PQNK's carefully engineered soil health and microclimate can restore that perennial potential, especially for indeterminate types.",
       "Within PQNK's diversified, layered vegetation system, tomato's deep root system and symbiotic associations support rhizosphere activity, nutrient cycling through decaying leaves and root exudates, and pest balance through habitat for beneficial arthropods. Perennial behavior becomes achievable under the raised-bed, mulch, living-soil system provided temperature extremes are moderated, soil stays biologically active year-round, and pruning and nutrient recycling are handled by soil organisms rather than synthetic inputs; determinate varieties can be managed perennially across 2-3 cycles, while indeterminate types express the fullest perennial potential and suit staking, trellising, or natural climbing on companion plants.",
@@ -691,7 +691,7 @@ export const papers: Paper[] = [
     summary:
       "This advisory frames brinjal pruning not as damage control but as energy stewardship, walking through a three-phase framework, an early architectural tip-pinch, ongoing canopy-opening cuts, and a mid-season rejuvenation prune, that keeps a closed-loop PQNK bed producing continuous flushes of fruit.",
     publishedDate: "2026-07-25",
-    pdfPath: "/papers/strategic-pruning-of-brinjal-for-a-prolific-harvest.pdf",
+    pdfPath: "/papers/strategic-pruning-of-brinjal-for-a-prolific-harvest.pdf?v=nd1127",
     abstract: [
       "The advisory opens with its guiding principle: in a balanced system, energy is abundant, and the farmer's role is not to defend against lack or disease but to steward the flow of that energy from the cooperative root zone to a prolific canopy. Pruning brinjal, in this framing, is the art of directing that boundless life force rather than a corrective or preventive chore, with the explicit goal of a strong, open structure supporting a continuous harvest of large, healthy fruit.",
       "Phase one, the architectural prune, happens 4-6 weeks after transplanting once the seedling reaches roughly 30-40cm and first branches into a 'Y' shape. Pinching or cutting just above that Y signals the plant to stop its singular upward thrust and activate lateral buds instead, building the multiple strong primary branches needed to sustain an abundant fruit load, described as communicating to the plant that 'your foundation is secure; now, broaden your strength.'",
