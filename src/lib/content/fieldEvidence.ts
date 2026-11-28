@@ -1077,6 +1077,20 @@ export const fieldEvidence: FieldEvidence[] = [
     relatedCropSlug: "onion-garlic",
     tags: ["garlic", "permanent raised beds", "two-year-old beds", "mulch", "rice straw", "no inputs", "no fertiliser", "no pesticide", "no tillage", "winter"],
   },
+  {
+    feNumber: 69,
+    title: "Tractor Narrow Spoke Wheels for PQNK: Running in the Furrows Without Pressing the Beds",
+    evidenceTypes: ["Machinery Demonstration"],
+    cropOrTopic: "Narrow steel spoke wheels on a tractor, the most suitable wheels for working on PQNK permanent raised beds",
+    year: 2026,
+    date: "2026-11-28",
+    summary:
+      "A short video, without narration, of a tractor fitted with narrow steel spoke wheels, front and rear. Close-ups show the slim lugged rims, the spokes and the hubs, and the tractor driving off on them. These are the most suitable tractor wheels for the PQNK system. On PQNK permanent raised beds the tractor runs in the furrows at planting and at harvest. Ordinary tyres wider than 9 inches press against the sides of the beds and compact the soil. These narrow wheels run inside the furrow and leave the bed sides untouched, so the soil of the permanent beds stays loose and alive.",
+    sourcePlatform: "YouTube",
+    sourceUrl: "https://youtu.be/kpIoeSim_8E",
+    videoId: "kpIoeSim_8E",
+    tags: ["tractor", "narrow wheels", "spoke wheels", "steel wheels", "machinery", "permanent raised beds", "furrows", "soil compaction", "bed sides", "planting", "harvesting"],
+  },
 ];
 
 export function getFieldEvidenceByFeNumber(feNumber: number) {
